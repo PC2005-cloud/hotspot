@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Browser binaries (Playwright)
+browsers/
+
+# Generated data
+results/
+session/
+
+# Test artifacts
+*.png
+banned_check.html
+

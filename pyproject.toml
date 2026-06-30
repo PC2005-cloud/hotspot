@@ -1,0 +1,23 @@
+[project]
+name = "hotspot"
+version = "0.1.0"
+description = "零成本热点追踪 · 基于 DeepSeek 免费网页版 · 告别 RSS 噪音和搜索广告 — AI 每天自动刷热点、总结观点、生成报告"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "playwright==1.60.0",
+    "httpx>=0.28.0",
+    "beautifulsoup4>=4.15.0",
+    "lxml>=6.1.1",
+    "demjson3>=3.0.6",
+]
+
+[tool.setuptools.packages.find]
+include = ["hotspot*"]
+exclude = ["browsers*", "session*", "results*", "tool*"]
+
+[tool.uv]
+package = true
+
+[project.scripts]
+hotspot = "hotspot.cli:main"

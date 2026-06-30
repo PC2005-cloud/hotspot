@@ -1,0 +1,85 @@
+name: Hotspot 热点搜索
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: "0 0 * * *"
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安装 uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: 安装依赖
+        run: uv sync
+
+      - name: 安装 Playwright 浏览器
+        run: uv run playwright install chromium
+
+      - name: 创建输出目录
+        run: mkdir -p results session
+
+      - name: 写入登录配置
+        env:
+          ACCOUNT: ${{ secrets.DEEPSEEK_ACCOUNT }}
+          PASSWORD: ${{ secrets.DEEPSEEK_PASSWORD }}
+        run: |
+          python -c "
+          import json, os
+          with open('hotspot/config.json', 'r') as f:
+              cfg = json.load(f)
+          cfg['login']['account'] = os.environ['ACCOUNT']
+          cfg['login']['password'] = os.environ['PASSWORD']
+          cfg['headless'] = True
+          cfg['delete_chat'] = True
+          with open('hotspot/config.json', 'w') as f:
+              json.dump(cfg, f, ensure_ascii=False, indent=2)
+          "
+
+      - name: 运行热点搜索
+        id: run
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
+        run: |
+          uv run python -m hotspot
+          REPORT_JSON=$(find results -name "report.json" -type f | head -1)
+          if [ -n "$REPORT_JSON" ]; then
+            HAS_DATA=$(python -c "
+          import json
+          d = json.load(open('$REPORT_JSON', 'r'))
+          print('true' if d.get('total_hotspots', 0) > 0 else 'false')
+          ")
+            echo "has_data=$HAS_DATA" >> $GITHUB_OUTPUT
+          else
+            echo "has_data=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 准备部署文件
+        if: steps.run.outputs.has_data == 'true'
+        run: |
+          echo "hotspot.lxpavilion.top" > results/CNAME
+
+      - name: 部署到 GitHub Pages
+        if: steps.run.outputs.has_data == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: results
+          keep_files: true
+          publish_branch: gh-pages
+          full_commit_message: "update hotspot report"

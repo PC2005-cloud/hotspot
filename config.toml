@@ -1,0 +1,6 @@
+# —— Project configuration template ——
+# Copy and modify this file for your own use case.
+
+[app]
+name = "Hotspot"
+version = "0.1.0"

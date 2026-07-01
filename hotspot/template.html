@@ -1,104 +1,521 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>热点聚合报告</title>
 <style>
+/* ===== 设计 Token ===== */
 :root {
-    --bg: #0b1120; --text: #e8ecf2; --sec: #94a3b8; --muted: #5e6d7d;
-    --accent: #818cf8; --border: rgba(255,255,255,0.06);
+  /* 亮色模式 (默认) */
+  --bg-page: #f8fafc;                /* slate-50 */
+  --bg-gradient: radial-gradient(ellipse at 50% 0%, rgba(199,210,254,0.3) 0%, rgba(248,250,252,1) 60%);
+  --bg-card: rgba(255,255,255,0.4);
+  --bg-card-hover: rgba(255,255,255,0.6);
+  --bg-tab: rgba(255,255,255,0.35);
+  --bg-tab-hover: rgba(255,255,255,0.55);
+  --bg-tab-active: rgba(129,140,248,0.15);
+  --bg-accent-subtle: rgba(129,140,248,0.08);
+  --bg-overview: rgba(255,255,255,0.35);
+  --border-card: rgba(255,255,255,0.4);
+  --border-card-hover: rgba(129,140,248,0.4);
+  --border-tab: rgba(255,255,255,0.4);
+  --border-tab-active: #818cf8;
+  --border-divider: rgba(0,0,0,0.06);
+  --text-primary: #0f172a;           /* slate-900 */
+  --text-heading: #1e293b;          /* slate-800 */
+  --text-secondary: #64748b;        /* slate-500 */
+  --text-muted: #94a3b8;            /* slate-400 */
+  --text-body: #475569;             /* slate-600 */
+  --text-inverse: #ffffff;
+  --accent: #818cf8;                /* indigo-400 */
+  --accent-strong: #6366f1;         /* indigo-500 */
+  --accent-glow: rgba(129,140,248,0.25);
+  --source-color: #059669;          /* emerald-600 */
+  --url-color: #0284c7;             /* sky-600 */
+  --stance-color: #d97706;          /* amber-600 */
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.04), 0 1px 4px rgba(0,0,0,0.04);
+  --shadow-card-hover: 0 8px 40px rgba(129,140,248,0.10), 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-overview: 0 4px 32px rgba(0,0,0,0.04);
 }
-* { margin:0; padding:0; box-sizing:border-box; }
+
+.dark {
+  --bg-page: #020617;                /* slate-950 */
+  --bg-gradient: radial-gradient(ellipse at 50% 25%, #0f1a2e 0%, #020617 60%, #00040a 100%);
+  --bg-card: rgba(15,23,42,0.5);     /* slate-800/50 */
+  --bg-card-hover: rgba(30,41,59,0.6); /* slate-700/50 */
+  --bg-tab: rgba(255,255,255,0.04);
+  --bg-tab-hover: rgba(255,255,255,0.08);
+  --bg-tab-active: rgba(129,140,248,0.15);
+  --bg-accent-subtle: rgba(129,140,248,0.10);
+  --bg-overview: rgba(15,23,42,0.5);
+  --border-card: rgba(255,255,255,0.06);
+  --border-card-hover: rgba(129,140,248,0.35);
+  --border-tab: rgba(255,255,255,0.06);
+  --border-tab-active: #818cf8;
+  --border-divider: rgba(255,255,255,0.06);
+  --text-primary: #f1f5f9;           /* slate-100 */
+  --text-heading: #ffffff;
+  --text-secondary: #94a3b8;         /* slate-400 */
+  --text-muted: #64748b;             /* slate-500 */
+  --text-body: #cbd5e1;              /* slate-300 */
+  --text-inverse: #0f172a;
+  --accent: #818cf8;                 /* indigo-400 */
+  --accent-strong: #6366f1;          /* indigo-500 */
+  --accent-glow: rgba(129,140,248,0.20);
+  --source-color: #34d399;           /* emerald-400 */
+  --url-color: #38bdf8;              /* sky-400 */
+  --stance-color: #f59e0b;           /* amber-400 */
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.2);
+  --shadow-card-hover: 0 8px 40px rgba(129,140,248,0.12), 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-overview: 0 4px 32px rgba(0,0,0,0.3);
+}
+
+/* ===== 基础重置 ===== */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
 body {
-    font-family: 'Segoe UI','PingFang SC','Inter',system-ui,-apple-system,sans-serif;
-    background: radial-gradient(ellipse at 50% 30%, #1a2332 0%, #0b1120 55%, #060c16 100%);
-    color: var(--text); padding: 40px 20px; min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", "Inter", system-ui, sans-serif;
+  background: var(--bg-page);
+  background-image: var(--bg-gradient);
+  color: var(--text-body);
+  padding: 32px 20px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 1s cubic-bezier(0.22, 1, 0.36, 1), color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+/* ===== 滚动条美化 ===== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--accent-glow); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+* { scrollbar-width: thin; scrollbar-color: var(--accent-glow) transparent; }
+
+/* ===== 布局容器 ===== */
 .wrapper { max-width: 860px; margin: 0 auto; }
-.overview { text-align: center; padding: 40px; margin-bottom: 28px; background: rgba(15,23,42,0.5); backdrop-filter: blur(28px); border-radius: 20px; border: 1px solid var(--border); }
-.overview h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg,#818cf8,#a5b4fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 16px; }
-.overview .meta { color: var(--sec); font-size: 14px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
-.overview .meta span { background: rgba(255,255,255,0.05); padding: 4px 14px; border-radius: 20px; }
-.tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
-.tab { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--sec); padding: 10px 20px; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s; font-family: inherit; }
-.tab:hover { border-color: rgba(129,140,248,0.3); color: var(--text); }
-.tab.active { background: rgba(129,140,248,0.15); border-color: var(--accent); color: var(--text); }
-.tab-count { display: inline-block; background: rgba(255,255,255,0.08); padding: 1px 8px; border-radius: 10px; font-size: 12px; margin-left: 6px; }
-.tab.active .tab-count { background: rgba(129,140,248,0.3); }
+
+/* ===== 主题切换按钮 ===== */
+.theme-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.theme-toggle {
+  background: var(--bg-tab);
+  border: 1px solid var(--border-tab);
+  color: var(--text-secondary);
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-family: inherit;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.theme-toggle:hover {
+  background: var(--bg-tab-hover);
+  border-color: var(--border-card-hover);
+  color: var(--accent);
+  transform: scale(1.05);
+}
+.theme-toggle:active { transform: scale(0.95); }
+
+/* ===== 概览头部 ===== */
+.overview {
+  text-align: center;
+  padding: 40px 32px;
+  margin-bottom: 28px;
+  background: var(--bg-overview);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border-radius: 24px;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-overview);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.overview h1 {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--accent), #a5b4fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 18px;
+}
+.overview .meta {
+  color: var(--text-secondary);
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.overview .meta span {
+  background: var(--bg-accent-subtle);
+  border: 1px solid var(--border-divider);
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+/* ===== 标签导航 ===== */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.tab {
+  background: var(--bg-tab);
+  border: 1px solid var(--border-tab);
+  color: var(--text-secondary);
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  font-family: inherit;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  letter-spacing: -0.01em;
+}
+.tab:hover {
+  border-color: var(--border-card-hover);
+  color: var(--text-heading);
+  background: var(--bg-tab-hover);
+  transform: translateY(-1px);
+}
+.tab.active {
+  background: var(--bg-tab-active);
+  border-color: var(--border-tab-active);
+  color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+.tab-count {
+  display: inline-block;
+  background: var(--border-divider);
+  padding: 1px 9px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-left: 6px;
+  vertical-align: middle;
+  transition: all 0.25s;
+}
+.tab.active .tab-count {
+  background: rgba(129,140,248,0.25);
+  color: var(--accent);
+}
+
+/* ===== 标签面板 ===== */
 .tab-pane { display: none; }
 .tab-pane.active { display: block; }
-.pane-header { display: flex; justify-content: flex-end; align-items: center; margin-bottom: 16px; }
-.kw-meta { display: flex; gap: 12px; font-size: 13px; color: var(--sec); }
-.card { background: rgba(15,23,42,0.5); backdrop-filter: blur(28px); border-radius: 14px; padding: 20px; margin-bottom: 12px; border: 1px solid var(--border); transition: border-color 0.2s; }
-.card:hover { border-color: rgba(129,140,248,0.3); }
-.card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; flex-wrap: wrap; }
-.rank { background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; }
-.source { color: #34d399; }
-.ptime { color: var(--muted); margin-left: auto; }
-h2 { font-size: 17px; font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
-.summary { color: var(--sec); font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
-.url-line { margin-bottom: 8px; }
-.url-line a { color: #38bdf8; font-size: 13px; word-break: break-all; }
-.persp { background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px 12px; margin-top: 8px; font-size: 13px; line-height: 1.6; }
-.stance { display: inline-block; color: #f59e0b; font-weight: 500; margin-bottom: 2px; }
-.sentiment { background: rgba(15,23,42,0.5); backdrop-filter: blur(28px); border-radius: 14px; padding: 20px 24px; margin-top: 12px; border: 1px solid var(--border); }
-.sentiment h3 { font-size: 14px; margin-bottom: 8px; color: var(--accent); }
-.sentiment p { color: var(--sec); font-size: 14px; line-height: 1.7; }
-.footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 40px; padding: 20px; }
-.empty-state { text-align: center; padding: 80px 40px; background: rgba(15,23,42,0.5); backdrop-filter: blur(28px); border-radius: 20px; border: 1px solid var(--border); }
-.empty-state .empty-icon { font-size: 64px; margin-bottom: 20px; }
-.empty-state h2 { font-size: 22px; margin-bottom: 12px; }
-.empty-state p { color: var(--sec); font-size: 15px; line-height: 1.7; }
+
+.pane-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.kw-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.kw-meta span {
+  background: var(--bg-accent-subtle);
+  border: 1px solid var(--border-divider);
+  padding: 4px 14px;
+  border-radius: 16px;
+}
+
+/* ===== 热点卡片 ===== */
+.card {
+  background: var(--bg-card);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-card);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.card:hover {
+  border-color: var(--border-card-hover);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: scale(1.015);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.rank {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: var(--text-inverse);
+  padding: 2px 11px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px var(--accent-glow);
+}
+.source {
+  color: var(--source-color);
+  font-weight: 600;
+}
+.ptime {
+  color: var(--text-muted);
+  margin-left: auto;
+  font-size: 11px;
+}
+
+.card h2 {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+}
+.summary {
+  color: var(--text-body);
+  font-size: 14px;
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+.url-line { margin-bottom: 10px; }
+.url-line a {
+  color: var(--url-color);
+  font-size: 13px;
+  font-weight: 500;
+  word-break: break-all;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.url-line a:hover { opacity: 0.75; text-decoration: underline; }
+
+/* ===== 多方视角 ===== */
+.persp {
+  background: var(--bg-accent-subtle);
+  border: 1px solid var(--border-divider);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.65;
+  transition: all 0.3s;
+}
+.persp:hover {
+  border-color: var(--border-card-hover);
+}
+.stance {
+  display: inline-block;
+  color: var(--stance-color);
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: -0.01em;
+}
+
+/* ===== 舆情总结 ===== */
+.sentiment {
+  background: var(--bg-card);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-top: 20px;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-card);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.sentiment:hover {
+  border-color: var(--border-card-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+.sentiment h3 {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+.sentiment p {
+  color: var(--text-body);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* ===== 页脚 ===== */
+.footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 48px;
+  padding: 24px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== 空状态 ===== */
+.empty-state {
+  text-align: center;
+  padding: 80px 40px;
+  background: var(--bg-card);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border-radius: 24px;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-card);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.empty-state .empty-icon { font-size: 64px; margin-bottom: 20px; display: block; }
+.empty-state h2 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: var(--text-heading);
+}
+.empty-state p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ===== 入场动画 ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.overview { animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.tab-pane.active .card:nth-child(1) { animation: fadeUp 0.5s 0.05s both; }
+.tab-pane.active .card:nth-child(2) { animation: fadeUp 0.5s 0.10s both; }
+.tab-pane.active .card:nth-child(3) { animation: fadeUp 0.5s 0.15s both; }
+.tab-pane.active .card:nth-child(4) { animation: fadeUp 0.5s 0.20s both; }
+.tab-pane.active .card:nth-child(5) { animation: fadeUp 0.5s 0.25s both; }
+.tab-pane.active .card:nth-child(6) { animation: fadeUp 0.5s 0.30s both; }
+.tab-pane.active .card:nth-child(7) { animation: fadeUp 0.5s 0.35s both; }
+.tab-pane.active .card:nth-child(8) { animation: fadeUp 0.5s 0.40s both; }
+.tab-pane.active .card:nth-child(9) { animation: fadeUp 0.5s 0.45s both; }
+.tab-pane.active .card:nth-child(10){ animation: fadeUp 0.5s 0.50s both; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 640px) {
+  body { padding: 16px 12px; }
+  .overview { padding: 28px 20px; border-radius: 20px; }
+  .overview h1 { font-size: 22px; }
+  .overview .meta { font-size: 12px; gap: 8px; }
+  .overview .meta span { padding: 4px 12px; }
+  .card { padding: 16px 18px; border-radius: 14px; }
+  .card h2 { font-size: 15px; }
+  .tab { padding: 8px 14px; font-size: 13px; }
+  .sentiment { padding: 16px 18px; border-radius: 14px; }
+  .empty-state { padding: 48px 24px; }
+}
 </style>
 </head>
 <body>
+
 <div class="wrapper">
-    <div class="overview">
-        <h1>热点聚合报告</h1>
-        <div class="meta">
-            <span>{overview_time}</span>
-            <span>{overview_duration}</span>
-            <span>{overview_count}</span>
-        </div>
+  <!-- 主题切换 -->
+  <div class="theme-bar">
+    <button class="theme-toggle" id="themeToggle" title="切换主题" onclick="toggleTheme()">🌙</button>
+  </div>
+
+  <!-- 概览 -->
+  <div class="overview">
+    <h1>🔥 热点聚合报告</h1>
+    <div class="meta">
+      <span>{overview_time}</span>
+      <span>{overview_duration}</span>
+      <span>{overview_count}</span>
     </div>
-    <div class="tabs" id="tabs">{tabs}</div>
-    <div id="panes">{panes}</div>
-    <div id="empty-state" class="empty-state" style="display:none">
-        <div class="empty-icon">📭</div>
-        <h2>暂无热点数据</h2>
-        <p>{empty_reason}</p>
-    </div>
-    <div class="footer">{footer}</div>
-    <script>
-    var tabs = document.getElementById('tabs');
-    var panes = document.getElementById('panes');
-    var empty = document.getElementById('empty-state');
-    if (tabs.children.length === 0) {
-        tabs.style.display = 'none';
-        panes.style.display = 'none';
-        empty.style.display = 'block';
-    }
-    document.querySelectorAll('.tab').forEach(function(t) {
-        t.addEventListener('click', function() {
-            document.querySelectorAll('.tab').forEach(function(b) { b.classList.remove('active'); });
-            document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
-            t.classList.add('active');
-            document.querySelector('.tab-pane[data-tab="' + t.dataset.tab + '"]').classList.add('active');
-        });
-    });
-    </script>
+  </div>
+
+  <!-- 标签页导航 -->
+  <div class="tabs" id="tabs">{tabs}</div>
+
+  <!-- 内容面板 -->
+  <div id="panes">{panes}</div>
+
+  <!-- 空状态 -->
+  <div id="empty-state" class="empty-state" style="display:none">
+    <span class="empty-icon">📭</span>
+    <h2>暂无热点数据</h2>
+    <p>{empty_reason}</p>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer">{footer}</div>
 </div>
+
 <script>
-document.querySelectorAll('.tab').forEach(t => {
-    t.addEventListener('click', () => {
-        document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
-        t.classList.add('active');
-        document.querySelector('.tab-pane[data-tab="' + t.dataset.tab + '"]').classList.add('active');
-    });
-});
+(function() {
+  // ── 主题管理 (与博客 ThemeProvider 兼容) ──
+  var KEY = 'blog-theme';
+  var html = document.documentElement;
+  var btn = document.getElementById('themeToggle');
+
+  function getTheme() {
+    var stored = localStorage.getItem(KEY);
+    // 默认 dark
+    return stored === null ? 'dark' : (stored === 'light' ? 'light' : 'dark');
+  }
+  function applyTheme(theme) {
+    var isDark = theme === 'dark';
+    html.classList.toggle('dark', isDark);
+    btn.textContent = isDark ? '🌙' : '☀️';
+  }
+  window.toggleTheme = function() {
+    var next = html.classList.contains('dark') ? 'light' : 'dark';
+    localStorage.setItem(KEY, next);
+    applyTheme(next);
+  };
+  applyTheme(getTheme());
+
+  // ── 标签切换 ──
+  var tabsEl = document.getElementById('tabs');
+  var panesEl = document.getElementById('panes');
+  var emptyEl = document.getElementById('empty-state');
+
+  if (!tabsEl || tabsEl.children.length === 0) {
+    if (tabsEl) tabsEl.style.display = 'none';
+    if (panesEl) panesEl.style.display = 'none';
+    if (emptyEl) emptyEl.style.display = 'block';
+  }
+
+  var tabButtons = document.querySelectorAll('.tab');
+  var tabPanes  = document.querySelectorAll('.tab-pane');
+
+  function activateTab(tabBtn) {
+    tabButtons.forEach(function(b) { b.classList.remove('active'); });
+    tabPanes.forEach(function(p) { p.classList.remove('active'); });
+    tabBtn.classList.add('active');
+    var pane = document.querySelector('.tab-pane[data-tab="' + tabBtn.dataset.tab + '"]');
+    if (pane) pane.classList.add('active');
+  }
+
+  tabButtons.forEach(function(t) {
+    t.addEventListener('click', function() { activateTab(t); });
+  });
+})();
 </script>
 </body>
 </html>

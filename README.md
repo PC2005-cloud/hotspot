@@ -34,9 +34,15 @@ AI 每天自动刷热点、总结观点、生成报告。
 # 安装依赖
 uv sync
 
+# 下载 Playwright 浏览器内核（约 200MB）
+uv run playwright install chromium
+
 # 运行
 uv run python -m hotspot
 ```
+
+> 浏览器内核是 Playwright 自动化必需的组件，用于操控浏览器模拟用户操作。
+> `browsers/` 目录不在仓库中，首次使用需运行 `playwright install chromium` 下载。
 
 自动登录 DeepSeek，Session 持久化，后续运行无需重复登录。
 

@@ -7,6 +7,7 @@ Hotspot — 热点搜索器
 import logging
 import sys
 import os
+import shutil
 import time
 from datetime import datetime
 
@@ -113,6 +114,11 @@ def main():
             report_data = json.load(f)
         html_path = report_path.replace(".json", ".html")
         generate_html_report(report_data, html_path)
+
+        # 有有效热点才同步到 results/ 根目录，避免覆盖上次有效数据
+        if report_data.get("total_hotspots", 0) > 0:
+            shutil.copy2(report_path, os.path.join(RESULTS_DIR, "report.json"))
+            shutil.copy2(html_path, os.path.join(RESULTS_DIR, "index.html"))
 
 
 if __name__ == "__main__":

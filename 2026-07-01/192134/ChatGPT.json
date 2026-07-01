@@ -1,0 +1,101 @@
+{
+  "keyword": "ChatGPT",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "OpenAI成立专项小组调查Codex额度异常消耗问题",
+      "summary": "OpenAI组建应急专项攻坚小组，调查大量付费用户反馈的Codex编程工具额度在几乎没有使用的情况下异常快速下降的问题，部分用户额度一天内从96%骤降至0%。",
+      "source": "36氪",
+      "url": "https://36kr.com/newsflashes/3874414788531205",
+      "published_time": "2026-06-30 07:28",
+      "perspectives": [
+        {
+          "stance": "官方回应与处理进展",
+          "summary": "Codex产品负责人Tibo Sottiaux承认团队已紧急开设作战室审查系统日志，并于6月27日实施了首次全网用户额度重置，但未能解决问题，已启动第二次重置。-6"
+        },
+        {
+          "stance": "用户反馈与行业观察",
+          "summary": "大量开发者在X平台反馈额度消耗异常，有用户称以往一周的额度现在两天耗尽。业内指出，随着AI算力承压，各大AI企业都在逐步下调用户可用额度，Anthropic曾于3月在高峰时段下调Claude额度。-13"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI发布GPT-5.6系列模型，仅向少数合作伙伴开放",
+      "summary": "当地时间6月26日，OpenAI正式发布GPT.6系列模型，包括旗舰版Sol、均衡版Terra和轻量版Luna。应美国政府要求，该模型目前仅向少数「可信合作伙伴」开放预览。",
+      "source": "每日经济新闻",
+      "url": "http://www.nbd.com.cn/articles/2026-06-29/4439922.html",
+      "published_time": "2026-06-29 07:50",
+      "perspectives": [
+        {
+          "stance": "官方发布与产品定位",
+          "summary": "Sol面向复杂推理和智能体场景，在Terminal-Bench 2.1智能体编程基准测试中超过Anthropic Claude Mythos 5，定价为每百万输入Token 5美元、输出Token 30美元。-14"
+        },
+        {
+          "stance": "监管与安全视角",
+          "summary": "美国政府以网络安全考量为由要求OpenAI限制GPT-5.6的开放范围，建立前沿AI模型安全评估机制。OpenAI表示希望建立可重复执行的监管流程，而非长期逐案审批。-14-"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "GPT-5.5 Instant向全球免费用户全面开放",
+      "summary": "6月25日，OpenAI宣布GPT.5 Instant已向付费用户开放，并于26日全面推送至所有免费用户，取代GPT.3 Instant成为ChatGPT全平台默认模型。",
+      "source": "太平洋电脑网",
+      "url": "https://news.pconline.com.cn/2177/21777183.html",
+      "published_time": "2026-06-25 16:56",
+      "perspectives": [
+        {
+          "stance": "产品性能升级",
+          "summary": "新模型在医疗、法律、金融等领域的幻觉率较上一代下降52.5%，AIME 2025数学竞赛准确率从65.4%跃升至81.2%，输出更直接简洁，字数减少约30%。-11"
+        },
+        {
+          "stance": "用户体验优化",
+          "summary": "内建智慧路由机制，简单任务保持低延迟响应，复杂任务自动切换至Thinking深度推理模式。免费用户上下文窗口为16K，付费用户最高可达128K。-11"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "ChatGPT Atlas等6款AI浏览器曝出安全漏洞",
+      "summary": "安全公司LayerX披露名为「BioShocking」的漏洞，可诱导ChatGPT Atlas、Perplexity Comet等6款AI浏览器产品泄露用户已保存密码、会话Cookie、私有Token等敏感数据。--",
+      "source": "微博（IT之家）",
+      "url": "https://weibo.com/2/detail/5315815477878507",
+      "published_time": "2026-07-01 10:23",
+      "perspectives": [
+        {
+          "stance": "漏洞披露与技术分析",
+          "summary": "攻击者通过制作隐藏提示信息的恶意网页，诱导AI浏览器进入「寻找秘密字符串」的游戏，从而绕过安全约束泄露数据。该漏洞由LayerX于6月30日披露。-"
+        },
+        {
+          "stance": "厂商修复进展",
+          "summary": "LayerX澄清称该漏洞系恶意游戏测试，OpenAI已修复ChatGPT Atlas中的相关问题；Perplexity关闭报告但未采取处置；Anthropic尝试修复但补丁未能通过验证。-"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "ChatGPT全球用户持续增长，非英语用户占比过半",
+      "summary": "OpenAI发布2026年第一季度数据分析报告显示，ChatGPT全球采用率持续深化，非英语用户已占活跃用户总数一半以上，35岁以上用户消息占比进一步提高。",
+      "source": "站长之家",
+      "url": "https://www.chinaz.com/ainews/29310.shtml",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "用户增长与市场趋势",
+          "summary": "西班牙语、葡萄牙语和阿拉伯语位居非英语语种前三，非洲和亚洲是周活跃用户增速最快的地区。注册六个月后的用户每日消息量比初期增加50%。-10"
+        },
+        {
+          "stance": "应用场景拓展",
+          "summary": "视觉设计成为本季度增长最快的工作类型，用户正通过消费级账户在日常工作中形成更多可重复使用的智能化工作流程。-10"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周ChatGPT相关舆情集中于产品更新与争议两大主线：GPT-5.5免费开放和GPT-5.6限量发布引发关注，Codex额度异常消耗和AI浏览器安全漏洞引发用户担忧与讨论，整体情绪以技术期待与安全质疑并存。-",
+  "honesty_note": "搜索结果中6月上旬的多起诉讼事件（加拿大女子起诉OpenAI致女儿自杀、佛罗里达州检察长诉讼等）因超出近7天时间范围未列入热点列表，但仍是当前公众关注的相关背景话题。-",
+  "start_time": "2026-07-01 19:22",
+  "end_time": "2026-07-01 19:23",
+  "elapsed_seconds": 39,
+  "retry_count": 0
+}

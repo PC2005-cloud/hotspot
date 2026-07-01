@@ -1,0 +1,101 @@
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【Claude Code被曝植入「木马」识别中国用户，Anthropic承认并承诺回滚】",
+      "summary": "开发者逆向发现Claude Code自2.1.91版本起通过隐写术检测中国时区和代理，将信息隐藏在系统提示词中回传。Anthropic承认是反蒸馏实验，承诺下一版删除16。",
+      "source": "36氪、网易智能",
+      "url": "https://36kr.com/p/3876746033934341",
+      "published_time": "2026-07-01 15:33",
+      "perspectives": [
+        {
+          "stance": "【开发者社区谴责】",
+          "summary": "将Claude Code定性为「间谍软件」，批评Anthropic在用户不知情的情况下植入隐形代码并采用XOR混淆，手段如同病毒-14-16。"
+        },
+        {
+          "stance": "【Anthropic官方回应】",
+          "summary": "团队成员称此为3月启动的反转售、反蒸馏实验，相关PR已合并，将在下一版本回滚删除-16。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【Claude Code官宣下一版大升级：子智能体默认后台运行】",
+      "summary": "创造者Boris Cherny宣布下一版Claude Code子智能体默认在后台运行，用户聊天时AI可并行完成代码重构、测试、提PR等任务。",
+      "source": "36氪、新智元",
+      "url": "https://36kr.com/p/3875342287876097",
+      "published_time": "2026-06-30 03:18",
+      "perspectives": [
+        {
+          "stance": "【行业观察】",
+          "summary": "Claude Code正从「问答对话框」进化为「多任务工作流引擎」，Boris Cherny已八个月未手写代码，同时管理数千个AI智能体-1。"
+        },
+        {
+          "stance": "【开发者反响】",
+          "summary": "网友表示该功能解决了等待智能体处理时的无聊问题，可在后台并行推进多任务-1。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "【Meta内部限用Claude Code和Codex，担心模型蒸馏】",
+      "summary": "Meta要求应用AI工程部门不得随意使用Claude Code和Codex，担心外部模型输出渗入自研编程助手MetaCode的训练数据和评测体系。",
+      "source": "36氪、网易",
+      "url": "https://36kr.com/p/3875518006849537",
+      "published_time": "2026-06-30 13:05",
+      "perspectives": [
+        {
+          "stance": "【Meta官方立场】",
+          "summary": "公司有明确政策规范AI工具使用，限制是为了给训练数据做隔离，防止自家模型「照着对手的卷子抄答案」-4。"
+        },
+        {
+          "stance": "【行业解读】",
+          "summary": "Meta是Claude Code全球最大客户之一，年AI账单达数十亿美元，限制使用反映了巨头对「模型蒸馏」的深层焦虑-4。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "【Claude Code二进制文件暗示Fable 5即将回归】",
+      "summary": "6月24日，有人在Claude Code v2.1.190中发现「您本周的Fable 5使用额度已用完」等字符串，暗示被禁模型可能重新整合进订阅套餐。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3868399269483785",
+      "published_time": "2026-06-25 19:30",
+      "perspectives": [
+        {
+          "stance": "【技术社区信号解读】",
+          "summary": "字符串变更显示Fable 5不会作为单独付费项目，而是整合进Pro、Max等套餐按周重置额度-2。"
+        },
+        {
+          "stance": "【地缘政治观察】",
+          "summary": "Anthropic联合创始人Dario Amodei被撤下谈判桌，由Tom Brown接替与美商务部沟通，谈判明显顺畅-2。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "【Claude Code负责人访谈：代码瓶颈消失，验证成新挑战】",
+      "summary": "Claude Code负责人Fiona Fung称Anthropic工程师人均季度代码交付量达2021年的8倍，瓶颈从「写代码」转向「验证代码是否正确」10。",
+      "source": "36氪",
+      "url": "https://www.36kr.com/p/3872651588146434",
+      "published_time": "2026-06-28 16:41",
+      "perspectives": [
+        {
+          "stance": "【负责人观点】",
+          "summary": "设计师和产品经理也在提交代码，「写代码」变成跨角色基础能力；瓶颈转移至验证、审查和质量保障-9。"
+        },
+        {
+          "stance": "【行业数据】",
+          "summary": "全球新产生代码中约20%-42%由AI生成或辅助完成，但AI引入的代码质量问题同样显著-10。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Claude Code舆论呈现「争议与升级并存」态势。【木马门】引爆信任危机，开发者社区强烈谴责Anthropic隐秘检测中国用户-14；同时官方宣布下一代后台智能体升级-1、Fable 5回归信号-2等消息持续推高关注度。Meta限用-4、安全漏洞CVE-2026-46406-进一步凸显企业级AI治理挑战。整体情绪从技术兴奋转向对隐私、安全与成本的审慎反思。",
+  "honesty_note": "搜索结果覆盖了2026年6月24日至7月1日期间Claude Code的主要热点，信息量充足。部分来源（如DevelopersIO日文站、安全数据库）未提供可直接填入的URL，已按规则设为null。V2.1.194V2.1.196版本更新细节来自日文技术博客-，CVE漏洞信息来自安全数据库-。所有填入的URL均来自搜索结果原始片段，未自行拼接或杜撰。",
+  "start_time": "2026-07-01 19:28",
+  "end_time": "2026-07-01 19:29",
+  "elapsed_seconds": 46,
+  "retry_count": 0
+}

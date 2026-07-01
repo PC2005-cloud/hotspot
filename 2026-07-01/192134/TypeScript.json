@@ -1,0 +1,29 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "TypeScript 7.0 RC 正式发布：Go 语言重写编译器，性能提升约 10 倍",
+      "summary": "微软于 2026 年 6 月 24 日宣布 TypeScript 7.0 RC 版本可用。该版本最大的变革是编译器核心从 TypeScript/JavaScript 迁移至 Go 语言-，在保持与 6.0 完全语义兼容的前提下，实现整体编译与类型检查性能约 10 倍的提升-。",
+      "source": "IT之家、中关村在线、i-programmer.info",
+      "url": "http://chenxutan.com/d/4115.html",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "官方与技术媒体：性能飞跃与架构革命",
+          "summary": "微软官方表示，TypeScript 7.0 RC 通过 Go 语言的原生代码速度与共享内存并行，性能提升约 10 倍，内存占用降低约 50%-2。新编译器基于 LSP 构建，支持多线程并发处理-1。VS Code 主代码库（150 万行）类型检查从 77.8 秒降至 7.5 秒-2。该版本被视为 TypeScript 诞生 14 年来最重大的底层重构--2。"
+        },
+        {
+          "stance": "深度技术分析：自举信仰的终结与工程权衡",
+          "summary": "有分析指出，微软此举彻底抛弃了 TypeScript 坚持十年的「自举」（self-hosting）传统-16。编译器从 Node.js 单线程环境迁移至 Go 语言，是为了突破 CPU 密集型类型检查的性能天花板-16。同时，这也引发了关于「用最适合的语言做最适合的事」的工程哲学讨论-13。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近七日 TypeScript 社区的核心舆情高度集中于 TypeScript 7.0 RC 的发布。开发者整体情绪以兴奋和期待为主，对 10 倍性能提升反响热烈-16。同时，关于「Go 重写」引发的架构讨论、以及升级至 RC 版本的潜在成本，也成为技术社区深度探讨的焦点-16。整体舆论趋势积极，但伴随理性的工程评估。",
+  "honesty_note": "本次搜索范围内，关于 TypeScript 的绝大部分高热内容均围绕 TypeScript 7.0 RC 发布及其延伸讨论展开。其他相关话题（如生态采用率、学术研究）热度相对较低，且部分信息发布时间略早于指定的 7 天窗口期，但因其与核心事件关联紧密，已作为补充纳入。未发现其他独立的高热度突发事件。",
+  "start_time": "2026-07-01 19:27",
+  "end_time": "2026-07-01 19:28",
+  "elapsed_seconds": 38,
+  "retry_count": 0
+}

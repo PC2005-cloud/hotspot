@@ -1,0 +1,83 @@
+{
+  "keyword": "Next.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Next.js 16.3 预览版发布，引入「Instant Navigations」实现 SPA 级瞬时导航",
+      "summary": "6月25日，Vercel 发布 Next.js 16.3 预览版，核心亮点是「Instant Navigations」功能套件，通过 Stream、Cache 或 Block 三种模式，在保留服务端优势的同时实现客户端 SPA 般的瞬时页面切换体验。",
+      "source": "Next.js 官方博客",
+      "url": "https://nextjs.org/blog/next-16-3-instant-navigations",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "16.3 Preview 已可通过 npm@preview 获取，Instant Navigations 通过「Stream with Suspense」「Cache with 'use cache'」「Block」三种方式让导航瞬时完成，同时支持 Partial Prefetching 等配套机制。-9"
+        },
+        {
+          "stance": "开发者社区反馈",
+          "summary": "社区普遍认为该功能回应了长期存在的「Server Components 让应用响应变慢」的批评，将服务端渲染与客户端体验推向新的平衡点。-9-"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Next.js 16.3 深度适配 AI 智能体，推出「Agent Native」工具链",
+      "summary": "6月26日，Next.js 官方发布 16.3 AI 改进博文，推出 AGENTS.md 自动维护、First-party Skills、Agent Browser 带 React 自省能力、可操作错误提示等新工具，进一步向「Agent-first」开发范式演进。",
+      "source": "Next.js 官方博客",
+      "url": "https://nextjs.org/blog/next-16-3-ai-improvements",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "官方设计理念",
+          "summary": "Next.js 正逐步转向以 AI 智能体为主要开发者的设计方向，16.3 在 16.2 的基础上进一步扩展了智能体工具链，包括版本匹配文档、多步骤工作流支持、React 状态自省等。-6"
+        },
+        {
+          "stance": "中文技术社区解读",
+          "summary": "掘金等平台将此举解读为 Next.js 从 16.3 开始「全面拥抱 Agent Native」，认为这是框架演进的重要方向标。-"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Turbopack 在 Next.js 16.3 中实现内存占用降低 90%",
+      "summary": "6月29日，Next.js 官方披露 Turbopack 在 16.3 中的最新优化，开发模式内存占用最高降低约 90%（如 vercel.com 仪表盘从 21.5GB 降至 2GB），并引入持久化文件系统缓存加速构建。",
+      "source": "Next.js 官方博客",
+      "url": "https://nextjs.org/blog/next-16-3-turbopack",
+      "published_time": "2026-06-29",
+      "perspectives": [
+        {
+          "stance": "官方技术解读",
+          "summary": "内存优化通过压缩数据结构、避免不必要的数据留存以及引入内存缓存驱逐机制实现，同时 16.3 默认开启文件系统缓存与内存驱逐功能。-14"
+        },
+        {
+          "stance": "开发者视角",
+          "summary": "开发环境内存占用大幅降低对大型项目开发者是重大利好，尤其是同时运行编码 Agent、IDE、类型检查等工具时，系统资源压力将显著缓解。-14"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Next.js 高危 SSRF 漏洞 CVE-2026-44578 影响多个版本",
+      "summary": "Check Point 于6月7日发布安全通告，Next.js 存在服务端请求伪造漏洞（CVE44578，CVSS 8.6），影响 13.4.13 至 15.5.16 及 16.0.0 至 16.2.5 版本，攻击者可利用该漏洞访问内部服务或云元数据。",
+      "source": "Check Point 安全通告",
+      "url": "https://advisories.checkpoint.com/defense/advisories/public/2026/cpai-2026-5610.html",
+      "published_time": "2026-06-07",
+      "perspectives": [
+        {
+          "stance": "安全机构预警",
+          "summary": "该漏洞源于 WebSocket Upgrade 请求处理路径未应用与普通 HTTP 请求一致的安全检查，影响自托管 Next.js 应用。-4-"
+        },
+        {
+          "stance": "修复建议",
+          "summary": "官方已在 15.5.16 和 16.2.5 版本中修复该漏洞，自托管用户应尽快升级；Vercel 托管平台不受影响。-4-"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天内 Next.js 社区热度集中在 16.3 预览版的三项核心更新上：Instant Navigations 解决服务端渲染响应慢的长期痛点、AI Agent 工具链持续深化、Turbopack 内存占用大幅优化。开发者整体情绪积极，尤其对内存优化和导航体验改善反响热烈；同时 CVE-2026-44578 安全漏洞的修复提醒也受到自托管用户的广泛关注。",
+  "honesty_note": "部分热点（如 CVE-2026-44578 和 Next.js 16.2）的发布时间略早于用户指定的 06月24日-07月01日窗口，但因与近期 16.3 预览版发布直接关联且仍在社区持续讨论中，已纳入整理。搜索中未发现 06月24日-07月01日期间有其他独立的重大 Next.js 突发事件。",
+  "start_time": "2026-07-01 19:38",
+  "end_time": "2026-07-01 19:39",
+  "elapsed_seconds": 41,
+  "retry_count": 0
+}

@@ -1,0 +1,65 @@
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Spring Boot 3.5.16 发布，成为 3.5.x 系列最后一个开源支持版本",
+      "summary": "Spring 官方于 6 月 25 日发布 Spring Boot 3.5.16，包含 3 项依赖升级。官方明确这是 3.5.x 系列最后一个开源支持版本，敦促用户尽快升级至 4.0.x 或 4.1.x。",
+      "source": "spring.io",
+      "url": "https://spring.io/blog/2026/06/25/spring-boot-3-5-16-available-now",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "【官方公告】",
+          "summary": "Spring Boot 3.5.16 是 3.5.x 系列的最后一个 OSS 版本，建议用户尽快升级到 4.0.x 或 4.1.x 以继续获得开源支持-17。"
+        },
+        {
+          "stance": "【社区解读】",
+          "summary": "3.5.16 的发布标志着 Spring Boot 3.5 生命周期的终结（EOL 为 2026 年 6 月 30 日），Java/JVM 生态本周密集更新还包括 Spring AI 2.0 自纠错结构化输出等--4。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Spring Boot 4.1 新特性：gRPC 自动配置、SSRF 防护与 Kotlin 2.3 支持",
+      "summary": "Broadcom 于 6 月 10 日发布 Spring Boot 4.1，提供 gRPC 自动配置、HTTP 客户端 SSRF 风险缓解（InetAddressFilter）、Kotlin 升级至 2.3，并带来延迟数据源连接、@Async 异步上下文传播等改进--。",
+      "source": "InfoQ 中文站",
+      "url": "https://www.infoq.cn/article/Jpi5XBmoO8smLYSyaD9t",
+      "published_time": "2026-06-19",
+      "perspectives": [
+        {
+          "stance": "【技术媒体解读】",
+          "summary": "Spring Boot 4.1 是 4.x 系列的首个功能更新版本，核心演进是面向云原生微服务架构成熟期的系统性能力收编与边界重构-。"
+        },
+        {
+          "stance": "【开发者社区】",
+          "summary": "gRPC 自动配置和 SSRF 防护是最大亮点，大幅降低了微服务通信和安全配置的复杂度，值得花时间了解升级-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Cursor 600 亿美元收购案引发讨论：通用 AI Agent 与 Spring Boot 工程实践的适配性",
+      "summary": "6 月 17 日 Cursor 在 Compile 大会上宣布 1.5 万亿参数新模型和 Origin 平台，SpaceX 随后以 600 亿美元全股票交易收购 Cursor。开发者社区热议通用 AI Agent 是否能真正理解 Spring Boot 项目的工程上下文。",
+      "source": "搜狐",
+      "url": "https://www.sohu.com/a/1040815447_120959233",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "【行业观察】",
+          "summary": "Cursor 的通用 Agent 难以理解 Spring Boot 的多模块依赖、Spring Security 配置、事务传播等工程「潜规则」，生成的代码常使用废弃 API（如 javax 包、antMatchers）-27。"
+        },
+        {
+          "stance": "【开发者社区】",
+          "summary": "通用 AI 活在「理想世界」，Java 工程活在「现实世界」。相比通用 Agent，面向 Java 工程的专用 AI 工具（如飞算 JavaAI 的智能引导）在代码可追溯性和工程规范遵守上更具优势-27。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期 Spring Boot 生态热度集中在版本生命周期管理上——3.5.16 成为 3.5.x 终版，官方敦促用户向 4.x 迁移。同时 4.1 的新特性（gRPC、SSRF 防护）获得开发者积极关注，但多个 CVE 漏洞的集中披露也引发了安全焦虑。社区对 AI 辅助编程工具在 Spring Boot 工程中的实际效果存在争议。",
+  "honesty_note": "搜索结果中直接涉及 6 月 24 日至 7 月 1 日期间的新鲜事件相对有限，大部分热点（如 Spring Boot 4.1 发布、CVE 披露）发生在 6 月中旬。6 月 24 日之后的主要动态是 Spring Boot 3.5.16 发布（6 月 25 日）和 This Week in Spring 博客（6 月 30 日）。建议关注 Spring 官方博客（spring.io/blog）和 InfoQ 以获取持续更新。",
+  "start_time": "2026-07-01 19:37",
+  "end_time": "2026-07-01 19:38",
+  "elapsed_seconds": 45,
+  "retry_count": 0
+}

@@ -1,0 +1,479 @@
+[19:21:34] ==================================================
+[19:21:34]   🔥 Hotspot — 热点搜索器
+[19:21:34]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\run.log
+[19:21:34] ==================================================
+[19:21:34]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[19:21:34] 发现已保存的 session: D:\Projects\project\Blog\Hotspot\session\storage_state.json
+[19:21:44] 页面URL: https://chat.deepseek.com/
+[19:21:44] 页面标题: DeepSeek - 探索未至之境
+[19:21:44] 已有有效 session，跳过登录
+[19:21:45] [深度思考] 已开启
+[19:21:45] [智能搜索] 已经是开启状态
+[19:21:45] 
+共 20 个关键词，开始搜索...
+[19:21:45] 
+==================================================
+[19:21:45]   关键词: DeepSeek
+[19:21:45] ==================================================
+[19:22:26] 回复完成 (40.6秒, 3530字)
+[19:22:26]   摘要清理: #1 移除标记
+[19:22:26]   摘要清理: #2 移除标记
+[19:22:26]   摘要清理: #3 移除标记
+[19:22:26]   摘要清理: #5 移除标记
+[19:22:26] 验证 URL 可用性...
+[19:22:27] HTTP Request: HEAD https://m.thepaper.cn/newsDetail_forward_33454877 "HTTP/1.1 200 OK"
+[19:22:37]   [不可达] 【DeepSeek V4正式版7月中旬上线】同步推出峰谷定价，高峰时段API价格 -> https://www.zaobao.com/news/china/story20260630-9289389 (超时)
+[19:22:38] HTTP Request: HEAD https://36kr.com/p/3876552891134214 "HTTP/1.1 200 OK"
+[19:22:40] HTTP Request: HEAD https://www.zaobao.com.sg/news/china/story20260628-9276700 "HTTP/1.1 302 Moved Temporarily"
+[19:22:41] HTTP Request: HEAD https://www.zaobao.com/news/china/story20260628-9276700 "HTTP/1.1 200 OK"
+[19:22:42] HTTP Request: HEAD https://www.iheima.com/article-398827.html "HTTP/1.1 200 OK"
+[19:22:42] URL 验证: 5 个, 4 可用, 0 个404, 1 个不可达
+[19:22:42]   过滤: 2 条热点因链接不可达已移除
+[19:22:42] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\DeepSeek.json
+[19:22:42]   [完成] DeepSeek (4 条热点, 41秒)
+[19:22:48] 
+==================================================
+[19:22:48]   关键词: ChatGPT
+[19:22:48] ==================================================
+[19:23:27] 回复完成 (38.5秒, 3211字)
+[19:23:27]   摘要清理: #1 移除标记
+[19:23:27]   摘要清理: #2 移除标记
+[19:23:27]   摘要清理: #3 移除标记
+[19:23:27]   摘要清理: #6 移除标记
+[19:23:27] 验证 URL 可用性...
+[19:23:28] HTTP Request: HEAD https://36kr.com/newsflashes/3874414788531205 "HTTP/1.1 200 OK"
+[19:23:28] HTTP Request: HEAD http://www.nbd.com.cn/articles/2026-06-29/4439922.html "HTTP/1.1 200 OK"
+[19:23:29] HTTP Request: HEAD https://news.pconline.com.cn/2177/21777183.html "HTTP/1.1 200 OK"
+[19:23:30] HTTP Request: HEAD https://weibo.com/2/detail/5315815477878507 "HTTP/1.1 302 Found"
+[19:23:30] HTTP Request: HEAD https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2F2%2Fdetail%2F5315815477878507&domain=weibo.com&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F148.0.0.0%20Safari%2F537.36&_rand=1782905011288&sudaref= "HTTP/1.1 200 OK"
+[19:23:32] HTTP Request: HEAD https://www.chinaz.com/ainews/29310.shtml "HTTP/1.1 200 OK"
+[19:23:32] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[19:23:32]   过滤: 1 条热点因链接不可达已移除
+[19:23:32] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\ChatGPT.json
+[19:23:32]   [完成] ChatGPT (5 条热点, 39秒)
+[19:23:36] 
+==================================================
+[19:23:36]   关键词: OpenAI
+[19:23:36] ==================================================
+[19:24:27] 回复完成 (50.6秒, 4412字)
+[19:24:27]   摘要清理: #1 移除标记
+[19:24:27]   摘要清理: #2 移除标记
+[19:24:27]   摘要清理: #3 移除标记
+[19:24:27]   摘要清理: #4 移除标记
+[19:24:27]   摘要清理: #5 移除标记
+[19:24:27]   摘要清理: #6 移除标记
+[19:24:27]   摘要清理: #7 移除标记
+[19:24:27]   摘要清理: #8 移除标记
+[19:24:27] 验证 URL 可用性...
+[19:24:28] HTTP Request: HEAD https://news.ifeng.com/c/8uGfYoYCvyn?ch=ttsearch "HTTP/1.1 200 OK"
+[19:24:29] HTTP Request: HEAD https://m.techweb.com.cn/marticle/2026-06-27/2976928.shtml "HTTP/1.1 200 OK"
+[19:24:30] HTTP Request: HEAD https://tech.ifeng.com/c/8uO4L0okDcy?ch=ttsearch "HTTP/1.1 200 OK"
+[19:24:31] HTTP Request: HEAD https://www.ithome.com/0/970/200.htm "HTTP/1.1 200 OK"
+[19:24:32] HTTP Request: HEAD http://www.iccsz.com/site/cn/News/2026/06/25/20260625014543732440.htm "HTTP/1.1 200 OK"
+[19:24:33] HTTP Request: HEAD https://www.163.com/dy/article/L07H4J3M051180F7.html "HTTP/1.1 200 OK"
+[19:24:33] HTTP Request: HEAD http://www.iheima.com/article-399110.html "HTTP/1.1 200 OK"
+[19:24:35] HTTP Request: HEAD https://m.pedaily.cn/news/565635 "HTTP/1.1 200 OK"
+[19:24:35] URL 验证: 8 个, 8 可用, 0 个404, 0 个不可达
+[19:24:35] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\OpenAI.json
+[19:24:35]   [完成] OpenAI (8 条热点, 51秒)
+[19:24:39] 
+==================================================
+[19:24:39]   关键词: Docker
+[19:24:39] ==================================================
+[19:25:18] 回复完成 (38.4秒, 3289字)
+[19:25:18]   摘要清理: #1 移除标记
+[19:25:18]   摘要清理: #2 移除标记
+[19:25:18]   摘要清理: #3 移除标记
+[19:25:18]   摘要清理: #4 移除标记
+[19:25:18]   摘要清理: #6 移除标记
+[19:25:18] 验证 URL 可用性...
+[19:25:21] HTTP Request: HEAD https://www.zerodayinitiative.com/advisories/ZDI-26-363/ "HTTP/1.1 200 OK"
+[19:25:31]   [不可达] SUSE发布Docker重要安全更新，修复四个高危CVE漏洞 -> https://linuxsecurity.com/advisories/suse/suse-2026-2692-1-docker (超时)
+[19:25:33] HTTP Request: HEAD https://www.pro-linux.de/sicherheit/2/105448/sicherheit-zwei-probleme-in-docker-buildx.html "HTTP/1.1 200 OK"
+[19:25:33] HTTP Request: HEAD https://post.smzdm.com/p/a0325qrz/ "HTTP/1.1 202 Accepted"
+[19:25:35] HTTP Request: HEAD https://www.percona.com/blog/postgresql-community-images-operator/ "HTTP/1.1 200 OK"
+[19:25:35] URL 验证: 5 个, 4 可用, 0 个404, 1 个不可达
+[19:25:35]   过滤: 2 条热点因链接不可达已移除
+[19:25:35] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Docker.json
+[19:25:35]   [完成] Docker (4 条热点, 39秒)
+[19:25:39] 
+==================================================
+[19:25:39]   关键词: Rust
+[19:25:39] ==================================================
+[19:26:20] 回复完成 (40.1秒, 3052字)
+[19:26:20]   引用链接填补: #1 [7] https://blog.rust-lang.org/2026/06/30/Rust-1.96.1/?utm_source=pixelste
+[19:26:20]   摘要清理: #1 移除标记
+[19:26:20]   引用链接填补: #2 [6] https://www.boerse-express.com/news/articles/eu-paket-bruessel-investi
+[19:26:20]   摘要清理: #2 移除标记
+[19:26:20]   引用链接填补: #3 [1] https://www.zpedu.com/it/rjyf/39401.html
+[19:26:20]   摘要清理: #3 移除标记
+[19:26:20]   引用链接填补: #4 [26] https://rustcc.cn/article?id=02e548c1-d0a8-445b-9376-671136ffa6f8
+[19:26:20]   摘要清理: #4 移除标记
+[19:26:20]   引用链接填补: #5 [25] https://xhh.club/e/STx9kqNXWvxGb315eB11/
+[19:26:20]   摘要清理: #5 移除标记
+[19:26:20]   引用链接填补: #6 [6] https://www.boerse-express.com/news/articles/eu-paket-bruessel-investi
+[19:26:20]   摘要清理: #6 移除标记
+[19:26:20]   去重: 1 条热点因 URL 重复已移除
+[19:26:20] 验证 URL 可用性...
+[19:26:21] HTTP Request: HEAD https://blog.rust-lang.org/2026/06/30/Rust-1.96.1/?utm_source=pixelstech.net "HTTP/1.1 200 OK"
+[19:26:24] HTTP Request: HEAD https://www.boerse-express.com/news/articles/eu-paket-bruessel-investiert-2-milliarden-gegen-us-softwareabhaengigkeit-922732 "HTTP/1.1 200 OK"
+[19:26:25] HTTP Request: HEAD https://www.zpedu.com/it/rjyf/39401.html "HTTP/1.1 200 OK"
+[19:26:26] HTTP Request: HEAD https://rustcc.cn/article?id=02e548c1-d0a8-445b-9376-671136ffa6f8 "HTTP/1.1 404 Not Found"
+[19:26:26]   [404] Cloudflare 挖出 hyper 库隐蔽漏洞：200 OK 响应也会截断大 -> https://rustcc.cn/article?id=02e548c1-d0a8-445b-9376-671136ffa6f8
+[19:26:27] HTTP Request: HEAD https://xhh.club/e/STx9kqNXWvxGb315eB11/ "HTTP/1.1 200 OK"
+[19:26:27] URL 验证: 5 个, 4 可用, 1 个404, 0 个不可达
+[19:26:27]   过滤: 1 条热点因链接不可达已移除
+[19:26:27] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Rust.json
+[19:26:27]   [完成] Rust (4 条热点, 41秒)
+[19:26:31] 
+==================================================
+[19:26:31]   关键词: Kubernetes
+[19:26:31] ==================================================
+[19:27:13] 回复完成 (40.9秒, 3216字)
+[19:27:13]   引用链接填补: #1 [1] https://cloudnativenow.com/category/kubecon-cloudnativecon-europe-2026
+[19:27:13]   摘要清理: #1 移除标记
+[19:27:13]   引用链接填补: #2 [12] https://www.infoq.cn/article/OKTycayNK8hwTMv4ApSg
+[19:27:13]   摘要清理: #2 移除标记
+[19:27:13]   引用链接填补: #3 [21] https://dev.to/leobaniak/kubernetes-will-let-you-write-patches-with-ai
+[19:27:13]   摘要清理: #3 移除标记
+[19:27:13]   引用链接填补: #4 [7] https://www.cncf.io/blog/2026/06/30/kepler-re-architected-improved-pow
+[19:27:13]   摘要清理: #4 移除标记
+[19:27:13]   摘要清理: #5 移除标记
+[19:27:13]   引用链接填补: #6 [3] https://finance.sina.com.cn/stock/aigc/zl/2026-06-24/doc-inienicy16281
+[19:27:13]   摘要清理: #6 移除标记
+[19:27:13] 验证 URL 可用性...
+[19:27:15] HTTP Request: HEAD https://cloudnativenow.com/category/kubecon-cloudnativecon-europe-2026/#masthead "HTTP/1.1 200 OK"
+[19:27:16] HTTP Request: HEAD https://www.infoq.cn/article/OKTycayNK8hwTMv4ApSg "HTTP/1.1 200 OK"
+[19:27:19] HTTP Request: HEAD https://dev.to/leobaniak/kubernetes-will-let-you-write-patches-with-ai-it-will-not-let-you-hide-it-1p50#comments "HTTP/1.1 200 OK"
+[19:27:22] HTTP Request: HEAD https://www.cncf.io/blog/2026/06/30/kepler-re-architected-improved-power-accuracy-and-a-community-call-to-action/?utm_source=the+new+stack&utm_medium=referral&utm_campaign=tns+platform&utm_content=sponsor+module "HTTP/1.1 403 Forbidden"
+[19:27:23] HTTP Request: HEAD https://finance.sina.com.cn/stock/aigc/zl/2026-06-24/doc-inienicy1628192.shtml "HTTP/1.1 200 OK"
+[19:27:23] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[19:27:23]   过滤: 2 条热点因链接不可达已移除
+[19:27:23] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Kubernetes.json
+[19:27:23]   [完成] Kubernetes (4 条热点, 41秒)
+[19:27:28] 
+==================================================
+[19:27:28]   关键词: TypeScript
+[19:27:28] ==================================================
+[19:28:05] 回复完成 (37.1秒, 2921字)
+[19:28:05]   引用链接填补: #1 [16] http://chenxutan.com/d/4115.html
+[19:28:05]   摘要清理: #1 移除标记
+[19:28:05]   引用链接填补: #2 [16] http://chenxutan.com/d/4115.html
+[19:28:05]   摘要清理: #2 移除标记
+[19:28:05]   去重: 1 条热点因 URL 重复已移除
+[19:28:05] 验证 URL 可用性...
+[19:28:07] HTTP Request: HEAD http://chenxutan.com/d/4115.html "HTTP/1.1 200 OK"
+[19:28:07] URL 验证: 1 个, 1 可用, 0 个404, 0 个不可达
+[19:28:07]   过滤: 3 条热点因链接不可达已移除
+[19:28:07] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\TypeScript.json
+[19:28:07]   [完成] TypeScript (1 条热点, 38秒)
+[19:28:11] 
+==================================================
+[19:28:11]   关键词: Claude Code
+[19:28:11] ==================================================
+[19:28:56] 回复完成 (45.0秒, 3859字)
+[19:28:57]   摘要清理: #1 移除标记
+[19:28:57]   摘要清理: #2 移除标记
+[19:28:57]   摘要清理: #3 移除标记
+[19:28:57]   摘要清理: #4 移除标记
+[19:28:57]   摘要清理: #7 移除标记
+[19:28:57] 验证 URL 可用性...
+[19:28:57] HTTP Request: HEAD https://36kr.com/p/3876746033934341 "HTTP/1.1 200 OK"
+[19:28:58] HTTP Request: HEAD https://36kr.com/p/3875342287876097 "HTTP/1.1 200 OK"
+[19:28:59] HTTP Request: HEAD https://36kr.com/p/3875518006849537 "HTTP/1.1 200 OK"
+[19:29:00] HTTP Request: HEAD https://36kr.com/p/3868399269483785 "HTTP/1.1 200 OK"
+[19:29:01] HTTP Request: HEAD https://www.36kr.com/p/3872651588146434 "HTTP/1.1 200 OK"
+[19:29:01] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[19:29:01]   过滤: 3 条热点因链接不可达已移除
+[19:29:01] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Claude Code.json
+[19:29:01]   [完成] Claude Code (5 条热点, 46秒)
+[19:29:05] 
+==================================================
+[19:29:05]   关键词: Python
+[19:29:05] ==================================================
+[19:29:40] 回复完成 (33.6秒, 3078字)
+[19:29:40]   引用链接填补: #1 [4] https://blog.jiayun.info/tag/cpython/#content
+[19:29:40]   摘要清理: #1 移除标记
+[19:29:40]   摘要清理: #2 移除标记
+[19:29:40]   摘要清理: #4 移除标记
+[19:29:40]   引用链接填补: #5 [2] https://segmentfault.com/a/1190000047946455?utm_source=sf-similar-arti
+[19:29:40]   摘要清理: #5 移除标记
+[19:29:40]   摘要清理: #6 移除标记
+[19:29:40] 验证 URL 可用性...
+[19:29:42] HTTP Request: HEAD https://blog.jiayun.info/tag/cpython/#content "HTTP/1.1 200 OK"
+[19:29:43] HTTP Request: HEAD https://36kr.com/p/3866592164631813 "HTTP/1.1 200 OK"
+[19:29:44] HTTP Request: HEAD https://www.freebuf.com/articles/vuls/488213.html "HTTP/1.1 200 OK"
+[19:29:45] HTTP Request: HEAD https://segmentfault.com/a/1190000047946455?utm_source=sf-similar-article "HTTP/1.1 200 OK"
+[19:29:45] URL 验证: 4 个, 4 可用, 0 个404, 0 个不可达
+[19:29:45]   过滤: 2 条热点因链接不可达已移除
+[19:29:45] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Python.json
+[19:29:45]   [完成] Python (4 条热点, 34秒)
+[19:29:49] 
+==================================================
+[19:29:49]   关键词: Cloudflare
+[19:29:49] ==================================================
+[19:30:26] 回复完成 (36.1秒, 3227字)
+[19:30:26]   摘要清理: #1 移除标记
+[19:30:26]   摘要清理: #2 移除标记
+[19:30:26]   摘要清理: #3 移除标记
+[19:30:26]   摘要清理: #4 移除标记
+[19:30:26]   摘要清理: #5 移除标记
+[19:30:26]   摘要清理: #6 移除标记
+[19:30:26] 验证 URL 可用性...
+[19:30:27] HTTP Request: HEAD https://news.sohu.com/a/1040645953_122014422 "HTTP/1.1 200 OK"
+[19:30:29] HTTP Request: HEAD https://www.globalsecuritymag.fr/Cloudflare-Mitigates-Record-Breaking-71-Million-Request-per-second-DDoS-Attack.html "HTTP/1.1 200 OK"
+[19:30:30] HTTP Request: HEAD https://wap.seccw.com/index.php/Index/detail/id/46601.html "HTTP/1.1 200 OK"
+[19:30:31] HTTP Request: HEAD https://m.ithome.com/html/967565.htm "HTTP/1.1 200 OK"
+[19:30:33] HTTP Request: HEAD https://www.infoq.cn/article/fTk8yti9vUIP9hbP5Lcs "HTTP/1.1 200 OK"
+[19:30:34] HTTP Request: HEAD https://www.infoq.cn/article/CHON5sllKKAMBg309xiZ "HTTP/1.1 200 OK"
+[19:30:34] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[19:30:34] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Cloudflare.json
+[19:30:34]   [完成] Cloudflare (6 条热点, 37秒)
+[19:30:38] 
+==================================================
+[19:30:38]   关键词: Vue.js
+[19:30:38] ==================================================
+[19:31:26] 回复完成 (46.8秒, 3804字)
+[19:31:26]   摘要清理: #1 移除标记
+[19:31:26]   摘要清理: #2 移除标记
+[19:31:26]   摘要清理: #3 移除标记
+[19:31:26]   摘要清理: #4 移除标记
+[19:31:26] 验证 URL 可用性...
+[19:31:35]   [不可达] 【Vue 3.5.39 正式发布】修复编译器、水合、响应式等多处核心Bug -> https://github.com/vuejs/core/releases (超时)
+[19:31:43]   [不可达] 【Vue 3.6.0 Beta 17 发布】Vapor Mode 持续稳定化，S -> https://github.com/vuejs/core/releases/tag/v3.6.0-beta.17 (超时)
+[19:31:44] HTTP Request: HEAD https://vueconf.cn "HTTP/1.1 200 OK"
+[19:31:45] HTTP Request: HEAD https://www.infoq.cn/article/8O9lMqWlC0Qkh9uLpPqk "HTTP/1.1 200 OK"
+[19:31:45] URL 验证: 4 个, 2 可用, 0 个404, 2 个不可达
+[19:31:45]   过滤: 4 条热点因链接不可达已移除
+[19:31:45] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Vue.js.json
+[19:31:45]   [完成] Vue.js (2 条热点, 47秒)
+[19:31:49] 
+==================================================
+[19:31:49]   关键词: 前端技术
+[19:31:49] ==================================================
+[19:32:42] 回复完成 (52.1秒, 4504字)
+[19:32:42]   引用链接填补: #1 [3] https://www.infoq.cn/article/JW7bom70PQ14N2OlVRLt
+[19:32:42]   摘要清理: #1 移除标记
+[19:32:42]   引用链接填补: #2 [9] https://codezine.jp/news/detail/24718
+[19:32:42]   摘要清理: #2 移除标记
+[19:32:42]   引用链接填补: #3 [12] https://m.ithome.com/html/966332.htm
+[19:32:42]   摘要清理: #3 移除标记
+[19:32:42]   引用链接填补: #4 [34] https://36kr.com/p/3875531712786695
+[19:32:42]   摘要清理: #4 移除标记
+[19:32:42]   引用链接填补: #5 [39] https://www.qbitai.com/2026/06/439515.html
+[19:32:42]   摘要清理: #5 移除标记
+[19:32:42]   引用链接填补: #6 [43] https://developer.aliyun.com/article/1743894
+[19:32:42]   摘要清理: #6 移除标记
+[19:32:42]   引用链接填补: #7 [42] https://developer.aliyun.com/article/1743148
+[19:32:42]   摘要清理: #7 移除标记
+[19:32:42]   引用链接填补: #8 [30] https://www.80aj.com/2026/06/30/chatgpt-ui-fail-test/
+[19:32:42]   摘要清理: #8 移除标记
+[19:32:42] 验证 URL 可用性...
+[19:32:43] HTTP Request: HEAD https://www.infoq.cn/article/JW7bom70PQ14N2OlVRLt "HTTP/1.1 200 OK"
+[19:32:47] HTTP Request: HEAD https://codezine.jp/news/detail/24718 "HTTP/1.1 200 OK"
+[19:32:48] HTTP Request: HEAD https://m.ithome.com/html/966332.htm "HTTP/1.1 200 OK"
+[19:32:49] HTTP Request: HEAD https://36kr.com/p/3875531712786695 "HTTP/1.1 200 OK"
+[19:32:50] HTTP Request: HEAD https://www.qbitai.com/2026/06/439515.html "HTTP/1.1 200 OK"
+[19:32:51] HTTP Request: HEAD https://developer.aliyun.com/article/1743894 "HTTP/1.1 200 "
+[19:32:52] HTTP Request: HEAD https://developer.aliyun.com/article/1743148 "HTTP/1.1 200 "
+[19:32:56] HTTP Request: HEAD https://www.80aj.com/2026/06/30/chatgpt-ui-fail-test/ "HTTP/1.1 200 OK"
+[19:32:56] URL 验证: 8 个, 8 可用, 0 个404, 0 个不可达
+[19:32:56] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\前端技术.json
+[19:32:56]   [完成] 前端技术 (8 条热点, 53秒)
+[19:33:00] 
+==================================================
+[19:33:00]   关键词: Node.js
+[19:33:00] ==================================================
+[19:33:43] 回复完成 (41.9秒, 3764字)
+[19:33:43]   摘要清理: #1 移除标记
+[19:33:43]   摘要清理: #2 移除标记
+[19:33:43]   引用链接填补: #3 [11] https://vuldb.com/cve/CVE-2026-48936
+[19:33:43]   摘要清理: #3 移除标记
+[19:33:43]   摘要清理: #4 移除标记
+[19:33:43] 验证 URL 可用性...
+[19:33:44] HTTP Request: HEAD https://nodejs.org/en/blog/release/v26.4.0 "HTTP/1.1 200 OK"
+[19:33:46] HTTP Request: HEAD https://www.linuxcompatible.org/story/nodejs-24180-lts-released-crypto-hardening-64-kib-buffers-and-webcrypto-upgrades/ "HTTP/1.1 200 OK"
+[19:33:47] HTTP Request: HEAD https://vuldb.com/cve/CVE-2026-48936 "HTTP/1.1 403 Forbidden"
+[19:33:49] HTTP Request: HEAD https://access.redhat.com/errata/RHSA-2026:33866 "HTTP/1.1 200 OK"
+[19:33:51] HTTP Request: HEAD https://devcenter.heroku.com/changelog-items/3729 "HTTP/1.1 200 OK"
+[19:33:51] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[19:33:51]   过滤: 2 条热点因链接不可达已移除
+[19:33:51] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Node.js.json
+[19:33:51]   [完成] Node.js (4 条热点, 42秒)
+[19:33:55] 
+==================================================
+[19:33:55]   关键词: React
+[19:33:55] ==================================================
+[19:34:30] 回复完成 (34.6秒, 2810字)
+[19:34:30]   摘要清理: #1 移除标记
+[19:34:30]   摘要清理: #2 移除标记
+[19:34:30]   摘要清理: #3 移除标记
+[19:34:30]   摘要清理: #4 移除标记
+[19:34:30]   摘要清理: #5 移除标记
+[19:34:30] 验证 URL 可用性...
+[19:34:31] HTTP Request: HEAD https://post.smzdm.com/p/ak84673e/ "HTTP/1.1 202 Accepted"
+[19:34:32] HTTP Request: HEAD https://nextjs.org "HTTP/1.1 200 OK"
+[19:34:42] HTTP Request: HEAD https://dev.to/adioof/react-lost-the-mass-and-vercel-is-wearing-its-skin-27fc "HTTP/1.1 200 OK"
+[19:34:43] HTTP Request: HEAD https://www.zpedu.com/it/rjyf/39097.html "HTTP/1.1 200 OK"
+[19:34:46] HTTP Request: HEAD https://dev.to/vitalii_6f4b1c4e619379ee6/ai-wont-replace-react-developers-but-its-changing-how-we-think-5bk6 "HTTP/1.1 200 OK"
+[19:34:46] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[19:34:46] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\React.json
+[19:34:46]   [完成] React (5 条热点, 35秒)
+[19:34:51] 
+==================================================
+[19:34:51]   关键词: Go
+[19:34:51] ==================================================
+[19:35:29] 回复完成 (38.1秒, 2964字)
+[19:35:29]   摘要清理: #1 移除标记
+[19:35:29]   摘要清理: #2 移除标记
+[19:35:29]   摘要清理: #4 移除标记
+[19:35:29]   摘要清理: #5 移除标记
+[19:35:29] 验证 URL 可用性...
+[19:35:30] HTTP Request: HEAD http://g.pconline.com.cn/x/2178/21780589.html "HTTP/1.1 200 OK"
+[19:35:35] HTTP Request: HEAD https://export.arxiv.org/abs/2606.26291 "HTTP/1.1 429 Unknown Error"
+[19:35:36] HTTP Request: HEAD https://developer.aliyun.com/article/1743474 "HTTP/1.1 200 "
+[19:35:37] HTTP Request: HEAD https://datasea.cn/go0630638768.html "HTTP/1.1 200 OK"
+[19:35:38] HTTP Request: HEAD https://datasea.cn/go0629636970.html "HTTP/1.1 200 OK"
+[19:35:38] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[19:35:38]   过滤: 2 条热点因链接不可达已移除
+[19:35:38] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Go.json
+[19:35:38]   [完成] Go (4 条热点, 39秒)
+[19:35:42] 
+==================================================
+[19:35:42]   关键词: 人工智能
+[19:35:42] ==================================================
+[19:36:29] 回复完成 (46.4秒, 4028字)
+[19:36:29]   引用链接填补: #2 [5] http://www.news.cn/20260626/5492473a58a3422687444bf09dda6cd5/c.html
+[19:36:29]   摘要清理: #2 移除标记
+[19:36:29]   引用链接填补: #3 [18] https://www.citicf.com/e-futures/content/000501/823702
+[19:36:29]   摘要清理: #3 移除标记
+[19:36:29]   引用链接填补: #4 [31] http://zqb.cyol.com/pc/content/202606/30/content_427619.html
+[19:36:29]   摘要清理: #4 移除标记
+[19:36:29]   摘要清理: #5 移除标记
+[19:36:29] 验证 URL 可用性...
+[19:36:30] HTTP Request: HEAD https://www.gov.cn "HTTP/1.1 200 OK"
+[19:36:31] HTTP Request: HEAD http://www.news.cn/20260626/5492473a58a3422687444bf09dda6cd5/c.html "HTTP/1.1 200 OK"
+[19:36:32] HTTP Request: HEAD https://www.citicf.com/e-futures/content/000501/823702 "HTTP/1.1 403 Forbidden"
+[19:36:33] HTTP Request: HEAD http://zqb.cyol.com/pc/content/202606/30/content_427619.html "HTTP/1.1 200 OK"
+[19:36:34] HTTP Request: HEAD https://tech.gmw.cn/2026-07/01/content_38860992.htm "HTTP/1.1 200 OK"
+[19:36:34] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[19:36:34]   过滤: 4 条热点因链接不可达已移除
+[19:36:34] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\人工智能.json
+[19:36:34]   [完成] 人工智能 (4 条热点, 47秒)
+[19:36:38] 
+==================================================
+[19:36:38]   关键词: GitHub
+[19:36:38] ==================================================
+[19:37:22] 回复完成 (43.0秒, 3509字)
+[19:37:22]   引用链接填补: #1 [1] https://phys.sabanciuniv.edu/en/education/graduate?live-blog-14108943-
+[19:37:22]   摘要清理: #1 移除标记
+[19:37:22]   引用链接填补: #2 [8] https://www.infoq.cn/article/GaAsWkrJQW2NFf06kgyG
+[19:37:22]   摘要清理: #2 移除标记
+[19:37:22]   引用链接填补: #4 [7] https://www.itmedia.co.jp/news/articles/2606/30/news102.html
+[19:37:22]   摘要清理: #4 移除标记
+[19:37:22]   引用链接填补: #5 [9] https://www.freebuf.com/articles/development/487326.html
+[19:37:22]   摘要清理: #5 移除标记
+[19:37:22]   引用链接填补: #6 [3] https://lpfasd.blog.csdn.net/article/details/162480797
+[19:37:22]   摘要清理: #6 移除标记
+[19:37:22]   引用链接填补: #7 [6] https://www.ithome.com/0/968/475.htm
+[19:37:22]   摘要清理: #7 移除标记
+[19:37:22] 验证 URL 可用性...
+[19:37:24] HTTP Request: HEAD https://phys.sabanciuniv.edu/en/education/graduate?live-blog-14108943-2026-06-25-it-zhi-jia-6-yue-25-ri-xiao-xi-de-yi-yu-ai-bian-cheng-xu-qiu-chi-xu-pan-sheng-gi "HTTP/1.1 200 OK"
+[19:37:25] HTTP Request: HEAD https://www.infoq.cn/article/GaAsWkrJQW2NFf06kgyG "HTTP/1.1 200 OK"
+[19:37:27] HTTP Request: HEAD https://www.itmedia.co.jp/news/articles/2606/30/news102.html "HTTP/1.1 200 OK"
+[19:37:28] HTTP Request: HEAD https://www.freebuf.com/articles/development/487326.html "HTTP/1.1 200 OK"
+[19:37:29] HTTP Request: HEAD https://lpfasd.blog.csdn.net/article/details/162480797 "HTTP/1.1 200 OK"
+[19:37:30] HTTP Request: HEAD https://www.ithome.com/0/968/475.htm "HTTP/1.1 200 OK"
+[19:37:30] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[19:37:30]   过滤: 1 条热点因链接不可达已移除
+[19:37:30] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\GitHub.json
+[19:37:30]   [完成] GitHub (6 条热点, 44秒)
+[19:37:34] 
+==================================================
+[19:37:34]   关键词: SpringBoot
+[19:37:34] ==================================================
+[19:38:19] 回复完成 (44.9秒, 3847字)
+[19:38:19]   摘要清理: #1 移除标记
+[19:38:19]   摘要清理: #3 移除标记
+[19:38:19]   摘要清理: #4 移除标记
+[19:38:19]   摘要清理: #5 移除标记
+[19:38:19]   去重: 1 条热点因 URL 重复已移除
+[19:38:19] 验证 URL 可用性...
+[19:38:21] HTTP Request: HEAD https://spring.io/blog/2026/06/25/spring-boot-3-5-16-available-now "HTTP/1.1 308 Permanent Redirect"
+[19:38:21] HTTP Request: HEAD https://spring.io/blog/2026/06/25/spring-boot-3-5-16-available-now/ "HTTP/1.1 200 OK"
+[19:38:22] HTTP Request: HEAD https://www.infoq.cn/article/Jpi5XBmoO8smLYSyaD9t "HTTP/1.1 200 OK"
+[19:38:23] HTTP Request: HEAD https://www.sohu.com/a/1040815447_120959233 "HTTP/1.1 200 OK"
+[19:38:23] URL 验证: 3 个, 3 可用, 0 个404, 0 个不可达
+[19:38:23]   过滤: 2 条热点因链接不可达已移除
+[19:38:23] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\SpringBoot.json
+[19:38:23]   [完成] SpringBoot (3 条热点, 45秒)
+[19:38:27] 
+==================================================
+[19:38:27]   关键词: Next.js
+[19:38:27] ==================================================
+[19:39:08] 回复完成 (40.4秒, 3236字)
+[19:39:08]   摘要清理: #1 移除标记
+[19:39:08]   摘要清理: #2 移除标记
+[19:39:08]   摘要清理: #3 移除标记
+[19:39:08]   摘要清理: #4 移除标记
+[19:39:08] 验证 URL 可用性...
+[19:39:09] HTTP Request: HEAD https://nextjs.org/blog/next-16-3-instant-navigations "HTTP/1.1 200 OK"
+[19:39:10] HTTP Request: HEAD https://nextjs.org/blog/next-16-3-ai-improvements "HTTP/1.1 200 OK"
+[19:39:10] HTTP Request: HEAD https://nextjs.org/blog/next-16-3-turbopack "HTTP/1.1 200 OK"
+[19:39:12] HTTP Request: HEAD https://advisories.checkpoint.com/defense/advisories/public/2026/cpai-2026-5610.html "HTTP/1.1 200 OK"
+[19:39:13] HTTP Request: HEAD https://www.infoq.cn/news/nextjs-16-2-released "HTTP/1.1 404 Not Found"
+[19:39:13]   [404] Next.js 16.2 正式发布：开发启动提速 400% 与 AI 工具链增强 -> https://www.infoq.cn/news/nextjs-16-2-released
+[19:39:13] URL 验证: 5 个, 4 可用, 1 个404, 0 个不可达
+[19:39:13]   过滤: 1 条热点因链接不可达已移除
+[19:39:13] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\Next.js.json
+[19:39:13]   [完成] Next.js (4 条热点, 41秒)
+[19:39:17] 
+==================================================
+[19:39:17]   关键词: 数据库
+[19:39:17] ==================================================
+[19:39:57] 回复完成 (39.5秒, 2712字)
+[19:39:57]   摘要清理: #1 移除标记
+[19:39:57]   引用链接填补: #2 [6] https://vuldb.com/cve/CVE-2026-13550
+[19:39:57]   摘要清理: #2 移除标记
+[19:39:57]   摘要清理: #3 移除标记
+[19:39:57]   摘要清理: #4 移除标记
+[19:39:57] 验证 URL 可用性...
+[19:39:58] HTTP Request: HEAD https://finance.sina.com.cn/roll/2026-07-01/doc-inifhvwq4181525.shtml "HTTP/1.1 200 OK"
+[19:39:59] HTTP Request: HEAD https://vuldb.com/cve/CVE-2026-13550 "HTTP/1.1 403 Forbidden"
+[19:40:00] HTTP Request: HEAD https://www.bbtnews.com.cn/2026/0630/597818.shtml "HTTP/1.1 200 OK"
+[19:40:01] HTTP Request: HEAD https://www.163.com/dy/article/L0M8JV260511D6RL.html "HTTP/1.1 200 OK"
+[19:40:01] URL 验证: 4 个, 4 可用, 0 个404, 0 个不可达
+[19:40:01]   过滤: 2 条热点因链接不可达已移除
+[19:40:01] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\数据库.json
+[19:40:01]   [完成] 数据库 (3 条热点, 40秒)
+[19:40:01] 
+[19:40:01] ============================================================
+[19:40:01]   运行总结
+[19:40:01] ============================================================
+[19:40:01]   关键词                  状态       热点数    耗时    
+[19:40:01]   ──────────────────── ──────── ────── ──────
+[19:40:01]   DeepSeek             完成       4      41s   
+[19:40:01]   ChatGPT              完成       5      39s   
+[19:40:01]   OpenAI               完成       8      51s   
+[19:40:01]   Docker               完成       4      39s   
+[19:40:01]   Rust                 完成       4      41s   
+[19:40:01]   Kubernetes           完成       4      41s   
+[19:40:01]   TypeScript           完成       1      38s   
+[19:40:01]   Claude Code          完成       5      46s   
+[19:40:01]   Python               完成       4      34s   
+[19:40:01]   Cloudflare           完成       6      37s   
+[19:40:01]   Vue.js               完成       2      47s   
+[19:40:01]   前端技术                 完成       8      53s   
+[19:40:01]   Node.js              完成       4      42s   
+[19:40:01]   React                完成       5      35s   
+[19:40:01]   Go                   完成       4      39s   
+[19:40:01]   人工智能                 完成       4      47s   
+[19:40:01]   GitHub               完成       6      44s   
+[19:40:01]   SpringBoot           完成       3      45s   
+[19:40:01]   Next.js              完成       4      41s   
+[19:40:01]   数据库                  完成       3      40s   
+[19:40:01] 
+[19:40:01]   总计: 20/20 成功 | 88 条热点 | 共耗时 1107秒
+[19:40:01] ============================================================
+[19:40:01] 聚合报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\report.json
+[19:40:01] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-01\192134\report.html

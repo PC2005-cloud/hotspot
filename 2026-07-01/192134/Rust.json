@@ -1,0 +1,83 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rust 1.96.1 紧急补丁发布，修复 Cargo 三项安全漏洞",
+      "summary": "Rust 团队于 6 月 30 日发布 1.96.1 点版本，修复了 Cargo 中 libssh2 相关的三个 CVE 漏洞及 MIR 优化层误编译问题。",
+      "source": "Rust Blog",
+      "url": "https://blog.rust-lang.org/2026/06/30/Rust-1.96.1/?utm_source=pixelstech.net",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "官方发布公告",
+          "summary": "Rust 官方博客宣布 1.96.1 点版本正式可用，修复了 Cargo 中 libssh2 的三个 CVE 漏洞，以及 MIR 优化层的误编译 bug 和 HTTP 客户端静默丢弃请求的问题-7-。"
+        },
+        {
+          "stance": "技术媒体报道",
+          "summary": "LinuxCompatible 等媒体称此为「关键安全补丁」，强调 Cargo 的三项 CVE 补丁是本次更新的核心-。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Rust 基金会正式启动 Rust Commercial Network，AWS、微软、谷歌等巨头加盟",
+      "summary": "Rust 基金会于 6 月 28 日宣布成立 Rust Commercial Network（RCN），AWS、微软、谷歌、Arm、OpenAI、JetBrains、Canonical 等为首批创始成员12。",
+      "source": "Rust Foundation",
+      "url": "https://www.boerse-express.com/news/articles/eu-paket-bruessel-investiert-2-milliarden-gegen-us-softwareabhaengigkeit-922732",
+      "published_time": "2026-06-28",
+      "perspectives": [
+        {
+          "stance": "基金会官方声明",
+          "summary": "RCN 旨在连接商业用户与 Rust 项目核心团队，提供反馈闭环、资助路径和行业工作组，会员免费开放-12。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "RCN 的成立标志着 Rust 从开源社区项目向企业级生态加速演进，创始成员涵盖云计算、半导体、AI 等关键领域-6-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TIOBE 6 月榜单：Rust 份额达 2.8% 创历史新高，首进第 12 名",
+      "summary": "TIOBE 6 月编程语言排行榜显示 Rust 份额达 2.8%，排名第 13 位（一说第 12 位），创历史新高，一年内份额近乎翻倍。",
+      "source": "TIOBE",
+      "url": "https://www.zpedu.com/it/rjyf/39401.html",
+      "published_time": "2026-06-28",
+      "perspectives": [
+        {
+          "stance": "TIOBE 官方数据",
+          "summary": "Rust 以 2.8% 的份额创下历史最高纪录，TIOBE CEO 此前认为 Rust 进入平台期，但近期趋势逆转了这一判断--。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "Rust 增长得益于 Firefox 用 Rust 重写 zlib-rs、Node.js 工具链 Nub 项目火爆、以及 AI 基础设施层对 Rust 的青睐-1。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Godcoder：本地优先的 Rust 编码助手，支持自我迭代",
+      "summary": "Rust + Tauri 构建的本地优先 AI 编码助手 Godcoder 于 7 月 1 日亮相，其 agent harness 支持边运行边自我改造。",
+      "source": "Rust 日报",
+      "url": "https://xhh.club/e/STx9kqNXWvxGb315eB11/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "项目介绍",
+          "summary": "Godcoder 主打 local-first 和「自我改造 agent harness」两大卖点，用 Rust + Tauri 实现-25。"
+        },
+        {
+          "stance": "社区反响",
+          "summary": "Rust 日报将其列为当日头条，关注点在于「不只是又一个 AI coding agent」的差异化定位-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Rust 生态呈现「社区活跃度与商业认可度双升」态势：1.96.1 安全补丁快速响应体现工程严谨性；RCN 获 AWS、微软等巨头背书标志企业级生态加速成熟；TIOBE 排名创新高与 Cloudflare 排障案例进一步巩固了 Rust 在系统编程和基础设施领域的技术领导地位。整体舆论积极正面。",
+  "honesty_note": "搜索覆盖了 2026-06-24 至 2026-07-01 期间 Rust 相关的主要热点，包括版本发布、基金会动态、榜单排名、技术社区发现和新兴项目。部分来源（如 zpedu.com、rustcc.cn）为第三方资讯聚合平台，权威性次于官方渠道，但内容与官方公告一致。未发现明显信息滞后或数据缺失。",
+  "start_time": "2026-07-01 19:25",
+  "end_time": "2026-07-01 19:26",
+  "elapsed_seconds": 41,
+  "retry_count": 0
+}

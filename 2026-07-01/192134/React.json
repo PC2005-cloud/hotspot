@@ -1,0 +1,101 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "React Compiler Rust移植版在Meta全量验证通过，性能大幅提升",
+      "summary": "Meta于2026年6月宣布React Compiler的Rust移植版本已在Facebook、Instagram等全部代码库中稳定运行，编译速度与内存占用显著优化。",
+      "source": "什么值得买",
+      "url": "https://post.smzdm.com/p/ak84673e/",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "技术社区报道",
+          "summary": "Rust版React Compiler完成Meta全公司验证，编译效率大幅提升，标志着React核心编译器正式从TypeScript向Rust迁移进入收尾阶段-1。"
+        },
+        {
+          "stance": "性能数据解读",
+          "summary": "Rspack 2.1集成Rust版React Compiler后构建性能提升高达7-13倍-；React 19配合新版编译器可减少25%至40%的不必要重渲染-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Next.js 16.3预览版发布，主打「即时导航」体验",
+      "summary": "Next.js 16.3预览版于2026年6月24日发布，推出可选的即时导航行为，在保留服务器端优势的同时让页面跳转体验媲美SPA。",
+      "source": "Next.js 官网",
+      "url": "https://nextjs.org",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Next.js 16.3引入基于Node.js原生流的新行为，让服务器驱动应用实现即时导航-。"
+        },
+        {
+          "stance": "生态解读",
+          "summary": "本周React生态迎来Next.js 16.3预览版、Vite 8.1打包开发模式、Rsbuild 2.1集成Rust版React Compiler等多重更新-9。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "社区热议：React发展方向是否被Vercel「绑架」？",
+      "summary": "开发者社区近期爆发激烈讨论，质疑React核心团队多名成员受雇于Vercel，认为Server Components和App Router等新特性主要服务于Vercel的商业利益而非社区需求。",
+      "source": "DEV Community",
+      "url": "https://dev.to/adioof/react-lost-the-mass-and-vercel-is-wearing-its-skin-27fc",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "质疑方（社区开发者）",
+          "summary": "React多名核心成员在Vercel任职，框架路线图与商业模型深度绑定；Server Components和App Router难以自托管却完美适配Vercel基础设施-15。"
+        },
+        {
+          "stance": "综合观察",
+          "summary": "有观点认为React正从「视图库」演变为「全栈意见引擎」，文档也越来越默认使用Next.js作为标准路径，社区对治理透明度的担忧正在升温-15。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Vue与React框架之争：2026年各自走向不同生态位",
+      "summary": "2026年Vue和React已不再是同一赛道的竞争者，React在大型复杂应用和头部公司中占优，Vue在中小企业和数字化转型项目中增长更快。",
+      "source": "企业IT培训",
+      "url": "https://www.zpedu.com/it/rjyf/39097.html",
+      "published_time": "2026-06-24 14:45",
+      "perspectives": [
+        {
+          "stance": "技术选型分析",
+          "summary": "React生态规模和社区活力依然领先，Next.js让React在全栈方向表现成熟；但React学习曲线陡峭、概念体系不断膨胀-2。"
+        },
+        {
+          "stance": "人才市场视角",
+          "summary": "国内头部互联网公司React岗位占比突出，但Vue在中小企业岗位增长速度更快；Stack Overflow 2025数据显示React以44.7%使用率居首-2-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "AI时代React开发者的角色转型：从写代码到做架构",
+      "summary": "社区讨论指出AI不会取代React开发者，但正在改变工作方式——AI擅长生成样板代码和重复模式，而架构决策、性能权衡仍需人类判断。",
+      "source": "DEV Community",
+      "url": "https://dev.to/vitalii_6f4b1c4e619379ee6/ai-wont-replace-react-developers-but-its-changing-how-we-think-5bk6",
+      "published_time": "2026-06-28",
+      "perspectives": [
+        {
+          "stance": "开发者观察",
+          "summary": "AI可处理Hooks、表单、测试脚手架等重复工作，但Server Component该不该用、是否需要全局状态等架构问题仍需人类决策-6。"
+        },
+        {
+          "stance": "行业趋势",
+          "summary": "「优秀React开发者」的标准并未降低而是在转移——更少时间在语法上，更多时间在架构、性能权衡和深度理解上-6。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期React社区热点集中于底层技术革新（Rust编译器）与治理争议（Vercel影响力）两大主线。技术层面普遍持积极态度，认为性能飞跃将惠及所有开发者；治理层面则出现明显分化，部分开发者对React发展方向被单一商业公司主导表示担忧，呼吁建立更独立的治理机制-15。",
+  "honesty_note": "React 19.2.7版本发布于6月1日，超出7天窗口期故未列入主热点-。React 13周年（6月）等话题时间较早-。当前React相关讨论以技术演进和社区治理争议为主，直接热搜级事件较少。",
+  "start_time": "2026-07-01 19:33",
+  "end_time": "2026-07-01 19:34",
+  "elapsed_seconds": 35,
+  "retry_count": 0
+}

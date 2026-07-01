@@ -1,0 +1,107 @@
+{
+  "keyword": "Cloudflare",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Cloudflare 大范围服务中断：光纤故障致全球多平台瘫痪",
+      "summary": "6月22日至23日，Cloudflare因北美光纤中断发生大范围服务中断-，导致X、Reddit、Teams等全球多地网站访问缓慢、超时-13。官方确认事故已解决。",
+      "source": "搜狐",
+      "url": "https://news.sohu.com/a/1040645953_122014422",
+      "published_time": "2026-06-23 23:46",
+      "perspectives": [
+        {
+          "stance": "官方通报与影响评估",
+          "summary": "Cloudflare官方确认事故源于北美东部一次光纤中断，影响主要涉及通过北美连接的用户及访问欧洲服务的用户-14。第三方监测显示X、Reddit、Teams等平台同一时段均出现故障报告-14。"
+        },
+        {
+          "stance": "行业反思与用户观察",
+          "summary": "此次事件凸显了全球互联网对Cloudflare等第三方基础设施供应商的深度依赖，一次故障即可波及大量平台-13。大量用户报告服务中断，X平台收到约3.6万起投诉-13。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Cloudflare 成功防御创纪录的 7100 万 RPS DDoS 攻击",
+      "summary": "6月20日至21日周末，Cloudflare检测并缓解了数十次超大规模DDoS攻击。最大攻击峰值超过每秒7100万次请求（rps），创下HTTP DDoS攻击新纪录。",
+      "source": "Global Security Mag",
+      "url": "https://www.globalsecuritymag.fr/Cloudflare-Mitigates-Record-Breaking-71-Million-Request-per-second-DDoS-Attack.html",
+      "published_time": "2026-06-23",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "攻击源自超过3万个IP地址-19，目标包括游戏、加密货币、托管和云计算平台-19。Cloudflare已与多家云服务商合作打击僵尸网络-19。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "互联网历史性拐点：Cloudflare 数据显示机器人流量首次超越人类",
+      "summary": "6月23日，Cloudflare CEO马修·普林斯公布数据，过去7天内全球HTML请求中机器人流量占57.5%，人类仅占42.5%，互联网史上首次机器人流量超越人类。",
+      "source": "安全419",
+      "url": "https://wap.seccw.com/index.php/Index/detail/id/46601.html",
+      "published_time": "2026-06-23",
+      "perspectives": [
+        {
+          "stance": "官方发布与行业震惊",
+          "summary": "普林斯感叹此拐点比其3月预测提前至少一年半-1；马斯克回复「Wow」-1。网友将之与「死亡互联网理论」联系-1。"
+        },
+        {
+          "stance": "专家解读与数据局限",
+          "summary": "所指机器人流量主要为「AI Agent」流量-1。数据仅针对HTML请求，若计入视频流、App内API等，人类流量仍占主导-1。北美机器人流量高达68.6%，亚洲仍以人类为主-1。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Cloudflare 联合 Chrome/Edge/Firefox 开发隐私保护协议 PACT",
+      "summary": "6月22日，Cloudflare宣布与Mozilla、谷歌、微软三大浏览器厂商联合开发「私密访问控制令牌」（PACT）-。该协议旨在用匿名令牌替代验证码，平衡隐私保护与流量真实性验证。",
+      "source": "IT之家",
+      "url": "https://m.ithome.com/html/967565.htm",
+      "published_time": "2026-06-23 17:12",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "PACT允许网站向真人用户签发匿名令牌，用户访问其他网站时由浏览器出示以证明真人参与，无需反复输入验证码或接受侵入式追踪-11。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Cloudflare 发布 Cloudflare One 代理技能库，赋能 AI 零信任部署",
+      "summary": "7月1日，Cloudflare发布开源代理技能库Cloudflare One Stack。该技能库为AI代理提供规划、部署、管理和迁移零信任环境的知识。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/fTk8yti9vUIP9hbP5Lcs",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "产品发布与技术解读",
+          "summary": "技能库包含cloudflare-one（产品指导）和cloudflare-one-migration（供应商迁移，支持从Zscaler等迁移）两个文件-6。采用「应用前审核」模式，变更需安全人员审批-6。"
+        },
+        {
+          "stance": "行业观察与专家观点",
+          "summary": "该技能库旨在「缩短从意图到配置策略的流程」而非取代安全团队-6。但也提醒，若配置不当可能导致内部服务暴露或用户被锁定-6。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Cloudflare 修复 QUIC 库 quiche 中的拥塞控制漏洞",
+      "summary": "7月1日，Cloudflare披露其开源QUIC实现库quiche中CUBIC拥塞控制算法的Rust实现存在漏洞-。若连接初始阶段丢包严重，算法将无法恢复。已在quiche 0.29.2中修复-。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/CHON5sllKKAMBg309xiZ",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "技术复盘",
+          "summary": "问题源于Linux内核中一项修复TCP问题的变更-7。CUBIC计算空闲时间的方式导致实现陷入无休止恢复循环-7。团队通过模拟环境定位问题，Reno算法测试100%通过-7。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天Cloudflare舆情集中于两起事件：一是「光纤中断致全球多平台瘫痪」引发对互联网基础设施集中化风险的担忧-13；二是「机器人流量首超人类」数据引爆「死亡互联网理论」讨论-1。安全能力方面，创纪录DDoS防御-19与隐私协议PACT-11获积极评价。",
+  "honesty_note": "热点主要覆盖6月22-23日（光纤中断、机器人流量、DDoS、PACT）及7月1日（Zero Trust技能库、quiche漏洞修复）。6月24-30日期间直接相关的大事件较少，部分内容为前期事件持续发酵或产品发布。已尽量纳入该时段内最相关资讯。",
+  "start_time": "2026-07-01 19:29",
+  "end_time": "2026-07-01 19:30",
+  "elapsed_seconds": 37,
+  "retry_count": 0
+}

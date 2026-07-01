@@ -1,0 +1,75 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【OpenAI启动「Patch the Planet」计划】AI主动参与开源安全漏洞修补",
+      "summary": "OpenAI于6月22日启动「Patch the Planet」计划，以GPT.5-Cyber配合安全工程师，系统性为Python、cURL、Go等开源项目寻找并修补漏洞，这是AI从辅助工具演进为主动参与者的关键转折点。",
+      "source": "博客",
+      "url": "https://blog.jiayun.info/tag/cpython/#content",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "该计划标志着AI在开源安全领域从辅助工具演进为主动参与者。GPT-5.5-Cyber负责漏洞分析与修复建议，Trail of Bits的工程师进行验证与决策，这种「AI提案、人类把关」的协作模型兼顾了规模效率与工程严谨性-4。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【Python顶流工具作者发声】AI生成的PR正在摧毁开源社区",
+      "summary": "Python极速工具链Ruff/uv作者Charlie Marsh指出，AI让提交PR的门槛降为零，但代码审查成本未减，且AI生成的代码「能跑、能过测、像真的」，隐蔽风险更高，正在破坏开源社区的成长契约17。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3866592164631813",
+      "published_time": "2026-06-24 11:52",
+      "perspectives": [
+        {
+          "stance": "作者观点",
+          "summary": "Charlie Marsh表示，AI生成的代码看似完美但隐藏未知风险，自动重构代码库可能用已知Bug去赌未知崩溃，测试套件无法覆盖所有隐性行为-7。"
+        },
+        {
+          "stance": "社区观察",
+          "summary": "AI生成的PR让维护者需花费大量时间排错，而提交者并未从中学习，长期来看会削弱开源社区的贡献者培养机制-17。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "【CVE-2026-10561】Langflow曝CVSS 10.0严重漏洞，Python执行隔离失效",
+      "summary": "IBM开源可视化AI编排工具Langflow被曝出CVSS 10.0的远程代码执行漏洞（CVE10561），受影响版本横跨1.0.0到1.9.3。漏洞根源在于将「拖拽连线跑流程」与「在宿主机上跑Python」放在同一信任域-。",
+      "source": "FreeBuf",
+      "url": "https://www.freebuf.com/articles/vuls/488213.html",
+      "published_time": "2026-06-30 17:45",
+      "perspectives": [
+        {
+          "stance": "安全分析",
+          "summary": "漏洞源于两个失败设计叠加——可视化编排工具将代码执行作为核心功能，但执行隔离机制失效，导致未授权请求可直接在宿主机执行Python代码-21。"
+        },
+        {
+          "stance": "行业警示",
+          "summary": "这类漏洞并非孤例，凡是将代码执行能力暴露给用户且隔离不到位的AI编排工具都存在类似风险-21。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【GitHub Python热点项目】Strix、video-use等AI工具领跑Trending榜单",
+      "summary": "2026年7月1日GitHub Trending显示，开源AI渗透测试工具Strix（Star 28,054）、视频编码代理video-use（Star 12,530）等Python项目热度飙升。",
+      "source": "SegmentFault",
+      "url": "https://segmentfault.com/a/1190000047946455?utm_source=sf-similar-article",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "技术观察",
+          "summary": "本期Python热点项目集中在AI安全测试、视频处理、智能代理等方向，反映开发者对AI应用工具链的持续关注-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Python社区呈现两极化情绪：一方面TIOBE市场份额创新高（25.8%）彰显技术统治力；另一方面社区内部对AI生成代码的质量隐患、开源贡献者培养机制受损等问题争议激烈。安全领域CVSS 10.0漏洞频发引发担忧，但OpenAI主导的AI安全修补计划带来积极预期。整体情绪在「技术繁荣」与「质量危机」间拉扯。",
+  "honesty_note": "受限于搜索时效，部分热点发布时间略早于6月24日（如CPython 3.14.6发布于6月10日、JIT暂停公告发布于6月10日），但仍在7天窗口内被广泛讨论。关联话题可关注：CPython JIT开发暂停-、Python在印度IT教育中的渗透困境-、字节跳动从Python转向Go/Rust的基础设施迁移-等持续发酵的行业议题。",
+  "start_time": "2026-07-01 19:29",
+  "end_time": "2026-07-01 19:29",
+  "elapsed_seconds": 34,
+  "retry_count": 0
+}

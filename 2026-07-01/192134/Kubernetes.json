@@ -1,0 +1,71 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "KubeCon + CloudNativeCon Europe 2026 召开，CNCF 宣布 CARE 认证改革计划",
+      "summary": "KubeCon Europe 2026 于本周举行。CNCF 宣布 CARE 计划，高级认证（CKA/CKS）可自动续期基础认证（KCNA/KCSA），简化了 Kubernetes 认证流程-。同时发布报告称全球云原生开发者已接近 2000 万。",
+      "source": "Cloud Native Now",
+      "url": "https://cloudnativenow.com/category/kubecon-cloudnativecon-europe-2026/#masthead",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "【综合报道】CNCF 官方及技术媒体 KubeCon 现场报道",
+          "summary": "CARE 计划旨在降低认证维护负担，鼓励开发者持续保持技能更新；全球云原生开发者达 2000 万的统计表明 Kubernetes 生态已进入主流成熟期-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "微软 Build 2026 大幅升级 AKS：裸金属版、集群舰队管理及 AI 基础设施方案",
+      "summary": "微软在 Build 2026 大会上宣布 AKS 裸金属版（公开预览）、Azure Kubernetes Fleet Manager 正式可用，以及 AI Runway 和 KAITO 等 AI 模型部署工具，明确将 Kubernetes 定位为 AI 训练与推理的首选平台。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/OKTycayNK8hwTMv4ApSg",
+      "published_time": "2026-06-29",
+      "perspectives": [
+        {
+          "stance": "【技术媒体分析】InfoQ 报道",
+          "summary": "AKS 裸金属版移除虚拟化层，可直接访问 NVLink、RDMA 等高性能网络，对 LLM 训练和低延迟推理至关重要-12；Fleet Manager 扩展到混合云和多云环境，体现了微软让 K8s 成为企业级 AI 运营底座的战略-12。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Kubernetes 官方发布 AI 辅助编码政策：可用 AI 写补丁，但不得隐瞒",
+      "summary": "6 月 26 日，Kubernetes 项目发布《开源维护者在 AI 时代的角色》博文，明确规定贡献者可使用 AI 辅助编写补丁，但必须在 PR 描述中披露 AI 参与，且禁止将 AI 工具列为共同作者。",
+      "source": "DEV Community / LWN.net",
+      "url": "https://dev.to/leobaniak/kubernetes-will-let-you-write-patches-with-ai-it-will-not-let-you-hide-it-1p50#comments",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "【社区政策立场】Kubernetes 官方",
+          "summary": "政策核心是「可用 AI 写补丁，但不能假装是 bot 写的」，要求披露 AI 协助，CLA 检查会因 AI 共同作者而失败；若贡献者无法亲自解释变更，PR 可被关闭-21。"
+        },
+        {
+          "stance": "【社区观察】开发者评论",
+          "summary": "该政策被视为开源社区应对 AI 生成代码洪流的标杆模板——将 AI 审查工具收归项目层面统一管理，避免个人 Copilot 带来的供应链风险-21。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "大华股份申请 Kubernetes 集群计算节点恢复方法专利",
+      "summary": "6 月 24 日，国家知识产权局信息显示，浙江大华技术股份有限公司申请了「Kubernetes 集群中计算节点的恢复方法以及相关装置」专利（公布号 CN122240235A），旨在提高 K8s 集群计算节点的可靠性。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/stock/aigc/zl/2026-06-24/doc-inienicy1628192.shtml",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "【企业专利公告】新浪财经转述国家知识产权局信息",
+          "summary": "该专利通过备份挂载信息至分布式键值存储数据库，在节点重装系统后利用备份信息恢复数据盘并重新纳管节点，提高集群计算节点的可靠性-3。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Kubernetes 热点集中于 KubeCon Europe 2026 大会（认证改革、生态数据）、AI 与 K8s 深度融合（微软 AKS 升级、官方 AI 编码政策）以及安全与基础设施优化（Rancher 漏洞、Kepler 重写）。整体舆论呈现「Kubernetes 全面拥抱 AI 时代」的积极情绪，同时社区对 AI 生成代码的质量与信任问题保持审慎态度。",
+  "honesty_note": "搜索结果覆盖了 2026-06-24 至 2026-07-01 期间的多个热点，时效性良好。部分事件的原始搜索结果中未包含可直接使用的完整 URL 链接，已按铁律要求将 url 字段设为 null。此外，Kubernetes v1.37 发布计划仍在进行中（预计 8 月发布），本周无正式版本发布-；火山引擎宣布 K8s 1.28 版本于 6 月 30 日停止技术支持-可作为关联补充。",
+  "start_time": "2026-07-01 19:26",
+  "end_time": "2026-07-01 19:27",
+  "elapsed_seconds": 41,
+  "retry_count": 0
+}

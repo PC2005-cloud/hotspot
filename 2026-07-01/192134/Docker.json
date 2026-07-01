@@ -1,0 +1,83 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Docker MCP插件OCI镜像标签解析参数注入远程代码执行漏洞（CVE-2026-55887）",
+      "summary": "2026年6月24日，ZDI披露Docker MCP插件存在远程代码执行漏洞（ZDI363），攻击者可利用恶意Docker镜像通过docker URI方案在宿主机root权限下执行任意代码。",
+      "source": "Zero Day Initiative",
+      "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-363/",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "安全机构通报",
+          "summary": "漏洞源于对io.docker.server.metadata标签的用户输入字符串缺乏充分验证，攻击者需诱使用户引用恶意镜像方可利用-2。Docker已发布安全更新修复此问题-2。"
+        },
+        {
+          "stance": "开发者社区关注",
+          "summary": "该漏洞影响使用Docker MCP插件的AI开发与容器编排场景，社区提醒用户尽快升级并避免引用不可信镜像源-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Fedora 44发布docker-buildx 0.35.0安全更新",
+      "summary": "2026年6月27日，Fedora发布docker-buildx 0.35.0版本更新，修复CVE39828（SSH未授权命令执行）和CVE39829（SSH拒绝服务）两个安全漏洞。",
+      "source": "Pro-Linux",
+      "url": "https://www.pro-linux.de/sicherheit/2/105448/sicherheit-zwei-probleme-in-docker-buildx.html",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "发行版安全通告",
+          "summary": "更新至v0.35.0版本，包含上游增强、新功能及安全修复，Fedora用户可通过dnf命令升级-28。"
+        },
+        {
+          "stance": "开发者视角",
+          "summary": "docker-buildx是Docker CLI的构建扩展插件，涉及SSH相关漏洞可能影响CI/CD构建流程安全性-28。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "2026年国内Docker镜像加速配置指南发布",
+      "summary": "2026年6月30日，国内技术社区发布Docker镜像加速配置指南，指出中科大、清华等传统镜像源已失效，推荐轩辕镜像（docker.xuanyuan.me）和毫秒镜像（docker.1ms.run）等新可用源。",
+      "source": "什么值得买",
+      "url": "https://post.smzdm.com/p/a0325qrz/",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "技术教程视角",
+          "summary": "国内直连Docker Hub仍面临带宽瓶颈与限速问题，配置加速源可将拉取速度提升20倍，但需注意旧有加速器已停止维护-5。"
+        },
+        {
+          "stance": "开发者实践视角",
+          "summary": "个人开发者推荐轩辕免费版或毫秒镜像；企业生产环境严禁依赖公共免费加速源，应使用阿里云ACR或腾讯云TCR等服务-5。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Percona发布PostgreSQL社区Docker镜像，规避厂商锁定风险",
+      "summary": "2026年6月30日，Percona宣布PostgreSQL Operator 3.0.0支持Community Docker Images（技术预览），3.1.0正式提供，允许用户从官方PostgreSQL源码自行构建镜像。",
+      "source": "Percona",
+      "url": "https://www.percona.com/blog/postgresql-community-images-operator/",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "厂商公告视角",
+          "summary": "社区镜像让用户可在自有Registry中构建PostgreSQL镜像，信任链从PGDG直达用户仓库，中间无厂商介入-29。"
+        },
+        {
+          "stance": "开源社区视角",
+          "summary": "此举回应了社区对供应商锁定（镜像、许可证、分发条款可独立于源码变更）的担忧-29。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Docker热点集中于安全漏洞频发（MCP插件RCE、SUSE多漏洞、buildx漏洞）引发运维广泛关注-2-12；国内镜像加速成为开发者刚需-5；Docker持续强化AI开发支持与安全能力-。整体舆情偏技术实操与安全应急。",
+  "honesty_note": "搜索范围内Docker相关热点以安全漏洞公告、版本更新和技术教程为主，缺乏重大产品发布或行业并购等爆点新闻。Docker收购Orchard的信息发布于6月11日，略超7天窗口-；Docker Engine 29.6.0发布于6月18日-。若需更全面的热点覆盖，建议关注Docker官方博客及GitHub发布页。",
+  "start_time": "2026-07-01 19:24",
+  "end_time": "2026-07-01 19:25",
+  "elapsed_seconds": 39,
+  "retry_count": 0
+}

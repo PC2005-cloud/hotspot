@@ -1,0 +1,83 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Node.js 26.4.0 正式发布，引入虚拟文件系统与包映射机制",
+      "summary": "2026年6月24日，Node.js 26.4.0（Current）版本发布，新增实验性 node:vfs 虚拟文件系统、支持调用方提供 readFile 缓冲区、实现包映射（package maps），并将 blockList 稳定状态提升至候选发布阶段。",
+      "source": "Node.js 官网",
+      "url": "https://nodejs.org/en/blog/release/v26.4.0",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "该版本为 Current 分支常规更新，主要新增 VFS 子系统、包映射支持、TCP KeepAlive 细粒度配置及 TLS 证书压缩选项等多项 SEMVER-MINOR 特性-1。"
+        },
+        {
+          "stance": "开发者社区关注",
+          "summary": "社区对 node:vfs 虚拟文件系统的引入反响积极，认为这是 Node.js 朝向更现代化运行时环境迈出的重要一步，但同时也关注其稳定性和生产环境可用性-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Node.js 24.18.0 LTS「Krypton」发布，加密强化与 Buffer 性能提升",
+      "summary": "2026年6月23日，Node.js 24.18.0 LTS 正式发布，新增 TurboSHAKE 和 KangarooTwelve 加密算法支持，默认 Buffer 池大小从 32 KiB 提升至 64 KiB，并升级 npm 至 11.16.0。",
+      "source": "Linux Compatible",
+      "url": "https://www.linuxcompatible.org/story/nodejs-24180-lts-released-crypto-hardening-64-kib-buffers-and-webcrypto-upgrades/",
+      "published_time": "2026-06-23",
+      "perspectives": [
+        {
+          "stance": "技术评测",
+          "summary": "该 LTS 版本聚焦于加密标准更新和 HTTP 流管理优化，CryptoKey 内部槽位和算法守卫得到加强，对处理不可信 JWK 导入的代码库尤为重要-2。"
+        },
+        {
+          "stance": "生产环境建议",
+          "summary": "对于运行 Node.js 24 的生产环境，建议优先关注加密补丁和 Buffer 池扩容带来的性能改善，可通过 npm i -g node@24.18.0 直接升级-2。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Red Hat 发布 Node.js 26.4.0 安全更新（RHSA-2026:33866）",
+      "summary": "2026年6月30日，Red Hat 为 Hardened Images RPMs 发布安全更新，包含 nodejs26.4.0.3.hum1 及 npm 11.17.0，修复 CVE-20263149 等安全问题-8。",
+      "source": "Red Hat 官方",
+      "url": "https://access.redhat.com/errata/RHSA-2026:33866",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "本次更新涵盖 aarch64 和 x86_64 架构的 nodejs26 及相关组件，属于安全 advisory 级别更新-18。"
+        },
+        {
+          "stance": "企业运维视角",
+          "summary": "使用 Red Hat Hardened Images 的用户需及时应用该更新以确保容器镜像安全，特别是涉及 CVE-2026-13149 的修复-18。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Node.js 22.23.1 与 24.18.0 上线 Heroku 构建平台",
+      "summary": "2026年6月24日起，Heroku 平台正式支持 Node.js 24.18.0 和 22.23.1 版本，开发者可在 Heroku 构建中使用这两个新版本-。",
+      "source": "Heroku 官方",
+      "url": "https://devcenter.heroku.com/changelog-items/3729",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "平台公告",
+          "summary": "Heroku 已完成对新版本 Node.js 的构建支持，开发者可通过配置 package.json 中的 engines.node 字段指定版本。"
+        },
+        {
+          "stance": "开发者体验",
+          "summary": "Heroku 用户可立即使用最新的 LTS 和 Current 版本进行部署，便于在云平台上测试新特性-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期 Node.js 社区热点集中于版本密集发布与安全漏洞响应。26.4.0 的 VFS 等新特性引发技术讨论，而 CVE-2026-48936 等权限绕过漏洞则引起企业安全团队高度警惕。AWS Lambda 的 Node.js 20 EOL 推动大规模生产环境迁移，整体舆情呈现「积极跟进新版本、严肃应对安全风险」的双重态势。",
+  "honesty_note": "近7天内（6月24日至7月1日）Node.js 相关热点主要集中在6月24日的版本发布（26.4.0、24.18.0、22.23.1）及此前安全漏洞的后续披露与修复。6月28日至7月1日期间未见重大全新事件，多为安全更新推送（如 Red Hat 6月30日更新）和既有话题的延续讨论。建议关注 Node.js 官方博客及 GitHub 发布页以获取实时动态。",
+  "start_time": "2026-07-01 19:33",
+  "end_time": "2026-07-01 19:33",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

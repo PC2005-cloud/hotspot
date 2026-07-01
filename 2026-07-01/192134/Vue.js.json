@@ -1,0 +1,47 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "【Vue&ViteConf 2026 定档 7 月 18 日】尤雨溪将出席谈 AI 时代 Vue 的下一站",
+      "summary": "Vue&ViteConf 2026 将于 7 月 18 日在上海举办-。大会已确认 11 位嘉宾，围绕 Vue/Vite 核心生态演进、AI Agent 与开发者工具、Vue 边界扩展等四条主线展开-。尤雨溪将发表主题演讲，探讨 Vue 和 Vite 在 AI 时代的未来方向。",
+      "source": "InfoQ / Bilibili",
+      "url": "https://vueconf.cn",
+      "published_time": "2026-06-29",
+      "perspectives": [
+        {
+          "stance": "【大会官方】",
+          "summary": "本次大会不仅涵盖 Vapor Mode、Rolldown 等核心技术演进，还深入探讨 AI Agent 如何与 Vue/Vite 工具链协作，是 2026 年国内前端领域最重要的技术会议之一-13。"
+        },
+        {
+          "stance": "【社区参与者】",
+          "summary": "AI 正在重写应用开发流程，Vue 生态能否在 AI 时代继续保持竞争力，是社区最关注的话题。尤雨溪的演讲将直接影响开发者对 Vue 未来路线的信心-13。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "【AI 时代前端框架竞争范式转移】Vue 与 Vite 给出新答案",
+      "summary": "InfoQ 于 2026 年 6 月 29 日发布深度文章，探讨 AI 进入真实工程流程后，前端框架和工具链应如何被重新设计-。文章指出 Vite 生态已从「快」扩展到覆盖创建、开发、测试、构建、部署的完整路径，并正与 AI Agent 深度整合。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/8O9lMqWlC0Qkh9uLpPqk",
+      "published_time": "2026-06-29",
+      "perspectives": [
+        {
+          "stance": "【技术观察】InfoQ",
+          "summary": "Vue 和 Vite 正在连成一条完整的工具链路径，Void、Vite+ 等新工具让 AI Agent 能通过自然语言指令自动搭建并上线应用，这是前端工具链在 AI 时代的核心演进方向-13。"
+        },
+        {
+          "stance": "【开发者社区】",
+          "summary": "工具越统一，AI 越容易理解项目；流程越清晰，自动化越不容易失控。Vue 生态的统一工具链策略在 AI 时代具有独特优势-13。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近 7 天内 Vue.js 生态热度集中在版本发布和技术前瞻两大方向：Vue 3.5.39 补丁版本和 3.6.0-beta.17（Vapor Mode 稳定化）引发开发者对升级和性能优化的关注-8-9；Vue&ViteConf 2026 定档及尤雨溪谈 AI 时代 Vue 方向成为社区热议焦点-13。整体情绪积极，开发者对 Vue 在 AI 时代的技术演进持期待态度。",
+  "honesty_note": "需要说明的是，2026 年 6 月初（6 月 4 日至 6 日）发生的「VoidZero 被 Cloudflare 收购」事件是本月 Vue 生态最大新闻-，但该事件发生在 6 月 24 日之前，不在用户指定的「近 7 天（6 月 24 日至 7 月 1 日）」时间范围内，因此未列入主列表。当前时间范围内最相关的高热度资讯为 Vue 3.5.39/3.6.0-beta.17 版本发布、Vue&ViteConf 2026 大会预告以及 AI 时代 Vue 生态演进讨论。",
+  "start_time": "2026-07-01 19:30",
+  "end_time": "2026-07-01 19:31",
+  "elapsed_seconds": 47,
+  "retry_count": 0
+}

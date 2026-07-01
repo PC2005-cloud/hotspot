@@ -1,0 +1,159 @@
+{
+  "keyword": "OpenAI",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "美国政府首次要求AI公司限量发布模型，GPT-5.6遭「一客一审」",
+      "summary": "白宫以网络安全为由要求OpenAI分阶段发布GPT.6，仅限政府批准的合作伙伴使用，用户需逐一审批。奥特曼表示不认同此模式但暂时接受，这是美国政府首次干预AI模型发布范围。",
+      "source": "凤凰网、Axios、CNN",
+      "url": "https://news.ifeng.com/c/8uGfYoYCvyn?ch=ttsearch",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "官方通报与政府立场",
+          "summary": "白宫认为GPT-5.6性能与Anthropic Mythos相当，出于安全担忧要求限量发布。特朗普6月2日签署行政令建立「自愿审查」框架，允许政府提前30天获取模型访问权限-1-11。"
+        },
+        {
+          "stance": "OpenAI CEO回应",
+          "summary": "奥特曼在备忘录中表示已明确告知政府这不是首选长期模式，希望几周后全面发布，称「不喜欢美国政府挑选客户」，但暂时接受这一短期安排--。"
+        },
+        {
+          "stance": "行业与媒体分析",
+          "summary": "CNN指出美国AI监管缺乏透明统一框架，针对Anthropic的指令来自商务部、OpenAI接到的命令出自白宫，令AI公司困惑。专家呼吁建立透明公正的监管措施-1-11。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI发布GPT-5.6系列三款模型，性能全面超越竞品",
+      "summary": "北京时间6月27日，OpenAI正式发布GPT.6系列，含旗舰Sol、均衡Terra、轻量Luna三款。Sol在编程测试中达91.9%得分，定价仅为Anthropic Fable 5的一半。",
+      "source": "TechWeb、搜狐、央广网",
+      "url": "https://m.techweb.com.cn/marticle/2026-06-27/2976928.shtml",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "官方发布信息",
+          "summary": "GPT-5.6在编程、网络安全、生物学等领域显著突破，上下文窗口从100万扩展至150万token。Sol定价每百万token输入5美元/输出30美元，仅为竞品一半-19。"
+        },
+        {
+          "stance": "市场与开发者反应",
+          "summary": "模型虽性能卓越但仅向约二十家「可信合作伙伴」开放，普通用户无法使用。首批获得权限的企业需经美国政府逐一审批，引发开发者对「AI民主化倒退」的担忧-19-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI通过系统底层优化将推理成本降低50%以上",
+      "summary": "据The Information报道，OpenAI工程师通过系统底层优化将AI模型推理成本降低超50%，主要靠提升现有服务器利用率而非新增芯片。此举有望降低API定价或提升用户限额。",
+      "source": "IT之家、The Information、网易",
+      "url": "https://tech.ifeng.com/c/8uO4L0okDcy?ch=ttsearch",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "技术报道",
+          "summary": "优化手段包括模型量化、键值缓存、请求批量处理等，未换新芯片纯软件层面实现。工程师将技术应用于未注册访客场景后，峰值所需显卡规模仅几百块-5-。"
+        },
+        {
+          "stance": "商业与竞争分析",
+          "summary": "降本为OpenAI发动价格战提供空间，GPT-5.6 Sol定价仅为竞品一半。公司毛利率从去年33%提升至今年一季度39%，目标年底达52%-5-。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI成立应急小组调查Codex额度异常消耗问题",
+      "summary": "6月29日，OpenAI组建应急专项小组调查Codex额度消耗异常。根源是防滥用风控系统错误限流，部分用户周额度在一天内从96%骤降至0%。团队已全面重置用户额度并逐条核查日志。",
+      "source": "IT之家、品玩、凤凰网",
+      "url": "https://www.ithome.com/0/970/200.htm",
+      "published_time": "2026-06-29",
+      "perspectives": [
+        {
+          "stance": "官方说明",
+          "summary": "OpenAI状态页面确认故障源于风控系统错误限流，Codex工程负责人称团队周日全员进驻应急攻坚室，不查清根源绝不收工-3-。"
+        },
+        {
+          "stance": "用户反馈",
+          "summary": "大量Codex用户在X平台反馈执行相同任务额度消耗明显加快。一名200美元套餐用户称以往一周额度现在两天耗尽，首次不得不手动重置额度-3-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "OpenAI联合博通发布首款自研AI推理芯片Jalapeño",
+      "summary": "6月24日，OpenAI与博通联合发布首款定制AI推理芯片Jalapeño，专为大语言模型推理设计，从设计到流片仅用9个月，计划2026年底部署于千兆瓦级数据中心。",
+      "source": "讯石光通讯网、36氪、界面新闻",
+      "url": "http://www.iccsz.com/site/cn/News/2026/06/25/20260625014543732440.htm",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Jalapeño从零开始为LLM推理设计，早期测试每瓦性能显著优于现有最先进产品。OpenAI总裁称这是全栈基础设施战略一部分，目标是让AI更快更实惠-24。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "Jalapeño标志着OpenAI从模型层延伸至芯片层，与英伟达GPU形成差异化竞争。芯片和服务器不对外销售仅供内部使用，已制定多代芯片路线图-。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "ChatGPT语音模式迎重大升级，双向模型Bidi 1曝光",
+      "summary": "6月24日，新一代双向音频模型GPT-Bidi在部分用户界面现身，支持用户说话时AI同步处理语义、可随时打断并自然回应，预计本周逐步推送。",
+      "source": "智东西、品玩、钛媒体",
+      "url": "https://www.163.com/dy/article/L07H4J3M051180F7.html",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "技术前瞻",
+          "summary": "Bidi 1打破传统「问答轮次」模式，实现双向并行交互。用户停顿或放慢语速时AI以「嗯」「好的」自然回应，实时翻译能力直接嵌入对话-7。"
+        },
+        {
+          "stance": "用户期待",
+          "summary": "早期测试显示Bidi 1与当前高级语音模式差距明显，被集成在模型选择器中与标准语音并列。用户普遍期待更自然的对话体验，但也关注版权内容处理更严格-7。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "OpenAI首款硬件正式亮相：Codex Micro可编程宏键盘",
+      "summary": "6月30日，OpenAI宣布首款硬件Codex Micro——与Work Louder联名的Macro Pad可编程宏键盘，配备13个机械按键、摇杆和触摸传感器，深度绑定Codex工具，7月15日发售。",
+      "source": "i黑马、TechWeb、太平洋电脑网",
+      "url": "http://www.iheima.com/article-399110.html",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "官方介绍",
+          "summary": "官方视频标题「您最喜欢的Codex快捷方式将得到升级」，发言人表示设备将明显提升Codex使用效率，是OpenAI探索硬件领域的首次尝试-8。"
+        },
+        {
+          "stance": "市场解读",
+          "summary": "Macro Pad深度绑定单一AI工具，本质是锁定开发者的硬件壁垒。当开发者习惯用物理按键一键调用Codex，切换竞品成本大幅上升-。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "OpenAI考虑推迟IPO至2027年，奥特曼坚持万亿美元估值",
+      "summary": "据《纽约时报》报道，OpenAI正考虑将IPO从2026年推迟至2027年，因奥特曼坚持1万亿美元估值目标。受SpaceX上市后股价高开低走影响，公司暂缓上市进程。",
+      "source": "投资界、金融界、东方财富",
+      "url": "https://m.pedaily.cn/news/565635",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "内部决策分析",
+          "summary": "奥特曼死守万亿估值线，顾问建议要么等到万亿定价再上，要么现在接受打折数字。公司至今未启动任何IPO前路演，内部清楚「可能还需要一段时间」-12。"
+        },
+        {
+          "stance": "市场反应",
+          "summary": "推迟消息引发连锁反应：软银两天跌超12%，铠侠下挫12%。预测市场显示2027年3月前宣布IPO概率仅59%，约三分之一合约指向2026年内-12。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周OpenAI舆情高度聚焦GPT-5.6发布受限事件，美国政府首次干预AI模型发布引发「AI民主化倒退」担忧；同时推理成本减半、自研芯片等降本举措被视为利好，但Codex额度异常等用户体验问题引发不满。整体情绪呈现「技术突破与监管收紧并存」的复杂态势。",
+  "honesty_note": null,
+  "start_time": "2026-07-01 19:23",
+  "end_time": "2026-07-01 19:24",
+  "elapsed_seconds": 51,
+  "retry_count": 0
+}

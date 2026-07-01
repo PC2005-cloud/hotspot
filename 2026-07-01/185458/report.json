@@ -1,0 +1,114 @@
+{
+  "report_time": "2026-07-01 18:55",
+  "start_time": "2026-07-01 18:55",
+  "end_time": "2026-07-01 18:55",
+  "total_elapsed_seconds": 51,
+  "total_keywords": 1,
+  "success_count": 1,
+  "failed_count": 0,
+  "total_hotspots": 5,
+  "results": [
+    {
+      "keyword": "DeepSeek",
+      "status": "完成",
+      "hotspots_count": 5,
+      "start_time": "2026-07-01 18:55",
+      "end_time": "2026-07-01 18:55",
+      "elapsed_seconds": 38,
+      "retry_count": 0,
+      "hotspots": [
+        {
+          "rank": 1,
+          "title": "DeepSeek宣布V4正式版7月中旬上线 同步引入API峰谷定价机制 高峰时段价格翻倍",
+          "summary": "DeepSeek宣布V4正式版将于7月中旬上线，并同步调整API定价策略，首次引入峰谷定价机制，高峰时段（每日9:00:00和14:00:00）价格为平时2倍。",
+          "source": "第一财经、红星资本局、联合早报等",
+          "url": "https://m.21jingji.com/article/20260701/herald/8db99bf80dad4dee296aa3584c74b1db.html",
+          "published_time": "2026-07-01 12:04",
+          "perspectives": [
+            {
+              "stance": "【开发者质疑】高峰时段划分对国内用户不友好，几乎覆盖全部工作时间，变相增加国内开发者成本，反而利好欧美等时区用户-7。"
+            },
+            {
+              "stance": "【开发者理解】DeepSeek定价本身已处于行业低位，即便高峰涨价2倍仍有竞争力，关键在于V4正式版能力升级幅度-7。"
+            },
+            {
+              "stance": "【行业分析】峰谷定价是AI云服务走向成熟的标志，算力将趋近电价模式分层计费，会倒逼开发者优化任务调度和缓存策略-7-8。"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "title": "DeepSeek启动成立以来最大规模招聘 所有部门规模扩大至少一倍 月薪最高10万元",
+          "summary": "6月25日，DeepSeek发布大规模招聘公告，宣布将所有部门规模扩大至少一倍，开放33个岗位，覆盖算法、研发、运维、产品及HR、法务等职能部门-。Boss直聘数据显示在招岗位达116个，技术岗月薪最高达7万至10万元。",
+          "source": "澎湃新闻、凤凰周刊、36氪等",
+          "url": "https://m.thepaper.cn/newsDetail_forward_33454877",
+          "published_time": "2026-06-26 07:23",
+          "perspectives": [
+            {
+              "stance": "【官方表态】DeepSeek称「人类正处于AGI前夜」，用人原则是让新人直接承担最核心任务，欢迎加入「一起照亮未至之境」-1。"
+            },
+            {
+              "stance": "【业内分析】大模型行业竞争逻辑已变，单纯模型性能领先优势缩小，竞争向组织能力和商业化能力延伸，DeepSeek正从技术驱动型公司向平台型AI企业转型-5。"
+            },
+            {
+              "stance": "【招聘理念】DeepSeek招聘不看大厂履历，怕被「大厂味」带偏，重点看人选素质和对AI的热爱，而非经验对口程度-14。"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "title": "DeepSeek联合北大发布DSpark推理加速框架 梁文锋署名论文 高并发吞吐量翻4倍",
+          "summary": "6月27日，DeepSeek团队联合北京大学发布论文《DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation》，创始人梁文锋位列作者名单-。DSpark已集成至DeepSeek-V4线上服务，单用户生成速度提升60%%，高并发场景下有效吞吐量翻4倍。",
+          "source": "上海证券报、中关村在线、财联社等",
+          "url": "https://www.cnstock.com/commonDetail/735328",
+          "published_time": "2026-06-28 19:39",
+          "perspectives": [
+            {
+              "stance": "【技术解读】DSpark采用半自回归生成架构，融合高吞吐并行生成与轻量级串行校验，并引入置信度调度验证机制，可根据系统负载动态调整验证长度-20-21。"
+            },
+            {
+              "stance": "【产业意义】这是DeepSeek完成510亿元融资后首次开源新成果，团队同步开源了推测解码训练代码库DeepSpec及模型权重，体现其技术开放策略-21。"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "title": "DeepSeek完成510亿元首轮融资估值近4000亿 打破梁文锋「三不」原则",
+          "summary": "6月16日，DeepSeek完成成立以来首轮外部融资，募资总额510亿元，估值近4000亿元。创始人梁文锋个人出资200亿元为最大单一出资方，腾讯、宁德时代、京东、网易及IDG资本等跟投3。",
+          "source": "36氪、财经网等",
+          "url": "https://36kr.com/p/3876552891134214",
+          "published_time": "2026-06-30 23:16",
+          "perspectives": [
+            {
+              "stance": "【融资动因】核心人才流失和外部抢人大战是促使梁文锋改变融资态度的关键——不融资员工期权就无法增值，相比智谱、MiniMax等估值暴涨，DeepSeek员工将难以留住-6。"
+            },
+            {
+              "stance": "【战略解读】融资一方面是留人需要，另一方面为补全组织架构提供基础条件。DeepSeek正从「产品驱动」迈向「组织驱动」，在组织成熟后大规模产品红利才开始释放-6。"
+            },
+            {
+              "stance": "【产业协同】梁文锋在此轮融资中更看重产业协同，选择宁德时代资本进场或为后续算电协同考虑-2。"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "title": "英伟达刷新DeepSeek V4推理纪录 单Token成本降至五分之一",
+          "summary": "6月30日，英伟达发布博文宣布在Blackwell平台上通过全栈推理优化，将DeepSeek V4模型单Token成本相比1个月前上线初期最多降至五分之一。英伟达通过生产运营层、应用加速层、基础设施访问层三层优化推理，单GPU的Token吞吐量最高可提升20倍。",
+          "source": "IT之家、网易等",
+          "url": "https://www.163.com/dy/article/L0OO4HRI0511B8LM.html",
+          "published_time": "2026-07-01 13:52",
+          "perspectives": [
+            {
+              "stance": "【技术报道】英伟达已将单Token成本列为AI总拥有成本的核心指标，并表示Blackwell平台已将其降低至行业最低水平--9。"
+            },
+            {
+              "stance": "【产业视角】英伟达对DeepSeek V4的推理优化进一步降低了企业部署成本，有助于推动大模型在各行业的规模化应用落地-9。"
+            }
+          ]
+        }
+      ],
+      "public_sentiment_summary": "近7日DeepSeek舆情热度集中在三大方向：一是API峰谷定价引发开发者热议，褒贬不一但普遍关注V4正式版能力；二是大规模招聘与500亿融资标志着公司从技术驱动转向商业化运营；三是DSpark推理框架发布与英伟达优化体现了技术实力持续领先。整体情绪以高度关注和期待为主，争议集中在定价策略对国内开发者的实际影响。",
+      "honesty_note": null
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>热点聚合报告</title>
+<style>
+:root {
+    --bg: #0b1120; --text: #e8ecf2; --sec: #94a3b8; --muted: #5e6d7d;
+    --accent: #818cf8; --border: rgba(255,255,255,0.06);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family: 'Segoe UI','PingFang SC','Inter',system-ui,-apple-system,sans-serif;
+    background: radial-gradient(ellipse at 50% 30%, #1a2332 0%, #0b1120 55%, #060c16 100%);
+    color: var(--text); padding: 40px 20px; min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+.wrapper { max-width: 860px; margin: 0 auto; }
+.overview { text-align: center; padding: 40px; margin-bottom: 28px; background: rgba(15,23,42,0.5); backdrop-filter: blur(28px); border-radius: 20px; border: 1px solid var(--border); }
+.overview h1 { font-size: 28px; font-weight: 800; background: linear-gradient(135deg,#818cf8,#a5b4fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 16px; }
+.overview .meta { color: var(--sec); font-size: 14px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.overview .meta span { background: rgba(255,255,255,0.05); padding: 4px 14px; border-radius: 20px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.tab { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--sec); padding: 10px 20px; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s; font-family: inherit; }
+.tab:hover { border-color: rgba(129,140,248,0.3); color: var(--text); }
+.tab.active { background: rgba(129,140,248,0.15); border-color: var(--accent); color: var(--text); }
+.tab-count { display: inline-block; background: rgba(255,255,255,0.08); padding: 1px 8px; border-radius: 10px; font-size: 12px; margin-left: 6px; }
+.tab.active .tab-count { background: rgba(129,140,248,0.3); }
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+.pane-header { display: flex; justify-content: flex-end; align-items: center; margin-bottom: 16px; }
+.kw-meta { display: flex; gap: 12px; font-size: 13px; color: var(--sec); }
+.card { background: rgba(15,23,42,0.5); backdrop-filter: blur(28px); border-radius: 14px; padding: 20px; margin-bottom: 12px; border: 1px solid var(--border); transition: border-color 0.2s; }
+.card:hover { border-color: rgba(129,140,248,0.3); }
+.card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; flex-wrap: wrap; }
+.rank { background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+.source { color: #34d399; }
+.ptime { color: var(--muted); margin-left: auto; }
+h2 { font-size: 17px; font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+.summary { color: var(--sec); font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+.url-line { margin-bottom: 8px; }
+.url-line a { color: #38bdf8; font-size: 13px; word-break: break-all; }
+.persp { background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px 12px; margin-top: 8px; font-size: 13px; line-height: 1.6; }
+.stance { display: inline-block; color: #f59e0b; font-weight: 500; margin-bottom: 2px; }
+.sentiment { background: rgba(15,23,42,0.5); backdrop-filter: blur(28px); border-radius: 14px; padding: 20px 24px; margin-top: 12px; border: 1px solid var(--border); }
+.sentiment h3 { font-size: 14px; margin-bottom: 8px; color: var(--accent); }
+.sentiment p { color: var(--sec); font-size: 14px; line-height: 1.7; }
+.footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 40px; padding: 20px; }
+.empty-state { text-align: center; padding: 80px 40px; background: rgba(15,23,42,0.5); backdrop-filter: blur(28px); border-radius: 20px; border: 1px solid var(--border); }
+.empty-state .empty-icon { font-size: 64px; margin-bottom: 20px; }
+.empty-state h2 { font-size: 22px; margin-bottom: 12px; }
+.empty-state p { color: var(--sec); font-size: 15px; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="overview">
+        <h1>热点聚合报告</h1>
+        <div class="meta">
+            <span>🕐 2026-07-01 18:55 — 2026-07-01 18:55</span>
+            <span>⏱ 总耗时 51s</span>
+            <span>📄 1/1 成功 · 5 条热点</span>
+        </div>
+    </div>
+    <div class="tabs" id="tabs"><button class="tab active" data-tab="0">DeepSeek <span class="tab-count">5</span></button></div>
+    <div id="panes">
+        <div class="tab-pane active" data-tab="0">
+            <div class="pane-header">
+                <div class="kw-meta">
+                    <span>⏱ 38s</span>
+                    <span>🕐 2026-07-01 18:55</span>
+                    <span>重试 0 次</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#1</span>
+                    <span class="source">第一财经、红星资本局、联合早报等</span>
+                    <span class="ptime">2026-07-01 12:04</span>
+                </div>
+                <h2>DeepSeek宣布V4正式版7月中旬上线 同步引入API峰谷定价机制 高峰时段价格翻倍</h2>
+                <p class="summary">DeepSeek宣布V4正式版将于7月中旬上线，并同步调整API定价策略，首次引入峰谷定价机制，高峰时段（每日9:00:00和14:00:00）价格为平时2倍。</p>
+                <div class="url-line"><a href="https://m.21jingji.com/article/20260701/herald/8db99bf80dad4dee296aa3584c74b1db.html" target="_blank">查看原文</a></div>
+                <div class="persp"><span class="stance">【开发者质疑】高峰时段划分对国内用户不友好，几乎覆盖全部工作时间，变相增加国内开发者成本，反而利好欧美等时区用户-7。</span></div><div class="persp"><span class="stance">【开发者理解】DeepSeek定价本身已处于行业低位，即便高峰涨价2倍仍有竞争力，关键在于V4正式版能力升级幅度-7。</span></div><div class="persp"><span class="stance">【行业分析】峰谷定价是AI云服务走向成熟的标志，算力将趋近电价模式分层计费，会倒逼开发者优化任务调度和缓存策略-7-8。</span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#2</span>
+                    <span class="source">澎湃新闻、凤凰周刊、36氪等</span>
+                    <span class="ptime">2026-06-26 07:23</span>
+                </div>
+                <h2>DeepSeek启动成立以来最大规模招聘 所有部门规模扩大至少一倍 月薪最高10万元</h2>
+                <p class="summary">6月25日，DeepSeek发布大规模招聘公告，宣布将所有部门规模扩大至少一倍，开放33个岗位，覆盖算法、研发、运维、产品及HR、法务等职能部门-。Boss直聘数据显示在招岗位达116个，技术岗月薪最高达7万至10万元。</p>
+                <div class="url-line"><a href="https://m.thepaper.cn/newsDetail_forward_33454877" target="_blank">查看原文</a></div>
+                <div class="persp"><span class="stance">【官方表态】DeepSeek称「人类正处于AGI前夜」，用人原则是让新人直接承担最核心任务，欢迎加入「一起照亮未至之境」-1。</span></div><div class="persp"><span class="stance">【业内分析】大模型行业竞争逻辑已变，单纯模型性能领先优势缩小，竞争向组织能力和商业化能力延伸，DeepSeek正从技术驱动型公司向平台型AI企业转型-5。</span></div><div class="persp"><span class="stance">【招聘理念】DeepSeek招聘不看大厂履历，怕被「大厂味」带偏，重点看人选素质和对AI的热爱，而非经验对口程度-14。</span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#3</span>
+                    <span class="source">上海证券报、中关村在线、财联社等</span>
+                    <span class="ptime">2026-06-28 19:39</span>
+                </div>
+                <h2>DeepSeek联合北大发布DSpark推理加速框架 梁文锋署名论文 高并发吞吐量翻4倍</h2>
+                <p class="summary">6月27日，DeepSeek团队联合北京大学发布论文《DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation》，创始人梁文锋位列作者名单-。DSpark已集成至DeepSeek-V4线上服务，单用户生成速度提升60%%，高并发场景下有效吞吐量翻4倍。</p>
+                <div class="url-line"><a href="https://www.cnstock.com/commonDetail/735328" target="_blank">查看原文</a></div>
+                <div class="persp"><span class="stance">【技术解读】DSpark采用半自回归生成架构，融合高吞吐并行生成与轻量级串行校验，并引入置信度调度验证机制，可根据系统负载动态调整验证长度-20-21。</span></div><div class="persp"><span class="stance">【产业意义】这是DeepSeek完成510亿元融资后首次开源新成果，团队同步开源了推测解码训练代码库DeepSpec及模型权重，体现其技术开放策略-21。</span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#4</span>
+                    <span class="source">36氪、财经网等</span>
+                    <span class="ptime">2026-06-30 23:16</span>
+                </div>
+                <h2>DeepSeek完成510亿元首轮融资估值近4000亿 打破梁文锋「三不」原则</h2>
+                <p class="summary">6月16日，DeepSeek完成成立以来首轮外部融资，募资总额510亿元，估值近4000亿元。创始人梁文锋个人出资200亿元为最大单一出资方，腾讯、宁德时代、京东、网易及IDG资本等跟投3。</p>
+                <div class="url-line"><a href="https://36kr.com/p/3876552891134214" target="_blank">查看原文</a></div>
+                <div class="persp"><span class="stance">【融资动因】核心人才流失和外部抢人大战是促使梁文锋改变融资态度的关键——不融资员工期权就无法增值，相比智谱、MiniMax等估值暴涨，DeepSeek员工将难以留住-6。</span></div><div class="persp"><span class="stance">【战略解读】融资一方面是留人需要，另一方面为补全组织架构提供基础条件。DeepSeek正从「产品驱动」迈向「组织驱动」，在组织成熟后大规模产品红利才开始释放-6。</span></div><div class="persp"><span class="stance">【产业协同】梁文锋在此轮融资中更看重产业协同，选择宁德时代资本进场或为后续算电协同考虑-2。</span></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="rank">#5</span>
+                    <span class="source">IT之家、网易等</span>
+                    <span class="ptime">2026-07-01 13:52</span>
+                </div>
+                <h2>英伟达刷新DeepSeek V4推理纪录 单Token成本降至五分之一</h2>
+                <p class="summary">6月30日，英伟达发布博文宣布在Blackwell平台上通过全栈推理优化，将DeepSeek V4模型单Token成本相比1个月前上线初期最多降至五分之一。英伟达通过生产运营层、应用加速层、基础设施访问层三层优化推理，单GPU的Token吞吐量最高可提升20倍。</p>
+                <div class="url-line"><a href="https://www.163.com/dy/article/L0OO4HRI0511B8LM.html" target="_blank">查看原文</a></div>
+                <div class="persp"><span class="stance">【技术报道】英伟达已将单Token成本列为AI总拥有成本的核心指标，并表示Blackwell平台已将其降低至行业最低水平--9。</span></div><div class="persp"><span class="stance">【产业视角】英伟达对DeepSeek V4的推理优化进一步降低了企业部署成本，有助于推动大模型在各行业的规模化应用落地-9。</span></div>
+            </div>
+            <div class="sentiment"><h3>舆情总结</h3><p>近7日DeepSeek舆情热度集中在三大方向：一是API峰谷定价引发开发者热议，褒贬不一但普遍关注V4正式版能力；二是大规模招聘与500亿融资标志着公司从技术驱动转向商业化运营；三是DSpark推理框架发布与英伟达优化体现了技术实力持续领先。整体情绪以高度关注和期待为主，争议集中在定价策略对国内开发者的实际影响。</p></div>
+        </div></div>
+    <div id="empty-state" class="empty-state" style="display:none">
+        <div class="empty-icon">📭</div>
+        <h2>暂无热点数据</h2>
+        <p></p>
+    </div>
+    <div class="footer">由 Hotspot 自动生成 · 2026-07-01 18:55</div>
+    <script>
+    var tabs = document.getElementById('tabs');
+    var panes = document.getElementById('panes');
+    var empty = document.getElementById('empty-state');
+    if (tabs.children.length === 0) {
+        tabs.style.display = 'none';
+        panes.style.display = 'none';
+        empty.style.display = 'block';
+    }
+    document.querySelectorAll('.tab').forEach(function(t) {
+        t.addEventListener('click', function() {
+            document.querySelectorAll('.tab').forEach(function(b) { b.classList.remove('active'); });
+            document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
+            t.classList.add('active');
+            document.querySelector('.tab-pane[data-tab="' + t.dataset.tab + '"]').classList.add('active');
+        });
+    });
+    </script>
+</div>
+<script>
+document.querySelectorAll('.tab').forEach(t => {
+    t.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+        t.classList.add('active');
+        document.querySelector('.tab-pane[data-tab="' + t.dataset.tab + '"]').classList.add('active');
+    });
+});
+</script>
+</body>
+</html>

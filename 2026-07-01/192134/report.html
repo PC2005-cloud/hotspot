@@ -138,6 +138,31 @@ body {
   border: 1px solid var(--border-card);
   box-shadow: var(--shadow-overview);
   transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+}
+.blog-badge {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+.blog-badge a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  background: var(--bg-accent-subtle);
+  border: 1px solid var(--border-divider);
+  border-radius: 20px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.blog-badge a:hover {
+  background: var(--bg-tab-active);
+  border-color: var(--accent);
+  transform: translateY(-1px);
 }
 .overview h1 {
   font-size: 28px;
@@ -373,6 +398,16 @@ body {
   padding: 24px;
   letter-spacing: 0.02em;
 }
+.footer-blog {
+  margin-top: 8px;
+}
+.footer-blog a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+.footer-blog a:hover { opacity: 0.75; }
 
 /* ===== 空状态 ===== */
 .empty-state {
@@ -441,6 +476,12 @@ body {
 
   <!-- 概览 -->
   <div class="overview">
+    <div class="blog-badge">
+      <a href="https://www.lxpavilion.top" target="_blank" rel="noopener" title="栏轩阁 · 个人博客">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <span>欢迎关注 → 栏轩阁</span>
+      </a>
+    </div>
     <h1>🔥 热点聚合报告</h1>
     <div class="meta">
       <span>🕐 2026-07-01 19:22 — 2026-07-01 19:40</span>
@@ -1651,29 +1692,49 @@ body {
   </div>
 
   <!-- 页脚 -->
-  <div class="footer">由 Hotspot 自动生成 · 2026-07-01 23:00</div>
+  <div class="footer">
+    <div>由 Hotspot 自动生成 · 2026-07-01 23:07</div>
+    <div class="footer-blog">
+      如果感兴趣，欢迎访问 <a href="https://www.lxpavilion.top" target="_blank" rel="noopener">栏轩阁 · 个人技术博客</a> 获取更多内容
+    </div>
+  </div>
 </div>
 
 <script>
 (function() {
-  // ── 主题管理 (与博客 ThemeProvider 兼容) ──
+  // ── 主题管理 (跨子域 cookie + localStorage 双写, 与 blog.lxpavilion.top 同步) ──
   var KEY = 'blog-theme';
+  var DOMAIN = '.lxpavilion.top';
   var html = document.documentElement;
   var btn = document.getElementById('themeToggle');
 
+  // 从 cookie 读取主题
+  function getCookie(name) {
+    var m = document.cookie.match('(?:^|;)\\s*' + name + '=([^;]+)');
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+  // 写入 cookie (跨子域共享)
+  function setCookie(name, value) {
+    document.cookie = name + '=' + encodeURIComponent(value) +
+      '; domain=' + DOMAIN +
+      '; path=/' +
+      '; max-age=' + (365 * 24 * 3600) +
+      '; SameSite=Lax';
+  }
+
   function getTheme() {
-    var stored = localStorage.getItem(KEY);
-    // 默认 dark
-    return stored === null ? 'dark' : (stored === 'light' ? 'light' : 'dark');
+    // 优先读 cookie (跨子域同步), 其次 localStorage, 默认 dark
+    return getCookie(KEY) || localStorage.getItem(KEY) || 'dark';
   }
   function applyTheme(theme) {
     var isDark = theme === 'dark';
     html.classList.toggle('dark', isDark);
-    btn.textContent = isDark ? '🌙' : '☀️';
+    if (btn) btn.textContent = isDark ? '🌙' : '☀️';
   }
   window.toggleTheme = function() {
     var next = html.classList.contains('dark') ? 'light' : 'dark';
-    localStorage.setItem(KEY, next);
+    setCookie(KEY, next);
+    try { localStorage.setItem(KEY, next); } catch(e) {}
     applyTheme(next);
   };
   applyTheme(getTheme());

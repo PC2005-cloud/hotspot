@@ -1,0 +1,83 @@
+{
+  "keyword": "DeepSeek",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "DeepSeek启动成立以来最大规模招聘，所有部门规模扩大至少一倍",
+      "summary": "6月25日，DeepSeek发布招聘公告，计划将所有部门规模扩大至少一倍，开放岗位覆盖预训练、Agent、产品、法务等方向，月薪最高达10万元3。",
+      "source": "澎湃新闻、凤凰周刊、财联社等",
+      "url": "https://m.thepaper.cn/newsDetail_forward_33454877",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "官方发布与战略意图",
+          "summary": "DeepSeek称人类正处于AGI前夜，扩招是为了让新人直接承担最核心任务-2。招聘重点从纯研发延伸至产品、运营和组织建设-3。"
+        },
+        {
+          "stance": "行业解读",
+          "summary": "业内认为，随着头部模型能力趋同，竞争正从技术突破转向组织能力和商业化能力-3。此次扩招标志着DeepSeek从技术驱动型公司向平台型AI企业转型-3。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "DeepSeek联合北大发布DSpark推理加速框架，单用户提速60%-85%",
+      "summary": "6月27日，DeepSeek联合北京大学发布DSpark推理加速框架及全栈开源工具DeepSpec，可将单用户生成速度提升60%至85%，这是完成500亿融资后首次开源成果。",
+      "source": "联合早报、雷峰网、智东西等",
+      "url": "https://www.leiphone.com/category/ai/3QqhbnrdnlxcrD1R.html",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "技术突破报道",
+          "summary": "DSpark通过推测解码技术优化推理效率，在不改变模型架构的前提下大幅提速-15。论文、代码库和模型已全部开源-15。"
+        },
+        {
+          "stance": "产业意义分析",
+          "summary": "此次更新重点在于工程落地而非模型迭代，显示DeepSeek在算力效率竞争中寻求优势。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "DeepSeek完成510亿元首轮融资，估值近4000亿元",
+      "summary": "6月16日，DeepSeek完成成立以来首轮外部融资，募资510亿元，估值近4000亿元，打破创始人梁文锋「不融资、不上市、不商业化」的原则。",
+      "source": "36氪、腾讯新闻、Pandaily等",
+      "url": "https://36kr.com/p/3876552891134214",
+      "published_time": "2026-06-16（持续热议至7月1日）",
+      "perspectives": [
+        {
+          "stance": "融资细节披露",
+          "summary": "梁文锋个人出资约200亿元为最大单一出资方，腾讯出资约100亿元，宁德时代体系出资约50亿元-2-8。"
+        },
+        {
+          "stance": "融资动机分析",
+          "summary": "融资主要因人才流失压力——智谱、MiniMax等竞品估值暴涨，DeepSeek员工期权缺乏增值空间-5-34。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "华东师大刊发AI为第一作者的论文，DeepSeek使用量居首",
+      "summary": "6月25日，华东师范大学学报刊发多篇以DeepSeek、Gemini等AI署名为第一作者的论文，引发关注。DeepSeek在所有AI工具中使用量高居榜首。",
+      "source": "搜狐、澎湃新闻等",
+      "url": "https://www.sohu.com/a/1042056092_121019331?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334&spm=smpc.channel_248.block3_308_NDdFbm_1_fd.5.1782467044068H4i8HMx_324",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "社会实验背景",
+          "summary": "这是华东师大发起的「AI一作」大型社会实验，共收到724篇有效投稿，涉及1177名人类作者-21。"
+        },
+        {
+          "stance": "争议与反思",
+          "summary": "AI模型几乎全部拒绝署名，建议人类作者详细披露AI贡献-21。实验报告认为观点凝练类论文已丧失学术价值，但善用AI工具的学者将具备优势-21。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周DeepSeek热度集中在商业化加速与人才扩张两大主线。融资、涨价、扩招三连击引发「DeepSeek告别理想主义」的广泛讨论-2-5；开发者对峰谷定价褒贬不一，但整体持观望态度-35；技术层面DSpark开源获积极评价-15；AI署名论文实验引发学术伦理热议-21。整体舆情呈「商业化转型」主导情绪。",
+  "honesty_note": "搜索结果均来自6月24日至7月1日期间的主流媒体报道，信息时效性和相关性符合要求。部分热点（如融资）发生于6月16日，但在本周持续被讨论和解读，故纳入。未发现信息滞后或不足的问题。",
+  "start_time": "2026-07-01 19:10",
+  "end_time": "2026-07-01 19:11",
+  "elapsed_seconds": 34,
+  "retry_count": 0
+}

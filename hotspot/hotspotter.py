@@ -6,6 +6,7 @@ Hotspot — DeepSeek 热点搜索器
 
 import os
 import json
+import random
 import logging
 import time
 from typing import List, Optional
@@ -291,7 +292,12 @@ def search_single(bot, keyword: str) -> dict:
 
     for attempt in range(1, max_retries + 1):
         if attempt > 1:
-            logger.info(f"  重试 ({attempt}/{max_retries})...")
+            # 指数退避 + 随机抖动
+            backoff = (2 ** (attempt - 2)) * 10  # retry 2: 10s, retry 3: 20s
+            jitter = random.uniform(5, 15)
+            wait = backoff + jitter
+            logger.info(f"  等待 {wait:.0f} 秒后重试 ({attempt}/{max_retries})...")
+            time.sleep(wait)
             bot.new_chat()
 
         result = bot.chat(prompt, timeout=180)
@@ -559,6 +565,10 @@ def run_all(bot) -> list:
     stats = []
     for i, kw in enumerate(keywords):
         if i > 0:
+            # 关键词间随机延迟，模拟人类操作间隔，防频率检测
+            delay = random.uniform(15, 45)
+            logger.info(f"  等待 {delay:.0f} 秒后处理下一个关键词...")
+            time.sleep(delay)
             try:
                 bot.new_chat()  # 每个关键词开新对话，避免上下文污染
             except Exception as e:

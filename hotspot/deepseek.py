@@ -63,11 +63,20 @@ class DeepSeekBot:
 
     def start(self) -> Page:
         """启动浏览器并恢复 session（如有），返回 Page"""
-        self._playwright = sync_playwright().start()
-        self._browser = self._playwright.chromium.launch(
-            headless=self.headless,
-            args=["--disable-blink-features=AutomationControlled"],
-        )
+        try:
+            self._playwright = sync_playwright().start()
+        except Exception as e:
+            logger.error(f"Playwright 引擎启动失败: {e}")
+            raise
+
+        try:
+            self._browser = self._playwright.chromium.launch(
+                headless=self.headless,
+                args=["--disable-blink-features=AutomationControlled"],
+            )
+        except Exception as e:
+            logger.error(f"Chromium 浏览器启动失败 (headless={self.headless}): {e}")
+            raise
 
         storage = self._load_session()
         self._context = self._browser.new_context(storage_state=storage or None)
@@ -80,7 +89,11 @@ class DeepSeekBot:
     def login(self, account: str, password: str) -> bool:
         """登录 DeepSeek，返回是否登录成功"""
         page = self._page
-        page.goto("https://chat.deepseek.com")
+        try:
+            page.goto("https://chat.deepseek.com")
+        except Exception as e:
+            logger.error(f"访问 DeepSeek 页面失败: {e}")
+            return False
         page.wait_for_timeout(5000)
         logger.info(f"页面URL: {page.url}")
         logger.info(f"页面标题: {page.title()}")
@@ -107,9 +120,13 @@ class DeepSeekBot:
         page.wait_for_timeout(1000)
 
         # 填账号密码
-        page.locator('input[type="text"]').fill(account)
-        page.locator('input[type="password"]').fill(password)
-        page.locator("div.ds-button--filled").first.click()
+        try:
+            page.locator('input[type="text"]').fill(account)
+            page.locator('input[type="password"]').fill(password)
+            page.locator("div.ds-button--filled").first.click()
+        except Exception as e:
+            logger.error(f"登录表单填写或提交失败: {e}")
+            return False
         page.wait_for_timeout(8000)
 
         if "sign_in" in page.url:
@@ -202,9 +219,15 @@ class DeepSeekBot:
 
     def new_chat(self):
         """开启新对话（先删除当前对话，再开新对话）"""
+        logger.info("准备开启新对话...")
         self.delete_chat()
-        self._page.goto("https://chat.deepseek.com")
+        try:
+            self._page.goto("https://chat.deepseek.com")
+        except Exception as e:
+            logger.error(f"导航到 DeepSeek 首页失败: {e}")
+            raise
         self._page.wait_for_timeout(2000)
+        logger.info("新对话已就绪")
 
     def chat(self, message: str, timeout: int = 120) -> dict:
         """
@@ -217,6 +240,8 @@ class DeepSeekBot:
         返回：
             {"text": "完整回复文本", "links": [{"text": "链接文字", "url": "链接地址"}, ...]}
         """
+        msg_preview = message[:80].replace("\n", " ")
+        logger.info(f"发送消息 ({len(message)} 字, 超时 {timeout}秒): {msg_preview}...")
         textarea = self._page.locator('textarea[name="search"]')
         textarea.fill(message)
         self._page.wait_for_timeout(300)
@@ -249,16 +274,22 @@ class DeepSeekBot:
             self._page.wait_for_timeout(500)
 
         if reply.count() > 0:
+            logger.warning(f"回复等待超时 ({timeout}秒)，但存在部分回复，尝试提取")
             return self._get_reply_with_links()
+        logger.warning(f"回复等待超时 ({timeout}秒)，未获取到任何回复")
         return {"text": "", "links": []}
 
     def _get_reply_with_links(self) -> dict:
         """获取回复文本及引用链接"""
         reply = self._page.locator("div.ds-markdown.ds-assistant-message-main-content")
         if reply.count() == 0:
+            logger.warning("未找到 AI 回复元素，可能页面加载异常或回复被拦截")
             return {"text": "", "links": []}
 
         text = reply.last.text_content().strip() or ""
+
+        if not text and reply.count() > 0:
+            logger.warning("AI 回复元素存在但内容为空")
 
         # 从 HTML 中提取链接
         from bs4 import BeautifulSoup
@@ -273,6 +304,8 @@ class DeepSeekBot:
                 seen.add(href)
                 links.append({"text": txt or href, "url": href})
 
+        if links:
+            logger.info(f"从回复中提取到 {len(links)} 个引用链接")
         return {"text": text, "links": links}
 
     # ---- 会话管理 ----
@@ -280,10 +313,14 @@ class DeepSeekBot:
     def save_session(self):
         """保存登录状态到文件"""
         if not self._context:
+            logger.warning("浏览器上下文未初始化，跳过 session 保存")
             return
-        os.makedirs(SESSION_DIR, exist_ok=True)
-        self._context.storage_state(path=SESSION_FILE)
-        logger.info(f"session 已保存到 {SESSION_FILE}")
+        try:
+            os.makedirs(SESSION_DIR, exist_ok=True)
+            self._context.storage_state(path=SESSION_FILE)
+            logger.info(f"session 已保存到 {SESSION_FILE}")
+        except Exception as e:
+            logger.error(f"保存 session 失败: {e}")
 
     def _load_session(self) -> Optional[str]:
         """读取已保存的 session 文件路径"""

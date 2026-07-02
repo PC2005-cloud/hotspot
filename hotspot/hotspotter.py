@@ -43,7 +43,15 @@ def load_config() -> dict:
         for k, v in defaults.items():
             if k not in data:
                 data[k] = v
+        kw_count = len(data.get("keywords", []))
+        logger.info(f"配置已加载: {path} ({kw_count} 个关键词, headless={data.get('headless', True)}, 最大重试={data.get('max_retries', 3)})")
         return data
+    except FileNotFoundError:
+        logger.error(f"配置文件不存在: {path}，使用默认配置")
+        return defaults
+    except json.JSONDecodeError as e:
+        logger.error(f"配置文件 JSON 格式错误: {e}，使用默认配置")
+        return defaults
     except Exception as e:
         logger.warning(f"读取 config.json 失败，使用默认配置: {e}")
         return defaults
@@ -52,7 +60,7 @@ def load_config() -> dict:
 def build_prompt(keyword: str) -> str:
     template = load_config().get("prompt", "")
     if not template:
-        logger.warning("config.json 中未配置 prompt 模板")
+        logger.warning(f"config.json 中未配置 prompt 模板，关键词 '{keyword}' 将无法搜索")
         return ""
     today = time.strftime("%Y-%m-%d")
     week_range = f"近7天内（{time.strftime('%m月%d日', time.localtime(time.time() - 7*86400))} 至 {time.strftime('%m月%d日')}）"
@@ -88,14 +96,18 @@ def parse_json_reply(text: str) -> Optional[dict]:
     return None
 
 
-def save_result(keyword: str, data: dict):
-    """保存热点报告到 results/{日期}/{时间}/{keyword}.json"""
+def save_result(keyword: str, data: dict) -> Optional[str]:
+    """保存热点报告到 results/{日期}/{时间}/{keyword}.json，返回路径或 None"""
     run_dir = get_run_dir()
     path = os.path.join(run_dir, f"{keyword}.json")
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    logger.info(f"已保存: {path}")
-    return path
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        logger.info(f"已保存: {path}")
+        return path
+    except Exception as e:
+        logger.error(f"保存结果文件失败 ({path}): {e}")
+        return None
 
 
 # ─── URL 验证 ──────────────────────────────────────
@@ -265,6 +277,12 @@ def search_single(bot, keyword: str) -> dict:
     logger.info(f"  关键词: {keyword}")
     logger.info(f"{'='*50}")
 
+    if not prompt:
+        logger.error(f"  关键词 '{keyword}' prompt 为空，跳过搜索")
+        return {"keyword": keyword, "ok": False, "count": 0, "elapsed": 0, "path": None}
+
+    logger.info(f"  prompt 长度: {len(prompt)} 字")
+
     start = time.time()
     max_retries = load_config().get("max_retries", 3)
     reply_text = ""
@@ -298,7 +316,10 @@ def search_single(bot, keyword: str) -> dict:
     result = {"keyword": keyword, "ok": False, "count": 0, "elapsed": elapsed, "path": None}
 
     if not data:
-        logger.warning(f"  [失败] {keyword} — 重试{max_retries}次均未成功")
+        if not reply_text:
+            logger.warning(f"  [失败] {keyword} — 重试{max_retries}次，均未获取到 AI 回复")
+        else:
+            logger.warning(f"  [失败] {keyword} — 重试{max_retries}次，JSON 解析均失败")
         return result
 
     # 用引用链接填补无效 URL + 清理摘要标记
@@ -379,30 +400,36 @@ def aggregate_results(total_elapsed: float) -> Optional[str]:
         try:
             with open(f, "r", encoding="utf-8") as fh:
                 data = json.load(fh)
-            hs = data.get("hotspots", [])
-            count = len(hs)
-            total_hotspots += count
-            keyword = data.get("keyword", "?")
-            ok = data.get("hotspots", []) is not None
-            if count > 0:
-                success += 1
-            else:
-                failed += 1
-
-            results.append({
-                "keyword": keyword,
-                "status": "完成" if count > 0 else "失败",
-                "hotspots_count": count,
-                "start_time": data.get("start_time", ""),
-                "end_time": data.get("end_time", ""),
-                "elapsed_seconds": data.get("elapsed_seconds", 0),
-                "retry_count": data.get("retry_count", 0),
-                "hotspots": hs,
-                "public_sentiment_summary": data.get("public_sentiment_summary", ""),
-                "honesty_note": data.get("honesty_note", ""),
-            })
+        except json.JSONDecodeError as e:
+            logger.warning(f"文件 {f} JSON 格式错误: {e}，跳过")
+            failed += 1
+            continue
         except Exception as e:
-            logger.warning(f"读取 {f} 失败: {e}")
+            logger.warning(f"读取文件 {f} 失败: {e}，跳过")
+            failed += 1
+            continue
+
+        hs = data.get("hotspots", [])
+        count = len(hs)
+        total_hotspots += count
+        keyword = data.get("keyword", "?")
+        if count > 0:
+            success += 1
+        else:
+            failed += 1
+
+        results.append({
+            "keyword": keyword,
+            "status": "完成" if count > 0 else "失败",
+            "hotspots_count": count,
+            "start_time": data.get("start_time", ""),
+            "end_time": data.get("end_time", ""),
+            "elapsed_seconds": data.get("elapsed_seconds", 0),
+            "retry_count": data.get("retry_count", 0),
+            "hotspots": hs,
+            "public_sentiment_summary": data.get("public_sentiment_summary", ""),
+            "honesty_note": data.get("honesty_note", ""),
+        })
 
     now = time.strftime("%Y-%m-%d %H:%M")
     report = {
@@ -418,9 +445,13 @@ def aggregate_results(total_elapsed: float) -> Optional[str]:
     }
 
     report_path = os.path.join(get_run_dir(), f"report.json")
-    with open(report_path, "w", encoding="utf-8") as f:
-        json.dump(report, f, ensure_ascii=False, indent=2)
-    logger.info(f"聚合报告已保存: {report_path}")
+    try:
+        with open(report_path, "w", encoding="utf-8") as f:
+            json.dump(report, f, ensure_ascii=False, indent=2)
+        logger.info(f"聚合报告已保存: {report_path}")
+    except Exception as e:
+        logger.error(f"保存聚合报告失败: {e}")
+        return None
     return report_path
 
 
@@ -492,8 +523,12 @@ def generate_html_report(report_data: dict, output_path: str):
     try:
         with open(template_path, "r", encoding="utf-8") as f:
             html = f.read()
+        logger.info(f"已加载 HTML 模板: {template_path}")
     except FileNotFoundError:
-        logger.warning("template.html 未找到，跳过 HTML 生成")
+        logger.error(f"HTML 模板文件不存在: {template_path}，跳过 HTML 报告生成")
+        return
+    except Exception as e:
+        logger.error(f"读取 HTML 模板失败: {e}，跳过 HTML 报告生成")
         return
 
     html = html.replace("{overview_time}", f'\U0001f550 {esc(d.get("start_time",""))} \u2014 {esc(d.get("end_time",""))}')
@@ -524,7 +559,19 @@ def run_all(bot) -> list:
     stats = []
     for i, kw in enumerate(keywords):
         if i > 0:
-            bot.new_chat()  # 每个关键词开新对话，避免上下文污染
-        r = search_single(bot, kw)
+            try:
+                bot.new_chat()  # 每个关键词开新对话，避免上下文污染
+            except Exception as e:
+                logger.error(f"切换到新对话失败: {e}")
+                # 继续尝试，不阻塞整体流程
+        try:
+            r = search_single(bot, kw)
+        except Exception as e:
+            logger.error(f"关键词 '{kw}' 搜索过程出现异常: {e}", exc_info=True)
+            r = {"keyword": kw, "ok": False, "count": 0, "elapsed": 0, "path": None}
         stats.append(r)
+
+    ok_count = sum(1 for s in stats if s["ok"])
+    total_count = sum(s["count"] for s in stats)
+    logger.info(f"搜索完成: {ok_count}/{len(keywords)} 成功, 共 {total_count} 条热点")
     return stats

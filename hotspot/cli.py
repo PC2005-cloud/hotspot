@@ -88,14 +88,25 @@ def main():
     try:
         bot.start()
         cfg = load_config().get("login", {})
+        account_masked = cfg.get("account", "")[:4] + "****" if cfg.get("account") else "未设置"
+        logger.info(f"登录账号: {account_masked}")
         login_ok = bot.login(cfg.get("account", ""), cfg.get("password", ""))
         if login_ok:
             bot.enable_all()
             stats = run_all(bot)
         else:
-            logger.error("登录失败，跳过搜索")
+            logger.error("登录失败，跳过本次搜索")
             # 生成失败统计
             for kw in keywords:
+                stats.append({
+                    "keyword": kw, "ok": False, "count": 0,
+                    "elapsed": 0, "path": None
+                })
+    except Exception as e:
+        logger.error(f"运行过程中出现异常: {e}", exc_info=True)
+        # 为未处理的关键词生成失败统计
+        for kw in keywords:
+            if not any(s.get("keyword") == kw for s in stats):
                 stats.append({
                     "keyword": kw, "ok": False, "count": 0,
                     "elapsed": 0, "path": None
@@ -109,16 +120,26 @@ def main():
     # 聚合所有结果为 JSON + HTML 报告
     report_path = aggregate_results(total_elapsed)
     if report_path:
-        import json
-        with open(report_path, "r", encoding="utf-8") as f:
-            report_data = json.load(f)
+        try:
+            import json
+            with open(report_path, "r", encoding="utf-8") as f:
+                report_data = json.load(f)
+        except Exception as e:
+            logger.error(f"读取聚合报告失败: {e}")
+            return
+
         html_path = report_path.replace(".json", ".html")
         generate_html_report(report_data, html_path)
 
-        # 有有效热点才同步到 results/ 根目录，避免覆盖上次有效数据
-        if report_data.get("total_hotspots", 0) > 0:
+        total_hotspots = report_data.get("total_hotspots", 0)
+        if total_hotspots > 0:
             shutil.copy2(report_path, os.path.join(RESULTS_DIR, "report.json"))
             shutil.copy2(html_path, os.path.join(RESULTS_DIR, "index.html"))
+            logger.info(f"✅ 本次搜索完成: {total_hotspots} 条热点已同步到 results/")
+        else:
+            logger.warning("⚠️ 本次搜索未获取到任何热点数据，保留上次有效报告")
+    else:
+        logger.error("聚合报告生成失败")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,74 @@
+[10:03:35] ==================================================
+[10:03:35]   🔥 Hotspot — 热点搜索器
+[10:03:35]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100335\run.log
+[10:03:35] ==================================================
+[10:03:35]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[10:03:36] [启动] Playwright 引擎已初始化
+[10:03:36] [启动] 启动参数: --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-first-run --enable-webgl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-features=ChromeWhatsNewUI
+[10:03:36] [启动] headless=False
+[10:03:36] [启动] viewport=1920x1080, scheme=dark, lang=zh-CN,zh;q=0.8,en;q=0.9
+[10:03:36] [启动] ⚠️ 系统 Chrome 不可用 (BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-first-run --enable-webgl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-features=ChromeWhatsNewUI --user-data-dir=D:\Projects\project\Blog\Hotspot\session\persistent_profile --remote-debugging-pipe about:blank
+<launched> pid=32428
+[pid=32428][out] �������е�������Ự�д򿪡�
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-first-run --enable-webgl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-features=ChromeWhatsNewUI --user-data-dir=D:\Projects\project\Blog\Hotspot\session\persistent_profile --remote-debugging-pipe about:blank
+  - <launched> pid=32428
+  - [pid=32428][out] �������е�������Ự�д򿪡�
+  - [pid=32428] <gracefully close start>
+  - [pid=32428] <kill>
+  - [pid=32428] <will force kill>
+  - [pid=32428] taskkill stderr: ����: û���ҵ����� "32428"��
+  - [pid=32428] <process did exit: exitCode=0, signal=null>
+  - [pid=32428] starting temporary directories cleanup
+  - [pid=32428] finished temporary directories cleanup
+  - [pid=32428] <gracefully close end>
+)，尝试回退...
+[10:03:36] [启动] ❌ 浏览器启动失败（Chrome 和 Chromium 均不可用）: BrowserType.launch_persistent_context: Executable doesn't exist at D:\Projects\project\Blog\Hotspot\browsers\chromium-1228\chrome-win64\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+[10:03:36] [启动] 请运行 `uv run playwright install chromium` 或安装 Google Chrome
+[10:03:36] ❌ 浏览器启动失败，跳过搜索
+[10:03:36] [关闭] 正在关闭浏览器...
+[10:03:36] [关闭] ✅ Playwright 已停止
+[10:03:36] 未产生搜索统计，生成空结果
+[10:03:36] 
+[10:03:36] ============================================================
+[10:03:36]   运行总结
+[10:03:36] ============================================================
+[10:03:36]   关键词                  状态       热点数    耗时    
+[10:03:36]   ──────────────────── ──────── ────── ──────
+[10:03:36]   DeepSeek             失败       -      0s    
+[10:03:36]   ChatGPT              失败       -      0s    
+[10:03:36]   OpenAI               失败       -      0s    
+[10:03:36]   Docker               失败       -      0s    
+[10:03:36]   Rust                 失败       -      0s    
+[10:03:36]   Kubernetes           失败       -      0s    
+[10:03:36]   TypeScript           失败       -      0s    
+[10:03:36]   Claude Code          失败       -      0s    
+[10:03:36]   Python               失败       -      0s    
+[10:03:36]   Cloudflare           失败       -      0s    
+[10:03:36]   Vue.js               失败       -      0s    
+[10:03:36]   前端技术                 失败       -      0s    
+[10:03:37]   Node.js              失败       -      0s    
+[10:03:37]   React                失败       -      0s    
+[10:03:37]   Go                   失败       -      0s    
+[10:03:37]   人工智能                 失败       -      0s    
+[10:03:37]   GitHub               失败       -      0s    
+[10:03:37]   SpringBoot           失败       -      0s    
+[10:03:37]   Next.js              失败       -      0s    
+[10:03:37]   数据库                  失败       -      0s    
+[10:03:37] 
+[10:03:37]   总计: 0/20 成功 | 0 条热点 | 共耗时 1秒
+[10:03:37] ============================================================
+[10:03:37] 没有可聚合的结果文件，生成空报告
+[10:03:37] 空报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100335\report.json
+[10:03:37] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100335\report.html

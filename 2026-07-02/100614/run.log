@@ -1,0 +1,74 @@
+[10:06:14] ==================================================
+[10:06:14]   🔥 Hotspot — 热点搜索器
+[10:06:14]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100614\run.log
+[10:06:14] ==================================================
+[10:06:14]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[10:06:14] [启动] Playwright 引擎已初始化
+[10:06:14] [启动] 启动参数: --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-first-run --enable-webgl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-features=ChromeWhatsNewUI
+[10:06:14] [启动] headless=False
+[10:06:14] [启动] viewport=1920x1200, scheme=dark, lang=zh-CN,zh;q=0.8,en;q=0.9
+[10:06:15] [启动] ✅ 已使用系统 Chrome 启动浏览器
+[10:06:15] [启动] browser=<Browser type=<BrowserType name=chromium executable_path=D:\Projects\project\Blog\Hotspot\browsers\chromium-1228\chrome-win64\chrome.exe> version=149.0.7827.115>
+[10:06:15] [启动] persistent_context 就绪
+[10:06:15] [启动] 初始页面已获取，pages_count=1
+[10:06:15] [启动] CPU 核心数: 16
+[10:06:15] [启动] ✅ 反检测脚本已注入，默认超时=60s
+[10:06:15] [登录] 开始登录流程
+[10:06:15] [登录] 正在导航到 https://chat.deepseek.com ...
+[10:07:04] ❌ 运行异常: Navigation failed because page crashed!
+Traceback (most recent call last):
+  File "D:\Projects\project\Blog\Hotspot\hotspot\cli.py", line 119, in main
+    login_ok = bot.login(account, password)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\hotspot\deepseek.py", line 501, in login
+    page.wait_for_load_state("networkidle")
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\sync_api\_generated.py", line 9678, in wait_for_load_state
+    self._sync(
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\_impl\_sync_base.py", line 94, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\_impl\_page.py", line 557, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\_impl\_frame.py", line 267, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\_impl\_frame.py", line 291, in _wait_for_load_state_impl
+    await waiter.result()
+patchright._impl._errors.Error: Navigation failed because page crashed!
+[10:07:04] [关闭] 正在关闭浏览器...
+[10:07:04] [关闭] ✅ browser_context 已关闭
+[10:07:04] [关闭] ✅ Playwright 已停止
+[10:07:04] 未产生搜索统计，生成空结果
+[10:07:04] 
+[10:07:04] ============================================================
+[10:07:04]   运行总结
+[10:07:04] ============================================================
+[10:07:04]   关键词                  状态       热点数    耗时    
+[10:07:04]   ──────────────────── ──────── ────── ──────
+[10:07:04]   DeepSeek             失败       -      0s    
+[10:07:04]   ChatGPT              失败       -      0s    
+[10:07:04]   OpenAI               失败       -      0s    
+[10:07:04]   Docker               失败       -      0s    
+[10:07:04]   Rust                 失败       -      0s    
+[10:07:04]   Kubernetes           失败       -      0s    
+[10:07:04]   TypeScript           失败       -      0s    
+[10:07:04]   Claude Code          失败       -      0s    
+[10:07:04]   Python               失败       -      0s    
+[10:07:04]   Cloudflare           失败       -      0s    
+[10:07:04]   Vue.js               失败       -      0s    
+[10:07:04]   前端技术                 失败       -      0s    
+[10:07:04]   Node.js              失败       -      0s    
+[10:07:04]   React                失败       -      0s    
+[10:07:04]   Go                   失败       -      0s    
+[10:07:04]   人工智能                 失败       -      0s    
+[10:07:04]   GitHub               失败       -      0s    
+[10:07:04]   SpringBoot           失败       -      0s    
+[10:07:04]   Next.js              失败       -      0s    
+[10:07:04]   数据库                  失败       -      0s    
+[10:07:04] 
+[10:07:04]   总计: 0/20 成功 | 0 条热点 | 共耗时 50秒
+[10:07:04] ============================================================
+[10:07:04] 没有可聚合的结果文件，生成空报告
+[10:07:04] 空报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100614\report.json
+[10:07:04] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100614\report.html

@@ -1,0 +1,96 @@
+[09:55:48] ==================================================
+[09:55:48]   🔥 Hotspot — 热点搜索器
+[09:55:48]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-02\095548\run.log
+[09:55:48] ==================================================
+[09:55:48]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[09:55:53] [启动] Playwright 引擎已初始化
+[09:55:53] [启动] 启动参数: --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-first-run --enable-webgl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-features=ChromeWhatsNewUI
+[09:55:53] [启动] headless=False
+[09:55:53] [启动] viewport=1366x768, scheme=light, lang=zh-CN,zh;q=0.9,en;q=0.8
+[09:55:54] [启动] ✅ 已使用系统 Chrome 启动浏览器
+[09:55:54] [启动] browser=<Browser type=<BrowserType name=chromium executable_path=D:\Projects\project\Blog\Hotspot\browsers\chromium-1223\chrome-win64\chrome.exe> version=149.0.7827.115>
+[09:55:54] [启动] persistent_context 就绪
+[09:55:54] [启动] 初始页面已获取，pages_count=1
+[09:55:54] [启动] CPU 核心数: 16
+[09:55:54] [启动] ✅ 反检测脚本已注入，默认超时=60s
+[09:55:54] [登录] 开始登录流程
+[09:55:54] [登录] 正在导航到 https://chat.deepseek.com ...
+[09:56:28] [登录] 页面已加载 — URL: https://chat.deepseek.com/sign_in
+[09:56:28] [登录] 页面标题: DeepSeek - 探索未至之境
+[09:56:28] [登录] Cloudflare 检查 (尝试 1/3)...
+[09:56:28] [登录] ✅ Cloudflare 检查通过
+[09:56:32] [登录] 需要登录（未检测到有效 session）...
+[09:56:32] [登录] 点击登录按钮...
+[09:56:33] ❌ 运行异常: Locator.bounding_box: Target crashed 
+Call log:
+  - waiting for locator("div.ds-button--filled").first
+Traceback (most recent call last):
+  File "D:\Projects\project\Blog\Hotspot\hotspot\cli.py", line 113, in main
+    login_ok = bot.login(account, password)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\hotspot\deepseek.py", line 576, in login
+    self._human.human_move_mouse(page, "div.ds-button--filled")
+  File "D:\Projects\project\Blog\Hotspot\hotspot\deepseek.py", line 221, in human_move_mouse
+    box = element.bounding_box()
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\sync_api\_generated.py", line 17270, in bounding_box
+    self._sync(self._impl_obj.bounding_box(timeout=to_milliseconds(timeout)))
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_locator.py", line 133, in bounding_box
+    return await self._with_element(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_locator.py", line 114, in _with_element
+    handle = await self.element_handle(timeout=timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_locator.py", line 322, in element_handle
+    handle = await self._frame.wait_for_selector(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_frame.py", line 372, in wait_for_selector
+    await self._channel.send(
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Locator.bounding_box: Target crashed 
+Call log:
+  - waiting for locator("div.ds-button--filled").first
+
+[09:56:33] [关闭] 正在关闭浏览器...
+[09:56:34] [关闭] ✅ browser_context 已关闭
+[09:56:34] [关闭] ✅ Playwright 已停止
+[09:56:34] 未产生搜索统计，生成空结果
+[09:56:34] 
+[09:56:34] ============================================================
+[09:56:34]   运行总结
+[09:56:34] ============================================================
+[09:56:34]   关键词                  状态       热点数    耗时    
+[09:56:34]   ──────────────────── ──────── ────── ──────
+[09:56:34]   DeepSeek             失败       -      0s    
+[09:56:34]   ChatGPT              失败       -      0s    
+[09:56:34]   OpenAI               失败       -      0s    
+[09:56:34]   Docker               失败       -      0s    
+[09:56:34]   Rust                 失败       -      0s    
+[09:56:34]   Kubernetes           失败       -      0s    
+[09:56:34]   TypeScript           失败       -      0s    
+[09:56:34]   Claude Code          失败       -      0s    
+[09:56:34]   Python               失败       -      0s    
+[09:56:34]   Cloudflare           失败       -      0s    
+[09:56:34]   Vue.js               失败       -      0s    
+[09:56:34]   前端技术                 失败       -      0s    
+[09:56:34]   Node.js              失败       -      0s    
+[09:56:34]   React                失败       -      0s    
+[09:56:34]   Go                   失败       -      0s    
+[09:56:34]   人工智能                 失败       -      0s    
+[09:56:34]   GitHub               失败       -      0s    
+[09:56:34]   SpringBoot           失败       -      0s    
+[09:56:34]   Next.js              失败       -      0s    
+[09:56:34]   数据库                  失败       -      0s    
+[09:56:34] 
+[09:56:34]   总计: 0/20 成功 | 0 条热点 | 共耗时 46秒
+[09:56:34] ============================================================
+[09:56:34] 没有可聚合的结果文件，生成空报告
+[09:56:34] 空报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\095548\report.json
+[09:56:34] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\095548\report.html

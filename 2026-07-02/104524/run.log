@@ -1,0 +1,50 @@
+[10:45:24] ==================================================
+[10:45:24]   🔥 Hotspot — 热点搜索器
+[10:45:24]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-02\104524\run.log
+[10:45:24] ==================================================
+[10:45:24] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[10:45:24]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[10:45:24] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[10:45:25] 未找到已保存的 session，需要登录
+[10:45:25] 浏览器上下文: 1920x1080, Asia/Shanghai, zh-CN, headless=True, geolocation=上海
+[10:45:25] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[10:45:25] 登录账号: 1309****
+[10:45:33] 页面URL: https://chat.deepseek.com/sign_in
+[10:45:33] 页面标题: DeepSeek - 探索未至之境
+[10:45:33] 需要登录...
+[10:45:35] 登录表单填写或提交失败: 'Locator' object has no attribute 'pressSequentially'
+[10:45:35] 登录失败，跳过本次搜索
+[10:45:36] 
+[10:45:36] ============================================================
+[10:45:36]   运行总结
+[10:45:36] ============================================================
+[10:45:36]   关键词                  状态       热点数    耗时    
+[10:45:36]   ──────────────────── ──────── ────── ──────
+[10:45:36]   DeepSeek             失败       -      0s    
+[10:45:36]   ChatGPT              失败       -      0s    
+[10:45:36]   OpenAI               失败       -      0s    
+[10:45:36]   Docker               失败       -      0s    
+[10:45:36]   Rust                 失败       -      0s    
+[10:45:36]   Kubernetes           失败       -      0s    
+[10:45:36]   TypeScript           失败       -      0s    
+[10:45:36]   Claude Code          失败       -      0s    
+[10:45:36]   Python               失败       -      0s    
+[10:45:36]   Cloudflare           失败       -      0s    
+[10:45:36]   Vue.js               失败       -      0s    
+[10:45:36]   前端技术                 失败       -      0s    
+[10:45:36]   Node.js              失败       -      0s    
+[10:45:36]   React                失败       -      0s    
+[10:45:36]   Go                   失败       -      0s    
+[10:45:36]   人工智能                 失败       -      0s    
+[10:45:36]   GitHub               失败       -      0s    
+[10:45:36]   SpringBoot           失败       -      0s    
+[10:45:36]   Next.js              失败       -      0s    
+[10:45:36]   数据库                  失败       -      0s    
+[10:45:36] 
+[10:45:36]   总计: 0/20 成功 | 0 条热点 | 共耗时 12秒
+[10:45:36] ============================================================
+[10:45:36] 没有可聚合的结果文件，生成空报告
+[10:45:36] 空报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\104524\report.json
+[10:45:36] 已加载 HTML 模板: D:\Projects\project\Blog\Hotspot\hotspot\template.html
+[10:45:36] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\104524\report.html
+[10:45:36] ⚠️ 本次搜索未获取到任何热点数据，保留上次有效报告

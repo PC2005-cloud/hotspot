@@ -1,0 +1,82 @@
+[10:16:26] ==================================================
+[10:16:26]   🔥 Hotspot — 热点搜索器
+[10:16:26]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-02\101626\run.log
+[10:16:26] ==================================================
+[10:16:26]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[10:16:26] [启动] Playwright 引擎已初始化
+[10:16:26] [启动] 启动参数: --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-first-run --enable-webgl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-features=ChromeWhatsNewUI
+[10:16:26] [启动] headless=False
+[10:16:26] [启动] viewport=1920x1080, scheme=light, lang=zh-CN,zh;q=0.9,en;q=0.7,ja;q=0.5
+[10:16:27] [启动] ✅ 已使用系统 Chrome 启动浏览器
+[10:16:27] [启动] browser=<Browser type=<BrowserType name=chromium executable_path=D:\Projects\project\Blog\Hotspot\browsers\chromium-1228\chrome-win64\chrome.exe> version=149.0.7827.115>
+[10:16:27] [启动] persistent_context 就绪
+[10:16:27] [启动] 初始页面已获取，pages_count=1
+[10:16:27] [启动] CPU 核心数: 16
+[10:16:27] [启动] ✅ 反检测脚本已注入，默认超时=60s
+[10:16:27] [登录] 开始登录流程
+[10:16:27] [登录] 正在导航到 https://chat.deepseek.com ...
+[10:16:49] [登录] 页面已加载 — URL: https://chat.deepseek.com/sign_in
+[10:16:49] [登录] 页面标题: DeepSeek - 探索未至之境
+[10:16:49] [登录] Cloudflare 检查 (尝试 1/3)...
+[10:16:54] [登录] ✅ Cloudflare 检查通过
+[10:16:58] [登录] 需要登录（未检测到有效 session）...
+[10:16:58] [登录] 未找到'密码登录'按钮，可能已经是密码登录界面
+[10:16:58] [登录] 输入账号...
+[10:17:03] [登录] 输入密码...
+[10:17:17] ❌ 运行异常: Keyboard.type: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "D:\Projects\project\Blog\Hotspot\hotspot\cli.py", line 119, in main
+    login_ok = bot.login(account, password)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\hotspot\deepseek.py", line 580, in login
+    self._human.human_type(page, password, selector='input[type="password"]')
+  File "D:\Projects\project\Blog\Hotspot\hotspot\deepseek.py", line 255, in human_type
+    page.keyboard.type(char)
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\sync_api\_generated.py", line 1524, in type
+    self._sync(self._impl_obj.type(text=text, delay=delay))
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\_impl\_sync_base.py", line 94, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\_impl\_input.py", line 21, in type
+    await self._channel.send("keyboardType", None, locals_to_params(locals()))
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\_impl\_connection.py", line 52, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\.venv\Lib\site-packages\patchright\_impl\_connection.py", line 504, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Keyboard.type: Connection closed while reading from the driver
+[10:17:17] [关闭] 正在关闭浏览器...
+[10:17:17] [关闭] 关闭时出错: BrowserContext.close: Connection closed while reading from the driver
+[10:17:17] 未产生搜索统计，生成空结果
+[10:17:17] 
+[10:17:17] ============================================================
+[10:17:17]   运行总结
+[10:17:17] ============================================================
+[10:17:17]   关键词                  状态       热点数    耗时    
+[10:17:17]   ──────────────────── ──────── ────── ──────
+[10:17:17]   DeepSeek             失败       -      0s    
+[10:17:17]   ChatGPT              失败       -      0s    
+[10:17:17]   OpenAI               失败       -      0s    
+[10:17:17]   Docker               失败       -      0s    
+[10:17:17]   Rust                 失败       -      0s    
+[10:17:17]   Kubernetes           失败       -      0s    
+[10:17:17]   TypeScript           失败       -      0s    
+[10:17:17]   Claude Code          失败       -      0s    
+[10:17:17]   Python               失败       -      0s    
+[10:17:17]   Cloudflare           失败       -      0s    
+[10:17:17]   Vue.js               失败       -      0s    
+[10:17:17]   前端技术                 失败       -      0s    
+[10:17:17]   Node.js              失败       -      0s    
+[10:17:17]   React                失败       -      0s    
+[10:17:17]   Go                   失败       -      0s    
+[10:17:17]   人工智能                 失败       -      0s    
+[10:17:17]   GitHub               失败       -      0s    
+[10:17:17]   SpringBoot           失败       -      0s    
+[10:17:17]   Next.js              失败       -      0s    
+[10:17:17]   数据库                  失败       -      0s    
+[10:17:17] 
+[10:17:17]   总计: 0/20 成功 | 0 条热点 | 共耗时 51秒
+[10:17:17] ============================================================
+[10:17:17] 没有可聚合的结果文件，生成空报告
+[10:17:17] 空报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\101626\report.json
+[10:17:17] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\101626\report.html

@@ -1,0 +1,74 @@
+[18:31:47] ==================================================
+[18:31:47]   🔥 Hotspot — 热点搜索器
+[18:31:47]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-03\183147\run.log
+[18:31:47] ==================================================
+[18:31:47] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[18:31:47]   关键词: 1 个 — DeepSeek
+[18:31:47] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[18:31:48] 发现已保存的 session: D:\Projects\project\Blog\Hotspot\session\storage_state.json
+[18:31:48] 浏览器上下文: 1920x1080, Asia/Shanghai, zh-CN, headless=True, geolocation=上海
+[18:31:48] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[18:31:48] 登录账号: 1309****
+[18:31:58] 页面URL: https://chat.deepseek.com/sign_in
+[18:31:58] 页面标题: DeepSeek - 探索未至之境
+[18:31:59] 需要登录...
+[18:32:12] session 已保存到 D:\Projects\project\Blog\Hotspot\session\storage_state.json
+[18:32:12] ✅ 登录成功
+[18:32:13] [深度思考] 已开启
+[18:32:13] [智能搜索] 已经是开启状态
+[18:32:13] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[18:32:13] 
+共 1 个关键词，开始搜索...
+[18:32:13] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[18:32:13] 
+==================================================
+[18:32:13]   关键词: DeepSeek
+[18:32:13] ==================================================
+[18:32:13]   prompt 长度: 1446 字
+[18:32:13] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[18:32:13] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月26日 至 07月03日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[18:32:54] 回复完成 (39.2秒, 2712字)
+[18:32:55] 从回复中提取到 7 个引用链接
+[18:32:55] demjson3 解析也失败: Can not decode value starting with character '【'
+[18:32:55] JSON 解析失败
+[18:32:55]   第1次尝试 — JSON 解析失败，原始回复已保存
+[18:32:55]   等待 25 秒后重试 (2/3)...
+[18:33:19] 准备开启新对话...
+[18:33:25] 新对话已就绪
+[18:33:25] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月26日 至 07月03日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[18:34:05] 回复完成 (38.4秒, 2969字)
+[18:34:05] 从回复中提取到 8 个引用链接
+[18:34:05]   引用链接填补: #1 [3] https://stcn.com/article/detail/3980996.html
+[18:34:05]   摘要清理: #1 移除标记
+[18:34:05]   引用链接填补: #2 [15] https://36kr.com/p/3877226091180296
+[18:34:05]   摘要清理: #2 移除标记
+[18:34:05]   引用链接填补: #3 [23] https://www.zaobao.com/news/china/story20260630-9289389?ref=article-si
+[18:34:05]   摘要清理: #3 移除标记
+[18:34:05]   引用链接填补: #4 [47] https://news.qq.com/rain/a/20260702A09O6V00?id=20260702A09O6V00&path=a
+[18:34:05]   摘要清理: #4 移除标记
+[18:34:05]   引用链接填补: #5 [15] https://36kr.com/p/3877226091180296
+[18:34:05]   摘要清理: #5 移除标记
+[18:34:05]   去重: 1 条热点因 URL 重复已移除
+[18:34:05] 验证 URL 可用性...
+[18:34:10] HTTP Request: HEAD https://stcn.com/article/detail/3980996.html "HTTP/1.1 200 OK"
+[18:34:13] HTTP Request: HEAD https://36kr.com/p/3877226091180296 "HTTP/1.1 200 OK"
+[18:34:20] HTTP Request: HEAD https://www.zaobao.com/news/china/story20260630-9289389?ref=article-sidebar-china-realtime "HTTP/1.1 200 OK"
+[18:34:21] HTTP Request: HEAD https://news.qq.com/rain/a/20260702A09O6V00?id=20260702A09O6V00&path=a&app=news&suid=&redirect_pc=1 "HTTP/1.1 200 OK"
+[18:34:21] URL 验证: 4 个, 4 可用, 0 个404, 0 个不可达
+[18:34:21] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-03\183147\DeepSeek.json
+[18:34:21]   [完成] DeepSeek (4 条热点, 112秒)
+[18:34:21] 搜索完成: 1/1 成功, 共 4 条热点
+[18:34:21] 
+[18:34:21] ============================================================
+[18:34:21]   运行总结
+[18:34:21] ============================================================
+[18:34:21]   关键词                  状态       热点数    耗时    
+[18:34:21]   ──────────────────── ──────── ────── ──────
+[18:34:21]   DeepSeek             完成       4      112s  
+[18:34:21] 
+[18:34:21]   总计: 1/1 成功 | 4 条热点 | 共耗时 154秒
+[18:34:21] ============================================================
+[18:34:21] 聚合报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-03\183147\report.json
+[18:34:21] 已加载 HTML 模板: D:\Projects\project\Blog\Hotspot\hotspot\template.html
+[18:34:21] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-03\183147\report.html
+[18:34:21] ✅ 本次搜索完成: 4 条热点已同步到 results/

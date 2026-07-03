@@ -1,0 +1,82 @@
+[10:03:30] ==================================================
+[10:03:30]   🔥 Hotspot — 热点搜索器
+[10:03:30]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100330\run.log
+[10:03:30] ==================================================
+[10:03:30]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[10:03:30] [启动] Playwright 引擎已初始化
+[10:03:30] [启动] 启动参数: --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-first-run --enable-webgl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-features=ChromeWhatsNewUI
+[10:03:30] [启动] headless=False
+[10:03:30] [启动] viewport=1440x900, scheme=dark, lang=zh-CN,zh;q=0.8,en;q=0.9
+[10:03:31] [启动] ✅ 已使用系统 Chrome 启动浏览器
+[10:03:31] [启动] browser=<Browser type=<BrowserType name=chromium executable_path=D:\Projects\project\Blog\Hotspot\browsers\chromium-1223\chrome-win64\chrome.exe> version=149.0.7827.115>
+[10:03:31] [启动] persistent_context 就绪
+[10:03:31] [启动] 初始页面已获取，pages_count=1
+[10:03:31] [启动] CPU 核心数: 16
+[10:03:31] [启动] ✅ 反检测脚本已注入，默认超时=60s
+[10:03:31] [登录] 开始登录流程
+[10:03:31] [登录] 正在导航到 https://chat.deepseek.com ...
+[10:03:50] [登录] 页面已加载 — URL: https://chat.deepseek.com/sign_in
+[10:03:50] [登录] 页面标题: DeepSeek - 探索未至之境
+[10:03:50] [登录] Cloudflare 检查 (尝试 1/3)...
+[10:03:50] [登录] ✅ Cloudflare 检查通过
+[10:03:55] [登录] 需要登录（未检测到有效 session）...
+[10:03:55] [登录] 未找到'密码登录'按钮，可能已经是密码登录界面
+[10:03:55] [登录] 输入账号...
+[10:03:59] ❌ 运行异常: Keyboard.type: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "D:\Projects\project\Blog\Hotspot\hotspot\cli.py", line 119, in main
+    login_ok = bot.login(account, password)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\project\Blog\Hotspot\hotspot\deepseek.py", line 575, in login
+    self._human.human_type(page, account, selector='input[type="text"]')
+  File "D:\Projects\project\Blog\Hotspot\hotspot\deepseek.py", line 255, in human_type
+    page.keyboard.type(char)
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\sync_api\_generated.py", line 1571, in type
+    self._sync(self._impl_obj.type(text=text, delay=delay))
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_input.py", line 35, in type
+    await self._channel.send("keyboardType", None, locals_to_params(locals()))
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Softwave\Code\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Keyboard.type: Target page, context or browser has been closed
+[10:03:59] [关闭] 正在关闭浏览器...
+[10:03:59] [关闭] ✅ browser_context 已关闭
+[10:03:59] [关闭] ✅ Playwright 已停止
+[10:03:59] 未产生搜索统计，生成空结果
+[10:03:59] 
+[10:03:59] ============================================================
+[10:03:59]   运行总结
+[10:03:59] ============================================================
+[10:03:59]   关键词                  状态       热点数    耗时    
+[10:03:59]   ──────────────────── ──────── ────── ──────
+[10:03:59]   DeepSeek             失败       -      0s    
+[10:03:59]   ChatGPT              失败       -      0s    
+[10:03:59]   OpenAI               失败       -      0s    
+[10:03:59]   Docker               失败       -      0s    
+[10:03:59]   Rust                 失败       -      0s    
+[10:03:59]   Kubernetes           失败       -      0s    
+[10:03:59]   TypeScript           失败       -      0s    
+[10:03:59]   Claude Code          失败       -      0s    
+[10:03:59]   Python               失败       -      0s    
+[10:03:59]   Cloudflare           失败       -      0s    
+[10:03:59]   Vue.js               失败       -      0s    
+[10:03:59]   前端技术                 失败       -      0s    
+[10:03:59]   Node.js              失败       -      0s    
+[10:03:59]   React                失败       -      0s    
+[10:03:59]   Go                   失败       -      0s    
+[10:03:59]   人工智能                 失败       -      0s    
+[10:03:59]   GitHub               失败       -      0s    
+[10:03:59]   SpringBoot           失败       -      0s    
+[10:03:59]   Next.js              失败       -      0s    
+[10:03:59]   数据库                  失败       -      0s    
+[10:03:59] 
+[10:03:59]   总计: 0/20 成功 | 0 条热点 | 共耗时 30秒
+[10:03:59] ============================================================
+[10:03:59] 没有可聚合的结果文件，生成空报告
+[10:03:59] 空报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100330\report.json
+[10:03:59] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100330\report.html

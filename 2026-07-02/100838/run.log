@@ -1,0 +1,65 @@
+[10:08:38] ==================================================
+[10:08:38]   🔥 Hotspot — 热点搜索器
+[10:08:38]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100838\run.log
+[10:08:38] ==================================================
+[10:08:38]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[10:08:38] [启动] Playwright 引擎已初始化
+[10:08:38] [启动] 启动参数: --disable-blink-features=AutomationControlled --disable-dev-shm-usage --no-first-run --enable-webgl --ignore-gpu-blocklist --enable-gpu-rasterization --disable-features=ChromeWhatsNewUI
+[10:08:38] [启动] headless=False
+[10:08:38] [启动] viewport=1440x900, scheme=light, lang=zh-CN,zh;q=0.8,en;q=0.9
+[10:08:39] [启动] ✅ 已使用系统 Chrome 启动浏览器
+[10:08:39] [启动] browser=<Browser type=<BrowserType name=chromium executable_path=D:\Projects\project\Blog\Hotspot\browsers\chromium-1228\chrome-win64\chrome.exe> version=149.0.7827.115>
+[10:08:39] [启动] persistent_context 就绪
+[10:08:39] [启动] 初始页面已获取，pages_count=1
+[10:08:39] [启动] CPU 核心数: 16
+[10:08:39] [启动] ✅ 反检测脚本已注入，默认超时=60s
+[10:08:39] [登录] 开始登录流程
+[10:08:39] [登录] 正在导航到 https://chat.deepseek.com ...
+[10:09:07] [登录] 页面已加载 — URL: https://chat.deepseek.com/sign_in
+[10:09:07] [登录] 页面标题: DeepSeek - 探索未至之境
+[10:09:07] [登录] Cloudflare 检查 (尝试 1/3)...
+[10:09:07] [登录] ✅ Cloudflare 检查通过
+[10:09:12] [登录] 需要登录（未检测到有效 session）...
+[10:09:12] [登录] 未找到'密码登录'按钮，可能已经是密码登录界面
+[10:09:12] [登录] 输入账号...
+[10:09:16] [登录] 输入密码...
+[10:09:20] [登录] 点击提交登录...
+[10:09:27] [登录] 登录后 URL: https://chat.deepseek.com/sign_in
+[10:09:27] [登录] ❌ 登录失败（仍在登录页），请检查账号密码
+[10:09:27] 登录失败，跳过搜索
+[10:09:27] [关闭] 正在关闭浏览器...
+[10:09:27] [关闭] ✅ browser_context 已关闭
+[10:09:27] [关闭] ✅ Playwright 已停止
+[10:09:27] 未产生搜索统计，生成空结果
+[10:09:27] 
+[10:09:27] ============================================================
+[10:09:27]   运行总结
+[10:09:27] ============================================================
+[10:09:27]   关键词                  状态       热点数    耗时    
+[10:09:27]   ──────────────────── ──────── ────── ──────
+[10:09:27]   DeepSeek             失败       -      0s    
+[10:09:27]   ChatGPT              失败       -      0s    
+[10:09:27]   OpenAI               失败       -      0s    
+[10:09:27]   Docker               失败       -      0s    
+[10:09:27]   Rust                 失败       -      0s    
+[10:09:27]   Kubernetes           失败       -      0s    
+[10:09:27]   TypeScript           失败       -      0s    
+[10:09:27]   Claude Code          失败       -      0s    
+[10:09:27]   Python               失败       -      0s    
+[10:09:27]   Cloudflare           失败       -      0s    
+[10:09:27]   Vue.js               失败       -      0s    
+[10:09:27]   前端技术                 失败       -      0s    
+[10:09:27]   Node.js              失败       -      0s    
+[10:09:27]   React                失败       -      0s    
+[10:09:27]   Go                   失败       -      0s    
+[10:09:27]   人工智能                 失败       -      0s    
+[10:09:27]   GitHub               失败       -      0s    
+[10:09:27]   SpringBoot           失败       -      0s    
+[10:09:27]   Next.js              失败       -      0s    
+[10:09:27]   数据库                  失败       -      0s    
+[10:09:27] 
+[10:09:27]   总计: 0/20 成功 | 0 条热点 | 共耗时 49秒
+[10:09:27] ============================================================
+[10:09:27] 没有可聚合的结果文件，生成空报告
+[10:09:27] 空报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100838\report.json
+[10:09:27] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-02\100838\report.html

@@ -1,0 +1,55 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "微软宣布 TypeScript 7.0 RC 发布，Go 语言重写编译器性能提升 10 倍",
+      "summary": "微软宣布 TypeScript 7.0 进入发布候选（RC）阶段--2。编译器用 Go 语言彻底重写，类型检查速度比 6.0 快约 10 倍-。VS Code 代码库类型检查从 77.8 秒降至 7.5 秒。稳定版预计一个月内发布。",
+      "source": "中小企业IT网",
+      "url": "https://www.cbismb.com/aicent/article/B9rtH2",
+      "published_time": "2026-07-03 11:08",
+      "perspectives": [
+        {
+          "stance": "官方公告与技术解读",
+          "summary": "TypeScript 7.0 编译器完全从 JavaScript/TypeScript 自举代码库迁移到 Go 语言-4-。得益于原生代码速度和共享内存并行机制--2，类型检查提速约 10 倍--10。VS Code 代码库从 77.8 秒降至 7.5 秒，内存使用量大约减半-10。"
+        },
+        {
+          "stance": "工程决策分析",
+          "summary": "TypeScript 团队在性能需求和社区熟悉度之间做出取舍-4。选择 Go 而非 Rust 是因为 Go 的并发原语、编译速度和开发者体验更平滑-4-。并行化是速度提升的核心引擎-4。"
+        },
+        {
+          "stance": "破坏性变更警告",
+          "summary": "TS 6.0 中标记为废弃的特性在 7.0 中全部变成硬错误-4。target: es5、moduleResolution: node/node10、baseUrl 等配置项被移除-4。升级前需要仔细检查项目配置-4。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TypeScript 类型系统争议：必要设计还是「类型体操」过度复杂",
+      "summary": "社区长期争论 TypeScript 类型系统是否过度复杂。支持派认为静态类型能在编译阶段捕获 80% 低级类型错误；质疑派认为「类型体操」在 90% 业务场景无实际价值-。AI 时代类型定义价值进一步放大。",
+      "source": "什么值得买、Plain English",
+      "url": "https://post.smzdm.com/p/a5rzkqel/",
+      "published_time": "2026-06-06 至 2026-06-30",
+      "perspectives": [
+        {
+          "stance": "支持派：类型系统是工程化的必然",
+          "summary": "静态类型检查能减少 70% 生产环境 Bug-24。高级类型（条件类型、映射类型）能应对 API 动态返回等真实场景-24。AI 时代类型定义是代码生成的精准约束-24。"
+        },
+        {
+          "stance": "质疑派：过度设计、内卷产物",
+          "summary": "中小项目中类型系统收益极低、配置成本高-24。「类型体操」属于无意义炫技--24。TS 已从工具变成「行为艺术」--。"
+        },
+        {
+          "stance": "务实派：按场景判断",
+          "summary": "小型项目/原型开发可选择 JSDoc+esbuild-24；中型团队（>10 万行代码）类型系统收益开始显现-24；大型长期项目（>50 万行）类型系统是工程可行性的必要条件-24。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前 TypeScript 社区最突出的热点是 7.0 RC 发布及 Go 语言重写带来的 10 倍性能提升--2。社区情绪呈现两极分化：多数开发者对性能提升表示兴奋和期待-7，同时也有部分声音质疑放弃 TypeScript 自举传统是否合理-4-。类型系统复杂性争议持续，AI 时代类型定义的价值成为新讨论焦点-24。",
+  "honesty_note": "本周期内 TypeScript 核心新闻高度集中于 7.0 RC 发布这一事件--。微软官方博客于 6 月 18 日发布 RC 公告--10，该事件持续发酵至 7 月初--2。部分内容（如类型系统争议、安全漏洞）发布时间略早于 7 天窗口期--，但因与 TypeScript 当前热点高度相关而纳入。近 24-48 小时内新增报道较少，主要为 7 月 2 日至 3 日发布的 TypeScript 7.0 RC 相关跟进报道--2-。",
+  "start_time": "2026-07-03 13:40",
+  "end_time": "2026-07-03 13:42",
+  "elapsed_seconds": 123,
+  "retry_count": 1
+}

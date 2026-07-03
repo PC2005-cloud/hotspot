@@ -1,0 +1,91 @@
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Anthropic被曝在Claude Code中暗藏「监视代码」定向标记中国用户",
+      "summary": "开发者逆向分析发现Anthropic自2026年4月起在Claude Code中植入隐蔽检测代码，通过时区、代理域名等识别中国用户并篡改系统提示词回传标记，该机制已运行近三个月3。",
+      "source": "网易、搜狐、36氪、联合早报",
+      "url": "https://www.163.com/dy/article/L0U4FKNP051481US.html",
+      "published_time": "2026-07-03 16:04",
+      "perspectives": [
+        {
+          "stance": "【开发者爆料与社区质疑】",
+          "summary": "Reddit用户LegitMichel777于6月30日披露，Claude Code v2.1.196在检测到代理时自动禁用远程控制，逆向工程后发现隐蔽代码可通过时区（上海/乌鲁木齐）和代理域名（含百度、字节、腾讯等）识别中国用户，通过修改日期格式和Unicode字符标记身份-27-。"
+        },
+        {
+          "stance": "【Anthropic官方回应】",
+          "summary": "工程师Thariq Shihipar承认该机制存在，称系2026年3月上线的「实验性」反滥用措施，旨在防范账户转售和模型蒸馏，已计划移除并在7月1日版本中回滚-3-。"
+        },
+        {
+          "stance": "【中国开发者与媒体批评】",
+          "summary": "中国自媒体和开发者普遍质疑此举为「暗中监视」和「AI时代的新种族歧视」，认为Anthropic以混淆代码和隐写术实现追踪，与其标榜的「透明可信」原则严重冲突-6-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "阿里内部全面禁用Claude Code，7月10日起生效",
+      "summary": "因Claude Code被曝存在植入后门安全风险，阿里巴巴将Claude Code列入高风险软件名单，要求全员在7月10日前卸载Anthropic旗下全系产品，并推荐使用自研Qoder替代。",
+      "source": "虎嗅、澎湃新闻、智东西、搜狐",
+      "url": "https://www.huxiu.com/ainews/13678.html",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "【阿里内部决策与执行】",
+          "summary": "禁令覆盖Sonnet、Opus、Fable等模型及Claude Code等Agent产品，此前阿里对员工使用外部AI模型实行大额报销政策，态度一度开放--。"
+        },
+        {
+          "stance": "【安全风险评估】",
+          "summary": "安全研究者发现Claude Code在拥有系统高权限下嵌入混淆代码和隐秘通讯机制，同时存在受污染npm依赖植入后门的供应链攻击风险，Meta等公司也开始限制使用-25-。"
+        },
+        {
+          "stance": "【市场与产业影响】",
+          "summary": "路透社等外媒报道此事，分析称这是大型科技公司在AI工具安全风暴中采取防范措施的典型案例，阿里云此前是Claude在中国的重要落地通道--25。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code Artifacts企业级功能下放至Pro和Max用户",
+      "summary": "Anthropic宣布Claude Code的Artifacts功能正式向Pro（$20/月）和Max用户开放，该功能可将终端对话实时转化为可交互、可分享的网页，此前仅限Team和企业版使用12。",
+      "source": "搜狐、网易（新智元）",
+      "url": "https://www.sohu.com/a/1045103572_122014422",
+      "published_time": "2026-07-03 09:25",
+      "perspectives": [
+        {
+          "stance": "【产品功能解读】",
+          "summary": "Artifacts能将会话进展发布为托管在claude.ai的自包含网页，含CSS/JS/图表，随Claude工作自动实时刷新，覆盖调试、安全审计、周报等场景-11-12。"
+        },
+        {
+          "stance": "【行业观察】",
+          "summary": "从6月18日首发企业版到7月3日开放个人用户仅隔两周，分析认为这是Anthropic在「监视代码」争议背景下争取开发者信任、扩大用户基数的策略性举措-11。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Claude Code v2.1.195发布：修复中文语音输入、权限漏洞等",
+      "summary": "Anthropic于6月26日推送v2.1.195版本，重点修复中/日/泰语语音自动提交卡死问题，新增全屏鼠标锁开关，封堵项目级插件越权加载漏洞。",
+      "source": "CSDN（AI编程社区）",
+      "url": "https://aicoding.csdn.net/6a42365710ee7a33f283baac.html",
+      "published_time": "2026-06-26 21:29 UTC",
+      "perspectives": [
+        {
+          "stance": "【版本更新解读】",
+          "summary": "迭代方向从大框架重构转向极端边缘场景打磨与跨语言无障碍交互，彻底解决亚洲开发者语音输入痛点，同时强化安全合规-19。"
+        },
+        {
+          "stance": "【安全修复关注】",
+          "summary": "封堵项目级本地配置越权加载插件漏洞，此前该漏洞存在权限逃逸风险，攻击者可通过恶意配置文件执行任意代码-19-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天内Claude Code相关舆论呈现「安全信任危机」与「产品功能利好」并行的两极态势。一方面，「监视代码」事件引爆开发者社区对Anthropic隐私透明度的强烈质疑，阿里禁用进一步加剧了企业级市场的信任崩塌-1-25；另一方面，Artifacts功能下放和提示词精简等产品迭代获得正面关注-11-14。整体舆论以「木马门」「后门风险」等负面关键词为主导，公众情绪以愤怒、不安和失望为主-。",
+  "honesty_note": "搜索结果高度集中在2026年7月1日至7月3日，覆盖「监视代码」争议、阿里禁用、功能更新等多个维度，时效性符合要求。部分热点（如「AI孤岛」报道发布于6月26日）恰在时间窗口边缘，已纳入。所有URL均来自搜索结果原始链接，未作任何杜撰或拼接。",
+  "start_time": "2026-07-03 13:43",
+  "end_time": "2026-07-03 13:44",
+  "elapsed_seconds": 50,
+  "retry_count": 0
+}

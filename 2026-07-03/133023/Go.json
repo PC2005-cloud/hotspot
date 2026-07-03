@@ -1,0 +1,85 @@
+{
+  "keyword": "Go",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "TypeScript 7.0 RC发布：编译器用Go重写，类型检查提速10倍",
+      "summary": "微软发布TypeScript 7.0首个候选版本，核心变化是将编译器从TypeScript/JavaScript自举实现完全移植到Go语言，类型检查速度提升约10倍，同时引入并行化与原生文件监听13。",
+      "source": "搜狐",
+      "url": "https://www.sohu.com/a/1041538251_827544",
+      "published_time": "2026-06-25 17:22",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "TypeScript团队打破自举传统，选择Go语言重写编译器以突破性能瓶颈，并发原语和原生二进制编译是关键考量。性能提升来自原生代码执行和共享内存并行，语义与6.0完全一致-10-13。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "谷歌重组AI编程攻坚小组，追赶Anthropic",
+      "summary": "谷歌对其主攻AI编程工具的专项攻坚小组进行重组，扩大业务范围并正式固化团队架构，试图在AI编程工具赛道追赶Anthropic，同时强化模型生成演示文稿等企业办公场景的能力。",
+      "source": "36氪",
+      "url": "https://m.36kr.com/newsflashes/3868733981562118",
+      "published_time": "2026-06-26 07:27",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "谷歌AI编程小组在核心研究员接连离职后进行重组，调整AI模型训练思路，方向与Anthropic、OpenAI布局趋同，均将AI编程工具拓展至企业办公场景-1。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Go三目运算符提案再引争议：加还是不加？",
+      "summary": "2026年4月Go官方GitHub出现新提案，主张为Go增加条件表达式（三目运算符）以提升嵌套可读性，但因违背「可读性优先」原则、破坏Go 1兼容性及存在替代方案，该提案极可能再次被拒。",
+      "source": "阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1743474",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "支持方观点",
+          "summary": "三目运算符可简化条件赋值代码，强制括号语法能解决嵌套可读性问题，提升编码效率-9。"
+        },
+        {
+          "stance": "反对方观点（Go团队主流立场）",
+          "summary": "三目运算符破坏Go「可读性优先」的设计哲学，增加then等关键字会破坏Go 1兼容性承诺，现有匿名函数等替代方案已足够-9。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Go生态周报：Go 1.27拟废弃GODEBUG，锁分片实现8倍加速",
+      "summary": "本周Go生态多点开花：Go 1.27拟引入GODEBUG废弃策略管理技术债，Delve 1.27发布改进arm64支持，锁分片技术在8核上实现并发缓存8倍加速。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/whincwu/p/20875709",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "Go团队持续推进工具链现代化和性能优化，GODEBUG废弃策略旨在清理历史包袱，锁分片技术为高并发缓存场景提供显著性能提升-14。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "中国亿万富翁郭文贵在美国因欺诈被判30年监禁",
+      "summary": "流亡美国的中国亿万富翁郭文贵（Miles Guo）因策划一项近9亿美元的加密货币欺诈计划，被纽约联邦法院判处30年监禁，并需支付8.89亿美元赔偿金。",
+      "source": "news.ru",
+      "url": "https://news.ru/world/kitajskomu-milliarderu-dali-30-let-za-kriptoobman-v-ssha",
+      "published_time": "2026-06-30 15:18",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "郭文贵利用加密货币项目Himalaya从受害者处骗取超2.62亿美元，2024年7月被陪审团裁定9项欺诈和共谋罪名成立，2026年6月30日正式宣判--31。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周Go语言生态热度集中在TypeScript 7.0用Go重写带来的性能突破，以及谷歌AI编程小组重组等产业动态。社区对Go三目运算符提案的讨论反映了语言演进中「简洁纯粹」与「实用演进」的持续张力，整体舆情偏向技术务实与生态扩张-9。",
+  "honesty_note": "搜索「Go」关键词时，结果覆盖了Go编程语言生态、围棋赛事及人名「郭」（Guo）相关新闻。已按时间范围和相关性筛选出6条热点，信息较为充分，无显著滞后问题。",
+  "start_time": "2026-07-03 13:53",
+  "end_time": "2026-07-03 13:53",
+  "elapsed_seconds": 37,
+  "retry_count": 0
+}

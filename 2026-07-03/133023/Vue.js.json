@@ -1,0 +1,71 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【Vue&ViteConf 2026 将于7月18日在上海举办 尤雨溪将发表主题演讲】",
+      "summary": "Vue&ViteConf 2026 定于7月18日在上海举办，Vue.js与Vite作者尤雨溪将出席并发表主题演讲，会议围绕Vue与Vite核心生态演进、AI Agent与开发者工具等四条主线展开42。",
+      "source": "优设网",
+      "url": "https://www.uisdc.com/hangye/vueviteconf-2026",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【综合报道】大会前瞻与生态展望",
+          "summary": "大会已确认11位嘉宾，议题涵盖Vapor Mode深入拆解、Rolldown内存优化、Vite Task缓存、Weapp-vite小程序工程化、Vue Native探索等，展现Vue与Vite在AI时代从工具链到部署平台的完整路径-8-42。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "【LLMVue框架发布：首次用大模型实现Vue.js GUI自动化测试】",
+      "summary": "arXiv 6月26日发布论文，提出LLMVue框架——首次利用大语言模型（LLM）为Vue.js Web应用生成可执行的页面转换图（PTG），实现基于模型的GUI自动化测试。",
+      "source": "arXiv",
+      "url": "https://export.arxiv.org/abs/2606.27665",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "【学术前沿】AI驱动的前端测试新范式",
+          "summary": "研究团队在10个开源Vue.js项目上评估了LLMVue，以GPT-4o为LLM骨干，生成的测试图具有高精度和高召回率，显著提升了测试覆盖率和探索效率-13。这是LLM首次被用于Vue.js应用的源码级PTG提取和模型化GUI测试-13。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "【Vue 3.5.39 正式发布 修复多项核心Bug】",
+      "summary": "Vue 3.5.39于6月25日发布，主要包含compiler-core、hydration、runtime-core、SSR、Teleport、reactivity及类型系统等多个模块的Bug修复，提升了框架的整体稳定性和可靠性。",
+      "source": "Releasebot",
+      "url": "https://releasebot.io/updates/vue",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "【版本更新】稳定性和兼容性持续优化",
+          "summary": "本次更新修复了包括hydration动态props强制patch、函数ref调用时暂停追踪、defineModel默认值验证、嵌套异步Teleport内容解析等十余项问题-35。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【Vue 2 EOL风险再引关注 社区呼吁加速迁移至Vue 3】",
+      "summary": "Vue 2已于2023年12月31日正式结束生命周期（EOL），此后不再获得任何Bug修复和安全补丁。当前仍有大量生产项目运行在Vue 2上，安全风险持续存在。",
+      "source": "DEV Community",
+      "url": "https://dev.to/endoflifeai/vue-2-end-of-life-eol-date-risk-and-migration-to-vue-3-1bp8",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "【安全警示】Vue 2 EOL是真实的安全隐患",
+          "summary": "Vue 2.7已停止安全更新，所有从2024年起发现的漏洞都将保持开放状态，除非自行修补或购买商业扩展支持。客户端代码直接面向攻击者，框架级漏洞（如模板编译XSS、响应式原型污染）将在用户会话中执行-36。"
+        },
+        {
+          "stance": "【迁移指南】从Vue 2到Vue 3的升级路径",
+          "summary": "建议先升级到Vue 2.7（Composition API已回填），然后通过@vue/compat兼容模式运行并逐一清除废弃API警告，最终升级至vue-router 4和Pinia-36。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天内Vue.js社区热度集中于三大方向：Vue&ViteConf 2026大会前瞻引发开发者高度关注-8；Vue 3.6的Vapor Mode性能突破持续成为技术讨论焦点-；LLMVue学术研究展示了AI驱动前端测试的新可能-13。整体舆情积极，开发者对Vue生态在AI时代的发展充满期待。",
+  "honesty_note": "近7天内（6月26日至7月3日）Vue.js的直接热点事件相对有限，搜索结果中部分高热度事件（如VoidZero被Cloudflare收购）发生在6月上旬--1，超出时间范围但舆论仍在持续发酵。已按时间筛选，将Vue&ViteConf 2026（7月2日报道）-8、LLMVue论文（6月26日）-13、Vue 3.5.39发布（6月25日）-35、Vue 2 EOL讨论（6月26日）-36等纳入，确保每条热点均在要求时间范围内或紧邻边界。",
+  "start_time": "2026-07-03 13:47",
+  "end_time": "2026-07-03 13:48",
+  "elapsed_seconds": 43,
+  "retry_count": 0
+}

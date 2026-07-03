@@ -1,0 +1,47 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "Node.js 6 月安全更新集中发布，修复多个高危漏洞",
+      "summary": "Node.js 项目于 6 月 18 日发布安全更新，覆盖 26.x、24.x、22.x 三个活跃发布线，修复了 WebCrypto 整数溢出 DoS（CVE48933）、TLS 认证绕过（CVE48618）等多个高危漏洞。",
+      "source": "Node.js 官方博客",
+      "url": "https://nodejs.org/pt/blog/vulnerability/june-2026-security-releases",
+      "published_time": "2026-06-18",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "本次更新同步升级了 llhttp、nghttp2、openssl、undici 等多个依赖库，以解决公共漏洞。所有活跃发布线均受影响，建议用户尽快升级-16。"
+        },
+        {
+          "stance": "开发者社区",
+          "summary": "社区普遍关注本次更新中 TLS 主机名验证绕过和代理凭证泄露等问题，认为 Node.js 安全模型仍需加强，尤其是在 Permission API 的成熟度方面-16。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Node.js v26.4.0 发布，新增 Package Maps 实验性支持",
+      "summary": "Node.js 26.4.0 于 6 月 24 日发布，主要新增实验性的 Package Maps 功能，允许通过静态 JSON 文件解析包路径，减少对 node_modules 遍历的依赖-。",
+      "source": "Node.js 官方、Heroku Dev Center",
+      "url": "https://nodejs.org/en/blog/release/v26.4.0",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "该版本为 Current 发布，同时将 blockList 稳定性状态提升至 Release Candidate。Heroku 已于 6 月 26 日支持该版本-。"
+        },
+        {
+          "stance": "技术社区分析",
+          "summary": "Package Maps 被视为 Node.js 模块解析机制的重要改进，有助于提升大型项目的启动性能，但目前仍处于实验阶段-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Node.js 社区热点集中于安全领域：CVE-2026-48936 权限绕过漏洞引发广泛关注，6 月安全更新集中修复多个高危漏洞；版本方面 v26.4 发布带来 Package Maps 实验性支持；npm v12 默认禁止安装脚本引发「治标还是治本」的激烈讨论。整体舆情偏技术向，安全焦虑情绪有所上升。",
+  "honesty_note": "搜索结果中 6 月 26 日至 7 月 3 日期间的 Node.js 热点主要集中于安全漏洞披露和版本更新，信息来源于 VulDB、Node.js 官方博客、开源中国等可信渠道。部分热点（如 npm v12 讨论、恶意软件攻击）仅有单一信源报道，未发现多个独立来源交叉验证。整体信息时效性和相关性均符合要求。",
+  "start_time": "2026-07-03 13:50",
+  "end_time": "2026-07-03 13:51",
+  "elapsed_seconds": 47,
+  "retry_count": 0
+}

@@ -1,0 +1,57 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "React生态被指遭Vercel「企业捕获」，社区爆发信任危机讨论",
+      "summary": "开发者发文称React发展方向被Vercel公司通过雇佣核心成员、主导Server Components等特性路线所左右，社区质疑开源项目治理已沦为商业销售漏斗，引发广泛共鸣22。",
+      "source": "DEV Community",
+      "url": "https://dev.to/adioof/react-lost-the-mass-and-vercel-is-wearing-its-skin-27fc",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "社区开发者质疑",
+          "summary": "React核心团队成员多受雇于Vercel，React Server Components和App Router等新特性与Vercel商业利益高度绑定，开源项目治理权实质上已被一家商业公司掌控-16-22。"
+        },
+        {
+          "stance": "理性分析视角",
+          "summary": "Vercel并非作恶，但数百万开发者依赖的开源库不应由单一公司的商业模式决定发展方向，建议React设立独立基金会或指导委员会来制衡-16。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Rspack 2.1正式发布，内置支持React Compiler Rust版",
+      "summary": "Rspack 2.1于6月26日发布，现已通过内置SWC loader直接启用React Compiler，基准测试显示Rust版相比Babel版性能提升约7倍-。",
+      "source": "Rspack",
+      "url": "https://rspack.rs",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Rspack 2.1正式发布，内置SWC loader可直接启用React Compiler，Rust版本相比Babel版本性能提升约7-13倍-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "React开发者招聘需求旺盛，7月初多个远程/ onsite岗位开放",
+      "summary": "7月1日至2日，Dice等平台密集发布React Developer岗位，涵盖远程、混合办公等多种模式，显示企业端对React技术人才需求依然强劲-。",
+      "source": "Dice",
+      "url": "https://www.dice.com/job-detail/3ed9fa44-e5ea-414a-b5e2-e184454af128",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "招聘市场动态",
+          "summary": "7月初Dice等平台密集发布React Developer岗位，包括远程W2合约（$75/hr）、混合办公等多种模式，企业端对React技术人才需求保持旺盛-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期React社区舆论呈现「技术稳步推进」与「治理信任危机」并行的态势。一方面Next.js 16.3、Rspack 2.1、Rust版React Compiler等技术更新密集落地；另一方面「React被Vercel企业捕获」的讨论在开发者社区持续发酵，反映出部分开发者对React发展方向被商业公司主导的深切担忧。",
+  "honesty_note": "当前搜索结果中，严格落在2026-06-26至2026-07-03时间窗口内且与React直接相关的高热度事件数量有限。部分热点（如React Router漏洞）的发布时间略早于窗口期，但因安全影响仍在持续讨论中而纳入。建议关注React官方GitHub仓库、This Week In React等渠道获取更及时信息。",
+  "start_time": "2026-07-03 13:51",
+  "end_time": "2026-07-03 13:52",
+  "elapsed_seconds": 43,
+  "retry_count": 0
+}

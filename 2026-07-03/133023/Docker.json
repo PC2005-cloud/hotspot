@@ -1,0 +1,71 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Exclusive Networks 成为 Docker 英爱地区分销合作伙伴",
+      "summary": "2026年7月3日，Exclusive Networks宣布成为Docker在英國和愛爾蘭的分銷合作夥伴，將Docker容器平台引入其合作夥伴網絡，旨在加速該地區的應用現代化進程。",
+      "source": "IT Brief UK",
+      "url": "https://itbrief.co.uk/story/exclusive-networks-becomes-docker-distribution-partner",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "官方发布/综合报道",
+          "summary": "Exclusive Networks 將藉此強化其UKI產品組合，為合作夥伴提供市場領先的現代應用開發平台，並專注於安全的容器環境。Docker則期望通過此次合作加速Docker平台在UKI地區的採用-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Gitea act_runner 高危容器逃逸漏洞 (CVE-2026-58053) 被公開",
+      "summary": "2026年6月27日，CVE58053漏洞被公開。該漏洞存在於Gitea act_runner中，允許攻擊者在配置為Docker後端時，從容器逃逸至主機並以root權限執行任意代碼，CVSS評分高達9.9，影響全球超過11萬個資產。",
+      "source": "奇安信CERT",
+      "url": "https://www.secrss.com/articles/91750",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "安全机构预警",
+          "summary": "奇安信CERT監測到該漏洞，指出其POC和技術細節已公開，利用可能性高，且官方暫未發布補丁，強烈建議用戶將Gitea升級至v1.27.0-rc0或限制工作流文件修改權限-7。"
+        },
+        {
+          "stance": "社区/技术分析",
+          "summary": "漏洞源於act_runner將用戶提供的container.options字符串直接傳遞給Docker作業容器，即使關閉特權模式，攻擊者仍可通過注入特定參數（如--pid=host）實現逃逸-7。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "SUSE 發布 Docker 重要安全更新，修復多個高危漏洞",
+      "summary": "2026年6月30日，SUSE發布了編號為SUSE-SU-2026:2692的安全更新，為Docker修復了四個安全漏洞，包括可導致拒絕服務的CVE33814和可導致權限提升的CVE39821等6。",
+      "source": "LinuxSecurity.com",
+      "url": "https://linuxsecurity.com/advisories/suse/suse-2026-2692-1-docker",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "此次更新被評級為「重要」，修復了包括HTTP/2無限循環、Punycode驗證繞過、證書驗證不當以及壓縮歸檔導致的任意代碼執行等在內的多個漏洞，建議用戶立即安裝-16。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "openSUSE 發布 Docker 重要安全更新 (openSUSE-SU-2026:21060-1)",
+      "summary": "2026年7月3日，openSUSE發布了針對Docker的重要安全更新，修復了多個安全問題，更新狀態為「已發布」。",
+      "source": "Tenable",
+      "url": "https://www.tenable.com/plugins/pipeline/issues/223723-6",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "該更新被標記為「重要」（Important），建議openSUSE 16用戶盡快安裝以修復已知安全漏洞-6。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Docker相關輿情以安全事件為主導，Gitea act_runner的高危逃逸漏洞引發廣泛關注與擔憂，凸顯容器環境的供應鏈與運行時安全挑戰。同時，微軟WSL容器公測被視為對Docker Desktop的挑戰，社區討論熱烈，反映開發者對輕量化、低成本容器工具的需求強烈。",
+  "honesty_note": "搜索結果顯示，近7天內與Docker直接相關的新聞主要集中於安全漏洞和渠道合作。部分熱點（如微軟WSL容器）並非Docker官方事件，但因其與Docker生態直接相關且討論度高，故納入。關於Docker融資、DockerCon等話題的最新信息多為數週前內容，未列入本次熱點列表。",
+  "start_time": "2026-07-03 13:35",
+  "end_time": "2026-07-03 13:36",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

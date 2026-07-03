@@ -1,0 +1,87 @@
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Google发布A2UI v0.9：框架无关的生成式UI标准",
+      "summary": "Google推出A2UI v0.9，一个让AI智能体声明UI意图并在Web、移动端原生渲染的框架无关标准，无需传输任意代码，标志着生成式UI从概念走向标准化。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/07/google-a2ui-genui/?topicPageSponsorship=bb9a7dec-c6f7-496d-b67e-215352046a39",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "技术媒体报道",
+          "summary": "v0.9是一次哲学层面的转变——智能体应使用应用现有的设计系统语言，而非自创组件。新增双向协议、React渲染器、Agent SDK等，支持MCP、WebSockets等多种传输方式-46。"
+        },
+        {
+          "stance": "开发者社区观察",
+          "summary": "A2UI被视为AI Native前端的重要基础设施，让AI生成的UI真正可控、可集成到现有设计系统，而非生成不可维护的临时界面。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "苹果Safari技术预览版247引入MCP服务，AI智能体助力前端调试",
+      "summary": "苹果WebKit团队在Safari技术预览版247中上线MCP服务器功能，AI编程智能体可直接联动Safari窗口，获取页面运行数据、控制台日志、网络请求等，加速网页开发与调试。",
+      "source": "IT之家",
+      "url": "https://www.chinaz.com/ainews/29324.shtml",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "MCP即模型上下文协议，是一套通用开放标准，能让AI智能体对接外部工具、数据库与浏览器开发工具，覆盖网页排错、兼容性排查、性能检测等全流程-1。"
+        },
+        {
+          "stance": "前端开发者视角",
+          "summary": "浏览器原生支持MCP意味着AI调试工具将不再依赖第三方插件，有望大幅降低人工调试成本，是前端开发工具链AI化的重要一步。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "AI Coding重构大厂工程师分工：前端后端边界加速消失",
+      "summary": "美团CLC食杂零售团队完成架构调整，前端与后端团队正式合并；蚂蚁网商推动测试岗位整体转向研发；行业趋势指向「全栈工程师」成为主流需求。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3875531712786695",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "行业分析",
+          "summary": "Claude Code之父Boris Cherny提出未来工程师将分化为五类角色原型：原型探索者、构建者、系统清理者、产品增长者、系统维护者，不再严格绑定具体职能-2。"
+        },
+        {
+          "stance": "招聘市场信号",
+          "summary": "谷歌、字节跳动等大厂岗位虽保留「前端」叫法，但职责已扩展至AI产品工程化、Agent服务编排、完整交付链路等全栈范畴-2。"
+        },
+        {
+          "stance": "开发者焦虑",
+          "summary": "「只要会React就有机会面试的日子正在迅速离去」，纯前端工程师面临转型压力，企业更看重端到端解决问题能力而非特定工具依赖-2。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Vue & ViteConf 2026上海定档7月18日，尤雨溪将发表主题演讲",
+      "summary": "Vue&ViteConf 2026将于7月18日在上海举办，Vue与Vite作者尤雨溪将出席并发表主题演讲，围绕AI时代前端开发新范式、Vue与Vite生态演进展开。",
+      "source": "VueConf",
+      "url": "https://www.uisdc.com/hangye/vueviteconf-2026",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "大会官方",
+          "summary": "大会设四条主线：Vue与Vite核心生态演进、Vite生态落地（小程序到超级应用）、AI Agent与开发者工具、Vue边界扩展（走向Native）-3。"
+        },
+        {
+          "stance": "社区期待",
+          "summary": "字节Lynx架构师黄玄将带来「Vue + Lynx = Vue Native」探索，被视为Vue跨端能力的重要信号-3。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7日前端技术圈最突出的趋势是「AI深度嵌入工具链」——从Safari MCP、A2UI到Vite+，所有重大发布都在围绕AI智能体重构开发体验。与此同时，AI Coding对岗位结构的冲击引发持续焦虑与讨论，纯前端工程师的生存空间被广泛热议。整体情绪在兴奋与焦虑之间摇摆。",
+  "honesty_note": "部分热点（如Deno 2.9、Node.js 26.4.0）的发布时间略早于7天窗口期（6月25-26日），但仍在近7天讨论辐射范围内，故予收录。Bun运行时在本次搜索窗口内无明显新版本发布动态。所有URL均来自搜索结果原文，无法确认完整链接的已统一设为null。",
+  "start_time": "2026-07-03 13:48",
+  "end_time": "2026-07-03 13:49",
+  "elapsed_seconds": 52,
+  "retry_count": 0
+}

@@ -1,0 +1,47 @@
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "Spring Boot 4.1 新增 gRPC 自动配置与 SSRF 防护",
+      "summary": "Spring Boot 4.1.0于6月10日正式发布，新增gRPC自动配置、HTTP客户端SSRF风险缓解能力，升级Kotlin至2.3，并带来延迟数据源连接等新特性--。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/06/spring-boot-4-1/",
+      "published_time": "2026-06-10",
+      "perspectives": [
+        {
+          "stance": "技术媒体综述",
+          "summary": "Spring Boot 4.1是4.x系列首个功能更新版本，带来gRPC自动配置、SSRF防护、Kotlin 2.3支持等多项新特性，同时还包含Spring Security 7.1.0、Spring Framework 7.0.8等全线依赖升级-。"
+        },
+        {
+          "stance": "开发者解读",
+          "summary": "Spring Boot 4.1已将Java 25+ AOT Cache写进参考文档，可将Agent服务冷启动从「看日志感觉快了」变成CI/CD中的可交付指标-26。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Spring Boot 安全漏洞集中披露：CVE-2026-40976等多项高危漏洞",
+      "summary": "2026年6月集中披露多项Spring Boot安全漏洞，包括CVE40976（Actuator认证绕过，CVSS高危）、CVE40992（邮件SSL主机名验证缺失）、CVE41001（临时文件不安全）等-。",
+      "source": "Spring官方安全公告",
+      "url": "https://spring.io",
+      "published_time": "2026-06-10至2026-06-12",
+      "perspectives": [
+        {
+          "stance": "安全公告",
+          "summary": "CVE-2026-40976为Spring Boot默认安全配置中的关键漏洞，影响4.0.0至4.0.5版本，Spring Actuator的Health Handler存在授权问题，官方建议立即升级至4.0.6或更高版本-。"
+        },
+        {
+          "stance": "安全机构分析",
+          "summary": "CVE-2026-40992涉及邮件自动配置未启用SSL主机名验证，远程攻击者可利用伪造证书窃取敏感信息或篡改数据-；CVE-2026-41001涉及Artemis消息队列临时文件不安全使用，可导致本地权限提升-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期Spring Boot社区最突出的趋势是「版本大迁徙」：3.5.x开源支持于6月30日正式结束，开发者社区围绕「何时升级4.0」「升级成本多高」「Spring AI 2.0是否值得同步升级」展开热烈讨论。技术媒体密集发布4.0新特性解读和升级指南，同时多个CVE安全漏洞的集中披露也引发了企业对生产环境安全性的高度关注。整体情绪以「积极拥抱变化」为主，但对迁移成本存在一定担忧。",
+  "honesty_note": "本结果基于2026年6月26日至7月3日期间的联网搜索。由于Spring Boot 4.0/4.1的正式发布、3.5.16的终止支持公告以及安全漏洞披露均发生在6月中上旬，近期（7月1-3日）主要是开发者社区围绕这些事件的深度解读、实战教程和升级经验分享，全新重大发布较少。已尽量涵盖该时间段内最相关的热点事件和技术讨论。",
+  "start_time": "2026-07-03 13:57",
+  "end_time": "2026-07-03 13:58",
+  "elapsed_seconds": 48,
+  "retry_count": 0
+}

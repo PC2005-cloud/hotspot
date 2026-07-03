@@ -1,0 +1,105 @@
+{
+  "keyword": "ChatGPT",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "美政府以国安为由限制OpenAI发布GPT-5.6 Sol 仅向特朗普批准客户开放",
+      "summary": "OpenAI于6月26日应特朗普政府要求限制GPT.6 Sol发布范围，仅向政府批准的客户开放。Anthropic同日获准在限定范围恢复模型访问。OpenAI称此为临时措施并反对长期化。",
+      "source": "光明网",
+      "url": "https://wlaq.gmw.cn/2026-07/03/content_38866137.htm",
+      "published_time": "2026-07-03 14:26",
+      "perspectives": [
+        {
+          "stance": "美国政府官方立场",
+          "summary": "特朗普政府依据6月初签署的AI监管行政令，对前沿AI模型开展最多30天的国家安全风险审查，要求分阶段发布以防止技术被恶意利用。-1"
+        },
+        {
+          "stance": "OpenAI官方回应",
+          "summary": "OpenAI表示Sol模型可能带来不可预见风险，实施分阶段发布是临时措施，并认为「此类政府准入流程不应成为长期默认做法」。-1"
+        },
+        {
+          "stance": "技术专家批评",
+          "summary": "斯坦福大学网络安全专家亚历克斯·斯塔莫斯审阅分析后认为，Sol模型并未发现其他公开AI模型不具备的特殊风险，批评此举「大约是他们能做出的最愚蠢的决策」。-1"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI宣布ChatGPT与智能体Codex深度整合打造「超级应用」",
+      "summary": "OpenAI于6月初宣布推动ChatGPT与智能体Codex深度整合，形成统一入口的「超级应用」。Codex主打「执行」功能如写邮件、管理日程、制作报告等，被视为AI从「更会聊天」转向「更会干活」的标志性事件。",
+      "source": "潮新闻",
+      "url": "https://tidenews.com.cn/news.html?id=3486243",
+      "published_time": "2026-07-01 07:37",
+      "perspectives": [
+        {
+          "stance": "支持派：专家看好",
+          "summary": "西湖大学张驰认为智能体是AI发展下一阶段，合并后执行能力越来越强，会像大语言模型一样走进千家万户；用户需求已从获取信息转向生产力提升。-2"
+        },
+        {
+          "stance": "担忧派：成本与体验",
+          "summary": "乌镇数字文明研究院司新颖指出智能体任务对算力消耗是聊天的10到100倍，成本将激增；也有人担忧ChatGPT的对话属性被稀释。-2"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "GPT-5.5 Instant于6月26日全面免费推送 成ChatGPT默认模型",
+      "summary": "OpenAI于6月25日宣布GPT.5 Instant向全球付费用户开放，6月26日全面推送至所有免费用户，取代GPT.3 Instant成为全平台默认模型，覆盖数亿活跃用户。",
+      "source": "快科技",
+      "url": "https://news.pconline.com.cn/2177/21777183.html",
+      "published_time": "2026-06-25 16:56",
+      "perspectives": [
+        {
+          "stance": "官方产品发布",
+          "summary": "官方数据显示新版模型在医疗、法律、金融等高风险领域幻觉率较上一代下降52.5%，AIME数学竞赛准确率从65.4%升至81.2%，输出更简洁直接。-7"
+        },
+        {
+          "stance": "用户体验优化",
+          "summary": "回复字数减少约30%，行数减少近29%，内建智慧路由自动判断问题复杂度切换推理模式；上下文窗口实行分层配置（免费16K至企业128K）。-7"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "OpenAI被曝拟向美国政府出售5%股份 引发主权与技术主权争议",
+      "summary": "据Financial Times 7月2日报道，OpenAI正讨论在IPO前向美国政府出售5%公司股份，并提议其他美国AI公司也采取类似做法。此举发生在GPT.6受政府限制发布之后。",
+      "source": "CNN Brasil",
+      "url": "https://www.cnnbrasil.com.br/economia/negocios/openai-negocia-vender-fatia-de-5-ao-governo-dos-eua-diz-financial-times/",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "商业分析视角",
+          "summary": "Forrester分析师认为政府持股可在IPO前缓解投资者对监管风险的担忧，但可能引发其他司法管辖区提出类似要求，影响欧洲和亚太企业客户对数据主权和中性假设的重新评估。-13"
+        },
+        {
+          "stance": "政策背景视角",
+          "summary": "特朗普此前表示正探索让公众持有AI领军企业股份的方案，参议员Bernie Sanders更主张政府收购50%股份。美国民调显示半数民众担心AI导致失业。-13"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI正式入局AI芯片赛道 推出首款自研处理器Jalapeno",
+      "summary": "OpenAI携手博通推出首款自研AI芯片Jalapeno，专为大语言模型推理设计。总裁Greg Brockman表示这是公司长期全栈基础设施战略的一部分，旨在让算力更充裕、AI更快更可靠。",
+      "source": "MIT Sloan Management Review",
+      "url": "https://www.mitsloanme.com/article/ai-dispatch-revisiting-strategies-and-stirring-up-new-ones/",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "OpenAI官方战略",
+          "summary": "Brockman称「世界正走向算力驱动的经济」，Jalapeno是长期全栈基础设施战略的组成部分，目标是让算力更充裕，使人人都能用上更快、更可靠、更便宜的AI。-12"
+        },
+        {
+          "stance": "行业竞争视角",
+          "summary": "在ChatGPT份额跌破五成、竞争对手加速追赶的背景下，自研芯片被视为OpenAI降低对英伟达依赖、控制成本并保持技术领先的关键举措。-"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周ChatGPT相关舆情呈现「内外交困」态势：对外，美国政府以国安为由强势介入模型发布，OpenAI在监管与商业化之间艰难平衡，市场份额被多方蚕食；对内，公司从对话式AI全面转向智能体战略，Codex已在内部取代ChatGPT成为主力工具。公众情绪复杂，既有对「超级应用」的期待，也有对算力成本、监管过度干预及AI伦理风险的担忧。",
+  "honesty_note": "部分热点（如诉讼相关-、推理成本减半-）发生时间略早于6月26日或缺乏具体发布日期，未纳入主列表以避免超出时间范围。所有纳入热点均有明确来源和发布日期，符合近7天（6月26日至7月3日）要求。",
+  "start_time": "2026-07-03 13:32",
+  "end_time": "2026-07-03 13:33",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

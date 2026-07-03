@@ -1,0 +1,67 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "PEP 836正式提出：推动CPython JIT编译器从实验性走向官方支持",
+      "summary": "2026年7月2日创建的PEP 836提案，为CPython的JIT编译器规划了一条从实验性走向官方支持的路径，设定了至少20%的性能提升目标，时间跨度覆盖至Python 3.17。",
+      "source": "peps.python.org",
+      "url": "https://peps.python.org/pep-0836/",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "官方提案视角",
+          "summary": "该PEP由核心开发者提出，旨在为JIT设定明确的性能、兼容性、工具链等目标，若达标则将其提升为CPython的正式特性，否则将重新评估其存留-2。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "台钢科大称霸Python竞赛，包办冠亚军展现AI教育实力",
+      "summary": "2026年7月1日，在第十四届计算器多媒体综合能力与人工智能素养及商务专业应用资讯科技大赛中，台钢科大学生在「Python程序设计」项目包办冠亚军，并斩获多项金脑奖。",
+      "source": "勁報",
+      "url": "https://twpowernews.com/news_pagein.php?iType=1010&n_id=293003",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "校方表示这是该校在智慧科技与数位转型教育上的成果，通过理论与实作并重培育AI人才-35；指导老师指出Python已是进入AI、数据科学领域的必备技能-35。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Python 3.15正式引入「显式懒导入」，新特性文档发布",
+      "summary": "2026年6月28日，Python官方发布「Python 3.15新特性」文档，确认3.15版本正式引入显式懒导入（Explicit Lazy Imports），通过新的lazy关键字延迟模块加载-。",
+      "source": "docs.python.org",
+      "url": "https://docs.python.org/3.15/whatsnew/3.15.html",
+      "published_time": "2026-06-28",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "该特性经过discuss.python.org上数百条消息的激烈讨论后最终落地，开发者现在可以在import语句中使用lazy关键字来推迟模块加载-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Talk Python to Me播客第553期：Python工具链大变革",
+      "summary": "2026年6月26日，Talk Python to Me播客发布第553期节目，与Python Bytes播客联动，讨论近期Python工具链的重大变化-。",
+      "source": "Planet Python",
+      "url": "https://planetpython.org/",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "社区播客",
+          "summary": "本期节目聚焦Python生态近期的工具链变革，是一次有趣的跨界联动，为开发者提供了Python新闻和技巧的深度解读-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Python社区热点呈现多元化特征：既有PEP 836推动JIT走向官方的技术治理进展，也有TIOBE霸榜反映的市场统治力，同时Python 3.15新特性落地和竞赛捷报也持续激发社区活力。整体情绪积极，技术演进与生态繁荣并进。",
+  "honesty_note": "在指定时间窗口（2026-06-26至2026-07-03）内，Python相关直接热点事件数量有限，部分高热度话题（如PyPI投毒、JIT叫停等）发生在6月中旬，已超出7天范围。已优先选取时间最匹配的5条资讯，并补充了Python 3.15新特性文档等时效性较高的内容。若需更密集的每日动态，建议关注Python官方博客或PyPI更新日志。",
+  "start_time": "2026-07-03 13:44",
+  "end_time": "2026-07-03 13:45",
+  "elapsed_seconds": 34,
+  "retry_count": 0
+}

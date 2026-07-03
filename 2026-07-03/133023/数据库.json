@@ -1,0 +1,137 @@
+{
+  "keyword": "数据库",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Gartner预测2026年全球数据库市场达1610亿美元，非关系型增速两倍于关系型",
+      "summary": "Gartner最新预测显示，2026年全球DBMS市场规模将达1610亿美元，同比增长18.4%；非关系型DBMS增速22.7%，是关系型10.8%的两倍以上，AI Agent与多模态计算需求正重塑数据库格局。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/971/686.htm",
+      "published_time": "2026-07-02 16:43",
+      "perspectives": [
+        {
+          "stance": "行业分析：市场结构性变革",
+          "summary": "非关系型数据库增速是关系型的两倍，说明AI驱动的新数据类型正在快速侵蚀传统关系型数据库市场份额；TOP5厂商中Oracle市场份额持续滑落，云dbPaaS捕获大部分增量-1。"
+        },
+        {
+          "stance": "中国市场：信创替代加速",
+          "summary": "国产数据库替代率已突破35%，预计2026年将达70%以上；2027年央企100%替代的时间节点使2026年成为关键技术冲刺年-1。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "OceanBase发布湖库一体AI数据库，Agent成为数据库新用户",
+      "summary": "6月29日，OceanBase发布面向AI时代的湖库一体AI数据库，以湖库一体为核心架构，将数据湖存储、事务处理与多模态能力统一到一套数据底座上，帮助AI Agent一次获取完整业务上下文。",
+      "source": "北京商报",
+      "url": "http://kjy4.china.com/shehui/13002708/20260701/49581530.html",
+      "published_time": "2026-07-01 10:05",
+      "perspectives": [
+        {
+          "stance": "厂商视角：重新定义数据库",
+          "summary": "OceanBase CEO杨冰指出，数据库的服务对象正从人转向Agent，数据库必须从「记录事实」走向「理解业务」；湖库一体架构可降低整体TCO约30%-50%--6。"
+        },
+        {
+          "stance": "行业观察：AI数据库新赛道",
+          "summary": "业内认为，随着Agent成为数据库新的使用者，AI数据库将成为AI时代新的基础设施形态，国产数据库有机会定义下一代数据库--6。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "腾讯云发布TDSQL 3.0自研产品家族，迈入AI原生3.0时代",
+      "summary": "腾讯云在数据库+AI专场上发布TDSQL全新自研产品家族（TDSQL、TDSQL-C、TDSQL-B三款），同时推出AI智能体产品TDAI和AI自学习优化器，标志着TDSQL正式迈入3.0时代。",
+      "source": "腾讯云",
+      "url": "https://cloud.tencent.com.cn/developer/article/2702142",
+      "published_time": "2026-07-01 23:34",
+      "perspectives": [
+        {
+          "stance": "厂商发布：主动赋能",
+          "summary": "TDSQL已实现100%兼容MySQL、PostgreSQL，Oracle语法兼容度达98%；TDSQL-B无需分片即可弹性扩缩容，扩容时间从「按月计算」缩短至「分钟级」-29。"
+        },
+        {
+          "stance": "技术解读：AI驱动数据库进化",
+          "summary": "TDSQL 3.0将AI Function能力嵌入数据库内核，用户用一行SQL即可调用底层大模型，算力真正下沉到数据层-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Oracle E-Business Suite高危漏洞CVE-2026-46817遭在野利用",
+      "summary": "安全厂商Defused Cyber监测发现，Oracle E-Business Suite高危漏洞CVE46817（CVSS 9.8）正在被积极利用，允许未认证攻击者通过HTTP接管Oracle Payments系统。",
+      "source": "Security Affairs",
+      "url": "https://securityaffairs.com/194463/security/attackers-actively-exploit-the-oracle-e-business-suite-flaw-cve-2026-46817.html",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "安全预警：紧急修补",
+          "summary": "Oracle已在5月关键补丁更新中修复该漏洞，敦促客户立即应用补丁；尚无公开PoC代码，攻击者已利用蜜罐系统发现漏洞-19。"
+        },
+        {
+          "stance": "威胁追踪：零日攻击窗口",
+          "summary": "此前Oracle PeopleSoft零日漏洞CVE-2026-35273已被用于数据盗窃攻击，影响超100家组织，68%为美国高校-19。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "海光信息与电科金仓、麒麟软件达成战略合作，共筑国产基础软硬件生态",
+      "summary": "6月30日，海光信息、电科金仓、麒麟软件三方在北京签署战略合作协议，围绕数据库、操作系统、芯片三大核心底座开展深度技术融合，联合打造自主可控AI一体化全栈解决方案。",
+      "source": "东方财富",
+      "url": "https://finance.eastmoney.com/a/202606303788697313.html",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "产业合作：信创生态整合",
+          "summary": "三方作为国产基础软硬件核心厂商，将围绕数据库、芯片、操作系统三大核心底座联合打造自主可控AI一体化全栈解决方案，覆盖金融、能源、医疗、交通等关键行业-61。"
+        },
+        {
+          "stance": "行业意义：国产化纵深推进",
+          "summary": "此次合作标志着国产数据库从单品替代走向全栈生态协同，为关键行业数智化转型提供可落地、可复制的技术路径-。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Couchbase发布AI Data Plane，为Agentic企业提供统一数据基础设施层",
+      "summary": "6月30日，Couchbase宣布AI Data Plane正式可用，为AI Agent系统提供持久化Agent记忆、实时上下文检索以及跨云、边缘和Lakehouse的一致数据访问能力-。",
+      "source": "Couchbase",
+      "url": "https://www.couchbase.com",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "产品发布：AI Agent数据底座",
+          "summary": "AI Data Plane作为企业AI Agent的操作数据基础，提供从云到边缘再到Lakehouse架构的一致数据访问，解决Agent数据困境-。"
+        },
+        {
+          "stance": "战略转型：从数据库到AI数据平台",
+          "summary": "Couchbase正从数据库提供商向更广泛的AI数据平台转型，聚焦关键任务应用、基础设施整合和AI就绪数据-。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "国产数据库替换实测：金仓替换后TPS提升35%-40%，成本降50%-60%",
+      "summary": "近期某大型金融机构核心交易系统替换实测显示，引入KingbaseES V9后，TPS从基准12,500跃升至17,500，增幅达40%，同时成本降低60%-。另有实测TPS提升35%、成本降50%-。",
+      "source": "电科金仓",
+      "url": "https://www.kingbase.com.cn",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "厂商实测：性能与成本双赢",
+          "summary": "国产数据库替换不仅是合规要求，更是技术架构升级，TPS提升和成本降低两个核心指标提供了强有力的决策依据-。"
+        },
+        {
+          "stance": "行业趋势：替换进入深水区",
+          "summary": "数据库国产化进程迎来关键拐点，从被动「救火」转向主动演进，核心业务系统向自主可控数据库迁移的比例预计在2026年达到峰值-3。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周数据库领域舆情高度聚焦「AI与数据库融合」主线：Gartner市场预测、OceanBase与腾讯云AI数据库发布、Couchbase AI Data Plane等事件密集发生，行业共识是Agent正成为数据库新用户。同时Oracle高危漏洞在野利用引发安全担忧，国产数据库替换实测数据提振信心。整体情绪积极偏热，AI驱动数据库变革成为核心叙事。",
+  "honesty_note": null,
+  "start_time": "2026-07-03 14:00",
+  "end_time": "2026-07-03 14:01",
+  "elapsed_seconds": 51,
+  "retry_count": 0
+}

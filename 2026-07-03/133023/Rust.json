@@ -1,0 +1,57 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rust 1.96 正式发布：引入全新 Range 类型体系，1.96.1 修复多个安全漏洞",
+      "summary": "Rust 1.96.0 于5月28日发布，引入全新 Range* 类型（实现 IntoIterator 和 Copy），解决旧版设计缺陷-11。6月30日发布的 1.96.1 修复了 Cargo、MIR 及 libssh2 的多个安全漏洞（CVE15661、CVE55199、CVE55200）。",
+      "source": "至顶网、InfoWorld",
+      "url": "https://soft.zhiding.cn/software_zone/2026/0703/3192393.shtml",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "技术媒体综合报道",
+          "summary": "新版 Range 类型改为实现 IntoIterator 从而支持 Copy，方便开发者将切片访问器存储在 Copy 类型中；WebAssembly 目标不再传递 --allow-undefined 参数，有助于更早发现符号定义问题-11。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "生存沙盒游戏《Rust》7月大型更新「Common Ground」实装公寓与氏族系统",
+      "summary": "Facepunch Studios 于7月2日推送《Rust》7月大型更新「Common Ground」，引入公寓大楼（可租房）、出租商店、氏族管理系统等新玩法，Softcore 模式新增2倍资源采集和 raid 窗口期。",
+      "source": "网易、Rock Paper Shotgun、Game*Spark",
+      "url": "https://www.163.com/dy/article/L0SKJQSE05561FYA.html",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "玩家/社区视角",
+          "summary": "公寓系统给开局裸奔玩家多了一个选择：先租房苟住而非出门就被老玩家送回岸边；氏族系统降低了大型团队的管理协调成本-2。"
+        },
+        {
+          "stance": "媒体深度解读",
+          "summary": "「Common Ground」打破了以往只能野外盖房的逻辑，将玩家自发组织的玩法（租房、开店、氏族管理）正式做进系统，并加入了「万能钥匙」机制让租房也充满风险--2。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Rust 周刊 2026W26：Bevy 0.19、OpenAI 入基金会、Chromium 采用 Rust PNG crate",
+      "summary": "本周 Bevy 0.19 发布引入全新场景系统；OpenAI 以 60 万美元成为 Rust 基金会白金会员；Rust PNG crate 被 Chromium 和 GNOME 采用；LiteLLM 迁移至 Rust 实现 15 倍吞吐提升；hyper 发现竞争条件漏洞。",
+      "source": "CSDN",
+      "url": "https://devpress.csdn.net/awstech/6a462775662f9a54cb87b811.html",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "Rust 生态综合报道",
+          "summary": "工具链方面 proc_macro_hygiene 稳定化、str_from_utf16_endian 等多项特性落地；Clippy 新增多个 lint 规则；Cargo 新增 build.warnings 配置和 -Zmin-publish-age 标志-3。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期 Rust 生态热点密集：语言本身迎来 1.96 版本更新与 TIOBE 历史新高，生态方面 OpenAI 入基金会、Chromium 采用 Rust PNG 等标志性事件持续涌现；与此同时安全领域 PamStealer 恶意软件和 buffa 库漏洞也引发关注。整体情绪积极，Rust 在系统编程和 AI 基础设施层的渗透加速。",
+  "honesty_note": null,
+  "start_time": "2026-07-03 13:36",
+  "end_time": "2026-07-03 13:37",
+  "elapsed_seconds": 41,
+  "retry_count": 0
+}

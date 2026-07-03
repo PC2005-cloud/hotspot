@@ -1,0 +1,61 @@
+{
+  "keyword": "Cloudflare",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Cloudflare 推出 AI 爬虫三分类控制功能，9月起默认屏蔽广告页面的训练与代理爬虫",
+      "summary": "Cloudflare 于7月1日宣布将 AI 爬虫流量细分为【搜索】【代理】【训练】三类供网站所有者精细管理。自2026年9月15日起，新客户及现有客户的新站点将默认允许搜索但阻止训练和代理用途爬虫访问含广告的页面。",
+      "source": "ITmedia",
+      "url": "https://www.itmedia.co.jp/news/articles/2607/03/news087.html",
+      "published_time": "2026-07-03 10:55",
+      "perspectives": [
+        {
+          "stance": "官方发布与行业解读",
+          "summary": "Cloudflare CEO Matthew Prince 表示，互联网上多数流量已非人类生成，必须更进一步以促成可持续生态系统。新分类和默认规则旨在平衡网站所有者和 AI 公司的利益-4。"
+        },
+        {
+          "stance": "对 Google 等混合用途爬虫的间接施压",
+          "summary": "分析指出，新政实质上针对 Googlebot 等同时用于搜索和 AI 训练的混合用途爬虫，迫使 Google 等公司将搜索爬虫与 AI 数据采集爬虫分离-12。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Cloudflare 推出「Pay Per Use」计费模式，AI 按回答内容付费",
+      "summary": "Cloudflare 将原有的「Pay Per Crawl」（按爬取次数计费）升级为「Pay Per Use」（按实际使用计费）模式3。网站主在其内容被 AI 实际用于生成答案时获得报酬，而非仅因被爬取而收费。",
+      "source": "Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/software/nyse-net/cloudflare/news/cloudflare-net-launches-ai-bot-controls-and-pay-per-use-part",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "对内容创作者的利好",
+          "summary": "新模式旨在帮助新闻机构和内容创作者从 AI 公司获取公平补偿，解决 AI 机器人替代用户访问网站导致流量和收入流失的问题-12。"
+        },
+        {
+          "stance": "商业化落地的不确定性",
+          "summary": "有分析指出，该模式需要从政策宣示转化为可量化的收入，合作伙伴的拓展和采用率将是关键观察指标-3。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Cloudflare 夜盘跌超17%：Q2营收指引逊预期+裁员约1100人",
+      "summary": "6月26日，Cloudflare 公布第一季度财报后夜盘股价跌超17%至212.5美元。Q1营收同比增34%至6.398亿美元超预期，但对Q2的营收指引为6.64.65亿美元，略低于分析师预期的6.66亿美元。公司同时宣布计划裁员约1100人，作为向代理 AI 优先运营模式转型的一部分。",
+      "source": "格隆汇",
+      "url": "https://www.gelonghui.com/news/5229380",
+      "published_time": "2026-06-26 15:32",
+      "perspectives": [
+        {
+          "stance": "市场反应与财务分析",
+          "summary": "市场对营收指引的小幅不及预期反应强烈，叠加裁员重组带来的短期费用压力（预计1.4-1.5亿美元），导致股价大幅下挫-33。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "过去一周 Cloudflare 最突出的热点是7月1日宣布的 AI 爬虫管控新政，引发全球科技媒体广泛报道和行业讨论-。市场情绪方面，6月26日因 Q2 营收指引不及预期和裁员消息导致股价夜盘大跌超17%-33；但随后在中东局势缓和等宏观因素提振下逐步回升-11-。安全社区关注 CVE-2026-14440 漏洞-及服务稳定性问题-。整体舆情呈「AI 政策积极 + 财务短期承压 + 安全合规持续关注」的多元格局。",
+  "honesty_note": "本次搜索覆盖了2026年6月26日至7月3日期间的多家媒体和官方渠道，信息较为充分。部分热点（如股东大会、服务异常、CVE漏洞）的报道分散于技术社区和财经平台，未发现大型主流媒体的独家深度报道。所有 URL 均来自搜索结果原文，未做任何拼接或杜撰。",
+  "start_time": "2026-07-03 13:46",
+  "end_time": "2026-07-03 13:46",
+  "elapsed_seconds": 53,
+  "retry_count": 0
+}

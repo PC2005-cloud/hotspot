@@ -1,0 +1,47 @@
+{
+  "keyword": "GitHub",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "GitHub Trending榜Agent项目占主流，「省钱」成核心卖点",
+      "summary": "7月3日GitHub Trending前25个仓库中有19个为Agent相关项目，其中caveman、ponytail、dao-code等以「降低Token消耗」为核心卖点。",
+      "source": "创趣数智",
+      "url": "https://wsq.be/github-trending-2026-07-03/",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "开发者社区观察",
+          "summary": "Agent从「有没有」进入「好不好用」阶段，省钱成为开源世界最受关注的功能，反映开发者对AI账单的真实焦虑--5。"
+        },
+        {
+          "stance": "热门项目解读",
+          "summary": "caveman靠让AI「说原始人话」砍掉65% Token消耗；ponytail让Agent学「最懒的资深工程师」能不写代码就不写-5。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "GitHub Desktop 3.6发布，深度集成Copilot并支持Worktrees",
+      "summary": "6月26日，GitHub发布Desktop 3.6版本，Copilot现可辅助提交信息生成和合并冲突解决，并新增Git worktree支持，便于并行处理多分支。",
+      "source": "GitHub Blog",
+      "url": "https://github.blog/changelog/2026-06-26-github-desktop-3-6-worktrees-and-deeper-copilot-integration/",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Copilot功能基于Copilot SDK重构，支持模型选择器和BYOK（自带密钥），可连接第三方或本地模型。"
+        },
+        {
+          "stance": "开发者体验",
+          "summary": "Worktrees支持让开发者无需反复切换分支或stash改动，尤其适合与AI编码Agent配合使用。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周GitHub热点集中在AI编程工具的商业模式转型（Copilot按量计费创纪录）与平台可靠性争议两大主线。开发者社区对「省钱型Agent」项目热情高涨，反映出AI账单焦虑；同时安全公告积压、 outages 等问题引发对GitHub AI战略可持续性的关注。",
+  "honesty_note": "部分热点（如Copilot计费调整、安全公告积压）的爆发时间略早于7天窗口期（6月25-26日），但因其持续发酵且在窗口期内仍有新动态（如7月3日Kimi K2.7接入），故纳入整理。搜索未发现7天内重大安全漏洞或GitHub平台级事故的新增报道。",
+  "start_time": "2026-07-03 13:56",
+  "end_time": "2026-07-03 13:56",
+  "elapsed_seconds": 47,
+  "retry_count": 0
+}

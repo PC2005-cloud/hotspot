@@ -1,0 +1,65 @@
+{
+  "keyword": "Next.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Next.js 16.3 预览版发布：Instant Navigations 实现 SPA 级瞬感导航",
+      "summary": "Vercel 于 6 月 25 日发布 Next.js 16.3 预览版，核心特性 Instant Navigations 通过 Streaming、Caching 与 Partial Prefetching 让服务端驱动应用实现客户端般的瞬感导航，彻底解决 Server Components 导航卡顿痛点。",
+      "source": "Next.js 官方博客",
+      "url": "https://nextjs.org/blog/next-16-3-instant-navigations",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Next.js 16.3 Preview 引入 Instant Navigations 工具套件，通过 Stream with Suspense、Cache with use cache 和 Block 三种可选行为，让服务端路由拥有 SPA 般的即时响应体验-20。"
+        },
+        {
+          "stance": "社区解读",
+          "summary": "开发者认为这是一次「根本性重构」，Instant Navigations 解决了 React 长期以来在服务端性能与客户端响应之间的取舍难题-8；Vercel 自家的 v0 已提前采用该模式，导航延迟趋近于零-8。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Next.js 16.3 预览版：AI 原生开发工具链全面升级",
+      "summary": "继 16.2 的 AI 工具探索后，16.3 预览版进一步推出 AGENTS.md 自动生成、First-Party Skills、Agent Browser 及 Actionable Errors 等特性，专为 Claude Code、Cursor 等 AI 编程代理优化开发体验。",
+      "source": "Next.js 官方博客",
+      "url": "https://nextjs.org/blog/next-16-3-ai-improvements",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Next.js 16.3 进一步推进「面向 AI 代理的框架设计」，新增自动写入 AGENTS.md 指向版本匹配的本地文档、First-Party Skills 支持多步骤工作流、Agent Browser 支持 React 状态自检，以及可复制修复方案的 Actionable Errors-1。"
+        },
+        {
+          "stance": "技术媒体",
+          "summary": "InfoQ 等媒体指出，Next.js 正从「AI 兼容」转向「AI 原生」，16.3 的 Agent 工具链让 AI 编程代理能读取版本匹配的文档而非过时的训练数据，大幅减少幻觉 API 的生成-1-8。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Turbopack 构建性能再进化，16.3 预览版进一步释放潜力",
+      "summary": "Next.js 16.3 预览版在 Turbopack 上持续优化，虽未引入破坏性 API 变更，但显著提升了增量编译与热更新性能，开发者反馈日常开发流程更加流畅迅捷。",
+      "source": "xiaoyizhiqu.com",
+      "url": "https://www.xiaoyizhiqu.com/xyzq_news/article/6a47438c4ddd79ab67012c8d",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "技术分析",
+          "summary": "Turbopack 基于 Rust 的增量编译引擎，通过函数级缓存与按需打包，将热更新延迟压缩至毫秒级-5。16.3 预览版虽未改变 API，却进一步加固了这一新范式的落地基础-5。"
+        },
+        {
+          "stance": "开发者社区",
+          "summary": "开发者普遍反馈该版本使日常开发流程更流畅、响应更迅捷，是面向生产力提升的一次务实升级-5。Turbopack 已在 Next.js 15 中作为 dev 默认打包器稳定可用-50。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 Next.js 社区最突出的趋势是【AI 原生开发】与【性能体验】的双重进化。16.3 预览版获得开发者广泛关注，Instant Navigations 被视为解决 Server Components 体验痛点的关键突破；同时 CVE-2026-44578 安全漏洞持续引发自托管用户的警惕，升级至 16.2.5 或 15.5.16 以上版本成为紧迫建议。整体情绪积极，但对安全与版本升级的紧迫性关注度较高。",
+  "honesty_note": null,
+  "start_time": "2026-07-03 13:59",
+  "end_time": "2026-07-03 13:59",
+  "elapsed_seconds": 45,
+  "retry_count": 0
+}

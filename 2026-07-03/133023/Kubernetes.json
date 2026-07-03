@@ -1,0 +1,57 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Kubernetes v1.35 动态资源分配（DRA）功能正式GA",
+      "summary": "Kubernetes v1.35 版本中，动态资源分配（Dynamic Resource Allocation，DRA）功能正式进入GA阶段，NVIDIA DRA驱动已并入Kubernetes SIGs-。该特性旨在解决GPU等异构资源调度难题，以标准API替代复杂的nodeSelector和亲和性规则。",
+      "source": "dev.to",
+      "url": "https://dev.to/leobaniak/dynamic-resource-allocation-hits-ga-in-kubernetes-135-and-gpu-ci-jobs-finally-get-a-real-api-39c2#comments",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "技术社区评价",
+          "summary": "开发者普遍认为DRA将GPU资源申请从复杂的YAML配置转变为类似存储声明的标准API，大幅降低了CI/CD流水线中GPU测试任务的运维难度-5。"
+        },
+        {
+          "stance": "CNCF官方实践",
+          "summary": "CNCF于7月1日发布了基于Cluster API+OpenStack集群的实操指南，在Kubernetes v1.35.3上演示了NVIDIA RTX A5000与Tesla T10的混合GPU池调度-5。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "AWS Network Firewall新增EKS容器属性级检测能力",
+      "summary": "AWS于6月30日宣布，AWS Network Firewall现支持基于容器属性的检测规则，可直接使用Namespace、Cluster Name、Labels等原生容器构造编写防火墙策略-。",
+      "source": "AWS",
+      "url": "https://aws.amazon.com/cn/about-aws/whats-new/2026/06/aws-network-firewall-container-attributes-referencing/",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "AWS官方",
+          "summary": "该功能支持TLS解密、FQDN过滤、URL分类和GeoIP过滤，且能随容器自动伸缩，无需维护易失效的IP规则，适用于保护生成式AI工作负载。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "俄罗斯Capital Group采用容器管理平台「Штурвал」管理Kubernetes集群",
+      "summary": "俄罗斯开发商Capital Group宣布迁移至容器管理平台「Штурвал」（舵轮），用于管理其Kubernetes集群-。该项目由IT公司Infosystems Jet和实施方Laboratory Numerator于6月30日共同宣布。",
+      "source": "TAdviser",
+      "url": "https://www.tadviser.ru/index.php/Проект:Capital_Group_(Капитал_Груп)_(Лаборатория_Числитель:_Штурвал_Система_управления_контейнерами)",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "厂商公告",
+          "summary": "该平台由Laboratory Numerator开发，旨在为企业提供Kubernetes集群的统一管理能力-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前Kubernetes社区热点集中在【AI基础设施整合】与【资源调度效率】两大方向：OpenAI采用Cilium、DRA正式GA、KEDA事件驱动扩缩容等事件均围绕AI工作负载优化-。同时，【可观测性】与【安全性】也是持续焦点，Kepler重构功耗监控、AWS新增容器属性防火墙均体现了生产环境对精细化运维和零信任安全的迫切需求--6。整体舆情偏技术务实，社区对DRA和Kepler重构等降低运维复杂度的改进反响积极-5。",
+  "honesty_note": "搜索结果显示，Kubernetes v1.36在6月初发布的相关报道较多-，而近7天内（6月26日至7月3日）的突发性重大新闻较少，热点多为各云厂商和开源项目的常规功能发布与迭代。已尽量覆盖该时间窗口内最相关的资讯，若需要更早版本（如v1.36）的详细解读，可另行补充。",
+  "start_time": "2026-07-03 13:38",
+  "end_time": "2026-07-03 13:40",
+  "elapsed_seconds": 120,
+  "retry_count": 1
+}

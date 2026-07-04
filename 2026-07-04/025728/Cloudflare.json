@@ -1,0 +1,65 @@
+{
+  "keyword": "Cloudflare",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Cloudflare 设定 9月15日 最后期限：要求 AI 爬虫与搜索爬虫分离，混合用途爬虫将被默认拦截",
+      "summary": "Cloudflare 宣布自 2026 年 9 月 15 日起，新接入网站将默认允许搜索爬虫，但阻止 AI 代理和训练爬虫访问含广告页面，旨在保护出版商权益并重塑 AI 时代的内容获取规则。",
+      "source": "网易 (cnBeta.COM)",
+      "url": "https://www.163.com/dy/article/L0QPNEKD0511BLFD.html",
+      "published_time": "2026-07-02 08:58",
+      "perspectives": [
+        {
+          "stance": "【官方与行业视角】Cloudflare 称此举是为应对 Bot 流量已超人类流量的现实，倒逼 AI 公司明确爬虫用途，建立可持续的互联网生态。-1",
+          "summary": "CEO Matthew Prince 表示，互联网大部分流量已非人类，必须更快行动让可持续生态系统形成。新工具和合作伙伴关系将为网站所有者提供更高可见性和商业机会。"
+        },
+        {
+          "stance": "【AI 公司视角】政策间接施压 Google，因其爬虫同时服务于搜索和 AI 功能，拥有约两倍于其他 AI 公司的可访问信息量。-1",
+          "summary": "Cloudflare 点名全球最大搜索引擎（明显指向 Google），指其让站点难以在保持搜索可见的同时又完全规避 AI 使用。-1"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Cloudflare CEO 警告：未来两年 Agent 将导致互联网每周出现一个 Log4j 级安全漏洞",
+      "summary": "Cloudflare 联合创始人兼 CEO Matthew Prince 在播客中警告，因 AI 挖掘漏洞能力激增，未来两年互联网每周可能爆出一个 Log4j 级别的安全事件。14",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/zhoGu6x9CdUJ3XMFvyK1",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【CEO 预警】Bot 流量已在 2026 年上半年首次超过人类流量，五年内比例将突破 1000:1，旧商业模式将崩塌。-3-14",
+          "summary": "AI 代理引发互联网流量大爆炸，传统广告模式难以为继。CEO 预测未来 6-12 个月内多数企业将经历裁员，中层管理者将被 AI 取代。-3"
+        },
+        {
+          "stance": "【行业分析】AI 安全将“先变糟再变好”——AI 挖洞能力猛增导致漏洞频发，但之后 AI 作为审查员将大幅提升软件质量。-3",
+          "summary": "未来互联网商业模式将转向微支付，需要支持每秒千万级交易，比 Visa 大两个数量级。-3"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "CVE-2026-14440：Cloudflare Universal SSL 漏洞可导致 CAA 安全策略被绕过",
+      "summary": "Cloudflare Universal SSL 功能存在安全漏洞（CVE14440），其自动管理的 CAA DNS 记录会覆盖客户配置的更严格 CAA 记录，攻击者可能借此获取欺诈性 TLS 证书。",
+      "source": "OffSeq.com / CVE Database",
+      "url": "https://radar.offseq.com/threat/cve-2026-14440-vulnerability-in-cloudflare-univers-9a5e77e981367c1e",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【安全研究机构】漏洞源于 Universal SSL 自动管理 CAA RRset 的方式过于宽松，覆盖了客户使用 RFC 8657 参数配置的严格 CAA 记录。-20",
+          "summary": "攻击者可利用此漏洞获得浏览器信任的 TLS 证书，实施中间人攻击。缓解措施要求禁用 Universal SSL 并使用自有证书或高级证书。-"
+        },
+        {
+          "stance": "【受影响客户】客户如需强制执行 RFC 8657 安全策略，必须禁用 Universal SSL 功能，因自动 CAA 管理与严格策略互斥。-20",
+          "summary": "目前没有产品内解决方案可同时保留两种功能，建议启用证书透明度日志监控以检测潜在的证书滥用。--20"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天 Cloudflare 热点高度集中于「AI 代理时代」这一主题。舆论焦点从 CEO 预警 Bot 流量超越人类、安全风险加剧，延伸至该公司推出的系列应对举措：强制 AI 爬虫分类、变现网关、按使用付费等。公众情绪以行业观察和深度解读为主，舆论场对 Cloudflare 引领互联网商业模式重构既有期待也有审慎。--3",
+  "honesty_note": null,
+  "start_time": "2026-07-04 03:11",
+  "end_time": "2026-07-04 03:12",
+  "elapsed_seconds": 46,
+  "retry_count": 0
+}

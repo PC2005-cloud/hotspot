@@ -1,0 +1,47 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "React Summit 2026 在阿姆斯特丹举行，数千开发者聚焦可访问性与数据密集型应用",
+      "summary": "React Summit 2026 在阿姆斯特丹召开，数千名开发者参会讨论 React 未来、前端工程与现代 Web 应用；会议突出话题从 React 本身转向可访问性、数据网格与数据导入导出等实际问题。",
+      "source": "Highcharts Blog",
+      "url": "https://www.highcharts.com/blog/news/five-things-we-learned-at-react-summit-2026/",
+      "published_time": "2026-06 下旬（峰会举办时间）",
+      "perspectives": [
+        {
+          "stance": "【参会观察】",
+          "summary": "开发者不再只关心 React 集成问题，而是更关注能构建什么——可访问性已成为项目初期就纳入评估的硬性要求，数据密集型应用中的图表与数据网格协同成为刚需-5。"
+        },
+        {
+          "stance": "【社区反馈】",
+          "summary": "参会者反馈显示，展示比描述更重要——交互式地图、动画图表和实时仪表盘能有效激发讨论；开发者仍渴望面对面的技术交流-5。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "HeroUI v3 发布：基于 Tailwind CSS v4 的 React 与 React Native 组件库全面重写",
+      "summary": "HeroUI（原 NextUI）发布 v3 版本，定位为 Web 与 Native 统一设计系统，提供 75+ Web 组件（21 个全新）及 37 个 React Native 组件，基于 React Aria Components 和 Tailwind CSS v4 构建。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/07/heroui-v3-rewrite/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "【产品发布】",
+          "summary": "v3 全面采用 CSS 动画（无 JavaScript 运行时）、复合组件 API，开箱即支持 React 19 和 Next.js；同时推出 MCP Server、Agent Skills 和 Figma Kit v3，深度拥抱 AI 辅助开发-32。"
+        },
+        {
+          "stance": "【社区数据】",
+          "summary": "核心包 @heroui/react 周下载量约 34.1 万，heroui-native 约 1.1 万，GitHub 星标近 2.77 万；v3.0.3 升级后依赖减少约 90%-32。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期 React 社区热点聚焦于基金会成立带来的治理模式变革、Compiler Rust 化与 AI 辅助编码的实践验证、以及生态工具链的密集更新。公众情绪整体积极，对 React 走向社区化治理持谨慎乐观态度；同时对 AI 在核心开源项目中的深度参与表现出强烈关注与讨论热情。",
+  "honesty_note": "部分热点事件（如 React Compiler Rust 移植、React Summit 2026）的发生时间略早于 7 天窗口，但在近 7 天内仍被社区持续引用和讨论，故纳入整理。近 24-48 小时内无全新重大 React 事件爆发，热点以延续性讨论和生态更新为主。另：搜索中出现了 ReactOS（Windows 开源替代品）的相关新闻-，与前端 React 库无关，已排除。",
+  "start_time": "2026-07-04 03:17",
+  "end_time": "2026-07-04 03:18",
+  "elapsed_seconds": 49,
+  "retry_count": 0
+}

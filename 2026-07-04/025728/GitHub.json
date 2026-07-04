@@ -1,0 +1,101 @@
+{
+  "keyword": "GitHub",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "GitHub Copilot首次接入开源模型Kimi K2.7 Code",
+      "summary": "7月3日，月之暗面Kimi宣布GitHub Copilot正式接入其开源模型Kimi K2.7 Code，这是Copilot自上线以来首次接入开源模型，模型托管于微软Azure平台，采用按量计费模式。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/972/269.htm",
+      "published_time": "2026-07-03 15:10",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "GitHub官方表示此次推送将分批逐步进行，持续监测模型质量与性能，未来几周将扩大至Copilot Business、Enterprise版本-37。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "Kimi K2.7 Code相比K2.6模型显著提升了长上下文编程能力，平均token消耗减少30%，这是Copilot首次打破仅支持OpenAI模型的格局-37-。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "GitHub推出代码仓库刻录CD-ROM实体光盘服务",
+      "summary": "7月3日，GitHub宣布推出代码仓库刻录CD-ROM实体光盘服务，允许开发者将公开仓库刻录成实体光盘收藏。活动期间为7月2日至6日，限前1000名申请者。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/971/961.htm",
+      "published_time": "2026-07-03 07:01",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "GitHub以玩味语气宣布该服务，称“你的代码将真正以实体形式永远归属于你，直到你把光盘弄丢”-36。"
+        },
+        {
+          "stance": "网友调侃与质疑",
+          "summary": "部分开发者认为此举是对索尼宣布停售实体光盘的调侃回应，也有人批评GitHub在可靠性问题频发（2025年5月至2026年4月共257起 incidents）之际推出此类营销-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "GitHub平台曝大规模供应链攻击，超1万个代码仓库被植入恶意软件",
+      "summary": "2026年6月，GitHub曝出大规模供应链攻击，攻击者克隆合法项目并篡改README添加恶意ZIP链接，通过频繁提交伪装合法性，超1万个代码仓库被植入恶意软件。",
+      "source": "cn-sec.com",
+      "url": "http://cn-sec.com/archives/5309132.html",
+      "published_time": "2026-06-27 14:46",
+      "perspectives": [
+        {
+          "stance": "安全研究报告",
+          "summary": "攻击活动于6月18日首次被发现，最终分析发现约4万个可疑仓库，其中1万个与恶意软件分发模式相符，恶意载荷包含脚本、加载器和信息窃取模块-12。"
+        },
+        {
+          "stance": "安全专家警示",
+          "summary": "事件暴露了GitHub在主动检测方面的重大缺陷，许多恶意仓库已存在数月未被发现，补救措施被动，威胁行为者仍在积极维护攻击基础设施-12。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "VS Code零日漏洞可窃取GitHub令牌，研究员不满微软处理方式公开披露",
+      "summary": "安全研究员Ammar Askar公开披露VS Code零日漏洞，攻击者可利用恶意扩展和沙盒webview窃取GitHub OAuth令牌，访问用户所有私有仓库。微软尚未发布补丁。",
+      "source": "cn-sec.com",
+      "url": "http://cn-sec.com/archives/5310670.html",
+      "published_time": "2026-06-27 23:46",
+      "perspectives": [
+        {
+          "stance": "研究员披露",
+          "summary": "Askar因不满微软此前对类似漏洞“悄悄修复且不给予署名”的处理方式，选择在通知GitHub仅一小时后全面公开披露漏洞细节-11。"
+        },
+        {
+          "stance": "微软回应",
+          "summary": "微软发言人称将酌情与执法部门合作处理恶意活动，目前该漏洞被归类为零日漏洞，尚无官方补丁-11。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "GitHub Enterprise Server发布多项安全漏洞修复",
+      "summary": "6月30日，GitHub发布安全公告修复GitHub Enterprise Server多个版本的安全漏洞，涉及CVE57285（授权绕过）和CVE58421（CODEOWNERS ReDoS拒绝服务）等-。",
+      "source": "Canadian Centre for Cyber Security",
+      "url": "https://www.cyber.gc.ca",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "GitHub发布安全公告修复Enterprise Server 3.21.x及更早版本的多项漏洞，并宣布未来补丁将使用新公钥签名-。"
+        },
+        {
+          "stance": "安全机构通报",
+          "summary": "加拿大网络安全中心于7月3日发布AV26-650号安全通告，建议用户及时更新-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周GitHub热点集中于AI生态扩张与安全危机的双重张力。一方面Copilot接连接入Kimi K2.7和Claude Fable 5等新模型-37-1，推出Vision等多模态功能-；另一方面大规模供应链攻击-12、VS Code零日漏洞-11及多起Enterprise Server漏洞-引发开发者对平台安全性的高度担忧。CD-ROM光盘服务-36等营销举措则引发社区对平台可靠性问题的调侃-。整体舆情呈现“功能加速但安全隐患加剧”的矛盾情绪。",
+  "honesty_note": "本报告基于近7天内（2026-06-27至2026-07-04）的搜索结果整理。部分热点事件的发布时间略早于6月27日（如GitHub算力求助AWS为6月16日报道-、Copilot计费模式调整导致6月最佳业绩为6月25日报道-），但这些事件的讨论和影响延续至本周，故未列入主榜单。此外，GitHub 2026年经历了数十次重大服务中断-，AI驱动的工作负载激增是主因-，这一背景信息有助于理解当前热点的深层逻辑。所有URL均来自搜索结果原始链接，部分来源未提供具体URL的已设为null。",
+  "start_time": "2026-07-04 03:22",
+  "end_time": "2026-07-04 03:23",
+  "elapsed_seconds": 54,
+  "retry_count": 0
+}

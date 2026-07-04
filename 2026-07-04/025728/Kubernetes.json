@@ -1,0 +1,83 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Amazon EKS 正式推出 Kubernetes 版本回滚功能",
+      "summary": "AWS 于7月1日宣布 Amazon EKS 新增集群版本回滚功能，升级后7天内可回退一个次要版本，解决长久以来升级不可逆的痛点，旨在降低升级风险、加速安全补丁应用41。",
+      "source": "CodeZine / IT Brief India",
+      "url": "https://codezine.jp/news/detail/28837",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【官方发布】AWS 产品公告",
+          "summary": "回滚功能覆盖所有商业区域，控制平面回滚约20分钟，支持 --force 跳过检查，Auto Mode 下节点按 PodDisruptionBudget 逐步回滚且可取消，不额外收费-38-41。"
+        },
+        {
+          "stance": "【社区观察】运维效率提升",
+          "summary": "社区长期通过 KEP-4330 推动模拟版本回滚，EKS 的实际回滚到已生产验证版本的方式被普遍视为对运维团队的重大利好，有望加速企业升级节奏-41。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Kubernetes v1.35「Timbernetes」深度解析：Pod 资源就地更新与 Gang 调度正式稳定",
+      "summary": "Kubernetes v1.35 代号 Timbernetes（世界树），包含60项改进，其中 Pod 资源就地更新（In-Place Pod Resize）和 Gang 调度等17项功能正式稳定，无需重启即可调整 Pod CPU/内存资源。",
+      "source": "chenxutan.com",
+      "url": "http://chenxutan.com/d/4318.html",
+      "published_time": "2026-07-04",
+      "perspectives": [
+        {
+          "stance": "【技术分析】深度解读",
+          "summary": "v1.35 的 Pod 原地垂直扩缩容对有状态应用和批处理任务意义重大，避免删除重建带来的数据丢失和服务中断；Gang 调度则优化了 AI 训练等批量任务的调度效率-6。"
+        },
+        {
+          "stance": "【社区讨论】版本迭代观察",
+          "summary": "v1.35 对应2025年底发布周期，动态资源分配（DRA）已在此版本 GA，为 GPU 等异构资源的精细调度提供了标准化 API-6-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "KubeCon + CloudNativeCon Europe 2026 厂商动态密集发布",
+      "summary": "6月底阿姆斯特丹 KubeCon EU 2026 上，Broadcom 宣布 VKS 重大更新并捐赠 Velero 给 CNCF；Traefik Proxy 被 IBM、Nutanix、SUSE 等选为 Ingress-Nginx 退役后的战略替代方案。",
+      "source": "Cloud Native Now",
+      "url": "https://cloudnativenow.com/category/kubecon-cloudnativecon-europe-2026/?_page=3",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "【产业报道】生态整合加速",
+          "summary": "Broadcom 扩展 Kubernetes 平台，集成 F5、Kong、Tigera 并支持 K8s 1.35；SUSE 推出 Rancher Prime 的 Agentic AI 生态；Splunk 发布 OpenTelemetry eBPF 探针和 K8s Operator-1。"
+        },
+        {
+          "stance": "【技术观察】Ingress 生态变局",
+          "summary": "Ingress-Nginx 退休后，Traefik Proxy 成为 Gateway API 主流选择，标志着 K8s 网络标准从 Ingress 向 Gateway API 的迁移已进入实质性阶段-1。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "K8s 配置错误成安全事件首要元凶，容器逃逸与集群接管风险攀升",
+      "summary": "6月27日安全分析指出，配置错误引发 K8s 安全事件的频率远超内核 0Day 漏洞，特权容器、Linux 能力滥用和弱 RBAC 是三大高危配置，攻击者可借此实现容器逃逸和集群接管。",
+      "source": "cn-sec.com",
+      "url": "http://cn-sec.com/archives/5310880.html",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "【安全分析】风险警示",
+          "summary": "Securelist 报告显示攻击已发展为多阶段场景，涉及供应链入侵、K8s 密钥窃取、编排 API 滥用和容器逃逸，配置错误作为入侵根本原因的频率远高于内核漏洞-9。"
+        },
+        {
+          "stance": "【运维视角】加固建议",
+          "summary": "专家建议生产环境禁止特权容器、按最小权限原则授予 Linux 能力、严格管控 RBAC 配置，避免将 wildcard 权限赋予 ServiceAccount-9-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Kubernetes 热点集中在三大方向：一是 AWS EKS 回滚功能等运维效率提升工具广受好评；二是 KubeCon EU 2026 密集发布的厂商生态整合引发产业关注；三是多个高危安全漏洞（Rancher、containerd）和配置错误警示引发运维团队高度警惕，安全话题热度显著攀升。整体情绪以「积极跟进新功能」与「紧急应对安全风险」并存为主要特征。",
+  "honesty_note": "搜索范围内（2026-06-27 至 2026-07-04）Kubernetes 相关资讯较为丰富，涵盖版本特性、云厂商功能发布、行业大会、安全漏洞等多个维度。部分热点（如 KubeCon EU 2026 厂商动态）实际发生日期为6月下旬，但在近7天内仍有持续报道和讨论，已纳入统计。所有 URL 均来自搜索结果摘要中的原始链接，未做任何拼接或杜撰。",
+  "start_time": "2026-07-04 03:06",
+  "end_time": "2026-07-04 03:07",
+  "elapsed_seconds": 55,
+  "retry_count": 0
+}

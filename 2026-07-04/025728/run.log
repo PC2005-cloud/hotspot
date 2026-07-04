@@ -1,0 +1,640 @@
+[02:57:28] ==================================================
+[02:57:28]   🔥 Hotspot — 热点搜索器
+[02:57:28]   日志: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/run.log
+[02:57:28] ==================================================
+[02:57:28] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:57:28]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[02:57:28] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:57:28] 未找到已保存的 session，需要登录
+[02:57:28] 浏览器上下文: 1920x1080, Asia/Shanghai, zh-CN, headless=True, geolocation=上海
+[02:57:28] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:57:28] 登录账号: 1309****
+[02:57:36] 页面URL: https://chat.deepseek.com/sign_in
+[02:57:36] 页面标题: DeepSeek - 探索未至之境
+[02:57:36] 需要登录...
+[02:57:46] session 已保存到 /home/runner/work/hotspot/hotspot/session/storage_state.json
+[02:57:46] ✅ 登录成功
+[02:57:47] [深度思考] 已开启
+[02:57:47] [智能搜索] 已经是开启状态
+[02:57:47] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:57:47] 
+共 20 个关键词，开始搜索...
+[02:57:47] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:57:47] 
+==================================================
+[02:57:47]   关键词: DeepSeek
+[02:57:47] ==================================================
+[02:57:47]   prompt 长度: 1446 字
+[02:57:47] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:57:47] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[02:58:26] 回复完成 (38.4秒, 3165字)
+[02:58:26] 从回复中提取到 9 个引用链接
+[02:58:26]   摘要清理: #1 移除标记
+[02:58:26]   摘要清理: #2 移除标记
+[02:58:26]   引用链接填补: #3 [18] https://news.qq.com/rain/a/20260702A09O6V00?id=20260702A09O6V00&path=a
+[02:58:26]   摘要清理: #3 移除标记
+[02:58:26]   摘要清理: #4 移除标记
+[02:58:26]   摘要清理: #5 移除标记
+[02:58:26]   引用链接填补: #6 [31] https://www.sohu.com/a/1042056092_121019331?scm=10001.325_13-325_13.0.
+[02:58:26]   摘要清理: #6 移除标记
+[02:58:26] 验证 URL 可用性...
+[02:58:29] HTTP Request: HEAD https://m.cnstock.com/commonDetail/735328 "HTTP/1.1 200 OK"
+[02:58:30] HTTP Request: HEAD https://36kr.com/p/3877226091180296 "HTTP/1.1 200 OK"
+[02:58:31] HTTP Request: HEAD https://news.qq.com/rain/a/20260702A09O6V00?id=20260702A09O6V00&path=a&app=news&suid=&redirect_pc=1 "HTTP/1.1 200 OK"
+[02:58:31] HTTP Request: HEAD https://news.qq.com/rain/a/20260702A09O6V00 "HTTP/1.1 200 OK"
+[02:58:32] HTTP Request: HEAD https://www.jiemian.com/article/14700272.html "HTTP/1.1 200 OK"
+[02:58:33] HTTP Request: HEAD https://www.sohu.com/a/1042056092_121019331?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334&spm=smpc.channel_248.block3_308_NDdFbm_1_fd.5.1782467044068H4i8HMx_324 "HTTP/1.1 200 OK"
+[02:58:33] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[02:58:33] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/DeepSeek.json
+[02:58:33]   [完成] DeepSeek (6 条热点, 40秒)
+[02:58:33]   等待 32 秒后处理下一个关键词...
+[02:59:05] 准备开启新对话...
+[02:59:11] 新对话已就绪
+[02:59:11] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:59:11] 
+==================================================
+[02:59:11]   关键词: ChatGPT
+[02:59:11] ==================================================
+[02:59:11]   prompt 长度: 1445 字
+[02:59:11] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:59:11] 发送消息 (1445 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[02:59:49] 回复完成 (36.3秒, 2701字)
+[02:59:49] 从回复中提取到 5 个引用链接
+[02:59:49]   摘要清理: #1 移除标记
+[02:59:49]   摘要清理: #2 移除标记
+[02:59:49]   摘要清理: #3 移除标记
+[02:59:49] 验证 URL 可用性...
+[02:59:49] HTTP Request: HEAD https://tech.ifeng.com/c/8uQwQwoQvQI?ch=ttsearch "HTTP/1.1 200 OK"
+[02:59:51] HTTP Request: HEAD https://www.stheadline.com/daily-international/3589520/OpenAI%E6%8F%90%E8%AD%B0%E5%90%91%E7%BE%8E%E6%94%BF%E5%BA%9C%E4%BA%A45%E8%82%A1%E4%BB%BD-%E5%83%B9%E5%80%BC3341%E5%84%84 "HTTP/1.1 200 OK"
+[02:59:51]   [不可达] 美政府限制OpenAI新模型发布范围，GPT-5.6仅向「可信伙伴」开放 -> https://m.techweb.com.cn/article/2026-06-27/2976928.shtml (连接失败)
+[02:59:51] URL 验证: 3 个, 2 可用, 0 个404, 1 个不可达
+[02:59:51]   过滤: 3 条热点因链接不可达已移除
+[02:59:51] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/ChatGPT.json
+[02:59:51]   [完成] ChatGPT (2 条热点, 38秒)
+[02:59:51]   等待 36 秒后处理下一个关键词...
+[03:00:27] 准备开启新对话...
+[03:00:33] 新对话已就绪
+[03:00:33] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:00:33] 
+==================================================
+[03:00:33]   关键词: OpenAI
+[03:00:33] ==================================================
+[03:00:33]   prompt 长度: 1444 字
+[03:00:33] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:00:33] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:01:18] 回复完成 (44.0秒, 3524字)
+[03:01:18] 从回复中提取到 10 个引用链接
+[03:01:18]   摘要清理: #1 移除标记
+[03:01:18]   摘要清理: #2 移除标记
+[03:01:18]   摘要清理: #3 移除标记
+[03:01:18]   摘要清理: #4 移除标记
+[03:01:18]   摘要清理: #6 移除标记
+[03:01:18] 验证 URL 可用性...
+[03:01:18] HTTP Request: HEAD https://www.zaobao.com/news/world/story20260702-9303408 "HTTP/1.1 302 Found"
+[03:01:19] HTTP Request: HEAD https://www.zaobao.com.sg/news/world/story20260702-9303408 "HTTP/1.1 200 OK"
+[03:01:19] HTTP Request: HEAD https://www.deeplearning.ai/the-batch/gpt-5-6-lands-in-limbo "HTTP/1.1 403 Forbidden"
+[03:01:19] HTTP Request: HEAD https://tech.ifeng.com/c/8uQwQwoQvQI "HTTP/1.1 200 OK"
+[03:01:19]   [不可达] OpenAI首款硬件Codex Micro键盘正式亮相，7月15日发售 -> https://m.techweb.com.cn/article/2026-07-01/2977056.shtml (连接失败)
+[03:01:20] HTTP Request: HEAD https://www.ithome.com/0/972/079.htm "HTTP/1.1 200 OK"
+[03:01:20] URL 验证: 5 个, 4 可用, 0 个404, 1 个不可达
+[03:01:20]   过滤: 4 条热点因链接不可达已移除
+[03:01:20] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/OpenAI.json
+[03:01:20]   [完成] OpenAI (3 条热点, 45秒)
+[03:01:20]   等待 45 秒后处理下一个关键词...
+[03:02:04] 准备开启新对话...
+[03:02:09] 新对话已就绪
+[03:02:09] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:02:09] 
+==================================================
+[03:02:09]   关键词: Docker
+[03:02:09] ==================================================
+[03:02:09]   prompt 长度: 1444 字
+[03:02:09] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:02:09] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:02:52] 回复完成 (41.5秒, 3288字)
+[03:02:52] 从回复中提取到 9 个引用链接
+[03:02:52] demjson3 解析也失败: Can not decode value starting with character '【'
+[03:02:52] JSON 解析失败
+[03:02:52]   第1次尝试 — JSON 解析失败，原始回复已保存
+[03:02:52]   等待 16 秒后重试 (2/3)...
+[03:03:09] 准备开启新对话...
+[03:03:14] 新对话已就绪
+[03:03:14] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:03:55] 回复完成 (39.0秒, 3117字)
+[03:03:55] 从回复中提取到 8 个引用链接
+[03:03:55] 验证 URL 可用性...
+[03:04:00] HTTP Request: HEAD https://www.secrss.com/articles/91750 "HTTP/1.1 200 OK"
+[03:04:01] HTTP Request: HEAD https://www.exclusive-networks.com/ie/resources/media-centre/news/exclusive-networks-becomes-distribution-partner-of-docker-in-the-uk-and-ireland "HTTP/1.1 200 OK"
+[03:04:02] HTTP Request: HEAD https://docs.docker.com/engine/release-notes/29/ "HTTP/1.1 200 OK"
+[03:04:02] URL 验证: 3 个, 3 可用, 0 个404, 0 个不可达
+[03:04:02]   过滤: 2 条热点因链接不可达已移除
+[03:04:02] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Docker.json
+[03:04:02]   [完成] Docker (3 条热点, 106秒)
+[03:04:02]   等待 22 秒后处理下一个关键词...
+[03:04:24] 准备开启新对话...
+[03:04:29] 新对话已就绪
+[03:04:29] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:04:29] 
+==================================================
+[03:04:29]   关键词: Rust
+[03:04:29] ==================================================
+[03:04:29]   prompt 长度: 1442 字
+[03:04:29] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:04:29] 发送消息 (1442 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:05:07] 回复完成 (36.5秒, 3462字)
+[03:05:07] 从回复中提取到 8 个引用链接
+[03:05:07]   摘要清理: #1 移除标记
+[03:05:07]   引用链接填补: #2 [3] https://www.zpedu.com/it/rjyf/39401.html
+[03:05:07]   摘要清理: #2 移除标记
+[03:05:07]   摘要清理: #3 移除标记
+[03:05:07]   摘要清理: #4 移除标记
+[03:05:07]   摘要清理: #5 移除标记
+[03:05:07] 验证 URL 可用性...
+[03:05:07] HTTP Request: HEAD https://blog.rust-lang.org/2026/06/30/Rust-1.96.1/ "HTTP/1.1 200 OK"
+[03:05:15]   [不可达] TIOBE 6 月榜单：Rust 份额达 2.8% 创历史新高，排名升至第 13 -> https://www.zpedu.com/it/rjyf/39401.html (超时)
+[03:05:16] HTTP Request: HEAD https://www.163.com/dy/article/L0SKJQSE05561FYA.html "HTTP/1.1 200 OK"
+[03:05:17] HTTP Request: HEAD https://ost.51cto.com/posts/51473 "HTTP/1.1 200 OK"
+[03:05:19] HTTP Request: HEAD https://devpress.csdn.net/awstech/6a462775662f9a54cb87b811.html "HTTP/1.1 200 OK"
+[03:05:19] HTTP Request: HEAD https://rustfoundation.org "HTTP/1.1 403 Forbidden"
+[03:05:19] URL 验证: 6 个, 5 可用, 0 个404, 1 个不可达
+[03:05:19]   过滤: 2 条热点因链接不可达已移除
+[03:05:19] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Rust.json
+[03:05:19]   [完成] Rust (4 条热点, 38秒)
+[03:05:19]   等待 35 秒后处理下一个关键词...
+[03:05:54] 准备开启新对话...
+[03:06:00] 新对话已就绪
+[03:06:00] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:06:00] 
+==================================================
+[03:06:00]   关键词: Kubernetes
+[03:06:00] ==================================================
+[03:06:00]   prompt 长度: 1448 字
+[03:06:00] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:06:00] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:06:56] 回复完成 (53.6秒, 4240字)
+[03:06:56] 从回复中提取到 8 个引用链接
+[03:06:56]   引用链接填补: #1 [38] https://codezine.jp/news/detail/28837
+[03:06:56]   摘要清理: #1 移除标记
+[03:06:56]   引用链接填补: #2 [6] http://chenxutan.com/d/4318.html
+[03:06:56]   摘要清理: #2 移除标记
+[03:06:56]   引用链接填补: #3 [1] https://cloudnativenow.com/category/kubecon-cloudnativecon-europe-2026
+[03:06:56]   摘要清理: #3 移除标记
+[03:06:56]   引用链接填补: #4 [7] https://www.cncf.io/blog/2026/06/30/kepler-re-architected-improved-pow
+[03:06:56]   摘要清理: #4 移除标记
+[03:06:56]   引用链接填补: #5 [9] http://cn-sec.com/archives/5310880.html
+[03:06:56]   摘要清理: #5 移除标记
+[03:06:56]   摘要清理: #6 移除标记
+[03:06:56] 验证 URL 可用性...
+[03:06:57] HTTP Request: HEAD https://codezine.jp/news/detail/28837 "HTTP/1.1 200 OK"
+[03:06:58] HTTP Request: HEAD http://chenxutan.com/d/4318.html "HTTP/1.1 200 OK"
+[03:06:59] HTTP Request: HEAD https://cloudnativenow.com/category/kubecon-cloudnativecon-europe-2026/?_page=3 "HTTP/1.1 200 OK"
+[03:06:59] HTTP Request: HEAD https://www.cncf.io/blog/2026/06/30/kepler-re-architected-improved-power-accuracy-and-a-community-call-to-action/?utm_source=the+new+stack&utm_medium=referral&utm_campaign=tns+platform&utm_content=sponsor+module "HTTP/1.1 403 Forbidden"
+[03:07:00] HTTP Request: HEAD http://cn-sec.com/archives/5310880.html "HTTP/1.1 200 OK"
+[03:07:00] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[03:07:00]   过滤: 3 条热点因链接不可达已移除
+[03:07:00] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Kubernetes.json
+[03:07:00]   [完成] Kubernetes (4 条热点, 55秒)
+[03:07:00]   等待 17 秒后处理下一个关键词...
+[03:07:17] 准备开启新对话...
+[03:07:23] 新对话已就绪
+[03:07:23] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:07:23] 
+==================================================
+[03:07:23]   关键词: TypeScript
+[03:07:23] ==================================================
+[03:07:23]   prompt 长度: 1448 字
+[03:07:23] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:07:23] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:08:06] 回复完成 (41.5秒, 3080字)
+[03:08:06] 从回复中提取到 7 个引用链接
+[03:08:06]   摘要清理: #1 移除标记
+[03:08:06]   引用链接填补: #2 [12] https://www.cnblogs.com/goxxj/p/20835265#commentform
+[03:08:06]   摘要清理: #2 移除标记
+[03:08:06]   摘要清理: #3 移除标记
+[03:08:06]   引用链接填补: #4 [4] https://www.sohu.com/a/1041538251_827544?scm=10001.325_13-325_13.0.0-0
+[03:08:06]   摘要清理: #4 移除标记
+[03:08:06] 验证 URL 可用性...
+[03:08:06] HTTP Request: HEAD https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-rc/ "HTTP/1.1 200 OK"
+[03:08:07] HTTP Request: HEAD https://www.cnblogs.com/goxxj/p/20835265#commentform "HTTP/1.1 200 OK"
+[03:08:07] HTTP Request: HEAD https://www.syncfusion.com/blogs/post/typescript-github-most-used-language "HTTP/1.1 200 OK"
+[03:08:16]   [不可达] TypeScript 7.0 RC并行化与破坏性变更详解 -> https://www.sohu.com/a/1041538251_827544?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334&spm=smpc.channel_248.block3_308_NDdFbm_1_fd.2.1782388000812xuJL7DT_324 (超时)
+[03:08:16] HTTP Request: HEAD https://www.npmjs.com/package/erasablefy "HTTP/1.1 403 Forbidden"
+[03:08:16] URL 验证: 5 个, 4 可用, 0 个404, 1 个不可达
+[03:08:16]   过滤: 2 条热点因链接不可达已移除
+[03:08:16] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/TypeScript.json
+[03:08:16]   [完成] TypeScript (3 条热点, 43秒)
+[03:08:16]   等待 19 秒后处理下一个关键词...
+[03:08:35] 准备开启新对话...
+[03:08:40] 新对话已就绪
+[03:08:40] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:08:40] 
+==================================================
+[03:08:40]   关键词: Claude Code
+[03:08:40] ==================================================
+[03:08:40]   prompt 长度: 1449 字
+[03:08:40] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:08:40] 发送消息 (1449 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:09:26] 回复完成 (43.9秒, 3318字)
+[03:09:26] 从回复中提取到 8 个引用链接
+[03:09:26]   摘要清理: #1 移除标记
+[03:09:26]   摘要清理: #2 移除标记
+[03:09:26]   摘要清理: #3 移除标记
+[03:09:26]   摘要清理: #4 移除标记
+[03:09:26]   摘要清理: #6 移除标记
+[03:09:26] 验证 URL 可用性...
+[03:09:27] HTTP Request: HEAD https://36kr.com/p/3880629882679301 "HTTP/1.1 200 OK"
+[03:09:28] HTTP Request: HEAD https://news.qq.com/rain/a/20260701A0ANZ300 "HTTP/1.1 200 OK"
+[03:09:29] HTTP Request: HEAD https://36kr.com/p/3879301021921537 "HTTP/1.1 200 OK"
+[03:09:30] HTTP Request: HEAD https://www.sohu.com/a/1045103572_122014422 "HTTP/1.1 200 OK"
+[03:09:32] HTTP Request: HEAD https://hub-assets-cache.baai.ac.cn/view/55997 "HTTP/1.1 200 OK"
+[03:09:32] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[03:09:32]   过滤: 1 条热点因链接不可达已移除
+[03:09:32] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Claude Code.json
+[03:09:32]   [完成] Claude Code (5 条热点, 46秒)
+[03:09:32]   等待 42 秒后处理下一个关键词...
+[03:10:14] 准备开启新对话...
+[03:10:20] 新对话已就绪
+[03:10:20] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:10:20] 
+==================================================
+[03:10:20]   关键词: Python
+[03:10:20] ==================================================
+[03:10:20]   prompt 长度: 1444 字
+[03:10:20] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:10:20] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:11:04] 回复完成 (42.0秒, 3043字)
+[03:11:04] 从回复中提取到 3 个引用链接
+[03:11:04]   摘要清理: #1 移除标记
+[03:11:04]   摘要清理: #2 移除标记
+[03:11:04]   摘要清理: #4 移除标记
+[03:11:04]   摘要清理: #5 移除标记
+[03:11:04] 验证 URL 可用性...
+[03:11:04] HTTP Request: HEAD https://peps.python.org/pep-0836/ "HTTP/1.1 200 OK"
+[03:11:05] HTTP Request: HEAD https://www.cybersecurity-help.cz/vdb/vulns/136685/ "HTTP/1.1 200 OK"
+[03:11:06] HTTP Request: HEAD http://www.hafoo.com.hk/news/hans/notice/202605273751484682 "HTTP/1.1 200 OK"
+[03:11:06] URL 验证: 3 个, 3 可用, 0 个404, 0 个不可达
+[03:11:06]   过滤: 2 条热点因链接不可达已移除
+[03:11:06] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Python.json
+[03:11:06]   [完成] Python (3 条热点, 44秒)
+[03:11:06]   等待 33 秒后处理下一个关键词...
+[03:11:39] 准备开启新对话...
+[03:11:44] 新对话已就绪
+[03:11:44] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:11:44] 
+==================================================
+[03:11:44]   关键词: Cloudflare
+[03:11:44] ==================================================
+[03:11:44]   prompt 长度: 1448 字
+[03:11:44] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:11:44] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:12:30] 回复完成 (44.0秒, 3955字)
+[03:12:30] 从回复中提取到 9 个引用链接
+[03:12:30]   摘要清理: #1 移除标记
+[03:12:30]   摘要清理: #2 移除标记
+[03:12:30]   摘要清理: #4 移除标记
+[03:12:30]   摘要清理: #5 移除标记
+[03:12:30]   摘要清理: #6 移除标记
+[03:12:30] 验证 URL 可用性...
+[03:12:31] HTTP Request: HEAD https://www.163.com/dy/article/L0QPNEKD0511BLFD.html "HTTP/1.1 200 OK"
+[03:12:33] HTTP Request: HEAD https://www.infoq.cn/article/zhoGu6x9CdUJ3XMFvyK1 "HTTP/1.1 200 OK"
+[03:12:33] HTTP Request: HEAD https://community.cloudflare.com/t/issues-with-network-performance-in-north-america/937277 "HTTP/1.1 403 Forbidden"
+[03:12:34] HTTP Request: HEAD https://radar.offseq.com/threat/cve-2026-14440-vulnerability-in-cloudflare-univers-9a5e77e981367c1e "HTTP/1.1 200 OK"
+[03:12:35] HTTP Request: HEAD https://www.pingwest.com/w/315221 "HTTP/1.1 405 Not Allowed"
+[03:12:35] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[03:12:35]   过滤: 3 条热点因链接不可达已移除
+[03:12:35] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Cloudflare.json
+[03:12:35]   [完成] Cloudflare (3 条热点, 46秒)
+[03:12:35]   等待 20 秒后处理下一个关键词...
+[03:12:55] 准备开启新对话...
+[03:13:01] 新对话已就绪
+[03:13:01] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:13:01] 
+==================================================
+[03:13:01]   关键词: Vue.js
+[03:13:01] ==================================================
+[03:13:01]   prompt 长度: 1444 字
+[03:13:01] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:13:01] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:13:52] 回复完成 (48.8秒, 3923字)
+[03:13:52] 从回复中提取到 5 个引用链接
+[03:13:52]   摘要清理: #1 移除标记
+[03:13:52]   摘要清理: #2 移除标记
+[03:13:52]   摘要清理: #4 移除标记
+[03:13:52]   摘要清理: #5 移除标记
+[03:13:52]   去重: 1 条热点因 URL 重复已移除
+[03:13:52] 验证 URL 可用性...
+[03:13:53] HTTP Request: HEAD https://www.uisdc.com/hangye/vueviteconf-2026 "HTTP/1.1 200 OK"
+[03:13:54] HTTP Request: HEAD http://chenxutan.com/d/4293.html "HTTP/1.1 200 OK"
+[03:13:56] HTTP Request: HEAD https://www.oschina.net "HTTP/1.1 405 Method Not Allowed"
+[03:13:56] HTTP Request: HEAD https://versionlog.com/vuejs/3.6/ "HTTP/1.1 200 OK"
+[03:13:56] URL 验证: 4 个, 4 可用, 0 个404, 0 个不可达
+[03:13:56]   过滤: 2 条热点因链接不可达已移除
+[03:13:56] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Vue.js.json
+[03:13:56]   [完成] Vue.js (3 条热点, 51秒)
+[03:13:56]   等待 21 秒后处理下一个关键词...
+[03:14:17] 准备开启新对话...
+[03:14:22] 新对话已就绪
+[03:14:22] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:14:22] 
+==================================================
+[03:14:22]   关键词: 前端技术
+[03:14:22] ==================================================
+[03:14:22]   prompt 长度: 1442 字
+[03:14:22] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:14:22] 发送消息 (1442 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:15:09] 回复完成 (46.2秒, 3680字)
+[03:15:09] 从回复中提取到 7 个引用链接
+[03:15:09]   引用链接填补: #1 [22] https://www.zpedu.com/it/rjyf/39399.html
+[03:15:09]   摘要清理: #1 移除标记
+[03:15:09]   引用链接填补: #2 [30] https://www.infoq.com/news/2026/07/google-a2ui-genui/?topicPageSponsor
+[03:15:09]   摘要清理: #2 移除标记
+[03:15:09]   引用链接填补: #3 [31] https://www.chinaz.com/ainews/29352.shtml
+[03:15:09]   摘要清理: #3 移除标记
+[03:15:09]   引用链接填补: #4 [1] https://36kr.com/p/3875531712786695
+[03:15:09]   摘要清理: #4 移除标记
+[03:15:09]   引用链接填补: #6 [39] https://www.freebuf.com/news/488548.html
+[03:15:09]   摘要清理: #6 移除标记
+[03:15:09]   引用链接填补: #7 [35] https://my.oschina.net/u/1756807/blog/19713047
+[03:15:09]   摘要清理: #7 移除标记
+[03:15:09] 验证 URL 可用性...
+[03:15:18]   [不可达] TypeScript 7.0 发布候选版：编译器用 Go 重写，类型检查提速 1 -> https://www.zpedu.com/it/rjyf/39399.html (超时)
+[03:15:18] HTTP Request: HEAD https://www.infoq.com/news/2026/07/google-a2ui-genui/?topicPageSponsorship=947960e0-f446-4c7a-929f-2ade5f5be796 "HTTP/1.1 200 200"
+[03:15:19] HTTP Request: HEAD https://www.chinaz.com/ainews/29352.shtml "HTTP/1.1 200 OK"
+[03:15:20] HTTP Request: HEAD https://36kr.com/p/3875531712786695 "HTTP/1.1 200 OK"
+[03:15:21] HTTP Request: HEAD https://www.freebuf.com/news/488548.html "HTTP/1.1 405 Not Allowed"
+[03:15:23] HTTP Request: HEAD https://my.oschina.net/u/1756807/blog/19713047 "HTTP/1.1 405 Method Not Allowed"
+[03:15:23] URL 验证: 6 个, 5 可用, 0 个404, 1 个不可达
+[03:15:23]   过滤: 4 条热点因链接不可达已移除
+[03:15:23] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/前端技术.json
+[03:15:23]   [完成] 前端技术 (3 条热点, 47秒)
+[03:15:23]   等待 44 秒后处理下一个关键词...
+[03:16:07] 准备开启新对话...
+[03:16:12] 新对话已就绪
+[03:16:12] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:16:12] 
+==================================================
+[03:16:12]   关键词: Node.js
+[03:16:12] ==================================================
+[03:16:12]   prompt 长度: 1445 字
+[03:16:12] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:16:12] 发送消息 (1445 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:16:49] 回复完成 (35.0秒, 3260字)
+[03:16:49] 从回复中提取到 8 个引用链接
+[03:16:49]   摘要清理: #1 移除标记
+[03:16:49]   摘要清理: #2 移除标记
+[03:16:49]   摘要清理: #3 移除标记
+[03:16:49]   摘要清理: #4 移除标记
+[03:16:49]   摘要清理: #5 移除标记
+[03:16:49]   引用链接填补: #6 [6] https://www.traeai.com/entities/node-js
+[03:16:49]   摘要清理: #6 移除标记
+[03:16:49] 验证 URL 可用性...
+[03:16:49] HTTP Request: HEAD https://xix.ai/zh/ainews/nodejs-halts-security-bounty-payouts-after-aifabricated-reports.html "HTTP/1.1 403 Forbidden"
+[03:16:50] HTTP Request: HEAD https://healsecurity.com/node-js-fixes-12-vulnerabilities-including-2-high-severity-authentication-bypasses/ "HTTP/1.1 403 Forbidden"
+[03:16:50] HTTP Request: HEAD https://devcenter.heroku.com/changelog-items/3730 "HTTP/1.1 200 OK"
+[03:16:51] HTTP Request: HEAD https://www.infoq.cn/article/9yfZrDDTaZYOSP2idLXh "HTTP/1.1 200 OK"
+[03:16:54] HTTP Request: HEAD https://my.oschina.net/u/1756807/blog/19713047 "HTTP/1.1 405 Method Not Allowed"
+[03:16:55] HTTP Request: HEAD https://www.traeai.com/entities/node-js "HTTP/1.1 200 OK"
+[03:16:55] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[03:16:55]   过滤: 3 条热点因链接不可达已移除
+[03:16:55] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Node.js.json
+[03:16:55]   [完成] Node.js (3 条热点, 37秒)
+[03:16:55]   等待 36 秒后处理下一个关键词...
+[03:17:32] 准备开启新对话...
+[03:17:38] 新对话已就绪
+[03:17:38] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:17:38] 
+==================================================
+[03:17:38]   关键词: React
+[03:17:38] ==================================================
+[03:17:38]   prompt 长度: 1443 字
+[03:17:38] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:17:38] 发送消息 (1443 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:18:27] 回复完成 (47.0秒, 4146字)
+[03:18:27] 从回复中提取到 6 个引用链接
+[03:18:27]   摘要清理: #1 移除标记
+[03:18:27]   摘要清理: #2 移除标记
+[03:18:27]   摘要清理: #3 移除标记
+[03:18:27]   摘要清理: #4 移除标记
+[03:18:27]   摘要清理: #5 移除标记
+[03:18:27] 验证 URL 可用性...
+[03:18:27] HTTP Request: HEAD https://lemmy.zip/post/50736965 "HTTP/1.1 403 Forbidden"
+[03:18:30] HTTP Request: HEAD https://my.oschina.net/u/9753381/blog/19705666 "HTTP/1.1 405 Method Not Allowed"
+[03:18:30] HTTP Request: HEAD https://www.highcharts.com/blog/news/five-things-we-learned-at-react-summit-2026/ "HTTP/1.1 200 OK"
+[03:18:30] HTTP Request: HEAD https://www.infoq.com/news/2026/07/heroui-v3-rewrite/ "HTTP/1.1 200 200"
+[03:18:32] HTTP Request: HEAD https://my.oschina.net/u/1756807/blog/19713047 "HTTP/1.1 405 Method Not Allowed"
+[03:18:32] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[03:18:32]   过滤: 4 条热点因链接不可达已移除
+[03:18:32] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/React.json
+[03:18:32]   [完成] React (2 条热点, 49秒)
+[03:18:32]   等待 34 秒后处理下一个关键词...
+[03:19:06] 准备开启新对话...
+[03:19:11] 新对话已就绪
+[03:19:11] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:19:11] 
+==================================================
+[03:19:11]   关键词: Go
+[03:19:11] ==================================================
+[03:19:11]   prompt 长度: 1440 字
+[03:19:11] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:19:11] 发送消息 (1440 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:19:50] 回复完成 (37.5秒, 3480字)
+[03:19:50] 从回复中提取到 8 个引用链接
+[03:19:50]   摘要清理: #1 移除标记
+[03:19:50]   摘要清理: #2 移除标记
+[03:19:50]   摘要清理: #3 移除标记
+[03:19:50]   摘要清理: #4 移除标记
+[03:19:50]   摘要清理: #5 移除标记
+[03:19:50] 验证 URL 可用性...
+[03:19:51] HTTP Request: HEAD https://www.sinaxr.com/doc/docView/9220 "HTTP/1.1 200 OK"
+[03:19:59]   [不可达] TypeScript 7.0编译器用Go重写，类型检查提速十倍 -> https://www.zpedu.com/it/rjyf/39399.html (超时)
+[03:20:01] HTTP Request: HEAD http://chenxutan.com/d/4324.html "HTTP/1.1 200 OK"
+[03:20:04] HTTP Request: HEAD https://datasea.cn/go0701639768.html "HTTP/1.1 200 OK"
+[03:20:05] HTTP Request: HEAD https://datasea.cn/go0703641171.html "HTTP/1.1 200 OK"
+[03:20:05] HTTP Request: HEAD https://www.zaobao.com "HTTP/1.1 302 Found"
+[03:20:06] HTTP Request: HEAD https://www.zaobao.com.sg/ "HTTP/1.1 200 OK"
+[03:20:06] URL 验证: 6 个, 5 可用, 0 个404, 1 个不可达
+[03:20:06]   过滤: 1 条热点因链接不可达已移除
+[03:20:06] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Go.json
+[03:20:06]   [完成] Go (5 条热点, 39秒)
+[03:20:06]   等待 33 秒后处理下一个关键词...
+[03:20:39] 准备开启新对话...
+[03:20:44] 新对话已就绪
+[03:20:44] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:20:44] 
+==================================================
+[03:20:44]   关键词: 人工智能
+[03:20:44] ==================================================
+[03:20:44]   prompt 长度: 1442 字
+[03:20:44] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:20:44] 发送消息 (1442 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:21:31] 回复完成 (44.8秒, 3539字)
+[03:21:31] 从回复中提取到 14 个引用链接
+[03:21:31]   摘要清理: #1 移除标记
+[03:21:31]   摘要清理: #2 移除标记
+[03:21:31]   引用链接填补: #3 [5] https://www.thepaper.cn/newsDetail_forward_33514010
+[03:21:31]   摘要清理: #3 移除标记
+[03:21:31]   摘要清理: #4 移除标记
+[03:21:31]   摘要清理: #5 移除标记
+[03:21:31]   摘要清理: #6 移除标记
+[03:21:31]   摘要清理: #7 移除标记
+[03:21:31]   去重: 1 条热点因 URL 重复已移除
+[03:21:31] 验证 URL 可用性...
+[03:21:32] HTTP Request: HEAD https://www.stdaily.com/web/gdxw/2026-07/04/content_541955.html "HTTP/1.1 200 OK"
+[03:21:33] HTTP Request: HEAD https://www.36kr.com/p/3879541136519433 "HTTP/1.1 200 OK"
+[03:21:34] HTTP Request: HEAD https://www.thepaper.cn/newsDetail_forward_33514010 "HTTP/1.1 200 OK"
+[03:21:35] HTTP Request: HEAD https://tech.ifeng.com/c/8uQtOH47riy "HTTP/1.1 200 OK"
+[03:21:36] HTTP Request: HEAD https://www.sfccn.com/2026/7-4/4NMDE1MThfMjE3NDA4NA.html "HTTP/1.1 200 OK"
+[03:21:36]   [不可达] 谷歌前CEO施密特：中国AI开源模式「不受美国控制，我很不喜欢」 -> https://m.techweb.com.cn/article/2026-06-27/2976931.shtml (连接失败)
+[03:21:36] URL 验证: 6 个, 5 可用, 0 个404, 1 个不可达
+[03:21:36]   过滤: 1 条热点因链接不可达已移除
+[03:21:36] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/人工智能.json
+[03:21:36]   [完成] 人工智能 (5 条热点, 47秒)
+[03:21:36]   等待 23 秒后处理下一个关键词...
+[03:21:59] 准备开启新对话...
+[03:22:05] 新对话已就绪
+[03:22:05] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:22:05] 
+==================================================
+[03:22:05]   关键词: GitHub
+[03:22:05] ==================================================
+[03:22:05]   prompt 长度: 1444 字
+[03:22:05] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:22:05] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:22:58] 回复完成 (51.7秒, 4278字)
+[03:22:58] 从回复中提取到 8 个引用链接
+[03:22:58]   摘要清理: #1 移除标记
+[03:22:58]   摘要清理: #2 移除标记
+[03:22:58]   摘要清理: #3 移除标记
+[03:22:58]   摘要清理: #4 移除标记
+[03:22:58]   摘要清理: #5 移除标记
+[03:22:58]   摘要清理: #7 移除标记
+[03:22:58] 验证 URL 可用性...
+[03:22:59] HTTP Request: HEAD https://www.ithome.com/0/972/269.htm "HTTP/1.1 200 OK"
+[03:22:59] HTTP Request: HEAD https://www.ithome.com/0/971/961.htm "HTTP/1.1 200 OK"
+[03:22:59] HTTP Request: HEAD http://cn-sec.com/archives/5309132.html "HTTP/1.1 200 OK"
+[03:23:00] HTTP Request: HEAD http://cn-sec.com/archives/5310670.html "HTTP/1.1 200 OK"
+[03:23:01] HTTP Request: HEAD https://www.oschina.net/news/471291/github-com-gh-stack "HTTP/1.1 405 Method Not Allowed"
+[03:23:02] HTTP Request: HEAD https://www.cyber.gc.ca "HTTP/1.1 200 OK"
+[03:23:02] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[03:23:02]   过滤: 3 条热点因链接不可达已移除
+[03:23:02] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/GitHub.json
+[03:23:02]   [完成] GitHub (5 条热点, 54秒)
+[03:23:02]   等待 35 秒后处理下一个关键词...
+[03:23:37] 准备开启新对话...
+[03:23:43] 新对话已就绪
+[03:23:43] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:23:43] 
+==================================================
+[03:23:43]   关键词: SpringBoot
+[03:23:43] ==================================================
+[03:23:43]   prompt 长度: 1448 字
+[03:23:43] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:23:43] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:24:27] 回复完成 (42.5秒, 3406字)
+[03:24:27] 从回复中提取到 7 个引用链接
+[03:24:27]   摘要清理: #1 移除标记
+[03:24:27]   摘要清理: #2 移除标记
+[03:24:27]   引用链接填补: #4 [2026] https://www.infoq.com/news/2026/06/spring-boot-4-1
+[03:24:27]   摘要清理: #4 移除标记
+[03:24:27]   摘要清理: #5 移除标记
+[03:24:27]   摘要清理: #6 移除标记
+[03:24:27]   去重: 1 条热点因 URL 重复已移除
+[03:24:27] 验证 URL 可用性...
+[03:24:27] HTTP Request: HEAD https://spring.io/blog/2026/06/25/spring-boot-3-5-16-available-now "HTTP/1.1 308 Permanent Redirect"
+[03:24:27] HTTP Request: HEAD https://spring.io/blog/2026/06/25/spring-boot-3-5-16-available-now/ "HTTP/1.1 200 OK"
+[03:24:27] HTTP Request: HEAD https://www.infoq.com/news/2026/06/spring-boot-4-1 "HTTP/1.1 301 Moved Permanently"
+[03:24:27] HTTP Request: HEAD https://www.infoq.com/news/2026/06/spring-boot-4-1/ "HTTP/1.1 200 200"
+[03:24:29] HTTP Request: HEAD https://blog.csdn.net/kissetrem/article/details/162479133 "HTTP/1.1 521 "
+[03:24:37]   [不可达] Spring Boot 应用性能优化十大策略引热议 -> https://www.zpedu.com/it/rjyf/39601.html (超时)
+[03:24:37] URL 验证: 4 个, 3 可用, 0 个404, 1 个不可达
+[03:24:37]   过滤: 3 条热点因链接不可达已移除
+[03:24:37] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/SpringBoot.json
+[03:24:37]   [完成] SpringBoot (2 条热点, 44秒)
+[03:24:37]   等待 22 秒后处理下一个关键词...
+[03:24:59] 准备开启新对话...
+[03:25:05] 新对话已就绪
+[03:25:05] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:25:05] 
+==================================================
+[03:25:05]   关键词: Next.js
+[03:25:05] ==================================================
+[03:25:05]   prompt 长度: 1445 字
+[03:25:05] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:25:05] 发送消息 (1445 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:25:53] 回复完成 (47.2秒, 4135字)
+[03:25:53] 从回复中提取到 7 个引用链接
+[03:25:53]   摘要清理: #1 移除标记
+[03:25:53]   摘要清理: #2 移除标记
+[03:25:53]   摘要清理: #4 移除标记
+[03:25:53]   引用链接填补: #5 [1] https://my.oschina.net/u/1756807/blog/19713047
+[03:25:53]   摘要清理: #5 移除标记
+[03:25:53] 验证 URL 可用性...
+[03:25:54] HTTP Request: HEAD https://nextjs.org/blog/next-16-3-ai-improvements "HTTP/1.1 200 OK"
+[03:25:54] HTTP Request: HEAD https://byteiota.com/nextjs-16-3-turbopack-memory-build-cache/ "HTTP/1.1 200 OK"
+[03:25:56] HTTP Request: HEAD https://my.oschina.net/u/1756807/blog/19713047 "HTTP/1.1 405 Method Not Allowed"
+[03:25:56] URL 验证: 3 个, 3 可用, 0 个404, 0 个不可达
+[03:25:56]   过滤: 3 条热点因链接不可达已移除
+[03:25:56] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/Next.js.json
+[03:25:56]   [完成] Next.js (2 条热点, 48秒)
+[03:25:56]   等待 30 秒后处理下一个关键词...
+[03:26:25] 准备开启新对话...
+[03:26:31] 新对话已就绪
+[03:26:31] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:26:31] 
+==================================================
+[03:26:31]   关键词: 数据库
+[03:26:31] ==================================================
+[03:26:31]   prompt 长度: 1441 字
+[03:26:31] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[03:26:31] 发送消息 (1441 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（06月27日 至 07月04日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[03:27:17] 回复完成 (44.2秒, 3819字)
+[03:27:17] 从回复中提取到 8 个引用链接
+[03:27:17]   摘要清理: #1 移除标记
+[03:27:17]   摘要清理: #2 移除标记
+[03:27:17]   摘要清理: #3 移除标记
+[03:27:17]   摘要清理: #4 移除标记
+[03:27:17]   摘要清理: #6 移除标记
+[03:27:17] 验证 URL 可用性...
+[03:27:18] HTTP Request: HEAD https://www.ithome.com/0/972/424.htm "HTTP/1.1 200 OK"
+[03:27:18] HTTP Request: HEAD https://www.ithome.com/0/971/686.htm "HTTP/1.1 200 OK"
+[03:27:19] HTTP Request: HEAD https://www.163.com/dy/article/L0TOIV7O0514R9OJ.html "HTTP/1.1 200 OK"
+[03:27:20] HTTP Request: HEAD https://www.sohu.com/a/1044263392_99900743 "HTTP/1.1 200 OK"
+[03:27:20] HTTP Request: HEAD https://news.bgov.com/privacy-and-data-security/new-jersey-reins-in-data-brokers-advances-other-privacy-bills "HTTP/1.1 403 Forbidden"
+[03:27:20] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[03:27:20]   过滤: 3 条热点因链接不可达已移除
+[03:27:20] 已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/数据库.json
+[03:27:20]   [完成] 数据库 (4 条热点, 46秒)
+[03:27:20] 搜索完成: 20/20 成功, 共 70 条热点
+[03:27:21] 
+[03:27:21] ============================================================
+[03:27:21]   运行总结
+[03:27:21] ============================================================
+[03:27:21]   关键词                  状态       热点数    耗时    
+[03:27:21]   ──────────────────── ──────── ────── ──────
+[03:27:21]   DeepSeek             完成       6      40s   
+[03:27:21]   ChatGPT              完成       2      38s   
+[03:27:21]   OpenAI               完成       3      45s   
+[03:27:21]   Docker               完成       3      106s  
+[03:27:21]   Rust                 完成       4      38s   
+[03:27:21]   Kubernetes           完成       4      55s   
+[03:27:21]   TypeScript           完成       3      43s   
+[03:27:21]   Claude Code          完成       5      46s   
+[03:27:21]   Python               完成       3      44s   
+[03:27:21]   Cloudflare           完成       3      46s   
+[03:27:21]   Vue.js               完成       3      51s   
+[03:27:21]   前端技术                 完成       3      47s   
+[03:27:21]   Node.js              完成       3      37s   
+[03:27:21]   React                完成       2      49s   
+[03:27:21]   Go                   完成       5      39s   
+[03:27:21]   人工智能                 完成       5      47s   
+[03:27:21]   GitHub               完成       5      54s   
+[03:27:21]   SpringBoot           完成       2      44s   
+[03:27:21]   Next.js              完成       2      48s   
+[03:27:21]   数据库                  完成       4      46s   
+[03:27:21] 
+[03:27:21]   总计: 20/20 成功 | 70 条热点 | 共耗时 1793秒
+[03:27:21] ============================================================
+[03:27:21] 聚合报告已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/report.json
+[03:27:21] 已加载 HTML 模板: /home/runner/work/hotspot/hotspot/hotspot/template.html
+[03:27:21] HTML 报告已保存: /home/runner/work/hotspot/hotspot/results/2026-07-04/025728/report.html
+[03:27:21] ✅ 本次搜索完成: 70 条热点已同步到 results/

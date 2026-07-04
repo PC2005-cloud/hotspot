@@ -1,0 +1,75 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rust 1.96.1 紧急安全补丁发布，修复多个 CVE 漏洞",
+      "summary": "Rust 团队于6月30日发布1.96.1点版本，紧急修复了Cargo、MIR及libssh2相关的三个安全漏洞（CVE15661、CVE55199、CVE55200），建议所有用户尽快升级。15",
+      "source": "Rust Blog",
+      "url": "https://blog.rust-lang.org/2026/06/30/Rust-1.96.1/",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "Rust 1.96.1 修复了 Cargo HTTP 客户端缺少重试与超时机制的问题、MIR 优化阶段的错误编译问题，以及三个影响 libssh2 的 CVE 安全漏洞，建议所有用户通过 rustup update stable 完成升级。-15"
+        },
+        {
+          "stance": "技术媒体解读",
+          "summary": "1.96.0 版本于5月28日发布，引入了全新的 Range 类型体系，解决了旧版 Range 因直接实现 Iterator 而无法同时实现 Copy 的设计缺陷；1.96.1 则为紧急安全修复版本。-11"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "《Rust》生存游戏 7 月「Common Ground」大更新上线，引入公寓租房与氏族系统",
+      "summary": "Facepunch 工作室于7月初推出《Rust》游戏「Common Ground」月度更新，新增可租赁公寓大楼、出租商店及官方氏族管理系统，软核模式还加入了2倍资源加成和限时袭击机制。",
+      "source": "网易",
+      "url": "https://www.163.com/dy/article/L0SKJQSE05561FYA.html",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "玩家社区热议",
+          "summary": "这次更新将玩家此前在游戏外组织的玩法（租房、开店、氏族管理）正式做进系统，为散人玩家提供了开局苟活的新选择，也为大型团队降低了管理成本，被部分玩家视为「从硬核受苦向多元化生存体验」的重要转向。-2"
+        },
+        {
+          "stance": "游戏机制解析",
+          "summary": "公寓大楼提供从地下室到顶层公寓的可租赁房间，每个房间附带不同增益；出租商店允许玩家上架物资并自定义招牌；氏族系统支持更多成员、角色权限和独立聊天频道。软核模式新增2倍资源加成和仅限18:00-21:00的袭击窗口。-2"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "AI 时代 Rust 编程语言应用与发展论坛在京举办，聚焦 Rust+AI 融合",
+      "summary": "2026开放原子开源生态大会——AI时代Rust编程语言应用与发展论坛于北京落幕，聚焦Rust与AI融合创新，围绕开源鸿蒙生态赋能、智能代码迁移、可信编程等核心议题展开。",
+      "source": "51CTO",
+      "url": "https://ost.51cto.com/posts/51473",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "官方报道",
+          "summary": "论坛致谢了35位社区年度杰出贡献者，涵盖高校教师、青年学子与企业开发者三大群体。七大主题分享覆盖底层系统、工程迁移、学术理论、人才培养、产业落地、性能优化与安全管控，构建了 Rust+AI 的完整技术体系。-7"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Rust 周刊 2026W26：Bevy 0.19 发布、OpenAI 入基金会、Chromium 采用 Rust PNG crate",
+      "summary": "本周 Rust 生态密集更新：Bevy 0.19 引入全新场景系统；OpenAI 以 60 万美元成为 Rust 基金会白金会员；Rust PNG crate 被 Chromium 和 GNOME 采用；LiteLLM 迁移至 Rust 实现 15 倍吞吐提升。",
+      "source": "CSDN",
+      "url": "https://devpress.csdn.net/awstech/6a462775662f9a54cb87b811.html",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "生态周报综述",
+          "summary": "工具链方面，proc_macro_hygiene 稳定化、str_from_utf16_endian 等多项新特性落地。标准库新增 io::Read::read_le/read_be 方法，Clippy 新增多个 lint 规则。-1"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Rust 话题呈现「语言生态与游戏社区双线爆发」态势。语言层面，TIOBE 排名创新高、1.96.1 安全补丁紧急发布、OpenAI 入基金会等事件持续推高关注度；游戏层面，《Rust》「Common Ground」更新引发玩家大规模讨论。整体舆论偏向积极，社区对 Rust 在 AI 基础设施、浏览器引擎等底层领域的渗透持乐观预期。",
+  "honesty_note": "部分热点（如 OpenAI 入基金会、Rust 商业网络启动）实际发生在6月中旬，但在近7天内仍持续引发二次讨论和媒体报道，已纳入并标注原始时间。搜索结果显示 Rust 语言相关热点主要集中在生态进展和版本更新，游戏《Rust》的热度同样较高，两者在关键词搜索结果中并列出现。",
+  "start_time": "2026-07-04 03:04",
+  "end_time": "2026-07-04 03:05",
+  "elapsed_seconds": 38,
+  "retry_count": 0
+}

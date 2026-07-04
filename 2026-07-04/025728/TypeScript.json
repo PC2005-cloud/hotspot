@@ -1,0 +1,69 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "微软发布TypeScript 7.0 RC：编译器用Go重写，类型检查提速10倍",
+      "summary": "微软于2026年6月18日宣布TypeScript 7.0候选版本（RC）-。最大变革是将编译器从JavaScript迁移至Go语言重写-1。得益于原生代码速度与共享内存并行，类型检查速度比6.0提升约10倍4。正式版预计一个月内发布-。",
+      "source": "微软官方博客",
+      "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-rc/",
+      "published_time": "2026-06-18",
+      "perspectives": [
+        {
+          "stance": "微软官方公告",
+          "summary": "TypeScript 7.0 RC基于Go语言重写，类型检查逻辑与6.0完全一致，确保语义兼容。已通过十年积累的测试套件验证，并在Bloomberg、Canva、Figma、Google等多家公司的大型代码库中试用反馈积极。"
+        },
+        {
+          "stance": "技术媒体分析",
+          "summary": "重写后VS Code项目（约150万行TypeScript）的类型检查从120多秒降至14秒以内-2-。Go的并发模型（goroutine）和内存控制是提速关键，内存占用降低约六成-2。这是TypeScript 14年来最重大的技术架构变迁--。"
+        },
+        {
+          "stance": "社区开发者讨论",
+          "summary": "社区对Go重写反应两极：支持派认为性能提升是刚需；质疑派认为编译器脱离TypeScript自举传统可能影响社区贡献门槛-。团队回应称用最适合的语言做最适合的事是工程常识-2。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "VS Code 1.119全面支持TypeScript 7，类型检查速度大幅提升",
+      "summary": "VS Code 1.119版本将内置扩展和核心代码全部迁移至TypeScript 7。Copilot扩展类型检查时间从22秒降至4秒，提升82%。开发者在保存文件时的等待时间显著缩短。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/goxxj/p/20835265#commentform",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "开发者体验报道",
+          "summary": "此次升级没有新界面变化，但高频操作的性能优化大幅改善了开发者的心流体验-12。工具链速度直接影响AI编程助手的响应效率和人机协作流畅度-12。"
+        },
+        {
+          "stance": "技术分析",
+          "summary": "VS Code选择此时全面迁移是因为TypeScript 7生态已成熟，主流库兼容性基本通过验证，大规模迁移风险可控-12。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TypeScript超越Python和JavaScript，成GitHub最流行编程语言",
+      "summary": "GitHub Octoverse 2025报告显示，TypeScript于2025年8月超越Python和JavaScript，成为GitHub上使用最多的语言。过去一年新增超100万贡献者-。2026年7月相关讨论仍在持续-。",
+      "source": "Syncfusion",
+      "url": "https://www.syncfusion.com/blogs/post/typescript-github-most-used-language",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "行业分析",
+          "summary": "TypeScript成为最流行语言不代表JavaScript消失——浏览器仍运行JavaScript-27。这反映专业团队在大规模项目、AI辅助开发中更倾向使用TypeScript作为编写层-27。"
+        },
+        {
+          "stance": "数据解读",
+          "summary": "GitHub排名反映的是平台活动信号，而非执行量或代码总量-27。Python在AI和数据科学领域仍占主导-27。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前TypeScript社区最突出的热点是7.0 RC版的Go重写带来的10倍性能提升-。开发者普遍对编译速度的质变感到兴奋-12，VS Code的率先适配进一步加速了采用意愿-12。同时TypeScript在GitHub登顶最流行语言-27也引发广泛讨论，社区整体情绪积极乐观，认为TypeScript正处于生态扩张和性能革命的双重红利期。",
+  "honesty_note": null,
+  "start_time": "2026-07-04 03:07",
+  "end_time": "2026-07-04 03:08",
+  "elapsed_seconds": 43,
+  "retry_count": 0
+}

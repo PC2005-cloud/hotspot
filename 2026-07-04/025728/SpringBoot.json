@@ -1,0 +1,47 @@
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Spring Boot 3.5.16 发布，系 3.5.x 系列最后一个开源支持版本",
+      "summary": "Spring Boot 3.5.16 于 2026 年 6 月 25 日发布，包含 3 项依赖升级。官方明确此为 3.5.x 系列最后一个 OSS 版本，敦促用户尽快升级至 4.0.x 或 4.1.x。",
+      "source": "Spring 官方博客",
+      "url": "https://spring.io/blog/2026/06/25/spring-boot-3-5-16-available-now",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "【官方公告】",
+          "summary": "Spring 团队宣布 3.5.16 为 3.5.x 系列最终开源版本，建议开发者迁移至 4.0 或 4.1 分支以继续获得开源支持-25。"
+        },
+        {
+          "stance": "【社区解读】",
+          "summary": "技术社区认为此举标志着 Spring Boot 3.x 时代正式进入尾声，4.x 成为主流选择，开发者需评估升级路径与兼容性风险-。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Spring Boot 4.1 新特性深度解析：gRPC 官方支持与 SSRF 防护",
+      "summary": "Spring Boot 4.1 于 6 月 10 日发布，核心新增 gRPC 自动配置、HTTP 客户端 SSRF 防护、Kotlin 2.3 支持及延迟数据源连接等特性6。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/06/spring-boot-4-1",
+      "published_time": "2026-06-15",
+      "perspectives": [
+        {
+          "stance": "【技术媒体】",
+          "summary": "InfoQ 报道称 4.1 将 gRPC 正式纳入官方生态，通过 @GrpcAdvice 统一异常处理，并借助 InetAddressFilter 提供 SSRF 防护能力-1-6。"
+        },
+        {
+          "stance": "【开发者社区】",
+          "summary": "开发者社区反响热烈，认为 gRPC 官方支持补齐了 Spring Boot 微服务通信的重要拼图，但部分开发者对升级带来的配置变更保持谨慎-3。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前 Spring Boot 社区最突出趋势是「版本升级焦虑」：3.5.x 开源支持刚于 6 月 30 日终止-，大量开发者面临迁移至 4.x 的决策压力-3。同时 4.1 的 gRPC 官方支持与安全漏洞修复引发高度关注-1-，技术社区普遍处于「边学边升」的积极但谨慎情绪中。",
+  "honesty_note": "搜索结果中近 7 天（6 月 27 日至 7 月 4 日）的 SpringBoot 重磅新闻相对有限，主要热点集中在 6 月中下旬发布的版本更新与安全公告的「余波」讨论。已尽量覆盖在此期间发酵的版本终止、安全漏洞跟进、技术实践分享等关联话题。部分事件的精确发布时间（如 3.5.x EOL 为 6 月 30 日）在 7 月 4 日仍具时效性，已纳入整理。",
+  "start_time": "2026-07-04 03:23",
+  "end_time": "2026-07-04 03:24",
+  "elapsed_seconds": 44,
+  "retry_count": 0
+}

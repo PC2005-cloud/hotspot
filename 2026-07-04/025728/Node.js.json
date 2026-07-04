@@ -1,0 +1,57 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "Node.js v26.4.0 正式发布 同步 v26.3.1 安全更新",
+      "summary": "Node.js 26.4.0 于 6 月 26 日发布，在 Heroku 平台上线。此前 6 月 18 日已发布 26.3.1 安全版本，修复多个高危漏洞。v26 将是旧发布规则下的最后一个 LTS 版本。33",
+      "source": "Heroku Dev Center",
+      "url": "https://devcenter.heroku.com/changelog-items/3730",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "v26.4.0 为 Current 版本更新，v26.3.1 为安全版本，修复 CVE-2026-48618（TLS 认证绕过，高危）和 CVE-2026-48933（WebCrypto 整数溢出，高危）等漏洞。-"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Node.js 发布策略重大调整：v27 起改为每年一个大版本",
+      "summary": "Node.js 宣布从 v27 开始改为每年 4 月发布一个大版本、同年 10 月升级为 LTS，废止沿用十余年的奇偶版本号规则，引入六个月 Alpha 通道用于早期测试。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/9yfZrDDTaZYOSP2idLXh",
+      "published_time": "2026-06-05",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "新计划 2026 年 10 月生效，版本主号与发布年份对齐（如 27.0.0 对应 2027 年），每个版本都成为 LTS，LTS 支持窗口保持约 30 个月。-33"
+        },
+        {
+          "stance": "社区争议",
+          "summary": "企业用户与追求快速迭代的开发者之间存在分歧：部分企业认为一年一版节奏太慢，而维护团队则希望减轻并行维护多条发布分支的运维负担。-33"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Node.js 伦敦协作峰会：v27 起年度发布与统一 Streams API",
+      "summary": "2026 年 4 月在伦敦举办的 Node.js 协作峰会公布三大关键演进：v27 起按年对齐发布日程、实验性统一 Streams API（v25.9 已落地）、协作机制改革以降低贡献门槛。",
+      "source": "TraeAI",
+      "url": "https://www.traeai.com/entities/node-js",
+      "published_time": "2026-04 月（持续引发讨论）",
+      "perspectives": [
+        {
+          "stance": "峰会回顾",
+          "summary": "峰会由 Bloomberg 主办，超 40 人线下参与。新 Streams API 设计讨论了与现有 API 的兼容性、性能影响及 Web 平台适配可能。-"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Node.js 热点聚焦安全与治理：AI 虚假漏洞报告迫使赏金计划暂停引发社区对开源可持续性的担忧；6 月安全更新修复 12 项漏洞获广泛关注；v27 年度发布策略调整在社区引发企业用户与开发者之间的讨论。整体舆情以技术安全和治理变革为主基调。",
+  "honesty_note": "部分热点（如伦敦峰会、年度发布策略）核心事件发生于 4 月至 6 月上旬，但在近 7 天内仍持续被引用和讨论。搜索范围内缺少 7 月 1 日后的突发重大事件，AI 赏金暂停（6 月 27 日）和 v26.4 发布（6 月 26 日）为最近 48 小时内最相关新闻。",
+  "start_time": "2026-07-04 03:16",
+  "end_time": "2026-07-04 03:16",
+  "elapsed_seconds": 37,
+  "retry_count": 0
+}

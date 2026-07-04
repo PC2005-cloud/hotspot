@@ -1,0 +1,65 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "PEP 836 提出CPython JIT编译器转为正式支持路线图",
+      "summary": "2026年7月2日，PEP 836草案发布，为CPython的实验性JIT编译器提出转为正式支持的时间表与目标，要求Python 3.17首个beta前实现至少20%性能提升。",
+      "source": "Python Enhancement Proposals (PEPs)",
+      "url": "https://peps.python.org/pep-0836/",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【官方提案视角】",
+          "summary": "PEP 836提出JIT在Python 3.15已实现4-12%性能提升，目标在3.17 beta前实现至少20%的几何平均性能提升，同时需满足兼容性、工具链、平台、分发、安全和维护目标-1。"
+        },
+        {
+          "stance": "【社区开发者视角】",
+          "summary": "JIT从实验到正式支持是CPython性能演进的里程碑，开发者期待JIT+自由线程（free-threading）的组合能大幅提升CPU密集型任务表现-。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Python Requests库曝出本地文件覆盖漏洞CVE-2026-25645",
+      "summary": "2026年7月2日，Python Requests库被曝存在不安全的临时文件处理漏洞（CVE25645），允许本地用户通过预创建恶意文件覆盖或替换解压文件。",
+      "source": "Cybersecurity Help",
+      "url": "https://www.cybersecurity-help.cz/vdb/vulns/136685/",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【安全公告视角】",
+          "summary": "漏洞位于requests.utils.extract_zipped_paths()，仅影响直接调用该函数的应用，需用户交互处理恶意zip文件，官方建议安装安全更新-35。"
+        },
+        {
+          "stance": "【开发者视角】",
+          "summary": "该漏洞CVSS评分为低危，影响范围有限，但提醒开发者注意临时文件处理的安全性，建议审查代码中是否直接使用了extract_zipped_paths()-35。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "摩根大通报告：PyPI包活动自2026年初突然加速",
+      "summary": "摩根大通报告指出，自2026年初以来PyPI上的新增与更新包数量突然大幅上升，这是ChatGPT发布以来首次出现明显趋势突破，标志AI编程Agent正提升开发者生产效率。",
+      "source": "财联社（转载摩根大通报告）",
+      "url": "http://www.hafoo.com.hk/news/hans/notice/202605273751484682",
+      "published_time": "2026-07-04（报道日期）",
+      "perspectives": [
+        {
+          "stance": "【金融机构分析视角】",
+          "summary": "AI智能体（如Claude Code、OpenAI Codex）正从聊天工具转向任务执行工具，推动AI使用强度爆炸式增长，PyPI数据突破是开发者生态质变的关键信号-5。"
+        },
+        {
+          "stance": "【行业观察视角】",
+          "summary": "传统AI采用率调查显示增长缓慢，但Token消耗已增长超4倍，说明AI行业正从用户扩张转向使用深化，程序员是最核心的重度用户群体-5。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Python社区热点集中在性能演进（JIT正式化路线图、自由线程官方支持）和安全生态（Requests漏洞、PyPI供应链攻击）两大方向。开发者对JIT+自由线程的性能提升普遍期待，同时对PyPI供应链安全保持高度警惕。摩根大通报告引发关于AI编程Agent对Python生态质变影响的广泛讨论。",
+  "honesty_note": "部分热点事件的URL未在搜索结果中提供完整链接，已按规则设为null。搜索范围内（2026-06-27至2026-07-04）Python相关高热度资讯以技术提案、安全公告和行业报告为主，缺乏大型发布会或破圈社会事件。补充关联话题：EuroPython 2026（7月13-19日）即将在波兰克拉科夫举行-，PyOhio 2026（7月25-26日）将在美国克利夫兰举办-；GitHub Trending Python项目每日更新-；Python就业市场中Python仍为最紧缺技能（需求占比56%）-。",
+  "start_time": "2026-07-04 03:10",
+  "end_time": "2026-07-04 03:11",
+  "elapsed_seconds": 44,
+  "retry_count": 0
+}

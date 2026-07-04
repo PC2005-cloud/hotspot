@@ -1,0 +1,65 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【Vue&ViteConf 2026 上海开幕在即】尤雨溪将发表主题演讲，聚焦 AI 时代前端开发新范式",
+      "summary": "Vue&ViteConf 2026 将于 7 月 18 日在上海举办，Vue.js 与 Vite 作者尤雨溪将出席并发表主题演讲。大会围绕 Vue 与 Vite 核心生态演进、Vite 落地实践、AI Agent 工具、Vue 走向 Native 四条主线展开。",
+      "source": "优设网",
+      "url": "https://www.uisdc.com/hangye/vueviteconf-2026",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【官方/主办方视角】",
+          "summary": "大会旨在探讨 AI 进入真实工程流程后框架与工具链的重新设计，Vite 生态已形成从创建项目到云端部署的完整路径，Void 将数据库、KV 存储、AI 推理等能力开箱即用-1。"
+        },
+        {
+          "stance": "【社区/开发者视角】",
+          "summary": "已确定 11 位演讲嘉宾和 10 个演讲主题，涵盖 Vite 内存优化、Vapor Mode、小程序工程化、AI 工具开发等多个方向，开发者对 Vapor Mode 的正式落地和 Vue for Native 探索高度关注-。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【Vue 3.5 Vapor Mode 性能突破】内存占用砍半，前端框架进入编译时优化新时代",
+      "summary": "2026 年 7 月 3 日，有技术分析指出 Vue 3.5 引入的 Vapor Mode 让内存占用直接砍半，通过跳过虚拟 DOM、编译时直接生成 DOM 操作代码，实现运行时开销最小化。",
+      "source": "尘喧探",
+      "url": "http://chenxutan.com/d/4293.html",
+      "published_time": "2026-07-03 11:44",
+      "perspectives": [
+        {
+          "stance": "【技术分析视角】",
+          "summary": "Vapor Mode 是编译时优化的终极形态，核心理念是跳过虚拟 DOM，通过编译时分析模板生成直接操作真实 DOM 的 JavaScript 代码，与 Svelte 5、SolidJS 等编译型框架走向趋同-43-。"
+        },
+        {
+          "stance": "【社区讨论视角】",
+          "summary": "Vue 3.6 beta 中 Vapor Mode 持续迭代，已进入稳定化阶段，支持按组件启用，在大型列表和复杂组件树中性能提升显著-50。有开发者认为这标志着 Vue 在性能竞赛中重回第一梯队。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【Vue 3.6 持续 Beta 迭代】Vapor Mode 稳定性增强，数百项修复推进生产就绪",
+      "summary": "Vue 3.6 仍处于 Beta 阶段，最新预发布版为 3.6.0-beta.17（2026 年 6 月 24 日发布）。Vapor Mode 获得重大稳定化改进，包括 hydration 修复、VDOM 互操作优化、KeepAlive 和 Teleport 边缘场景处理。",
+      "source": "VersionLog",
+      "url": "https://versionlog.com/vuejs/3.6/",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "【版本追踪视角】",
+          "summary": "Vue 3.6 带来 Vapor Mode 稳定化、静态模板 hydration 快速路径、激进的 tree-shaking 优化等改进，数百项修复聚焦 Vapor 运行时和 hydration 边缘情况-50。"
+        },
+        {
+          "stance": "【生产实践视角】",
+          "summary": "采用 Vapor 的团队在生产环境中已观察到内存使用减少和更新速度提升，尤其在数据密集型仪表盘和大列表场景中效果显著-50。官方尚未宣布 Vue 4.0 路线图，3.6 将是下一个重要里程碑-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Vue.js 社区热点集中于三大方向：一是 Vue&ViteConf 2026 上海大会的临近引发广泛期待，尤其关注尤雨溪对 AI 时代前端走向的判断；二是 Vapor Mode 的性能突破成为技术圈最热话题，内存砍半的实测数据引发大量讨论；三是 Vite+ Beta 发布标志着工具链进一步统一。整体情绪积极，开发者对 Vue 生态在性能优化和 AI 融合方面的进展持乐观态度。",
+  "honesty_note": "搜索结果中 2026 年 6 月 27 日至 7 月 4 日期间的 Vue.js 核心资讯主要集中在技术文章、版本动态和大会预告层面，未发现重大安全漏洞、并购交易或社区争议性事件。Vue 3.6 仍处于 Beta 阶段，官方尚未发布正式版。Vue&ViteConf 2026 为会议预告，实际举办日期为 7 月 18 日。整体信息量充足，时效性符合要求。",
+  "start_time": "2026-07-04 03:13",
+  "end_time": "2026-07-04 03:13",
+  "elapsed_seconds": 51,
+  "retry_count": 0
+}

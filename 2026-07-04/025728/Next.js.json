@@ -1,0 +1,47 @@
+{
+  "keyword": "Next.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Next.js 16.3 预览版发布：Instant Navigations 与 AI 原生开发",
+      "summary": "2026年6月26日，Vercel 发布 Next.js 16.3 预览版，引入 Instant Navigations 让服务器驱动应用实现 SPA 级导航体验，并推出 AGENTS.md 自文档、First-party Skills 等 AI 原生工具，为 AI Agent 编码时代重构框架7。",
+      "source": "Next.js 官方博客",
+      "url": "https://nextjs.org/blog/next-16-3-ai-improvements",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "【官方发布】Vercel 宣布 Next.js 16.3 Preview 上线 npm，重点强化 AI 开发支持",
+          "summary": "Next.js 16.3 预览版新增 AGENTS.md 自动生成、First-party Skills、Agent Browser 等特性，让 AI 编码助手能够读取版本匹配的本地文档而非训练数据，避免生成过时 API 语法-7。"
+        },
+        {
+          "stance": "【技术解读】16.3 是 Next.js 面向 AI Agent 驱动开发时代的架构重构",
+          "summary": "Next.js 16.3 不仅是增量更新，而是对 React 应用构建方式的根本性重新架构。Instant Navigations 通过 Partial Prefetching 让导航延迟降至接近零，Vercel 内部 v0 项目已提前采用并验证效果-4。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Next.js 16.3 Turbopack：内存占用降低 90%，CI 构建缓存上线",
+      "summary": "2026年6月29日，Next.js 16.3 的 Turbopack 更新正式发布，通过内存驱逐机制将 dev server 内存占用从 21.5GB 降至 2GB（降幅约90%），并新增 persistent build cache 加速 CI 构建，nextjs.org 构建时间从 21s 缩短至 9.2s。",
+      "source": "byteiota",
+      "url": "https://byteiota.com/nextjs-16-3-turbopack-memory-build-cache/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "【性能分析】Turbopack 内存问题终获解决，开发者无需任何配置即可受益",
+          "summary": "Turbopack 在 v16.2 中因缓存所有内容导致内存无限增长，M 系列 Mac 上占用达 8-14GB。16.3 通过将不活跃路由的缓存从内存驱逐到文件系统，vercel.com 仪表盘从 21.5GB 降至 2GB，nextjs.org 从 4.6GB 降至 840MB-52。"
+        },
+        {
+          "stance": "【开发体验】Rust React Compiler 集成带来 20-50% 编译性能提升",
+          "summary": "React Compiler 此前以 Babel transform 运行，在大型应用上成为瓶颈。React 团队推出原生 Rust 移植版，Vercel 将其集成到 Turbopack，早期测试显示编译速度提升 20-50%，目前为实验性功能-52。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "过去7天 Next.js 社区核心关注点集中在【16.3 预览版】的发布及其带来的两大变革：Instant Navigations 让服务器组件导航体验媲美 SPA，以及 Turbopack 内存占用大幅降低 90%。开发者对 AI 原生工具链（AGENTS.md、Skills）反应积极，认为这是框架演进的重要方向。同时，旧版本（13/14）停止安全更新及 CVE-2026-44578 在 Turbopack 下修复不完整引发安全焦虑，敦促用户尽快升级。整体舆情偏正面，技术社区对 16.3 的性能突破和 AI 就绪能力持肯定态度。",
+  "honesty_note": "搜索结果中关于 Next.js 16.3 预览版、Turbopack 性能更新和安全漏洞的信息覆盖充分，时效性符合近7天要求（6月27日至7月4日）。但部分热点（如安全漏洞）的原始发布时间略早于时间窗口，因近期有新的关联披露（如 Turbopack 下修复不完整）而纳入。此外，部分来源（如 byteiota、xiaoyizhiqu）为技术博客或聚合站，权威性不及官方渠道，但内容引用均基于可验证的公开信息。",
+  "start_time": "2026-07-04 03:25",
+  "end_time": "2026-07-04 03:25",
+  "elapsed_seconds": 48,
+  "retry_count": 0
+}

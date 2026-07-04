@@ -1,0 +1,65 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Gitea act_runner 容器逃逸漏洞（CVE-2026-58053）被公开，CVSS 9.9 分",
+      "summary": "奇安信CERT披露Gitea act_runner容器逃逸漏洞，攻击者可利用Docker后端配置缺陷从容器逃逸至宿主机获取root权限，PoC已公开，全球影响超11万个资产。",
+      "source": "安全内参（secrss.com）",
+      "url": "https://www.secrss.com/articles/91750",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【安全机构警告】",
+          "summary": "奇安信CERT将该漏洞评级为「高危」，CVSS 3.1评分为9.9，技术细节与PoC已公开，建议用户限制workflow修改权限并对PR启用手动审批。-1"
+        },
+        {
+          "stance": "【开发者社区担忧】",
+          "summary": "漏洞影响所有使用Docker后端的act_runner版本（≤0.262.0），全球关联风险资产达113,706个，开发者担忧CI/CD流水线面临严重安全威胁。-1"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Docker 与 Exclusive Networks 达成英国及爱尔兰分销合作",
+      "summary": "Docker宣布与网络安全专业公司Exclusive Networks建立UKI地区分销伙伴关系，通过其渠道网络扩大Docker容器平台在当地的覆盖，加速云原生应用 adoption。",
+      "source": "Exclusive Networks 官方新闻稿",
+      "url": "https://www.exclusive-networks.com/ie/resources/media-centre/news/exclusive-networks-becomes-distribution-partner-of-docker-in-the-uk-and-ireland",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "【官方公告】",
+          "summary": "合作旨在让Docker容器平台通过广泛的合作伙伴网络触达更多企业，帮助客户现代化改造应用环境，加速创新。-2"
+        },
+        {
+          "stance": "【渠道分析】",
+          "summary": "Exclusive Networks已在APAC、北美和EMEA地区通过旗下Nuaware成功分销Docker技术，此次扩展将进一步加强Docker在UKI地区的渠道生态与本地支持能力。-2-3"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Docker Engine 29.6.1 发布，修复多项安全漏洞",
+      "summary": "Docker Engine 29.6.1于6月26日发布，修复了恶意镜像导致OOM、BuildKit构建容器绕过Seccomp和AppArmor防护等多个安全漏洞，并更新了containerd和BuildKit依赖。",
+      "source": "Docker 官方文档",
+      "url": "https://docs.docker.com/engine/release-notes/29/",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "【官方发布】",
+          "summary": "29.6.1版本修复了多个安全漏洞，包括恶意/etc/passwd文件导致内存耗尽OOM、以及自定义frontend绕过Seccomp/AppArmor防护的问题。"
+        },
+        {
+          "stance": "【运维建议】",
+          "summary": "同时更新containerd至v2.2.5、BuildKit至v0.31.1，建议生产环境用户尽快升级以消除安全隐患。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天Docker热点集中在「安全漏洞」与「生态扩张」两大方向。Gitea act_runner容器逃逸漏洞（CVSS 9.9）引发开发者广泛担忧-1；Docker Engine 29.6.1紧急修复多漏洞促使运维团队关注升级。商业层面，Docker与Exclusive Networks达成UKI分销合作-2，Vercel支持Dockerfile部署-5均体现生态持续扩张。DCT即将退役也引发供应链安全讨论-。整体情绪以「安全焦虑」与「生态乐观」并存为主。",
+  "honesty_note": "近7天内与Docker直接相关的重大突发新闻数量有限，部分热点（如Docker融资、收购Orchard等）发生时间较早（6月中旬），未纳入本次7日榜单。DCT退役信息虽发布于6月16日，但因7月15日截止日期临近，近期讨论热度上升，故纳入。建议关注Docker官方博客及安全公告渠道获取最新动态。",
+  "start_time": "2026-07-04 03:02",
+  "end_time": "2026-07-04 03:04",
+  "elapsed_seconds": 106,
+  "retry_count": 1
+}

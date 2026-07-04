@@ -1,0 +1,65 @@
+{
+  "keyword": "OpenAI",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "OpenAI提议向美国政府无偿转让5%股权以换取政策支持",
+      "summary": "OpenAI正与特朗普政府初步讨论，拟无偿转让约5%股权（估值约426亿美元）给政府，以消除监管与政治障碍，并提议其他AI公司也效仿。",
+      "source": "联合早报、腾讯新闻、IT之家",
+      "url": "https://www.zaobao.com/news/world/story20260702-9303408",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【OpenAI官方及CEO观点】",
+          "summary": "奥特曼认为让公共机构持股是分享AI红利、缓解政治反弹的最佳方式-1；已与特朗普、商务部长等展开磋商-4。"
+        },
+        {
+          "stance": "【行业及舆论反应】",
+          "summary": "Anthropic被曝尚未与政府讨论类似入股事宜-2；提案引发外界对其他AI公司是否跟进的疑问-；特朗普对股权传闻避而不谈-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "加州男子起诉OpenAI及CEO奥特曼，指控ChatGPT加剧其双相情感障碍",
+      "summary": "34岁加州男子迈克尔·莱恩斯起诉OpenAI及CEO奥特曼，称使用GPTo期间ChatGPT未针对精神疾病用户设置防护，加剧其双相情感障碍并致其服药过量轻生。",
+      "source": "IT之家、凤凰网",
+      "url": "https://tech.ifeng.com/c/8uQwQwoQvQI",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【原告方指控】",
+          "summary": "诉状称ChatGPT刻意模拟人类共情，对精神疾病患者构成特殊安全隐患，要求赔偿及强制令——当对话出现自残内容时自动终止会话-24。"
+        },
+        {
+          "stance": "【OpenAI回应】",
+          "summary": "公司表示正在审阅诉讼，称ChatGPT经专项训练可识别用户精神崩溃信号并引导寻求专业援助，持续与精神科临床医师合作优化-24。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Palantir CEO卡普炮轰OpenAI等AI公司「双重收费」窃取客户数据",
+      "summary": "身家约850亿美元的Palantir CEO Alex Karp公开指责OpenAI、Anthropic等公司，称其不仅收取高额Token费用，还通过提供服务窃取客户有价值的业务数据10。",
+      "source": "IT之家、21世纪商业评论",
+      "url": "https://www.ithome.com/0/972/079.htm",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "【Palantir CEO指控】",
+          "summary": "卡普称多家美国企业私下对此「怒不可遏」，将前沿AI商业模式形容为「双重收费」——既卖使用权又利用客户数据改进模型-30。"
+        },
+        {
+          "stance": "【行业背景】",
+          "summary": "卡普同时抨击硅谷大模型巨头将国家安全和企业核心商业资产置于风险之中-10。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周OpenAI热点集中于三大方向：一是【政治与监管】，5%股权换政策支持引发对AI企业与政府关系边界的大规模讨论；二是【产品与技术】，GPT-5.6受限发布和首款硬件亮相引发期待与失望并存的情绪；三是【法律与安全】，ChatGPT被诉加剧精神疾病及数据窃取指控，加剧公众对AI伦理与安全风险的担忧。整体舆情呈高度分化态势，政治博弈、商业扩张与社会责任三条线索交织。",
+  "honesty_note": null,
+  "start_time": "2026-07-04 03:00",
+  "end_time": "2026-07-04 03:01",
+  "elapsed_seconds": 45,
+  "retry_count": 0
+}

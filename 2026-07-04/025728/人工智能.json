@@ -1,0 +1,101 @@
+{
+  "keyword": "人工智能",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Meta拟出售闲置AI算力，引发全球芯片股震荡",
+      "summary": "Meta被曝计划推出云基础设施业务，对外出售闲置AI算力与模型访问权限38。扎克伯格承认AI智能体开发不及预期，市场担忧算力过剩，费城半导体指数两日跌超11%，A股创业板指7月2日跌5.71%-。",
+      "source": "央视财经、澎湃新闻、36氪",
+      "url": "https://www.stdaily.com/web/gdxw/2026-07/04/content_541955.html",
+      "published_time": "2026-07-04 08:50",
+      "perspectives": [
+        {
+          "stance": "市场担忧——算力过剩恐慌",
+          "summary": "Meta作为全球最大GPU采购方之一开始出售算力，被投资者视为AI基础设施建设进入拐点的信号，引发AI硬件板块连锁踩踏-1-。"
+        },
+        {
+          "stance": "业内分析——拐点而非衰退",
+          "summary": "业内人士认为AI投资正从爆发式增长进入更可持续的发展阶段，Meta算力服务是对存量资产的再利用，不能等同于算力需求见顶-1-38。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Anthropic联手三星自研AI芯片，AI战争打到供应链深处",
+      "summary": "Anthropic被曝已与三星接洽，探索围绕自研AI芯片展开合作，考虑采用三星2纳米工艺代工。项目仍处早期阶段，旨在摆脱通用芯片依赖、降低算力成本。",
+      "source": "36氪、环球网、财联社",
+      "url": "https://www.36kr.com/p/3879541136519433",
+      "published_time": "2026-07-03 18:17",
+      "perspectives": [
+        {
+          "stance": "行业趋势分析",
+          "summary": "AI公司正从「买算力」转向「定义算力」，Meta卖算力与Anthropic自研芯片共同暗示AI军备竞赛已走到拐点--。"
+        },
+        {
+          "stance": "企业官方回应",
+          "summary": "Anthropic表示包含谷歌、亚马逊和英伟达芯片在内的多元化硬件架构仍将是其计算战略的关键支柱，自研芯片是在此基础上增加自定义能力-22。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "美国政府松绑Anthropic最强AI模型，监管博弈持续升温",
+      "summary": "6月27日，美国政府批准Anthropic将Mythos 5重新部署至部分美国机构--。此前两周该模型因安全漏洞被紧急叫停-。OpenAI同日应政府要求限量发布GPT.6。",
+      "source": "财联社、路透社、明报",
+      "url": "https://www.thepaper.cn/newsDetail_forward_33514010",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "政府监管立场",
+          "summary": "白宫以国家安全为由对前沿AI模型实施出口管制与发布限制，特朗普前AI顾问称总统反对建立正式AI审批机构-41-。"
+        },
+        {
+          "stance": "业界担忧",
+          "summary": "此次封禁让AI大模型第一次像光刻机和芯片一样被出口管制-，引发对全球AI生态分裂的担忧-33。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI提议向美国政府出让5%股份，AI财富分配引争议",
+      "summary": "OpenAI正商议向美国政府出让5%股份，由类似阿拉斯加永久基金的机构持有并向民众分红。此前OpenAI曾提议设立「公共财富基金」。",
+      "source": "凤凰网科技、IT之家、金融时报",
+      "url": "https://tech.ifeng.com/c/8uQtOH47riy",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "OpenAI方案",
+          "summary": "奥尔特曼提议头部AI企业划出5%股权交由公共机构持有，让普通民众分享AI行业巨额收益-28。"
+        },
+        {
+          "stance": "政界关切",
+          "summary": "美国政界担忧前沿大模型遭滥用，同时质疑普通美国人能否分享AI行业发展红利-28。特朗普正研究让普通民众持有头部AI企业股权的方案-28。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Palantir CEO炮轰闭源大模型：企业花钱买Token却成「训练素材」",
+      "summary": "身家约850亿元的Palantir CEO亚历克斯·卡普抨击OpenAI、Anthropic等硅谷大模型巨头，称其按Token计费模式「完全走入误区」，将国家安全和企业核心资产置于风险中40。",
+      "source": "21世纪商业评论、中国网财经",
+      "url": "https://www.sfccn.com/2026/7-4/4NMDE1MThfMjE3NDA4NA.html",
+      "published_time": "2026-07-04 08:00",
+      "perspectives": [
+        {
+          "stance": "Palantir CEO批评",
+          "summary": "卡普指出企业CEO担心「把时间和预算浪费在Token上得不到任何价值，且AI实验室会窃取知识产权」-40，建议企业用开源模型替代闭源API调用-40。"
+        },
+        {
+          "stance": "市场反应",
+          "summary": "卡普发言与Palantir扩大英伟达合作的双重利好下，Palantir股价当日涨超8%-40。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周AI领域舆情呈现「算力焦虑」与「监管博弈」双重主线。Meta卖算力引发市场对AI泡沫的恐慌性讨论-3，同时企业AI成本失控、员工使用限制等话题持续升温-。公众对「AI税」的抱怨增多-5，Z世代对AI好感度低至-44-。中美AI博弈与开源闭源路线之争成为舆论焦点--2。",
+  "honesty_note": null,
+  "start_time": "2026-07-04 03:20",
+  "end_time": "2026-07-04 03:21",
+  "elapsed_seconds": 47,
+  "retry_count": 0
+}

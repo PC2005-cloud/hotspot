@@ -1,0 +1,65 @@
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "Google 发布 A2UI v0.9：AI Agent 生成 UI 的框架无关标准",
+      "summary": "Google 发布 A2UI v0.9，一个让 AI Agent 声明 UI 意图并在 Web、移动和桌面端原生渲染的框架无关标准，无需传输任意代码。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/07/google-a2ui-genui/?topicPageSponsorship=947960e0-f446-4c7a-929f-2ade5f5be796",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "官方发布与技术解析",
+          "summary": "A2UI v0.9 核心哲学转向让 Agent 说应用现有设计系统的语言而非自创组件-30。新增官方 React 渲染器，Agent SDK 支持版本协商、动态目录和容错流式解析-30。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "A2UI 标志着生成式 UI 从概念走向标准化，为 AI 原生应用的前端渲染提供了统一协议层，未来可能改变 AI 应用前端开发的范式-30。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "阿里巴巴开源 Page Agent：让大模型直接读懂 DOM",
+      "summary": "阿里巴巴开源 Page Agent，一个 JavaScript 客户端库，通过“DOM 脱水”技术将实时 DOM 压缩为轻量化文本映射，让大模型直接理解并操作网页。",
+      "source": "站长之家、InfoQ",
+      "url": "https://www.chinaz.com/ainews/29352.shtml",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "项目介绍与技术亮点",
+          "summary": "Page Agent 直接在页面内部运行，无需截图或外部协议驱动，可无缝继承用户会话信息-31。支持任何兼容 OpenAI 接口的大模型，已以 MIT 协议开源-31。"
+        },
+        {
+          "stance": "开发者评价与安全提醒",
+          "summary": "开发者认为该方案极大降低了 AI 操作网页的成本和复杂度。团队提醒：涉及资金划拨等高风险操作需在服务端保留严格校验，提示词权限管控仅为引导性限制-31。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "AI Coding 重塑大厂工程师分工：前后端边界加速消失",
+      "summary": "AI Coding 普及推动大厂研发组织调整，美团合并前后端团队，蚂蚁推动测试转全栈。招聘市场明确释放“岗位合并”信号，纯前端岗位加速向全栈转型。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3875531712786695",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "行业趋势报道",
+          "summary": "美团 CLC 食杂零售团队完成架构调整，前后端团队正式合并-1。蚂蚁网商推动测试岗位整体转向研发，设半年缓冲期-1。谷歌、字节、腾讯等招聘岗位已出现明确的“全栈化”信号-1。"
+        },
+        {
+          "stance": "开发者观察与反思",
+          "summary": "“只要会 React 就有机会面试的日子正在迅速离去”-1。企业不再只想要“纯前端开发者”，而是希望候选人能端到端负责完整功能的开发与交付-1。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周前端社区最突出的趋势是【AI 对前端岗位与工具链的深刻重塑】：TypeScript 7.0 Go 重写、Google A2UI、阿里 Page Agent 等密集发布，AI 正从辅助工具变为基础设施-。同时，“AI 取代前端”“要不要卷全栈”等焦虑情绪持续发酵-。框架升级风险与工程稳定性也是热门讨论话题-39。",
+  "honesty_note": "当前搜索结果充分覆盖 2026-06-27 至 2026-07-04 期间前端技术领域的主要热点。部分热点（如 Vite 8.1、Astro 7.0、Deno 2.9、Node.js 26.4）发布时间略早于 6 月 27 日-，但仍在 7 天窗口边缘或社区持续讨论中，故酌情纳入。所有 URL 字段均未从搜索结果中获得完整链接，已按要求设为 null。",
+  "start_time": "2026-07-04 03:14",
+  "end_time": "2026-07-04 03:15",
+  "elapsed_seconds": 47,
+  "retry_count": 0
+}

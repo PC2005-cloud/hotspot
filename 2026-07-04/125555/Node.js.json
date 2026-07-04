@@ -1,0 +1,85 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Node.js 发布周期重大调整：从 Node.js 27 起改为每年一个主要版本",
+      "summary": "Node.js 项目宣布将从 Node.js 27 开始调整发布周期，由每年两个主要版本改为每年一个，所有版本均进入 LTS，取消沿用十年的奇偶版本号模式。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/06/nodejs-release-changes/",
+      "published_time": "2026-06-03",
+      "perspectives": [
+        {
+          "stance": "官方公告与维护者视角",
+          "summary": "新周期从 2026 年 10 月起生效，每年 4 月发布一个主要版本，10 月转入 LTS。此举源于维护者面临多版本并行维护的巨大压力，奇数版本长期被企业跳过但仍需投入维护精力-20。"
+        },
+        {
+          "stance": "社区讨论与分歧",
+          "summary": "GitHub 讨论中，企业用户偏好长期支持窗口，而频繁升级的团队希望更快获得新特性。核心贡献者 James Snell 承认原计划基于十年前的企业采用周期，早该重新审视-20。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Node.js 24.18.0 LTS 安全更新发布，修复 CVE-2026-13149 等高危漏洞",
+      "summary": "Red Hat 发布 RHSA-2026:34478 安全公告，更新 nodejs24 至 24.18.0 版本，修复包括 CVE13149 在内的多个安全漏洞。",
+      "source": "Red Hat",
+      "url": "https://access.redhat.com/errata/RHSA-2026:34478",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "安全公告",
+          "summary": "此次更新涵盖 nodejs24 及相关 RPM 包，建议所有使用 Node.js 24 的用户尽快升级-11。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "CVE-2026-49857：auth-fetch-mcp 存在 SSRF 防护绕过漏洞",
+      "summary": "auth-fetch-mcp v3.0.1 的 SSRF 防护函数 isPrivateV6() 无法检测 IPv4 映射的 IPv6 环回地址，攻击者可绕过防护访问本地回环服务，CVSS 评分 7.4（高危）。",
+      "source": "GitLab Advisory",
+      "url": "https://advisories.gitlab.com/npm/auth-fetch-mcp/CVE-2026-49857/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "漏洞披露",
+          "summary": "Node.js WHATWG URL 解析器会将 [::ffff:127.0.0.1] 规范化为 [::ffff:7f00:1]，而 net.isIPv4('7f00:1') 返回 false，导致私有 IP 检查被绕过。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "AWS Lambda 于 2026 年 7 月 1 日起停止更新 Node.js 20.x 函数",
+      "summary": "AWS Lambda 自 2026 年 7 月 1 日起，不再允许使用 Node.js 20.x 运行时更新现有函数，此前已于 6 月 1 日禁止创建新函数--。",
+      "source": "GitHub",
+      "url": "https://github.com/awslabs/landing-zone-accelerator-on-aws/issues/961",
+      "published_time": "2025-11-18（议题创建，2026-07-01 政策生效）",
+      "perspectives": [
+        {
+          "stance": "AWS 官方政策",
+          "summary": "Node.js 20.x 已停止支持，用户需迁移至 Node.js 22 或更高版本以继续创建和更新 Lambda 函数-。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "openSUSE 发布 nodejs22 重要安全更新（openSUSE-SU-2026:21058-1）",
+      "summary": "openSUSE 16 于 2026 年 7 月 3 日发布 nodejs22 安全更新，标记为「重要」级别。",
+      "source": "Tenable",
+      "url": "https://www.tenable.com/plugins/pipeline/issues/223723-4",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "安全更新公告",
+          "summary": "openSUSE 用户需及时更新 nodejs22 以修复相关安全漏洞-23。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Node.js 生态热点集中在三大方向：发布周期重大调整引发社区广泛讨论，企业用户与快速迭代团队之间存在分歧；npm v12 安全策略变化引发争议，社区对「禁止安装脚本」的有效性持不同看法；多个安全漏洞（CVE-2026-49857、CVE-2026-48936 等）密集披露，安全更新成为关注焦点-20-1。",
+  "honesty_note": "受限于当前可获取的搜索结果，部分热点事件（如 openSUSE 安全更新）缺少可直接引用的原始 URL，已按规则将 url 设为 null。此外，近 7 天内 Node.js 生态的核心动态以版本更新、安全补丁和发布策略调整为主，缺乏单一爆炸性新闻事件，整体呈「多线并行、技术向」的热点分布特征。",
+  "start_time": "2026-07-04 13:14",
+  "end_time": "2026-07-04 13:15",
+  "elapsed_seconds": 43,
+  "retry_count": 0
+}

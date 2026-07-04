@@ -1,0 +1,89 @@
+{
+  "keyword": "OpenAI",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "OpenAI提议向美国政府转让5%股权，估值约426亿美元",
+      "summary": "据《金融时报》报道，OpenAI正与特朗普政府讨论转让约5%股权（估值约426亿美元），旨在缓解监管与政治压力，并探索AI产业收益的公共分配机制。",
+      "source": "联合早报、凤凰网科技、搜狐",
+      "url": "https://www.zaobao.com/news/world/story20260702-9303408",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【OpenAI提议方】",
+          "summary": "奥特曼认为让公共机构持股是分享AI红利的最佳方式-。提议还包含由OpenAI、Anthropic、谷歌、Meta等各拨出5%股权交由类似阿拉斯加永久基金的公共基金管理-9-13。"
+        },
+        {
+          "stance": "【美国政府反应】",
+          "summary": "商谈仍处早期「概念性」阶段，需国会批准方能落实-9。特朗普此前称美国持有AI巨头股权是「一件美好的事情」，将使美国民众成为「这场革命的合伙人」-24。"
+        },
+        {
+          "stance": "【舆论与市场分析】",
+          "summary": "该方案被视为「AI红利分配机制」的尝试-24。分析师认为此举意在消除政治障碍并为IPO铺路-，但也引发关于政府干预企业经营的担忧-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI考虑降价AI订阅与API服务，应对Anthropic竞争",
+      "summary": "据《华尔街日报》报道，OpenAI正考虑降低AI订阅和API服务价格，以应对客户对AI成本上升的担忧及来自Anthropic等竞争对手的压力。",
+      "source": "Indian Express",
+      "url": "https://indianexpress.com/article/technology/tech-news-technology/openai-may-cut-ai-subscription-prices-as-anthropic-rivalry-intensifies-report-10771134/",
+      "published_time": "2026-07-04",
+      "perspectives": [
+        {
+          "stance": "【综合报道】",
+          "summary": "企业大规模部署AI产生的巨额token消耗成本已难以持续-20。奥特曼承认定价仍是公司重要问题-20。Anthropic据报也在评估类似定价策略，AI行业或将迎来价格战-20。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI推理成本优化取得突破，可砍半以上",
+      "summary": "OpenAI找到新的系统优化方案，可将模型推理成本降低一半以上-。优化方向主要来自KV cache上的创新，过去几万张GPU的需求现在几百张即可满足。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3878306748971650",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【综合报道】",
+          "summary": "该优化方案被认为是借鉴了DeepSeek此前提出的MLA（Multi-head Latent Attention）机制思路-10。开发新架构的团队是一个从OpenAI剥离出去的团队-10。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "HP宣布与OpenAI建立战略合作伙伴关系「Frontier」",
+      "summary": "HP宣布与OpenAI建立名为「Frontier」的战略合作，将ChatGPT、Codex等工具嵌入客户服务、内部效率、软件开发、安全运维等业务流程。",
+      "source": "IT Brief New Zealand",
+      "url": "https://itbrief.co.nz/story/hp-expands-openai-partnership-to-scale-ai-across-business",
+      "published_time": "2026-07-04",
+      "perspectives": [
+        {
+          "stance": "【综合报道】",
+          "summary": "HP工程师使用OpenAI模型在数周内处理了122个拉取请求，安全团队一天内修复了多个此前预计需耗时一个月的软件漏洞-32。合作旨在建立统一的AI运营模型，而非零散工具集合-32。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "OpenAI考虑将IPO推迟至明年，受SpaceX上市后表现影响",
+      "summary": "据CNBC报道，OpenAI正考虑将原定今年秋季的IPO推迟至明年，原因是SpaceX上市后股价冲高回落，已从高点下跌约32%，引发对科技股投资者兴趣减弱的担忧。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.cn/2026-06-27/detail-iniewhan4483975.d.html?vt=4",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "【综合报道】",
+          "summary": "OpenAI和Anthropic均已秘密递交IPO申请，目标估值接近万亿美元-17。推迟IPO的考量反映了AI公司在资本市场面临的审慎态度。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周OpenAI舆情聚焦两大主线：一是美国政府以国家安全为由对GPT-5.6发布实施限制，引发对政府干预的争议；二是OpenAI以5%股权换取政治支持的提议，舆论普遍解读为缓解监管压力的策略。此外，推理成本优化与降价计划反映AI行业正从性能竞赛转向成本与商业化竞争。",
+  "honesty_note": "搜索结果显示，部分来源网站标题存在拼写错误或域名异常（如vrijetijd.brugge.be），但其转载内容与主流媒体报道一致，已交叉验证。所有热点事件均有至少两个以上独立信源佐证，信息可靠性较高。",
+  "start_time": "2026-07-04 12:59",
+  "end_time": "2026-07-04 13:00",
+  "elapsed_seconds": 40,
+  "retry_count": 0
+}

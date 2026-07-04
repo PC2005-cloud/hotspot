@@ -1,0 +1,47 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "HeroUI v3 正式发布：React 与 React Native 组件库全面重写",
+      "summary": "前身为 NextUI 的 React 组件库 HeroUI 发布 v3 版本，基于 Tailwind CSS v4 从零重写，提供 75+ Web 组件和全新的 React Native 库。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/07/heroui-v3-rewrite/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "【官方发布】",
+          "summary": "HeroUI v3 采用 React Aria Components 确保可访问性，所有动画迁移至纯 CSS，支持 React 19 和 Next.js 开箱即用-28。"
+        },
+        {
+          "stance": "【社区观察】",
+          "summary": "v3.0.3 升级后移除了约 90% 的传递依赖，安装速度大幅提升；v3.2.0 于 6 月 16 日上线，月更节奏已确立-28。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "This Week In React 第 285 期：聚焦 React Foundation 与 Rust Compiler",
+      "summary": "React 社区周刊汇总本周热点：React 核心仓库迁移至新家 React Foundation、React Compiler Rust 版即将落地、React Native 0.86 临近发布。",
+      "source": "This Week In React",
+      "url": "https://thisweekinreact.com/newsletter",
+      "published_time": "2026-07-04（当周）",
+      "perspectives": [
+        {
+          "stance": "【社区简报】",
+          "summary": "React Foundation 官网已上线，React Native 运行时多线程创新值得关注，Cloudflare 收购 VoidZero，npm v12 将默认阻止 postinstall 脚本-27。"
+        },
+        {
+          "stance": "【安全提醒】",
+          "summary": "React Router 和 Remix 发布了重要安全补丁，建议开发者立即更新-27。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 React 社区热点集中在「企业治理」争议与「技术演进」两条主线。Vercel 雇佣 React 核心团队引发开源中立性质疑，成为社区最热讨论；同时 React Compiler Rust 移植、HeroUI v3 重写等技术创新持续吸引开发者关注。整体情绪呈理性探讨态势，开发者对 React 生态成熟度认可度高，但对单一公司影响力扩大存在隐忧。",
+  "honesty_note": "近 7 天内（2026-06-27 至 2026-07-04）直接与 React 相关的大版本发布或重大新闻相对较少，当前热点多为 6 月中下旬事件的持续发酵与社区讨论。React 19.2.7 于 6 月 1 日发布-，React Native 0.86 于 6 月 11 日发布-，均超出近 7 天窗口。若需更实时资讯，建议关注 This Week In React 等社区周刊-27。",
+  "start_time": "2026-07-04 13:15",
+  "end_time": "2026-07-04 13:16",
+  "elapsed_seconds": 40,
+  "retry_count": 0
+}

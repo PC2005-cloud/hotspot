@@ -1,0 +1,43 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【Vue&ViteConf 2026 上海大会官宣】尤雨溪将发表主题演讲，聚焦AI时代前端开发新范式",
+      "summary": "Vue&ViteConf 2026 定于7月18日在上海举办--1。Vue与Vite作者尤雨溪将出席并发表主题演讲--1。大会围绕Vue核心生态演进、Vite落地实践、AI Agent工具及Vue跨端扩展（Vue Native）四条主线展开2。",
+      "source": "uisdc.com",
+      "url": "https://www.uisdc.com/hangye/vueviteconf-2026",
+      "published_time": "2026-07-02 00:00",
+      "perspectives": [
+        {
+          "stance": "【大会官方/综合报道】",
+          "summary": "大会将展示Vue与Vite在AI时代的演进方向，已确认11位嘉宾，议题涵盖Vapor Mode、Rolldown内存优化、Vite Task缓存、Weapp-vite小程序开发、模块联邦、Velin/Vieval等AI工具，以及Vue+Lynx的Native探索-1-2。大会传递的核心信号是：Vue与Vite生态正从「快」走向「统一完整的工具链路径」，为AI Agent和开发者提供从创建到部署的一站式方案-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【VoidZero 加入 Cloudflare 后续】尤雨溪公开回应：Vue 不受影响且将活得更好",
+      "summary": "2026年6月4日，Cloudflare宣布收购VoidZero（Vite、Vitest、Rolldown、Oxc母公司）。尤雨溪于6月5日公开回应网友担忧，明确表示Vue不属于此次收购范围，仍为独立项目，且收购让他能更好地从经济上支持Vue贡献者。",
+      "source": "搜狐",
+      "url": "http://www.bernama.com/en/news.php/target='_blank'?id=2566049",
+      "published_time": "2026-06-06 10:58",
+      "perspectives": [
+        {
+          "stance": "【尤雨溪官方回应】",
+          "summary": "Vue本身与收购无关，仍作为独立项目存在；Vite、Vitest等工具继续开源、中立无厂商绑定、社区主导迭代--18。收购让尤雨溪能更好地在经济上支持Vue的贡献者和全职开发者-18。Vue与Nuxt团队及Vercel的关系未发生实质变化-18。"
+        },
+        {
+          "stance": "【社区/网友担忧】",
+          "summary": "部分网友对Vue被大厂收购后的独立性和发展方向表示担忧，担心框架可能失去中立性--18。尤雨溪的回应在社交平台获得约8万次查看，显示社区对此高度关注-18。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Vue.js社区热点集中于「AI融合」与「生态扩展」两大主题。Vue&ViteConf 2026上海大会官宣引发高度关注，社区对尤雨溪带领下的Vue在AI时代的发展方向充满期待-1。VoidZero加入Cloudflare后尤雨溪的公开回应平息了部分担忧，社区情绪趋于稳定-18。Element Plus等组件库的AI化转型反映出Vue生态正全面拥抱生成式AI-6。技术深度内容（如Patch Flag详解）也获得开发者积极讨论-12。整体舆情积极，开发者对Vue生态在AI时代的演进持乐观态度-。",
+  "honesty_note": "近7天内（6月27日至7月4日）与Vue.js直接相关的重大突发新闻相对有限。以上热点主要涵盖：Vue&ViteConf 2026大会预告（7月2日报道）、VoidZero收购事件的后续回应（6月上旬事件，但相关讨论在近一周内仍有延续）、Element Plus AI融合技术文章（7月1日）、Vue 3 Patch Flag技术教程（7月4日）以及Vue 3.6 beta版本动态。搜索结果中大量为常规技术教程（如Pinia异步处理、Props验证、渲染函数等）-，并非高热度新闻事件。建议关注7月18日Vue&ViteConf 2026上海大会的后续报道，届时将有更多重磅信息发布-。",
+  "start_time": "2026-07-04 13:11",
+  "end_time": "2026-07-04 13:12",
+  "elapsed_seconds": 40,
+  "retry_count": 0
+}

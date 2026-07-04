@@ -1,0 +1,83 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Amazon EKS 推出 Kubernetes 版本回滚功能，升级后7天内可一键回退",
+      "summary": "AWS于7月1日宣布为EKS新增Kubernetes版本回滚功能，管理员可在升级后7天内将集群回退一个次要版本（如1.35回退至1.34），解决此前升级不可逆的痛点，降低企业升级风险与安全补丁延迟问题11。",
+      "source": "IT Brief India / CodeZine",
+      "url": "https://itbrief.in/story/amazon-eks-adds-kubernetes-rollback-option-for-clusters",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【AWS官方与运维团队】",
+          "summary": "回滚功能让运维团队在升级出现兼容性问题时能快速恢复，无需重建集群，提升升级信心。控制平面回滚约20分钟，EKS Auto Mode节点回滚遵循Pod Disruption Budget，且不额外收费-1。"
+        },
+        {
+          "stance": "【社区与KEP-4330】",
+          "summary": "Kubernetes社区通过KEP-4330也在推进回滚相关的仿真版本方案，但AWS的实现是直接恢复到此前实际运行的生产版本，操作更直观可靠-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Kubernetes 1.35 动态资源分配（DRA）正式GA，NVIDIA驱动进入SIGs",
+      "summary": "Dynamic Resource Allocation在Kubernetes v1.35中正式GA，NVIDIA DRA驱动已移入Kubernetes SIGs，文档移除Beta标签。开发者可通过DeviceClass、ResourceClaim等原生API像申请存储一样申请GPU资源12。",
+      "source": "DEV Community / CNCF",
+      "url": "https://dev.to/leobaniak/dynamic-resource-allocation-hits-ga-in-kubernetes-135-and-gpu-ci-jobs-finally-get-a-real-api-39c2",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【开发者与AI/ML团队】",
+          "summary": "DRA终结了此前靠nodeSelector和亲和性拼凑GPU调度的混乱局面，CI/CD流水线中的模型训练和GPU加速测试任务可更简洁地申请和共享GPU资源，支持时间切片等多租户共享-6。"
+        },
+        {
+          "stance": "【CNCF与社区技术观察】",
+          "summary": "CNCF大使ChengHao Yang于7月1日发布实操指南，在Cluster API+OpenStack环境中验证了DRA在NVIDIA A5000和T10 GPU上的实际效果，标志GPU资源在Kubernetes中进入可精细调度的生产成熟阶段-12。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Argo CD repo-server未修补严重漏洞，可导致Kubernetes集群完全接管",
+      "summary": "安全公司Synacktiv发现Argo CD repo-server组件存在未认证漏洞，攻击者若可达内部网络端口即可执行任意代码，进而完全接管Kubernetes集群。目前尚无补丁和CVE编号，官方建议立即进行网络隔离26。",
+      "source": "IT BOLTWISE / HEAL Security",
+      "url": "https://www.it-boltwise.de/argo-cd-repo-server-ohne-authentifizierung-schwachstelle-gefaehrdet-kubernetes-cluster.html",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【安全研究人员与Synacktiv】",
+          "summary": "漏洞位于repo-server的内部gRPC服务（无认证），攻击者可构造请求利用kustomize选项执行恶意脚本，并结合Redis操控部署缓存实现集群接管-25。"
+        },
+        {
+          "stance": "【运维与安全团队】",
+          "summary": "Argo CD Helm Chart中networkPolicy.create默认关闭，大量生产集群内部网络隔离不足。由于无补丁可用，最现实的缓解措施是立即启用NetworkPolicy并严格限制repo-server的访问来源-25。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Kubernetes社区动态：SELinuxMount晋升GA，CBOR编码支持、Pod原地重启进入Alpha",
+      "summary": "Kubernetes开发周报显示，SELinuxMount已通过PR #139956晋升GA，提升SELinux强制环境下Pod启动性能；CBOR编码支持扩展至非资源端点；Pod原地重启KEP已进入v1.35 Alpha，可保留Pod沙箱和IP重启所有容器。",
+      "source": "Last Week in Kubernetes Development (LWKD)",
+      "url": "https://lwkd.info/2026/20260702",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【Kubernetes SIG节点与存储】",
+          "summary": "SELinuxMount GA意味着大卷或多Pod高密度节点不再依赖缓慢的递归重标记，生产环境可放心启用；Pod原地重启对AI/ML训练等昂贵任务意义重大，避免重新调度开销-8。"
+        },
+        {
+          "stance": "【API machinery与下游工具】",
+          "summary": "CBOR编码支持扩展至非资源端点，提升了API序列化一致性，可能影响下游代理和生态工具-8。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前Kubernetes社区和行业讨论呈现【安全与效率并重】的双主线：一方面Argo CD未修补漏洞等多起安全事件引发广泛担忧，运维团队紧急排查内部网络隔离-25；另一方面AWS EKS回滚、DRA GA等提升运维效率和生产力的功能获得积极评价-1-6。AI/ML工作负载持续成为Kubernetes演进的核心驱动力，GKE Lustre缓存卸载、DRA对GPU的原生支持等热点均围绕AI基础设施展开-。KubeCon Japan 2026临近，社区关注度持续升温-。",
+  "honesty_note": "近7天内Kubernetes相关热点信息较为丰富，以上7条均来自2026年7月1日至7月4日期间的公开报道和社区动态。部分热点（如Traefik、KubeVela漏洞）无公开可直接访问的原始报道URL，已如实标注为null。如需更深度内容，建议关注CNCF官方博客（cncf.io）和Kubernetes GitHub社区动态。",
+  "start_time": "2026-07-04 13:03",
+  "end_time": "2026-07-04 13:04",
+  "elapsed_seconds": 56,
+  "retry_count": 0
+}

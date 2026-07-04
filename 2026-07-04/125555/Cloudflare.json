@@ -1,0 +1,69 @@
+{
+  "keyword": "Cloudflare",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Cloudflare宣布9月15日起默认拦截「混合用途」AI爬虫，敦促AI公司为出版商内容付费",
+      "summary": "Cloudflare宣布自2026年9月15日起，将对同时用于搜索、AI代理和模型训练的「混合用途」爬虫默认拦截其访问含广告的网页，要求AI公司将搜索爬虫与AI训练爬虫明确分离10。",
+      "source": "网易、TechCrunch、Yahoo Tech、凤凰网等",
+      "url": "https://www.163.com/dy/article/L0QPNEKD0511BLFD.html?spss=dy_author&referFrom=",
+      "published_time": "2026-07-01至2026-07-02",
+      "perspectives": [
+        {
+          "stance": "官方立场（Cloudflare及CEO）",
+          "summary": "Cloudflare CEO Matthew Prince表示，互联网流量已非人类为主，必须更快行动以形成可持续生态-7-10。新工具为网站所有者提供更高可见性和商业机会，期望鼓励混合爬虫将搜索与AI用途分离-10。"
+        },
+        {
+          "stance": "行业分析/媒体解读",
+          "summary": "TechCrunch等媒体指出，此举将直接影响AI模型提供商获取训练数据的方式，点名Google拥有「约两倍可访问信息量」引发争议-10。政策同时推动「Pay Per Use」模式演进，允许出版商在内容创造价值时收费-10。"
+        },
+        {
+          "stance": "目标企业回应（Google）",
+          "summary": "Google此前曾反驳类似指责，强调其提供了「Google Extended」机器人供网站选择退出AI训练，且不影响搜索收录-7-10。但Google的核心爬虫Googlebot同时为搜索及AI Overviews等AI功能提供数据-7。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Cloudflare推出AI机器人控制新分类与「按使用付费」合作伙伴框架",
+      "summary": "Cloudflare推出新的AI机器人控制分类和分析功能，为网站所有者提供更详细的AI爬虫活动可见性--3。同时将「按爬取付费」框架扩展为「按使用付费」模式，并围绕此框架建立新的合作伙伴关系。",
+      "source": "Simply Wall St、Investing.com",
+      "url": "https://simplywall.st/stocks/us/software/nyse-net/cloudflare/news/cloudflare-net-launches-ai-bot-controls-and-pay-per-use-part",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "投资分析视角（Simply Wall St）",
+          "summary": "分析指出，Cloudflare正将自己定位为内容所有者和AI公司之间的政策和支付层，在安全、性能和AI服务交叉点提供更高价值服务-3。其股价三年涨幅约283.9%，市场已赋予其互联网基础设施重要角色的价值-3。"
+        },
+        {
+          "stance": "金融资讯（Investing.com）",
+          "summary": "Cloudflare推出了新的AI机器人控制分类和分析工具，让网站所有者更详细地了解AI爬虫活动-。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Cloudflare 6月30日出现服务异常，已修复并否认攻击",
+      "summary": "Cloudflare于美国东部时间6月30日上午6:20左右发现某项服务出现「异常流量激增」，导致部分经由其网络传输的数据出现错误-。该问题已在六小时内修复，发言人表示故障源于一个自动生成的配置文件，无证据表明存在网络攻击。",
+      "source": "每日经济新闻",
+      "url": "https://m.nbd.com.cn/web_app/column/375/?max_pos=4148558",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "官方声明（Cloudflare）",
+          "summary": "Cloudflare发言人Jackie Dutton表示，故障源于一个用于管理威胁流量的自动生成配置文件，已在约六小时内修复，没有证据表明存在网络攻击或恶意活动-38。"
+        },
+        {
+          "stance": "媒体报道（每日经济新闻）",
+          "summary": "报道称Cloudflare全球网络服务出现中断问题，经数小时故障后已得到解决-38。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Cloudflare最突出的热点是其围绕AI时代互联网经济模式的重塑行动——通过默认拦截混合AI爬虫和推出变现网关，主动为出版商与AI公司之间建立商业付费机制。公众和媒体关注焦点集中在「机器人流量已超人类」背景下，Cloudflare如何利用其网络基础设施的「守门人」地位推动行业规则变革，以及对Google等科技巨头的直接影响。整体舆情偏向积极和关注，认为Cloudflare正抢占AI时代互联网基础设施的战略高地。",
+  "honesty_note": "搜索结果中缺少2026年6月27日至7月4日期间关于Cloudflare的重大安全漏洞、大规模宕机或高热度争议事件。部分相关事件（如6月23日破纪录DDoS攻击、6月22日大规模宕机、6月17日设计合作伙伴认证、6月5日收购VoidZero）发生在查询时间范围之外，已排除。本列表以AI政策类新闻和运营动态为主，信息相对充分。",
+  "start_time": "2026-07-04 13:09",
+  "end_time": "2026-07-04 13:10",
+  "elapsed_seconds": 41,
+  "retry_count": 0
+}

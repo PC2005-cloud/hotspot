@@ -1,0 +1,97 @@
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Spring Boot 4.1.0 正式发布：新增 gRPC 自动配置与 SSRF 防护",
+      "summary": "Broadcom 于 2026 年 6 月 10 日发布 Spring Boot 4.1.0，带来 gRPC 官方自动配置、HTTP 客户端 SSRF 防护、Kotlin 2.3 升级、延迟数据源连接及增强的 OpenTelemetry 支持。这是 Spring Boot 4 系列的首个功能增强版本。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/06/spring-boot-4-1/",
+      "published_time": "2026-06-15",
+      "perspectives": [
+        {
+          "stance": "技术媒体深度解读",
+          "summary": "Spring Boot 4.1 是 4.0 时代生产级能力的全面补齐，gRPC 官方支持、SSRF 防护、OTLP 标准化均直击生产环境真实痛点-。"
+        },
+        {
+          "stance": "开发者社区升级建议",
+          "summary": "gRPC 成为 Spring Boot 默认生态能力，开发体验与其他技术栈保持一致，但升级前需注意 4.0 中已废弃 API 在 4.1 中开始被移除-。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Spring Boot 3.5.x 开源支持正式终止（2026年6月30日）",
+      "summary": "Spring Boot 3.5.x 系列开源支持（OSS）于 2026 年 6 月 30 日正式结束生命周期（EOL）-。3.5.16 是该系列的最后一个开源版本。官方建议用户尽快升级至 4.0.x 或 4.1.x-。",
+      "source": "Spring 官方博客",
+      "url": "https://spring.io/blog/2026/06/25/spring-boot-3-5-16-available-now",
+      "published_time": "2026-06-25",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "3.5.16 是 3.5.x 系列的最后一个 OSS 版本，要继续获得开源支持需升级至 4.0.x 或 4.1.x，商业支持仍可选用-39。"
+        },
+        {
+          "stance": "社区技术分析",
+          "summary": "3.4.x 及以下开源版本已全部停止维护，3.0+ 很快成为过去式，Spring Boot 正全面进入 4.0+ 时代-5-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Spring Boot 4.0.7 发布：修复 CVE-2026-40992 与 CVE-2026-41001 安全漏洞",
+      "summary": "Spring Boot 4.0.7 于 2026 年 6 月 10 日发布，包含 77 项缺陷修复、文档改进和依赖升级-36。重点修复了两个 CVE：邮件自动配置未启用 SSL 主机名验证（CVE40992）和 Artemis 自动配置可预测临时目录（CVE41001）。",
+      "source": "Spring 官方博客",
+      "url": "https://spring.io/blog/2026/06/10/spring-boot-4-0-7-available-now",
+      "published_time": "2026-06-10",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "CVE-2026-41001 中 ArtemisEmbeddedConfigurationFactory 使用固定静态路径，本地攻击者可预创建目录或放置符号链接，劫持消息队列数据甚至通过反序列化执行代码-22。"
+        },
+        {
+          "stance": "安全社区追踪",
+          "summary": "建议受影响版本（4.0.0-4.0.6、3.5.0-3.5.14 等）的用户立即升级至修复版本-22。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Spring 生态 6 月密集更新：Spring AI 2.0 正式发布，全家桶同步升级",
+      "summary": "2026 年 6 月 8 日当周，Spring 生态密集发布增量版本：Spring Boot 4.1.0、Spring Security 7.1.0、Spring Session 4.1.0、Spring Integration、Spring Modulith、Spring AMQP、Spring Vault，以及 Spring AI 2.0 和 Spring Data 2026.0.0 正式版。",
+      "source": "InfoQ 中文站",
+      "url": "https://www.infoq.cn/article/Jpi5XBmoO8smLYSyaD9t",
+      "published_time": "2026-06-24",
+      "perspectives": [
+        {
+          "stance": "技术媒体综述",
+          "summary": "Spring AI 2.0 将工具调用提升为一等公民，使智能体循环更易于观察、组合和扩展-3。"
+        },
+        {
+          "stance": "Java/JVM 周刊视角",
+          "summary": "本周 Java 生态迎来重磅更新：Spring AI 2.0、Spring Boot 4.1、Hibernate 8.0 Beta1、Quarkus 3.37.0 等框架密集更新-3。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Spring Boot 4.1 + Java AOT Cache 实战：优化 Agent 服务冷启动",
+      "summary": "2026 年 7 月 1 日有开发者分享 Spring Boot 4.1 结合 Java 25+ AOT Cache 的实战经验，将 Agent 冷启动从「看日志感觉快了」转变为 CI/CD 中的可交付指标-。",
+      "source": "CSDN",
+      "url": "https://blog.csdn.net/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "开发者实战分享",
+          "summary": "Spring Boot 4.1 已将 Java 25+ AOT Cache 写入参考文档，可用于改善 Agent 服务的冷启动和暖机表现-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前 SpringBoot 社区最突出的趋势是版本升级焦虑：3.5.x 已于 6 月 30 日 EOL，开发者面临向 4.0/4.1 迁移的压力；同时 4.1 的 gRPC 官方支持和多项安全修复获得广泛关注，社区整体情绪偏积极但带有「升级需谨慎」的务实态度。",
+  "honesty_note": "搜索结果中大部分热点事件（Spring Boot 4.1 发布、4.0.7 安全更新、3.5.x EOL 等）均集中在 6 月上旬至中旬，近 7 天内（6月27日至7月4日）的增量信息相对有限，主要以社区讨论和实战分享为主。当前最接近时间窗口的资讯是 7 月 1 日发布的 AOT Cache 实战文章及 7 月 2 日的技术科普内容。",
+  "start_time": "2026-07-04 13:20",
+  "end_time": "2026-07-04 13:21",
+  "elapsed_seconds": 44,
+  "retry_count": 0
+}

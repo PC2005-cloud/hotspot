@@ -1,0 +1,93 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rust 1.96.1 点版本发布，修复多项问题",
+      "summary": "Rust 团队于 6 月 30 日发布 1.96.1 点版本，针对 Cargo、MIR 和 libssh2 提供一系列修复。1.96.0 版本已于 5 月 28 日发布，引入全新 Range* 类型体系。",
+      "source": "Rust Blog / InfoWorld",
+      "url": "https://www.infoworld.com/article/4191267/rust-introduces-new-range-types.html",
+      "published_time": "2026-06-30",
+      "perspectives": [
+        {
+          "stance": "官方发布公告",
+          "summary": "Rust 官方博客宣布 1.96.1 点版本上线，建议所有用户通过 rustup update stable 升级-。"
+        },
+        {
+          "stance": "技术媒体解读",
+          "summary": "InfoWorld 报道称，1.96.0 的核心变化是 RFC3550 中提议的 Range* 类型稳定化，新类型实现 IntoIterator 而非 Iterator，解决了同时实现 Iterator 和 Copy 的「footgun」问题-11。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Rust 游戏《Rust》推出 7 月「Common Ground」大更新",
+      "summary": "生存游戏《Rust》7 月更新「Common Ground」上线，新增公寓大楼（可租房）、出租商店、氏族管理系统等玩法，并对 Softcore 模式进行调整。",
+      "source": "网易 / 163.com",
+      "url": "https://www.163.com/dy/article/L0SKJQSE05561FYA.html?f=post2020_dy_recommends&referFrom=",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "玩家体验解读",
+          "summary": "更新为散人玩家提供了「租房苟一苟」的新选择，氏族系统降低了大型团队的管理协调成本，Softcore 模式的 2 倍资源加成和固定袭击时间窗口让休闲玩家体验更友好-2。"
+        },
+        {
+          "stance": "玩法机制分析",
+          "summary": "Facepunch 将玩家自发组织的交易、团队管理玩法正式纳入游戏系统，公寓的「万能钥匙」设计保留了 Rust 一贯的对抗性与不确定性-2。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "PamStealer 恶意软件披露：Rust 编写的 macOS 信息窃取器",
+      "summary": "Jamf Threat Labs 于 7 月 2 日披露 PamStealer 恶意软件，针对 macOS 用户，伪装成 Maccy 剪贴板管理器传播，第二阶段载荷使用 Rust 编写以增加逆向分析难度。",
+      "source": "腾讯新闻 / IT之家",
+      "url": "https://news.qq.com/rain/a/20260703A026YO00?id=20260703A026YO00&path=a&app=news&suid=&redirect_pc=1",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "安全厂商披露",
+          "summary": "PamStealer 通过虚假网站分发，诱导用户输入管理员密码后获取 Rust 载荷，收集浏览器 Cookie、历史记录、加密货币钱包等敏感数据-4。"
+        },
+        {
+          "stance": "技术分析",
+          "summary": "攻击者大量使用 Rust 语言编写恶意载荷，利用 Rust 让部分字符串和代码路径在运行时解析的特性，增加安全分析人员的逆向工程难度-4。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Rust 社区开发者遭遇疑似国家级后门定向攻击",
+      "summary": "6 月 27 日，Rust 社区一位维护者公开拆解了一次伪装成远程面试任务的定向攻击，攻击者通过伪造 VC 人物、公司站点和 LinkedIn 资料建立信任，诱导受害者执行恶意代码。",
+      "source": "Rust日报 / xhh.club",
+      "url": "https://xhh.club/e/STx8YKwXWvxGb315emge/",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "社区安全警示",
+          "summary": "该攻击被描述为「疑似国家级后门投递链」，攻击链条高度复杂，从社交工程到代码仓库投毒环环相扣，提醒 Rust 开发者警惕伪装成面试邀请的定向攻击--31。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Rust 生态多项进展：Bevy 0.19、Chromium 采用 Rust PNG、LiteLLM 迁移",
+      "summary": "Bevy 0.19 发布引入全新场景系统；Rust PNG crate 被 Chromium 和 GNOME 采用；LiteLLM 迁移至 Rust 实现 15 倍吞吐提升。",
+      "source": "CSDN / Rust周刊",
+      "url": "https://devpress.csdn.net/awstech/6a462775662f9a54cb87b811.html",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "生态进展综述",
+          "summary": "Rust 周刊 2026W26 汇总了工具链多项更新，包括 proc_macro_hygiene 稳定化、str_from_utf16_endian 等 API 落地，以及 Cargo 新增 build.warnings 配置等功能-1。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Rust 相关讨论呈现多线并发热潮：语言层面，1.96.1 点版本发布和 2026 Roadmap 中 Move Trait 与移除 Pin 的争议引发深度技术讨论--3；生态层面，OpenAI 以 60 万美元入会 Rust 基金会备受关注-；安全层面，PamStealer 恶意软件和社区后门攻击事件引发对 Rust 供应链安全的警惕--4；游戏《Rust》的大更新也在玩家群体中形成热度-。整体舆情积极与警惕并存。",
+  "honesty_note": "部分热点（如 OpenAI 入基金会、Bevy 0.19 等）主要来自 6 月 27 日的 Rust 周刊汇总，时效性处于查询窗口边缘-。Rust 1.96.1 于 6 月 30 日发布，时效性较好-。游戏《Rust》更新和 PamStealer 恶意软件均为 7 月 2-3 日事件，时效性最佳--2。整体信息覆盖满足要求，未发现明显的滞后问题。",
+  "start_time": "2026-07-04 13:02",
+  "end_time": "2026-07-04 13:03",
+  "elapsed_seconds": 41,
+  "retry_count": 0
+}

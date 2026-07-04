@@ -1,0 +1,101 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "TypeScript 7.0 RC 发布：Go 语言重写编译器，性能提升约 10 倍",
+      "summary": "微软宣布 TypeScript 7.0 进入发布候选（RC）阶段，编译器核心从 JavaScript 自举代码库完全移植到 Go 语言，得益于原生代码速度和共享内存并行，类型检查比 6.0 快约 10 倍，正式版预计一个月内发布。",
+      "source": "中小企业IT网",
+      "url": "https://www.cbismb.com/aicent/article/B9rtH2",
+      "published_time": "2026-07-03 11:08",
+      "perspectives": [
+        {
+          "stance": "官方发布与技术解读",
+          "summary": "微软 TypeScript 团队产品总监 Daniel Rosenwasser 在公告中强调，类型检查逻辑在结构上与 TypeScript 6.0 完全相同，所有性能收益完全来自原生代码执行和共享内存并行。-27.0 实现了解析、类型检查和代码生成的并行处理，其中解析和生成操作可跨文件独立执行。-1"
+        },
+        {
+          "stance": "性能实测与开发者视角",
+          "summary": "微软在 Bloomberg、Figma、Google、Slack、Vercel 等生产代码库上进行了预测试：VS Code 约 150 万行 TypeScript 代码编译时间从 77.8 秒降至 7.5 秒（提升 10.4 倍），TypeORM 从 17.5 秒降至 1.3 秒（提升 13.5 倍）。-42内存占用相比 JavaScript 编译器降低约一半。-42"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TypeScript 7.0 存在 API 兼容性缺口，工具链升级需谨慎",
+      "summary": "TypeScript 7.0 未包含程序化 API（programmatic API），该功能将在 7.1 版本中提供，意味着 typescript-eslint、ts-morph 及自定义编译器插件等工具在升级后将无法正常工作。",
+      "source": "byteiota",
+      "url": "https://byteiota.com/typescript-7-0-rc-go-compiler-cuts-build-times-by-90/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "技术分析与警告",
+          "summary": "微软提供了 npm 别名作为临时方案：在 package.json 中使用 typescript 指向 @typescript/typescript6 保持 6.0 API，同时单独安装 7.0 二进制用于编译。但并行运行两个版本存在复杂性，多数团队被建议等待 7.1 后再升级。-42"
+        },
+        {
+          "stance": "社区开发者视角",
+          "summary": "有开发者指出，TypeScript 6.0 中标记为废弃的特性在 7.0 中已变成硬错误，包括 target: es5 被移除、moduleResolution: node/node10 被移除、module: amd/umd/systemjs 被移除、baseUrl 被移除等，升级前需仔细审查 tsconfig 配置。-2"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "VS Code 全面迁移至 TypeScript 7，类型检查速度提升超 80%",
+      "summary": "VS Code 1.119 版本已全面采用 TypeScript 7 作为类型检查引擎，核心代码及所有内置扩展完成迁移。Copilot 扩展的类型检查时间从 22 秒降至 4 秒，性能提升达 82%。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/goxxj/p/20835265",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "开发者体验视角",
+          "summary": "这次升级几乎没有用户可见的界面变化，属于「幕后性能优化」。有开发者评论称，工具链速度的提升直接改善了编码心流体验，高频操作从 22 秒优化到 4 秒的长期价值远超一个炫酷但低频的新功能。-44"
+        },
+        {
+          "stance": "产品策略分析",
+          "summary": "分析认为微软选择在此时间点升级有两个原因：一是 TypeScript 7 生态兼容性已基本成熟；二是 AI 代理（Agent）功能需要快速类型检查支撑流畅的人机协作体验。-44"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "TypeScript 成 GitHub 最常用语言，Octoverse 2025 数据显示已超越 Python 和 JavaScript",
+      "summary": "根据 GitHub Octoverse 2025 报告，TypeScript 于 2025 年 8 月在贡献者活动指标上超越 Python 和 JavaScript，成为 GitHub 平台最活跃使用的语言。",
+      "source": "Syncfusion",
+      "url": "https://www.syncfusion.com/blogs/post/typescript-github-most-used-language",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "数据分析与解读",
+          "summary": "该排名反映的是 GitHub 平台活动信号，而非运行时执行量或代码总量。Python 和 JavaScript 并未衰退，只是增长速度相对放缓。这一趋势表明更多专业团队正选择 TypeScript 作为构建可扩展 JavaScript 应用的编写层。-34"
+        },
+        {
+          "stance": "行业趋势评论",
+          "summary": "TypeScript 的崛起与 AI 辅助编程工具的发展形成共振——类型系统为 AI 代码生成提供了更明确的上下文约束，降低了 AI 生成代码的错误率。同时，大型代码库的维护需求也推动了静态类型的普及。-34"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "TypeScript 类型系统图灵完备性引发社区深度讨论",
+      "summary": "掘金技术社区一篇热门文章指出 TypeScript 的类型系统本身是一个图灵完备的语言，能表达远超简单类型声明的计算。文章通过条件类型自动推断 API 响应结构等实战案例，展示了如何用高级类型在编译时消灭空指针错误。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7658102477074366502",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "技术深度分享",
+          "summary": "文章用 4 个真实项目场景展示了高级类型编程的工程价值，从条件类型做 API 响应推断到类型安全的路由映射，强调「类型体操不是炫技，而是把运行时错误提前到编译时消灭的工程实践」。-15"
+        },
+        {
+          "stance": "社区反响",
+          "summary": "该话题在中文技术社区引发广泛讨论，不少开发者表示从「声明式类型」到「类型编程」的认知转变显著提升了代码质量。也有观点认为过度使用高级类型可能降低代码可读性，需要在实际项目中权衡。-15"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "过去一周 TypeScript 社区最核心的关注焦点是 7.0 RC 的发布及其 Go 语言重写带来的性能革命，开发者整体情绪积极但夹杂谨慎——兴奋于 10 倍速度提升，同时对 API 兼容性缺口和破坏性变更保持警惕。VS Code 的率先迁移被视为生态成熟的信号，而 GitHub 语言排名登顶进一步强化了 TypeScript 作为主流开发语言的地位。",
+  "honesty_note": null,
+  "start_time": "2026-07-04 13:05",
+  "end_time": "2026-07-04 13:06",
+  "elapsed_seconds": 39,
+  "retry_count": 0
+}

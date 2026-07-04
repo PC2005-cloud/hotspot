@@ -1,0 +1,57 @@
+{
+  "keyword": "GitHub",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "GitHub 推出代码仓库刻录 CD-ROM 实体光盘服务，嘲讽索尼停产实体游戏",
+      "summary": "7 月 3 日，GitHub 宣布推出限量服务，允许开发者将公开代码仓库刻录成 CD-ROM 实体光盘并包邮到家，限量 1000 张--2。此举被普遍视为对索尼宣布 2028 年起停产 PlayStation 实体游戏光盘的嘲讽回应13。",
+      "source": "IT之家 / 搜狐 / Yahoo Tech",
+      "url": "https://www.sohu.com/a/1045784685_413980?scm=10008.1479_13-1479_13-68_68.0-4877001.0-1-0-0-0.0&spm=smpc.content-abroad.fd-d.100.1783154149638y0qJjtK&_trans_=060008_lym",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "支持与调侃",
+          "summary": "不少网友欣赏 GitHub 的幽默和怀旧情怀，官方文案写道：【留着它，借给朋友，还能传给你的孩子。你的代码在物理上永远属于你——直到你弄丢它】--2。活动时间为 7 月 2 日至 6 日，每人限领一张--5。"
+        },
+        {
+          "stance": "批评与质疑",
+          "summary": "部分开发者批评此举是在平台可靠性问题频发背景下的糟糕公关。数据显示 GitHub 从 2025 年 5 月至 2026 年 4 月发生 257 起事故，其中 48 次重大宕机与 AI 需求激增有关-5。AI 活动所需资源是传统开发者的 30 倍-5。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "GitHub 遭遇大规模恶意软件注入攻击，波及超 1 万个代码仓库",
+      "summary": "6 月 27 日凌晨，GitHub 平台遭遇大规模恶意攻击，黑客将恶意软件注入超过 1 万个受感染代码仓库-。安全研究人员紧急提醒开发者在拉取开源代码时需加强安全验证，防范供应链攻击风险。",
+      "source": "腾讯新闻",
+      "url": "https://view.inews.qq.com/a/20260627A01NCD00",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "安全预警",
+          "summary": "此次攻击规模巨大，开发者应警惕从受感染仓库拉取代码的风险，建议加强依赖项审查和安全验证流程，避免将恶意代码引入自身项目--10。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "GitHub 推出 License Compliance 公共预览版，防范开源许可证违规风险",
+      "summary": "7 月 2 日，GitHub 宣布推出 License Compliance 功能的公共预览版，帮助组织自动扫描新增依赖项的许可证合规性，避免因许可证违规引发法律纠纷和声誉损害。",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/07/02/github-license-compliance-feature/?utm_source=dlvr.it&utm_medium=wordpress",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "该功能面向 GitHub Advanced Security 客户，通过在 Pull Request 中自动标注许可证问题，帮助开发者及时发现并处理不合规依赖-26。GitHub 开源项目办公室已作为早期采用者切换至该工具-26。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 GitHub 热点呈现【AI 驱动增长与安全合规博弈】的双主线：一方面 Claude Fable 5 重返 Copilot 和 AI 编程需求激增推动平台爆发式增长；另一方面大规模恶意攻击、频发的宕机事件以及【代码光盘】营销引发的可靠性争议，反映出社区对平台安全与稳定性的深层焦虑。同时热榜趋势显示 AI 工程化已成为开发者社区最关注的方向。",
+  "honesty_note": "部分事件（如 6 月业绩创新高、微软求助 AWS 等）发生于 6 月中下旬，略超 7 天窗口但属同一话题的延续性背景信息，已酌情纳入舆情分析参考。搜索结果中未发现 GitHub 官方发布的新版本或重大产品更新（如 Enterprise Server 新版本）在 6 月 27 日至 7 月 4 日期间发布。",
+  "start_time": "2026-07-04 13:19",
+  "end_time": "2026-07-04 13:19",
+  "elapsed_seconds": 36,
+  "retry_count": 0
+}

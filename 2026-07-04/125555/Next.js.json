@@ -1,0 +1,79 @@
+{
+  "keyword": "Next.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Next.js 16.3 预览版正式发布：Instant Navigations 与 AI 原生开发成焦点",
+      "summary": "Vercel 于 6 月 26 日发布 Next.js 16.3 预览版-12，核心亮点为「Instant Navigations」让服务端渲染应用获得 SPA 级导航体验，以及多项 AI 开发支持强化。官方预计数周内发布稳定版。",
+      "source": "Next.js 官方博客",
+      "url": "https://nextjs.org/blog/next-16-3-ai-improvements",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "官方发布：AI 原生开发重构",
+          "summary": "Vercel 将 16.3 定位为面向 AI 智能体驱动开发设计的框架版本-11，新增 AGENTS.md 自动文档-11-12、First-party Skills-11、Agent Browser 与 React 自省-11、可操作错误提示-11等特性，并优化了 MCP 服务器-11。"
+        },
+        {
+          "stance": "技术分析：解决 App Router 最大痛点",
+          "summary": "16.3 的 Instant Navigations 直接回应了 App Router 推出以来最受诟病的问题——服务端导航卡顿-48。新方案通过 Stream with Suspense、use cache 缓存、Partial Prefetching 等机制，在保留 SSR 优势的同时实现接近 SPA 的响应速度-12。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Turbopack 内存占用最高降低 90%，持久构建缓存上线",
+      "summary": "Next.js 16.3 中 Turbopack 实现重大性能突破：开发服务器内存占用最高降低 90%，并引入持久文件系统构建缓存。Vercel 自家 vercel.com 仪表盘从 21.5GB 降至 2GB。",
+      "source": "byteiota",
+      "url": "https://byteiota.com/nextjs-16-3-turbopack-memory-build-cache/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "性能评测：解决长期内存泄漏顽疾",
+          "summary": "Turbopack 自推出以来因内存占用过高备受诟病，GitHub 上有数十个相关 issue，开发者不得不回退到 next dev --webpack-45。16.3 通过将缓存结果从内存驱逐至文件系统解决此问题-45，实测 nextjs.org 从 4.6GB 降至 840MB-45。"
+        },
+        {
+          "stance": "官方更新：构建缓存与 Rust React Compiler",
+          "summary": "16.3 将文件系统缓存从开发环境扩展至 next build-45，实测 vercel.com/geist 构建从 30 秒降至 5.5 秒-45。同时实验性引入 Rust 版 React Compiler，大型应用可获得 20-50% 编译速度提升-45。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Next.js 多版本高危安全漏洞披露：CVE-2026-44578 等 13 项安全公告",
+      "summary": "2026 年 5 月 Next.js 安全更新修复了 13 个漏洞-，涵盖 SSRF、认证绕过、XSS、DoS 等类型-。其中 CVE44578（WebSocket SSRF）影响 13.4.13 至 15.5.16 及 16.2.5 之前版本-。",
+      "source": "GitLab Advisories",
+      "url": "https://advisories.gitlab.com/pkg/npm/next/",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "安全公告：自托管部署风险极高",
+          "summary": "CVE-2026-44578 允许攻击者通过构造 WebSocket 升级请求实施 SSRF 攻击-，可暴露内部服务或云元数据端点。Vercel 托管部署不受影响，但自托管用户需升级至 15.5.18 或 16.2.6-。"
+        },
+        {
+          "stance": "社区关注：13.x 和 14.x 不再获得补丁",
+          "summary": "安全社区确认 Next.js 13.x 和 14.x 将不再获得安全补丁-。唯一完整修复方案是升级到 15.5.18 或 16.2.6-。GitHub 上已有 PoC 漏洞利用代码合集-，加剧了未升级项目的安全紧迫感。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Dan Abramov 以兼职身份加入 Next.js 团队",
+      "summary": "React 核心团队成员 Dan Abramov 宣布以兼职形式加入 Vercel 的 Next.js 团队。此消息在本周 React 社区引发广泛关注和讨论。",
+      "source": "DEV Community / This Week In React",
+      "url": "https://dev.to/sebastienlorber/this-week-in-react-288-nextjs-react-compiler-use-astryx-expo-visioncamera-windows-32e8",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "社区热议：React 与 Next.js 融合再加速",
+          "summary": "Dan Abramov 作为 React 团队最具影响力的开发者之一-48，其加入 Next.js 团队被视为 React 与 Next.js 生态进一步深度融合的信号，也印证了 Vercel 在 React 生态中的主导地位。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 Next.js 社区核心关注点高度集中于 16.3 预览版的「Instant Navigations」和 AI 原生开发特性，开发者普遍对 App Router 导航卡顿的解决抱有期待-4-48。Turbopack 内存占用的大幅优化获得积极反响-45。与此同时，5 月披露的多个高危安全漏洞（尤其是 CVE-2026-44578）持续引发自托管用户的升级焦虑-。整体舆情呈「性能与 AI 利好」与「安全合规压力」并存的态势。",
+  "honesty_note": null,
+  "start_time": "2026-07-04 13:22",
+  "end_time": "2026-07-04 13:22",
+  "elapsed_seconds": 48,
+  "retry_count": 0
+}

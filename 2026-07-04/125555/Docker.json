@@ -1,0 +1,65 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【Gitea act_runner容器逃逸漏洞CVE-2026-58053公开，CVSS 9.9分】",
+      "summary": "Gitea act_runner被曝容器逃逸漏洞（CVE58053），CVSS评分9.9，攻击者可利用Docker后端配置缺陷逃逸并以root身份控制宿主机，影响全球超11万个资产，POC已公开。",
+      "source": "奇安信CERT",
+      "url": "http://cn-sec.com/archives/5319776.html",
+      "published_time": "2026-07-04 12:47",
+      "perspectives": [
+        {
+          "stance": "【安全机构警告】",
+          "summary": "奇安信CERT监测到该漏洞，源于act_runner将工作流container.options传递给Docker容器HostConfig时安全加固被绕过，可创建具有主机命名空间的容器逃逸至宿主机，影响act_runner <= 0.262.0版本-2。"
+        },
+        {
+          "stance": "【社区与防御建议】",
+          "summary": "建议将act_runner升级至高于0.262.0版本，或限制可修改workflow的人员、对外部PR启用手动审批等临时措施降低风险-2-。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【微软发布WSL容器公测版，Windows原生运行Linux容器无需Docker Desktop】",
+      "summary": "微软7月1日发布WSL Container公共预览版，将Linux容器集成到WSL中，用户可通过wslc.exe命令直接构建、运行和管理容器，无需安装Docker Desktop。",
+      "source": "小众软件、IT之家",
+      "url": "https://www.appinn.com/windows-wsl-container-public-preview/",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【开发者欢迎】",
+          "summary": "开发者认为此举解决了Docker Desktop商业授权限制和磁盘占用问题（有用户反馈占用35GB），期待wslc成熟后替代Docker Desktop-。"
+        },
+        {
+          "stance": "【技术分析】",
+          "summary": "WSL容器提供wslc.exe CLI和原生Windows API（支持C/C++/C#），可将Linux容器直接集成到Windows应用中，并支持GPU直通-12。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "【Exclusive Networks成为Docker英国及爱尔兰分销合作伙伴】",
+      "summary": "Exclusive Networks与Docker宣布建立UKI地区分销合作关系，通过其合作伙伴网络提供Docker容器平台，帮助企业现代化应用环境。",
+      "source": "IT Brief UK",
+      "url": "https://itbrief.co.uk/story/exclusive-networks-becomes-docker-distribution-partner",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "【商业合作报道】",
+          "summary": "Docker借助Exclusive Networks在45+国家的渠道生态拓展UKI市场，合作涵盖Docker Hardened Images等安全产品-3。"
+        },
+        {
+          "stance": "【双方表态】",
+          "summary": "Exclusive Networks称将增强UKI组合中的现代化应用开发平台能力；Docker表示将加速平台在UKI地区的采用-3。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期Docker相关热点以「安全漏洞」和「平台生态变动」为主线。CVE-2026-58053容器逃逸漏洞引发高度关注，CVSS 9.9分与POC公开加剧了运维团队的紧迫感-1；微软WSL容器公测版被视为Docker Desktop的有力替代，社区反响积极-；Docker在英国拓展分销渠道显示其商业生态持续扩张-3。整体舆情呈现「安全焦虑」与「技术革新期待」并存的态势。",
+  "honesty_note": "近7天内Docker直接相关的重大事件集中在安全漏洞（CVE-2026-58053）和平台生态（微软WSL容器、Docker分销合作）两个方向。Docker 29.6.0发布于6月22日，略超7天窗口但仍在近期讨论范围内。DockerCon Barcelona（5月）和Athena联盟（6月15日）等事件已超出时间范围，未列入主列表。整体信息量适中，无明显的滞后或信息缺失问题。",
+  "start_time": "2026-07-04 13:01",
+  "end_time": "2026-07-04 13:02",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

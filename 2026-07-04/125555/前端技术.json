@@ -1,0 +1,101 @@
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "美团蚂蚁等大厂推动前后端合并，AI Coding重塑工程师分工",
+      "summary": "美团Keemart研发团队前后端正式合并，蚂蚁推动测试岗转型全栈。AI Coding普及下企业不再招「纯前端」，全栈能力成为标配，岗位边界加速消失。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3875531712786695",
+      "published_time": "2026-07-01 07:36",
+      "perspectives": [
+        {
+          "stance": "行业观察：岗位融合已成趋势",
+          "summary": "谷歌全栈应用工程师覆盖完整软件交付链路，字节「AI全栈工程师」职责已扩展至Agent编排、音视频底层等，纯前端岗位正在被重新定义-1。"
+        },
+        {
+          "stance": "开发者视角：能力要求全面升级",
+          "summary": "「只要会React就有机会面试的日子正在迅速离去」，开发者需要能处理后端API、理解数据库结构并独立完成端到端交付-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TypeScript 7.0 RC发布，Go重构版提速10倍",
+      "summary": "微软正式发布TypeScript 7.0 Release Candidate，基于Go语言重写，编译速度约为6.0的10倍，支持解析、类型检查、代码生成等多步骤并行执行。",
+      "source": "InfoWorld / JWeasyTech",
+      "url": "https://jweasytech.com/2026/07/02/typescript-7-0-reaches-release-candidate-stage/",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "官方发布：性能革命",
+          "summary": "得益于原生代码速度和共享内存并行，TS 7.0在大型代码库中自动扩展并行能力，开发者可通过 npm install -D typescript@rc 获取-24。"
+        },
+        {
+          "stance": "社区反响：里程碑式升级",
+          "summary": "开发者称TS 7.0「感觉像一次重大变革」，Go重写带来的速度提升将对几乎所有现代JavaScript项目产生深远影响-。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Google发布A2UI v0.9：AI生成UI的框架无关标准",
+      "summary": "Google推出A2UI v0.9，一种让AI Agent声明UI意图并在Web、移动、桌面原生渲染的标准，无需传输任意代码，同时发布官方React渲染器与Agent SDK。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/07/google-a2ui-genui/",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "技术解读：生成式UI新范式",
+          "summary": "核心哲学转变：Agent应使用应用现有设计系统的语言，而非自创组件。v0.9非小幅更新，JSON结构与Schema均重构，协议变为双向-11。"
+        },
+        {
+          "stance": "开发者关注：多框架支持",
+          "summary": "除React外，Flutter、Lit、Angular渲染器同步更新，支持MCP、WebSocket、REST、AG-UI及A2A 1.0多种传输方式-11。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "苹果Safari技术预览版247引入MCP服务，AI Agent可调试网页",
+      "summary": "苹果在Safari技术预览版247中引入MCP服务器支持，编程Agent可检查网页、访问控制台日志、抓取截图并与页面元素交互，加速调试与性能分析。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/971/411.htm",
+      "published_time": "2026-07-02 08:04",
+      "perspectives": [
+        {
+          "stance": "苹果官方：AI赋能浏览器调试",
+          "summary": "MCP是开放标准，用于AI Agent连接外部工具与服务。配置后Agent可检查网页、访问控制台和网络请求、抓取截图并交互-58。"
+        },
+        {
+          "stance": "开发者解读：浏览器原生AI能力落地",
+          "summary": "Safari成为首个原生支持MCP的主流浏览器，为AI驱动的网页开发和调试开辟新路径，WebMCP等底层协议也正在同步推进-。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "阿里开源Page Agent：让大模型直接操控DOM",
+      "summary": "阿里巴巴开源Page Agent，一款在页面内部直接运行的JS库，通过「DOM脱水」技术将DOM结构转为轻量文本映射，让LLM无需多模态视觉即可精准操控网页。",
+      "source": "站长之家 / 淘宝官方学习中心",
+      "url": "https://www.chinaz.com/ainews/29352.shtml",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "项目亮点：颠覆浏览器自动化",
+          "summary": "无需Selenium/Playwright等外部工具，直接嵌入页面运行，继承用户Cookie与会话，支持任意兼容OpenAI接口的LLM-66。"
+        },
+        {
+          "stance": "技术边界：安全与场景限制",
+          "summary": "目前聚焦单页面交互，高风险操作仍需服务端校验。MIT协议开源，适合SaaS内AI副驾、自动化表单等场景-66。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7日前端技术圈最突出的趋势是「AI全面渗透」：从AI改写大厂工程师分工、TS 7.0提速、A2UI/AI生成UI标准，到Safari引入MCP、阿里Page Agent开源，AI已深度融入工具链、框架、浏览器和岗位定义。社区情绪呈现「兴奋与焦虑并存」——对效率提升充满期待，同时对岗位重构与技术碎片化深感不安。",
+  "honesty_note": null,
+  "start_time": "2026-07-04 13:12",
+  "end_time": "2026-07-04 13:13",
+  "elapsed_seconds": 47,
+  "retry_count": 0
+}

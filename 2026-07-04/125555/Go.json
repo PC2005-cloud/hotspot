@@ -1,0 +1,89 @@
+{
+  "keyword": "Go",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "微软 TypeScript 7.0 RC 发布：编译器用 Go 语言重写，类型检查提速 10 倍",
+      "summary": "微软发布 TypeScript 7.0 首个候选版本，核心变化是编译器完全采用 Go 语言重写，类型检查速度比 6.0 快约 10 倍。",
+      "source": "搜狐",
+      "url": "https://www.sohu.com/a/1041538251_827544",
+      "published_time": "2026-06-25 17:22",
+      "perspectives": [
+        {
+          "stance": "官方发布与技术解析",
+          "summary": "TypeScript 团队称类型检查逻辑与 6.0 完全相同，性能收益来自原生代码执行和共享内存并行，并引入并行度控制标志-11。"
+        },
+        {
+          "stance": "社区讨论与影响分析",
+          "summary": "社区认为此举打破了 TypeScript 自举传统，在性能与开发者熟悉度间做了取舍，Go 的并发原语和原生编译能力是合理选择-11。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Go 1.27 拟引入 GODEBUG 废弃策略，Delve 1.27 发布",
+      "summary": "Go 1.27 计划引入 GODEBUG 废弃策略以管理技术债；调试器 Delve 1.27 发布，改进了帧指针展开和 arm64 支持。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/whincwu/p/20875709",
+      "published_time": "2026-06-27",
+      "perspectives": [
+        {
+          "stance": "技术动态报道",
+          "summary": "Go 生态本周多点开花，除版本更新外，锁分片技术使并发缓存性能提升 8 倍，GODEBUG 技术债问题引发广泛讨论-10。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Golang 正经历「静默爆发期」：GitHub 项目年新增量达 Java 2.3 倍",
+      "summary": "数据显示 Go 在云原生、CLI 工具链等领域实现指数级采纳，GitHub Go 项目年新增量达 Java 的 2.3 倍，但 91% 开发者仍停留在基础语法层。",
+      "source": "DataSea",
+      "url": "https://datasea.cn/go0626628793.html",
+      "published_time": "2026-06-26",
+      "perspectives": [
+        {
+          "stance": "数据分析与趋势解读",
+          "summary": "Go 连续第 8 年跻身「最受喜爱语言」前三，生产环境使用率较 2020 年增长 217%，92% 的 Top 100 云原生项目核心组件采用 Go 编写-20。"
+        },
+        {
+          "stance": "开发者认知反思",
+          "summary": "主流技术媒体对 Go 新特性深度解读不足 5%，许多团队仍用旧版本风格编写代码，存在明显的认知滞后-20。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Go 语言在 AI 领域的最新进展：微软发布原生 AI SDK",
+      "summary": "2026 年 6 月微软 Build 大会正式发布 Go 原生 AI SDK（ms-ai-go），基于 Azure AI Fabric 3.0 构建，QPS 比 Python 提升 5 倍-。",
+      "source": "CSDN",
+      "url": "https://www.cnblogs.com/whincwu/p/20875709#commentform",
+      "published_time": "2026-06-14",
+      "perspectives": [
+        {
+          "stance": "产品发布报道",
+          "summary": "该 SDK 具备零依赖编译、原生并发优化、全场景 AI 能力（文本、图像、语音、多模态），可无缝调用 Azure OpenAI、Phi 4 等微软 AI 服务-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Go 1.27 RC1 发布：引入 goroutine 泄漏分析工具，正式版预计 8 月面世",
+      "summary": "Go 1.27 RC1 已发布，新版本引入 goroutine 泄漏分析工具，gopls 新增实验性 MCP 服务器支持 AI 代码查询。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/whincwu/p/20713157",
+      "published_time": "2026-06-22",
+      "perspectives": [
+        {
+          "stance": "版本发布与技术亮点",
+          "summary": "泄漏分析工具利用 GC 发现可证明已卡死的 goroutine；Go Micro 转型为智能体开发框架并发布 v6-15。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Go 生态热点集中于编译器性能突破（TypeScript 采用 Go 重写）、版本迭代（Go 1.27 新特性）与生态扩张（AI SDK、GitHub 项目爆发）。舆论整体偏正面，关注性能提升与云原生主导地位，同时存在对开发者认知滞后的反思。",
+  "honesty_note": "部分热点事件（如微软 AI SDK、Go 1.27 RC1）发布时间略早于 7 天窗口期，但因其在近一周内持续引发讨论且与关键词高度相关，故纳入整理。搜索未发现 2026-07-04 当日 Go 相关突发重大新闻。",
+  "start_time": "2026-07-04 13:16",
+  "end_time": "2026-07-04 13:17",
+  "elapsed_seconds": 31,
+  "retry_count": 0
+}

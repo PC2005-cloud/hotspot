@@ -1,0 +1,65 @@
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Anthropic被曝在Claude Code中暗藏针对中国用户的「监视代码」",
+      "summary": "Reddit开发者逆向分析发现，Claude Code自4月2日的v2.1.91版本起内置隐蔽检测代码，通过读取系统时区、代理域名判断是否与中国相关，并改写日期字符回传标记，已存在近三个月2。",
+      "source": "太平洋科技",
+      "url": "http://g.pconline.com.cn/x/2178/21781220.html",
+      "published_time": "2026-07-02 08:02",
+      "perspectives": [
+        {
+          "stance": "【开发者爆料】",
+          "summary": "Reddit用户LegitMichel777在逆向Claude Code v2.1.196时发现隐藏代码，称其为「间谍软件」，指出代码会检测中国时区及代理域名，通过修改系统提示词中的日期字符进行隐蔽标记-1-3。"
+        },
+        {
+          "stance": "【Anthropic官方回应】",
+          "summary": "Claude Code团队工程师Thariq Shihipar在X平台承认机制存在，称系2026年3月启动的「实验性」反滥用措施，目的为防止账号转售和模型蒸馏，已在7月1日发布版本中回滚-3-16。"
+        },
+        {
+          "stance": "【舆论质疑】",
+          "summary": "开发者社区普遍质疑：若仅用于反滥用，为何需要读取本地时区和代理地址并以用户不可见的方式打标？且关键词集中指向中国云厂商和AI公司，未事先披露违背「透明可信」原则-3-4。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "阿里巴巴因安全风险全面禁用Claude Code及Anthropic全系产品",
+      "summary": "7月3日，阿里内部通知自7月10日起全员卸载Anthropic相关产品（包括Claude Code、Sonnet、Opus、Fable等），办公网络全面拦截，推荐使用自研Qoder替代。",
+      "source": "界面新闻",
+      "url": "https://news.qq.com/rain/a/20260703A07DR700",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "【企业安全决策】",
+          "summary": "阿里经综合评估后认定Claude Code存在植入后门的安全风险，将其列入高风险软件名单，禁令覆盖全系Anthropic产品--。"
+        },
+        {
+          "stance": "【专家分析】",
+          "summary": "天使投资人、AI专家郭涛分析称，此次禁用是兼顾数据安全、合规风控与自主化转型的战略性决策，而非单纯的技术工具取舍-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code Artifacts企业级功能下放至Pro和Max个人用户",
+      "summary": "Anthropic官宣Claude Code的Artifacts功能正式向Pro（$20/月）和Max用户开放，该功能可将终端对话实时生成可交互、可分享的网页，此前仅限Team和企业版13。",
+      "source": "新智元",
+      "url": "https://www.sohu.com/a/1045103572_122014422",
+      "published_time": "2026-07-03 09:25",
+      "perspectives": [
+        {
+          "stance": "【产品动态】",
+          "summary": "Artifacts功能让Claude Code在会话中自动将工作进展发布为托管网页，随AI推进实时刷新，覆盖代码审计、团队周报、事故调查等多种场景-11-13。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前Claude Code舆情高度聚焦「监视代码」安全事件，开发者社区对Anthropic信任度大幅下滑，质疑其「透明可信」承诺-4。阿里禁用引发行业对AI编程工具供应链安全的广泛讨论-。与此同时，Artifacts功能下放等产品更新仍获积极关注，形成「安全争议」与「功能好评」并存的复杂舆论格局。",
+  "honesty_note": "搜索结果中部分热点（如计费错误事件）发生在6月27日，在时间范围内但热度相对较低；部分GitHub Issue和社区讨论虽相关但缺乏主流媒体报道，未列入主列表。所有url均来自搜索结果原始链接，无杜撰拼接。",
+  "start_time": "2026-07-04 13:06",
+  "end_time": "2026-07-04 13:07",
+  "elapsed_seconds": 41,
+  "retry_count": 0
+}

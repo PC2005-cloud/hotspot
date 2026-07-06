@@ -1,0 +1,123 @@
+{
+  "keyword": "OpenAI",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "OpenAI提议向美国政府出让5%股权 估值超400亿美元",
+      "summary": "OpenAI正与特朗普政府初步谈判，拟转让约5%公司股权给美国政府，按8520亿美元估值计算价值约426亿美元，旨在缓解监管压力并探索AI产业收益公共分配机制。",
+      "source": "36氪、网易、纬来新闻网",
+      "url": "https://36kr.com/p/3883443776172037",
+      "published_time": "2026-07-05 17:51",
+      "perspectives": [
+        {
+          "stance": "【商业战略视角】用股权换监管松绑",
+          "summary": "奥特曼的核心论点是让公众持有AI公司股权是分享AI红利的最佳方式，建议所有美国主要AI公司都加入同一安排-3。该方案参照阿拉斯加永久基金模式，让普通公民从AI增长中获益-3。"
+        },
+        {
+          "stance": "【公共政策视角】5% vs 50%的路线之争",
+          "summary": "参议员桑德斯主张公众应通过主权财富基金持有AI公司接近一半的股权，而奥特曼的5%方案仅是一种利益分享姿态，控制权仍牢牢握在公司手中-3。"
+        },
+        {
+          "stance": "【行业影响视角】改写AI行业权力格局",
+          "summary": "该提议若推行将开创AI产业与政府合作新典范-5。但要求竞争对手集体让利的提案执行难度极大，目前无证据显示其他公司有兴趣参与-3。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "GPT-5.6系列模型受限发布 仅向美国少数合作伙伴开放",
+      "summary": "6月26日OpenAI发布GPT.6系列（旗舰Sol、中端Terra、轻量Luna），应特朗普政府要求仅向美国少数可信合作伙伴提供预览，未向公众全面开放-。",
+      "source": "The Hindu、澎湃新闻",
+      "url": "https://www.thehindu.com/sci-tech/technology/openai-restricts-limited-release-of-new-model-to-us-only/article71159948.ece",
+      "published_time": "2026-06-29 09:29",
+      "perspectives": [
+        {
+          "stance": "【监管视角】国家安全驱动的模型出口管制",
+          "summary": "白宫此前已下令Anthropic禁止外国人访问Fable 5和Mythos 5模型，理由是国家安全关切。GPT-5.6在代码漏洞识别等方面的能力引发监管忌惮-10。"
+        },
+        {
+          "stance": "【企业视角】OpenAI对政府介入表示不适",
+          "summary": "OpenAI表示「不相信这种政府准入流程应成为长期默认模式」，称这「让最好的工具远离需要它们的用户」。奥特曼曾告诉员工不喜欢美国政府「挑选客户」的做法-。"
+        },
+        {
+          "stance": "【产业视角】国产AI迎来替代红利期",
+          "summary": "海外顶尖模型受限释放市场真空，企业将更关注模型的合规性和稳定性，能力稍弱但合规的本土化模型商业价值可能超过顶尖但随时可能断供的海外模型-10。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI Scaling Law原始论文被曝存在致命bug",
+      "summary": "前OpenAI研究员Diogo Almeida发文指出2020年Scaling Law原始论文存在bug，导致全球AI产业在「体量过大、训练不足」的模型上白白烧掉海量算力。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3883301202440198",
+      "published_time": "2026-07-06 07:50",
+      "perspectives": [
+        {
+          "stance": "【学术质疑视角】Scaling Law从一开始就错了",
+          "summary": "DeepMind研究员Sander Dieleman称原始scaling law因bug而错，害得业界在一堆「体量过大、训练不足」的模型上白白烧掉海量算力-45。"
+        },
+        {
+          "stance": "【行业反思视角】「堆参数」信仰崩塌",
+          "summary": "2020年OpenAI告诉业界「把模型做大」，GPT-3因此堆到1750亿参数-45。但后续DeepMind的Chinchilla证明模型和数据应同等重要地放大-45。所谓Scaling Law从来就不是铁打的物理规律，只是一条经验拟合曲线-45。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI确认秘密递交IPO申请 目标估值1万亿美元",
+      "summary": "OpenAI已于6月向SEC秘密递交S招股草案，倾向2027年上市，目标估值1万亿美元-。微软持有OpenAI约27%股份，投资时估值约1350亿美元-。",
+      "source": "投资界、Investing.com",
+      "url": "https://www.163.com/dy/article/L12QCQNU05568W0A.html?referFrom=",
+      "published_time": "2026-07-06",
+      "perspectives": [
+        {
+          "stance": "【市场视角】史上最大规模科技IPO之一",
+          "summary": "OpenAI在2026年3月私募融资中估值8520亿美元，已是全球估值最高的未上市科技企业-。IPO目标估值1万亿美元或更高-。"
+        },
+        {
+          "stance": "【投资者视角】政府持股改变投资逻辑",
+          "summary": "有分析指出，若IPO前政府持股5%，将实质性改变投资者计算方式-。微软作为最大股东有望成为最大赢家-。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Palantir CEO公开指控OpenAI等AI公司双重收费且窃取数据",
+      "summary": "Palantir CEO Alex Karp公开指责OpenAI、Anthropic等前沿AI公司不仅收取用户高额Token费用，还窃取客户数据用于训练模型。",
+      "source": "新浪财经",
+      "url": "https://k.sina.cn/article_1826017320_6cd6d02804001nnzq.html",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【指控方视角】代币定价是「认罪声明」",
+          "summary": "Karp称如果模型真有声称的生产力提升，AI公司会选择股权或分成利润而非按代币收费-46。代币定价本身证明产品无法在规模上产生可靠价值-46。"
+        },
+        {
+          "stance": "【行业视角】企业数据正被「反哺」给竞争对手",
+          "summary": "Karp警告每一家企业将机密数据输入前沿模型，都可能是在教那个模型如何取代他们-46。客户相信自己「被征税却无益处，被监视却无同意，被复制却无救济」-46。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "惠普与OpenAI达成战略合作 全面部署Frontier平台",
+      "summary": "惠普宣布与OpenAI达成战略合作，全方位部署OpenAI Frontier平台，加速企业转型并提升客户体验。",
+      "source": "上海证券报",
+      "url": "https://www.cnstock.com/commonDetail/735505",
+      "published_time": "2026-06-29 11:01",
+      "perspectives": [
+        {
+          "stance": "【企业合作视角】Frontier从试点扩展至企业级部署",
+          "summary": "惠普表示Frontier平台对于建立全天候自助服务、修复关键漏洞、工作流程自动化等大有裨益-13。惠普是首批采用Frontier的企业之一-13。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前OpenAI相关舆情呈现「监管与上市」双主线：5%股权换监管松绑的提议引发关于AI财富分配与产业控制权的激烈辩论；IPO进程与GPT-5.6发布动向备受资本市场关注。同时Scaling Law被曝bug、版权诉讼扩大等负面舆情叠加，公众情绪呈现对AI巨头权力集中的警惕与对技术突破的期待并存态势。",
+  "honesty_note": null,
+  "start_time": "2026-07-06 02:03",
+  "end_time": "2026-07-06 02:04",
+  "elapsed_seconds": 53,
+  "retry_count": 0
+}

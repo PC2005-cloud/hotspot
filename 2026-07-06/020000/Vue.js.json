@@ -1,0 +1,79 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【Vue&ViteConf 2026 即将在上海举办，尤雨溪将发表主题演讲】",
+      "summary": "Vue&ViteConf 2026 定于 7 月 18 日在上海举行。Vue.js 与 Vite 作者尤雨溪将出席并发表主题演讲--1。本次大会已确定 11 位嘉宾，将围绕 Vue 与 Vite 核心生态演进、AI Agent 与开发者工具等主线展开2。",
+      "source": "稀土掘金",
+      "url": "https://juejin.cn/post/7649976264929214516",
+      "published_time": "2026-06-11 00:00",
+      "perspectives": [
+        {
+          "stance": "【官方/社区综合报道】",
+          "summary": "大会聚焦 AI 时代下前端框架与工具链的重新设计--1，探讨 Vapor Mode、Rolldown 内存优化、Vite Task 缓存、小程序工程化、AI 工具开发等前沿话题--2。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【Vue 3.6 持续迭代，Vapor Mode 进入 Beta 阶段】",
+      "summary": "Vue 3.6 仍在积极开发中，最新预发布版为 3.6.0-beta.17（6月24日发布）。Vapor Mode 作为其最大亮点，通过跳过虚拟 DOM、直接操作真实 DOM，实现内存砍半、性能媲美 SolidJS 与 Svelte 5-31。",
+      "source": "VersionLog",
+      "url": "https://versionlog.com/vuejs/3.6/",
+      "published_time": "2026-06-24 00:00",
+      "perspectives": [
+        {
+          "stance": "【技术分析】",
+          "summary": "Vapor Mode 是可选编译策略，可对性能敏感组件渐进式启用-31。3.6 Beta 重点修复了水合、KeepAlive、Teleport 等边缘 case，提升了 SSR 场景的可靠性-16。"
+        },
+        {
+          "stance": "【社区期待】",
+          "summary": "Vapor Mode 被视为 Vue 在编译时优化赛道的关键落子，标志着其正式加入「无虚拟 DOM」的框架演进浪潮-31。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "【尤雨溪回应「Vue 在国际上越来越没影响力」质疑】",
+      "summary": "针对知乎上「为什么 Vue 在国际上越来越没影响力？」的热议，尤雨溪近日亲自下场回应-。此前 VoidZero 被 Cloudflare 收购时，也有网友担忧 Vue 未来发展，尤雨溪明确表示「Vue 和收购无关，不仅不受影响，而且还会活的更好」。",
+      "source": "知乎 / 新浪财经",
+      "url": "https://finance.sina.cn/2026-06-06/detail-iniamtiw7702674.d.html?vt=4",
+      "published_time": "2026-06-06 00:00",
+      "perspectives": [
+        {
+          "stance": "【尤雨溪回应】",
+          "summary": "Vue 的 npm 下载量并未下降，所谓「没影响力」缺乏数据支撑-；Vue 和 VoidZero 收购无关，工具链继续开源中立、社区主导-30。"
+        },
+        {
+          "stance": "【社区讨论】",
+          "summary": "部分开发者认为 Vue 在国际市场的声量确实弱于 React，但其在国内新增项目采用率已超 55%，占据绝对主导地位-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【2026 前端框架格局：React 领先，Vue 稳居第二梯队头部】",
+      "summary": "Stack Overflow 2025 开发者调查显示，React 使用率 44.7% 居首，Angular 18.2%，Vue.js 17.6%，Svelte 7.2%-。业界普遍认为「框架战争」已结束，各框架在细粒度响应式、SSR、编译时优化等技术方向上趋于趋同。",
+      "source": "今日头条",
+      "url": "https://m.toutiao.com/article/7649325420353028627/",
+      "published_time": "2026-06-09 00:00",
+      "perspectives": [
+        {
+          "stance": "【行业分析】",
+          "summary": "2026 年选框架不再看「谁更好」，而是看「团队匹配度」和「项目需求」-5。Vue 3 以低学习门槛、高文档质量和渐进式架构，在中小企业市场占据优势-。"
+        },
+        {
+          "stance": "【开发者视角】",
+          "summary": "Vue 3 的组合式 API 让日常开发体验更流畅-，其在国内新增项目中的采用率已超 React-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Vue.js 生态热度集中于技术演进与社区信心两大主线。Vue 3.6 Vapor Mode 的 Beta 推进引发开发者对性能优化的高度期待-31-16；Vue&ViteConf 2026 的临近也带动了社区对 AI 时代前端工具链的讨论--1。同时，围绕 Vue 国际影响力及 VoidZero 收购后的发展走向，社区存在一定讨论，但尤雨溪的正面回应有效稳定了开发者信心-30。整体情绪偏积极，技术前瞻性话题占据主流。",
+  "honesty_note": "本次搜索范围内（2026-06-29 至 2026-07-06），关于 Vue.js 的爆炸性突发新闻较少，热点主要集中在本月即将举办的大会预告、框架版本迭代的技术讨论，以及此前收购事件的延续性话题。最近 24-48 小时内（7月4日至6日）的热点以技术文章为主-，缺乏高热度社区争议事件。以上 5 条热点均为本时间段内最相关的资讯。",
+  "start_time": "2026-07-06 02:16",
+  "end_time": "2026-07-06 02:16",
+  "elapsed_seconds": 37,
+  "retry_count": 0
+}

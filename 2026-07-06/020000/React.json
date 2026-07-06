@@ -1,0 +1,83 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Meta 将 React 捐赠给 Linux 基金会，React 基金会正式成立",
+      "summary": "Meta 宣布将 React、React Native 及 JSX 迁移至新成立的 React 基金会，并纳入 Linux 基金会体系，标志着 React 生态进入社区化治理新阶段。",
+      "source": "OSCHINA",
+      "url": "https://www.oschina.net/comment/news/376340",
+      "published_time": "2026-07-06 前后（近期广泛讨论）",
+      "perspectives": [
+        {
+          "stance": "社区与开发者视角",
+          "summary": "此举旨在消除单一公司主导的顾虑，确保项目长期健康发展。基金会由 Amazon、Microsoft、Vercel 等七家创始成员组成，Meta 承诺五年内提供 300 万美元资金支持-1-3。"
+        },
+        {
+          "stance": "技术治理视角",
+          "summary": "基金会将商业治理与技术治理分离，技术决策仍由核心维护者与社区主导，保持项目独立性与透明度-3。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "React 19 稳定版功能详解与编译器变革",
+      "summary": "React 19 稳定了 Actions 模型、引入 useOptimistic 和 use() Hook，同时 React Compiler（原 React Forget）实现自动记忆化，有望终结手动 useMemo。",
+      "source": "DEV Community",
+      "url": "https://dev.to",
+      "published_time": "2026-07-05",
+      "perspectives": [
+        {
+          "stance": "开发者体验视角",
+          "summary": "React Compiler 在构建时自动缓存未变化的组件和值，开发者可删除大量 useMemo 和 useCallback，代码更简洁-42。"
+        },
+        {
+          "stance": "生产实践视角",
+          "summary": "有开发者表示在生产环境中仅采用能解决实际 bug 或 UX 卡顿的子集功能，等待生态完善后再全面升级-41。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "React Router 与 Remix 发布重要安全补丁，多个 CVE 漏洞被披露",
+      "summary": "React Router v7 多个版本存在 CSRF 绕过、开放重定向和 XSS 漏洞（CVE53663、CVE40181 等），官方及社区敦促用户立即更新。",
+      "source": "This Week In React",
+      "url": "https://thisweekinreact.com",
+      "published_time": "2026-07-06 前后",
+      "perspectives": [
+        {
+          "stance": "安全应急视角",
+          "summary": "React Router 7.12.0 至 7.15.1 版本中 CSRF 检查在 PUT/PATCH/DELETE 请求上被绕过，7.0.0 至 7.14.0 存在开放重定向漏洞-。"
+        },
+        {
+          "stance": "开发者应对视角",
+          "summary": "使用 Framework Mode 或 RSC API 的应用受影响较大，建议立即升级到已修复版本（7.13.2 及以上）-。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "TanStack Start 获 2026 开源大奖，全栈 React 框架受关注",
+      "summary": "TanStack Start 赢得 2026 年度开源项目奖，该框架基于 TanStack Router，提供 SSR、流式渲染、服务端函数等全栈能力-。",
+      "source": "TanStack Blog",
+      "url": "https://tanstack.com",
+      "published_time": "2026-06-22",
+      "perspectives": [
+        {
+          "stance": "框架对比视角",
+          "summary": "TanStack Start 被定位为 Next.js 的轻量替代方案，提供更明确的控制和端到端类型安全，适合不依赖 RSC 的项目-。"
+        },
+        {
+          "stance": "生态演进视角",
+          "summary": "Vercel 已官方介绍 TanStack Start，显示其在全栈 React 生态中逐渐获得主流认可-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期 React 生态热点集中于「治理中立化」（迁入 Linux 基金会）与「技术革新」（Rust 重写编译器、React 19 自动记忆化）两大主线，社区情绪整体积极，但对安全漏洞（React Router 多个 CVE、RSC DoS）保持高度警惕，敦促开发者尽快升级--5。",
+  "honesty_note": "部分热点事件的原始发布时间略早于 7 天窗口（如 Rust 编译器合并为 6 月 16 日、TanStack Start 获奖为 6 月 22 日），但相关讨论在 06 月 29 日至 07 月 06 日期间持续发酵并形成高热度。React 19 功能解读（07 月 05 日）和安全漏洞提醒（07 月 06 日）符合近 24-48 小时要求。React Native 0.86 已于 6 月 9 日发布，近期无重大版本更新-。",
+  "start_time": "2026-07-06 02:20",
+  "end_time": "2026-07-06 02:22",
+  "elapsed_seconds": 95,
+  "retry_count": 1
+}

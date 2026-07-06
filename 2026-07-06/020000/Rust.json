@@ -1,0 +1,101 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rust 首次跻身 TIOBE 编程语言排行榜前十",
+      "summary": "2026年7月TIOBE指数显示，Rust以1.34%的评分首次进入榜单前十，位列第10，成为本月最大亮点。其人气攀升源于内存安全特性，被视为C/C++的直接竞品。",
+      "source": "Linuxeden",
+      "url": "http://www.linuxeden.com/a/162505",
+      "published_time": "2026-07-06",
+      "perspectives": [
+        {
+          "stance": "行业分析",
+          "summary": "Rust首次进入TIOBE前十是其发展历程的里程碑，核心驱动力是在保障极致性能的同时从语言底层实现内存安全，被普遍视为C和C++的直接竞品-1。"
+        },
+        {
+          "stance": "开发者社区",
+          "summary": "社区普遍认为这是Rust长期积累的成果，但TIOBE指数反映的是市场流行度而非语言优劣，开发者仍需根据具体场景选择语言-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "生存沙盒游戏《Rust》推出「Common Ground」大型改版",
+      "summary": "Facepunch Studios于7月正式为生存沙盒游戏《Rust》推出「Common Ground」大型更新，引入公寓租赁、玩家商店、氏族系统重塑等全新机制。",
+      "source": "Ludens Media",
+      "url": "https://www.ludens.com.tw/rust-common-ground-update-apartment-system/",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "游戏媒体",
+          "summary": "此次更新打破了以往只能「野外盖房」的逻辑，引入公寓大厦系统和店铺运营机制，同时加入「抄家时间」限制，对上班族玩家更加友好-2。"
+        },
+        {
+          "stance": "玩家社群",
+          "summary": "公寓系统和租赁机制让玩家体验从「生存」转向「经营」，氏族系统升级和软核模式优化获得大量好评，但也有玩家对租金机制表示担忧-2-。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI 以 60 万美元成为 Rust 基金会白金赞助商",
+      "summary": "Rust基金会宣布OpenAI成为白金级赞助商，年费32.5万美元外加一次性27.5万美元捐赠，合作总额达60万美元。",
+      "source": "C114通信网",
+      "url": "https://www.c114.net.cn/chipnews/91761.html",
+      "published_time": "2026-07-06（55分钟前）",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "Rust基金会欢迎OpenAI成为白金会员，此前微软、谷歌等科技巨头也已向基金会提供捐赠，以支持Rust语言的发展-8-。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "OpenAI的大额赞助标志着AI巨头对Rust在AI基础设施领域价值的认可，与LiteLLM等AI项目用Rust重写的趋势形成呼应-6。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Rust 1.96.1 点版本发布，修复多个安全漏洞",
+      "summary": "Rust团队于6月30日发布1.96.1点版本，修复了Cargo HTTP客户端缺少重试机制、MIR优化错误编译以及CVE15661等三个安全漏洞。",
+      "source": "至顶网",
+      "url": "https://soft.zhiding.cn/software_zone/2026/0703/3192393.shtml",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "1.96.1修复了Cargo、MIR及libssh2的多个问题，建议所有用户通过rustup update stable升级-13。"
+        },
+        {
+          "stance": "安全社区",
+          "summary": "此次更新修复的三个CVE漏洞（CVE-2025-15661、CVE-2026-55199、CVE-2026-55200）已被纳入多个Linux发行版的安全更新中-。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "AI 基础设施「去 Python 化」：LiteLLM 用 Rust 重写核心网关",
+      "summary": "LiteLLM宣布用Rust重写核心AI网关，延迟从7.5ms降至0.05ms（150倍提升），吞吐量提升15倍，内存占用降低11倍。",
+      "source": "腾讯云开发者社区",
+      "url": "https://cloud.tencent.com.cn/developer/article/2703589",
+      "published_time": "2026-07-06",
+      "perspectives": [
+        {
+          "stance": "技术分析",
+          "summary": "Rust在AI管道层的优势明显：无GC、内存分配确定性、编译产物为单二进制文件，完美命中AI网关高频低延迟的需求-6。"
+        },
+        {
+          "stance": "行业趋势",
+          "summary": "LiteLLM不是个案，Claude Code生态、AgentMemory等AI基础设施项目均在用Rust优化，Python正被系统性替代-6。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "Rust近期热度持续攀升：TIOBE首进前十引发行业关注，AI基础设施「去Python化」趋势下Rust成为性能优化的首选语言；OpenAI大额赞助和LiteLLM迁移案例进一步强化了Rust在AI领域的战略地位。同时，社区对crustc等硬核项目和内存放大漏洞等安全问题也保持高度关注，整体舆情积极向好。",
+  "honesty_note": null,
+  "start_time": "2026-07-06 02:06",
+  "end_time": "2026-07-06 02:07",
+  "elapsed_seconds": 46,
+  "retry_count": 0
+}

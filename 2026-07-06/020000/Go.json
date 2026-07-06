@@ -1,0 +1,99 @@
+{
+  "keyword": "Go",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "欧盟通报谷歌DMA调查初步结果 谷歌现算力缺口紧急扩容",
+      "summary": "欧盟委员会已就《数字市场法案》向谷歌通报初步调查结果，公司需在7月27日前敲定最终合规规则；同时谷歌因算力供给不足限制Meta等客户使用Gemini大模型，正紧急租用SpaceX算力资源扩容。",
+      "source": "经济观察网",
+      "url": "https://jg-static.eeo.com.cn/article/info?id=9b3d1d877f634a979ce86e816fbc3bd0",
+      "published_time": "2026-07-06 04:51",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "谷歌收到欧盟DMA初步调查结果，需在7月27日前完成合规规则制定；同时因Gemini大模型算力不足紧急租用SpaceX算力资源扩容-2。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "字节跳动开源Go Agent框架Eino，10K+ Stars填补「Go无LangChain」空白",
+      "summary": "字节跳动CloudWeGo团队开源Eino——一个Go-first的LLM应用开发框架，GitHub Stars已突破10K。Eino采用组合优于继承、接口驱动、流式优先的设计哲学，提供组件化、编排与Agent三件套。",
+      "source": "陈叙坦",
+      "url": "http://chenxutan.com/d/4398.html",
+      "published_time": "2026-07-05 22:29",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "字节跳动CloudWeGo团队推出Eino框架，以Go方式重构AI应用架构，填补Go生态中LLM应用开发框架的空白-17。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Go 1.27小对象分配革命：编译器为每个尺寸定制malloc",
+      "summary": "Go 1.27编译器将为小于80字节的小对象生成尺寸特化的分配代码，绕过通用mallocgc路径，小对象分配延迟预计降低约30%，整体性能提升约1%，无需改动任何代码。",
+      "source": "陈叙坦",
+      "url": "http://chenxutan.com/d/4382.html",
+      "published_time": "2026-07-05 16:38",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "Go 1.27引入编译器级别的尺寸特化内存分配优化，针对小于80字节的对象生成专用分配代码，显著降低小对象分配延迟-26。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Go 1.23 arena allocator前瞻：零开销内存管理特性",
+      "summary": "Go 1.23引入实验性arena allocator内存管理特性，为短生命周期对象组提供零开销、无GC干预的批量内存分配与释放，适用于解析器AST节点、HTTP中间件上下文链等场景。",
+      "source": "datasea.cn",
+      "url": "https://datasea.cn/go0703641171.html",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "Go 1.23的arena allocator通过显式作用域将一组对象绑定到同一内存池，规避逐个对象的堆分配开销与GC扫描压力-24。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "第三届晋城全国职业围棋公开赛激战正酣",
+      "summary": "第三届晋城全国职业围棋公开赛本赛于6月30日开幕-；7月2日16强战江维杰胜黄云嵩；7月4日8强战丁浩胜王泽锦；7月5日半决赛辜梓豪胜陈玉侬、丁浩淘汰赵晨宇，两人会师决赛-。",
+      "source": "野狐围棋",
+      "url": "https://foxwq.com/qipu/newlist/id/2026070265499161.html",
+      "published_time": "2026-07-02至2026-07-05",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "第三届晋城全国职业围棋公开赛进入决赛阶段，卫冕冠军丁浩与世界冠军辜梓豪会师决赛-。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Meta数据中心承包商Goat Systems污染再生水系统",
+      "summary": "美国怀俄明州夏延市公共事业委员会确认Meta数据中心建设承包商Goat Systems LLC是当地再生水系统污染事件的源头，废水中检测出超罕见吉拉迪铜绿菌，导致再生水系统停运数月。",
+      "source": "IT之家",
+      "url": "https://shovelready.com/shovelready/description.asp?live-blog-15601392-2026-07-04-it-zhi-jia-7-yue-4-ri-xiao-xi-dang-de-shi-jian-7-yue-2-ri-mei-guo-huai-e-ming-zh",
+      "published_time": "2026-07-04",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "BOPU确认Goat Systems为污染源头，已于3月撤销其废水排放许可，并暂停接收所有数据中心工业废水-7。"
+        },
+        {
+          "stance": "企业回应",
+          "summary": "Meta回应称正协助处理事件，已停止向市政系统排放废水，独立检测未发现相同污染物-7。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "Go语言生态在AI Infra领域持续升温，字节Eino开源引发开发者高度关注；Go 1.27性能优化与Go 1.23 arena allocator等新特性成为技术社区热议焦点。围棋赛事方面，晋城全国职业公开赛进入决赛阶段，中部六省业余赛同步开赛，围棋话题热度上升。谷歌DMA调查与算力危机则引发对科技巨头监管与AI基础设施的讨论。整体舆情呈现技术驱动、多元并进的态势。",
+  "honesty_note": "搜索结果显示，关于Go编程语言的近期热点以技术文章和社区讨论为主，部分内容来自个人博客和技术网站，权威媒体直接报道相对有限。Pokémon Go相关活动信息丰富但与编程语言Go无关，已排除。围棋赛事资讯较为充分。所有URL均来自搜索结果原始链接或设为null，未进行任何拼接或杜撰。",
+  "start_time": "2026-07-06 02:22",
+  "end_time": "2026-07-06 02:23",
+  "elapsed_seconds": 44,
+  "retry_count": 0
+}

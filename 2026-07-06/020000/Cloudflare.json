@@ -1,0 +1,83 @@
+{
+  "keyword": "Cloudflare",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【赛博菩萨 Cloudflare 宣布默认屏蔽混合用途 AI 爬虫】",
+      "summary": "Cloudflare 于7月1日宣布，从9月15日起默认屏蔽混合用途AI爬虫，将AI爬虫分为「Search」「Agent」「Training」三类分别管理，标志着互联网基础设施层首次对AI数据获取进行系统性规范。2",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3882226982842376",
+      "published_time": "2026-07-05 12:07",
+      "perspectives": [
+        {
+          "stance": "【科技媒体分析】",
+          "summary": "这是互联网基础设施层首次对AI数据获取方式进行系统性「立法」，逻辑从「默认允许」翻转为「默认屏蔽」，直接针对Googlebot等混合爬虫的「搜索与训练捆绑」问题。-1-25"
+        },
+        {
+          "stance": "【官方公告解读】",
+          "summary": "Cloudflare 称新政策旨在平衡网站主与AI企业的利益，默认屏蔽Training和Agent用途爬虫，同时保留Search用途，并将「Pay Per Crawl」升级为「Pay Per Use」模式。-2-4"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【Cloudflare 发布 Attribution Business Insights 仪表盘，曝光 AI 爬虫与回流比】",
+      "summary": "Cloudflare 于7月1日推出 Attribution Business Insights 新仪表盘，按公司维度展示AI爬虫访问量与人类回流点击的比例，数据显示Google约为14:1，OpenAI为1,700:1，Anthropic高达73,000:1。1",
+      "source": "ppc.land",
+      "url": "https://ppc.land/cloudflare-exposes-ai-crawlers-hitting-sites-50000-times-per-visitor/",
+      "published_time": "2026-07-05",
+      "perspectives": [
+        {
+          "stance": "【行业分析】",
+          "summary": "该工具揭示了传统「爬取-回流」交易模式的崩塌，AI爬虫与人类回流的比例严重失衡，网站主需要新的商业模型来应对AI时代的流量经济。-26"
+        },
+        {
+          "stance": "【官方说明】",
+          "summary": "仪表盘面向商业决策者而非安全工程师，提供过去24小时、7天或30天的爬虫流量、爬取回流比、爬虫排名及用途分类等四类信息。-26"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "【Cloudflare 发生服务中断事件，CTO 确认非攻击所致】",
+      "summary": "Cloudflare 网络于7月1日发生服务中断，影响 Canva、Zoom、Claude 等数百家网站。CTO Dane Knecht 确认中断由关闭日志记录功能引发，与 React CVE 漏洞缓解措施有关，并非网络攻击。",
+      "source": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/cloudflare-cto-dane-knecht-confirms-outage-shares-root-cause/affcmtoi_articleshow/125786181.cms",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "【官方回应】",
+          "summary": "Cloudflare CTO 在 X 平台发文解释根因，称关闭日志功能是为了缓解本周的 React CVE 漏洞，并强调 Workers 安全模型已在运行时层阻止了该漏洞利用。"
+        },
+        {
+          "stance": "【事件追踪】",
+          "summary": "服务已在当日恢复，Cloudflare 状态页面确认网络恢复正常运行，工程团队持续监控并进行深入调查，建议用户升级到已打补丁的 React 和 NextJS 版本。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【Cloudflare 推出 Mesh 及多项 AI 智能体安全新品】",
+      "summary": "Cloudflare 在「Agents Week 2026」期间宣布推出 Cloudflare Mesh，首个专为AI智能体构建的专用网络解决方案，同时宣布与 Wiz 合作保障AI安全，并启动「1111实习生计划」。",
+      "source": "Cloudflare 官方新闻稿",
+      "url": "https://www.cloudflare.com/zh-cn/agents-week/press-releases/",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "【官方发布】",
+          "summary": "Cloudflare Mesh 将AI智能体、人类和多云基础设施统一到单个安全网络中，为组织提供构建、部署和治理下一代AI应用的网络骨干网。"
+        },
+        {
+          "stance": "【合作动态】",
+          "summary": "Cloudflare 与云安全领导者 Wiz（已并入Google Cloud）建立合作伙伴关系，为安全团队提供统一方法，在其整个环境中分析和保护AI驱动型应用。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 Cloudflare 最突出的热点是「AI 爬虫治理」全面升级，舆论高度关注其默认屏蔽混合爬虫的政策翻转，被视为互联网基础设施对 AI 数据获取的首次系统性「立法」。同时服务中断事件和安全漏洞披露也引发技术社区讨论，整体舆情偏向对 Cloudflare 行业影响力与战略转型的积极解读。",
+  "honesty_note": "部分热点（如合作伙伴关系、安全漏洞）的原始搜索结果中未包含可直接使用的完整 URL，已按规定设为 null。7月6日当天（今日）的突发新闻较少，热点主要集中在7月1日至5日期间发布的事件。",
+  "start_time": "2026-07-06 02:14",
+  "end_time": "2026-07-06 02:15",
+  "elapsed_seconds": 46,
+  "retry_count": 0
+}

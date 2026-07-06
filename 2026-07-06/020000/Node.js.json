@@ -1,0 +1,75 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Node.js 发布周期重大调整：v27 起改为每年一个主要版本",
+      "summary": "Node.js 官方宣布从 v27 开始将发布周期从每年两个主要版本调整为每年一个，版本号与年份对齐，所有版本均进入 LTS，并引入 Alpha 通道。v26 是旧模式下的最后一个版本。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/06/nodejs-release-changes/?topicPageSponsorship=bb9a7dec-c6f7-496d-b67e-215352046a39",
+      "published_time": "2026-06-03",
+      "perspectives": [
+        {
+          "stance": "官方公告与技术分析",
+          "summary": "该调整源于维护者长期面临的多版本并行维护压力，奇数版本长期被企业跳过但仍需维护。新模型将减轻志愿者团队的负担，同时为企业提供更可预期的升级路径。-12"
+        },
+        {
+          "stance": "社区争议与企业视角",
+          "summary": "企业用户偏好长支持窗口，而快速迭代的团队希望更快获取新特性，两者之间存在张力。部分贡献者认为此举回应了生态系统的实际需求。-12"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Node.js 6 月安全更新：修复多个高危漏洞，影响 22/24/26 全系列",
+      "summary": "Node.js 于 6 月 18 日发布安全更新，修复了 WebCrypto 整数溢出导致 DoS（CVE48933）、TLS 通配符认证绕过（CVE48618）等漏洞，影响所有活跃版本线。",
+      "source": "Node.js 官网",
+      "url": "https://nodejs.org/pt/blog/vulnerability/june-2026-security-releases",
+      "published_time": "2026-06-18",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "本次安全发布包含 llhttp、nghttp2、openssl、undici 等依赖更新，修复了多个高危和中危漏洞。建议所有用户尽快升级到 26.3.1、24.17.0 或 22.23.0。-22"
+        },
+        {
+          "stance": "安全社区分析",
+          "summary": "CVE-2026-48936 影响 Node.js 26 的 Permission API，允许通过 Unix domain socket 绕过 --allow-net 权限限制，被视为严重的安全回归问题。-23"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Node.js 26.2.0 发布，Express 框架焕新，npm 分阶段发布上线",
+      "summary": "Node.js 周刊第 21 期汇总了 Node.js 26.2.0 版本动态、Express 框架品牌与文档全面更新、npm 分阶段发布功能正式推出等生态重要进展。",
+      "source": "腾讯云开发者社区",
+      "url": "https://cloud.tencent.cn/developer/article/2685044?policyId=1004",
+      "published_time": "2026-06-09",
+      "perspectives": [
+        {
+          "stance": "技术社区综合报道",
+          "summary": "Express 在 2024 年启动重大重启后重回聚光灯下，品牌、网站和文档已全面焕新。npm 分阶段发布在预告数月后正式推出，为包发布提供审查期。-2"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Node.js 26.0 正式发布：默认启用 Temporal API，10 月进入 LTS",
+      "summary": "Node.js 26.0 于 4 月正式发布，默认启用 Temporal API 以现代化 JavaScript 日期时间处理，搭载 V8 14.6 和 Undici 8，计划 2026 年 10 月进入 LTS 并支持至 2029 年。",
+      "source": "NodeSource 博客",
+      "url": "https://nodesource.com/blog/category/node-js",
+      "published_time": "2026-04-30",
+      "perspectives": [
+        {
+          "stance": "技术深度解读",
+          "summary": "Temporal API 解决了 JavaScript 原生 Date 对象 31 年来的时区、解析和不可变性等问题，是 ECMAScript 2026 的核心特性之一。-1"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前 Node.js 社区最突出的趋势是围绕发布周期改革（年更 vs 半年更）的讨论，以及 6 月中旬安全更新带来的升级紧迫感。开发者对 Temporal API 和 Permission API 漏洞的关注度较高，整体舆情偏技术理性。",
+  "honesty_note": "本次搜索范围内（2026-06-29 至 2026-07-06）未发现与 Node.js 直接相关的全新热点事件或突发新闻。以上 5 条热点均为 6 月中上旬发生的重要事件，时间上略有滞后。如需更实时的信息，建议关注 Node.js 官方 GitHub 仓库或技术社区的最新动态。",
+  "start_time": "2026-07-06 02:19",
+  "end_time": "2026-07-06 02:19",
+  "elapsed_seconds": 39,
+  "retry_count": 0
+}

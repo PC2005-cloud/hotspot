@@ -1,0 +1,87 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "微软宣布 TypeScript 7.0 RC 发布：Go 语言重写编译器，性能提升约 10 倍",
+      "summary": "微软于 6 月 18 日宣布 TypeScript 7.0 候选版（RC）发布，编译器核心用 Go 语言彻底重写（代号 Project Corsa），类型检查速度比 6.0 快约 10 倍，是该项目 14 年来最重大的架构变革-。",
+      "source": "微软官方博客",
+      "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-rc/",
+      "published_time": "2026-06-18",
+      "perspectives": [
+        {
+          "stance": "【官方发布】微软 TypeScript 团队公告",
+          "summary": "TypeScript 7.0 RC 基于 Go 原生代码速度和共享内存并行技术，实现约 10 倍性能提升，支持解析、类型检查和代码生成等多步骤并行处理-2。正式版预计在一个月内发布-。"
+        },
+        {
+          "stance": "【技术媒体解读】InfoWorld / Slashdot 报道",
+          "summary": "该版本是 Anders Hejlsberg 两年前宣布 Go 重写计划后的首个 RC 版本，大型项目（如 VS Code 自身代码库）编译时间从 77 秒大幅缩短-2-。"
+        },
+        {
+          "stance": "【社区开发者讨论】性能提升的实测与期待",
+          "summary": "Figma、彭博、Vercel、Notion、Slack 等企业已提前测试预发布版本超过一年，均测出相近的性能提升效果-6。开发者对编辑器响应速度和大型 monorepo 项目体验改善抱有较高期待-6。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TypeScript 7.0 为何选择 Go 而非 Rust？社区争议持续发酵",
+      "summary": "微软选择 Go 重写 TypeScript 编译器而非 Rust，引发社区两极分化讨论——Go 开发者欢呼，Rust 开发者则表达不解。",
+      "source": "InfoQ",
+      "url": "http://chenxutan.com/d/4394.html",
+      "published_time": "2026-02-06（相关讨论在 RC 发布后再度升温）",
+      "perspectives": [
+        {
+          "stance": "【支持 Go 方】技术选型合理说",
+          "summary": "Go 的并发模型（goroutine）与共享内存并行机制天然适配编译器场景，且 Go 的编译速度和内存管理优于基于 V8 的 Node.js 方案-7。"
+        },
+        {
+          "stance": "【支持 Rust 方】质疑与不解",
+          "summary": "Rust 已成为当下重写系统级工具的「默认答案」，且前端工具链原生化浪潮中 SWC、Biome、OXC 等项目均采用 Rust，社区对微软为何「逆潮流」选择 Go 存在疑问--7。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TypeScript 7.0 升级指南：务必先完成 TypeScript 6 过渡，双版本可并行共存",
+      "summary": "官方建议项目先升级至 TypeScript 6.0 清理废弃警告（如 target: es5、module: amd/umd 等），再升级 7.0；同时提供兼容包实现 6.0 与 7.0 双版本并行运行。",
+      "source": "21CTO",
+      "url": "https://www.21cto.com/article/9895749875401435",
+      "published_time": "2026-07-06（12小时前）",
+      "perspectives": [
+        {
+          "stance": "【官方兼容策略】微软双版本共存方案",
+          "summary": "微软推出 @typescript/typescript6 兼容包，提供 tsc6 命令并完整导出 TS6 API，开发者可通过 npm 别名同时安装两个版本，兼顾工具兼容性与编译速度-6。"
+        },
+        {
+          "stance": "【开发者实操建议】迁移注意事项",
+          "summary": "TypeScript 6 定位为过渡版本，用于提前提示 7.0 会彻底废弃的语法与配置（如 target 不再支持 es5，module 淘汰 amd/umd/systemjs，strict 默认变为 true 等），建议先升级至 TS6 清理全部废弃警告后再升级 TS7-6。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "VS Code 已全面支持 TypeScript 7.0，AI 编程助手生态加速适配",
+      "summary": "VS Code 1.119 版本已全面支持 TypeScript 7.0，主流库兼容性基本通过，微软 Copilot 扩展也已跑通，大规模迁移风险可控-。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "【编辑器生态跟进】VS Code 官方支持",
+          "summary": "VS Code 已开始加速适配 TypeScript 7.0，1.119 版本大量篇幅聚焦 AI Agent 能力——AI 助手能辅助写代码、调试、操作浏览器-。"
+        },
+        {
+          "stance": "【AI 工具链观察】TypeScript 成 AI 开发主导语言",
+          "summary": "OpenAI Node.js SDK、Anthropic Claude SDK、LangChain.js、Vercel AI SDK 等均为 TypeScript-first 库，TypeScript 已成为 2026 年构建 LLM 应用的主导选择-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前 TypeScript 社区最突出的热点是 7.0 RC 的 Go 重写带来的 10 倍性能提升，整体情绪以期待和兴奋为主，尤其对大型项目编译速度和编辑器响应改善充满期待-6。同时围绕「为何选 Go 而非 Rust」的技术选型争议持续-7，迁移升级的实际操作细节（TS6→TS7 过渡、双版本共存）也是开发者关注焦点-6。",
+  "honesty_note": "近 7 天内（6月29日至7月6日）TypeScript 相关热点高度集中于 TypeScript 7.0 RC 发布这一单一事件。RC 版本于 6 月 18 日发布，相关报道和讨论在 7 月初持续发酵--2。若需更丰富的每日动态，建议关注 TypeScript GitHub 仓库的 issue 讨论和 PR 进展-6、以及各企业（如 Vercel、Slack 等）的实测反馈-6。",
+  "start_time": "2026-07-06 02:09",
+  "end_time": "2026-07-06 02:10",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

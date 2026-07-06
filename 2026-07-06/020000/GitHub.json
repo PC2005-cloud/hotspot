@@ -1,0 +1,81 @@
+{
+  "keyword": "GitHub",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "GitHub 嘲讽索尼停产实体光盘，限量推出「代码烧录CD」服务",
+      "summary": "7月3日，GitHub宣布将开发者的公开代码仓库刻录成实体CD-ROM并包邮到家，限量1000张-。此举被视为对索尼宣布2028年起停产PS实体光盘的公开嘲讽。",
+      "source": "极客公园、搜狐、Yahoo Tech",
+      "url": "https://www.sohu.com/a/1045784685_413980?scm=10008.1479_13-1479_13-68_68.0-4877001.0-1-0-0-0.0&spm=smpc.content-abroad.fd-d.100.1783154149638y0qJjtK&_trans_=060008_lym",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "GitHub在X平台宣布推出「Repo CDs」活动，7月2日至6日接受申请，前1000名符合条件的开发者可将公开仓库刻录为实体CD-。官方文案称「你的代码在物理上永远属于你——直到你弄丢它」-1。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Anthropic Claude Fable 5 重新上线 GitHub Copilot",
+      "summary": "7月1日，GitHub宣布Anthropic旗下Claude Fable 5已重新在GitHub Copilot全面上线，开发者可通过Copilot及VS Code调用该模型。",
+      "source": "每日经济新闻",
+      "url": "https://m.nbd.com.cn/articles/2026-07-02/4444634.html",
+      "published_time": "2026-07-01",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "Fable 5专为长周期自主编程和复杂软件开发任务设计-2。此前受美国政府安全审查及Anthropic主动暂停影响，GitHub自6月12日起暂停了所有Copilot用户对Fable 5的访问-2。此次恢复上线意味着该模型已完成安全评估，AI编程工具竞争将进一步升温-2。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "百度 Unlimited OCR 开源5天 GitHub Star破万，四榜登顶",
+      "summary": "百度正式发布并开源端到端OCR模型Unlimited OCR，项目上线次日即登顶GitHub Daily Trending总榜与Python榜，5天内Star突破1万。",
+      "source": "网易智能",
+      "url": "https://www.163.com/tech/article/L0JM9A7U00098IEO.html",
+      "published_time": "2026-06-29",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "Unlimited OCR面向书籍、论文、报告等长文档解析场景，总参数规模3B，在OmniDocBench v1.6基准测试中取得93.92%的综合成绩-11。其首次引入Reference Sliding Window Attention机制，实现数十页文档的一次性连续解析-11。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "GitHub 「Issue fields」功能正式全面上线",
+      "summary": "7月2日，GitHub宣布「Issue fields」功能正式全面上线，支持组织跨项目添加结构化元数据（优先级、工作量、日期等）。",
+      "source": "CodeZine",
+      "url": "https://codezine.jp/news/detail/28850",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "该功能可在所有支持数据驻留的GitHub组织中使用，并将随GitHub Enterprise Server 3.23发布-24。更新后字段值可直接显示在Issue列表上-24，并支持通过GitHub MCP服务器供Copilot等AI工具访问-24。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "OpenClaw 成为2026年现象级开源项目，GitHub Star突破21万",
+      "summary": "本地优先AI网关项目OpenClaw本周GitHub Star突破21万，成为2026年现象级仓库。",
+      "source": "创趣数智、wsq.be",
+      "url": "https://wsq.be/github-trending-2026-07-05/",
+      "published_time": "2026-07-05",
+      "perspectives": [
+        {
+          "stance": "开发者社区分析",
+          "summary": "OpenClaw是一个完全运行在本地设备上、连接50+集成（WhatsApp、Telegram、Slack等）的AI网关--20。21万Star表明「本地优先+隐私+用户完全掌控」的叙事有巨大需求-20。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周GitHub热点呈现三大趋势：AI编程工具竞争持续升温（Fable 5回归Copilot）；开源社区对「实体 vs 数字」话题反应热烈（代码CD活动引发病毒式传播）；AI Agent工程化与端侧AI成为GitHub Trending主流方向，开发者关注点从模型能力转向执行效率与资源优化-。",
+  "honesty_note": "部分热点事件的原始报道链接未能从搜索结果中获取完整URL，已按规则设为null。当前GitHub相关资讯丰富，覆盖产品功能更新、安全公告、开源趋势等多个维度，不存在信息滞后问题。",
+  "start_time": "2026-07-06 02:26",
+  "end_time": "2026-07-06 02:27",
+  "elapsed_seconds": 33,
+  "retry_count": 0
+}

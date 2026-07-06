@@ -1,0 +1,65 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "微软在开发者大会宣布 AKS 多项 AI 增强功能，裸金属版正式预览",
+      "summary": "微软在 2026 年开发者大会上公布 Azure Kubernetes Service (AKS) 一系列增强功能，覆盖基础设施、多集群管理、AI 编排与模型服务四大领域，包括 AKS 裸金属版公开预览、Azure Kubernetes Fleet Manager 正式可用等，旨在让 Kubernetes 成为 AI 训练与推理的首选平台。",
+      "source": "微软开发者大会 / vrijetijd.brugge.be",
+      "url": "https://vrijetijd.brugge.be/sport/Op+naar/bekijk/code/SAoD02?live-blog-14723446-2026-06-29-zai-2026-nian-wei-ruan-kai-fa-zhe-da-hui-shang-wei-ruan-gong-bu-le-yi-xi-lie-zen",
+      "published_time": "2026-06-29",
+      "perspectives": [
+        {
+          "stance": "微软官方发布",
+          "summary": "AKS 裸金属版让工作负载无需虚拟机监控程序即可直接访问硬件，支持 NVLink、RDMA 等高性能网络能力，适用于大语言模型训练和低延迟推理-11。AKS Automatic 中的托管系统节点池将核心组件与应用工作负载分离，由 Azure 自动完成容量管理和弹性扩缩容-11。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "微软此次发布体现云厂商将 Kubernetes 抽象为 AI 基础设施层的趋势，Kubernetes 正在从容器编排引擎演变为 AI 工作负载的统一调度平台-11。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Traefik 与 KubeVela 接连披露安全漏洞，CVE-2026-55108 等风险需关注",
+      "summary": "7 月 3 日，安全公告披露 Traefik 在 Kubernetes Gateway 提供商中存在不当访问控制漏洞，可导致内部服务暴露；同日 KubeVela 被披露存在资源耗尽漏洞 CVE55108，可被远程利用发起 DoS 攻击。",
+      "source": "cybersecurity-help.cz",
+      "url": "https://www.cybersecurity-help.cz/vdb/SB2026070351",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "安全公告",
+          "summary": "Traefik 漏洞因 Kubernetes Gateway 提供商对 HTTPRoute 多 backendRefs 的跨命名空间白名单强制机制不当引起，远程用户可构造特制 HTTPRoute 暴露内部服务-18。KubeVela CVE-2026-55108 因未正确控制内部资源消耗，远程攻击者可触发资源耗尽导致 DoS-19。"
+        },
+        {
+          "stance": "运维建议",
+          "summary": "建议相关用户及时安装官方补丁更新，审查 Kubernetes Gateway 配置中的跨命名空间访问控制策略，并对 KubeVela 部署进行资源限制加固-18-19。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Kubernetes 社区动态：SELinuxMount 晋升 GA、Steering Committee 选举季启动",
+      "summary": "Kubernetes SIG 节点相关 PR #139956 将 SELinuxMount 功能晋升至 General Availability (GA)，该功能允许 Kubernetes 以正确的 SELinux 上下文挂载卷，提升大规模 Pod 启动性能。同时 2026 年 Steering Committee 选举季已启动，三个席位开放提名-。",
+      "source": "Last Week in Kubernetes Development (lwkd.info)",
+      "url": "https://lwkd.info/2026/20260702",
+      "published_time": "2026-07-02（报道截至 6 月 28 日当周）",
+      "perspectives": [
+        {
+          "stance": "Kubernetes 开发社区",
+          "summary": "SELinuxMount 达到 GA 意味着该功能已可在 SELinux 强制环境中用于生产，可显著改善大容量卷或多密度节点场景下的 Pod 启动性能与运维可预测性-8。"
+        },
+        {
+          "stance": "社区治理",
+          "summary": "Steering Committee 选举季启动，三个席位任期两年，社区成员可通过提名参与治理-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Kubernetes 相关热点呈现「AI 集成加速」与「安全漏洞频发」双主线：微软 AKS 的 AI 增强功能体现 Kubernetes 正成为 AI 基础设施层的事实标准-11；同时 Traefik 和 KubeVela 接连披露安全漏洞，提醒社区关注供应链与访问控制风险-18-19。社区层面，DRA 达到 GA、SELinuxMount 晋升稳定等功能演进持续推进-1-8。总体舆情偏向技术深水区演进，AI 工作负载与安全性是最受关注的两大方向。",
+  "honesty_note": "近 7 天内（2026-06-29 至 2026-07-06）Kubernetes 相关的重大爆炸性新闻相对较少，热点主要集中在技术演进（微软 AKS 更新、CNCF 项目动态）和安全漏洞披露（Traefik、KubeVela）两个方向。v1.37 版本仍处于开发周期（计划 8 月发布）-，v1.36 已于 4 月发布-。如需要更丰富的内容，可关注 CNCF 博客（cncf.io/blog）和 Kubernetes 官方 GitHub 仓库的 PR 动态。",
+  "start_time": "2026-07-06 02:08",
+  "end_time": "2026-07-06 02:08",
+  "elapsed_seconds": 47,
+  "retry_count": 0
+}

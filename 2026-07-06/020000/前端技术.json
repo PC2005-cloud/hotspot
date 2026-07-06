@@ -1,0 +1,83 @@
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Vercel推出「skills」——AI技能的包管理器，狂揽2.4万星标",
+      "summary": "Vercel发布skills CLI工具，让AI智能体可通过一行命令安装「能力包」，类似前端npm的体验。官方仓库上线5个月GitHub星标达2.4万，支持超68个智能体，skills.sh技能目录榜首安装量达230万次。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/3883329457483784",
+      "published_time": "2026-07-06 07:57",
+      "perspectives": [
+        {
+          "stance": "行业观察：AI工具层正经历「npm化」变革",
+          "summary": "skills把AI能力变成可安装的包，开发者不再需要每次复述项目规范，装一次长期生效。底层共享规范让同一技能包可在Claude Code、Cursor、Codex等不同工具间通用。-1"
+        },
+        {
+          "stance": "开发者社区：AI编程进入「装包」时代",
+          "summary": "以往开发者交流的是提示词模板，现在风向变成了互相打听「该装哪个技能」。skills CLI让AI能力第一次有了「热门下载」排行榜，标志着AI编程工具的使用方式发生根本转变。-1"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Google发布A2UI v0.9：框架无关的生成式UI标准",
+      "summary": "Google发布A2UI v0.9规范，让AI代理声明UI意图并在Web、移动和桌面端原生渲染，无需传输任意代码。核心哲学转变：代理应使用应用现有设计系统的语言，而非自创组件。同步推出React、Flutter、Lit、Angular渲染器。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/07/google-a2ui-genui/",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "技术解读：生成式UI从「组件发明」转向「设计系统对齐」",
+          "summary": "v0.9不是小更新，核心哲学、JSON结构和schema全面改变，协议变为双向。新增A2UI Agent SDK支持缓存、版本协商和流式解析，组件可边到达边渲染。-18"
+        },
+        {
+          "stance": "开发者视角：跨框架UI生成的新基建",
+          "summary": "A2UI支持MCP、WebSockets、REST、AG-UI等多种传输协议，v1.0候选规范已可用。这意味着前端开发者可以更轻松地将AI生成UI接入现有设计系统。-18"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Tailwind CSS裁员75%：AI正在杀死开源商业模式",
+      "summary": "曾被视为「开源变现标杆」的Tailwind Labs宣布裁减75%工程团队，创始人Adam Wathan称公司收入一年内暴跌近80%。核心原因：AI编程助手普及导致官方文档流量暴跌40%%，流量漏斗失效。",
+      "source": "腾讯云开发者社区",
+      "url": "https://cloud.tencent.com.cn/developer/article/2701658",
+      "published_time": "2026-07-01 21:39",
+      "perspectives": [
+        {
+          "stance": "深度分析：依赖文档流量的开源商业模式在AI时代崩塌",
+          "summary": "Tailwind收入80%-90%来自UI组件库的「终身授权」模式，无法持续获得收入。AI截断了开发者查阅文档的链路，Shadcn UI等免费竞品进一步削弱了付费必要性。-2"
+        },
+        {
+          "stance": "行业警示：开源项目需从「卖资产」转向「卖工具服务」",
+          "summary": "评论认为Tailwind必须转型，如推出官方AI助手插件深度集成IDE，并将商业模式从一次性买断改为SaaS订阅，主动进入用户的工作流。-2"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Bun被Anthropic收购：AI编程基础设施层加速重组",
+      "summary": "2025年12月Bun宣布被Anthropic收购，消息在技术社区持续引发讨论。Bun作为all-in-one JavaScript工具链（运行时+打包器+包管理器+测试运行器），其收购标志着AI编程工具的基础设施层正在发生根本性重组。",
+      "source": "chenxutan.com",
+      "url": "http://chenxutan.com/d/4327.html",
+      "published_time": "2026-07-04 09:43",
+      "perspectives": [
+        {
+          "stance": "技术解析：Bun的「做减法」哲学与AI时代的契合",
+          "summary": "Bun把原来需要npm install一堆包才能跑起来的东西变成开箱即用，这种all-in-one思路与AI编程追求高效、低摩擦的开发体验高度一致。-25"
+        },
+        {
+          "stance": "生态影响：JS/TS基础设施正在被AI公司重新定义",
+          "summary": "Anthropic收购Bun不只是资本动作，更意味着AI公司正在向编程工具链底层渗透，JavaScript/TypeScript生态的未来走向可能因此改变。-25"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7日前端技术圈最突出趋势是「AI全面渗透工具链」：从Vercel skills的「npm化」到Google A2UI的生成式UI标准，从Vite+统一工具链到Bun被AI公司收购，AI正在重塑前端开发每个环节。同时Tailwind CSS裁员事件引发对开源商业模式的深度反思，社区情绪复杂——既兴奋于效率飞跃，也担忧传统路径的消亡。",
+  "honesty_note": null,
+  "start_time": "2026-07-06 02:17",
+  "end_time": "2026-07-06 02:18",
+  "elapsed_seconds": 56,
+  "retry_count": 0
+}

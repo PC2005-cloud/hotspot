@@ -1,0 +1,93 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Docker Engine 曝出严重任意代码执行漏洞（CVE-2026-41567），官方已发布 29.5.1 修复版本",
+      "summary": "Docker Engine（Moby）29.5.1 以下版本存在高危漏洞，恶意容器镜像可通过植入木马化解压程序，在用户上传压缩包时以 root 权限执行任意代码。",
+      "source": "Tenable",
+      "url": "https://www.tenable.com/plugins/nessus/324948",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "【安全机构通报】",
+          "summary": "Tenable 发布漏洞检测插件，指出 CVE-2026-41567 影响所有 29.5.1 以下版本的 Docker Engine，攻击者可获得宿主机 root 权限，建议立即升级-2。"
+        },
+        {
+          "stance": "【发行版跟进】",
+          "summary": "openSUSE Leap 16.0 已发布安全更新，修复包括 CVE-2026-41567 在内的 6 个漏洞，建议用户尽快安装补丁-25。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Exclusive Networks 成为 Docker 英国及爱尔兰地区分销合作伙伴",
+      "summary": "Exclusive Networks 与 Docker 达成合作，成为其在英国和爱尔兰的分销伙伴，将通过其渠道网络向本地合作伙伴提供 Docker 容器平台及相关安全产品。",
+      "source": "IT Brief UK",
+      "url": "https://itbrief.co.uk/story/exclusive-networks-becomes-docker-distribution-partner",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "【官方公告】",
+          "summary": "Exclusive Networks 方面表示，此次合作将帮助合作伙伴解锁新的收入来源，加速客户应用现代化进程-1。Docker 方面则希望通过该分销网络加速 Docker 平台在 UKI 地区的采用-1。"
+        },
+        {
+          "stance": "【行业分析】",
+          "summary": "该合作建立在 Exclusive Networks 旗下 Nuaware 已在亚太、北美等地区分销 Docker 技术的基础之上，反映出容器技术已成为渠道商竞相布局的核心领域-1。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Dockwatch 曝出未认证命令注入漏洞（CVE-2026-58455），CVSS 评分高达 9.2",
+      "summary": "Dockwatch 0.6.567 及更早版本存在未认证 OS 命令注入漏洞，攻击者可利用缺失的认证退出机制和未过滤输入执行任意命令，通过挂载的 Docker Socket 实现宿主机完全接管。",
+      "source": "OpenCVE",
+      "url": "https://app.opencve.io/cve/CVE-2026-58455",
+      "published_time": "2026-07-02",
+      "perspectives": [
+        {
+          "stance": "【漏洞数据库】",
+          "summary": "CVE-2026-58455 被评定为严重级别（CVSS 9.2），目前尚无官方修复版本，建议用户升级到 0.6.568 或应用 PR 135 中的补丁，并避免将 Docker Socket 暴露于公网-22。"
+        },
+        {
+          "stance": "【安全社区】",
+          "summary": "该漏洞的实践可利用性较高，因为许多部署采用了标准的 Docker Socket 挂载配置，攻击者可借此获得宿主机级访问权限-22。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "SUSE 发布 Docker Libnetwork 安全更新，修复任意文件读取漏洞（CVE-2026-2808）",
+      "summary": "SUSE 于 7 月 3 日发布 golang-github-docker-libnetwork 安全更新，修复 CVE2808 漏洞——未验证的用户提供文件路径可导致通过 Vault Kubernetes 认证提供程序进行任意文件读取。",
+      "source": "LinuxSecurity.com",
+      "url": "https://linuxsecurity.com/advisories/suse/suse-2026-2740-1-golang-github-docker-libnetwork",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "【官方安全公告】",
+          "summary": "该漏洞 CVSS 评分为 8.2（SUSE 标准），影响 SUSE Linux Enterprise Micro 5.3/5.4 等多个产品线，建议用户通过 zypper 安装补丁-3。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "vxcontrol PentAGI 曝出 Docker API 沙箱逃逸漏洞（CVE-2026-14784）",
+      "summary": "vxcontrol PentAGI 2.1.0 及更早版本被发现存在 Docker API 沙箱问题，攻击者可远程发起攻击，目前修复 PR 等待合并中。",
+      "source": "OffSeq Threat Radar",
+      "url": "https://radar.offseq.com/threat/cve-2026-14784-sandbox-issue-in-vxcontrol-pentagi-4d5f0d7050e083cb",
+      "published_time": "2026-07-06",
+      "perspectives": [
+        {
+          "stance": "【漏洞数据库】",
+          "summary": "该漏洞 CVSS v4.0 评分为 5.3（中危），影响 Docker API 组件 client.go，攻击向量为远程网络-21。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Docker 相关热点以「安全漏洞」为主导——CVE-2026-41567（Docker Engine）、CVE-2026-58455（Dockwatch）、CVE-2026-2808（Libnetwork）等多个中高危漏洞集中披露，安全社区高度关注升级与修复-。与此同时，Docker 在渠道拓展（Exclusive Networks 合作）-1和 AI 领域（Docker Agent、Docker Desktop 4.80.0）-持续发力，生态正向发展态势明显。",
+  "honesty_note": "搜索结果中关于 Docker 的热点以安全漏洞公告和商业合作为主，时效性集中在 7 月 2 日至 7 月 6 日之间。Docker 官方博客（docker.com）在近 7 天内未检索到新的新闻发布-。部分链接（如 Docker Desktop 4.80.0 发布说明、Docker Agent 文档）因搜索结果未提供完整 URL 而设为 null，符合 URL 真实性铁律。整体信息覆盖安全、商业、产品和开源生态等多个维度，但缺乏大规模社区讨论或舆情事件类热点。",
+  "start_time": "2026-07-06 02:05",
+  "end_time": "2026-07-06 02:05",
+  "elapsed_seconds": 47,
+  "retry_count": 0
+}

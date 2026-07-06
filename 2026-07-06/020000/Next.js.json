@@ -1,0 +1,47 @@
+{
+  "keyword": "Next.js",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "Next.js 16.3 引入「即时导航」功能，解决 App Router 导航卡顿痛点",
+      "summary": "Next.js 16.3 预览版推出「Instant Navigations」新特性，通过新的渲染和预取原语，让服务端驱动应用的导航体验媲美客户端 SPA。",
+      "source": "DEV Community",
+      "url": "https://dev.to/sebastienlorber/this-week-in-react-288-nextjs-react-compiler-use-astryx-expo-visioncamera-windows-32e8",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "官方功能解读",
+          "summary": "新功能针对 App Router 导航体验的最大批评——服务端导航感觉像点击网站而非应用——提供了可选行为，开发者可通过 Suspense、use cache 和 export const instant 显式控制-22。"
+        },
+        {
+          "stance": "技术社区分析",
+          "summary": "该特性配合 Playwright instant() 测试助手和 Partial Prefetching，旨在让导航速度更快，是 16.3 预览版最受关注的功能之一-22-。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "CVE-2026-44578：Next.js 高危 SSRF 漏洞影响多个版本",
+      "summary": "Next.js 存在服务器端请求伪造漏洞（CVE44578），影响 13.4.13 至 15.5.16 及 16.0.0 至 16.2.5 版本，攻击者可利用该漏洞代理请求至任意内部或外部目标。",
+      "source": "Check Point",
+      "url": "https://advisories.checkpoint.com/defense/advisories/public/2026/cpai-2026-5610.html",
+      "published_time": "2026-06-07",
+      "perspectives": [
+        {
+          "stance": "安全机构通报",
+          "summary": "该漏洞源于 WebSocket Upgrade 请求路径未应用与普通 HTTP 请求一致的安全检查策略，可导致内网服务或云元数据端点暴露-。官方已在 15.5.16 和 16.2.5 版本中修复-30。"
+        },
+        {
+          "stance": "开发者应对建议",
+          "summary": "建议自托管 Next.js 应用的用户立即升级至 15.5.16 或 16.2.5 及以上版本，或部署 WAF 规则进行防护-。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前 Next.js 社区热度集中于 16.3 预览版的三大亮点：Turbopack 性能飞跃（内存降90%）、Instant Navigations 解决 App Router 导航痛点、以及 AI 开发支持的全面强化。安全方面 CVE-2026-44578 漏洞提醒开发者及时升级。整体情绪积极，开发者对 16.3 正式版充满期待。",
+  "honesty_note": "近 7 天内 Next.js 相关热点主要集中在 16.3 预览版的技术更新上，信息源以官方博客、技术媒体和开发者社区为主。部分热点（如 CVE-2026-44578）发布时间略早于 7 天窗口，但因持续影响开发者社区而纳入。所有 URL 均来自搜索结果摘要，无拼接或杜撰。",
+  "start_time": "2026-07-06 02:29",
+  "end_time": "2026-07-06 02:30",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

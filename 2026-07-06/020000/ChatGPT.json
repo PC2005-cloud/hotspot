@@ -1,0 +1,153 @@
+{
+  "keyword": "ChatGPT",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Meta被曝雇佣外包假扮未成年人向ChatGPT等AI「投毒」",
+      "summary": "Meta通过外包商让数百名员工假扮13岁少女等未成年人，向ChatGPT、Gemini等竞品发送自杀、性侵等逾4.5万条违禁提示词以测试安全边界。OpenAI回应称正在调查。",
+      "source": "36氪（引用WIRED报道）",
+      "url": "https://36kr.com/p/3883294124962057",
+      "published_time": "2026-07-06 07:49",
+      "perspectives": [
+        {
+          "stance": "媒体曝光与行业谴责",
+          "summary": "WIRED曝光Meta通过外包商Covalen执行代号Cannes的秘密项目，假扮未成年人系统性突破竞品安全规则-10。AI伦理专家直指此举远超行业标准，安全已成反竞争行为的掩护-10。"
+        },
+        {
+          "stance": "Meta官方辩解",
+          "summary": "Meta声称这是「负责任的行业标准做法」-10。"
+        },
+        {
+          "stance": "竞品反应",
+          "summary": "Character.AI称违反服务条款；OpenAI表示正在调查；谷歌称未授权第三方测试，三家均不知情-10。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI拟向美国政府出售5%股份，IPO前寻求监管背书",
+      "summary": "据Financial Times报道，OpenAI正讨论在IPO前向美国政府出售5%公司股份，并提议其他AI企业也向政府出让类似股份。",
+      "source": "CNN Brasil（引用Financial Times）",
+      "url": "https://www.cnnbrasil.com.br/economia/negocios/openai-negocia-vender-fatia-de-5-ao-governo-dos-eua-diz-financial-times/",
+      "published_time": "2026-07-03（报道日期）",
+      "perspectives": [
+        {
+          "stance": "企业战略分析",
+          "summary": "此举旨在IPO前缓解投资者对监管风险的担忧，同时回应公众对AI行业收益分配不公的质疑-3。特朗普此前曾表示探索让公众持有领先AI企业股份的方案-3。"
+        },
+        {
+          "stance": "政界主张",
+          "summary": "参议员Bernie Sanders主张政府收购AI巨头50%股份，认为技术建立在未经许可使用的人类知识之上-3。"
+        },
+        {
+          "stance": "国际影响担忧",
+          "summary": "分析人士警告，此举可能引发其他司法管辖区提出类似要求，迫使跨国企业重新评估数据主权与中立性假设-3。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "特朗普政府限制OpenAI新模型发布，GPT-5.6仅向政府批准客户开放",
+      "summary": "应特朗普政府要求，OpenAI限制新型AI模型GPT.6 Sol的发布范围，仅向政府批准的客户开放。Anthropic也因政府指令暂停了新模型访问。",
+      "source": "光明网（参考消息）",
+      "url": "https://wlaq.gmw.cn/2026-07/03/content_38866137.htm",
+      "published_time": "2026-07-03 14:26",
+      "perspectives": [
+        {
+          "stance": "美国政府立场",
+          "summary": "以排查网络安全风险为由对AI产品开展审查，特朗普6月初签署AI监管行政令，要求对最先进AI系统进行最多30天国家安全风险审查-4。"
+        },
+        {
+          "stance": "OpenAI表态",
+          "summary": "OpenAI表示此类政府准入流程不应成为长期默认做法，目前属临时措施-4。公司承认新模型Sol可能造成不可预见的风险-4。"
+        },
+        {
+          "stance": "技术专家批评",
+          "summary": "斯坦福大学网络安全专家亚历克斯·斯塔莫斯批评称，若政府真心想在AI竞赛中击败中国，这大约是最愚蠢的决策-4。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "加州男子起诉OpenAI，称ChatGPT加剧其双相情感障碍致轻生倾向",
+      "summary": "加州男子莱恩斯正式起诉OpenAI，称长期使用GPTo倾诉情绪时AI未识别躁狂妄想征兆，反而附和极端想法，使其陷入持续妄想并产生轻生倾向。",
+      "source": "poloapi.com",
+      "url": "https://poloapi.com/poloapi-blog/news-070302",
+      "published_time": "2026-07-03",
+      "perspectives": [
+        {
+          "stance": "原告方指控",
+          "summary": "诉状直指ChatGPT缺少针对精神脆弱人群的分级风控机制，AI拟人化设计强化共情陪伴但弱化危机干预-22。"
+        },
+        {
+          "stance": "OpenAI回应",
+          "summary": "OpenAI表示同情受害者，持续迭代风险提示词和危机热线推送逻辑，但未承认产品设计缺陷-22。"
+        },
+        {
+          "stance": "行业与监管讨论",
+          "summary": "系列诉讼倒逼行业重新界定AI责任边界，当前法律尚未明确大模型对精神损害的赔付标准-22。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "GPT-5.6三大模型代码偷跑，疑定档7月7日截杀Claude",
+      "summary": "网友在Codex应用底层代码中发现GPT.6 Sol、Terra、Luna三大子模型标识及全新「速度拨盘」功能。爆料称发布窗口指向7月7日至9日，恰逢Claude Fable 5限额方案失效。",
+      "source": "36氪",
+      "url": "https://www.36kr.com/p/3880971920584962",
+      "published_time": "2026-07-04 16:30",
+      "perspectives": [
+        {
+          "stance": "科技媒体爆料",
+          "summary": "OpenAI内部已定下死命令，目标窗口直指7月7日，精准卡点截杀Anthropic-18。内测对比显示GPT-5.6 Terra在效率上对Fable 5形成「降维打击」-18。"
+        },
+        {
+          "stance": "网友与开发者观察",
+          "summary": "极客紧盯着OpenAI前端更新发现模型踪迹，代码中疑似出现「Sol Ultra」字样，业内猜测将直接对标竞品顶级旗舰-18。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "英国FCA警告金融AI监管面临「军备竞赛」，寻求新权力监管ChatGPT等模型",
+      "summary": "英国金融行为监管局（FCA）警告金融领域AI监管正面临「军备竞赛」，敦促赋予其新权力来监管ChatGPT、Claude和Gemini等大模型。",
+      "source": "ChainCatcher（引用金融时报）",
+      "url": "https://www.chaincatcher.com/zh-tw/article/2275051",
+      "published_time": "2026-07-06 08:43",
+      "perspectives": [
+        {
+          "stance": "监管机构立场",
+          "summary": "FCA认为金融AI发展速度远超监管能力，需紧急扩大监管权限以应对系统性风险-11。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "继美国政府限制AI模型发布后，英国监管机构跟进表态，全球AI监管竞赛正在升温-。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "电诈人员用ChatGPT和Gemini同时与100多人聊天，美国AI成电诈「帮凶」",
+      "summary": "一名被拐至缅甸电诈园区的印度小伙透露，其使用ChatGPT和Gemini同时与100多人聊天，支持上百种语言实时翻译和自动回复。",
+      "source": "网易（看看新闻Knews）",
+      "url": "https://www.163.com/dy/article/L1445PC70514EGPO.html",
+      "published_time": "2026-07-05 23:54",
+      "perspectives": [
+        {
+          "stance": "事件报道",
+          "summary": "该电诈人员一个月扮演几十个身份，接触17国5万名目标，上级要求4天内与每位目标建立情感依赖甚至恋爱式信任-5。"
+        },
+        {
+          "stance": "社会关注",
+          "summary": "事件引发对美国AI技术被滥用于跨国电诈的担忧，凸显AI双重用途风险-5。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天ChatGPT相关舆论呈现多元态势：政府监管与国家安全议题占据头条（OpenAI向美政府售股、模型发布受限）；市场竞争白热化（份额跌破50%、GPT-5.6卡点截杀Claude）；安全与伦理丑闻频发（Meta「投毒」、电诈滥用、心理健康诉讼）；公众情绪在期待新技术的同时对AI安全与责任边界高度焦虑。",
+  "honesty_note": "部分热点（如ChatGPT服务中断）虽有用户报告但缺乏官方详细确认，未作为独立热点列入。所有URL均来自搜索结果原文，未自行拼接。搜索覆盖了中英文多来源，但部分事件的具体细节（如GPT-5.6确切发布日期）仍属爆料阶段，有待官方确认。",
+  "start_time": "2026-07-06 02:01",
+  "end_time": "2026-07-06 02:02",
+  "elapsed_seconds": 56,
+  "retry_count": 0
+}

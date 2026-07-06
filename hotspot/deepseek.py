@@ -1,497 +1,768 @@
 """
-DeepSeek Web 自动化模块
+DeepSeek Web API 自动化模块（纯 HTTP 版）
 
-功能：
-- 自动登录（支持 session 持久化）
-- 控制 深度思考 / 智能搜索 开关
-- 后续可扩展对话功能
+替代原来的 Playwright 方案，直接调用 DeepSeek 网页版内部 API：
+- 账号密码登录 → 获取 userToken
+- 创建聊天 Session
+- PoW 挑战求解（纯 Python SHA3-256）
+- SSE 流式接收回复
+- Token 过期自动重新登录
+
+依赖：curl-cffi（模拟 Chrome TLS 指纹绕过 Cloudflare）
 """
 
 import os
-import sys
+import re
 import json
+import time
 import random
 import logging
+import uuid
 from typing import Optional
-
-from playwright.sync_api import (
-    sync_playwright,
-    Browser,
-    BrowserContext,
-    Page,
-)
 
 logger = logging.getLogger(__name__)
 
 # ─── 路径配置 ───────────────────────────────────────
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BROWSERS_DIR = os.path.join(BASE_DIR, "browsers")
 SESSION_DIR = os.path.join(BASE_DIR, "session")
-SESSION_FILE = os.path.join(SESSION_DIR, "storage_state.json")
-COOKIE_FILE = os.path.join(BASE_DIR, "deepseek_cookies.json")
+TOKEN_FILE = os.path.join(SESSION_DIR, "token.json")
 
-os.environ.setdefault("PLAYWRIGHT_BROWSERS_PATH", BROWSERS_DIR)
+# ─── 常量 ────────────────────────────────────────────
 
-# ─── 反检测脚本 ─────────────────────────────────────
+DS_BASE = "https://chat.deepseek.com"
+DS_API = f"{DS_BASE}/api/v0"
 
-ANTI_DETECTION = """
-// ─── 1. 隐藏自动化标记 ───
-Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+# 请求头模板（伪造浏览器）
+DS_HEADERS = {
+    "content-type": "application/json",
+    "origin": DS_BASE,
+    "referer": f"{DS_BASE}/",
+    "user-agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/134.0.0.0 Safari/537.36"
+    ),
+    "x-client-version": "2.0.2",
+    "x-client-platform": "web",
+    "accept": "*/*",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+}
 
-// ─── 2. 伪造 Chrome 运行时对象 ───
-window.chrome = {
-    runtime: {
-        onMessage: { addListener: function() {} },
-        onConnect: { addListener: function() {} },
-        onInstalled: { addListener: function() {} },
-    },
-    loadTimes: function() {},
-    csi: function() {},
-    app: { isInstalled: false },
-};
+# 重试相关
+MAX_LOGIN_RETRIES = 3
+LOGIN_RETRY_DELAY = 5  # 秒
 
-// ─── 3. 补全插件列表 ───
-Object.defineProperty(navigator, 'plugins', {
-    get: () => {
-        const p = [
-            { name: 'Chrome PDF Plugin',     filename: 'internal-pdf-viewer',                 description: 'Portable Document Format' },
-            { name: 'Chrome PDF Viewer',      filename: 'mhjfbmdgcfjbbpaeojofohoefgiehjai',    description: '' },
-            { name: 'Native Client',          filename: 'pnacl',                               description: '' },
-        ];
-        p.__proto__ = PluginArray.prototype;
-        return p;
-    },
-});
-Object.defineProperty(navigator, 'mimeTypes', {
-    get: () => {
-        const m = [];
-        m.__proto__ = MimeTypeArray.prototype;
-        return m;
-    },
-});
 
-// ─── 4. 语言与时区 ───
-Object.defineProperty(navigator, 'languages', { get: () => ['zh-CN', 'zh', 'en'] });
+# ─── 导入 PoW 求解器 ────────────────────────────────
 
-// ─── 5. 硬件指纹 ───
-Object.defineProperty(navigator, 'hardwareConcurrency', { get: () => 8 });
-Object.defineProperty(navigator, 'deviceMemory', { get: () => 8 });
-Object.defineProperty(navigator, 'maxTouchPoints', { get: () => 0 });
+def _import_pow_solver():
+    """延迟导入 pow_solver，避免初始化时出错"""
+    try:
+        from .deepseek_pow import solve_pow_challenge
+        return solve_pow_challenge
+    except Exception as e:
+        logger.error(f"PoW 求解器导入失败: {e}")
+        return None
 
-// ─── 6. 权限 API（仅拦截已知会被检测的权限）───
-const _origQuery = navigator.permissions.query.bind(navigator.permissions);
-navigator.permissions.query = (params) => {
-    if (params.name === 'notifications')
-        return Promise.resolve({ state: 'prompt', onchange: null });
-    if (params.name === 'clipboard-read' || params.name === 'clipboard-write')
-        return Promise.resolve({ state: 'granted', onchange: null });
-    return _origQuery(params);
-};
 
-// ─── 7. WebGL 供应商掩盖 ───
-const _origGLGetParam = WebGLRenderingContext.prototype.getParameter;
-WebGLRenderingContext.prototype.getParameter = function(p) {
-    if (p === 37445) return 'Intel Inc.';
-    if (p === 37446) return 'Intel Iris OpenGL Engine';
-    return _origGLGetParam.call(this, p);
-};
-
-// ─── 8. 网络连接信息 ───
-Object.defineProperty(navigator, 'connection', {
-    get: () => ({
-        effectiveType: '4g', rtt: 50, downlink: 10, saveData: false,
-        addEventListener: function() {}, removeEventListener: function() {},
-    }),
-});
-"""
-
-# ─── 浏览器管理器 ───────────────────────────────────
+# ─── 浏览器管理器 ────────────────────────────────────
 
 class DeepSeekBot:
-    """DeepSeek 网页自动化机器人"""
+    """DeepSeek 网页 API 自动化机器人（纯 HTTP，无浏览器）"""
 
     def __init__(self, headless: bool = True):
+        """
+        初始化机器人
+
+        参数：
+            headless: 保留兼容，不再使用（纯 HTTP 无需浏览器）
+        """
         self.headless = headless
-        self._page: Optional[Page] = None
-        self._context: Optional[BrowserContext] = None
-        self._browser: Optional[Browser] = None
-        self._playwright = None
+        self._token: Optional[str] = None
+        self._session_id: Optional[str] = None
+        self._cookie: Optional[str] = None
+        self._account: str = ""
+        self._password: str = ""
+        self._login_type: str = "phone"
+        self._area_code: str = "+86"
+        self._session = None  # curl_cffi Session
+        self._pow_solver = _import_pow_solver()
 
-    # ---- 启动与登录 ----
+    # ─── 启动与登录 ──────────────────────────────
 
-    def start(self) -> Page:
-        """启动浏览器并恢复 session（如有），返回 Page"""
+    def start(self):
+        """初始化 HTTP 会话（替代原来启动浏览器的逻辑）"""
+        logger.info("DeepSeek HTTP 客户端初始化")
+        # 尝试加载已保存的 session
+        self._load_session()
+        if self._token:
+            logger.info("已加载保存的 token")
+        return self
+
+    def _ensure_session(self):
+        """确保有可用的 curl_cffi Session"""
+        if self._session is None:
+            try:
+                from curl_cffi import requests as cffi_requests
+                self._session = cffi_requests.Session()
+                self._session.impersonate = "chrome120"
+            except ImportError:
+                logger.error("curl_cffi 未安装，请执行: pip install curl-cffi")
+                raise
+        return self._session
+
+    def _preflight(self) -> bool:
+        """预访问首页，获取 WAF Cookie"""
         try:
-            self._playwright = sync_playwright().start()
-        except Exception as e:
-            logger.error(f"Playwright 引擎启动失败: {e}")
-            raise
-
-        try:
-            self._browser = self._playwright.chromium.launch(
-                headless=self.headless,
-                args=[
-                    "--disable-blink-features=AutomationControlled",
-                    "--no-sandbox",
-                    "--disable-dev-shm-usage",
-                    "--disable-gpu",
-                    "--no-first-run",
-                    "--no-default-browser-check",
-                    "--disable-background-networking",
-                    "--disable-sync",
-                ],
+            sess = self._ensure_session()
+            resp = sess.get(
+                DS_BASE + "/",
+                headers={"user-agent": DS_HEADERS["user-agent"]},
+                timeout=15,
             )
+            # 提取 Cookie
+            cookies = sess.cookies.get_dict()
+            if cookies:
+                logger.debug(f"预访问成功, Cookie: {len(cookies)} 个")
+            return True
         except Exception as e:
-            logger.error(f"Chromium 浏览器启动失败 (headless={self.headless}): {e}")
-            raise
-
-        storage = self._load_session()
-        self._context = self._browser.new_context(
-            storage_state=storage or None,
-            viewport={"width": 1920, "height": 1080},
-            timezone_id="Asia/Shanghai",
-            locale="zh-CN",
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-            geolocation={"latitude": 31.2304, "longitude": 121.4737},
-            permissions=["geolocation"],
-            color_scheme="light",
-            device_scale_factor=1,
-            extra_http_headers={
-                "sec-ch-ua": '"Chromium";v="131", "Not(A:Brand";v="24"',
-                "sec-ch-ua-mobile": "?0",
-                "sec-ch-ua-platform": '"Windows"',
-                "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-            },
-        )
-        logger.info(f"浏览器上下文: 1920x1080, Asia/Shanghai, zh-CN, headless={self.headless}, geolocation=上海")
-        self._page = self._context.new_page()
-        self._page.add_init_script(ANTI_DETECTION)
-
-        self._page.set_default_timeout(30000)
-        return self._page
+            logger.warning(f"预访问首页失败（不影响登录）: {e}")
+            return False
 
     def login(self, account: str, password: str) -> bool:
-        """登录 DeepSeek，返回是否登录成功"""
-        page = self._page
+        """
+        登录 DeepSeek（API 版），返回是否成功
+
+        支持手机号自动识别（+86 区号前缀可省略）
+        """
+        self._account = account
+        self._password = password
+
+        # 判断登录类型：纯数字→手机号，含@→邮箱
+        if "@" in account:
+            self._login_type = "email"
+        elif account.isdigit():
+            self._login_type = "phone"
+        else:
+            self._login_type = "email"
+
+        for attempt in range(1, MAX_LOGIN_RETRIES + 1):
+            result = self._do_login()
+            if result:
+                return True
+            if attempt < MAX_LOGIN_RETRIES:
+                delay = LOGIN_RETRY_DELAY + random.uniform(1, 3)
+                logger.info(f"  登录重试 ({attempt}/{MAX_LOGIN_RETRIES})，等待 {delay:.0f}秒...")
+                time.sleep(delay)
+
+        # 尝试用已保存的 token 创建 session（兜底）
+        if self._token:
+            logger.info("尝试用已保存的 token 创建 session...")
+            sess_id = self._create_session()
+            if sess_id:
+                self._session_id = sess_id
+                self._save_session()
+                logger.info("✅ 使用已保存 token 恢复 session 成功")
+                return True
+
+        return False
+
+    def _do_login(self) -> bool:
+        """执行一次登录请求"""
         try:
-            page.goto("https://chat.deepseek.com")
-        except Exception as e:
-            logger.error(f"访问 DeepSeek 页面失败: {e}")
-            return False
-        page.wait_for_timeout(random.uniform(4000, 7000))
-        # 模拟人类鼠标移动和滚动
-        page.mouse.move(random.uniform(100, 500), random.uniform(100, 500))
-        page.evaluate(f"window.scrollTo(0, {random.randint(50, 200)})")
-        page.wait_for_timeout(random.uniform(300, 700))
-        logger.debug("页面加载后模拟鼠标移动和滚动完成")
-        logger.info(f"页面URL: {page.url}")
-        logger.info(f"页面标题: {page.title()}")
+            sess = self._ensure_session()
+            # 预访问获取 WAF Cookie
+            self._preflight()
 
-        # 检测 Cloudflare 拦截或验证码
-        page_title = page.title()
-        page_content_preview = page.content()[:800].lower()
-        if "ERROR" in page_title or "request could not be satisfied" in page_content_preview:
-            logger.error("❌ Cloudflare 拦截：无法访问 DeepSeek（CI 环境网络受限）")
-            return False
-        if "just a moment" in page_content_preview or "cf-challenge" in page_content_preview:
-            logger.error("❌ Cloudflare 验证码挑战中，需手动处理")
-            return False
+            # 构造登录 payload
+            device_id = uuid.uuid4().hex[:16]
+            login_payload = {
+                "password": self._password,
+                "device_id": device_id,
+                "os": "web",
+            }
 
-        # 如果已有 session 直接进入聊天页
-        if "sign_in" not in page.url:
-            logger.info("已有有效 session，跳过登录")
-            # 检测封禁
-            banned_el = page.locator(".ds-alert__content:has-text(\"违反\")")
-            if banned_el.count() > 0:
-                msg = banned_el.first.text_content() or ""
-                logger.error(f"❌ 账号被封禁: {msg}")
+            if self._login_type == "email":
+                login_payload["email"] = self._account
+                login_payload["mobile"] = ""
+                login_payload["area_code"] = ""
+            else:
+                # 手机号
+                mobile = self._account
+                area_code = self._area_code
+                # 如果手机号以 +86 开头，提取区号和号码
+                if mobile.startswith("+86"):
+                    area_code = "+86"
+                    mobile = mobile[3:]
+                elif mobile.startswith("+") and mobile[1:].isdigit():
+                    # 其他区号
+                    parts = mobile.split(" ", 1)
+                    if len(parts) == 2:
+                        area_code, mobile = parts
+                    else:
+                        area_code = mobile[:3]
+                        mobile = mobile[3:]
+                # 纯数字手机号，补区号
+                login_payload["mobile"] = mobile
+                login_payload["area_code"] = area_code
+                login_payload["email"] = ""
+
+            logger.info(f"登录账号: {self._account[:4]}**** (方式: {self._login_type})")
+
+            resp = sess.post(
+                f"{DS_API}/users/login",
+                json=login_payload,
+                headers=DS_HEADERS,
+                timeout=30,
+            )
+
+            # WAF 拦截检测
+            if resp.status_code == 202 and resp.headers.get("x-amzn-waf-action"):
+                logger.error("❌ 登录被 AWS WAF 拦截 (HTTP 202)")
                 return False
+
+            raw = (resp.text or "").strip()
+            if not raw:
+                logger.error("❌ 登录失败: 服务器返回空响应")
+                return False
+
+            try:
+                data = resp.json()
+            except Exception:
+                logger.error(f"❌ 登录失败: 非 JSON 响应: {raw[:200]}")
+                return False
+
+            outer_code = data.get("code", 0)
+            # DeepSeek 的响应结构：
+            # {code:0, data:{biz_code:N, biz_msg:"...", biz_data:{...}}}
+            inner_data = data.get("data") or {}
+            biz_code = inner_data.get("biz_code", 0)
+            biz_msg = inner_data.get("biz_msg", "")
+            biz_data = inner_data.get("biz_data") or {}
+
+            if resp.status_code != 200 or outer_code != 0 or biz_code != 0:
+                err_msg = (
+                    biz_msg
+                    or data.get("msg")
+                    or f"HTTP {resp.status_code}/code={outer_code}"
+                )
+                logger.error(f"❌ 登录失败: {err_msg}")
+                return False
+
+            token = biz_data.get("user", {}).get("token", "")
+            if not token:
+                logger.error("❌ 登录失败: 响应中无 token")
+                return False
+
+            self._token = token
+            logger.info(f"Token 获取成功: {token[:16]}...{token[-8:]}")
+
+            # 创建聊天 session
+            sess_id = self._create_session()
+            if not sess_id:
+                logger.error("❌ 创建聊天 session 失败")
+                return False
+
+            self._session_id = sess_id
+            self._save_session()
+            logger.info("✅ 登录成功")
             return True
 
-        logger.info("需要登录...")
-        # 先检查是否已在登录页
-        page.wait_for_timeout(random.uniform(1000, 2000))
-        # 切换到密码登录
-        try:
-            pw_btn = page.get_by_role("button", name="密码登录")
-            if pw_btn.count() > 0:
-                page.mouse.move(random.uniform(200, 600), random.uniform(200, 500))
-                page.wait_for_timeout(random.uniform(100, 300))
-                pw_btn.first.click()
-                page.wait_for_timeout(random.uniform(800, 1500))
-                page.evaluate(f"window.scrollTo(0, {random.randint(0, 100)})")
         except Exception as e:
-            logger.warning(f"切换到密码登录页可能失败: {e}")
+            logger.error(f"❌ 登录异常: {e}")
+            return False
 
-        # 填账号密码（模拟人类逐字段填写间隔 + 键盘事件）
+    def _create_session(self) -> Optional[str]:
+        """创建新的聊天 session，返回 session_id"""
         try:
-            page.locator('input[type="text"]').press_sequentially(account, delay=random.randint(20, 50))
-            page.wait_for_timeout(random.uniform(300, 800))
-            page.locator('input[type="password"]').press_sequentially(password, delay=random.randint(20, 50))
-            page.wait_for_timeout(random.uniform(200, 600))
-            # 模拟点击登录前移动鼠标
-            page.mouse.move(random.uniform(300, 700), random.uniform(300, 600))
-            page.wait_for_timeout(random.uniform(100, 300))
-            page.locator("div.ds-button--filled").first.click()
+            sess = self._ensure_session()
+            auth_headers = {
+                **DS_HEADERS,
+                "authorization": f"Bearer {self._token}",
+                "referer": DS_BASE + "/",
+            }
+
+            resp = sess.post(
+                f"{DS_API}/chat_session/create",
+                json={},
+                headers=auth_headers,
+                impersonate="chrome120",
+                timeout=15,
+            )
+
+            if resp.status_code != 200:
+                logger.warning(f"创建 session 失败: HTTP {resp.status_code}")
+                return None
+
+            body = resp.json()
+            biz = (body.get("data") or {}).get("biz_data") or {}
+            session_id = (
+                biz.get("chat_session", {}).get("id")
+                or biz.get("id")
+                or ""
+            )
+            if session_id:
+                logger.debug(f"新 session: {session_id}")
+                return session_id
+
+            logger.warning(f"创建 session 失败: 响应中无 ID: {str(body)[:200]}")
+            return None
+
         except Exception as e:
-            logger.error(f"登录表单填写或提交失败: {e}")
-            return False
-        page.wait_for_timeout(random.uniform(6000, 10000))
-        logger.debug("登录按钮已点击，等待响应...")
+            logger.warning(f"创建 session 异常: {e}")
+            return None
 
-        if "sign_in" in page.url:
-            logger.error("登录失败，请检查账号密码")
-            return False
-
-        # 保存 session（登录已成功，凭证有效）
-        self.save_session()
-
-        # 检测账号是否被封禁
-        banned_el = page.locator(".ds-alert__content:has-text(\"违反\")")
-        if banned_el.count() > 0:
-            msg = banned_el.first.text_content() or ""
-            logger.error(f"❌ 账号被封禁: {msg}")
-            return False
-        logger.info("✅ 登录成功")
-        return True
-
-    # ---- 按钮控制 ----
-
-    def set_toggle(self, name: str, target_on: bool = True):
-        """设置 深度思考/智能搜索 按钮状态"""
-        btn = self._page.locator(f'div.ds-toggle-button:has-text("{name}")')
-        if btn.count() == 0:
-            logger.warning(f"[{name}] 未找到按钮")
-            return
-        is_on = btn.get_attribute("aria-pressed") == "true"
-        if is_on != target_on:
-            # 模拟人类点击前移动鼠标
-            self._page.mouse.move(random.uniform(300, 700), random.uniform(200, 500))
-            self._page.wait_for_timeout(random.uniform(100, 300))
-            btn.click()
-            self._page.wait_for_timeout(random.uniform(300, 800))
-            logger.info(f"[{name}] 已{'开启' if target_on else '关闭'}")
-        else:
-            logger.info(f"[{name}] 已经是{'开启' if target_on else '关闭'}状态")
+    # ─── 按钮控制（兼容旧接口） ─────────────────
 
     def enable_all(self):
-        """开启深度思考和智能搜索"""
-        for name in ["深度思考", "智能搜索"]:
-            self.set_toggle(name, target_on=True)
+        """开启联网搜索（HTTP 版通过 API 参数控制，这里只需要记录日志）"""
+        logger.info("[联网搜索] 已配置为 API 请求时启用")
 
     def disable_all(self):
-        """关闭深度思考和智能搜索"""
-        for name in ["深度思考", "智能搜索"]:
-            self.set_toggle(name, target_on=False)
+        """关闭联网搜索"""
+        logger.info("[联网搜索] 已配置为 API 请求时关闭")
 
-    # ---- 对话 ----
+    def set_toggle(self, name: str, target_on: bool = True):
+        """兼容旧接口，仅记录日志"""
+        logger.debug(f"[{name}] HTTP 版无需前端按钮操作")
 
-    def delete_chat(self):
-        """删除当前对话（清理侧边栏历史）"""
-        # 检查配置是否允许删除
-        _cfg_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "hotspot", "config.json")
-        try:
-            with open(_cfg_path, "r", encoding="utf-8") as _f:
-                if not json.load(_f).get("delete_chat", True):
-                    return
-        except Exception:
-            pass
-
-        import re
-        m = re.search(r'([a-f0-9-]{36})', self._page.url)
-        chat_id = m.group(1) if m else ""
-        if not chat_id:
-            return
-
-        try:
-            # 点击侧边栏当前对话的更多按钮
-            btn = self._page.locator(f'a[href*="{chat_id}"] div.ds-button')
-            if btn.count() == 0:
-                return
-            self._page.mouse.move(random.uniform(200, 600), random.uniform(200, 500))
-            self._page.wait_for_timeout(random.uniform(100, 300))
-            btn.first.click()
-            self._page.wait_for_timeout(random.uniform(400, 900))
-
-            # 点击「删除」
-            delete_btn = self._page.locator(
-                'div.ds-dropdown-menu-option__label:text("删除")'
-            )
-            if delete_btn.count() == 0:
-                return
-            self._page.mouse.move(random.uniform(200, 600), random.uniform(300, 550))
-            self._page.wait_for_timeout(random.uniform(100, 300))
-            delete_btn.first.click()
-            self._page.wait_for_timeout(random.uniform(400, 900))
-
-            # 确认删除（如有弹窗）
-            confirm = self._page.locator('button:has-text("删除"), div.ds-button:has-text("删除")').last
-            if confirm.count() > 0:
-                self._page.mouse.move(random.uniform(300, 650), random.uniform(350, 600))
-                self._page.wait_for_timeout(random.uniform(100, 300))
-                confirm.click()
-                self._page.wait_for_timeout(random.uniform(400, 900))
-
-            logger.debug(f"已删除对话: {chat_id}")
-        except Exception as e:
-            logger.warning(f"删除对话失败: {e}")
+    # ─── 对话 ──────────────────────────────────
 
     def new_chat(self):
-        """开启新对话（先删除当前对话，再开新对话）"""
+        """开启新对话（创建新 session）"""
         logger.info("准备开启新对话...")
-        self.delete_chat()
-        try:
-            self._page.goto("https://chat.deepseek.com")
-        except Exception as e:
-            logger.error(f"导航到 DeepSeek 首页失败: {e}")
-            raise
-        self._page.wait_for_timeout(random.uniform(1500, 3000))
-        logger.info("新对话已就绪")
+        sess_id = self._create_session()
+        if sess_id:
+            self._session_id = sess_id
+            self._save_session()
+            logger.info("新对话已就绪")
+        else:
+            logger.warning("创建新对话失败，继续使用当前 session")
 
-    def chat(self, message: str, timeout: int = 120) -> dict:
+    def delete_chat(self):
+        """HTTP 版无需删除对话（无侧边栏）"""
+        pass
+
+    def chat(self, message: str, timeout: int = 180) -> dict:
         """
-        发送消息并等待回复完成（等内容不再变化）
+        发送消息并接收回复
 
         参数：
             message: 要发送的消息
-            timeout: 等待回复的最大秒数
+            timeout: 等待回复的最大秒数（SSE 读取超时）
 
         返回：
             {"text": "完整回复文本", "links": [{"text": "链接文字", "url": "链接地址"}, ...]}
         """
         msg_preview = message[:80].replace("\n", " ")
-        logger.info(f"发送消息 ({len(message)} 字, 超时 {timeout}秒): {msg_preview}...")
-        textarea = self._page.locator('textarea[name="search"]')
-        textarea.fill(message)
-        # 模拟人类输入后停顿思考再发送
-        self._page.wait_for_timeout(random.uniform(500, 2000))
-        # 发送前移动鼠标到页面其他位置
-        self._page.mouse.move(random.uniform(400, 900), random.uniform(100, 400))
-        self._page.wait_for_timeout(random.uniform(200, 500))
-        textarea.press("Enter")
+        logger.info(
+            f"发送消息 ({len(message)} 字, 超时 {timeout}秒): {msg_preview}..."
+        )
 
-        import time
-        start = time.time()
-        reply = self._page.locator("div.ds-markdown.ds-assistant-message-main-content")
-        last_len = 0
-        stable_polls = 0
-
-        while time.time() - start < timeout:
-            if reply.count() > 0:
-                text = reply.last.text_content() or ""
-                current_len = len(text.strip())
-
-                if current_len > 3:
-                    if current_len == last_len:
-                        stable_polls += 1
-                    else:
-                        stable_polls = 0
-
-                    if stable_polls >= 3:
-                        elapsed = time.time() - start
-                        logger.info(f"回复完成 ({elapsed:.1f}秒, {current_len}字)")
-                        return self._get_reply_with_links()
-
-                    last_len = current_len
-
-            self._page.wait_for_timeout(random.uniform(400, 700))
-
-        if reply.count() > 0:
-            logger.warning(f"回复等待超时 ({timeout}秒)，但存在部分回复，尝试提取")
-            return self._get_reply_with_links()
-        logger.warning(f"回复等待超时 ({timeout}秒)，未获取到任何回复")
-        return {"text": "", "links": []}
-
-    def _get_reply_with_links(self) -> dict:
-        """获取回复文本及引用链接"""
-        reply = self._page.locator("div.ds-markdown.ds-assistant-message-main-content")
-        if reply.count() == 0:
-            logger.warning("未找到 AI 回复元素，可能页面加载异常或回复被拦截")
+        if not self._token or not self._session_id:
+            logger.error("未登录或未创建 session，请先调用 login()")
             return {"text": "", "links": []}
 
-        text = reply.last.text_content().strip() or ""
+        # 1. 获取并求解 PoW 挑战
+        pow_header = self._solve_pow()
+        if pow_header is None:
+            logger.warning("PoW 求解失败，尝试不带 PoW 发送")
+            pow_header = ""
 
-        if not text and reply.count() > 0:
-            logger.warning("AI 回复元素存在但内容为空")
+        # 2. 发送对话请求
+        result = self._send_chat_request(message, pow_header, timeout)
 
-        # 从 HTML 中提取链接
-        from bs4 import BeautifulSoup
-        html = reply.last.inner_html()
-        soup = BeautifulSoup(html, "lxml")
+        return result
+
+    def _solve_pow(self) -> Optional[str]:
+        """获取 PoW 挑战并求解，返回 x-ds-pow-response header 值"""
+        try:
+            sess = self._ensure_session()
+            auth_headers = {
+                **DS_HEADERS,
+                "authorization": f"Bearer {self._token}",
+                "referer": f"{DS_BASE}/a/chat/s/{self._session_id}",
+            }
+
+            resp = sess.post(
+                f"{DS_API}/chat/create_pow_challenge",
+                headers=auth_headers,
+                json={"target_path": "/api/v0/chat/completion"},
+                impersonate="chrome120",
+                timeout=15,
+            )
+
+            if resp.status_code != 200:
+                logger.warning(f"PoW 挑战请求失败: HTTP {resp.status_code}")
+                return None
+
+            body = resp.json()
+            challenge = (
+                body.get("data", {})
+                .get("biz_data", {})
+                .get("challenge", {})
+            )
+            if not challenge:
+                logger.warning(f"PoW 挑战响应中无 challenge: {str(body)[:200]}")
+                return None
+
+            logger.debug("PoW 挑战获取成功，开始求解...")
+
+            if self._pow_solver:
+                result = self._pow_solver(challenge)
+                if result:
+                    return result
+                logger.warning("PoW 求解失败")
+            else:
+                logger.error("PoW 求解器未初始化")
+
+            return None
+
+        except Exception as e:
+            logger.warning(f"PoW 流程异常: {e}")
+            return None
+
+    def _send_chat_request(self, prompt: str, pow_header: str, timeout: int) -> dict:
+        """发送聊天请求并解析 SSE 响应"""
+        try:
+            sess = self._ensure_session()
+
+            referer = f"{DS_BASE}/a/chat/s/{self._session_id}"
+            req_headers = {
+                "authorization": f"Bearer {self._token}",
+                "content-type": "application/json",
+                "origin": DS_BASE,
+                "referer": referer,
+                "user-agent": DS_HEADERS["user-agent"],
+                "x-client-version": DS_HEADERS["x-client-version"],
+                "x-client-platform": DS_HEADERS["x-client-platform"],
+                "accept": "*/*",
+                "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+            }
+            if pow_header:
+                req_headers["x-ds-pow-response"] = pow_header
+
+            req_body = {
+                "chat_session_id": self._session_id,
+                "parent_message_id": None,
+                "prompt": prompt,
+                "ref_file_ids": [],
+                "thinking_enabled": False,
+                "search_enabled": True,  # 联网搜索
+                "model_type": "default",
+            }
+
+            resp = sess.post(
+                f"{DS_API}/chat/completion",
+                headers=req_headers,
+                json=req_body,
+                impersonate="chrome120",
+                timeout=timeout,
+            )
+
+            # 401 → token 过期 → 自动重新登录
+            if resp.status_code == 401:
+                logger.info("Token 过期，尝试自动重新登录...")
+                if self._relogin():
+                    # 重新发送
+                    return self._send_chat_request(prompt, pow_header, timeout)
+                else:
+                    logger.error("Token 刷新失败")
+                    return {"text": "", "links": []}
+
+            if resp.status_code != 200:
+                error_body = resp.text[:300] if hasattr(resp, "text") else ""
+                logger.error(
+                    f"DeepSeek API 返回 {resp.status_code}: {error_body}"
+                )
+                return {"text": "", "links": []}
+
+            # 解析 SSE 流
+            text = self._parse_sse_stream(resp, timeout)
+
+            # 提取引用链接
+            links = self._extract_links(text)
+
+            logger.info(f"回复获取完成 ({len(text)} 字, {len(links)} 个链接)")
+
+            return {"text": text, "links": links}
+
+        except Exception as e:
+            logger.error(f"聊天请求异常: {e}")
+            return {"text": "", "links": []}
+
+    def _parse_sse_stream(self, resp, timeout: int) -> str:
+        """
+        解析 DeepSeek SSE 响应，返回完整文本
+
+        先缓冲完整响应体，再按行解析 SSE。
+        处理两种格式：
+        1. 旧格式: response/thinking_content → response/content → response/status
+        2. 新格式: response/fragments（THINK/RESPONSE 类型）
+        """
+        # 先读取完整响应体（非流式，避免 curl_cffi 兼容问题）
+        import io
+
+        collected = []
+        fragment_type = None  # THINK / RESPONSE
+        start = time.time()
+
+        # 使用 resp.text 直接获取完整响应体，然后按行切分
+        body = resp.text
+        if not body:
+            logger.warning("SSE 响应体为空")
+            return ""
+
+        # 记录前 200 字节用于调试
+        logger.debug(f"SSE 原始响应前 200 字节: {body[:200]}")
+
+        # 按行解析
+        for line in body.split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+            if time.time() - start > timeout:
+                logger.warning("SSE 解析超时")
+                break
+
+            # 跳过 event: 行、注释行
+            if line.startswith("event:") or line.startswith(":") or line == ":":
+                continue
+
+            # HTML 错误检测
+            if line.startswith("<!DOCTYPE") or line.startswith("<html"):
+                logger.error(f"DeepSeek 返回了 HTML: {line[:200]}")
+                return ""
+
+            # 非 data: 行
+            if not line.startswith("data: "):
+                continue
+
+            data = line[6:]  # 去掉 "data: "
+            data = data.strip()
+            if data in ("", ":", "[DONE]"):
+                continue
+
+            try:
+                obj = json.loads(data)
+            except json.JSONDecodeError:
+                continue
+
+            if not isinstance(obj, dict):
+                continue
+
+            val = obj.get("v")
+
+            # ── 顶层错误对象 ──
+            if obj.get("type") == "error":
+                content = obj.get("content", "")
+                logger.warning(f"DeepSeek 返回错误: {content}")
+                return ""
+
+            # ── val 是 dict → metadata / fragments ──
+            if isinstance(val, dict):
+                # v 中的错误
+                t_type = val.get("type", "")
+                t_content = val.get("content", "")
+                if t_type == "error" and t_content:
+                    logger.warning(f"回复错误: {t_content}")
+                    return ""
+
+                # fragments 格式（从 v.response.fragments 提取）
+                resp_data = val.get("response", {})
+                if isinstance(resp_data, dict):
+                    frags = resp_data.get("fragments", [])
+                    if frags and isinstance(frags, list):
+                        for frag in frags:
+                            if isinstance(frag, dict):
+                                ft = frag.get("type", "")
+                                if ft:
+                                    fragment_type = ft
+                                fc = frag.get("content", "")
+                                if fc and isinstance(fc, str):
+                                    if fragment_type != "THINK":
+                                        collected.append(fc)
+                continue
+
+            path = obj.get("p", "")
+
+            # ── fragments 追加 ──
+            if path == "response/fragments" and isinstance(val, list):
+                if val and isinstance(val[-1], dict):
+                    last = val[-1]
+                    ft = last.get("type", "")
+                    if ft:
+                        fragment_type = ft
+                    fc = last.get("content", "")
+                    if fc and isinstance(fc, str):
+                        if fragment_type != "THINK":
+                            collected.append(fc)
+                continue
+
+            # ── fragments content 追加 ──
+            if path == "response/fragments/-1/content":
+                if fragment_type != "THINK" and isinstance(val, str) and val:
+                    collected.append(val)
+                continue
+
+            # ── 旧格式: response/content ──
+            if path == "response/content":
+                if isinstance(val, str) and val:
+                    collected.append(val)
+                continue
+
+            # ── 旧格式: response/thinking_content（跳过） ──
+            if path == "response/thinking_content":
+                continue
+
+            # ── 无路径的行（续接） ──
+            if not path and isinstance(val, str) and val:
+                if fragment_type is not None:
+                    if fragment_type != "THINK":
+                        collected.append(val)
+                else:
+                    collected.append(val)
+                continue
+
+            # ── 完成状态 ──
+            if path == "response/status" and val == "FINISHED":
+                break
+
+        result = "".join(collected)
+        logger.debug(f"SSE 解析完成: 收集了 {len(result)} 字")
+        return result
+
+    def _extract_links(self, text: str) -> list:
+        """从回复文本中提取所有 Markdown 链接"""
         links = []
         seen = set()
-        for a in soup.find_all("a"):
-            href = a.get("href", "").strip()
-            txt = a.text.strip()
-            if href and href not in seen:
-                seen.add(href)
-                links.append({"text": txt or href, "url": href})
+        # 匹配 [text](url) 格式
+        for m in re.finditer(r'\[([^\]]+)\]\(([^)]+)\)', text):
+            url = m.group(2).strip()
+            txt = m.group(1).strip()
+            if url and url not in seen:
+                seen.add(url)
+                links.append({"text": txt or url, "url": url})
+        return links
 
-        if links:
-            logger.info(f"从回复中提取到 {len(links)} 个引用链接")
-        return {"text": text, "links": links}
+    # ─── Token 刷新 ─────────────────────────────
 
-    # ---- 会话管理 ----
+    def _relogin(self) -> bool:
+        """用保存的密码重新登录，返回是否成功"""
+        if not self._account or not self._password:
+            logger.error("无保存的账号密码，无法自动重新登录")
+            return False
+
+        logger.info("自动重新登录...")
+        # 重置 session（清除旧 token 上下文）
+        self._session = None
+        if self._do_login():
+            logger.info("重新登录成功")
+            return True
+
+        logger.error("重新登录失败")
+        return False
+
+    # ─── 会话管理 ───────────────────────────────
 
     def save_session(self):
-        """保存登录状态到文件"""
-        if not self._context:
-            logger.warning("浏览器上下文未初始化，跳过 session 保存")
+        """保存 token 和 session_id 到文件"""
+        self._save_session()
+
+    def _save_session(self):
+        """保存登录状态"""
+        if not self._token:
             return
         try:
             os.makedirs(SESSION_DIR, exist_ok=True)
-            self._context.storage_state(path=SESSION_FILE)
-            logger.info(f"session 已保存到 {SESSION_FILE}")
+            data = {
+                "token": self._token,
+                "session_id": self._session_id or "",
+                "account": self._account,
+                "login_type": self._login_type,
+                "password": self._password,
+                "area_code": self._area_code,
+                "saved_at": time.time(),
+            }
+            with open(TOKEN_FILE, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            logger.debug(f"session 已保存到 {TOKEN_FILE}")
         except Exception as e:
-            logger.error(f"保存 session 失败: {e}")
+            logger.warning(f"保存 session 失败: {e}")
 
-    def _load_session(self) -> Optional[str]:
-        """读取已保存的 session 文件路径"""
-        if os.path.isfile(SESSION_FILE):
-            logger.info(f"发现已保存的 session: {SESSION_FILE}")
-            return SESSION_FILE
-        logger.info("未找到已保存的 session，需要登录")
-        return None
+    def _load_session(self) -> bool:
+        """加载保存的 token 和 session_id"""
+        if not os.path.isfile(TOKEN_FILE):
+            logger.debug("未找到已保存的 session 文件")
+            return False
 
-    # ---- 资源释放 ----
+        try:
+            with open(TOKEN_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            self._token = data.get("token", "")
+            self._session_id = data.get("session_id", "")
+            self._account = data.get("account", "")
+            self._password = data.get("password", "")
+            self._login_type = data.get("login_type", "phone")
+            self._area_code = data.get("area_code", "+86")
+
+            saved_at = data.get("saved_at", 0)
+            age_hours = (time.time() - saved_at) / 3600 if saved_at else 999
+
+            if self._token:
+                logger.info(
+                    f"加载已保存的 session（账号: {self._account[:4]}****, "
+                    f"保存时间: {age_hours:.1f} 小时前）"
+                )
+
+            # token 超过 20 小时强制重新登录
+            if age_hours > 20:
+                logger.info("Token 可能已过期，本次将重新登录")
+                return False
+
+            return bool(self._token)
+
+        except Exception as e:
+            logger.warning(f"加载 session 失败: {e}")
+            return False
+
+    # ─── 资源释放 ───────────────────────────────
 
     def close(self):
-        """关闭浏览器"""
+        """关闭 HTTP 会话"""
         try:
-            if self._page:
-                self._page.close()
-            if self._context:
-                self._context.close()
-            if self._browser:
-                self._browser.close()
-            if self._playwright:
-                self._playwright.stop()
+            if self._session:
+                self._session.close()
+                self._session = None
+            logger.debug("HTTP 会话已关闭")
         except Exception as e:
-            logger.warning(f"关闭浏览器时出错: {e}")
+            logger.warning(f"关闭会话时出错: {e}")
 
 
 # ─── 快捷测试 ──────────────────────────────────────
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    logger.info("DeepSeekBot 快捷测试 — 完整流程请运行: python -m hotspot")
+    logger.info("DeepSeekBot HTTP 版快捷测试 — 完整流程请运行: python -m hotspot")
 
-    bot = DeepSeekBot(headless=False)
+    bot = DeepSeekBot()
     try:
-        page = bot.start()
+        bot.start()
         import os as _os
         acc = _os.environ.get("DEEPSEEK_ACCOUNT", "")
         pwd = _os.environ.get("DEEPSEEK_PASSWORD", "")
         if not acc or not pwd:
-            logger.error("请设置环境变量 DEEPSEEK_ACCOUNT / DEEPSEEK_PASSWORD 传入测试账号")
+            logger.error("请设置环境变量 DEEPSEEK_ACCOUNT / DEEPSEEK_PASSWORD")
+            import sys
             sys.exit(1)
-        bot.login(acc, pwd)
-        bot.enable_all()
 
-        reply = bot.chat("用一句话介绍你自己")
-        print(f"\nDeepSeek: {reply}\n")
-
-        input("按回车退出...")
+        if bot.login(acc, pwd):
+            bot.enable_all()
+            reply = bot.chat("用一句话介绍你自己")
+            print(f"\nDeepSeek: {reply}\n")
+        else:
+            logger.error("登录失败")
     finally:
         bot.close()

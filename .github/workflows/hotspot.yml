@@ -27,9 +27,6 @@ jobs:
       - name: 安装依赖
         run: uv sync
 
-      - name: 安装 Playwright 浏览器
-        run: uv run playwright install chromium
-
       - name: 创建输出目录
         run: mkdir -p results session
 
@@ -52,8 +49,6 @@ jobs:
 
       - name: 运行热点搜索
         id: run
-        env:
-          PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
         run: |
           uv run python -m hotspot
           REPORT_JSON=$(find results -name "report.json" -type f | head -1)

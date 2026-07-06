@@ -1,8 +1,6 @@
 @echo off
 cd /d "%~dp0"
 
-set PLAYWRIGHT_BROWSERS_PATH=./browsers
-
 :: 检查已有合法结果（上次推送失败留下的），有则跳过爬虫
 python -c "import json,glob; files=sorted(glob.glob('results/**/report.json', recursive=True)); exit(1) if not files else exit(0 if json.load(open(files[-1],'r',encoding='utf-8')).get('total_hotspots',0) > 0 else 1)" 2>nul
 if %errorlevel% equ 0 goto deploy

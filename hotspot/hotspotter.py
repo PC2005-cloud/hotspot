@@ -69,12 +69,18 @@ def build_prompt(keyword: str) -> str:
 
 
 def parse_json_reply(text: str) -> Optional[dict]:
-    """从 DeepSeek 回复中提取 JSON（去掉 markdown 包裹后解析）"""
+    """从 DeepSeek 回复中提取 JSON（去掉 markdown 包裹和尾部额外文字后解析）"""
     text = text.strip()
     if text.startswith("```json"):
         text = text[len("```json"):]
     if text.endswith("```"):
         text = text[:-3]
+    text = text.strip()
+
+    # 截断到最后一个 }（AI 有时在 JSON 后追加额外文字）
+    last_brace = text.rfind("}")
+    if last_brace > 0:
+        text = text[:last_brace + 1]
     text = text.strip()
 
     try:

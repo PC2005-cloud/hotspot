@@ -518,25 +518,35 @@ class DeepSeekBot:
                 logger.warning(f"DeepSeek 返回非 SSE 响应 (Content-Type: {ct}): {body_text[:200]}")
                 return {"text": "", "links": []}
 
-            # 解析 SSE 流
-            text = self._parse_sse_stream(resp, timeout)
+            # 解析 SSE 流（返回文本 + 引用链接）
+            text, ref_links = self._parse_sse_stream(resp, timeout)
 
-            # 提取引用链接
-            links = self._extract_links(text)
+            # 从文本中提取 markdown/HTML 链接
+            md_links = self._extract_links(text)
 
-            logger.info(f"回复获取完成 ({len(text)} 字, {len(links)} 个链接)")
+            # 合并去重
+            seen_urls = set()
+            all_links = []
+            for link in ref_links + md_links:
+                if link["url"] not in seen_urls:
+                    seen_urls.add(link["url"])
+                    all_links.append(link)
 
-            return {"text": text, "links": links}
+            logger.info(f"回复获取完成 ({len(text)} 字, {len(all_links)} 个链接)")
+
+            return {"text": text, "links": all_links}
 
         except Exception as e:
             logger.error(f"聊天请求异常: {e}")
             return {"text": "", "links": []}
 
-    def _parse_sse_stream(self, resp, timeout: int) -> str:
+    def _parse_sse_stream(self, resp, timeout: int) -> tuple[str, list]:
         """
-        解析 DeepSeek SSE 响应，返回完整文本
+        解析 DeepSeek SSE 响应，返回 (文本, 引用链接列表)
 
-        先缓冲完整响应体，再按行解析 SSE。
+        从 content fragments 中提取 AI 文本，
+        从 results/SET 和 TOOL_OPEN 事件中提取引用链接。
+
         处理两种格式：
         1. 旧格式: response/thinking_content → response/content → response/status
         2. 新格式: response/fragments（THINK/RESPONSE 类型）
@@ -546,13 +556,20 @@ class DeepSeekBot:
 
         collected = []
         fragment_type = None  # THINK / RESPONSE
+        ref_links = []        # 从 SSE 事件中收集的引用链接
+        seen_refs = set()     # 去重
         start = time.time()
+
+        def _add_ref(url: str, text: str = ""):
+            if url and url not in seen_refs:
+                seen_refs.add(url)
+                ref_links.append({"text": text or url, "url": url})
 
         # 使用 resp.text 直接获取完整响应体，然后按行切分
         body = resp.text
         if not body:
             logger.warning("SSE 响应体为空")
-            return ""
+            return ("", [])
 
         # 记录前 200 字节用于调试
         logger.debug(f"SSE 原始响应前 200 字节: {body[:200]}")
@@ -573,7 +590,7 @@ class DeepSeekBot:
             # HTML 错误检测
             if line.startswith("<!DOCTYPE") or line.startswith("<html"):
                 logger.error(f"DeepSeek 返回了 HTML: {line[:200]}")
-                return ""
+                return ("", [])
 
             # 非 data: 行
             if not line.startswith("data: "):
@@ -582,6 +599,8 @@ class DeepSeekBot:
             data = line[6:]  # 去掉 "data: "
             data = data.strip()
             if data in ("", ":", "[DONE]"):
+                if data == "[DONE]":
+                    break
                 continue
 
             try:
@@ -598,7 +617,34 @@ class DeepSeekBot:
             if obj.get("type") == "error":
                 content = obj.get("content", "")
                 logger.warning(f"DeepSeek 返回错误: {content}")
-                return ""
+                return ("", [])
+
+            # ── 引用链接事件: response/fragments/-1/results [SET] ──
+            if obj.get("p") == "response/fragments/-1/results" and obj.get("o") == "SET":
+                if isinstance(val, list):
+                    for result in val:
+                        if isinstance(result, dict):
+                            url = result.get("url", "")
+                            title = result.get("title", "")
+                            _add_ref(url, title)
+                continue
+
+            # ── BATCH 事件（内含 TOOL_OPEN 引用链接） ──
+            if obj.get("o") == "BATCH":
+                batch_items = val if isinstance(val, list) else [val]
+                for item in batch_items:
+                    if isinstance(item, dict):
+                        # 递归处理 BATCH 中的 fragments
+                        inner_v = item.get("v", [])
+                        if isinstance(inner_v, list):
+                            for frag in inner_v:
+                                if isinstance(frag, dict) and frag.get("type") == "TOOL_OPEN":
+                                    res = frag.get("result", {})
+                                    if isinstance(res, dict):
+                                        url = res.get("url", "")
+                                        title = res.get("title", "")
+                                        _add_ref(url, title)
+                continue
 
             # ── val 是 dict → metadata / fragments ──
             if isinstance(val, dict):
@@ -607,7 +653,7 @@ class DeepSeekBot:
                 t_content = val.get("content", "")
                 if t_type == "error" and t_content:
                     logger.warning(f"回复错误: {t_content}")
-                    return ""
+                    return ("", [])
 
                 # fragments 格式（从 v.response.fragments 提取）
                 resp_data = val.get("response", {})
@@ -671,20 +717,44 @@ class DeepSeekBot:
 
         result = "".join(collected)
         logger.debug(f"SSE 解析完成: 收集了 {len(result)} 字")
-        return result
+        return (result, ref_links)
 
     def _extract_links(self, text: str) -> list:
-        """从回复文本中提取所有 Markdown 链接"""
-        links = []
+        """从回复 HTML 中提取所有 <a> 标签链接（DeepSeek 回复为 HTML 格式）"""
+        from html.parser import HTMLParser
+
+        class _LinkFinder(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.links = []
+                self._href = ""
+                self._text_parts = []
+                self._in_a = False
+            def handle_starttag(self, tag, attrs):
+                if tag == "a":
+                    self._in_a = True
+                    self._text_parts = []
+                    d = dict(attrs)
+                    self._href = d.get("href", "").strip()
+            def handle_data(self, data):
+                if self._in_a:
+                    self._text_parts.append(data)
+            def handle_endtag(self, tag):
+                if tag == "a" and self._in_a and self._href:
+                    txt = "".join(self._text_parts).strip()
+                    self.links.append({"text": txt or self._href, "url": self._href})
+                    self._in_a = False
+
+        finder = _LinkFinder()
+        finder.feed(text)
+        # 去重
         seen = set()
-        # 匹配 [text](url) 格式
-        for m in re.finditer(r'\[([^\]]+)\]\(([^)]+)\)', text):
-            url = m.group(2).strip()
-            txt = m.group(1).strip()
-            if url and url not in seen:
-                seen.add(url)
-                links.append({"text": txt or url, "url": url})
-        return links
+        result = []
+        for link in finder.links:
+            if link["url"] not in seen:
+                seen.add(link["url"])
+                result.append(link)
+        return result
 
     # ─── Token 刷新 ─────────────────────────────
 

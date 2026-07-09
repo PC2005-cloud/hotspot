@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "curl-cffi>=0.15.0",
+    "wasmtime>=46.0.0",
     "httpx>=0.28.0",
     "demjson3>=3.0.6",
 ]

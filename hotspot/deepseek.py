@@ -86,6 +86,8 @@ class DeepSeekBot:
         self._password: str = ""
         self._login_type: str = "phone"
         self._area_code: str = "+86"
+        self._thinking_enabled: bool = True     # 深度思考，默认开启
+        self._search_enabled: bool = True       # 联网搜索，默认开启
         self._session = None  # curl_cffi Session
         self._pow_solver = _import_pow_solver()
 
@@ -313,19 +315,30 @@ class DeepSeekBot:
             logger.warning(f"创建 session 异常: {e}")
             return None
 
-    # ─── 按钮控制（兼容旧接口） ─────────────────
+    # ─── 深度思考/联网搜索控制 ──────────────────
+    # 参考 deepseek-free-api/proxy.py:3179 中 thinking_enabled/search_enabled 的用法
+    # 他们通过模型 ID 映射决定 flags，我们通过方法调用来设置
 
     def enable_all(self):
-        """开启联网搜索（HTTP 版通过 API 参数控制，这里只需要记录日志）"""
-        logger.info("[联网搜索] 已配置为 API 请求时启用")
+        """开启深度思考和联网搜索"""
+        self._thinking_enabled = True
+        self._search_enabled = True
+        logger.info("✅ 深度思考 + 联网搜索 已开启")
 
     def disable_all(self):
-        """关闭联网搜索"""
-        logger.info("[联网搜索] 已配置为 API 请求时关闭")
+        """关闭深度思考和联网搜索"""
+        self._thinking_enabled = False
+        self._search_enabled = False
+        logger.info("深度思考 + 联网搜索 已关闭")
 
     def set_toggle(self, name: str, target_on: bool = True):
-        """兼容旧接口，仅记录日志"""
-        logger.debug(f"[{name}] HTTP 版无需前端按钮操作")
+        """设置开关状态"""
+        if "深度" in name or "思考" in name:
+            self._thinking_enabled = target_on
+            logger.info(f"[{'✅' if target_on else '❌'}深度思考] {'开启' if target_on else '关闭'}")
+        if "搜索" in name or "联网" in name:
+            self._search_enabled = target_on
+            logger.info(f"[{'✅' if target_on else '❌'}联网搜索] {'开启' if target_on else '关闭'}")
 
     # ─── 对话 ──────────────────────────────────
 
@@ -448,8 +461,8 @@ class DeepSeekBot:
                 "parent_message_id": None,
                 "prompt": prompt,
                 "ref_file_ids": [],
-                "thinking_enabled": False,
-                "search_enabled": True,  # 联网搜索
+                "thinking_enabled": self._thinking_enabled,
+                "search_enabled": self._search_enabled,
                 "model_type": "default",
             }
 
@@ -476,6 +489,33 @@ class DeepSeekBot:
                 logger.error(
                     f"DeepSeek API 返回 {resp.status_code}: {error_body}"
                 )
+                return {"text": "", "links": []}
+
+            # 检查 Content-Type：DeepSeek 可能返回 JSON 错误（如 user is muted）
+            ct = resp.headers.get("content-type", "")
+            if "text/event-stream" not in ct and "application/json" in ct:
+                # 可能是业务错误（如账号被禁言/版本过低）
+                body_text = resp.text[:500] if hasattr(resp, "text") else ""
+                if body_text:
+                    try:
+                        err_data = json.loads(body_text)
+                        inner = err_data.get("data")
+                        if inner is None:
+                            inner = {}
+                        biz_code = inner.get("biz_code", 0)
+                        biz_msg = inner.get("biz_msg", "")
+                        if biz_code != 0:
+                            logger.error(f"DeepSeek 业务错误 (biz_code={biz_code}): {biz_msg}")
+                            return {"text": f"[DeepSeek 错误] {biz_msg}", "links": []}
+                        # 无 biz_code 的 JSON 错误（如 code=40300 MISSING_HEADER）
+                        err_code = err_data.get("code", 0)
+                        err_msg = err_data.get("msg", "")
+                        if err_code != 0:
+                            logger.error(f"DeepSeek API 错误 (code={err_code}): {err_msg}")
+                            return {"text": "", "links": []}
+                    except json.JSONDecodeError:
+                        pass
+                logger.warning(f"DeepSeek 返回非 SSE 响应 (Content-Type: {ct}): {body_text[:200]}")
                 return {"text": "", "links": []}
 
             # 解析 SSE 流

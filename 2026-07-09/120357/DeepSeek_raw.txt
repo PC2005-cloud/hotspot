@@ -1,0 +1,92 @@
+  "keyword": "DeepSeek",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【DeepSeek启动自研AI推理芯片项目】",
+      "summary": "外媒报道DeepSeek已启动自研AI推理芯片项目，项目约一年前启动，当前处于早期阶段，旨在降低对英伟达和华为芯片的依赖，聚焦推理场景优化成本与能效[citation:1][citation:2][citation:6]。",
+      "source": "路透社、36氪、俄罗斯卫星通讯社等",
+      "url": null,
+      "published_time": "2026-07-07至07-08",
+      "perspectives": [
+        {
+          "stance": "【行业分析与战略解读】",
+          "summary": "自研推理芯片是全球头部AI企业的共同趋势（如OpenAI、Meta），旨在降低占模型生命周期成本80-90%的推理环节开销。DeepSeek此举契合美国芯片出口管制背景下中国AI企业寻求自主可控的必然选择，也解释了其近期完成500亿融资的部分用途[citation:1][citation:6][citation:9]。"
+        },
+        {
+          "stance": "【市场与供应链影响】",
+          "summary": "消息传出后英伟达股价盘前下跌约1.6%。DeepSeek与智谱AI同时被曝造芯，标志着中国AI头部企业正试图摆脱对英伟达通用GPU的依赖，通过专用芯片（ASIC）构建自身算力生态[citation:9]。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【前华为「天才少年」公开吐槽DeepSeek面试流程】",
+      "summary": "7月6日，前华为「天才少年」李博杰发文称在DeepSeek面试中遭遇流程混乱、面试官怀疑其用双屏作弊等问题，相关话题登上热搜，引发对头部AI企业招聘标准的讨论[citation:4][citation:7][citation:11]。",
+      "source": "微博、36氪、上游新闻",
+      "url": null,
+      "published_time": "2026-07-06至07-08",
+      "perspectives": [
+        {
+          "stance": "【求职者体验与质疑】",
+          "summary": "李博杰称面试官迟到、态度傲慢且无故怀疑其抄袭，表示「被严重冒犯」并终止面试。其他求职者也反馈DeepSeek面试排期仓促、筛选标准变动大，似乎在寻找「各方面都完美的人」[citation:4][citation:7]。"
+        },
+        {
+          "stance": "【行业现实与猎头视角】",
+          "summary": "猎头和部分从业者认为DeepSeek准入门槛是「行业TOP1」，虽存在流程瑕疵，但技术面试专业度高，严苛标准源于其「宁缺毋滥」的招聘文化。事件也折射出AI高速扩张下人才选拔体系的现实矛盾[citation:4][citation:11]。"
+        },
+        {
+          "stance": "【事件衍生：投资纠纷】",
+          "summary": "该事件随后牵出李博杰与其投资人杜均的千万投资纠纷。杜均公开指责李博杰缺乏契约精神，双方围绕投资款到账、项目进展与信息披露问题各执一词，使讨论延伸至AI创业圈的信誉问题[citation:11]。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "【DeepSeek被曝采购英伟达H200芯片并自研芯片】",
+      "summary": "市场消息称DeepSeek与阿里等公司将采购约20万张英伟达H200芯片用于模型训练，同时外媒确认DeepSeek正自研推理芯片，显示其采取「外部采购+自研」双轨并行的算力策略[citation:1][citation:12]。",
+      "source": "新浪财经、路透社",
+      "url": null,
+      "published_time": "2026-07-08",
+      "perspectives": [
+        {
+          "stance": "【综合报道】",
+          "summary": "报道称DeepSeek将购买少量H200芯片用于大模型训练，而推理侧则推荐用国产卡。结合其自研推理芯片的消息，表明DeepSeek正同时布局高端训练算力和自主推理算力，以应对算力需求飙升和供应链不确定性[citation:1]。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "【DeepSeek服务频繁崩溃，V4版将引入峰谷定价】",
+      "summary": "7月2日DeepSeek再因服务器繁忙登上热搜，今年已发生至少18次服务异常，用户量暴涨与算力储备失衡是主因。官方宣布V4正式版7月中旬上线，并将实施峰谷定价机制[citation:5][citation:8]。",
+      "source": "中国经济网、东方财富",
+      "url": null,
+      "published_time": "2026-07-02至07-09",
+      "perspectives": [
+        {
+          "stance": "【用户与市场反馈】",
+          "summary": "频繁崩溃引发用户不满，网友称「不会办公了」，暴露出AI企业在用户激增下基础设施稳定性不足的问题，以及商业化与用户体验之间的失衡[citation:8]。"
+        },
+        {
+          "stance": "【官方举措与分析】",
+          "summary": "DeepSeek计划通过V4版本上线和峰谷定价（高峰时段调用价格翻倍）来优化资源调度。券商报告也提及DeepSeek与北大联合发布DSpark推测解码技术，将模型生成速度提升60%-85%，以缓解算力压力[citation:5][citation:9]。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【DeepSeek完成500亿融资后启动大规模扩招】",
+      "summary": "DeepSeek于6月中旬完成超500亿元首轮外部融资后，旋即宣布所有部门规模至少翻倍，开放33类岗位，核心研究员年薪上限超150万元，引发行业对AI人才争夺战的关注[citation:4][citation:7][citation:11]。",
+      "source": "IT时报、上游新闻",
+      "url": null,
+      "published_time": "2026-07-07至07-08",
+      "perspectives": [
+        {
+          "stance": "【综合报道】",
+          "summary": "本轮融资由梁文锋个人出资约200亿元，腾讯、宁德时代等参投，资金将投向国产算力集群、自研芯片和人才扩招。扩招被视为从「小步快跑」转向全链条人才储备的补课，但面试风波显示其高标准在扩张中面临挑战[citation:4][citation:7][citation:11]。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天DeepSeek舆情焦点集中在【算力自主】与【人才管理】两条主线。一方面，自研推理芯片和采购英伟达H200的消息引发行业对其算力战略的广泛解读，被视为中美AI技术分化的重要注脚；另一方面，面试风波和频繁服务崩溃事件则引发公众对其内部管理、招聘文化及服务稳定性的质疑，舆论呈现「技术理想主义」与「现实落地挑战」之间的张力[citation:1][citation:4][citation:8]。",
+  "honesty_note": "搜索结果均集中在2026-07-02至07-09时间范围内，信息时效性符合要求。关于DeepSeek自研芯片、面试风波和采购H200芯片的报道覆盖了最近24-48小时的热点事件。需说明的是，部分涉及投资纠纷的细节仅来自单方陈述，DeepSeek官方尚未对面试门和芯片自研传闻作出正式回应[citation:4][citation:7][citation:11]。URL字段因搜索结果摘要未提供可直接引用的完整链接，均按规则保留为null。"
+}This response is AI-generated, for reference only.

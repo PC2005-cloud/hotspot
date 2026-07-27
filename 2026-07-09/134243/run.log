@@ -1,0 +1,54 @@
+[13:42:43] ==================================================
+[13:42:43]   🔥 Hotspot — 热点搜索器
+[13:42:43]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-09\134243\run.log
+[13:42:43] ==================================================
+[13:42:43] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:42:43]   关键词: 1 个 — DeepSeek
+[13:42:43] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:42:43] DeepSeek HTTP 客户端初始化
+[13:42:43] 加载已保存的 session（账号: 1309****, 保存时间: 0.2 小时前）
+[13:42:43] 已加载保存的 token
+[13:42:43] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:42:43] 登录账号: 1309****
+[13:42:44] 登录账号: 1309**** (方式: phone)
+[13:42:44] Token 获取成功: MXGJTnBjh4/qRSgQ...9o8/WvlU
+[13:42:45] ✅ 登录成功
+[13:42:45] ✅ 深度思考 + 联网搜索 已开启
+[13:42:45] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:42:45] 
+共 1 个关键词，开始搜索...
+[13:42:45] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:42:45] 
+==================================================
+[13:42:45]   关键词: DeepSeek
+[13:42:45] ==================================================
+[13:42:45]   prompt 长度: 1446 字
+[13:42:45] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:42:45] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月02日 至 07月09日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[13:42:45] PoW 求解成功: nonce=74234
+[13:43:24] 回复获取完成 (4159 字, 46 个链接)
+[13:43:24] 验证 URL 可用性...
+[13:43:25] HTTP Request: HEAD https://www.sohu.com/a/1047509252_99900743 "HTTP/1.1 200 OK"
+[13:43:26] HTTP Request: HEAD https://cqcb.com/shuzijingji/2026-07-07/6175729_pc.html "HTTP/1.1 200 OK"
+[13:43:27] HTTP Request: HEAD https://www.sohu.com/a/1044958315_120702 "HTTP/1.1 200 OK"
+[13:43:28] HTTP Request: HEAD https://www.stheadline.com/realtime-finance/3591702/%E4%B8%AD%E5%9C%8B%E6%93%9A%E5%A0%B1%E5%87%86%E7%A7%91%E4%BC%81%E9%99%90%E8%B3%BCNvidia-H200%E6%99%B6%E7%89%87-%E5%B7%B2%E9%80%9A%E7%9F%A5%E9%98%BF%E9%87%8C%E5%AD%97%E7%AF%80%E5%8F%8ADeepSeek-%E9%9C%80%E4%BA%A4%E4%BB%A3%E6%95%B8%E9%87%8F%E5%8F%8A%E7%94%A8%E9%80%94 "HTTP/1.1 200 OK"
+[13:43:28] HTTP Request: HEAD https://www.163.com/dy/article/L1CO3JA7051181GK.html "HTTP/1.1 200 OK"
+[13:43:29] HTTP Request: HEAD https://dxpress.gelonghui.com/live/2533866 "HTTP/1.1 200 OK"
+[13:43:29] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[13:43:29] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-09\134243\DeepSeek.json
+[13:43:29]   [完成] DeepSeek (6 条热点, 39秒)
+[13:43:29] 搜索完成: 1/1 成功, 共 6 条热点
+[13:43:29] 
+[13:43:29] ============================================================
+[13:43:29]   运行总结
+[13:43:29] ============================================================
+[13:43:29]   关键词                  状态       热点数    耗时    
+[13:43:29]   ──────────────────── ──────── ────── ──────
+[13:43:29]   DeepSeek             完成       6      39s   
+[13:43:29] 
+[13:43:29]   总计: 1/1 成功 | 6 条热点 | 共耗时 46秒
+[13:43:29] ============================================================
+[13:43:29] 聚合报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-09\134243\report.json
+[13:43:29] 已加载 HTML 模板: D:\Projects\project\Blog\Hotspot\hotspot\template.html
+[13:43:29] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-09\134243\report.html
+[13:43:29] ✅ 本次搜索完成: 9 条热点已同步到 results/

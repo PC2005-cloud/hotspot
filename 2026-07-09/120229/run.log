@@ -1,0 +1,32 @@
+[12:02:29] ==================================================
+[12:02:29]   🔥 Hotspot — 热点搜索器
+[12:02:29]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-09\120229\run.log
+[12:02:29] ==================================================
+[12:02:29] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[12:02:29]   关键词: 1 个 — DeepSeek
+[12:02:29] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[12:02:29] DeepSeek HTTP 客户端初始化
+[12:02:29] 加载已保存的 session（账号: 1309****, 保存时间: 0.0 小时前）
+[12:02:29] 已加载保存的 token
+[12:02:29] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[12:02:29] 登录账号: 1309****
+[12:02:30] 登录账号: 1309**** (方式: phone)
+[12:02:31] Token 获取成功: aMYjaCZuOfk+VRQO...Y/YKeyhH
+[12:02:31] ✅ 登录成功
+[12:02:31] [联网搜索] 已配置为 API 请求时启用
+[12:02:31] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[12:02:31] 
+共 1 个关键词，开始搜索...
+[12:02:31] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[12:02:31] 
+==================================================
+[12:02:31]   关键词: DeepSeek
+[12:02:31] ==================================================
+[12:02:31]   prompt 长度: 1446 字
+[12:02:31] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[12:02:31] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月02日 至 07月09日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[12:02:31] PoW 流程异常: No module named 'wasmtime'
+[12:02:31] PoW 求解失败，尝试不带 PoW 发送
+[12:02:31] 聊天请求异常: 'NoneType' object has no attribute 'get'
+[12:02:31]   第1次尝试 — 未获取到回复
+[12:02:31]   等待 18 秒后重试 (2/3)...

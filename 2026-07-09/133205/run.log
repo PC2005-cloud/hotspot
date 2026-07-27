@@ -1,0 +1,52 @@
+[13:32:05] ==================================================
+[13:32:05]   🔥 Hotspot — 热点搜索器
+[13:32:05]   日志: D:\Projects\project\Blog\Hotspot\results\2026-07-09\133205\run.log
+[13:32:05] ==================================================
+[13:32:05] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:32:05]   关键词: 1 个 — DeepSeek
+[13:32:05] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:32:05] DeepSeek HTTP 客户端初始化
+[13:32:05] 加载已保存的 session（账号: 1309****, 保存时间: 0.0 小时前）
+[13:32:05] 已加载保存的 token
+[13:32:05] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:32:05] 登录账号: 1309****
+[13:32:06] 登录账号: 1309**** (方式: phone)
+[13:32:06] Token 获取成功: wt3vCcbE8DmGMaRP...ADQq8xLH
+[13:32:06] ✅ 登录成功
+[13:32:06] ✅ 深度思考 + 联网搜索 已开启
+[13:32:06] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:32:06] 
+共 1 个关键词，开始搜索...
+[13:32:06] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:32:06] 
+==================================================
+[13:32:06]   关键词: DeepSeek
+[13:32:06] ==================================================
+[13:32:06]   prompt 长度: 1446 字
+[13:32:06] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[13:32:06] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月02日 至 07月09日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[13:32:07] PoW 求解成功: nonce=80174
+[13:32:51] 回复获取完成 (4683 字, 0 个链接)
+[13:32:51] 验证 URL 可用性...
+[13:32:54] HTTP Request: HEAD https://www.ithome.com/0/973/810.htm "HTTP/1.1 200 OK"
+[13:33:00] HTTP Request: HEAD https://www.jiemian.com/article/14728960.html "HTTP/1.1 200 OK"
+[13:33:03] HTTP Request: HEAD https://m.ithome.com/html/972437.htm "HTTP/1.1 200 OK"
+[13:33:03] URL 验证: 3 个, 3 可用, 0 个404, 0 个不可达
+[13:33:03]   过滤: 3 条热点因链接不可达已移除
+[13:33:03] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-09\133205\DeepSeek.json
+[13:33:03]   [完成] DeepSeek (3 条热点, 45秒)
+[13:33:03] 搜索完成: 1/1 成功, 共 3 条热点
+[13:33:03] 
+[13:33:03] ============================================================
+[13:33:03]   运行总结
+[13:33:03] ============================================================
+[13:33:03]   关键词                  状态       热点数    耗时    
+[13:33:03]   ──────────────────── ──────── ────── ──────
+[13:33:03]   DeepSeek             完成       3      45s   
+[13:33:03] 
+[13:33:03]   总计: 1/1 成功 | 3 条热点 | 共耗时 58秒
+[13:33:03] ============================================================
+[13:33:03] 聚合报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-09\133205\report.json
+[13:33:03] 已加载 HTML 模板: D:\Projects\project\Blog\Hotspot\hotspot\template.html
+[13:33:03] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-07-09\133205\report.html
+[13:33:03] ✅ 本次搜索完成: 3 条热点已同步到 results/

@@ -1,0 +1,115 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "TypeScript 7.0 发布两周后的生产环境适配与工具链兼容性挑战",
+      "summary": "TypeScript 7.0 正式发布已两周，性能提升真实有效，但缺失稳定 API 导致 ESLint、ts-jest、ts-morph 等工具链出现兼容问题，社区正在探索并行运行 6.0 与 7.0 的过渡方案。",
+      "source": "Byteiota",
+      "url": "https://byteiota.com/typescript-7-go-compiler/",
+      "published_time": "2026-07-21",
+      "perspectives": [
+        {
+          "stance": "技术评测——性能增益真实",
+          "summary": "VS Code 构建时间从 125.7 秒降至 10.6 秒（11.9 倍），Slack CI 类型检查从 7.5 分钟降至 1.25 分钟，Canva 编辑器首错延迟从 58 秒降至 4.8 秒。"
+        },
+        {
+          "stance": "技术评测——工具链兼容性危机",
+          "summary": "TypeScript 7.0 未附带稳定 API，导致 ESLint 崩溃、ts-jest 报错、ts-morph 静默生成错误输出。微软提供 @typescript/typescript6 兼容包作为过渡方案。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Vercel Labs 发布 scriptc：将 TypeScript 编译为原生二进制，无需 Node.js 和 V8",
+      "summary": "Vercel Labs 推出 scriptc 编译器，可将 TypeScript 直接编译为原生机器码（通过 LLVM），启动仅需约 2ms，二进制大小约 178KB。Hacker News 热帖指出该项目可能由 AI 智能体在一周内完成。",
+      "source": "ExplainX.ai",
+      "url": "https://explainx.ai/blog/scriptc-vercel-typescript-native-compiler-ai-agents-2026",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "技术前沿报道",
+          "summary": "scriptc 采用 LLVM + C 后端，默认不嵌入 JS 引擎，静态编译路径可实现零运行时。macOS arm64 为主平台，支持 Linux 和 Windows 交叉编译。"
+        },
+        {
+          "stance": "社区质疑与争议",
+          "summary": "Hacker News 上有专家批评其架构『愚蠢』（使用 QuickJS、所有数字用浮点数、拒绝常见动态模式），且多数 npm 包因无类型声明无法静态编译，需回退动态模式。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Mergify 实测 TypeScript 7.0：类型检查从 13 秒降至 3.5 秒，唯一难点是 ESLint",
+      "summary": "Mergify 团队在 21.5 万行 TypeScript 的 React 项目中实测，TypeScript 7.0 原生编译器将全量类型检查从 13.1 秒降至 3.46 秒（约 3.8 倍提速），主要收益来自多核并行。",
+      "source": "Mergify",
+      "url": "https://mergify.com/blog/native-typescript-compiler-faster-typecheck",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "实测报告",
+          "summary": "编译器替换几乎无侵入，但 typescript-eslint 因 7.0 无导入式 API 而崩溃。团队因 CI 使用 oxlint 而非 ESLint，得以顺利升级。"
+        },
+        {
+          "stance": "升级建议",
+          "summary": "Next.js/React/纯 Node 项目可立即升级；Angular 需分栈运行；Vue/Volar、Svelte、Astro、ts-jest、ts-morph 建议等待 7.1（预计 2026 年 10 月）。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "TypeScript GitHub 提案：新增 unstable 与 volatile 控制流分析修饰符",
+      "summary": "社区提案为 TypeScript 新增 unstable 和 volatile 两个可擦除声明修饰符，允许开发者退出编译器乐观的控制流分析假设，特别适用于解析器、状态机等需要悲观假设的场景。",
+      "source": "GitHub (microsoft/TypeScript)",
+      "url": "https://git.codeproxy.net/microsoft/TypeScript/issues/63681",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "功能提案",
+          "summary": "unstable 在函数调用、await、yield 等不透明执行后丢弃窄化；volatile 每次读取均为新鲜观测，窄化不可复用。两者仅影响控制流分析，不改变类型、不参与赋值检查、不生成 JS。"
+        },
+        {
+          "stance": "社区讨论",
+          "summary": "提案动机源于 #9998 确立的『全局乐观或悲观都不理想』共识，TypeScript 选择了乐观，但部分程序（解析器、状态机）需要对特定声明采用悲观策略。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "TypeScript 社区讨论：Object.entries() 保留键类型提案被再次否决",
+      "summary": "开发者提议修改 Object.entries 类型定义以保留键的具体字面量类型，但 GitHub 贡献者指出该诉求已被多次拒绝，因 JavaScript 运行时无法保证键的顺序与类型安全。",
+      "source": "GitHub (microsoft/TypeScript)",
+      "url": "https://git.codeproxy.net/microsoft/TypeScript/issues/63683",
+      "published_time": "2026-07-28",
+      "perspectives": [
+        {
+          "stance": "功能请求",
+          "summary": "建议将 entries 返回类型从 [string, T][] 改为 [S, T][]（S 为键的实际字面量类型），以在 map 等操作中保留更精确的类型信息。"
+        },
+        {
+          "stance": "维护者回应",
+          "summary": "贡献者 MartinJohns 指出该问题已被反复拒绝，建议搜索仓库中关于 Object.keys 的历史讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Web 前端周刊 2026W30 综述：React 19.2.8、Vue 3.6 RC、TypeScript 7 Go 重写等",
+      "summary": "2026 年第 30 周前端周刊汇总了 React 19.2.8/19.1.9/19.0.8 同步发布、Vue 3.6 RC、TypeScript 7 Go 重写、ECMAScript 2026 获批、Node.js 26.5.0 等多项重要更新。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "行业综述",
+          "summary": "React 三个维护版本于 7 月 21 日同步发布，主要包含一项服务端组件解码性能修复。TypeScript 7 的 Go 重写成为当周最受关注的技术话题之一。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前 TypeScript 社区最突出的热点围绕「TypeScript 7.0 的性能红利与工具链阵痛」展开：一方面 Go 重写带来的 10 倍提速获得广泛实测验证；另一方面缺失稳定 API 导致 ESLint、ts-jest 等核心工具链大面积不兼容，社区情绪在兴奋与焦虑之间摇摆。同时 Vercel scriptc 等激进创新项目引发关于『AI 生成代码质量』与『零运行时 TypeScript 可行性』的激烈辩论。",
+  "honesty_note": "近 7 天内（7 月 21 日至 28 日）与 TypeScript 直接相关的高热度新闻主要集中在 TypeScript 7.0 的后续影响（工具链兼容性、生产环境实测）以及 Vercel scriptc 等周边生态项目。TypeScript 7.0 本体的发布公告（7 月 8 日）和 RC 版本（7 月 7 日）均超出您指定的时间窗口，但因其持续影响被纳入后续报道中，已按相关性筛选。若需更聚焦于『TypeScript 语言本身』的更新，7.0 之后的下一版本（7.1）预计 2026 年 10 月发布，当前处于空窗期。",
+  "start_time": "2026-07-28 07:26",
+  "end_time": "2026-07-28 07:27",
+  "elapsed_seconds": 77,
+  "retry_count": 1
+}

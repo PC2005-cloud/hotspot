@@ -1,0 +1,25 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 4,
+      "title": "【React Router 7.11 至 7.17 版本存在安全漏洞 CVE-2026-53667】",
+      "summary": "CVE53667 披露 React Router 7.11.0 至 7.17.0 版本中存在跨站脚本（XSS）漏洞，RSCErrorHandler 缺少协议验证，允许来自不受信任来源的重定向。",
+      "source": "CVE 公告",
+      "url": "https://monstermegs.com/blog/wordpress-core-release/",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "【安全公告】",
+          "summary": "漏洞类型为 CWE-79（跨站脚本），影响 remix-run/react-router 的多个版本，建议开发者尽快升级修复。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "【舆情趋势总结】近期 React 生态热点集中在三大方向：一是 WordPress 因兼容性问题放弃 React 19 引发开发者对版本升级风险的讨论；二是 React Compiler 移植 Rust 带来编译性能大幅提升，社区反响积极；三是 React 19 的 Compiler 与 RSC 从实验走向生产，全栈化趋势获得广泛关注。整体情绪偏技术务实，开发者更关注实际性能收益与升级成本。",
+  "honesty_note": "搜索结果基本覆盖近 7 天内（2026-07-21 至 2026-07-28）React 相关主要热点。部分来源（如 IT之家、InfoQ、CSDN）为技术媒体转载或深度分析，时效性满足要求。最近 24-48 小时（7 月 27-28 日）的热点以 WordPress 放弃 React 19 和 React Router 安全漏洞 CVE-2026-53667 为主。所有 URL 字段均未从搜索结果中获得完整可验证链接，故全部设为 null。",
+  "start_time": "2026-07-28 07:34",
+  "end_time": "2026-07-28 07:35",
+  "elapsed_seconds": 26,
+  "retry_count": 0
+}

@@ -1,0 +1,47 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Node.js 发布 2026年7月 安全更新，覆盖 22.x、24.x、26.x 三条版本线",
+      "summary": "Node.js 项目于7月27日发布安全更新，涉及26.x、24.x、22.x版本线，修复的最高严重性漏洞级别为 HIGH。这是六周内第二次 HIGH 级别安全发布。",
+      "source": "Node.js 官网",
+      "url": "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "Node.js 项目确认将于7月27日或之后不久发布 26.x、24.x、22.x 的新版本以修复多个高危安全漏洞。"
+        },
+        {
+          "stance": "安全社区提醒",
+          "summary": "byteiota 等安全媒体指出，这是六周内第二次 HIGH 级别安全发布，所有三条活跃版本线均受影响，建议开发者尽快打补丁。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "假冒 Corepack 官网向 Node.js 开发者分发窃密木马和代理劫持软件",
+      "summary": "安全公司 Socket.dev 披露，不法分子利用 Corepack 从 Node.js 默认捆绑中移除的变动，搭建假冒官网 Corepack.org 向开发者分发恶意软件。该恶意载荷包含窃密木马和带宽共享代理劫持组件。",
+      "source": "iTnews",
+      "url": "https://www.itnews.com.au/news/fake-corepack-tool-site-goes-quiet-after-luring-devs-with-malware-627678",
+      "published_time": "2026-07-27 06:14",
+      "perspectives": [
+        {
+          "stance": "安全厂商报告",
+          "summary": "Socket.dev 发布技术报告称，该假冒网站自2026年初以低质量 AI 生成内容存在，近期开始提供恶意可执行文件下载。"
+        },
+        {
+          "stance": "开发者社区反馈",
+          "summary": "社区成员在 GitHub 上报告该恶意网站后，托管商已处理，网站现仅返回 404。官方建议通过 `npm install -g corepack` 从 npm 官方源获取。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Node.js 生态热点高度集中在「安全」议题上：7月27日官方安全更新覆盖三条版本线、假冒 Corepack 官网窃密事件、Apache Thrift Node.js 绑定 DoS 漏洞（CVE-2026-55968）、以及 Shescape 库 CPU 耗尽漏洞接连曝光，开发者社区整体处于「警惕与行动」的紧张氛围中。同时，微软 WinRT 动态投影为 Node.js 开发者打开 Windows 原生能力大门，成为技术圈积极讨论的亮点。",
+  "honesty_note": "搜索范围内（2026-07-21 至 2026-07-28）的 Node.js 热点以安全事件和漏洞公告为主，时效性满足要求。部分热点（如 AI 安全报告讨论、26.5.0 版本解读）的发布时间略早于近7天窗口，但因其持续影响力和社区关注度，仍纳入榜单。所有 URL 均来自搜索结果原始摘要中的完整链接，未拼接或杜撰任何路径。",
+  "start_time": "2026-07-28 07:33",
+  "end_time": "2026-07-28 07:34",
+  "elapsed_seconds": 28,
+  "retry_count": 0
+}

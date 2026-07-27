@@ -1,0 +1,10 @@
+{
+  "keyword": "Docker",
+  "hotspots": [],
+  "public_sentiment_summary": "近一周Docker热点集中于两大趋势：一是微软WSL容器公测版推出，被视为可能替代Docker Desktop的革命性变化，开发者态度褒贬不一；二是安全漏洞频发（Docker Desktop沙箱逃逸、Engine多个CVE），促使社区关注容器安全。同时用户对Docker Desktop稳定性抱怨持续升温。",
+  "honesty_note": "搜索结果中部分热点事件（如Docker Engine 29.6.2）发布于7月16日，略早于用户要求的起始日期（7月21日），但因其安全修复的持续影响和社区讨论热度，仍纳入本报告。此外，Docker官方博客7月16日发布了AI代理隔离相关内容，但未找到7月21日后更多重大版本发布或事件。",
+  "start_time": "2026-07-28 07:22",
+  "end_time": "2026-07-28 07:23",
+  "elapsed_seconds": 26,
+  "retry_count": 0
+}

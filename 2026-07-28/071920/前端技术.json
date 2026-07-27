@@ -1,0 +1,29 @@
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "Web前端周刊2026W30：React 19.2.8发布、Vue 3.6 RC、TypeScript 7 Go重写",
+      "summary": "本周React同步发布19.2.8等三个维护版本修复RSC性能；Vue 3.6 RC携Vapor Mode性能持平Solid；TypeScript 7以Go原生重写，全量构建速度提升8倍。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/whincwu/p/21965088",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "框架生态动态",
+          "summary": "React 19.2.8于7月21日发布，修复RSC解码性能；Shopify从React迁移至Preact+Web组件，包体积缩减40%-85%。Vue 3.6 RC的Vapor Mode成为关注焦点。"
+        },
+        {
+          "stance": "工具链突破",
+          "summary": "TypeScript 7.0正式版于7月8日发布，Go重写带来8-12倍速度提升，但暂不适用于Vue或Svelte的某些场景。ECMAScript 2026已获批，新增Array.fromAsync等方法。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7日前端技术圈情绪复杂：一方面支付宝体验技术部解散引发【前端已死】焦虑，AI Coding对传统岗位的冲击成为核心议题；另一方面谷歌A2UI、阿里Page Agent、TypeScript 7等新技术密集发布，前端正加速向AI原生开发、全栈化和体验架构师方向转型。整体呈现【焦虑与机遇并存】的舆论态势。",
+  "honesty_note": null,
+  "start_time": "2026-07-28 07:32",
+  "end_time": "2026-07-28 07:33",
+  "elapsed_seconds": 27,
+  "retry_count": 0
+}

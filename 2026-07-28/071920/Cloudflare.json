@@ -1,0 +1,83 @@
+{
+  "keyword": "Cloudflare",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "美银大幅上调Cloudflare目标价至330美元 维持买入评级",
+      "summary": "美银将Cloudflare目标价从255美元上调至330美元，维持【买入】评级，认为AI推动数据量激增与攻击面扩大，网安行业将持续受益。",
+      "source": "财联社",
+      "url": "https://api3.cls.cn/share/article/2437367?os=web&sv=812&app=",
+      "published_time": "2026-07-27 08:41",
+      "perspectives": [
+        {
+          "stance": "投行看多｜AI驱动估值扩张",
+          "summary": "美银指出AI应用加速普及推动数据量激增、攻击面扩大，支撑网安行业持续支出需求。Cloudflare全球网络覆盖AI推理、应用交付、安全和开发者基础设施领域，开发者服务及AI相关业务强劲增长支撑较高估值。美银预计每家公司将保持约20%或更高收入增长。"
+        },
+        {
+          "stance": "风险提示｜估值与竞争风险",
+          "summary": "美银同时指出，网安产品采用速度放缓、客户增长乏力、竞争加剧或投资者对高估值软件公司兴趣下降，仍是主要风险因素。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Cloudflare宣布AI爬虫分类新机制 9月15日起默认屏蔽广告页面AI训练爬虫",
+      "summary": "Cloudflare将AI爬虫分为Search、Agent、Training三类，9月15日起新域名默认在含广告页面屏蔽Training和Agent爬虫，仅允许Search爬虫。",
+      "source": "IT PRO Magazine",
+      "url": "https://itpromag.com/2026/07/27/cloudflare-ai-crawl-control/",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "官方立场｜保护内容创作者权益",
+          "summary": "Cloudflare CEO表示，如今多数网络流量已非人类产生，需建立可持续发展生态。新机制旨在为网站拥有者提供更精细控制，让AI企业公平获取内容，同时保护知识产权。新工具Attribution Business Insights帮助网站拥有者了解爬虫行为与商业价值。"
+        },
+        {
+          "stance": "行业担忧｜可能导致Googlebot被误屏蔽",
+          "summary": "TechRadar分析指出，Googlebot被定义为混合用途爬虫，新规可能导致其被屏蔽，影响网站搜索收录。有专家称这是【Cloudflare与Google的高 stakes 对峙】，最终受损的可能是出版商。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Cloudflare发布企业级Internal DNS服务 统一内外网DNS管理",
+      "summary": "Cloudflare宣布Internal DNS服务正式面向企业客户开放，将公共DNS与私有DNS整合至统一平台，支持Split-Horizon DNS和Zero Trust安全体系。",
+      "source": "IT之家",
+      "url": "https://m.ithome.com/html/979453.htm",
+      "published_time": "2026-07-21 12:24",
+      "perspectives": [
+        {
+          "stance": "产品发布｜简化企业DNS运维",
+          "summary": "Internal DNS由Gateway Resolver和Internal Authoritative DNS两部分组成，企业可通过统一接口管理DNS记录、策略和审计。对使用Cloudflare Gateway的Enterprise客户已包含在现有服务中。"
+        },
+        {
+          "stance": "技术亮点｜统一管理提升安全性",
+          "summary": "该服务支持DoH、DoT、标准DNS 53端口等多种接入方式，所有修改通过统一DNS Records API写入，可在较短时间内生效。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Cloudflare与OpenAI启动研究试点 利用全球网络数据优化AI搜索",
+      "summary": "Cloudflare与OpenAI宣布启动首创研究试点，探索利用Cloudflare全球网络洞察数据（内容时效性、流量质量等）帮助AI搜索引擎更高效索引网络内容。",
+      "source": "Cloudflare Official",
+      "url": "https://www.cloudflare.com",
+      "published_time": "2026-07-08",
+      "perspectives": [
+        {
+          "stance": "官方合作｜提升AI搜索准确性",
+          "summary": "试点聚焦提升AI回答的准确性与即时性，利用Cloudflare承载全球超两成网站流量的实时网络信号。"
+        },
+        {
+          "stance": "产业意义｜AI搜索索引新范式",
+          "summary": "双方联合验证Cloudflare网络信号能否帮助AI搜索引擎更高效地发现和索引相关内容，推动AI搜索迈向实时索引时代。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Cloudflare热点集中于AI爬虫管理政策引发行业广泛讨论，市场对AI驱动的网安增长前景持乐观态度，股价获多家机构上调目标价。同时安全漏洞修复与企业级产品发布保持技术关注度。整体舆情以积极看多为主，但对AI爬虫新政与Google的潜在冲突存在担忧情绪。",
+  "honesty_note": "搜索结果覆盖了7月21日至28日期间的多条热点，时效性符合要求。部分热点（如与OpenAI合作、AI爬虫政策最初公告）实际发生在7月上旬，但在本周（7月27-28日）仍有持续讨论和二次报道，故纳入列表。7月28日当天信息主要为数据中心计划维护公告，无重大突发新闻。",
+  "start_time": "2026-07-28 07:30",
+  "end_time": "2026-07-28 07:31",
+  "elapsed_seconds": 26,
+  "retry_count": 0
+}

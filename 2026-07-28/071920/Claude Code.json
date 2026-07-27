@@ -1,0 +1,123 @@
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【提示词大瘦身】Claude Code狂删80%系统提示词，Opus 5却被抓出72%「反弹」",
+      "summary": "Anthropic宣布为Opus 5、Fable 5等新模型删掉Claude Code超80%系统提示词，内部评测无性能损失。但网友陈成抓包实测发现，Opus 5实际收到的提示词比Opus 4.8反而长了72%。经分析，删减发生在4.8阶段，Opus 5因模型变「主动」又被补充了针对性约束。",
+      "source": "36氪、CSDN、内参AI",
+      "url": "https://www.36kr.com/p/3913549636375945",
+      "published_time": "2026-07-27 15:25",
+      "perspectives": [
+        {
+          "stance": "【官方立场】Anthropic称删减超80%系统提示词，内部编码评测无性能损失，主张「模型越强越不需要保姆式规则」",
+          "summary": "Anthropic将旧版大量绝对化规则（如默认不写注释、不创建计划文档）压缩为一句话「编写符合周围代码风格的代码」，并建议开发者精简CLAUDE.md、拆分长指令为Skill。"
+        },
+        {
+          "stance": "【开发者实测】网友抓包发现Opus 5提示词比Opus 4.8长72%",
+          "summary": "开发者陈成截取不同模型实际收到的系统提示词：Opus 4.7为15225字符，Opus 4.8为4467字符，Opus 5为7694字符。Opus 5新增内容主要针对模型过度主动行为（如频繁汇报进度、生成过长文档、过度调用子Agent）。"
+        },
+        {
+          "stance": "【行业解读】提示工程范式正在转变",
+          "summary": "有分析认为，删减80%提示词未降性能证明那80%原本是给弱模型打的「补丁」而非有效知识；AI编程工具的设计正从「堆砌规则」转向「优化工具接口和任务边界」。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【安全后门】工信部通报Claude Code存在严重安全后门隐患，阿里全面禁用",
+      "summary": "工信部NVDB平台监测发现，Anthropic开发的AI编程工具Claude Code在2.1.91至2.1.196版本中内置监控机制，未经用户同意回传地域、身份标识等敏感信息。阿里巴巴自7月10日起全面禁止员工使用Claude Code，推荐Qoder替代。",
+      "source": "凤凰网、Reuters、央视网",
+      "url": "https://news.ifeng.com/c/8uatKKKOUiH",
+      "published_time": "2026-07-08",
+      "perspectives": [
+        {
+          "stance": "【监管通报】工信部建议立即排查并卸载受影响版本",
+          "summary": "工信部要求相关单位立即排查安装受影响版本的开发终端，卸载或升级至安全版本，加强核心业务网段内开发工具外联权限管控与流量监测。"
+        },
+        {
+          "stance": "【企业响应】阿里巴巴列入高风险软件名单并全面禁用",
+          "summary": "阿里经评估后将Claude Code列入高风险软件名单，自7月10日起全面禁止内部员工在办公环境下使用，推荐使用Qoder作为替代方案。"
+        },
+        {
+          "stance": "【事件溯源】Anthropic承认机制存在，称为「实验性」反滥用措施",
+          "summary": "Anthropic技术团队承认该用户识别机制存在（通过时区、代理判断用户是否与中国相关），称是今年3月上线的「实验性」反滥用措施，将在后续版本移除。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "【账号封禁】Claude Code用户账号大规模被封，个人号和买号无一幸免",
+      "summary": "大量Claude Code用户反映账号被封禁，包括个人号、淘宝购买账号等均被波及，到期后无法续订。社区讨论认为可能与Anthropic加强反滥用检测或地域限制有关。",
+      "source": "cocoloop社区",
+      "url": "https://www.cocoloop.cn/t/topic/12820",
+      "published_time": "4小时前（2026-07-28）",
+      "perspectives": [
+        {
+          "stance": "【用户反馈】多账号被封，抱怨「全军覆没」",
+          "summary": "有用户称朋友、同事的Claude Code账号全被封，个人号、淘宝买号无一幸免，自己被封了4个号。社区讨论中出现「全军覆没对全球热恋」等调侃。"
+        },
+        {
+          "stance": "【猜测分析】可能与安全后门事件后的合规收紧有关",
+          "summary": "部分用户推测封号潮与7月初工信部通报后门隐患、Anthropic加强地域识别和反滥用检测有关。也有用户指出衍生产品稳定性不足，建议转向原版Claude或GPT。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【功能更新】Claude Code上线子Agent硬性限制：并发20、每会话200个、嵌套深度3层",
+      "summary": "7月21日至24日，Anthropic连续推送三个版本，为Claude Code的子Agent自主委托引入首个硬性限制：并发上限20个、每会话生成总数200个、嵌套深度3层。其中嵌套限制曾在v2.1.217完全禁用，三天后v2.1.219恢复为深度3。",
+      "source": "byteiota",
+      "url": "https://byteiota.com/claude-code-subagent-guardrails-three-limits-four-days/",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "【技术分析】Anthropic在自主Agent能力与可控性之间校准",
+          "summary": "四天内三次调整嵌套深度限制，从完全禁用恢复到深度3，被解读为「对一条消息能买多少自主权的四天重新调校」。"
+        },
+        {
+          "stance": "【开发者影响】多层级编排工作流在调整期间中断",
+          "summary": "构建多层级Agent编排框架的开发者在此次调整中遭遇管线断裂；同时预算上限（--max-budget-usd）的修复确保后台子Agent不再超支运行。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "【开发者体验】桌面端Claude Code被推荐优于TUI版本，多账号session管理引关注",
+      "summary": "有开发者发文称桌面端Claude Code体验优于TUI版本，在子Agent查看、模型切换、session管理等方面更便捷。同时指出切换账号后旧session「消失」的问题可通过手动恢复解决。",
+      "source": "腾讯新闻",
+      "url": "https://news.qq.com/rain/a/20260728A000X400",
+      "published_time": "2026-07-28",
+      "perspectives": [
+        {
+          "stance": "【用户推荐】桌面端功能更完善，建议放弃TUI",
+          "summary": "桌面端在查看子Agent、切换模型、管理session等方面比TUI「好用很多很多」。"
+        },
+        {
+          "stance": "【实操技巧】多账号session恢复方法",
+          "summary": "session按账号UUID存储在本地目录，切换账号后App只读新目录导致旧session「消失」，但对话内容本身未丢失，可通过让Claude Code自行恢复。用户担心多账号轮流使用可能导致封号。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "【生态整合】灵光APP上线「一键部署」，支持Claude Code等AI应用直接发布",
+      "summary": "灵光APP上线闪应用「一键部署」功能，用户使用Claude Code、Codex、Cursor等AI工具创建的应用可通过部署Skill一键发布为「灵光闪应用」。",
+      "source": "网易",
+      "url": "https://www.163.com",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "【产品动态】AI编程工具的应用分发渠道拓展",
+          "summary": "Claude Code等工具创建的应用可通过灵光平台在PC端和移动端同步展示与分发。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前Claude Code相关讨论呈现「冰火两重天」：一方面提示词删减与Opus 5发布引发技术圈高度关注，开发者围绕「模型越强是否越不需要提示词约束」展开激烈讨论；另一方面安全后门隐患和账号大规模封禁引发信任危机与焦虑情绪。整体舆情以技术争议与安全担忧为主旋律。",
+  "honesty_note": "近7天内（7月21日至7月28日）Claude Code相关资讯较为丰富，覆盖提示词大瘦身争议、Opus 5发布、子Agent限制更新、账号封禁等多个维度。但部分早期事件（如工信部后门通报、阿里禁用）发生在7月上旬，虽超出7天窗口仍作为重要背景信息纳入。当前最新热点（24-48小时内）集中在提示词删减争议（7月27日）和账号封禁讨论（7月28日）。URL已严格依据搜索结果原始链接填写，无任何拼接或杜撰。",
+  "start_time": "2026-07-28 07:27",
+  "end_time": "2026-07-28 07:28",
+  "elapsed_seconds": 37,
+  "retry_count": 0
+}

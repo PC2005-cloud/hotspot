@@ -1,0 +1,25 @@
+{
+  "keyword": "GitHub",
+  "hotspots": [
+    {
+      "rank": 5,
+      "title": "GitHub Copilot 接入 Gemini 3.6 Flash 新模型",
+      "summary": "7 月 21 日起，Google 最新模型 Gemini 3.6 Flash 在 GitHub Copilot 中逐步上线，面向 Pro、Business 和 Enterprise 用户开放，专为 Web 开发、编码和长周期 Agentic 任务设计。",
+      "source": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/",
+      "published_time": "2026-07-21",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "早期测试显示 Gemini 3.6 Flash 在编码和 Agentic 工作流中任务完成率更高、Token 效率更优，支持可配置推理强度和并行工具调用。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 GitHub 相关热点集中于三大主线：AI 算力基础设施承压（微软引入 AWS/谷歌云支援 GitHub）、AI 安全风险爆发（GitLost 漏洞与漏洞赏金改革），以及 Copilot 模型生态扩张（Gemini 3.6 Flash 接入）。开发者社区对安全隐私问题关注度显著上升。",
+  "honesty_note": "部分热门项目的具体 URL 链接未在搜索结果中明确提供，已标注为 null。所有已填写的 URL 均来源于搜索结果的原始片段，未进行任何拼接或猜测。",
+  "start_time": "2026-07-28 07:38",
+  "end_time": "2026-07-28 07:39",
+  "elapsed_seconds": 26,
+  "retry_count": 0
+}

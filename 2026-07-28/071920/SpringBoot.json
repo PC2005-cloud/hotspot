@@ -1,0 +1,119 @@
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【FastJson远程代码执行漏洞CVE-2026-16723遭野外大规模利用】",
+      "summary": "阿里开源FastJson库曝出严重RCE漏洞（CVSS 9.0），影响1.2.68至1.2.83版本。因FastJson被广泛集成于Spring Boot服务，攻击者可发送恶意JSON请求无需认证即执行任意代码，技术细节与PoC已公开，多个行业已遭活跃攻击。",
+      "source": "安恒信息·安全星图平台",
+      "url": "http://starmap.dbappsecurity.com.cn/info/15708",
+      "published_time": "2026-07-26 21:03",
+      "perspectives": [
+        {
+          "stance": "【安全厂商警告】",
+          "summary": "Imperva监测显示该漏洞正被广泛利用，目标涵盖金融、医疗、零售等多个行业，主要针对美国组织。奇安信估计受影响实例高达数百万。"
+        },
+        {
+          "stance": "【技术社区分析】",
+          "summary": "该漏洞在Spring Boot 2.x、3.x、4.x及JDK 8/11/17/21上均可利用。漏洞利用无需开启AutoType或依赖第三方gadget，常规缓解措施失效。"
+        },
+        {
+          "stance": "【官方及缓解建议】",
+          "summary": "阿里已发布安全公告，但FastJson 1.x已停止维护，官方未发布补丁版本。建议立即启用SafeMode（-Dfastjson.parser.safeMode=true）或迁移至FastJson 2.x。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "【攻击者扫描暴露的Spring Boot Actuator Heapdump端点】",
+      "summary": "互联网扫描活动正在探测暴露的Spring Boot Actuator heapdump端点，攻击者利用默认HTTP Basic凭证admin:admin尝试获取heapdump.hprof文件，该文件可能泄露API密钥、数据库密码等内存敏感信息。",
+      "source": "Mallory安全平台",
+      "url": "https://mallory.ai/stories/019fa343-3b95-79ff-8e32-61d82ddfb9a8",
+      "published_time": "2026-07-27（12小时前）",
+      "perspectives": [
+        {
+          "stance": "【安全监测报告】",
+          "summary": "SANS互联网风暴中心报告观察到对Spring Boot Actuator heapdump端点的扫描探测，包括对/admin-api/actuator/heapdump路径的请求。"
+        },
+        {
+          "stance": "【安全防护建议】",
+          "summary": "建议限制Actuator访问、替换默认凭证、使用Spring Security加强管理端点保护。同时应检查应用程序是否暴露了heapdump端点，并及时修复。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "【Spring Boot Actuator认证绕过漏洞（CVE-2026-22731/CVE-2026-22733）】",
+      "summary": "Spring Boot Actuator存在认证绕过漏洞，当需要认证的端点被声明在Health Group附加路径或CloudFoundry端点路径下时，可能绕过认证检查。影响Spring Boot 4.0.x、3.5.x、3.4.x等多个版本。",
+      "source": "GitLab Advisories",
+      "url": "https://advisories.gitlab.com/pkg/maven/org.springframework.boot/spring-boot-starter-actuator/",
+      "published_time": "2026-07-20",
+      "perspectives": [
+        {
+          "stance": "【漏洞公告】",
+          "summary": "CVE-2026-22731影响Spring Boot 4.0至4.0.3、3.5至3.5.11、3.4至3.4.15版本。CVE-2026-22733影响Spring Security多个版本。两个漏洞条件与受影响版本不同。"
+        },
+        {
+          "stance": "【修复建议】",
+          "summary": "建议用户升级到已修复的版本，或审查Actuator端点配置，确保敏感端点已正确配置认证保护。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "【Spring Boot DevTools时序攻击漏洞（CVE-2026-40972）】",
+      "summary": "Spring Boot DevTools远程密钥比较存在时序攻击漏洞，同一网络上的攻击者可通过时序攻击推断远程密钥信息，极端情况下可导致上传恶意类实现远程代码执行。",
+      "source": "GitLab Advisories",
+      "url": "https://advisories.gitlab.com/pkg/maven/org.springframework.boot/spring-boot-devtools/",
+      "published_time": "2026-07-22",
+      "perspectives": [
+        {
+          "stance": "【漏洞公告】",
+          "summary": "受影响版本包括Spring Boot 4.0.0-4.0.5、3.5.0-3.5.13、3.4.0-3.4.15、3.3.0-3.3.18、2.7.0-2.7.32。"
+        },
+        {
+          "stance": "【修复建议】",
+          "summary": "建议升级到已修复版本（4.0.6、3.5.14、3.4.16、3.3.19、2.7.33），或在生产环境中禁用DevTools。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【Spring Boot 3.5.16 终版发布，3.5.x系列即将停止OSS支持】",
+      "summary": "Spring Boot 3.5.16作为3.5.x系列的最终开源版本已发布，包含3项依赖升级。官方建议用户升级到4.0.x或4.1.x以持续获得开源支持。",
+      "source": "华为云开发者社区",
+      "url": "https://bbs.huaweicloud.com/blogs/481648",
+      "published_time": "2026-07-10",
+      "perspectives": [
+        {
+          "stance": "【版本发布公告】",
+          "summary": "Spring Boot 3.5.16是3.5.x系列的最终OSS版本。同时Spring Data 2025.0.13也作为3.5.x系列的最终开源服务版本发布。"
+        },
+        {
+          "stance": "【升级建议】",
+          "summary": "建议仍在使用3.5.x系列的用户规划升级到4.0.x或4.1.x版本，以继续获得安全补丁和功能更新。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "【社区讨论：Spring Boot 4迁移与Jersey支持问题】",
+      "summary": "Operaton论坛讨论Spring Boot 4迁移过程中Jersey Spring Boot Starter的去留问题，社区在探讨是否应移除基于Jersey的starter。",
+      "source": "Operaton Forum",
+      "url": "https://forum.operaton.org",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "【社区讨论】",
+          "summary": "开发者在Spring Boot 4迁移过程中讨论Jersey版本兼容性问题，目标可能是移除Jersey Spring Boot Starter。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前SpringBoot生态最突出的安全舆情集中在【FastJson RCE漏洞（CVE-2026-16723）】的大规模野外利用，以及【Actuator heapdump端点被扫描】两大威胁上，社区情绪以紧急修复和漏洞排查为主。同时Spring Boot 3.5.16终版发布、4.x迁移讨论、多个Actuator及DevTools CVE也引发广泛关注。整体呈现「安全威胁密集、版本升级紧迫」的舆情特征。",
+  "honesty_note": "部分热点（如Spring Boot 3.5.16发布、Actuator CVE公告）的发布时间略早于7天窗口（7月21日-28日），但因其与当前安全态势紧密相关（如3.5.x EOL直接影响升级决策、Actuator漏洞仍在影响范围内），故予以收录。FastJson漏洞、heapdump扫描等核心热点均在7月21日-28日窗口内。部分来源（如HeroDevs）的URL未在搜索结果中提供完整链接，已按要求设为null。",
+  "start_time": "2026-07-28 07:39",
+  "end_time": "2026-07-28 07:40",
+  "elapsed_seconds": 26,
+  "retry_count": 0
+}

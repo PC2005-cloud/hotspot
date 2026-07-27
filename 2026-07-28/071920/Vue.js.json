@@ -1,0 +1,28 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "Vue&ViteConf 2026 在上海举办，尤雨溪出席演讲",
+      "summary": "2026年7月18日，Vue&ViteConf 2026在上海举办。Vue与Vite作者尤雨溪出席并发表主题演讲。大会围绕Vue与Vite核心生态演进、Vite生态落地、AI Agent与开发者工具、Vue边界扩展四条主线展开。",
+      "source": "VueConf官网 / 技术媒体",
+      "url": "https://vueconf.cn",
+      "published_time": "2026-07-18",
+      "perspectives": [
+        {
+          "stance": "【会议报道】大会已确认11位嘉宾，包括字节Lynx架构师黄玄分享“Vue+Lynx=Vue Native”探索。",
+          "summary": "Vite生态已形成从创建项目到云端部署的完整工具链，Vite+和Void等工具让AI Agent能通过自然语言指令自动搭建并上线完整应用。"
+        },
+        {
+          "stance": "【社区反响】开发者对Vue在AI时代的新方向充满期待，尤其是Vue Native和AI驱动开发等议题引发广泛讨论。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Vue.js社区最热话题聚焦于Vue 3.6 RC发布与Vapor Mode性能突破，开发者普遍持高度期待和积极评价。同时Nuxt安全漏洞引发广泛关注，社区呼吁及时升级。整体情绪积极，对Vue在性能和AI时代的发展方向充满信心。",
+  "honesty_note": "搜索结果显示，Vue.js在近7天内（2026-07-21至2026-07-28）的热点事件主要集中在7月18日发布的Vue 3.6 RC1及其后续讨论、7月18日举办的Vue&ViteConf 2026、以及7月27日披露的Nuxt安全漏洞。7月21日之后新增的重大事件较少，部分信息为前期事件的持续发酵与深度解读。建议关注Vue 3.6 RC的后续测试反馈及Nuxt漏洞的修复进展。",
+  "start_time": "2026-07-28 07:31",
+  "end_time": "2026-07-28 07:32",
+  "elapsed_seconds": 28,
+  "retry_count": 0
+}

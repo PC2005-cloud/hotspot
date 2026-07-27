@@ -1,0 +1,83 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "新型Rust勒索软件Spirals在24小时内加密南亚IT网络",
+      "summary": "名为Spirals的新型Rust语言勒索软件在不到24小时内加密了一家南亚IT服务公司的整个网络，攻击者采用双重勒索模式。",
+      "source": "安全星图平台",
+      "url": "http://starmap.dbappsecurity.com.cn/info/15654",
+      "published_time": "2026-07-23 03:02",
+      "perspectives": [
+        {
+          "stance": "安全机构警示",
+          "summary": "Symantec威胁猎人团队披露该事件，指出攻击者通过IIS服务器入侵、UAC绕过提权、横向移动等手法快速扩散，Spirals使用Rust编写并为每个文件生成独立AES-128密钥。"
+        },
+        {
+          "stance": "业界担忧",
+          "summary": "该事件展示了攻击者极高的操作速度和专业水平，引发业界对快速传播型勒索攻击的担忧，Symantec警告此类攻击可能演变为更大范围的行动。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Apache Thrift Rust绑定被曝无限制内存分配漏洞（CVE-2026-58389）",
+      "summary": "Apache披露CVE58389漏洞，影响Apache Thrift Rust绑定的0.24.0之前版本，因二进制协议非严格路径缺少字符串大小限制，可导致无限制内存分配。",
+      "source": "Mallory",
+      "url": "https://mallory.ai/stories/019f9661-48bb-70a1-a6da-750d0d2609c2",
+      "published_time": "2026-07-24",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "Apache建议用户升级到Thrift 0.24.0以修复该漏洞，漏洞发现者被归功于Javid Khan，通过oss-sec邮件列表公开披露。"
+        },
+        {
+          "stance": "安全社区分析",
+          "summary": "该漏洞被归类为资源分配无限制或限流不足，攻击者可构造恶意输入在消息处理期间触发过量内存分配，影响跨语言RPC框架的Rust实现。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Rust 1.97.0 稳定版发布：启用v0符号修饰方案",
+      "summary": "Rust 1.97.0稳定版正式启用v0符号修饰方案，告别沿用多年的C++ Itanium ABI，同时Cargo新增原生警告控制功能。",
+      "source": "华为云博客（Rust周刊）",
+      "url": "https://bbs.huaweicloud.com/blogs/482613",
+      "published_time": "2026-07-23 08:41",
+      "perspectives": [
+        {
+          "stance": "技术社区报道",
+          "summary": "v0符号修饰方案经过六个版本的opt-in试验后终于在稳定版中启用，旧方案无法正确表示Rust的泛型和模块系统，导致潜在的链接器冲突。"
+        },
+        {
+          "stance": "生态影响分析",
+          "summary": "此次发布还涵盖了保留构建缓存的Cargo原生警告控制，以及完全移除Itanium ABI支持的废弃路径，标志着Rust在符号层面的进一步独立。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Automattic旗下Harper项目单日暴涨880 Star，Rust离线语法检查器受热捧",
+      "summary": "Automattic/Harper——一个纯Rust编写的离线语法检查器，7月25日单日新增Star达880个，总量突破13,000，引发GitHub Trending关注。",
+      "source": "陈叙谈",
+      "url": "http://www.chenxutan.com/d/5373.html",
+      "published_time": "2026-07-28 03:45",
+      "perspectives": [
+        {
+          "stance": "项目技术解读",
+          "summary": "Harper采用确定性规则引擎，将英语视为需要Lint的编程语言，检查延迟在毫秒级（多数文档10ms以内），内存占用仅几十MB，远轻于LanguageTool等传统方案。"
+        },
+        {
+          "stance": "社区反响",
+          "summary": "该项目由WordPress母公司Automattic收编并开源，被视为对「写作工具的数据主权」这一命题的正面回答，受到开发者广泛关注和好评。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期Rust生态热点集中在安全威胁与版本演进两大方向：Spirals勒索软件和多个CVE漏洞引发对Rust安全性的关注与讨论；同时Rust 1.97.0发布、Bun重写为Rust、Harper项目爆火等事件持续推高社区对Rust技术前景的乐观情绪，整体舆论积极与审慎并存。",
+  "honesty_note": "搜索结果中TIOBE 7月排名（Rust首次进入前十）虽热度极高，但发布于7月7日至9日，超出用户指定的07月21日至07月28日时间窗口，因此未列入热点列表。此外，OpenAI加入Rust基金会（7月13日）、Rust基金会项目总监更新（7月1日）等事件亦超出时间范围。以上热点均基于近7天内（07月21日至07月28日）的搜索结果整理，部分来源为技术博客和安全平台，非官方Rust项目公告。",
+  "start_time": "2026-07-28 07:23",
+  "end_time": "2026-07-28 07:24",
+  "elapsed_seconds": 29,
+  "retry_count": 0
+}

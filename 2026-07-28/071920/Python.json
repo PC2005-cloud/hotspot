@@ -1,0 +1,65 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Python 3.15 Beta 4 发布，引入惰性导入与 Tachyon 分析器",
+      "summary": "Python 3.15.0 Beta 4 作为最后一个计划中的 Beta 版本于 7 月 18 日发布，包含约 298 项错误修复。新特性包括惰性导入（lazy soft keyword）、frozendict 冻结字典以及 Tachyon 统计采样分析器。RC1 候选版定于 8 月 4 日发布。",
+      "source": "Python.org",
+      "url": "https://www.python.org/downloads/release/python-3150b4/",
+      "published_time": "2026-07-18",
+      "perspectives": [
+        {
+          "stance": "官方发布公告",
+          "summary": "Python 3.15.0b4 是最后一个 Beta 版本，包含大量修复和改进，惰性导入可优化启动性能，Tachyon 提供低开销性能分析能力。"
+        },
+        {
+          "stance": "社区技术解读",
+          "summary": "Python 周刊 W30 总结称 Beta 4 带来惰性导入、frozendict 和 Tachyon 分析器，同时 Polars 分布式引擎在 TB 级数据上超越单节点。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "PyCharm 2026.1 重磅更新：全新 debugpy 架构 + 远程 uv 支援",
+      "summary": "JetBrains 于 7 月 27 日发布 PyCharm 2026.1 重大版本更新。核心升级包括对调试工具 debugpy 进行架构级重构、原生支援远程 uv 套件管理，以及开放支援 Cursor 与 Codex 等第三方 AI 编码工具。",
+      "source": "AHASoft",
+      "url": "https://www.ahasoft.com.tw/page/news/show.aspx?num=23443&lang=TW&page=1&kind=8",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "产品发布方",
+          "summary": "JetBrains 官方称此次更新从底层架构动刀，debugpy 重写带来更快速稳定的调试体验，远程 uv 支援让远端套件安装速度大幅提升。"
+        },
+        {
+          "stance": "开发者社区反馈",
+          "summary": "开发者对开放 AI 生态表示欢迎，认为不再被单一 AI Assistant 绑定，可自由选择 Cursor 或 Codex 等工具。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "GitHub 与 PyPI 同步升级供应链安全防线",
+      "summary": "GitHub 和 PyPI 于 7 月引入基于时间的供应链安全新屏障。Dependabot 默认等待 72 小时才提出版本更新 PR；PyPI 不再允许向发布超过 14 天的 release 添加新文件。该调整旨在防范版本投毒与账户劫持攻击。",
+      "source": "Hispasec",
+      "url": "https://unaaldia.hispasec.com/github-y-pypi-endurecen-la-cadena-de-suministro-con-barreras-temporales-en-las-actualizaciones-y-las-releases/",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "安全行业分析",
+          "summary": "Hispasec 分析称两项措施旨在为供应链攻击设置时间缓冲，PyPI 的 14 天限制针对旧版本投毒战术。"
+        },
+        {
+          "stance": "开源社区维护者",
+          "summary": "部分维护者认为 72 小时等待期会影响自动化依赖更新流程，但可通过 dependabot.yml 中的 cooldown 选项调整或关闭。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Python 社区热点集中于版本迭代（3.15 Beta 4）与工具链改进（pip --only-deps、PyCharm 2026.1），供应链安全（GitHub/PyPI 新屏障）与社区治理（PPC 选举）亦受高度关注。AI 方向 Python 高薪话题引发广泛讨论，公众情绪呈现「AI 赛道乐观、业务开发焦虑」的两极分化态势。",
+  "honesty_note": "本次搜索覆盖 2026-07-21 至 2026-07-28 期间内容，热点均来自该时间范围内。部分事件（如 Python 3.15 Beta 4 发布于 7 月 18 日）略早于时间窗口但仍在近一周持续发酵并被社区广泛讨论，故纳入。未发现明显信息滞后问题。",
+  "start_time": "2026-07-28 07:29",
+  "end_time": "2026-07-28 07:30",
+  "elapsed_seconds": 31,
+  "retry_count": 0
+}

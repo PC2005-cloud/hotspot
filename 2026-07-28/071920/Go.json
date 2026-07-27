@@ -1,0 +1,71 @@
+{
+  "keyword": "Go",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "微软与谷歌相继支持Go语言开发AI智能体，OpenAI与Anthropic尚未跟进",
+      "summary": "微软正式推出Agent Framework for Go公开预览版，让云原生开发者能用Go构建AI智能体；谷歌ADK此前已支持Go，而OpenAI与Anthropic的智能体SDK仍未官方支持Go语言。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/JRHq6KiOTaA3IKMUD9TZ",
+      "published_time": "2026-07-21",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "微软Agent Framework for Go支持Azure OpenAI、Anthropic、Gemini等多种模型，具备工具调用、MCP集成及多智能体协作能力。该框架专为生产级智能体系统设计，让Go开发者能够用日常开发业务的Go语言构建AI智能体。"
+        },
+        {
+          "stance": "开发者社区评价",
+          "summary": "AI工程师Pratik Dhanave称这是Go优先工程师的里程碑，赞赏其基于图结构的工作流编排能力，同时肯定微软在公开预览版中坦诚说明Go SDK尚不支持交接编排、CodeAct等特性。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Go周刊2026W30：GoMLX、oapi-codegen 2.8.0、ADK for Go 2.1密集更新",
+      "summary": "本周Go生态密集更新：GoMLX加速机器学习框架提供纯Go ML方案，oapi-codegen 2.8.0终支持OpenAPI 3.1，Google ADK for Go 2.1进军AI Agent领域，go-ora 3.0纯Go Oracle客户端突破CGO依赖。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/whincwu/p/21965123",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "本周Go工具链在性能优化、Bug修复、安全加固、工具链改进等方面均有显著进展：cmd/compile在AMD64上优化函数epilogue并加速乘法运算；runtime减少interface操作的GC扫描开销；crypto/tls强化协议合规性；cmd/go改进包缓存与搜索速度。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "2026年7月TIOBE编程语言排行榜：Go排名第13，Rust首次闯入前十",
+      "summary": "2026年7月TIOBE编程语言排行榜发布，Go语言排名第13位，Rust首次闯入前十，成为本月最大看点。",
+      "source": "腾讯云",
+      "url": "https://cloud.tencent.com.cn/developer/article/2704780",
+      "published_time": "2026-07-07",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "Rust首次跻身TIOBE指数前十名，其日益增长的流行度归功于对内存安全性的高度重视，被广泛认为是C和C++的直接竞争对手。TIOBE指数本月迎来25周年纪念。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Go 1.26.5和1.25.12发布，修复CVE-2026-39822等高危漏洞",
+      "summary": "Go官方发布1.26.5和1.25.12两个小版本，修复了CVE39822和CVE42505等安全漏洞，涉及crypto/tls和os等核心包。",
+      "source": "Openwall",
+      "url": "https://www.openwall.com/lists/oss-security/2026/07/08/1",
+      "published_time": "2026-07-08",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "Go 1.26.5和1.25.12已于7月7日发布，包含2个安全修复，遵循Go安全政策。同时修复了编译器、运行时、go命令以及net、os、syscall等包的Bug。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Go语言社区最突出趋势是「AI智能体与Go语言的深度结合」——微软和谷歌相继将AI智能体框架引入Go生态，成为云原生开发者最关注的话题。同时Go生态密集更新、薪资行情对比、TIOBE排名等也引发广泛讨论。整体舆情积极，开发者对Go在AI时代的前景持乐观态度。",
+  "honesty_note": "搜索结果中部分热点（如TIOBE排名、安全漏洞发布）发生在7月上旬，不在近7天（7月21日-28日）范围内，但仍是近期Go语言领域的重要话题，故酌情收录。此外，受限于搜索时间（7月28日），当日最新突发资讯可能未完全覆盖。",
+  "start_time": "2026-07-28 07:35",
+  "end_time": "2026-07-28 07:36",
+  "elapsed_seconds": 25,
+  "retry_count": 0
+}

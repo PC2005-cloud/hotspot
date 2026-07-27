@@ -1,0 +1,65 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【Kyverno严重漏洞CVE-2026-54523（CVSS 9.6）PoC公开，可导致集群权限提升】",
+      "summary": "Kubernetes原生策略引擎Kyverno被曝存在严重漏洞CVE54523，CVSS评分高达9.6，允许命名空间租户将权限提升至任意命名空间管理员。漏洞技术细节与PoC已公开，攻击门槛极低。",
+      "source": "安恒安全星图平台",
+      "url": "http://starmap.dbappsecurity.com.cn/info/15592",
+      "published_time": "2026-07-17",
+      "perspectives": [
+        {
+          "stance": "【安全厂商警告】",
+          "summary": "该漏洞源于Kyverno的NamespacedGeneratingPolicy功能未验证CEL生成器的目标命名空间参数，恶意租户可构造策略在任意命名空间创建RoleBinding获取管理员权限。影响1.18.1及更早版本，已在1.18.2修复。"
+        },
+        {
+          "stance": "【社区防御建议】",
+          "summary": "尽管尚未发现野外利用，但PoC公开意味着攻击者可轻易复现。管理员应立即升级至最新版本，审查拥有NamespacedGeneratingPolicy创建权限的用户，撤销不必要访问权限。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "【Kubernetes迎来十周年里程碑：从Cloud Native向AI Native演进】",
+      "summary": "2026年7月，CNCF正式宣告Kubernetes迎来十周年。从Google内部项目Borg的开源版本起步，Kubernetes已成为全球云原生基础设施的事实标准，并正经历从容器编排平台向AI基础设施核心底座的范式跃迁。",
+      "source": "CSDN博客",
+      "url": "https://mukebb.blog.csdn.net/article/details/163232772",
+      "published_time": "2026-07-27",
+      "perspectives": [
+        {
+          "stance": "【技术观察/社区分析】",
+          "summary": "CNCF最新报告显示全球云原生开发者已突破1560万，超78%企业生产环境使用容器技术。2026年KubeCon主题从「Cloud Native」演进为「AI Native」，涌现Volcano v1.14、Kthena、HAMi等AI原生云原生项目。"
+        },
+        {
+          "stance": "【Kubernetes官方/CNCF】",
+          "summary": "CNCF 2025年度调查显示82%的容器用户已在生产环境运行Kubernetes，66%托管生成式AI的组织使用Kubernetes管理部分或全部推理工作负载。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "【Google推出GKE Agent Sandbox与Agent Substrate，挑战Kubernetes在AI代理时代的控制层地位】",
+      "summary": "Google推出GKE Agent Sandbox为不可信AI代码提供安全隔离运行环境，并发布独立于Kubernetes API Server的Agent Substrate调度层，引发关于Kubernetes是否为AI代理理想控制层的行业讨论。",
+      "source": "DigitalToday",
+      "url": "https://www.digitaltoday.co.kr/cn/view/82377/google-launches-gke-agent-sandbox-gke-agent-substrate-kubernetes-limits-agentic-ai",
+      "published_time": "2026-07-16",
+      "perspectives": [
+        {
+          "stance": "【技术分析师观点】",
+          "summary": "硅谷技术分析师Janakiram MSV指出，Kubernetes API Server设计之初并非围绕代理式运行模式构建。AI代理大部分时间空闲、仅短时唤起执行代码，与Kubernetes面向长期运行副本型服务的底层模型不完全匹配。"
+        },
+        {
+          "stance": "【Google/产品定位】",
+          "summary": "Agent Substrate与Kubernetes并非替代关系：Sandbox适合不可信代码执行，Substrate针对大规模空闲会话管理，Kubernetes在设备供给层面仍是更合适选择，三者往往组合使用。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "当前Kubernetes社区最突出的热点趋势集中在三大方向：一是安全漏洞频发引发高度关注，Kyverno CVSS 9.6级漏洞PoC公开令运维团队倍感压力；二是Kubernetes正加速与AI深度融合，从十周年回顾到GKE Agent Sandbox发布，社区普遍认同「AI Native」是下一阶段演进方向；三是KubeCon Japan开幕带动社区活跃度攀升，EKS版本回滚等实用性功能获得广泛好评。整体舆情情绪以「积极关注+安全警惕」为主。",
+  "honesty_note": "部分热点事件（如Kyverno漏洞CVE-2026-54523、Google GKE Agent Sandbox）的发布时间略早于7月21日，但近7天内仍持续被社区讨论和传播，故纳入本次热点汇总。KubeCon Japan 2026于7月28日当日开幕，属于最近24小时内的重要事件。搜索结果中未发现7月21-28日期间全新披露的重大Kubernetes零日漏洞或核心版本发布，现有热点以安全漏洞警示、功能更新与社区活动为主。",
+  "start_time": "2026-07-28 07:25",
+  "end_time": "2026-07-28 07:25",
+  "elapsed_seconds": 30,
+  "retry_count": 0
+}

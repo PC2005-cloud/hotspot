@@ -1,0 +1,65 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Python 3.15.0 首个候选版本发布，引入延迟导入与 frozendict 等多项新特性",
+      "summary": "Python 3.15.0rc1 于 8月4日发布，包含 PEP 810 延迟导入、PEP 814 frozendict 内置类型等多项重大更新，正式版预计 9月推出。",
+      "source": "Python Insider 官方博客",
+      "url": "https://blog.python.org/2026/08/python-3150-rc1/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方发布公告",
+          "summary": "Python 指导委员会宣布 3.15.0rc1 发布，进入候选发布阶段，此后仅允许明确的错误修复合入，ABI 不再变更，并呼吁第三方项目提前为 3.15 准备 wheels。"
+        },
+        {
+          "stance": "社区与开发者视角",
+          "summary": "开发者关注 3.15 带来的性能提升与开发效率改进，包括延迟导入优化启动时间、frozendict 提供不可变字典、帧指针默认启用改善系统可观测性等。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Python 3.14.7 与 3.13.15 维护版本同日发布，合计近 900 项错误修复",
+      "summary": "8月5日，Python 软件基金会发布 3.14.7 和 3.13.15 两个维护版本，分别包含约 499 项和 400 项错误修复及文档改进。",
+      "source": "Python 官网",
+      "url": "https://www.python.org/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "Python 3.14.7 是 3.14 系列的第七个维护版本，自 3.14.6 以来包含来自 86 位贡献者的约 499 项错误修复、构建改进和文档更改。3.13.15 同步发布，提供约 400 项修复。"
+        },
+        {
+          "stance": "开发者社区反馈",
+          "summary": "维护版本的密集发布反映了 Python 核心团队对稳定性的持续投入，社区建议生产环境用户尽快升级以修复已知问题。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "NVIDIA 发布 NOOA 开源 Python 框架：一个 Python 类就是一个 AI Agent",
+      "summary": "NVIDIA 于 7 月底开源 NOOA（Object-Oriented Agents）Python 框架，将 Agent 的能力、状态和提示词封装进单一 Python 类，降低 Agent 开发门槛。",
+      "source": "The New Stack",
+      "url": "https://thenewstack.io/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "技术介绍",
+          "summary": "NOOA 是模型无关的 Python 框架，Agent 被定义为 Python 对象，其方法为模型可执行的操作，字段为状态，文档字符串为提示词，类型注解为契约。"
+        },
+        {
+          "stance": "专家观点与安全担忧",
+          "summary": "专家认为 NOOA 能让 Agent 更易测试和审查，但也引发新的安全担忧——提示注入的「爆炸半径」可能因此变大。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Python 生态异常活跃，版本发布（3.15.0rc1、3.14.7、3.13.15）与 AI 基础设施变革（MCP 重写、NVIDIA NOOA、Google ADK 安全事件）交织，社区关注焦点集中在 AI Agent 开发框架的快速演进及其伴随的安全风险上。",
+  "honesty_note": null,
+  "start_time": "2026-08-06 11:24",
+  "end_time": "2026-08-06 11:25",
+  "elapsed_seconds": 30,
+  "retry_count": 0
+}

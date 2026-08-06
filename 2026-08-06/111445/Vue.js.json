@@ -1,0 +1,65 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Vue 3.6 RC 携 Vapor Mode 引爆前端圈，虚拟 DOM 成「可选项」",
+      "summary": "Vue 3.6 已发布 RC 版本，核心变化为 Vapor Mode（编译时直接生成 DOM 操作指令，跳过虚拟 DOM）和 alien-signals 响应式重构，性能较 3.4 提升约 4 倍。Vue&ViteConf 2026 上尤雨溪宣布 Vue 3.6 正式发布、Vue 4.0 启动。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7669622241974632490",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "【技术乐观派】Vapor Mode 是 Vue 自 3.0 以来最重要更新",
+          "summary": "Vapor Mode 让虚拟 DOM 成为可选项，per-component 启用，可在同一组件树混合使用 Vapor 组件和传统组件。性能已逼近 Solid 与 Svelte 5。"
+        },
+        {
+          "stance": "【谨慎观望派】3.6 仍处于 RC 阶段，生产环境需谨慎",
+          "summary": "截至 2026 年 7 月，Vue 3.6 仍处于 Beta/RC 阶段。Vapor support 仍是实验性功能，需待 3.6 稳定版发布后再评估迁移。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Nuxt 连曝多个高危漏洞，Vue SSR 生态面临安全挑战",
+      "summary": "202605 至 08，Nuxt（Vue SSR 框架）连续披露 CVE71314、71315、71318、71319、71321 等多个漏洞，涉及内存耗尽、RCE、权限绕过等。",
+      "source": "VulDB / OpenCVE",
+      "url": "https://vercel.com/i/vue-vs-react",
+      "published_time": "2026-08-05 ~ 2026-08-06",
+      "perspectives": [
+        {
+          "stance": "【安全警告】Nuxt 漏洞影响范围广，需紧急升级",
+          "summary": "CVE-2026-71314 允许未认证攻击者通过 v-for 触发 SSR 内存耗尽崩溃；CVE-2026-71318 可导致远程代码执行。"
+        },
+        {
+          "stance": "【修复进展】官方已发布修复版本",
+          "summary": "修复已在 Nuxt 3.21.10 和 Nuxt 4.5.1 中交付。建议所有使用 Nuxt 的 Vue 项目立即升级。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Vibe Coding 时代，Vue 真的「消失」了吗？——社区热议",
+      "summary": "AI 编程工具默认输出 React 而非 Vue，引发社区对 Vue 在 AI 时代处境的讨论。2026 年数据：全球 React 占 33%、Vue 占 6%；中国市场 Vue 占 30%、React 占 12%。",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/jnpf001/p/21991536",
+      "published_time": "2026-07-28",
+      "perspectives": [
+        {
+          "stance": "【担忧派】AI 训练数据偏差放大 React 优势",
+          "summary": "AI 训练集偏向英文世界，React 代码量碾压 Vue，导致 AI 默认输出 React。JSX 对 AI 生成更友好也是重要原因。"
+        },
+        {
+          "stance": "【乐观派】Vue 在中国市场根基稳固，不会消失",
+          "summary": "Vue 在中国（.cn 域名）占 30% 份额，远超 React 的 12%。Vue 的渐进式设计和中文社区优势难以被替代。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7日 Vue.js 热点集中于 Vue 3.6 Vapor Mode 的技术突破与安全漏洞两大主线。社区对 Vapor Mode 性能提升普遍兴奋，但 RC 阶段的生产可用性仍存疑虑。Nuxt 连曝多个高危漏洞引发安全担忧，建议尽快升级。Vue 在 AI 时代「被隐身」的讨论持续发酵，中国市场优势与全球数据落差形成鲜明对比。",
+  "honesty_note": "受限于搜索时间窗口（2026-07-30 至 2026-08-06），部分热点（如 Vue 3.6 正式版发布、Vue 4.0 启动）的具体日期在搜索结果中存在矛盾表述（有称 7 月已发布、有称仍为 RC）。建议以 Vue 官方 GitHub Release 为准。关联话题：Vue & ViteConf 2026 上海（7 月 18 日）、Vite 8 发布、VoidZero 工具链进展。",
+  "start_time": "2026-08-06 11:26",
+  "end_time": "2026-08-06 11:27",
+  "elapsed_seconds": 36,
+  "retry_count": 0
+}

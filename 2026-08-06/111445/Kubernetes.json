@@ -1,0 +1,61 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Red Hat Multicluster Engine与ACM连曝两大高危权限提升漏洞",
+      "summary": "CVE10059和CVE10090于8月5日公开，分别影响Red Hat Multicluster Engine for Kubernetes和Advanced Cluster Management，攻击者可利用漏洞从命名空间权限提升至集群管理员权限，CVSS评分分别达9.1和9.9。",
+      "source": "Red Hat安全公告",
+      "url": "https://access.redhat.com/security/cve/cve-2026-10059",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "【官方安全公告】",
+          "summary": "Red Hat确认两处为Important级别权限提升漏洞，namespace-scoped用户可通过ClusterCurator或Application Subscription控制器获取cluster-admin权限，目前尚无有效缓解措施。"
+        },
+        {
+          "stance": "【安全社区关注】",
+          "summary": "漏洞披露引发云原生安全社区广泛讨论，CISA已介入分析，认为漏洞可能被攻击者用于集群完全接管，建议用户尽快检查受影响版本并关注补丁更新。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Kubernetes Agent Sandbox深度拆解：为AI Agent打造原生运行时",
+      "summary": "Kubernetes SIG Apps旗下开源项目Agent Sandbox引发社区热议。该项目提供Sandbox CRD和控制器，专门管理隔离的、有状态的、单实例的AI Agent工作负载，Google GKE上已正式GA。",
+      "source": "陈旭坛博客",
+      "url": "http://www.chenxutan.com/d/5746.html",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "【深度技术分析】",
+          "summary": "文章指出Deployment和StatefulSet无法满足AI Agent的三重特殊性（长时间有状态运行、执行不可信代码、高频子任务），Agent Sandbox通过四个CRD提供了声明式隔离和单容器VM体验。"
+        },
+        {
+          "stance": "【社区实践观察】",
+          "summary": "GKE上Sandbox使用量暴涨16倍，LangChain和Lovable等早期客户已运行百万级Agent实例。该项目标志着K8s社区正式将AI Agent视为全新工作负载类别。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "IGLOO Corporation获4项云原生与AI安全专利，聚焦Kubernetes环境监测",
+      "summary": "IGLOO Corporation于8月4日宣布获得4项云原生与AI安全相关专利，其中两项聚焦Kubernetes环境内部网络监测盲区和容器数据完整性校验，另两项优化AI安全系统检索与处理效率。",
+      "source": "Digital Today",
+      "url": "https://www.digitaltoday.co.kr/cn/view/88907/igloo-corporation-secures-four-cloud-ai-security-patents",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "【企业发布】",
+          "summary": "专利包括「基于安全趋势的Kubernetes集群监测装置」和「Kubernetes集群事件监测装置」，可还原攻击路径、验证数据完整性。公司表示将围绕云与AI安全核心技术推进研发。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期Kubernetes社区热点集中于两大方向：安全与AI。安全方面，Red Hat连曝两处高危权限提升漏洞（CVSS 9.1/9.9）引发广泛警惕，同时ChainDrop供应链攻击波及Kubernetes凭证，凸显云原生安全严峻形势。AI方面，Agent Sandbox和Vault密钥管理等话题热度攀升，社区正积极为AI Agent工作负载构建原生基础设施。整体舆情呈现「安全焦虑」与「AI基建」并行的双主线态势。",
+  "honesty_note": "当前时间（2026-08-06）距离Kubernetes v1.37正式发布（预计8月26日）尚有三周，该版本尚处于文档冻结阶段。搜索结果中部分技术分析文章发布日期为8月6日当天，时效性符合要求。部分热点（如KCD Melbourne社区活动）为预告性内容，非已发生事件，未列入主列表。所有URL均来自搜索结果原始返回片段，未做任何拼接或杜撰。",
+  "start_time": "2026-08-06 11:20",
+  "end_time": "2026-08-06 11:21",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

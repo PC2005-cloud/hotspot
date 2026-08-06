@@ -1,0 +1,47 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rust项目正式采纳LLM使用政策，禁止AI生成代码直接提交",
+      "summary": "Rust编译器、库、类型及rustdoc五个团队正式通过LLM使用政策，规定rust-lang/rust仓库不接受AI生成代码的PR，仅允许翻译、辅助分析等有限场景，旨在维护社区贡献质量与审查带宽。",
+      "source": "Inside Rust Blog",
+      "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方政策说明",
+          "summary": "政策由Jynn Nelson起草并获五团队采纳，明确禁止LLM生成代码直接提交至rust-lang/rust仓库，以应对AI代码导致评审信号失真、审查带宽紧张等问题。政策不适用于整个Rust项目，仅针对该仓库的贡献流程。"
+        },
+        {
+          "stance": "社区反响与讨论",
+          "summary": "该政策经过一个月的激烈辩论和约3000条Zulip消息讨论后落地，社区普遍认为这有助于维护Rust项目严谨的技术文化和贡献者社区氛围，但也有开发者关注AI辅助开发的边界如何界定。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Rust 2026 All Hands回顾：166位贡献者齐聚乌德勒支",
+      "summary": "Rust项目发布2026年All Hands回顾，5月166位贡献者在乌德勒支举行为期3天的线下会议，共进行73场讨论，聚焦项目治理、团队协作及未来发展方向。",
+      "source": "Inside Rust Blog",
+      "url": "https://blog.rust-lang.org/inside-rust/2026/07/31/all-hands-2026-retrospective/",
+      "published_time": "2026-07-31",
+      "perspectives": [
+        {
+          "stance": "项目官方总结",
+          "summary": "会议涵盖领导委员会Q&A、审核小组讨论、项目文化等议题，Bevy、Ariel OS、Linebender等6个生态项目组共约60名成员参与联合协作，2027年All Hands已确认继续举办。"
+        },
+        {
+          "stance": "社区观察",
+          "summary": "All Hands作为RustWeek的一部分，是Rust项目成员与生态维护者面对面交流的重要机制，有助于解决跨团队协作阻塞和长期规划。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Rust社区呈现多线并发热议态势：语言侧因LLM政策落地引发贡献规范大讨论；安全侧因一周内密集曝光的多个CVE漏洞引发开发者对依赖安全的警觉；游戏侧因《Rust》8月更新偏向团队机制引发独狼玩家强烈不满；生态侧SeaORM 2.0、Syn 3.0、gccrs内核编译等里程碑持续提振社区信心。整体舆论从技术进展、安全风险到社区治理呈现全方位活跃。",
+  "honesty_note": "部分热点（如微软淘汰C++）的来源网站非原始出处，且缺乏官方公告链接；游戏《Rust》更新与编程语言Rust同名，根据搜索相关性已纳入（用户关键词为「Rust」未限定语言或游戏）。建议交叉验证官方渠道获取更准确信息。",
+  "start_time": "2026-08-06 11:19",
+  "end_time": "2026-08-06 11:20",
+  "elapsed_seconds": 44,
+  "retry_count": 0
+}

@@ -1,0 +1,25 @@
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 7,
+      "title": "前端周刊 2026W31：TanStack 停用 RSC、MobX 7.0、htmx 4.0、npm 发布即扫毒",
+      "summary": "React 圈 TanStack 停用 RSC、MobX 7.0 发布（gzip 后仅 13.96 KiB）；JavaScript 圈 htmx 4.0、TypeScript 7.0 发布；Node.js 圈 npm 发布即扫毒、scriptc 转原生编译器。",
+      "source": "华为云博客",
+      "url": "https://bbs.huaweicloud.com/blogs/483478",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "技术周刊综述",
+          "summary": "TanStack 停用 RSC 的案例说明：将内容管道迁移到服务端虽减少了 JS 传输量，但带来了 Flight payload 和路由复杂度等成本。MobX 7.0 强制要求 React 18+，打包体积大幅缩减。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期前端圈舆情聚焦两大主线：一是技术层面 TypeScript 7.0、Vue 3.6 Vapor Mode、Rspack 2.0 等重磅发布引发社区高度关注，Rust 重构工具链成为显著趋势；二是行业层面支付宝体验技术部解散、大厂推动前后端合并等事件引发「前端是否消亡」的激烈讨论，共识是前端岗位正在向 AI 全栈方向转型，传统纯前端分工模式面临终结。",
+  "honesty_note": "部分热点事件（如 TypeScript 7.0、Vue 3.6 RC）的发布时间略早于 7 月 30 日，但近期仍在社区持续发酵和讨论中。Remix 3 Beta 发布于 7 月 28 日，Rspack 2.0 发布于 7 月 29 日，均在时间窗口边缘。支付宝体验技术部解散新闻发布于 7 月 27 日，但近期仍有大量后续讨论文章。整体上，近 7 天内前端领域缺乏全新的突发性大事件，主要热点为 7 月上旬至中旬重大发布的持续讨论和行业转型话题的发酵。",
+  "start_time": "2026-08-06 11:28",
+  "end_time": "2026-08-06 11:29",
+  "elapsed_seconds": 41,
+  "retry_count": 0
+}

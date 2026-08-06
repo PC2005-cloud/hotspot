@@ -1,0 +1,25 @@
+{
+  "keyword": "ChatGPT",
+  "hotspots": [
+    {
+      "rank": 7,
+      "title": "微软要求内部开发人员优先使用OpenAI顶级模型",
+      "summary": "微软CoreAI工程团队执行副总裁在员工备忘录中要求从事AI编码项目的开发人员依赖OpenAI旗舰模型GPT.6 Sol，而非竞品，以从词元投资中获得更大价值。",
+      "source": "阿思达克财经新闻",
+      "url": "https://weibo.com/2/detail/5319066059540637?utm_source=digital",
+      "published_time": "2026-08-06 09:18",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "微软虽已建立自研AI编程模型并向云客户提供超11000个模型，但希望员工利用其对OpenAI早期投资的既有知识产权。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周ChatGPT相关舆情呈现「技术突破与安全争议并存」的态势。正面关注集中于Astra模型攻克数学难题及全球畅销榜夺冠；负面舆情则围绕AI被用于诈骗、安全漏洞可被滥用、高管争议言论及豪华营销活动引发的公众反感，反映出社会对AI「双刃剑」效应的焦虑持续升温。",
+  "honesty_note": null,
+  "start_time": "2026-08-06 11:15",
+  "end_time": "2026-08-06 11:16",
+  "elapsed_seconds": 34,
+  "retry_count": 0
+}

@@ -1,0 +1,29 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 8,
+      "title": "React Router 曝出多个安全漏洞（CVE-2026-53666 / 53667 / 53669）",
+      "summary": "React Router 近期被发现多个安全漏洞：CVE53666 涉及 SSR Hydration 阶段任意构造函数注入，CVE53667 涉及 RSC 协议验证不完整导致的 XSS，CVE53669 涉及 <Link> 和 useNavigate 中反斜杠导致的开重定向。",
+      "source": "Snyk / OSV / Bugzilla",
+      "url": "https://www.pkgpulse.com/guides/best-react-component-libraries-2026",
+      "published_time": "2026-07-23 至 2026-08-03",
+      "perspectives": [
+        {
+          "stance": "安全公告与修复建议",
+          "summary": "CVE-2026-53666 已在 7.18.0 版本中修复；CVE-2026-53669 影响 6.0.0 至 7.17.0 版本；建议使用受影响版本的开发者尽快升级。"
+        },
+        {
+          "stance": "开发者社区关注",
+          "summary": "多个漏洞在短期内集中披露引发社区对 React Router 安全审查流程的关注，尤其是 SSR 和 RSC 相关攻击面的扩大。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 React 生态热点集中于「编译器底层重构」（TS→Rust）与「生态治理变革」（React 基金会成立）两大主线。社区对 Rust 版 Compiler 的性能提升普遍乐观，但对 LLM 辅助重写的长期可维护性存疑；Remix 3 放弃 React 转向 Web 原生引发激烈争论，观点分化明显；Octane 等新框架的涌现表明「无虚拟 DOM + 编译时优化」正成为新趋势，社区关注度持续升温。",
+  "honesty_note": "搜索结果中 2026-07-30 至 2026-08-06 期间 React 相关热点较为丰富，覆盖编译器、框架治理、竞品框架、路由库、安全漏洞等多个维度。React 19.2.8 补丁发布于 7 月 21 日，略早于时间窗口起点，但其影响持续至本周；React Native 0.87.0-rc.4 于 8 月 5 日发布，因热度相对较低未列入主榜单。所有 URL 字段均未从搜索结果中获得明确完整链接，均置为 null。",
+  "start_time": "2026-08-06 11:31",
+  "end_time": "2026-08-06 11:31",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

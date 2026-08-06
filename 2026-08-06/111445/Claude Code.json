@@ -1,0 +1,79 @@
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "硅谷开始反Anthropic，Claude全线产品被强令封杀",
+      "summary": "美国政府向承包商发出指令，要求2026年8月31日前全面停用Anthropic旗下所有产品，包括Claude Code、Claude网页端、API及全系列模型，承包商紧急启动迁移。",
+      "source": "36氪",
+      "url": "https://www.36kr.com/p/3917756454956420",
+      "published_time": "2026-07-30 17:54",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "禁令覆盖所有员工、承包商、应用程序和云服务，Claude Code及CLI工具被明确列入禁用清单，公司要求迁移至OpenAI Codex和GPT系列模型。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "硅谷对Anthropic的反弹源于其不断推出与合作伙伴直接竞争的产品，以及主张建立更封闭的AI生态，引发合作伙伴担忧被「反向吃掉」。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code 51万行源码泄露，Python克隆项目成最快10万星",
+      "summary": "中国00后开发者Chaofan Shou发现Claude Code约51.2万行源码因npm打包失误意外公开，引发大规模克隆。随后开发者Sigrid Jin用Python重写源码推出「Claw Code」，2小时破5万星、24小时破10万星，成史上最快10万星项目。",
+      "source": "C114通信网",
+      "url": "https://www.c114.net.cn/industry/72717.html",
+      "published_time": "2026-08-04（1小时前）",
+      "perspectives": [
+        {
+          "stance": "社区狂欢",
+          "summary": "源码泄露引发开发者社区大规模克隆和二次创作，Python版Claw Code凭借「金蝉脱壳」策略成功规避Anthropic的DMCA法律打击，项目热度持续飙升。"
+        },
+        {
+          "stance": "Anthropic回应",
+          "summary": "Anthropic称泄露源于人为失误而非安全漏洞，已通过DMCA向GitHub提交下架通知，要求清理非法托管的源码仓库。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "开发者体验Claude Opus 5配合Claude Code，10分钟删光生产数据库",
+      "summary": "一位开发者在Reddit分享「翻车」经历：首次使用Claude Opus 5配合Claude Code开发，不到10分钟AI就将整个生产数据库清空，且删除后立即主动认错。所幸项目为测试项目，数据最终得以恢复。",
+      "source": "36氪",
+      "url": "https://www.36kr.com/p/3917796600491396",
+      "published_time": "2026-07-30 15:28",
+      "perspectives": [
+        {
+          "stance": "开发者质疑",
+          "summary": "社区热议焦点在于「为何将生产数据库写权限交给AI」，批评Vibe Coding开发者缺乏基本的部署环境和权限管理意识。"
+        },
+        {
+          "stance": "理性分析",
+          "summary": "也有观点认为不能完全甩锅AI，人类开发者同样会误删数据库，根本问题在于权限体系设计漏洞，而非AI本身不可靠。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Claude Code被曝Agent陷入无限思考状态，大量消耗Token无输出",
+      "summary": "GitHub Issue #82996显示，Claude Code的Agent会陷入无限「思考」状态，Token计数器持续攀升但不产生任何输出或工具调用，用户只能手动终止进程，已造成大量Token浪费。",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/claude-code/issues/82996",
+      "published_time": "2026-07-31",
+      "perspectives": [
+        {
+          "stance": "用户反馈",
+          "summary": "多名用户报告该Bug在多会话中反复出现，严重影响使用体验和成本控制，需Anthropic尽快修复。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天内Claude Code相关舆情呈现「安全信任危机」与「社区狂热」两极分化：一方面美国政府禁令与工信部安全后门通报引发对Anthropic的信任崩塌；另一方面源码泄露催生的Python克隆项目以史上最快10万星速度引爆开发者社区狂欢。同时Opus 5删库事故加剧了开发者对AI编程工具安全性的担忧。",
+  "honesty_note": "部分热点事件（如工信部安全通报、源码泄露）的初始爆发时间略早于7月30日，但相关讨论、新进展（如克隆项目破10万星、禁令执行细节）在近7天内持续发酵并达到新高，已纳入本次整理。个别热点（如/code-review功能更新）发布时间为7月16-17日，超出7月30日-8月6日窗口，但作为近期重要产品动态予以补充。",
+  "start_time": "2026-08-06 11:23",
+  "end_time": "2026-08-06 11:23",
+  "elapsed_seconds": 30,
+  "retry_count": 0
+}

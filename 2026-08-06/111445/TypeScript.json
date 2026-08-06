@@ -1,0 +1,29 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 5,
+      "title": "TypeScript 生态安全事件：swagger-typescript-api 代码注入漏洞披露",
+      "summary": "CVE54664于7月29日披露，swagger-typescript-api存在通过未转义枚举字符串值注入代码的漏洞。攻击者可通过恶意OpenAPI规约在生成的客户端中注入IIFE并执行任意代码。",
+      "source": "SecAlerts、OpenCVE、GitLab Advisories",
+      "url": "https://www.bilibili.com/opus/1224096362637819904?from=search",
+      "published_time": "2026-07-29",
+      "perspectives": [
+        {
+          "stance": "【安全公告】",
+          "summary": "CVE-2026-54664评级为代码注入漏洞，影响swagger-typescript-api所有使用不受信任OpenAPI规约生成客户端的场景。漏洞源于enum模板渲染时未对字符串值进行转义。"
+        },
+        {
+          "stance": "【开发者应对】",
+          "summary": "使用该工具的项目应立即检查是否从不受信任来源生成客户端代码，建议升级到修复版本或在生成前对枚举值进行清洗验证。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周TypeScript社区情绪以【务实观望】为主：开发者认可7.0的巨大性能提升，但普遍采取「业务代码可升、框架项目等7.1」的谨慎策略。社区讨论焦点从「发布兴奋」转向「升级实操」与「生态适配进度」。",
+  "honesty_note": "需说明：TypeScript 7.0本身发布于2026年7月8日，超出用户指定的7月30日-8月6日时间窗口。但近一周（7月30日-8月6日）社区讨论的焦点正是该版本发布后的【生态适配进展】、【升级实践指南】和【实测性能反馈】等后续话题，这些内容均发生在用户指定的时间范围内，已作为热点整理如上。",
+  "start_time": "2026-08-06 11:22",
+  "end_time": "2026-08-06 11:22",
+  "elapsed_seconds": 40,
+  "retry_count": 0
+}

@@ -1,0 +1,47 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "多起 Docker 相关安全漏洞集中披露（CVE-2026-55887、CVE-2026-21005、CVE-2026-17626）",
+      "summary": "8 月初多个 Docker 相关 CVE 集中披露: Docker MCP Plugin 参数注入（CVE55887）、Docker Registry V2 Schema 1 镜像投毒（CVE21005）、Langflow Docker 容器配置操纵漏洞（CVE17626）。",
+      "source": "VulDB、GitHub",
+      "url": "https://developer.aliyun.com/article/1752736",
+      "published_time": "2026-08-02 至 2026-08-05",
+      "perspectives": [
+        {
+          "stance": "安全社区预警",
+          "summary": "CVE-2026-21005 允许攻击者在未认证的私有 Registry 上覆盖镜像标签，属于供应链攻击风险；CVE-2026-17626 影响 Langflow 1.0.0-1.10.3，可导致主机文件系统未授权访问。"
+        },
+        {
+          "stance": "企业安全团队关注",
+          "summary": "漏洞集中披露引发企业对容器镜像供应链安全和 MCP 服务器配置审查的重视，建议立即检查 Registry 认证配置和 Langflow 部署。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "深度分析：Docker 的黄昏——集装箱式交付已死，还是重生？",
+      "summary": "一篇行业分析文章于 8 月 5 日发布，探讨 Docker 在地缘政治和成本焦虑背景下的价值，指出熟练 DevOps 团队用 Docker 可节省 30% 以上基础设施成本。",
+      "source": "lfdjt.com",
+      "url": "https://www.lfdjt.com/info_23_7661.html",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "行业观察与分析",
+          "summary": "文章认为 Docker 的价值正融入软件供应链的基础设施层，容器运行时正在成为 commodity。"
+        },
+        {
+          "stance": "技术社区讨论",
+          "summary": "社区围绕 Docker 是否被 Kubernetes 生态边缘化、以及 Wasm/WebAssembly 等新技术是否将取代容器展开讨论。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Docker 热点集中在新版本发布与安全漏洞两大方向。Docker Engine 29.7.0/29.7.1 连续发布引发升级关注；多个 CVE 集中披露使供应链安全成为焦点。AI 治理与安全（Docker AI Governance、Omdia 报告）热度上升。社区对 Docker 长期价值与技术替代的讨论持续。整体舆情呈「版本迭代 + 安全预警 + AI 治理」三重热度格局。",
+  "honesty_note": "搜索范围内（2026-07-30 至 2026-08-06）Docker 相关资讯以版本发布、安全漏洞披露和官方报告为主，热点事件相对分散，未有单一引爆性大事件。部分来源（如 lfdjt.com）为行业分析而非新闻。关联话题可关注：Docker Desktop 4.84.0/4.85.0 版本更新、Vercel 支持 Dockerfile 一键部署、微软 WSL Container 公测版等，但均略超出 7 天窗口或热度较低。",
+  "start_time": "2026-08-06 11:18",
+  "end_time": "2026-08-06 11:19",
+  "elapsed_seconds": 42,
+  "retry_count": 0
+}

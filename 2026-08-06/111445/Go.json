@@ -1,0 +1,89 @@
+{
+  "keyword": "Go",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "谷歌首席科学家杰夫·迪恩离职创业 股价短线跳水跌超5%",
+      "summary": "谷歌首席科学家Jeff Dean在任27年后离职，将创办AI公司；谷歌AI部门同步进行领导层调整，DeepMind CEO Demis Hassabis转任主席并兼任Alphabet首席科学家。消息引发谷歌股价短线跳水，日内跌幅超5%。",
+      "source": "蓝鲸财经",
+      "url": "https://www.jingpt.com/t/2446768",
+      "published_time": "2026-08-06 00:13",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "Jeff Dean作为谷歌最早期员工之一和AI战略核心架构师，离职创业被视为谷歌AI人才流失加剧的信号，引发市场对谷歌AI战略连续性的担忧，股价应声下跌。"
+        },
+        {
+          "stance": "网友评论",
+          "summary": "部分网友感叹「大丈夫生居天地间，岂能郁郁久居人下」，认为传统大厂蛋糕分完难以留人；也有网友质疑「这么大公司没有竞业协议？」"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Go 1.27 正式版将于8月发布 泛型方法成核心亮点",
+      "summary": "Go 1.27 预计2026年8月正式发布，核心语言特性为支持泛型方法——方法声明可声明自己的类型参数。JetBrains宣布将于8月25日举办免费线上Go 1.27 Release Party。",
+      "source": "JetBrains Blog",
+      "url": "https://blog.jetbrains.com/go/2026/08/05/new-livestream-go-127/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方与社区",
+          "summary": "Go核心团队表示1.27已进入RC阶段，鼓励开发者在生产环境测试并反馈问题。Release Party将邀请Robert Griesemer等语言创始人详解版本变化。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Go 1.28 泛型集合提案推进 原子操作Max/Min有望落地",
+      "summary": "Go Collections工作组正在为Go 1.28提出泛型集合类型提案，旨在为标准库引入原生集合类型。同时，atomic.Max/Min提案(#63999)已通过评审，预计Go 1.28发布，终结开发者手写CAS循环的历史。",
+      "source": "华为云社区",
+      "url": "https://bbs.huaweicloud.com/blogs/483480",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "技术社区",
+          "summary": "泛型集合和原子Max/Min是Go开发者长期呼吁的功能，提案通过被视为Go向更现代化语言特性演进的重要信号，社区反响积极。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "影石Insta360 GO Ultra AI语音助手宣布延期推出",
+      "summary": "影石Insta360原定8月5日推出GO Ultra专属AI语音助手Kira，官方于当日宣布延期，称「团队正在全力进行最后的打磨与优化」，新上线时间待定。该助手原计划中国港澳台及海外调用谷歌Gemini、大陆接入阿里千问大模型。",
+      "source": "网易",
+      "url": "https://www.163.com/dy/article/L3KS0M2N0511BLFD.html",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方声明",
+          "summary": "影石方面表示延期是为了给用户带来更加稳定、完整的AI语音交互体验。"
+        },
+        {
+          "stance": "市场观察",
+          "summary": "GO Ultra搭载1/1.28英寸大底传感器和5nm AI芯片，支持4K/60帧视频拍摄，AI助手是其核心卖点之一，延期可能影响产品竞争力。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "TEADS对谷歌提起反垄断诉讼 涉数字广告技术市场",
+      "summary": "TEADS对谷歌提起反垄断诉讼，指控其在部分数字广告技术市场存在非法反竞争行为。此前法院已就相关市场作出不利裁定，案件目前尚处法律程序初期。",
+      "source": "观点网",
+      "url": "https://www.guandian.cn/article/20260804/580288.html",
+      "published_time": "2026-08-04 07:07",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "此次诉讼仅针对数字广告技术市场，不涉及谷歌其他业务。案件尚未判决，仍在法律程序初期。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7日「Go」相关热点呈现多领域并行态势：谷歌（Google）因首席科学家Jeff Dean离职引发股价震荡，成为最受关注的财经科技事件；Go语言生态方面，1.27正式版发布在即、1.28泛型集合与atomic.Max/Min提案推进，技术社区关注度持续升温；影石GO Ultra AI助手延期引发消费科技领域讨论；DuckDuckGo的反AI墨镜营销则以黑色幽默方式引发对隐私保护的公众共鸣。整体舆论情绪以关注技术演进和人才流动为主。",
+  "honesty_note": "「Go」关键词搜索结果涵盖多个不同实体：Google（谷歌公司）、Go编程语言、影石Go Ultra产品、DuckDuckGo等。本报告已按相关性筛选近7日内热度最高的资讯。此外，搜索中还发现《Pokémon GO》8月GO Pass上线、King Gnu歌曲「GO GHOST」登顶Billboard日本榜、BLACKPINK歌曲「GO」获Billboard年度K-Pop第23名等娱乐向内容，因与用户关键词关联度较低未列入主列表，供参考。",
+  "start_time": "2026-08-06 11:32",
+  "end_time": "2026-08-06 11:32",
+  "elapsed_seconds": 33,
+  "retry_count": 0
+}

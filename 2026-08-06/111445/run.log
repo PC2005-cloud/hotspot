@@ -1,0 +1,552 @@
+[11:14:45] ==================================================
+[11:14:45]   🔥 Hotspot — 热点搜索器
+[11:14:45]   日志: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\run.log
+[11:14:45] ==================================================
+[11:14:45] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:14:45]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[11:14:45] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:14:46] DeepSeek HTTP 客户端初始化
+[11:14:46] 加载已保存的 session（账号: 1375****, 保存时间: 219.5 小时前）
+[11:14:46] Token 可能已过期，本次将重新登录
+[11:14:46] 已加载保存的 token
+[11:14:46] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:14:46] 登录账号: 1375****
+[11:14:46] 登录账号: 1375**** (方式: phone)
+[11:14:47] Token 获取成功: KUa/z64NUQViQTiq...s49GKAfx
+[11:14:47] ✅ 登录成功
+[11:14:47] ✅ 深度思考 + 联网搜索 已开启
+[11:14:47] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:14:47] 
+共 20 个关键词，开始搜索...
+[11:14:47] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:14:47] 
+==================================================
+[11:14:47]   关键词: DeepSeek
+[11:14:47] ==================================================
+[11:14:47]   prompt 长度: 1446 字
+[11:14:47] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:14:47] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:14:48] PoW 求解成功: nonce=106670
+[11:15:27] 回复获取完成 (4327 字, 101 个链接)
+[11:15:27] 验证 URL 可用性...
+[11:15:27] URL 验证: 无 URL 需要检测
+[11:15:27]   过滤: 7 条热点因链接不可达已移除
+[11:15:27] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\DeepSeek.json
+[11:15:27]   [完成] DeepSeek (0 条热点, 39秒)
+[11:15:27]   等待 24 秒后处理下一个关键词...
+[11:15:51] 准备开启新对话...
+[11:15:51] 新对话已就绪
+[11:15:51] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:15:51] 
+==================================================
+[11:15:51]   关键词: ChatGPT
+[11:15:51] ==================================================
+[11:15:51]   prompt 长度: 1445 字
+[11:15:51] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:15:51] 发送消息 (1445 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:15:51] PoW 求解成功: nonce=132054
+[11:16:26] 回复获取完成 (4363 字, 55 个链接)
+[11:16:26]   引用链接填补: #7 [5] https://weibo.com/2/detail/5319066059540637?utm_source=digital
+[11:16:26]   摘要清理: #7 移除标记
+[11:16:26] 验证 URL 可用性...
+[11:16:28] HTTP Request: HEAD https://weibo.com/2/detail/5319066059540637?utm_source=digital "HTTP/1.1 200 OK"
+[11:16:28] URL 验证: 1 个, 1 可用, 0 个404, 0 个不可达
+[11:16:28]   过滤: 7 条热点因链接不可达已移除
+[11:16:28] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\ChatGPT.json
+[11:16:28]   [完成] ChatGPT (1 条热点, 34秒)
+[11:16:28]   等待 42 秒后处理下一个关键词...
+[11:17:10] 准备开启新对话...
+[11:17:10] 新对话已就绪
+[11:17:10] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:17:10] 
+==================================================
+[11:17:10]   关键词: OpenAI
+[11:17:10] ==================================================
+[11:17:10]   prompt 长度: 1444 字
+[11:17:10] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:17:10] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:17:10] PoW 求解成功: nonce=105137
+[11:17:36] 回复获取完成 (3812 字, 54 个链接)
+[11:17:36]   摘要清理: #4 移除标记
+[11:17:36] 验证 URL 可用性...
+[11:17:38] HTTP Request: HEAD http://news.cyol.com/gb/news/articles/2026-07/30/content_enbRdQIBx7.html "HTTP/1.1 200 OK"
+[11:17:38] URL 验证: 1 个, 1 可用, 0 个404, 0 个不可达
+[11:17:38]   过滤: 6 条热点因链接不可达已移除
+[11:17:38] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\OpenAI.json
+[11:17:38]   [完成] OpenAI (1 条热点, 26秒)
+[11:17:38]   等待 42 秒后处理下一个关键词...
+[11:18:20] 准备开启新对话...
+[11:18:20] 新对话已就绪
+[11:18:20] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:18:20] 
+==================================================
+[11:18:20]   关键词: Docker
+[11:18:20] ==================================================
+[11:18:20]   prompt 长度: 1444 字
+[11:18:20] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:18:20] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:18:20] PoW 求解成功: nonce=25040
+[11:19:03] 回复获取完成 (4919 字, 55 个链接)
+[11:19:03]   摘要清理: #1 移除标记
+[11:19:03]   引用链接填补: #3 [2026] https://developer.aliyun.com/article/1752736
+[11:19:03]   摘要清理: #3 移除标记
+[11:19:03] 验证 URL 可用性...
+[11:19:04]   [不可达] Docker Engine 29.7.0 正式发布，修复 CVE-2026-17 -> https://docs.docker.com/engine/release-notes/29/ (连接失败)
+[11:19:05] HTTP Request: HEAD https://www.oschina.net "HTTP/1.1 405 Method Not Allowed"
+[11:19:06] HTTP Request: HEAD https://developer.aliyun.com/article/1752736 "HTTP/1.1 200 "
+[11:19:08] HTTP Request: HEAD https://www.docker.com/blog/software-supply-chain-security-omdia-2026-report/ "HTTP/1.1 403 Forbidden"
+[11:19:10]   [不可达] Docker AI Governance 新增审计日志 SIEM 集成功能 -> https://www.docker.com/ja-jp/blog/software-supply-chain-security-omdia-2026-report/ (连接失败)
+[11:19:11] HTTP Request: HEAD https://www.lfdjt.com/info_23_7661.html "HTTP/1.1 200 OK"
+[11:19:11] URL 验证: 6 个, 4 可用, 0 个404, 2 个不可达
+[11:19:11]   过滤: 5 条热点因链接不可达已移除
+[11:19:11] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Docker.json
+[11:19:11]   [完成] Docker (2 条热点, 42秒)
+[11:19:11]   等待 28 秒后处理下一个关键词...
+[11:19:39] 准备开启新对话...
+[11:19:39] 新对话已就绪
+[11:19:39] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:19:39] 
+==================================================
+[11:19:39]   关键词: Rust
+[11:19:39] ==================================================
+[11:19:39]   prompt 长度: 1442 字
+[11:19:39] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:19:39] 发送消息 (1442 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:19:39] PoW 求解成功: nonce=958
+[11:20:23] 回复获取完成 (4479 字, 52 个链接)
+[11:20:23]   引用链接填补: #3 [2026] https://2020conf.rustcc.cn/article?id=0b45c4a4-94c0-427a-98a2-277c5370
+[11:20:23]   摘要清理: #3 移除标记
+[11:20:23] 验证 URL 可用性...
+[11:20:26] HTTP Request: HEAD https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/ "HTTP/1.1 200 OK"
+[11:20:26]   [不可达] Rust生态一周内曝多起安全漏洞：raster、serde、Russh等库接连中 -> https://2020conf.rustcc.cn/article?id=0b45c4a4-94c0-427a-98a2-277c53703060 (连接失败)
+[11:20:28] HTTP Request: HEAD https://blog.rust-lang.org/inside-rust/2026/07/31/all-hands-2026-retrospective/ "HTTP/1.1 200 OK"
+[11:20:28] URL 验证: 3 个, 2 可用, 0 个404, 1 个不可达
+[11:20:28]   过滤: 4 条热点因链接不可达已移除
+[11:20:28] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Rust.json
+[11:20:28]   [完成] Rust (2 条热点, 44秒)
+[11:20:28]   等待 28 秒后处理下一个关键词...
+[11:20:55] 准备开启新对话...
+[11:20:55] 新对话已就绪
+[11:20:55] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:20:55] 
+==================================================
+[11:20:55]   关键词: Kubernetes
+[11:20:55] ==================================================
+[11:20:55]   prompt 长度: 1448 字
+[11:20:55] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:20:55] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:20:56] PoW 求解成功: nonce=56588
+[11:21:37] 回复获取完成 (5378 字, 76 个链接)
+[11:21:37]   摘要清理: #1 移除标记
+[11:21:37] 验证 URL 可用性...
+[11:21:41] HTTP Request: HEAD https://access.redhat.com/security/cve/cve-2026-10059 "HTTP/1.1 200 OK"
+[11:21:44] HTTP Request: HEAD https://www.cncf.io/announcements/2026/08/05/k8gb-becomes-a-cncf-incubating-project/ "HTTP/1.1 403 Forbidden"
+[11:21:46] HTTP Request: HEAD https://www.infoq.com/news/2026/08/vault-kubernetes-key-management/ "HTTP/1.1 405 Not Allowed"
+[11:21:50] HTTP Request: HEAD http://www.chenxutan.com/d/5746.html "HTTP/1.1 200 OK"
+[11:21:52] HTTP Request: HEAD https://www.digitaltoday.co.kr/cn/view/88907/igloo-corporation-secures-four-cloud-ai-security-patents "HTTP/1.1 200 OK"
+[11:21:52] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[11:21:52]   过滤: 4 条热点因链接不可达已移除
+[11:21:52] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Kubernetes.json
+[11:21:52]   [完成] Kubernetes (3 条热点, 42秒)
+[11:21:52]   等待 16 秒后处理下一个关键词...
+[11:22:08] 准备开启新对话...
+[11:22:08] 新对话已就绪
+[11:22:08] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:22:08] 
+==================================================
+[11:22:08]   关键词: TypeScript
+[11:22:08] ==================================================
+[11:22:08]   prompt 长度: 1448 字
+[11:22:08] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:22:08] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:22:08] PoW 求解成功: nonce=124108
+[11:22:48] 回复获取完成 (3945 字, 69 个链接)
+[11:22:48]   摘要清理: #1 移除标记
+[11:22:48]   引用链接填补: #5 [2026] https://www.bilibili.com/opus/1224096362637819904?from=search
+[11:22:48]   摘要清理: #5 移除标记
+[11:22:48] 验证 URL 可用性...
+[11:22:51] HTTP Request: HEAD https://www.bilibili.com/opus/1224096362637819904?from=search "HTTP/1.1 200 OK"
+[11:22:51] URL 验证: 1 个, 1 可用, 0 个404, 0 个不可达
+[11:22:51]   过滤: 4 条热点因链接不可达已移除
+[11:22:51] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\TypeScript.json
+[11:22:51]   [完成] TypeScript (1 条热点, 40秒)
+[11:22:51]   等待 22 秒后处理下一个关键词...
+[11:23:12] 准备开启新对话...
+[11:23:13] 新对话已就绪
+[11:23:13] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:23:13] 
+==================================================
+[11:23:13]   关键词: Claude Code
+[11:23:13] ==================================================
+[11:23:13]   prompt 长度: 1449 字
+[11:23:13] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:23:13] 发送消息 (1449 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:23:13] PoW 求解成功: nonce=52392
+[11:23:42] 回复获取完成 (3948 字, 32 个链接)
+[11:23:42] 验证 URL 可用性...
+[11:23:45] HTTP Request: HEAD https://www.36kr.com/p/3917756454956420 "HTTP/1.1 200 OK"
+[11:23:46] HTTP Request: HEAD https://www.c114.net.cn/industry/72717.html "HTTP/1.1 200 OK"
+[11:23:47] HTTP Request: HEAD https://www.36kr.com/p/3917796600491396 "HTTP/1.1 200 OK"
+[11:23:48] HTTP Request: HEAD https://github.com/anthropics/claude-code/issues/82996 "HTTP/1.1 200 OK"
+[11:23:48] URL 验证: 4 个, 4 可用, 0 个404, 0 个不可达
+[11:23:48]   过滤: 2 条热点因链接不可达已移除
+[11:23:48] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Claude Code.json
+[11:23:48]   [完成] Claude Code (4 条热点, 30秒)
+[11:23:48]   等待 36 秒后处理下一个关键词...
+[11:24:23] 准备开启新对话...
+[11:24:23] 新对话已就绪
+[11:24:23] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:24:23] 
+==================================================
+[11:24:23]   关键词: Python
+[11:24:23] ==================================================
+[11:24:23]   prompt 长度: 1444 字
+[11:24:23] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:24:23] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:24:24] PoW 求解成功: nonce=125823
+[11:24:53] 回复获取完成 (3617 字, 73 个链接)
+[11:24:53] 验证 URL 可用性...
+[11:24:56] HTTP Request: HEAD https://blog.python.org/2026/08/python-3150-rc1/ "HTTP/1.1 200 OK"
+[11:24:57] HTTP Request: HEAD https://www.python.org/ "HTTP/1.1 200 OK"
+[11:25:01] HTTP Request: HEAD https://realpython.com/python-news-august-2026/ "HTTP/1.1 403 Forbidden"
+[11:25:04] HTTP Request: HEAD https://www.securityweek.com/ "HTTP/1.1 403 Forbidden"
+[11:25:09] HTTP Request: HEAD https://thenewstack.io/ "HTTP/1.1 200 OK"
+[11:25:09] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[11:25:09]   过滤: 2 条热点因链接不可达已移除
+[11:25:09] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Python.json
+[11:25:09]   [完成] Python (3 条热点, 30秒)
+[11:25:09]   等待 40 秒后处理下一个关键词...
+[11:25:49] 准备开启新对话...
+[11:25:49] 新对话已就绪
+[11:25:49] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:25:49] 
+==================================================
+[11:25:49]   关键词: Cloudflare
+[11:25:49] ==================================================
+[11:25:49]   prompt 长度: 1448 字
+[11:25:49] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:25:49] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:25:49] PoW 求解成功: nonce=53786
+[11:26:28] 回复获取完成 (4476 字, 92 个链接)
+[11:26:28]   摘要清理: #7 移除标记
+[11:26:28] 验证 URL 可用性...
+[11:26:28] URL 验证: 无 URL 需要检测
+[11:26:28]   过滤: 7 条热点因链接不可达已移除
+[11:26:28] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Cloudflare.json
+[11:26:28]   [完成] Cloudflare (0 条热点, 39秒)
+[11:26:28]   等待 30 秒后处理下一个关键词...
+[11:26:58] 准备开启新对话...
+[11:26:58] 新对话已就绪
+[11:26:58] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:26:58] 
+==================================================
+[11:26:58]   关键词: Vue.js
+[11:26:58] ==================================================
+[11:26:58]   prompt 长度: 1444 字
+[11:26:58] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:26:58] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:26:58] PoW 求解成功: nonce=1440
+[11:27:34] 回复获取完成 (4396 字, 67 个链接)
+[11:27:34]   摘要清理: #2 移除标记
+[11:27:34]   引用链接填补: #3 [2026] https://vercel.com/i/vue-vs-react
+[11:27:34]   摘要清理: #3 移除标记
+[11:27:34]   摘要清理: #5 移除标记
+[11:27:34] 验证 URL 可用性...
+[11:27:36] HTTP Request: HEAD https://juejin.cn/post/7669622241974632490 "HTTP/1.1 200 OK"
+[11:27:37] HTTP Request: HEAD https://vuldb.com/cve/CVE-2026-69075 "HTTP/1.1 403 Forbidden"
+[11:27:39] HTTP Request: HEAD https://vercel.com/i/vue-vs-react "HTTP/1.1 200 OK"
+[11:27:40] HTTP Request: HEAD https://wap.stockstar.com/detail/RB2026080500005870 "HTTP/1.1 404 Not Found"
+[11:27:40]   [404] 兴业银行获「基于 Vue 的金额组件」发明专利授权 -> https://wap.stockstar.com/detail/RB2026080500005870
+[11:27:42] HTTP Request: HEAD https://www.oschina.net "HTTP/1.1 405 Method Not Allowed"
+[11:27:43] HTTP Request: HEAD https://www.cnblogs.com/jnpf001/p/21991536 "HTTP/1.1 200 OK"
+[11:27:43] URL 验证: 6 个, 5 可用, 1 个404, 0 个不可达
+[11:27:43]   过滤: 3 条热点因链接不可达已移除
+[11:27:43] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Vue.js.json
+[11:27:43]   [完成] Vue.js (3 条热点, 36秒)
+[11:27:43]   等待 45 秒后处理下一个关键词...
+[11:28:28] 准备开启新对话...
+[11:28:28] 新对话已就绪
+[11:28:28] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:28:28] 
+==================================================
+[11:28:28]   关键词: 前端技术
+[11:28:28] ==================================================
+[11:28:28]   prompt 长度: 1442 字
+[11:28:28] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:28:28] 发送消息 (1442 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:28:29] PoW 求解成功: nonce=106998
+[11:29:09] 回复获取完成 (5146 字, 94 个链接)
+[11:29:09] 验证 URL 可用性...
+[11:29:11] HTTP Request: HEAD https://bbs.huaweicloud.com/blogs/483478 "HTTP/1.1 200 OK"
+[11:29:11] URL 验证: 1 个, 1 可用, 0 个404, 0 个不可达
+[11:29:11]   过滤: 7 条热点因链接不可达已移除
+[11:29:11] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\前端技术.json
+[11:29:11]   [完成] 前端技术 (1 条热点, 41秒)
+[11:29:11]   等待 38 秒后处理下一个关键词...
+[11:29:49] 准备开启新对话...
+[11:29:49] 新对话已就绪
+[11:29:49] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:29:49] 
+==================================================
+[11:29:49]   关键词: Node.js
+[11:29:49] ==================================================
+[11:29:49]   prompt 长度: 1445 字
+[11:29:49] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:29:49] 发送消息 (1445 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:29:50] PoW 求解成功: nonce=44258
+[11:30:33] 回复获取完成 (5022 字, 44 个链接)
+[11:30:33]   引用链接填补: #1 [2026] https://www.tenable.com/plugins/pipeline/issues/227357-0
+[11:30:33]   摘要清理: #1 移除标记
+[11:30:33]   摘要清理: #2 移除标记
+[11:30:33]   摘要清理: #3 移除标记
+[11:30:33]   摘要清理: #4 移除标记
+[11:30:33]   摘要清理: #5 移除标记
+[11:30:33]   引用链接填补: #7 [2026] https://www.tenable.com/plugins/pipeline/issues/227357-0
+[11:30:33]   摘要清理: #7 移除标记
+[11:30:33]   去重: 1 条热点因 URL 重复已移除
+[11:30:33] 验证 URL 可用性...
+[11:30:39] HTTP Request: HEAD https://www.tenable.com/plugins/pipeline/issues/227357-0 "HTTP/1.1 200 OK"
+[11:30:39] URL 验证: 1 个, 1 可用, 0 个404, 0 个不可达
+[11:30:39]   过滤: 5 条热点因链接不可达已移除
+[11:30:39] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Node.js.json
+[11:30:39]   [完成] Node.js (1 条热点, 43秒)
+[11:30:39]   等待 31 秒后处理下一个关键词...
+[11:31:10] 准备开启新对话...
+[11:31:10] 新对话已就绪
+[11:31:10] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:31:10] 
+==================================================
+[11:31:10]   关键词: React
+[11:31:10] ==================================================
+[11:31:10]   prompt 长度: 1443 字
+[11:31:10] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:31:10] 发送消息 (1443 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:31:11] PoW 求解成功: nonce=64469
+[11:31:53] 回复获取完成 (6204 字, 98 个链接)
+[11:31:53]   引用链接填补: #8 [2026] https://www.pkgpulse.com/guides/best-react-component-libraries-2026
+[11:31:53]   摘要清理: #8 移除标记
+[11:31:53] 验证 URL 可用性...
+[11:31:55] HTTP Request: HEAD https://www.pkgpulse.com/guides/best-react-component-libraries-2026 "HTTP/1.1 200 OK"
+[11:31:55] URL 验证: 1 个, 1 可用, 0 个404, 0 个不可达
+[11:31:55]   过滤: 7 条热点因链接不可达已移除
+[11:31:55] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\React.json
+[11:31:55]   [完成] React (1 条热点, 42秒)
+[11:31:55]   等待 21 秒后处理下一个关键词...
+[11:32:16] 准备开启新对话...
+[11:32:16] 新对话已就绪
+[11:32:16] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:32:16] 
+==================================================
+[11:32:16]   关键词: Go
+[11:32:16] ==================================================
+[11:32:16]   prompt 长度: 1440 字
+[11:32:16] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:32:16] 发送消息 (1440 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:32:16] PoW 求解成功: nonce=77033
+[11:32:49] 回复获取完成 (3985 字, 90 个链接)
+[11:32:49]   去重: 1 条热点因 URL 重复已移除
+[11:32:49] 验证 URL 可用性...
+[11:32:51] HTTP Request: HEAD https://www.jingpt.com/t/2446768 "HTTP/1.1 200 OK"
+[11:32:52] HTTP Request: HEAD https://blog.jetbrains.com/go/2026/08/05/new-livestream-go-127/ "HTTP/1.1 200 OK"
+[11:32:53] HTTP Request: HEAD https://bbs.huaweicloud.com/blogs/483480 "HTTP/1.1 200 OK"
+[11:32:54] HTTP Request: HEAD https://www.163.com/dy/article/L3KS0M2N0511BLFD.html "HTTP/1.1 200 OK"
+[11:32:57] HTTP Request: HEAD https://www.guandian.cn/article/20260804/580288.html "HTTP/1.1 200 OK"
+[11:32:57] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[11:32:57] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\Go.json
+[11:32:57]   [完成] Go (5 条热点, 33秒)
+[11:32:57]   等待 16 秒后处理下一个关键词...
+[11:33:12] 准备开启新对话...
+[11:33:13] 新对话已就绪
+[11:33:13] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:33:13] 
+==================================================
+[11:33:13]   关键词: 人工智能
+[11:33:13] ==================================================
+[11:33:13]   prompt 长度: 1442 字
+[11:33:13] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:33:13] 发送消息 (1442 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:33:13] PoW 求解成功: nonce=38506
+[11:33:43] 回复获取完成 (3750 字, 82 个链接)
+[11:33:43] 验证 URL 可用性...
+[11:33:45] HTTP Request: HEAD http://news.cnr.cn/native/gd/sz/20260803/t20260803_527745421.shtml "HTTP/1.1 200 OK"
+[11:33:46]   [不可达] 欧盟《人工智能法》8月2日起扩大实施 全球首部全面AI监管法落地 -> https://xn--xkrr14bows.cn/20260731/3165dd0ca76f42d5ada4ed42b8824a9a/c.html (连接失败)
+[11:33:47] HTTP Request: HEAD https://stcn.com/article/detail/4054863.html "HTTP/1.1 200 OK"
+[11:33:48] HTTP Request: HEAD https://stcn.com/article/detail/4058706.html "HTTP/1.1 200 OK"
+[11:33:48] URL 验证: 4 个, 3 可用, 0 个404, 1 个不可达
+[11:33:48]   过滤: 2 条热点因链接不可达已移除
+[11:33:48] 已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\人工智能.json
+[11:33:48]   [完成] 人工智能 (3 条热点, 30秒)
+[11:33:48]   等待 32 秒后处理下一个关键词...
+[11:34:20] 准备开启新对话...
+[11:34:20] 新对话已就绪
+[11:34:20] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:34:20] 
+==================================================
+[11:34:20]   关键词: GitHub
+[11:34:20] ==================================================
+[11:34:20]   prompt 长度: 1444 字
+[11:34:20] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:34:20] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:34:20] PoW 求解成功: nonce=102665
+[11:34:20] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:34:21] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:34:21] JSON 解析失败
+[11:34:21]   第1次尝试 — JSON 解析失败，原始回复已保存
+[11:34:21]   等待 15 秒后重试 (2/3)...
+[11:34:36] 准备开启新对话...
+[11:34:36] 新对话已就绪
+[11:34:36] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:34:36] PoW 求解成功: nonce=106977
+[11:34:36] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:34:36] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:34:36] JSON 解析失败
+[11:34:36]   第2次尝试 — JSON 解析失败，原始回复已保存
+[11:34:36]   等待 30 秒后重试 (3/3)...
+[11:35:06] 准备开启新对话...
+[11:35:07] 新对话已就绪
+[11:35:07] 发送消息 (1444 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:35:07] PoW 求解成功: nonce=12631
+[11:35:07] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:35:07] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:35:07] JSON 解析失败
+[11:35:07]   第3次尝试 — JSON 解析失败，原始回复已保存
+[11:35:07]   [失败] GitHub — 重试3次，JSON 解析均失败
+[11:35:07]   等待 31 秒后处理下一个关键词...
+[11:35:37] 准备开启新对话...
+[11:35:37] 新对话已就绪
+[11:35:37] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:35:37] 
+==================================================
+[11:35:37]   关键词: SpringBoot
+[11:35:37] ==================================================
+[11:35:37]   prompt 长度: 1448 字
+[11:35:37] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:35:37] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:35:38] PoW 求解成功: nonce=139616
+[11:35:38] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:35:38] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:35:38] JSON 解析失败
+[11:35:38]   第1次尝试 — JSON 解析失败，原始回复已保存
+[11:35:38]   等待 20 秒后重试 (2/3)...
+[11:35:57] 准备开启新对话...
+[11:35:58] 新对话已就绪
+[11:35:58] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:35:58] PoW 求解成功: nonce=67751
+[11:35:58] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:35:58] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:35:58] JSON 解析失败
+[11:35:58]   第2次尝试 — JSON 解析失败，原始回复已保存
+[11:35:58]   等待 31 秒后重试 (3/3)...
+[11:36:29] 准备开启新对话...
+[11:36:29] 新对话已就绪
+[11:36:29] 发送消息 (1448 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:36:30] PoW 求解成功: nonce=106824
+[11:36:30] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:36:30] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:36:30] JSON 解析失败
+[11:36:30]   第3次尝试 — JSON 解析失败，原始回复已保存
+[11:36:30]   [失败] SpringBoot — 重试3次，JSON 解析均失败
+[11:36:30]   等待 18 秒后处理下一个关键词...
+[11:36:47] 准备开启新对话...
+[11:36:48] 新对话已就绪
+[11:36:48] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:36:48] 
+==================================================
+[11:36:48]   关键词: Next.js
+[11:36:48] ==================================================
+[11:36:48]   prompt 长度: 1445 字
+[11:36:48] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:36:48] 发送消息 (1445 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:36:50] PoW 求解成功: nonce=46713
+[11:36:51] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:36:51] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:36:51] JSON 解析失败
+[11:36:51]   第1次尝试 — JSON 解析失败，原始回复已保存
+[11:36:51]   等待 24 秒后重试 (2/3)...
+[11:37:15] 准备开启新对话...
+[11:37:15] 新对话已就绪
+[11:37:15] 发送消息 (1445 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:37:15] PoW 求解成功: nonce=51560
+[11:37:15] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:37:15] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:37:15] JSON 解析失败
+[11:37:15]   第2次尝试 — JSON 解析失败，原始回复已保存
+[11:37:15]   等待 32 秒后重试 (3/3)...
+[11:37:47] 准备开启新对话...
+[11:37:47] 新对话已就绪
+[11:37:47] 发送消息 (1445 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:37:47] PoW 求解成功: nonce=95149
+[11:37:47] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:37:47] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:37:47] JSON 解析失败
+[11:37:47]   第3次尝试 — JSON 解析失败，原始回复已保存
+[11:37:47]   [失败] Next.js — 重试3次，JSON 解析均失败
+[11:37:47]   等待 23 秒后处理下一个关键词...
+[11:38:10] 准备开启新对话...
+[11:38:10] 新对话已就绪
+[11:38:10] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:38:10] 
+==================================================
+[11:38:10]   关键词: 数据库
+[11:38:10] ==================================================
+[11:38:10]   prompt 长度: 1441 字
+[11:38:10] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[11:38:10] 发送消息 (1441 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:38:11] PoW 求解成功: nonce=122999
+[11:38:11] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:38:11] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:38:11] JSON 解析失败
+[11:38:11]   第1次尝试 — JSON 解析失败，原始回复已保存
+[11:38:11]   等待 17 秒后重试 (2/3)...
+[11:38:28] 准备开启新对话...
+[11:38:28] 新对话已就绪
+[11:38:28] 发送消息 (1441 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:38:28] PoW 求解成功: nonce=78299
+[11:38:28] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:38:28] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:38:28] JSON 解析失败
+[11:38:28]   第2次尝试 — JSON 解析失败，原始回复已保存
+[11:38:28]   等待 33 秒后重试 (3/3)...
+[11:39:02] 准备开启新对话...
+[11:39:02] 新对话已就绪
+[11:39:02] 发送消息 (1441 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[11:39:02] PoW 求解成功: nonce=78155
+[11:39:02] DeepSeek 业务错误 (biz_code=5): user is muted
+[11:39:02] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[11:39:02] JSON 解析失败
+[11:39:02]   第3次尝试 — JSON 解析失败，原始回复已保存
+[11:39:02]   [失败] 数据库 — 重试3次，JSON 解析均失败
+[11:39:02] 搜索完成: 16/20 成功, 共 31 条热点
+[11:39:02] 
+[11:39:02] ============================================================
+[11:39:02]   运行总结
+[11:39:02] ============================================================
+[11:39:02]   关键词                  状态       热点数    耗时    
+[11:39:02]   ──────────────────── ──────── ────── ──────
+[11:39:02]   DeepSeek             完成       0      39s   
+[11:39:02]   ChatGPT              完成       1      34s   
+[11:39:02]   OpenAI               完成       1      26s   
+[11:39:02]   Docker               完成       2      42s   
+[11:39:02]   Rust                 完成       2      44s   
+[11:39:02]   Kubernetes           完成       3      42s   
+[11:39:02]   TypeScript           完成       1      40s   
+[11:39:02]   Claude Code          完成       4      30s   
+[11:39:02]   Python               完成       3      30s   
+[11:39:02]   Cloudflare           完成       0      39s   
+[11:39:02]   Vue.js               完成       3      36s   
+[11:39:02]   前端技术                 完成       1      41s   
+[11:39:02]   Node.js              完成       1      43s   
+[11:39:02]   React                完成       1      42s   
+[11:39:02]   Go                   完成       5      33s   
+[11:39:02]   人工智能                 完成       3      30s   
+[11:39:02]   GitHub               失败       -      47s   
+[11:39:02]   SpringBoot           失败       -      52s   
+[11:39:02]   Next.js              失败       -      59s   
+[11:39:02]   数据库                  失败       -      52s   
+[11:39:02] 
+[11:39:02]   总计: 16/20 成功 | 31 条热点 | 共耗时 1457秒
+[11:39:02] ============================================================
+[11:39:02] 聚合报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\report.json
+[11:39:02] 已加载 HTML 模板: D:\Projects\project\Blog\Hotspot\hotspot\template.html
+[11:39:02] HTML 报告已保存: D:\Projects\project\Blog\Hotspot\results\2026-08-06\111445\report.html
+[11:39:02] ✅ 本次搜索完成: 31 条热点已同步到 results/

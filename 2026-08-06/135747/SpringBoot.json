@@ -1,0 +1,119 @@
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Spring 官方周报发布：Spring Boot 联合创始人 Phil Webb 访谈与生态新动态",
+      "summary": "Spring 官方博客 8 月 4 日发布周报，汇总本周生态动态，包括与 Spring Boot 联合创始人 Phil Webb 的对谈、Agentic Loops 概念解读、RabbitMQ Streams 解析及 Spring Cloud 微服务 workshop 等内容。",
+      "source": "Spring 官方博客",
+      "url": "https://spring.io/blog/2026/08/04/this-week-in-spring-august-4-2026",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "周报整理了 Spring Boot 幂等键工具、The New Stack 关于 AI 与开源安全的讨论、Agentic Loops 科普、RabbitMQ Streams、Spring Cloud 动态配置与微服务 workshop，以及 DynamoDB 集成教程等本周社区精选内容。"
+        },
+        {
+          "stance": "生态观察",
+          "summary": "从周报选题看，Spring 生态正加速拥抱 AI 与云原生方向，官方团队通过访谈、workshop 等形式活跃引导社区，Spring Boot 4.x 时代的社区热度持续走高。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "CVE-2026-22731 Spring Boot Actuator 身份认证绕过漏洞分析发布",
+      "summary": "奇安信攻防社区 8 月 4 日发文剖析 CVE22731：Actuator 健康组 additional-path 附加路径映射逻辑存在缺陷，安全拦截器可能未正确应用认证，攻击者可绕过身份验证访问敏感管理端点。",
+      "source": "奇安信攻防社区",
+      "url": "https://mdr.skyeye.qianxin.com/forum/share/4957",
+      "published_time": "2026-08-04 17:56",
+      "perspectives": [
+        {
+          "stance": "安全研究人员分析",
+          "summary": "漏洞源于健康组附加路径映射缺陷：当开发者通过 additional-path 配置自定义访问路径并在其下定义需认证端点时，认证拦截逻辑可能失效，导致未授权访问受保护端点，需修复受影响版本配置。"
+        },
+        {
+          "stance": "开发者应对",
+          "summary": "使用 Actuator 健康组自定义路径的团队应尽快自查端点暴露面、升级受影响的 Spring Boot 版本，并对管理端点启用额外访问控制以降低被绕过风险。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "MariaDB 六项 CVE 波及 Spring Boot 依赖树，CVE 记录传播滞后引合规担忧",
+      "summary": "HeroDevs 8 月 5 日披露：MariaDB Connector/J 与 R2DBC 共 6 项漏洞（含凭据明文泄露、字符集混淆、LOCAL INFILE 绕过）影响 Spring Boot BOM 托管依赖，且 CVE 记录在 NVD、GitHub 等库中传播滞后超三周。",
+      "source": "HeroDevs",
+      "url": "https://www.herodevs.com/blog-posts/cve-2026-55856-through-55860-and-cve-2026-61700-mariadb-connector-cves-in-spring-boot",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "安全机构研究",
+          "summary": "六项漏洞中多项为认证插件在未验证加密传输下明文传密码的凭据泄露问题，另有字符集混淆可致数据静默损坏并削弱转义防护；EOL 版 Spring Boot 的 BOM 固定将无法自动更新，需手动覆盖版本。"
+        },
+        {
+          "stance": "合规审计警示",
+          "summary": "由于记录仅存在于 GitHub 仓库级公告而主流漏洞库未收录，扫描工具与审计系统无法生成处置记录，PCI DSS、EU CRA、FedRAMP 等合规场景存在纸面漏洞缺失，建议把上游仓库公告纳入监控源。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Spring Boot 3.5.x 开源支持正式结束，官方建议存量项目迁移至 4.x",
+      "summary": "Spring 官方在 6 月 25 日发布 3.5.16（3.5.x 终版）时确认该分支开源支持于 6 月 30 日结束；相关中文技术站点 8 月初集中转发，提示仍停留在 3.5.x 的项目应及时迁移至 4.0.x 或 4.1.x。",
+      "source": "php.cn",
+      "url": "https://www.php.cn/faq/2941728.html",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方说明",
+          "summary": "3.5.16 为 3.5.x 系列最后一个开源免费版本，仅含 3 项依赖升级；继续使用不会立刻停止运行，但不再获得开源安全补丁，官方建议迁移至 4.0.x 或 4.1.x 获取持续支持。"
+        },
+        {
+          "stance": "社区升级讨论",
+          "summary": "大量存量 3.x 项目面临迁移决策压力，社区围绕 4.x 的虚拟线程、SSRF 防护、gRPC 集成等新特性与升级兼容性、HikariCP 参数调整等成本展开热议。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Spring Boot 生产事故复盘文章走红：稳定运行两年的服务周二突然崩溃",
+      "summary": "Medium Javarevisited 专栏文章 8 月 4 日被开源软件资讯转载引发热议：作者所在 Spring Boot 服务无发布、无流量突增却突然宕机，排查 11 小时后发现是缺失索引导致查询两年间缓慢劣化，最终拖垮连接池。",
+      "source": "Open Source Software News / Medium",
+      "url": "https://www.opensourcesoftwarenews.com/redirect/21897/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "作者复盘",
+          "summary": "作者提出「慢悬崖」概念：系统因表增长、连接泄漏等累积型劣化逐步走向崩溃，而监控只对变化和突增告警，对缓慢趋势失明，稳定越久越危险，最终修复仅一行索引。"
+        },
+        {
+          "stance": "行业反思",
+          "summary": "文章引发对既有监控体系与故障排查模型的讨论：多数告警围绕「变更」设计，对累积型故障盲区明显，开发者应建立针对缓慢劣化的趋势监控与故障形态清单。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Spring Boot 启动慢排查指南登阿里云开发者社区热榜：三大元凶与 50% 提速方案",
+      "summary": "阿里云开发者社区 8 月 6 日发布文章，系统剖析 Spring Boot 微服务启动慢的三大元凶——组件扫描失控、Bean 初始化 IO 阻塞、JVM 参数不当，并给出 Actuator 诊断、懒加载、CDS 等实操方案。",
+      "source": "阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1753626",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "技术实践观点",
+          "summary": "组件扫描精确化可减 20-30%、全局懒加载可减 15-40%、JVM 参数优化（Metaspace、CDS、G1GC）可减 10-20%，三者叠加大多数项目可实现 50% 以上的启动速度提升，强调先诊断再动手。"
+        },
+        {
+          "stance": "AI 工具厂商观点",
+          "summary": "文章指出通用 AI 编码助手无法分析项目实际瓶颈，飞算 JavaAI 等框架最佳实践类工具可按 Spring Boot 最佳实践扫描启动相关配置并生成针对性优化建议，将架构师经验固化进工具。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Spring Boot 生态舆情集中在三方面：一是安全漏洞密集披露（Actuator 认证绕过、MariaDB 依赖树 CVE、DevTools 弱随机密钥），安全团队与开发者对存量 EOL 版本暴露风险焦虑上升；二是 3.5.x 开源支持结束后「迁不迁 4.x」成为社区最热议题，兼容性与新特性讨论并行；三是生产可靠性反思类内容（启动慢优化、慢悬崖事故复盘）关注度明显走高。整体情绪偏务实谨慎，安全加固与升级迁移是主流呼声。",
+  "honesty_note": "需如实说明：1) 部分中文站点（如 php.cn）8 月 4 日转发的文章其原始事件可追溯至 6 月（Spring Boot 4.1/4.0.7 发布、3.5.x EOL），属内容再分发产生的「伪新鲜」，请以官方时间为准；2) Spring Boot 属技术框架类关键词，近 24-48 小时无重大突发新闻，热点以官方周报、CVE 分析与技术文章为主；3) 关联话题补充：CVE-2026-47882（Spring Boot DevTools 远程密钥使用非加密 PRNG，2026-07-28 公布，略早于本次时间窗，见 https://spring.io/security/cve-2026-47882）、Spring Boot 4.2 里程碑持续推进（GitHub 显示到期日 2026-08-20，相关 issue 已大量关闭）。",
+  "start_time": "2026-08-06 14:49",
+  "end_time": "2026-08-06 14:52",
+  "elapsed_seconds": 180,
+  "retry_count": 1
+}

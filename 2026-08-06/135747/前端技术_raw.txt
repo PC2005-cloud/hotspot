@@ -1,0 +1,185 @@
+已完成联网检索，以下为基于 2026-07-30 至 2026-08-06 时间段（重点覆盖最近 24-48 小时）整理的前端技术热点 JSON 结果。
+
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "keyv 维护者 GitHub 账号遭入侵，恶意蠕虫波及 npm 生态 444 个软件包",
+      "summary": "安全公司 StepSecurity 披露，热门 JS 键值库 keyv 维护者账号被劫持，黑客植入窃取凭据的蠕虫，4 小时内扩散至 444 个 npm 包、2212 个恶意版本，波及 Deliveroo、Picsart 等组织。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/985/910.htm",
+      "published_time": "2026-08-05 13:55",
+      "perspectives": [
+        {
+          "stance": "安全机构披露",
+          "summary": "StepSecurity 指出攻击通过 GitHub Actions 自动构建发布链路扩散，蠕虫会窃取 npm、GitHub、AWS、Azure 及 Claude、Cursor 等 AI 开发工具的登录凭据"
+        },
+        {
+          "stance": "加固建议",
+          "summary": "专家建议开源维护者启用 Passkey 或硬件密钥、降低 Token 权限、开启分支保护，企业可为新版本设置 3-7 天发布冷却期"
+        },
+        {
+          "stance": "影响面评估",
+          "summary": "keyv 周下载量超 1.5 亿次，flat-cache 等被 ESLint 间接依赖，供应链信任体系再受冲击"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "苹果 WebKit 浏览器被披露三处漏洞，或泄露 iOS / macOS 用户真实 IP 与 DNS",
+      "summary": "安全博客 Mysk 披露，WebKit 的 DNS 预取、通行密钥验证与 WebTransport 三项功能会绕过代理或 iCloud Private Relay，直接从设备发请求，暴露用户真实 IP 与 DNS 信息。",
+      "source": "IT之家",
+      "url": "https://m.ithome.com/html/985850.htm",
+      "published_time": "2026-08-05 10:51",
+      "perspectives": [
+        {
+          "stance": "研究者披露",
+          "summary": "Talal Haj Bakry 与 Tommy Mysk 指三类请求由系统底层直发，绕过 WKWebsiteDataStore 的代理配置"
+        },
+        {
+          "stance": "用户担忧",
+          "summary": "iCloud Private Relay 等隐私保护可被穿透，引发对苹果隐私承诺与 WebKit 架构缺陷的质疑"
+        },
+        {
+          "stance": "报道视角",
+          "summary": "三项功能分别自 iOS 26.0、18.0、26.4 引入，官方尚未公布修复时间表"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "以太坊基金会资助 WEBCAT，推进钱包与应用前端代码验证以防范钓鱼",
+      "summary": "以太坊基金会「万亿美元安全」计划宣布资助新闻自由基金会，支持开源工具 WEBCAT 开发，让浏览器验证网站实际下发的前端代码与开发者发布版本一致，防范供应链与 UI 欺骗攻击。",
+      "source": "深潮 TechFlow",
+      "url": "https://www.techflowpost.com/newsletter/130835",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方立场",
+          "summary": "基金会将前端入侵界定为基础设施级风险，把可验证前端列为下一步重点方向"
+        },
+        {
+          "stance": "技术解读",
+          "summary": "WEBCAT 最初服务于 SecureDrop 等安全通信系统，现扩展至以太坊钱包生态，被攻破的 Web 界面可能引发供应链攻击与 UI 操纵"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "业界关注验证机制的实际落地效果与对普通钱包用户的使用成本影响"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "前端周刊第 42 期：Rspack 2.0 破局、cdnjs 全量上云、CSS 交错动画入基线",
+      "summary": "本期综述 Rspack 2.0 构建性能较 1.0 最高提升 100%、dev-server 依赖从 192 个砍到 1 个；Cloudflare 于 7 月 30 日宣布完成 cdnjs 全量迁移，日处理 90 亿请求；CSS sibling-index() 将纳入 Baseline。",
+      "source": "CSDN",
+      "url": "https://blog.csdn.net/m0_68634366/article/details/163450157",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "综述视角",
+          "summary": "本周前端主线为「Rust 化」与「原生化」并行，构建工具与浏览器原生能力双向推进"
+        },
+        {
+          "stance": "开发者评价",
+          "summary": "HN 网友称依赖数量锐减比性能数据更震撼，体现工程理念的转变而非单纯基准提升"
+        },
+        {
+          "stance": "迁移提醒",
+          "summary": "纯 ESM 切换可能影响旧 CJS 插件，升级前需检查插件兼容性与 SRI 哈希"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Web 前端周刊 W31：TypeScript 7.0、MobX 7.0 发布，npm 实行发布即扫毒",
+      "summary": "本期盘点 TypeScript 7.0（Go 原生重写、编译提速约 10 倍）、MobX 7.0 体积瘦身发布、htmx 4.0、Vercel scriptc 原生编译器，以及 npm 新增发布时恶意软件扫描。",
+      "source": "华为云社区",
+      "url": "https://bbs.huaweicloud.com/blogs/483478",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "生态综述",
+          "summary": "React 圈出现 TanStack 停用 RSC、JavaScript 圈多版本齐发的密集迭代局面"
+        },
+        {
+          "stance": "供应链视角",
+          "summary": "npm 发布即扫毒通常带来约 5 分钟延迟，发布自动化流程需适配新的状态信号"
+        },
+        {
+          "stance": "技术解读",
+          "summary": "scriptc 以约 320KB 原生二进制实现 4ms 冷启动，但 JS 与 any 类型代码无法静态编译，需关注覆盖边界"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "TanStack 官网停用 React Server Components 复盘：性能提升与架构成本之辩",
+      "summary": "TanStack 团队复盘官网移除 RSC 的决定：Lighthouse 从 52 升至 74、Total Blocking Time 从 1200ms 降至 260ms，但服务端 JSX、Flight payload 与路由复杂度让维护成本浮出水面。",
+      "source": "TanStack Blog",
+      "url": "https://tanstack.com/blog/we-removed-rsc-from-tanstack-com",
+      "published_time": "2026-07-23（复盘讨论 8 月 5 日持续发酵）",
+      "perspectives": [
+        {
+          "stance": "团队观点",
+          "summary": "更简单的 Markdown 内容管道更易解释与维护，浏览器端 JS 传输量显著下降"
+        },
+        {
+          "stance": "反方质疑",
+          "summary": "RSC 的复杂度随时间累积，仅限服务端的 JSX 文件与路由设计难以被普通维护者理解"
+        },
+        {
+          "stance": "社区讨论",
+          "summary": "业界认为 RSC 更适合数据密集、低交互页面，交互密集应用需在流式渲染与客户端组件间权衡"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "ECMAScript 2026 正式获批：JavaScript 第 17 版规范新特性持续盘点",
+      "summary": "ES2026 获批后热度延续，新增 Array.fromAsync、Error.isError、Math.sumPrecise、Map.getOrInsert、Temporal API 与 using 显式资源管理等能力，多数特性已在 Node.js 与主流浏览器原生可用。",
+      "source": "51Testing",
+      "url": "http://www.51testing.com/html/35/n-7810935.html",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "教程视角",
+          "summary": "称 ES2026 属「精细化打磨」，无 ES6 级颠覆语法，但补齐了异步数组、精度求和等长期短板"
+        },
+        {
+          "stance": "开发者视角",
+          "summary": "Temporal 被视为终结 Date 三十年设计缺陷的里程碑，建议制定渐进式迁移计划"
+        },
+        {
+          "stance": "标准视角",
+          "summary": "管道运算符等提案被推迟至 ES2027，仍需等待后续版本"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "2026 Google 开发者大会 8 月 12-13 日在上海举行，报名进行中",
+      "summary": "2026 Google 开发者大会将于 8 月 12-13 日在上海世博中心举办，聚焦 AI、Chrome、Cloud、Android 最新技术，报名已开启，临近开展带动前端开发者关注 Web 平台新动向。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/976/554.htm",
+      "published_time": "2026-07-14 官宣（临近举行热度上升）",
+      "perspectives": [
+        {
+          "stance": "官方视角",
+          "summary": "大会将展示 AI、Chrome、Cloud、Android 最新技术与智能协同开发体验"
+        },
+        {
+          "stance": "开发者期待",
+          "summary": "前端从业者重点关注 Chrome 新特性、Web 平台演进与 AI 编程工具的一线应用"
+        },
+        {
+          "stance": "参与建议",
+          "summary": "席位有限需提前提交报名，入场凭本人身份证原件与确认函"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "前端社区近期情绪以「安全焦虑」与「架构变局」双主线交织为主。keyv 供应链蠕虫事件冲击 npm 生态信任，开发者热议 Passkey、Token 最小权限与发布冷却期等加固措施；同时 Rust 化（TypeScript 7.0、Rspack 2.0、Bun）、CSS/HTML 原生化与 RSC 去留之争持续升温，AI 对前端岗位的冲击讨论亦未平息。",
+  "honesty_note": "本次检索以技术周刊、安全资讯与社区博客为主，缺乏微博等泛平台热搜数据，热度排序系基于信息聚合与时间新鲜度推断。个别条目（TanStack 停用 RSC 原博文、Google 开发者大会官宣）时间略早于 7 天窗口，属近期持续发酵话题。关联话题可补充：Vue 3.6 Vapor Mode RC、Bun Rust 重构、2026 上半年前端圈五次大事件综述等。"
+}

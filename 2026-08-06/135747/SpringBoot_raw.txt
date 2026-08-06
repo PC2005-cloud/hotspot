@@ -1,0 +1,135 @@
+我已完成联网搜索，围绕关键词「SpringBoot」聚焦 2026-07-30 至 08-06（含最近 48 小时）窗口内的技术、安全与社区热点。以下为整理结果：
+
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "CVE-2026-22731/22733 Spring Boot Actuator 身份认证绕过漏洞被深入分析",
+      "summary": "奇安信攻防社区发布漏洞浅析，指出 Actuator 健康组附加路径映射逻辑缺陷可致认证绕过；IBM 等厂商已发布安全公告，受影响版本需升级修复。",
+      "source": "奇安信攻防社区",
+      "url": "https://mdr.skyeye.qianxin.com/forum/share/4957",
+      "published_time": "2026-08-04 17:56",
+      "perspectives": [
+        {
+          "stance": "官方通报/厂商公告",
+          "summary": "IBM 等厂商发布 Security Bulletin，确认 CVE-2026-22731 与 CVE-2026-22733 影响 Spring Boot Actuator，要求用户升级到修复版本并检查管理端点暴露面。"
+        },
+        {
+          "stance": "安全研究员分析",
+          "summary": "奇安信分析认为漏洞源于 Health Groups 附加路径下安全拦截器未正确应用认证逻辑，攻击者可绕过认证访问敏感管理端点，建议按安全变更优先级处理。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "MariaDB 连接器六个 CVE 波及 Spring Boot 依赖树",
+      "summary": "HeroDevs 发布分析称 MariaDB 公布 6 个 Java 连接器漏洞，覆盖 Spring Boot BOM 托管依赖，含凭据明文泄露等风险，且记录传播缓慢、EOL 版本无法修复。",
+      "source": "HeroDevs Blog",
+      "url": "https://www.herodevs.com/blog-posts/cve-2026-55856-through-55860-and-cve-2026-61700-mariadb-connector-cves-in-spring-boot",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "安全厂商分析",
+          "summary": "HeroDevs 指出六漏洞多为认证插件明文传输密码、字符集混淆等，需升级驱动或固定证书；同时批评 CVE 记录传播滞后影响合规审计流程。"
+        },
+        {
+          "stance": "迁移与处置建议",
+          "summary": "对已 EOL 的 Spring Boot 2.4-2.6 行，BOM 固定无法自动升级，建议借助商业补丁或尽早迁移至受支持版本。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Spring Boot 4.2 里程碑开发推进，预计 2026 年 11 月发布",
+      "summary": "GitHub 里程碑显示 4.2 版本 8 月 20 日截止、70/70 问题已关闭，将随 11 月发布恢复 AMQP 模块、延后移除 Jackson 2 支持，社区关注度上升。",
+      "source": "GitHub",
+      "url": "https://github.com/spring-projects/spring-boot/milestones",
+      "published_time": "2026-08（里程碑截止 2026-08-20）",
+      "perspectives": [
+        {
+          "stance": "官方路线规划",
+          "summary": "Spring 团队已启动 4.2 发布说明并排期 11 月发布，明确恢复 spring-boot-amqp、将 Jackson 2 移除延后至 4.3。"
+        },
+        {
+          "stance": "社区展望",
+          "summary": "开发者关注 4.2 新特性与迁移成本，同时 3.5.x 结束 OSS 支持促使存量项目提前规划升级窗口。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Spring 官方周报发布：Phil Webb 访谈与 AI 安全话题引关注",
+      "summary": "This Week in Spring 8月4日刊发布，含 Spring Boot 联合创始人 Phil Webb 对谈、AI 改变开源安全格局评论及 idempotency keys、Spring Cloud 等资源推荐。",
+      "source": "Spring 官方博客",
+      "url": "https://spring.io/blog/2026/08/04/this-week-in-spring-august-4-2026",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方综合报道",
+          "summary": "官方汇总生态动态，重点提及 Spring Boot 联合创始人 Phil Webb 访谈及 AI 时代开源安全讨论。"
+        },
+        {
+          "stance": "生态观察",
+          "summary": "周报引述 The New Stack 观点，AI 正改变开源安全方程，厂商级支持（如 Spring）的价值凸显。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Spring Boot 4.0.7 发布修复两项安全漏洞，3.5.x 正式退场",
+      "summary": "中文技术媒体整理：4.0.7 含 77 项修复并修复 CVE-2026-40992（邮件 SSL 验证）与 CVE-2026-41001（Artemis 可预测目录）；3.5.16 为 3.5.x 最终开源版。",
+      "source": "PHP中文网",
+      "url": "https://www.php.cn/faq/2941730.html",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "技术媒体解读",
+          "summary": "汇总官方发布说明，指出邮件与 Artemis 两个 CVE 的影响范围，以及 3.5.x 系列开源支持正式到期。"
+        },
+        {
+          "stance": "迁移提醒",
+          "summary": "仍停留在 3.5.x 的项目不会立刻停止运行，但将不再获得开源安全更新，官方建议尽早升级至 4.0.x 或 4.1.x。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "MCP 无状态化浪潮下 Spring AI 2.0 构建 AI Agent 服务器受关注",
+      "summary": "dev.to 技术文章结合 MCP 2026-07-28 规范，讲解用 Spring AI 2.0 构建生产级无状态 MCP 服务器，凸显 Spring Boot 生态在 AI Agent 方向的落地热度。",
+      "source": "dev.to",
+      "url": "https://dev.to/jamilxt/mcp-goes-stateless-building-ai-agent-servers-with-spring-ai-20-4hfg",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "技术实践",
+          "summary": "作者介绍 Spring AI 2.0（随 Spring Boot 4 发布）将 MCP 支持列为核心特性，适合构建无状态 AI Agent 服务。"
+        },
+        {
+          "stance": "开发者讨论",
+          "summary": "围绕 MCP 无状态化对 Java 开发者生产环境的影响展开讨论，观点偏向积极落地与架构验证。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "微软示例仓库因安全审计从 Spring Boot 旧版升级至 4.x/Java 21",
+      "summary": "Azure-Samples java-rate-limiting-pattern-sample 合并 PR，按 2026-08-03 安全审计将示例升级至 Spring Boot 4.x 与 Java 21，并修复 11 项审计发现。",
+      "source": "GitHub",
+      "url": "https://github.com/Azure-Samples/java-rate-limiting-pattern-sample/pull/4",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "官方工程实践",
+          "summary": "微软方面按审计结果一次性完成依赖升级与 CVE 修复，作为最佳实践参考示例。"
+        },
+        {
+          "stance": "社区观察",
+          "summary": "反映企业存量项目在安全与新鲜度审计压力下，加速向 Spring Boot 4.x 迁移的行业趋势。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 SpringBoot 舆情以安全与版本迁移双主线为主：Actuator 认证绕过漏洞（CVE-2026-22731/22733）与 MariaDB 连接器六漏洞引发升级焦虑，安全社区密集发布分析；同时 3.5.x 开源支持终止、4.2 里程碑推进使「迁移 4.x」成为主流共识，官方周报与中文技术媒体高密度解读新特性与修复清单，整体情绪偏积极求稳、重视供应链安全。",
+  "honesty_note": "SpringBoot 属开发者垂直话题，热度集中于技术社区与安全圈，本窗口内缺乏泛娱乐级全网热搜；官方版本发布多集中于 6-7 月，7天内以漏洞分析、里程碑进展与社区周报为主。关联话题可关注 Spring AI 2.0、Spring Cloud、Java 26/JDK 27 生态动态，以及 7 月下旬被观测到的 Actuator heapdump 端点扫描攻击事件。"
+}

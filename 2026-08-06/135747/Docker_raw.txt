@@ -1,0 +1,155 @@
+根据联网搜索结果，我已整理出 2026年7月30日至8月6日期间 Docker 相关的热点资讯。以下是最终输出：
+
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Docker AI Governance 推出审计日志，可直连企业 SIEM 平台",
+      "summary": "Docker 官方发布 AI Governance 新功能，将组织内 AI 智能体触发的每个策略决策以可检索记录存入 Docker Cloud，并可实时流式传输至安全团队现用的 SIEM，覆盖智能体行为与策略拦截记录，强化 AI 合规审计能力。",
+      "source": "Docker 官方博客",
+      "url": "https://www.docker.com/blog/docker-ai-governance-audit-logs-now-where-your-security-team-already-works/",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "Docker 强调审计事件可直接流入企业 SIEM，让安全团队在熟悉工具中掌控智能体行为，且 Docker 自身不采集或摄取审计数据，突出数据主权与可观测性。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "devopschat 等媒体认为此举标志容器平台与 AI 安全治理加速融合，是 AI 智能体规模化落地前的必要合规准备，体现 DevOps 与 AI 的交汇趋势。"
+        },
+        {
+          "stance": "开发者讨论",
+          "summary": "官方文档注明审计日志属于 AI Governance 独立付费订阅，且仅在启用集中治理策略时生效，部分开发者对关键安全功能收费化表示疑虑。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Omdia 2026 供应链安全报告：77% 企业曾遭遇软件供应链事件",
+      "summary": "Docker 赞助发布的 Omdia 2026 报告显示，过去 12 个月 77% 企业遭遇软件供应链事件，AI 技术以 40% 位列供应链风险之首，98% 组织将安全左移列为高优先级，安全容器被评为最有效防护工具。",
+      "source": "Docker 官方博客 / dev.to",
+      "url": "https://www.docker.com/blog/software-supply-chain-security-omdia-2026-report/",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "报告核心观点",
+          "summary": "第三方代码与 AI 采用持续扩大攻击面，安全容器是唯一被多数企业（51%）评为「非常有效」的防护类别，SBOM 与 VEX 声明能显著提升漏洞缓解效率。"
+        },
+        {
+          "stance": "开发者视角",
+          "summary": "dev.to 评论指出团队应默认假设攻击会落地并提前布防，重点做好漏洞管理与开发者密钥、凭据保护，安全左移责任正落在开发者肩上。"
+        },
+        {
+          "stance": "独立性质疑",
+          "summary": "该报告由 Docker 赞助，部分社区讨论认为结论存在为 Docker 安全产品背书的倾向，建议结合其他独立研究交叉验证数据。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Docker Desktop 4.85.0 发布，国内开发者吐槽升级连环踩坑",
+      "summary": "Docker 于 8 月 3 日发布 Desktop 4.85.0 并逐步灰度推送；有国内开发者发帖记录从 4.84.0 升级后遭遇 exit code 4294967291 等连环故障，耗时一小时才成功启动，引发升级体验讨论。",
+      "source": "Docker 官方 / CSDN",
+      "url": "https://docs.docker.com/desktop/release-notes/",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "4.85.0 采用渐进式灰度发布以保障质量，包含新功能、改进与已知问题修复，官方建议用户关注 release notes 并按节奏升级。"
+        },
+        {
+          "stance": "开发者吐槽",
+          "summary": "CSDN 用户记录升级后启动失败、错误码排查等 3 个连环坑，反映部分用户升级体验不佳，期望官方提供更清晰、可操作的错误提示。"
+        },
+        {
+          "stance": "升级建议",
+          "summary": "社区建议生产环境谨慎跟随大版本，注意灰度推送节奏、提前备份，并在 WSL 等环境缺失时关注引擎启动报错的排查指引。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "CVE-2026-17626：Langflow 的 Docker MCP 服务器可越权访问宿主文件",
+      "summary": "安全通报披露 IBM Langflow OSS 1.0.0 至 1.10.3 漏洞，因对 Docker 卷挂载与设备映射危险参数过滤不完整，经 Docker 化 MCP 服务器可读取、修改或泄露宿主机敏感文件，影响开发测试等弱认证环境。",
+      "source": "CVE Details / VulDB",
+      "url": "https://www.cvedetails.com/cve/CVE-2026-17626/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "IBM 确认漏洞源于 Docker 卷挂载和设备映射参数过滤不完整，认证攻击者可操控容器配置，需升级修复版本或限制访问。"
+        },
+        {
+          "stance": "安全分析",
+          "summary": "分析指出该漏洞凸显 AI 与 MCP 集成场景下的容器权限风险，攻击者可能借 Docker 配置操纵实现对宿主文件系统的未授权访问。"
+        },
+        {
+          "stance": "应对建议",
+          "summary": "社区建议及时升级，对 Docker-based MCP 部署实施最小权限、关闭危险挂载参数并强化认证，避免在公网环境暴露未加固实例。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "CVE-2026-21005 公开利用细节：Docker Registry Schema 1 镜像投毒",
+      "summary": "安全研究员公开 CVE-2026-21005 的概念验证，指向未启用认证且使用 Schema 1 清单的私有 Docker Registry，因缺少内容寻址配置摘要，标签可变且无完整性校验，存在镜像投毒与供应链污染风险。",
+      "source": "GitHub",
+      "url": "https://github.com/George0Papasotiriou/CVE-2026-21005-Docker-Registry-V2-Schema-1-Image-Poisoning",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "研究员说明",
+          "summary": "根因是 Registry 允许未认证推送且 Schema 1 清单缺乏完整性验证，攻击者可篡改标签指向恶意镜像，进而污染下游拉取。"
+        },
+        {
+          "stance": "防御建议",
+          "summary": "建议私有 Registry 强制认证、迁移至 Schema 2 或 OCI 清单并启用内容摘要与签名校验，从源头阻断供应链镜像投毒。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "SandboxEscapeBench 发布：量化大模型逃逸 Docker 容器沙箱的能力",
+      "summary": "新研究发布 SandboxEscapeBench 开源基准，系统评估前沿大模型突破 Docker/OCI 容器沙箱的能力，正值 Docker 力推 microVM 沙箱隔离 AI 智能体的行业讨论，AI 智能体安全成为关注焦点。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/html/2603.02277v3",
+      "published_time": "2026-07-31",
+      "perspectives": [
+        {
+          "stance": "研究团队",
+          "summary": "智能体常部署于 Docker 容器沙箱进行隔离，但研究表明大模型具备一定沙箱逃逸能力，共享宿主内核的容器隔离边界需进一步加固。"
+        },
+        {
+          "stance": "Docker 立场",
+          "summary": "Docker 以 microVM 沙箱回应：每个智能体拥有独立内核、文件系统与默认拒绝网络，主张硬隔离优于共享内核的容器方案。"
+        },
+        {
+          "stance": "社区争论",
+          "summary": "业界就「容器 vs microVM」的隔离强度与成本展开讨论，AI 智能体安全成为 2026 DockerCon 贯穿全场的核心主题。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "安全公司披露 Docker Engine 高危授权绕过 CVE-2026-34040",
+      "summary": "Cyera 研究披露 Docker Engine 授权绕过漏洞 CVE-2026-34040（CVSS 8.8 高危），超 1MB 请求体被静默丢弃导致 AuthZ 授权插件被绕过，影响 29.3.1 及更早版本，多家厂商已跟进修补。",
+      "source": "Cyera Research",
+      "url": "https://www.cyera.com/research/one-megabyte-to-root-how-a-size-check-broke-dockers-last-line-of-defense?from_theconsensus=1",
+      "published_time": "2026-07-27（持续发酵中）",
+      "perspectives": [
+        {
+          "stance": "安全研究",
+          "summary": "攻击者可借超限请求体绕过授权插件获取未授权访问，研究强调必须升级至已修复的 29.3.1+ 版本并审计 AuthZ 配置。"
+        },
+        {
+          "stance": "供应商响应",
+          "summary": "SUSE、华为 EulerOS、Check Point 等已发布补丁或 IPS 检测规则，Docker Engine 29 后续版本说明亦持续收录相关安全修复。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Docker 舆情主线是「AI 智能体安全与治理」：官方密集推出 AI Governance 审计日志、microVM 沙箱与供应链安全报告，回应社区对智能体失控与沙箱逃逸的担忧；同时 Langflow MCP、Registry 投毒、授权绕过等多起 Docker 相关漏洞接连曝光，开发者情绪以警惕与补丁焦虑为主，普遍要求官方加快修复并给出更清晰的升级指引。",
+  "honesty_note": "Docker 属开发者垂直领域，微博等泛化热搜平台未见上榜话题，热榜信息主要来自官方博客、技术媒体与安全公告，整体热度以英文与行业媒体为主。另注：CVE-2026-34040 细节于 07-27 首次披露，略早于统计窗口但仍在发酵，故一并收录并标注日期。关联话题可补充：Docker Engine 29 的 CVE-2026-41567/41568（docker cp 越权写宿主机文件）修复说明、阿里云 8 月国内容器镜像源清单、以及中文社区对「Docker 集装箱式交付前景」的讨论文。"
+}

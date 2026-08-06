@@ -1,0 +1,111 @@
+Based on my web searches, I found rich, timely coverage on DeepSeek within the specified window (2026-07-30 to 2026-08-06). Here is the structured output:
+
+{
+  "keyword": "DeepSeek",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "DeepSeek官宣：计划近期整体上调API服务定价，预计涨幅较大",
+      "summary": "8月6日，DeepSeek发布公告称计划近期整体上调API服务定价，预计涨幅较大，具体方案以正式通知为准，被业内视为告别低价策略的信号。",
+      "source": "腾讯新闻/澎湃新闻",
+      "url": "https://news.qq.com/rain/a/20260806A06TXY00",
+      "published_time": "2026-08-06 10:30",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "DeepSeek 8月6日公告：计划近期整体上调API服务定价，预计涨幅较大，提醒开发者合理安排使用，具体方案以正式通知为准，未披露幅度与时间表。"
+        },
+        {
+          "stance": "业内分析",
+          "summary": "业内人士认为涨价或与V4-Pro正式版即将上线、整体算力调用承压有关；此前6月底已预告V4正式版上线后涨价，并引入峰谷定价机制，高峰时段价格为平时2倍。"
+        },
+        {
+          "stance": "开发者与市场担忧",
+          "summary": "红星资本局等指出「价格屠夫」或告别低价策略，开发者成本面临上升；当前V4-Flash输出仅2元/百万Token，市场普遍关注涨幅对应用生态的冲击。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek重启第二轮融资：计划募资500亿，投前估值约5000亿",
+      "summary": "据《财经》多名交易人士透露，DeepSeek重启第二轮融资，计划募资500亿元，投前估值约5000亿元，拟于8月下旬完成签约，两轮融资合计或超千亿。",
+      "source": "TechWeb/财经杂志",
+      "url": "https://www.techweb.com.cn/it/2026-08-05/2977981.shtml",
+      "published_time": "2026-08-05 16:00",
+      "perspectives": [
+        {
+          "stance": "媒体爆料",
+          "summary": "多名交易人士向《财经》透露，DeepSeek已重启第二轮融资，本轮计划募资500亿元，投前估值约5000亿元，计划8月下旬完成签约。"
+        },
+        {
+          "stance": "市场分析",
+          "summary": "首轮融资500亿、估值超3500亿，若二轮顺利两轮合计超千亿规模；有市场人士测算5000亿估值对应约5亿美元年化收入，市销率约148倍，认为大模型定价本质是「期权」。"
+        },
+        {
+          "stance": "消息面待确认",
+          "summary": "此轮融资尚属媒体报道层面，未获DeepSeek官方正式公告确认，此前公司曾暂停第二轮融资，最终签约情况仍有变数。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "DeepSeek-V4-Flash登顶全球调用榜：周调用7.22万亿Token、单日8万亿引发热议",
+      "summary": "7月31日V4-Flash正式版公测后迅速走红，OpenRouter周榜以7.22万亿Token登顶全球第一，OpenCode披露单日处理8万亿Token，衍生话题「DeepSeek斩杀线」刷屏。",
+      "source": "IT之家/36氪",
+      "url": "https://www.ithome.com/0/985/671.htm",
+      "published_time": "2026-08-04 19:45",
+      "perspectives": [
+        {
+          "stance": "开发者热捧",
+          "summary": "海外开发者「用脚投票」，认为V4-Flash兼具极致性价比与Agent能力，单任务成本比GPT-5.6 Luna低约60%，带动中国模型霸榜OpenRouter前五名。"
+        },
+        {
+          "stance": "行业高管点评",
+          "summary": "荣耀全球CMO关海涛称其是「法拉利的性能、电动小摩托的价格」，认为单位Token成本与性能最优化具备内中外三层顶级意义；多家机构看好国产模型生态。"
+        },
+        {
+          "stance": "网友热议「斩杀线」",
+          "summary": "网友认为DeepSeek在全球AI圈划下「行业生死线」，倒逼硅谷巨头连夜降价，OpenAI更在Luna等入门模型上降价80%应对。"
+        },
+        {
+          "stance": "冷静质疑",
+          "summary": "有观点指出公测仅限API、App与网页端暂无法体验；OpenCode数据中8万亿Token约5万亿来自免费试用额度，付费调用仅3万亿，热度或含「水分」。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "DeepSeek-V4-Flash正式版上线中国联通京元平台，国产算力加持推理性能翻倍",
+      "summary": "DeepSeek-V4-Flash正式版上线中国联通北京市分公司京元Token服务平台，采用国产算力并引入DSpark框架，推理性能提升至原MTP方案2倍，TPS达60以上。",
+      "source": "新华网",
+      "url": "https://www.news.cn/tech/20260804/c338fe24f8354721a0e03f80f17b47b0/c.html",
+      "published_time": "2026-08-04 16:00",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "联通北京依托京元平台快速上线该模型，全面采用国产算力服务器，结合DSpark加速框架与KV Cache优化，提升代码开发、长文本与Agent连续执行场景体验。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "梁文锋「硬汉梗图」走红，中国大模型出海「鲇鱼效应」引热议",
+      "summary": "DeepSeek创始人梁文锋的同人硬汉梗图在社交平台刷屏，新京报分析指中国模型OpenRouter份额约63.5%、前五名全是中国模型，大模型正靠性价比与开源走出自然口碑出海路径。",
+      "source": "新京报",
+      "url": "https://www.bjnews.com.cn/detail-1785848849129894.html",
+      "published_time": "2026-08-05 21:55",
+      "perspectives": [
+        {
+          "stance": "社交二创",
+          "summary": "网友将梁文锋蓝色西服照「P」成硬汉形象引发狂欢，评论调侃中带着对V4-Flash掀起新一轮「鲇鱼效应」的惊叹。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "新京报AI研究院指出，中美模型性能差距已基本消失，中国模型凭借工程化降本与开源走「不靠声量、靠账本」的出海路径，全球开发者用真金白银投票。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "公众情绪整体振奋自豪，「性价比屠夫」「斩杀线」「鲇鱼效应」等词流行，开发者和网友对V4-Flash低价高性能反应热烈，并带动融资5000亿估值等话题升温；但官方突宣API大幅涨价也引发「低价时代将终结」的担忧与吐槽，市场情绪在自豪与焦虑之间摇摆。",
+  "honesty_note": null
+}

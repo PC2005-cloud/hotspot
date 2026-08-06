@@ -1,0 +1,137 @@
+{{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {{
+      "rank": 1,
+      "title": "Meta 发布首款 AI 编程智能体 Muse Code，正面叫板 Claude Code 并打响价格战",
+      "summary": "当地时间8月5日，扎克伯格官宣Meta首款终端编程智能体 Muse Code，搭载 Muse Spark 1.2 大模型，宣称定价仅为竞品约十分之一，直接对标 Anthropic Claude Code 与 OpenAI Codex。",
+      "source": "网易/新浪财经、Yahoo Tech、News18、Lusa",
+      "url": "https://www.163.com/dy/article/L3KST62Q05568W0A.html?spss=dy_author",
+      "published_time": "2026-08-05（网易转载 2026-08-06 08:45）",
+      "perspectives": [
+        {{
+          "stance": "官方发布口径",
+          "summary": "扎克伯格与Meta AI负责人亚历山大·王强调，Muse Code 按量计费、输入每百万token 1.25美元、输出4.25美元，创作者版再便宜10倍以上，主打价格差异化与零数据留存，而非单纯比拼模型跑分。"
+        }},
+        {{
+          "stance": "行业跑分对比",
+          "summary": "Terminal-Bench 2.1 实测 Muse Code 82.9%，落后于 Claude Code on Opus 5 的86.7%，但略高于 Codex 的81.8%，DeepSWE1.1 亦低于 Claude Code（65.0%）与 Codex（64.8%），被解读为「跑分居中、低价切入」。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 2,
+      "title": "Keyv 关联 npm 蠕虫大规模投毒数百包，植入 Claude Code 与 VS Code 钩子窃取凭证",
+      "summary": "8月4日，与 keyv 缓存库关联的凭据窃取型 npm 蠕虫在多个组织间自动扩散，SafeDep 核实 353 个被投毒版本，并追踪到 1684 版本/420 包，恶意仓库内保留可触发负载的 Claude Code 与 VS Code 钩子。",
+      "source": "The Hacker News、4sysops、Linux Magazin",
+      "url": "https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html?m=1",
+      "published_time": "2026-08-03 至 2026-08-04",
+      "perspectives": [
+        {{
+          "stance": "安全研究机构分析",
+          "summary": "SafeDep/Socket 指出，恶意 preinstall 脚本可窃取 GitHub、npm、云厂商、Vault、Kubernetes 及私钥等凭据，并借被盗 npm 发布权限继续扩散；若工作流信任仓库提供的项目配置，Claude Code 的 SessionStart 钩子即可能执行恶意代码。"
+        }},
+        {{
+          "stance": "风险处置建议",
+          "summary": "研究机构建议先移除凭据吊销监控器再轮换令牌，核对 lockfile 与受影响包版本，禁用非必要安装脚本；Aikido 将其归入 Shai-Hulud 2.0 恶意软件家族，称已有数百个仓库可能被用作中转或暂存。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 3,
+      "title": "Claude 全线服务 8月5日大规模宕机，Claude Code 亦在受影响之列",
+      "summary": "8月5日上午起全球用户集中反馈 Claude 无法生成回答，Downdetector 峰值投诉超130条（美区15分钟350余条），Claude Code 占投诉约19%；Anthropic 确认 Mythos 5、Fable 5、Opus 5、Sonnet 5 出现性能降级并已定位原因。",
+      "source": "CNN Brasil、Android Authority、Canaltech、The News",
+      "url": "https://www.cnnbrasil.com.br/inteligencia-artificial/claude-caiu-chatbot-apresenta-instabilidade-nesta-quarta-feira-5/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {{
+          "stance": "Anthropic 官方回应",
+          "summary": "公司在其 Claude Status 页面确认多个模型性能降级，称已查明 Opus 5 故障原因并在修复，其余模型修复后持续监控恢复情况。"
+        }},
+        {{
+          "stance": "用户集中抱怨",
+          "summary": "全球开发者与普通用户在 X、Downdetector 报告「Claude is down」及「容量限制」报错，多人抱怨开发工作被中断，正值 Meta 发布竞品之际故障尤受关注。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 4,
+      "title": "Claude Code v2.1.222 发布：修复 worktree 会话隔离等 21 项安全与稳定性问题",
+      "summary": "8月4日发布的 v2.1.222 无新功能，包含14项修复、3项安全相关、2项破坏性变更与2项改进，重点修复隔离 worktree 会话可对主仓库执行破坏性 git 命令、PreToolUse 自动批准钩子绕过工具限制等问题。",
+      "source": "DevelopersIO（クラスメソッド）",
+      "url": "https://dev.classmethod.jp/en/articles/20260805-cc-updates-v2-1-222/",
+      "published_time": "2026-08-04（文章发布 2026-08-05）",
+      "perspectives": [
+        {{
+          "stance": "技术解读",
+          "summary": "该版本提升自动模式下 SendMessage 权限分类检查，修复代理配置超时、MCP 用量误计、模型别名回退等多项稳定性问题，向子代理授权权限的用户被建议尽快升级。"
+        }},
+        {{
+          "stance": "破坏性变更提醒",
+          "summary": "官方移除 ultraplan 远程计划精炼功能，Remote Control 自动启动不再允许通过仓库级 settings.json 开启，仅支持在用户级 /config 启用，可能影响现有工作流。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 5,
+      "title": "Claude Code 仅用 8 分钟发现 Coldcard 比特币钱包关键随机数漏洞，潜在损失或超 1 亿美元",
+      "summary": "据 U.Today 等报道，开发者仅用一次提示请 Claude Code 审查 Coldcard 固件源码，其推理约8分钟即锁定涉及密码学随机数生成的关键漏洞，该漏洞疑与相关失窃事件关联，社区估算潜在损失超1亿美元。",
+      "source": "digitaltoday（转引 U.Today）",
+      "url": "https://www.digitaltoday.co.kr/cn/view/88976/anthropic-claude-code-finds-bitcoin-coldcard-wallet-flaw-in-8-minutes",
+      "published_time": "2026-08-03 至 2026-08-04",
+      "perspectives": [
+        {{
+          "stance": "AI 能力正面视角",
+          "summary": "安全研究员 Medusa 及社区认为，Claude Code 一次性提示、8分钟思考即发现真实世界加密安全漏洞，展示 AI 在代码审计上的能力，业界称「还没准备好面对接下来会发生什么」。"
+        }},
+        {{
+          "stance": "行业风险警示",
+          "summary": "BlockTower 创始人 Ari Paul 等指出这是硬件钱包行业共性短板而非孤例；Galaxy 研究负责人 Alex Thorn 称链上显示第四轮攻击进行中，Coldcard 用户被建议立即转移资产并提高手续费。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 6,
+      "title": "硅谷反 Anthropic 情绪升温：Claude Code 等全线产品被美国政府承包商强令 8 月底前清退",
+      "summary": "有员工爆料其公司接美国政府指令，须在 2026 年 8 月 31 日前全面清退 Anthropic 全线产品，涵盖 Claude Code 及 CLI 工具，并要求迁移至 WebAI 提供的 Codex 与 GPT 系列模型，多名承包商用户称收到类似要求。",
+      "source": "36氪（InfoQ）、搜狐",
+      "url": "https://www.36kr.com/p/3917756454956420",
+      "published_time": "2026-07-30 17:54（发酵持续）",
+      "perspectives": [
+        {{
+          "stance": "承包商爆料",
+          "summary": "被禁产品包括 Claude 网页端/桌面端、Claude Code 及其 CLI、Console/API 及 Opus、Sonnet、Haiku 等模型，Cursor 可继续使用但须移除其中 Anthropic 模型，绕过限制行为被明令禁止。"
+        }},
+        {{
+          "stance": "业界与华尔街日报分析",
+          "summary": "反弹源于 Anthropic 向客户领域扩张（如 Claude Design 对标 Figma）与封闭生态主张，其未签署《开放权重与美国 AI 领导力》公开信引发批评；数据保留政策收紧更让企业担忧敏感数据留存。"
+        }},
+        {{
+          "stance": "用户付费体验质疑",
+          "summary": "多名 Max 20x 用户投诉额度异常快速消耗，称 Fable 5 表现像 Haiku 级别、简单任务耗量从20%飙至60%，有用户表态一旦有更智能替代品即放弃 Anthropic。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 7,
+      "title": "Anthropic 首次公开确认组建自研芯片团队，为 Claude 定制 AI 芯片以降低对英伟达依赖",
+      "summary": "8月5日-6日，Anthropic 首次公开确认将组建内部半导体团队，为 Claude 大模型协同设计定制化 AI 芯片，通过软硬件一体化优化运行速度与算力效率，被视为降低对英伟达依赖的关键布局。",
+      "source": "东方财富、网易、中关村在线、AASTOCKS",
+      "url": "https://finance.eastmoney.com/a/202608053832903832.html",
+      "published_time": "2026-08-05 至 2026-08-06",
+      "perspectives": [
+        {{
+          "stance": "官方确认口径",
+          "summary": "Anthropic 发言人确认公司正在组建内部半导体团队，协同设计硬件与模型，使 Claude 能在满足客户需求的规模下运行得更快、更高效，目前正招聘相关芯片与模型优化工程师。"
+        }},
+        {{
+          "stance": "行业解读",
+          "summary": "业内认为此举意在打破英伟达算力垄断、控制长期成本，并与 OpenAI、Meta 等自研芯片浪潮呼应；结合 Muse Code 低价入场，基础模型厂商的算力与生态竞争进一步加剧。"
+        }}
+      ]
+    }}
+  ],
+  "public_sentiment_summary": "近7天 Claude Code 话题热度集中于三线：一是 Meta 以低价 Muse Code 入场，开发者一边认可其定价策略一边关注 Claude Code 跑分优势与生态粘性；二是安全焦虑显著上升，npm 供应链蠕虫借 Claude Code 钩子投毒引发开发者警惕，官方安全修复与 8 月 5 日宕机进一步放大「可靠性」讨论；三是围绕 Anthropic 封闭路线、封杀令与额度消耗的争议持续发酵，整体情绪呈「能力认可与信任隐忧并存」。",
+  "honesty_note": null
+}}

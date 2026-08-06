@@ -1,0 +1,127 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "【供应链安全】ChainDrop 蠕虫攻击 npm 生态：keyv 维护者 GitHub 账号遭入侵，440+ 软件包被污染",
+      "summary": "安全公司 StepSecurity 披露，热门缓存库 keyv 维护者 Jared Wray 的 GitHub 账号遭入侵，黑客植入窃取凭证的蠕虫并借 npm 发布权限自动传播，4 小时内污染 444 个包、2,212 个恶意版本，涉及约 20 亿月下载量，波及 Qlik、ServiceTitan、Deliveroo 等组织。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/985/910.htm",
+      "published_time": "2026-08-05 13:55",
+      "perspectives": [
+        {
+          "stance": "官方安全披露",
+          "summary": "StepSecurity、慢雾等披露：攻击始于 8月4日，通过接管 GitHub 账号植入恶意 preinstall 脚本 setup.mjs，窃取 npm、GitHub、AWS、Azure、K8s、Vault 及 Claude、Cursor 等 AI 工具凭证，并借既有 GitHub Actions 自动发布恶意版本形成蠕虫式扩散。"
+        },
+        {
+          "stance": "安全研究分析",
+          "summary": "Semgrep、Elastic 等确认最早恶意版本为 keyv@6.0.0（8月4日 09:35 UTC），两小时内重发 1,557 个恶意版本，波及 jaredwray、ServiceTitan、Ornikar、qlik、nebula.js 等多个维护者范围，且通过合法 GitHub provenance 签名，传统检测手段难以发现。"
+        },
+        {
+          "stance": "企业防护建议",
+          "summary": "多方建议维护者启用 Passkey 或硬件安全密钥、收紧 Token 权限、启用主分支保护；企业应对新版本设置 3 至 7 天冷却期，限制 CI/CD 外部网络访问，并监控新版本中突增的可执行文件与安装脚本。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Node.js 发布 7月29日安全更新，一次性修复 10 个漏洞（含 HTTP/2 高危漏洞）",
+      "summary": "Node.js 项目为 26.x、24.x、22.x 三个活跃版本线发布安全更新，修复 10 个 CVE，最高级别为 High，包括 HTTP/2 内存耗尽（CVE56846）、堆释放后使用（CVE56848）及 Permission Model 越权（CVE58043），另有 DNS 拒绝服务、HTTP 请求走私等多个中低危漏洞。",
+      "source": "Node.js 官方 / vuldb",
+      "url": "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases",
+      "published_time": "2026-07-29（8月初漏洞库持续跟进）",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "官方表示修复覆盖 26.x/24.x/22.x 全部活跃版本线，并同步更新 undici、llhttp 依赖；原定 7月28日的发布因基础设施问题两度推迟至 7月29日，提醒 EOL 版本同样受影响。"
+        },
+        {
+          "stance": "漏洞库与安全厂商分析",
+          "summary": "VulDB、Mend 等指出 CVE-2026-56848 为 nghttp2 重入调用引发的堆释放后使用（heap-use-after-free），可致远程拒绝服务；CVE-2026-58042 为 dns.resolveAny() 处理超过 256 条 A 记录的响应时导致进程中止的 DoS 漏洞，均影响 22.x/24.x/26.x。"
+        },
+        {
+          "stance": "社区升级建议",
+          "summary": "社区主流声音是尽快升级至 26.5.1、24.18.1、22.23.2 等补丁版本；中低危的 HTTP 请求走私（CVE-2026-58044）在转发代理场景下风险放大，企业代理类应用应优先修复。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Node.js 同日发布 26.6.0（Current）与 24.19.0（LTS Krypton）",
+      "summary": "8月3日 Node.js 项目同时发布 v26.6.0（Current 线）与 v24.19.0（代号 Krypton 的 LTS 线）。26.6.0 带来加密后端拆分（三后端 crypto 架构）与流式 ring buffer 重构等，24.19.0 含 TLS、blockList 等改进，Heroku 等平台已同步支持。",
+      "source": "Node.js 官方 / byteiota",
+      "url": "https://nodejs.org/en/blog/release/v26.6.0",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "v26.6.0 由 @aduh95 签发，新增 collaborator 并更新时区数据至 2026c；v24.19.0「Krypton」LTS 线同步发布，包含 buffer 等改进，两版本均针对近期安全发布做了收尾。"
+        },
+        {
+          "stance": "技术分析",
+          "summary": "byteiota 等指出 26.6.0 中 CryptoKey 与 KeyObject 解耦、三后端加密架构及 ring buffer 流重构值得关注，这些特性将进入 10 月 26.x LTS 基线；24.x 用户建议升级 24.19.0 以获得 TLS 与 blockList 改进。"
+        },
+        {
+          "stance": "平台适配动态",
+          "summary": "Heroku 官方变更日志确认 8月3日起 Node.js 24.19.0 与 26.6.0 可用于平台构建，企业平台同步跟进新版支持。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Node.js 26.7.0 发布：加入 Perfetto 追踪与 STORE 密钥加载支持",
+      "summary": "8月5日 Node.js 发布 v26.7.0（Current），推进加密密钥加载、追踪系统与模块系统，新增 crypto 密钥加载（STORE）支持与 Perfetto 追踪，并修复一批 FFI、HTTP、SQLite、流相关的崩溃与资源泄漏问题。",
+      "source": "Node.js 官方 / Charlie27 博客",
+      "url": "https://nodejs.org/en/blog/release/v26.7.0",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "v26.7.0 由 release manager @aduh95 于 8月5日发布，包含 crypto 支持加载密钥等 SEMVER-MINOR 新特性，属 Current 线常规迭代。"
+        },
+        {
+          "stance": "技术博客解读",
+          "summary": "Charlie27 等博客解读称该版本把加密金鑰載入、追蹤系統與模組系統各推進一步，同时修掉一批 FFI、HTTP、SQLite 與串流相關的當機與資源洩漏，稳定性改善明显。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "npm 官方推出「发布即扫毒」机制，强化包发布环节安全检测",
+      "summary": "华为云《Web 前端周刊 2026W31》汇总显示，npm 推出「发布即扫毒」（publish-time 安全扫描）机制，在包发布环节即时检测恶意代码，配合近期 ChainDrop 等供应链攻击事件，成为生态治理的重要动作。",
+      "source": "华为云博客",
+      "url": "https://bbs.huaweicloud.com/blogs/483478",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "生态治理视角",
+          "summary": "在 ChainDrop 蠕虫利用发布凭证批量投毒的背景下，npm 的发布即扫毒机制被解读为对供应链攻击的正面回应，意在从发布源头拦截恶意版本。"
+        },
+        {
+          "stance": "综合报道",
+          "summary": "周刊将其与 TypeScript 7.0、MobX 7.0 等并列为本周前端/Node.js 生态重要动态。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Node.js 全新 API 文档预览站 beta.docs.nodejs.org 上线",
+      "summary": "前端周刊第 42 期（7月28日至8月3日）报道，Node.js 全新 API 文档预览站 beta.docs.nodejs.org 上线，改版文档浏览与查询体验，为开发者提供更清晰的 API 查阅方式。",
+      "source": "CSDN 前端周刊",
+      "url": "https://blog.csdn.net/m0_68634366/article/details/163450157",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "综合报道立场",
+          "summary": "作为 Node.js 官方文档体验升级项目，预览站上线被周刊列入本周 Top 10 动态，属生态体验改进类常规热点。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "过去一周 Node.js 生态舆论高度聚焦供应链安全：8月4日起爆发的 ChainDrop 蠕虫攻击（keyv 账号劫持、440+ 包污染、20 亿月下载量）成为绝对焦点，开发者普遍担忧开源信任链与凭证安全，情绪偏紧张并呼吁加强防护；同期官方接连发布 26.6.0、24.19.0、26.7.0 及 7月29日安全更新，社区主流声音为尽快升级、启用多因素认证并收紧发布权限，整体呈「安全事件主导 + 官方密集打补丁」的态势。",
+  "honesty_note": "本周期热点高度集中于 8月3日至8月5日，7月30日至8月2日相对平静，主要围绕 7月29日安全更新的后续跟进与版本发布；ChainDrop 事件为近 48 小时绝对热点。关联话题可补充：微软于 7月28日（略早于统计窗口）为 Node.js 推出的动态 Windows Runtime 语言投影工具、ECMAScript 2026 正式获批（8月5日 报道）及 Node.js 26 将于 10 月进入 LTS。部分热点（如 npm 发布即扫毒、文档站上线）为周刊速览条目，详细信息有限，建议以官方渠道核实。",
+  "start_time": "2026-08-06 14:36",
+  "end_time": "2026-08-06 14:37",
+  "elapsed_seconds": 76,
+  "retry_count": 0
+}

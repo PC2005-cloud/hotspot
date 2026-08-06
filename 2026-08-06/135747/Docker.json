@@ -1,0 +1,47 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 7,
+      "title": "Docker 深度集成 WasmEdge：Wasm 成 Docker Desktop 默认运行时之一",
+      "summary": "消息称 Docker 与 WasmEdge 项目达成深度合作，Docker Desktop 将把 WasmEdge 集成为默认 Wasm 运行时之一，开发者无需额外安装即可在 Docker 中直接运行 WebAssembly 模块，容器与 Wasm 边界趋于模糊。",
+      "source": "CSDN",
+      "url": "https://blog.csdn.net/AOwhisky/article/details/163421940",
+      "published_time": "2026-08-01 16:00",
+      "perspectives": [
+        {
+          "stance": "技术报道",
+          "summary": "该集成意味着 Wasm 可作为轻量级替代运行时无缝嵌入 Docker 工作流，结合边缘计算场景有望带来更快的冷启动与更小的资源占用。"
+        },
+        {
+          "stance": "社区讨论",
+          "summary": "部分开发者对 Wasm 生态成熟度与工具链持观望态度，认为虽前景可观，但短期内仍以补充角色存在，核心容器工作负载依然依赖传统运行时。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "行业深度文「Docker 的黄昏」引热议：容器化交付已死，还是重生？",
+      "summary": "一篇网络深度分析文章围绕 Docker 现状展开讨论，认为容器运行时已沦为低利润的 commodity，Docker 商业化重心正转向标准化交付与供应链基础设施，同时预言 Wasm 与 eBPF 未来三年可能重塑容器边界。",
+      "source": "行业科技媒体",
+      "url": "https://www.lfdjt.com/info_23_7661.html",
+      "published_time": "2026-08-05 18:38",
+      "perspectives": [
+        {
+          "stance": "行业分析",
+          "summary": "文章认为 Docker 不会消失，但其价值将融入软件供应链成为「水电煤」般的基础设施；企业应优先容器化无状态服务、投资平台工程并关注 Wasm 与 eBPF 动向。"
+        },
+        {
+          "stance": "质疑观点",
+          "summary": "也有声音指出该文更多是观点性叙述而非实证研究，对 Docker 商业前景的悲观判断缺少数据支撑，且「云厂商挤压 Docker 空间」的说法存在争议。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Docker 相关热点高度集中于两大主线：一是安全，包括 Omdia 供应链安全报告、Engine 漏洞修复与 Registry 镜像投毒披露，反映出开发者对供应链安全的高度焦虑；二是 AI 原生能力，如 AI Governance 审计日志、OIDC 免凭证接入与 WasmEdge 集成。整体舆情偏积极正面，官方发布与安全加固获得认可，但部分观点对赞助型报告、容器商业化前景及 Wasm 落地节奏仍持谨慎态度。",
+  "honesty_note": null,
+  "start_time": "2026-08-06 14:05",
+  "end_time": "2026-08-06 14:08",
+  "elapsed_seconds": 197,
+  "retry_count": 1
+}

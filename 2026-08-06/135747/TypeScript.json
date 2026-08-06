@@ -1,0 +1,97 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "TypeScript 7 迁移避坑指南走红：删掉 es5、baseUrl 等老选项，strict 默认开启",
+      "summary": "多篇 8 月上旬热文拆解 TS 7 迁移风险：target es5、moduleResolution node、baseUrl 等被硬删除，strict 等默认值变化，给出「先跑通 6 再上 7」的决策清单。",
+      "source": "编程狮 / 掘金",
+      "url": "https://www.w3cschool.cn/article/32835935.html",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "保守迁移派",
+          "summary": "建议大多数公司核心业务暂不升级，等框架与工具链生态发布 7.0 兼容公告后再动，重点审计 tsconfig 中被移除的配置项（ES5、baseUrl、AMD/UMD 等）。"
+        },
+        {
+          "stance": "实测尝鲜派",
+          "summary": "掘金作者以 TS 7.0.2 实际验证了 TS2591、TS5108、TS5011 等报错场景，认为配置干净的新项目可零成本升级，并用 @typescript/typescript6 兼容包实现 6/7 双版本共存。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Angular、Vue、Svelte、ESLint 暂时无法升级 TS 7.0，社区聚焦 7.1 编译器 API",
+      "summary": "TS 7.0 未随包发布程序化编译器 API，Angular 22、Vue、Svelte、typescript-eslint 等以 peerDependencies 锁死 6.0.x，官方确认 7.1 将于 2026 年秋补全 API。",
+      "source": "DEV Community / Sourcetrail",
+      "url": "https://dev.to/the-modern-web/why-angular-vue-and-eslint-cant-upgrade-to-typescript-70-yet-and-why-ts-71-changes-441g",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "框架方锁定原因",
+          "summary": "框架编译器需调用 ts.createProgram、ts.transform 等内部 API 改写 AST，7.0 缺位导致 npm install typescript@^7.0 直接触发 ERESOLVE 报错，强行 --legacy-peer-deps 会导致编译器崩溃。"
+        },
+        {
+          "stance": "官方规划回应",
+          "summary": "微软与 Angular 等团队已合作制定 7.1 Compiler API 规范（GitHub issue #63703、#69719），预计秋季发布后各框架可在小版本中顺滑接入，无需大规模重写。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "TS 7 社区独立基准测试发布：别迷信单一 10x，测量方法论引热议",
+      "summary": "开发者 Kunal Ganglani 8 月 5 日发布可复现基准方案，主张区分 clean/warm、emit/noEmit 四象限测量，指出 CI 提速真实但取决于 TypeScript 是否在关键路径上。",
+      "source": "Kunal Ganglani 博客",
+      "url": "https://www.kunalganglani.com/blog/typescript-7-native-compiler-benchmark",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "实测结论派",
+          "summary": "作者实测给出迁移清单：path 别名、.tsbuildinfo 缓存键、CI 缓存策略是升级最大翻车点；TS7 可把 60 至 180 秒的类型检查步骤降到 10 至 40 秒。"
+        },
+        {
+          "stance": "方法论提醒",
+          "summary": "强调若构建被打包、测试、Docker 镜像占用，TypeScript 即使快 10 倍管线也不动；并警示不要用 TS6 的增量产物去「测」TS7，否则只是测量缓存而非速度。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "2026 上半年前端圈盘点：TypeScript 7.0 领衔「炸了五次」的五大变革",
+      "summary": "8 月 2 日热文盘点上半年前端界五件大事，TS 7.0 用 Go 重写居首，另含 Vue 3.6 Vapor Mode、Vercel json-render、Bun 迁 Rust、Figma Code Layers，被视为行业节点。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7669622241974632490",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "综合行业盘点",
+          "summary": "文章认为 TS 7.0 是 2012 年以来最大底层重构，与前端的 AI 生成 UI、性能竞赛等趋势共振，标志 2026 年工具链进入原生性能与 AI 协作的新阶段。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "YC 系开源项目 Keystroke 发布：纯 TypeScript 的 AI Agent 工作流构建器",
+      "summary": "8 月 5 日 Keystroke 登陆 Product Hunt 获 107 分，主打开源、企业级、纯 TypeScript 实现 Agent 工作流，支持 1000+ 集成与 MCP，引发开发者热议。",
+      "source": "coding4food / Product Hunt",
+      "url": "https://coding4food.com/en/post/keystroke-open-source-ai-agent-typescript-workflow",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "社区认可派",
+          "summary": "开发者认为用 TypeScript 而非专有拖拽 UI 是一股清流，生成的 Agent 代码可纳入 Git 评审与测试，出错时能看堆栈而非流程图，务实解决集成地狱。"
+        },
+        {
+          "stance": "审慎质疑派",
+          "summary": "部分用户在 Product Hunt 追问持久化内存是否支持自建向量库、许可证与商业化路径，担心开源只是获客手段、后续核心功能被付费墙锁定。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "开发者对 TypeScript 7.0 的 Go 原生编译器整体持积极态度，认可 8 至 12 倍编译提速是 14 年来最大变革；但主流情绪并非盲目升级，而是围绕迁移坑、框架生态滞后与 7.1 API 缺口展开理性观望，普遍倾向于「先双版本验证、等生态兼容再切换」，同时 AI Agent 类 TypeScript 工具也获得较高关注。",
+  "honesty_note": "近 7 天（7/30-8/6）TypeScript 相关热点高度集中于 7 月 8 日已发布的 7.0 生态跟进，8 月 5-6 日暂无全新重大事件，多数内容为 8 月 2-5 日的迁移解读、基准测试与盘点；关联话题包括 TypeScript 6.0 装饰器与模式匹配、interface vs type 的 2026 终极讨论、Effect 4.0 函数式框架深度解读等。",
+  "start_time": "2026-08-06 14:13",
+  "end_time": "2026-08-06 14:17",
+  "elapsed_seconds": 161,
+  "retry_count": 1
+}

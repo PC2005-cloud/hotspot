@@ -1,0 +1,52 @@
+[13:56:51] ==================================================
+[13:56:51]   🔥 Hotspot — 热点搜索器
+[13:56:51]   日志: D:\Projects\project\Blog\Hotspot\results\2026-08-06\135651\run.log
+[13:56:51] ==================================================
+[13:56:51] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[13:56:51]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[13:56:51] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[13:56:51] DeepSeek HTTP 客户端初始化
+[13:56:51] 加载已保存的 session（账号: 1375****, 保存时间: 2.3 小时前）
+[13:56:51] 已加载保存的 token
+[13:56:51] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[13:56:51] 登录账号: 1375****
+[13:56:51] 登录账号: 1375**** (方式: phone)
+[13:56:52] Token 获取成功: vu/fGpr/gC3UqgQU...9dpSfVYz
+[13:56:52] ✅ 登录成功
+[13:56:52] ✅ 深度思考 + 联网搜索 已开启
+[13:56:52] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[13:56:52] 
+共 20 个关键词，开始搜索...
+[13:56:52] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[13:56:52] 
+==================================================
+[13:56:52]   关键词: DeepSeek
+[13:56:52] ==================================================
+[13:56:52]   prompt 长度: 1446 字
+[13:56:52] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (20 个关键词, headless=True, 最大重试=3)
+[13:56:52] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[13:56:53] PoW 求解成功: nonce=129700
+[13:56:53] DeepSeek 业务错误 (biz_code=5): user is muted
+[13:56:53] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[13:56:53] JSON 解析失败
+[13:56:53]   第1次尝试 — JSON 解析失败，原始回复已保存
+[13:56:53]   等待 15 秒后重试 (2/3)...
+[13:57:08] 准备开启新对话...
+[13:57:08] 新对话已就绪
+[13:57:08] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[13:57:09] PoW 求解成功: nonce=104507
+[13:57:09] DeepSeek 业务错误 (biz_code=5): user is muted
+[13:57:09] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[13:57:09] JSON 解析失败
+[13:57:09]   第2次尝试 — JSON 解析失败，原始回复已保存
+[13:57:09]   等待 26 秒后重试 (3/3)...
+[13:57:35] 准备开启新对话...
+[13:57:35] 新对话已就绪
+[13:57:35] 发送消息 (1446 字, 超时 180秒): 请务必使用联网搜索功能，完成以下任务：  根据我提供的关键词，搜索 近7天内（07月30日 至 08月06日）（尤其是最近24-48小时）的全网最新热点事件、新...
+[13:57:35] PoW 求解成功: nonce=104584
+[13:57:35] DeepSeek 业务错误 (biz_code=5): user is muted
+[13:57:35] demjson3 解析也失败: ('Unknown identifier', 'DeepSeek')
+[13:57:35] JSON 解析失败
+[13:57:35]   第3次尝试 — JSON 解析失败，原始回复已保存
+[13:57:35]   [失败] DeepSeek — 重试3次，JSON 解析均失败
+[13:57:35]   等待 39 秒后处理下一个关键词...

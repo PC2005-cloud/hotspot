@@ -1,0 +1,125 @@
+以下为根据联网搜索结果整理并输出的 JSON 结果。
+
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "微软发布 TypeScript 7.0 正式版：Go 原生编译器带来 8-12 倍编译提速",
+      "summary": "微软于 2026 年 7 月 8 日发布 TypeScript 7.0 正式版，将编译器核心从 TypeScript 用 Go 语言整体重写，完整构建提速 8 至 12 倍，被称为 14 年来最大变革，8 月初仍有多家媒体跟进评测。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/typescript-7-released/",
+      "published_time": "2026-08-02 16:00",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "微软宣布 TypeScript 7 为 10 倍提速的原生移植版本，编译器用 Go 重写，借助原生代码速度与共享内存多线程带来 8-12 倍完整构建提速，VS Code 构建时间从 125.7 秒降至 10.6 秒，且与 6.0 语义完全兼容。"
+        },
+        {
+          "stance": "媒体评测",
+          "summary": "InfoQ、I Programmer 等认为这是首个稳定原生编译器版本，自动补全、查找引用、编辑器报错刷新与 CI 中的 tsc --noEmit 耗时均大幅下降，可在 VS Code 等编辑器中直接获得提速体验。"
+        },
+        {
+          "stance": "社区质疑",
+          "summary": "部分开发者质疑为何选择 Go 而非 Rust，官方解释称瓶颈在于并行能力而非单线程速度，Go 的 goroutine 与共享内存模型更适配大规模并行编译，Rust 的所有权系统在此场景编程复杂度更高。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TypeScript 7.0 暂缺程序化 API，Angular、Vue、Svelte、ESLint 等框架暂时无法升级",
+      "summary": "TypeScript 7.0 未随包发布稳定程序化编译器 API，依赖 ts.createProgram 等接口的 Angular、Vue、Svelte、typescript-eslint 等工具被迫锁定 6.x，直接升级会触发 ERESOLVE 依赖冲突甚至编译器崩溃。",
+      "source": "DEV Community",
+      "url": "https://dev.to/the-modern-web/why-angular-vue-and-eslint-cant-upgrade-to-typescript-70-yet-and-why-ts-71-changes-441g",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "工具链厂商",
+          "summary": "Angular 22、Vue、Svelte、ESLint 等维护者刻意将 peerDependencies 锁为 typescript >=6.0 <6.1，因框架编译器需直接调用 TypeScript 程序化 API 解析与改写 AST，7.0 缺失该接口会导致崩溃。"
+        },
+        {
+          "stance": "官方规划",
+          "summary": "微软已在推进 TypeScript 7.1（GitHub issue #63703 迭代计划），预计 2026 年秋季（约 10 月）发布稳定编译器 API，并与 Angular 等框架维护者合作（issue #69719），届时升级无需大规模重写。"
+        },
+        {
+          "stance": "开发者应对",
+          "summary": "社区建议依赖 API 的工具临时安装 @typescript/typescript6 兼容包，主项目用 7.0 编译器双线并存，待 7.1 发布后再统一，并提醒勿用 --legacy-peer-deps 强塞 7.0 以免编译器崩溃。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TypeScript 7 迁移指南刷屏：旧配置被硬删除，项目现在该不该升？",
+      "summary": "TypeScript 7.0 硬删除 es5、baseUrl、moduleResolution: node、AMD/UMD 等一批旧配置，社区围绕「现在是否升级」展开激烈讨论，多数文章建议纯业务项目可尝鲜、依赖生态工具的项目等待兼容版本。",
+      "source": "编程狮 w3cschool",
+      "url": "https://www.w3cschool.cn/article/32835935.html",
+      "published_time": "2026-08-03 16:00",
+      "perspectives": [
+        {
+          "stance": "谨慎派建议",
+          "summary": "w3cschool、掘金等文章指出，es5、baseUrl、moduleResolution: node 等选项在 7.0 属于硬删除，写了就报错，esModuleInterop 与 alwaysStrict 强制开启会带来新类型报错，公司核心业务应等生态跟上再升。"
+        },
+        {
+          "stance": "尝鲜派观点",
+          "summary": "只要 tsconfig 干净、不依赖程序化 API，纯 React/Node 项目升 7.0 几乎零改动即可享受编译提速，个人项目可立即尝鲜，企业项目建议在独立分支验证后再灰度推广。"
+        },
+        {
+          "stance": "踩坑复盘",
+          "summary": "掘金热文「别只看 10 倍速度，这 4 个迁移坑更值得注意」总结迁移风险集中在编译配置、工具链 API、编辑器插件与 CI 资源四方面，并给出 TypeScript 6/7 双版本验证方案。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "TypeScript 7.0.2 已上架 npm，官方澄清 7.0 GA 时间线与 6.x API 依赖",
+      "summary": "TypeScript 7.0 现以 7.0.2 版本在 npm 分发，取代基于 JavaScript 的编译器；Windows Forum 等报道更正发布时间线为 GA 7 月 8 日、7.0.2 自 7 月中旬可用，并提示依赖 6.x API 的工具仍需等待。",
+      "source": "Windows Forum",
+      "url": "https://windowsforum.com/windows-news.4/typescript-7-0-2-faster-builds-but-typescript-6-api-still-required.441590/",
+      "published_time": "2026-08-03 16:00",
+      "perspectives": [
+        {
+          "stance": "报道澄清",
+          "summary": "该报道对 8 月 4 日相关报告作出时间线更正：微软于 7 月 8 日宣布 GA，npm 包确认 7.0.2 自 7 月中旬起可用，属已确立的发布节奏，避免外界误以为刚刚发布新版本。"
+        },
+        {
+          "stance": "生态提示",
+          "summary": "报道同时提示，7.0 仍要求依赖 TypeScript 程序化 API 的工具继续使用 6.x 接口，只有等 7.1 的新编译器 API 落地后才能完全切换，工具链生态过渡期仍将持续数月。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Web 前端周刊 2026W31：TypeScript 7.0、MobX 7.0、htmx 4.0 与 npm 发布即扫毒",
+      "summary": "2026 年第 31 周前端周刊盘点多起重磅动态：TypeScript 7.0 与 MobX 7.0、htmx 4.0 相继发布，TanStack 停用 RSC，npm 新增发布即扫描漏洞能力，行业进入系统语言重写与新版本密集期。",
+      "source": "华为云社区",
+      "url": "https://bbs.huaweicloud.com/blogs/483478",
+      "published_time": "2026-08-02 16:00",
+      "perspectives": [
+        {
+          "stance": "行业观察",
+          "summary": "周刊将 TypeScript 7.0 与 MobX 7.0、htmx 4.0 并列，并关注 React 圈 TanStack 停用 RSC、Node 圈 npm 发布即扫毒与 scriptc 转原生编译器，反映 2026 年 JavaScript 基础设施集体回归系统语言的趋势。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "开发者年度盘点：TypeScript 2026 的五大标志性特性与两大期待",
+      "summary": "DEV 社区开发者发文总结 2026 年 TypeScript 格局，Go 重写编译器约 10 倍提速、Node 无需构建步骤直接运行 .ts 文件为两大核心变化，同时仍在等待稳定程序化 API 落地。",
+      "source": "DEV Community",
+      "url": "https://dev.to/astraedus/5-typescript-features-that-define-2026-and-2-im-still-waiting-for-565f",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "开发者总结",
+          "summary": "作者认为 2026 年 TypeScript 最大的变化不是新类型而是新引擎，编译器用 Go 重写后类型检查约快 10 倍，Node 可直接运行 .ts 文件；7.0 暂无稳定程序化 API 是迁移前的最大注意点，该能力预计 7.1 补齐。"
+        },
+        {
+          "stance": "社区回应",
+          "summary": "评论区观点认为语言发布是生态事件而非单纯编译器事件，框架、linter、解析器与编辑器工具都需消化改动，团队才能把升级视为常规操作。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近 7 天 TypeScript 舆情高度聚焦 7.0 正式版：Go 原生编译器 8-12 倍提速获普遍好评，但「暂无程序化 API 导致 Angular/Vue/ESLint 无法升级」引发观望情绪，社区主流态度是「业务代码可尝鲜、生态工具等 7.1」，整体情绪谨慎乐观。",
+  "honesty_note": null
+}

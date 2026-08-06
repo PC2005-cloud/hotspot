@@ -1,0 +1,69 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Vue 3.6 进入 RC 阶段：Vapor Mode 让虚拟 DOM 成为可选项，性能对标 Solid 与 Svelte 5",
+      "summary": "Vue 3.6 已完成 Vapor Mode 全部预定功能并进入 RC（rc.2 于 7月22日发布），该编译模式跳过虚拟 DOM 直接生成 DOM 操作指令，配合基于 alien-signals 的响应式重构，第三方基准测试显示性能已持平甚至超越 Solid 与 Svelte 5，引发前端圈对「虚拟 DOM 是否走向终结」的激烈讨论。",
+      "source": "掘金、B站、GitHub、VersionLog",
+      "url": "https://juejin.cn/post/7669622241974632490",
+      "published_time": "2026-08-01 至 08-05 集中发酵",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "Vue 核心团队在 GitHub 发布 3.6.0-rc.1 说明，确认 Vapor Mode 功能完备、100% 自愿启用，基准测试下性能与 Solid、Svelte 5 同级，并提示 Vapor 暂不支持 Options API 等子集特性。"
+        },
+        {
+          "stance": "开发者技术分析",
+          "summary": "掘金与深度拆解文章认为 Vapor Mode 从「运行时智能」转向「编译时智能」，节点级精准更新使性能提升明显，但也指出动态组件、template refs 等场景存在边界与兼容成本。"
+        },
+        {
+          "stance": "网友质疑与观望",
+          "summary": "部分开发者担心 Vapor Mode 与组件库、生态插件的互操作仍有毛边，且与 Vue 官方对 3.5 稳定版、3.6 版本状态（RC 未正式发布）的信息存在传播误差，呼吁理性看待性能数据。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "CVE-2026-69075：FlowIntel 存在基于 Vue 模板注入的存储型 XSS 漏洞",
+      "summary": "8月2日曝光的 CVE69075 显示，开源案件协作平台 FlowIntel 在把持久化字段渲染到 Vue 编译 DOM 时未处理插值分隔符，已认证攻击者可通过存储字段注入 Vue 表达式，在受害者会话中执行任意 JavaScript，官方通过新增 vue_escape 过滤器修复。",
+      "source": "Mend、VulDB、阿里云漏洞库",
+      "url": "https://vuln.whitesourcesoftware.com/vulnerability-database/CVE-2026-69075/",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "漏洞通报",
+          "summary": "该存储型 XSS 源于 Vue 插值机制与用户可控字段的组合缺陷，多个用户或管理员可编辑字段受影响，属 CWE-79 类问题。"
+        },
+        {
+          "stance": "修复方案",
+          "summary": "补丁引入专用 vue_escape 过滤器，在值渲染前转义 HTML 敏感字符并切断 Vue 插值分隔符，从根本上阻断模板注入。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "React 19 与 Vue 3.6 Vapor Mode 技术路线深度对比：2026 前端框架竞争格局之争",
+      "summary": "8月3日 CSDN 深度文章对比两大框架技术路线：React 下载量约为 Vue 的 8 倍、用于约 2980 万个项目，而 Vue 靠 Vapor Mode 走出「去虚拟 DOM」路线，在中国市场开发者占比仍达约 30%，引发关于框架选型与演进方向的讨论。",
+      "source": "CSDN",
+      "url": "https://mukebb.blog.csdn.net/article/details/163475350",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "行业分析",
+          "summary": "文章认为前端呈「一超多强」格局，React 生态与市场份额领先，Vue 则在性能路线（Vapor Mode）与中国市场保有优势。"
+        },
+        {
+          "stance": "开发者争论",
+          "summary": "有开发者认为性能差距已非选型主要因素，生态成熟度与团队技术栈更重要；也有观点认为编译时优化正成为标配，Vue 的路线更具前瞻性。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Vue.js 生态舆情以「Vue 3.6 Vapor Mode 终结虚拟 DOM」为核心话题，开发者对性能对标 Solid/Svelte 5 普遍兴奋，同时对迁移成本与兼容性存观望情绪；与此同时 Nuxt、FlowIntel 连续曝出与 Vue 渲染机制相关的安全漏洞，推动社区关注版本升级与安全加固，整体呈现技术乐观与谨慎防范并存的态势。",
+  "honesty_note": "近 7 天窗口内可检索到的 Vue.js 原生官方大版本动作较少（Vue 3.6 仍处 RC、稳定版尚未正式发布，个别自媒体文章称 2 月已发稳定版与官方版本库信息不符，请以 GitHub/VersionLog 为准）；B站「虚拟 DOM 要过时了」视频（08-01）、CSDN 技术路线对比（08-03）与本清单热点 1、4 高度相关可作延伸阅读。窗口期稍早的关联话题还有：Vue&ViteConf 2026 上海大会（7月18日）及尤雨溪 VoidZero 被 Cloudflare 收购（6月）、「Vibe Coding 时代 Vue 是否消失」讨论（7月27日，cnblogs）。",
+  "start_time": "2026-08-06 14:31",
+  "end_time": "2026-08-06 14:33",
+  "elapsed_seconds": 59,
+  "retry_count": 0
+}

@@ -1,0 +1,105 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Python 3.15.0 首个候选版 RC1 正式发布，功能全面冻结",
+      "summary": "官方发布 3.15 系列首个候选版，引入 PEP 810 显式惰性导入、内置 frozendict 与 sentinel 等特性，JIT 在 x86 上性能提升 8%，自此不再有 ABI 变更，正式版预计 10 月 1 日发布。",
+      "source": "Python Insider（官方博客）",
+      "url": "https://blog.python.org/2026/08/python-3150-rc1/",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "官方发布通报",
+          "summary": "进入候选发布阶段后只允许明确 bug 修复，呼吁第三方项目在此期间准备 3.15 wheel 并完成兼容性测试，生产环境暂不建议使用预览版。"
+        },
+        {
+          "stance": "社区维护者视角",
+          "summary": "RC1 是代码冻结前的最后低风险测试窗口，开源库作者需抓紧排查依赖破坏；对 JIT、自由线程化等改进关注度最高。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Python 3.14.7 与 3.13.15 两个维护版同日发布",
+      "summary": "8 月 5 日官方一次性放出两条维护分支更新，3.14.7 包含约 499 个 bug 修复、构建改进和文档变更，共 86 位贡献者参与；3.13.15 约含 400 个修复，建议生产环境尽快升级。",
+      "source": "Python.org / Python Insider",
+      "url": "https://www.python.org/downloads/release/python-3147/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "两条维护版以稳定性与安全修复为主、无新功能，是 3.14 与 3.13 分支的例行升级，用户可按需安装。"
+        },
+        {
+          "stance": "运维与开发者建议",
+          "summary": "运维侧普遍建议立即升级以获取修复；部分团队强调升级前做依赖回归测试，避免维护版引入行为变化。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Nvidia 开源 NOOA 智能体框架：一个智能体就是一个 Python 类",
+      "summary": "Nvidia 发布面向对象的开源 Python 智能体框架 NOOA，把能力、状态与提示词封装进单一 Python 类，并贡献给 Open Secure AI Alliance；官方称其在 SWE-bench Verified 达 82.2%、成本约为对照一半。",
+      "source": "The New Stack",
+      "url": "https://thenewstack.io/nvidia-nooa-agent-framework/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "专家认可",
+          "summary": "把工作流图、提示词模板、回调整合进一个类，使智能体更易测试、审计与维护，接近传统软件开发范式，被视作降低智能体开发碎片化的重要尝试。"
+        },
+        {
+          "stance": "质疑与风险提示",
+          "summary": "「代码即行为」会扩大提示注入的爆炸半径，确定性 Python 与模型概率生成方法难以区分；专家建议配合沙箱运行、最小权限与独立身份使用，可读性提升同时风险集中。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "马斯克称「源代码将成下一个汇编」，AI 直出二进制引行业教父集体对线",
+      "summary": "马斯克转发前特斯拉专家观点称源代码将像汇编一样被淘汰，AI 应直接生成二进制，Python、Java、C++ 被视为中间商；《代码整洁之道》作者 Bob Martin 与 UML 之父 Booch 先后下场反驳，程序员圈热议。",
+      "source": "新智元",
+      "url": "https://hub-assets-cache.baai.ac.cn/view/56911",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "马斯克一方",
+          "summary": "认为人类对 AI 生成代码的信任会像半个世纪前信任编译器一样建立，下一步应彻底摒弃「源代码」这一中间产物，让 AI 直接输出高效二进制。"
+        },
+        {
+          "stance": "行业教父反驳",
+          "summary": "Booch 指出「有表达力、精确、可重复、能产出可执行物的语言」按定义就是编程语言，写出的就是源代码；Bob Martin 建议保留人类可审查的中间表示作为过渡。"
+        },
+        {
+          "stance": "网友与技术圈质疑",
+          "summary": "强调编译器是确定性翻译而 AI 是概率性生成，直接信任二进制缺乏兜底；普遍认为「代码消亡」为时过早，但 AI 生成代码占比确实在快速上升。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "9 岁男孩 5 岁学 Python 入职杭州大厂当实习生",
+      "summary": "据媒体 8 月 2 日报道，9 岁男孩张予矾 4 岁学 Scratch、5 岁学 Python，参与制作 40 余款游戏、已有 10 多款上架，自称「写过的代码 1000 万都不止」，目前已在杭州大厂实习写代码做游戏。",
+      "source": "网易（鲁中晨报/杭州网）",
+      "url": "https://www.163.com/dy/article/L3DRMV640530JPVV.html",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "媒体报道",
+          "summary": "将该男孩视为低龄编程教育成果与励志样本，突出其 4 岁学 Scratch、5 岁学 Python 的经历及 40 余款游戏作品，引发家长群体关注。"
+        },
+        {
+          "stance": "部分网友质疑",
+          "summary": "对「写过的代码 1000 万行」等表述的统计口径存疑，认为存在宣传成分；同时有人担忧少儿编程过度商业化和对儿童成长节奏的影响。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Python 圈热议集中于 3.15 RC1 与双维护版同日发布、MCP 2.0 大重写、Nvidia NOOA 智能体框架及 cryptography 高危漏洞；马斯克「代码死刑」言论引发程序员对 AI 取代代码的焦虑与集体反驳。整体情绪积极与谨慎并存，安全升级与生态迁移关注度显著上升。",
+  "honesty_note": "关键词偏技术类，国内微博/知乎等平台直接命中的热搜较少，已尽量结合国内外权威来源交叉验证。关联话题可关注：2026 年 7 月编程语言排行榜（Rust 首进前十、Python 份额自历史峰值回落）、Python 招聘行情两极分化（AI 方向高薪稀缺）、PSF 董事会与首届 Packaging Council 提名（8 月 11 日截止）、Astral 发布 uv 0.12 与 Ruff 0.16 破坏性版本等。",
+  "start_time": "2026-08-06 14:23",
+  "end_time": "2026-08-06 14:25",
+  "elapsed_seconds": 58,
+  "retry_count": 0
+}

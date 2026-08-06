@@ -1,0 +1,121 @@
+I've gathered comprehensive material from multiple sources across both the Rust programming language and the Rust game. Here is the organized result.
+
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "rust-lang/rust 正式采纳 LLM 使用政策",
+      "summary": "8月5日，Rust 项目五个团队采纳了 Jynn Nelson 起草的 LLM 使用政策，规定可用 LLM 答疑、分析、审查，但禁止其「创作」代码与文案，LLM 生成的代码须披露并附带测试，成为近期 Rust 社区最热话题。",
+      "source": "Inside Rust Blog / LWN / Hacker News",
+      "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "政策旨在把此前「无规则」的 LLM 贡献治理变成公开明确的规则，覆盖 PR 审查者、LLM 代码作者、用 LLM 报 issue 及引用 LLM 评论的人，保护审查带宽与社区信任，而非全面封禁 LLM。」
+        },
+        {
+          "stance": "社区解读与争议",
+          "summary": "该政策经历约一个月辩论、3000 多条 Zulip 消息后才落地，被部分媒体概括为「禁止 AI 写代码、保留人类审查」；也有开发者质疑其可执行性与对善意贡献者的门槛抬升，称政策更严但也更清晰。」
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Rust 在 nightly 启用下一代借用检查器 Polonius Alpha",
+      "summary": "8月4日 Rust 官方宣布在 nightly 启用 Polonius Alpha，这是自 2018 年 NLL 以来借用检查器最大幅度的重写，实现流敏感的生命周期分析，可放行更多此前被拒的合法代码，计划年内稳定。",
+      "source": "Rust Blog / 中文技术社区",
+      "url": "https://blog.rust-lang.org/2026/08/04/enabling-polonius-alpha-on-nightly/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方说明",
+          "summary": "Polonius Alpha 能编译 NLL 无法接受、流敏感的借用代码（如 HashMap 的 get_mut_or_default 模式），目前无已知问题，启用 nightly 旨在暴露性能回归、unsoundness 与诊断问题，目标年底稳定。」
+        },
+        {
+          "stance": "开发者技术分析",
+          "summary": "社区关注性能表现：对 crates.io 下载量前一万 crate 测试，多数回归很小，但最坏情况有 2-3 倍编译回归，官方提供 -Zpolonius=off 退出开关，并称会持续优化，被业内视为底层开发与库作者的重要风向标。」
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "游戏《Rust》8月强更「电力垄断」机制引发独狼玩家强烈担忧",
+      "summary": "8月6日《Rust》月度强更与服务器强制清档上线，新增发电厂重型保险丝驱动的全图电力网络系统，被指大幅利好大型部落、压缩独狼生存空间，本周在 Reddit 与 X 持续发酵。",
+      "source": "Polygon / Kotaku / 网易号 / Corrosion Hour",
+      "url": "https://www.polygon.com/rust-august-update-concerning-for-solo-players/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "玩家担忧",
+          "summary": "大量独狼玩家认为发电厂中枢化要求多线协作与重保险丝接力，部落可封墙架炮台垄断能源，体验「滚雪球式恶化」——越强的团队越能封控关键设施，独狼甚至难以靠近发电厂。"
+        },
+        {
+          "stance": "官方/预览视角",
+          "summary": "Facepunch 测试服内容显示这是「玩家维护的纪念碑」系统，目标是让玩家通过激活发电厂影响全图、解锁电力补给、原油与卫星坠落事件，属于测试内容，数值与机制仍可能调整。"
+        },
+        {
+          "stance": "媒体分析",
+          "summary": "Polygon、Kotaku 等媒体称本次补丁是年度最有野心、系统最复杂的一次，但设计明显偏向团队协作，独狼玩法面临更大挑战，社区对更新取向的争议仍在继续。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Rust 玩家遭报假警（Swatting）瘫痪，向警方索赔 1.76 亿美元",
+      "summary": "4 月 23 岁亚利桑那州图森玩家 Axeel Melendez 因游戏内冲突被对手黑客入侵并报假警，特警破窗将其击中致下半身瘫痪，近日其正式起诉当地警方索赔 1.76 亿美元，游戏圈热议。",
+      "source": "IGN / 网易号 / Multiplayer.it / The News",
+      "url": "https://www.163.com/dy/article/L3EG2V0A05561FY9.html",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "原告方/媒体报道",
+          "summary": "梅伦德斯称曾在 911 录音和上门警官面前多次预告可能遭报假警，但两天后警方接匿名紧急电话仍砸窗强闯，执法记录仪显示其持合法猎枪自卫时中弹，家属认为警方玩忽职守、事件本可避免。"
+        },
+        {
+          "stance": "警方回应",
+          "summary": "当地警局对诉讼拒绝置评；事件被多国游戏媒体转载，舆论聚焦 swatting 的危险性与执法程序问题，社区对受害者表达同情并呼吁追究责任。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "TIOBE 2026 年 7 月榜单：Rust 首次跻身前十",
+      "summary": "TIOBE 编程语言指数 7 月榜单显示 Rust 以 1.34% 占有率历史上首次进入前十、位列第 10，一年前还在第 18 位；Python 仍以 18.94% 稳居第一，中文技术圈本周热议。",
+      "source": "编程狮（w3cschool.cn）/ TIOBE",
+      "url": "https://www.w3cschool.cn/article/4174886.html",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方数据解读",
+          "summary": "TIOBE CEO Paul Jansen 指出 Rust 走红源于「内存安全同时生成极快代码」，被视为 C 和 C++ 的直接竞争者；本月其挤掉 Delphi/Object Pascal 完成历史突破，关注度持续上升。"
+        },
+        {
+          "stance": "学习社区观点",
+          "summary": "中文技术文章提醒榜单衡量的是「搜索关注度」而非能力，Rust 是系统编程方向的长期趋势，但对入门者而言是否该学仍应结合目标场景，单月名次波动不必过度解读。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Rust Mobile 第二次 Beta 测试定档 8 月，全球区域扩大",
+      "summary": "腾讯与 Level Infinite 官宣《Rust Mobile》第二次 Beta 测试将于 8 月开启（8 月 23 日），覆盖北美、亚洲、欧洲、中东与拉美，新增装备与新手友好系统，为回归玩家提供更多探索方式。",
+      "source": "MemuPlay / Pocket Gamer / Últimas Noticias",
+      "url": "https://www.memuplay.com/blog/rust-mobiles-second-beta-test-launches-in-august-2026-with-expanded-global-access.html",
+      "published_time": "2026-07-30",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "第二次封闭 Beta 在首次欧美亚测试基础上扩展全球范围，并围绕新手可玩性与游戏选项做针对性优化，测试定于 8 月下旬开始，属于近期手游圈关注度较高的预告类信息。"
+        },
+        {
+          "stance": "玩家期待",
+          "summary": "移动端玩家对把《Rust》残酷生存玩法带上手机保持高期待，同时观望其优化与「轻量玩法选项」能否真正降低上手门槛，平衡硬核与大众化是讨论焦点。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "Rust 编程语言侧，社区最关注借用检查器换代（Polonius Alpha）与官方 LLM 使用政策两大技术里程碑，讨论理性但存在性能回归与贡献门槛争议；游戏《Rust》侧，8 月强更的「电力垄断」机制引发独狼玩家强烈焦虑，报假警致残索赔事件在圈内刷屏并引发对 swatting 危害的愤怒与同情。整体情绪偏谨慎、积极。",
+  "honesty_note": "搜索结果中编程语言与游戏《Rust》两类信息均较丰富、时效性良好；个别条目如 Rust Mobile 二测为 7 月底公告、测试于 8 月下旬才启动，属预告类信息，已如实标注时间。若需聚焦单一方向（仅语言或仅游戏）可进一步细化检索，另可关注 SeaORM 2.0 转正、Syn 3.0 发布及 Linux 内核 Rust 支持等本周关联话题。"
+}

@@ -1,0 +1,101 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "React Compiler 正式迁移 Rust：Meta 用 Rust 重写自动记忆化编译器",
+      "summary": "Meta 于 7 月底将 React Compiler（前身 React Forget）从 TypeScript 完全重写为 Rust 并合并进 React 主仓库，编译速度提升约 3 倍，内存占用下降约 75%，被视为前端工具链 Rust 化的标志性事件。",
+      "source": "CSDN / chenxutan 前端观察",
+      "url": "https://blog.csdn.net/yonggeit/article/details/163525336",
+      "published_time": "2026-08-06 10:02",
+      "perspectives": [
+        {
+          "stance": "技术深度解析",
+          "summary": "Rust 版编译器采用 swc 解析与 HIR 中间表示、Arena 分配器和 Rayon 并行编译，8 核实测比 TS 版快 3-5 倍，峰值内存从 1.8GB 降至 420MB、GC 暂停彻底消除，对普通开发者透明、无需改代码习惯。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "此次重写由 LLM 大量参与机械性工作，并通过 1725 个测试用例验证，标志着前端编译器的 Rust 化浪潮（SWC、Turbopack、Rspack 等）达到新高度，在 LLM 放大代码量的时代，工具链性能成为关键基础设施。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Remix 3 彻底重写并抛弃 React：全栈框架押注 Web 平台原生能力",
+      "summary": "由 React Router 团队打造、Shopify 维护的全栈框架 Remix 3 beta 发布，从底层重建并移除 React 运行时，改用基于 Preact 的分支与命令式模型，路由基于 Fetch API，社区对其评价两极分化。",
+      "source": "搜狐（翻译自 InfoQ）",
+      "url": "https://www.sohu.com/a/1058626505_355140",
+      "published_time": "2026-08-04 14:33",
+      "perspectives": [
+        {
+          "stance": "支持者观点",
+          "summary": "开发者 Alex Kotliarskyi 称 Remix 3 是「Next.js 本该成为的 Grug Brain 版本」，认为它标志着从函数式向命令式编程的钟摆摆回；也有人认为「单一软件包、贴近 Web 标准、显式优于约定」的设计很适合 AI 辅助编程。"
+        },
+        {
+          "stance": "质疑与批评",
+          "summary": "r/reactjs 与 Hacker News 上讨论激烈，有开发者称 Remix「已完全无法辨认」，团队因频繁破坏性改动而闻名；现有 Remix 2 用户需迁移到 React Router v7，Remix 3 被视为「重新开始」，迁移成本高、尚不适合生产环境。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TanStack 官网移除 React Server Components：RSC 价值之争再起",
+      "summary": "TanStack 创始人 Tanner Linsley 发文宣布自家官网停用 RSC，认为 RSC 把「依赖问题变成了架构问题」，改用自研轻量 Markdown/代码高亮渲染后性能未降反升，引发对 RSC 必要性的广泛讨论。",
+      "source": "TanStack Blog / 华为云前端周刊",
+      "url": "https://tanstack.com/blog/we-removed-rsc-from-tanstack-com",
+      "published_time": "2026-07-24（近一周持续发酵）",
+      "perspectives": [
+        {
+          "stance": "团队自述",
+          "summary": "RSC 曾带来真实性能收益（客户端 JS 减少约 153KB、TBT 大幅下降），但当依赖变轻后，序列化边界、打包配置、特殊文件等架构成本浮出水面，RSC「不再值得」，普通 SSR 反而更小更快。"
+        },
+        {
+          "stance": "社区解读",
+          "summary": "该事件被解读为对 React 官方 RSC 叙事的一次重要反思：多数应用其实并不需要 RSC，RSC 更应作为可选原语而非默认架构，也提醒开发者审慎评估官方技术路线的落地成本。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "新框架 Octane 上线自称「编译版 React」：去掉虚拟 DOM 与 Hooks 规则",
+      "summary": "7 月 27 日新框架 Octane 上线，宣称将 React 的 Hook 模型编译为直接 DOM 代码，无需虚拟 DOM、依赖数组与 Hooks 规则，写法仍沿用 hooks、Suspense、actions，但跑分与生态数据均为项目自证。",
+      "source": "ic.work / byteiota",
+      "url": "https://www.ic.work/article/octane-compiled-react-vs-react-compiler",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "官方宣传",
+          "summary": "Octane 自称为十年前 Inferno 的继任者，通过新增 .tsrx 语法在编译期自动推断依赖，宣称比 React 19 快 2.9 倍，并支持 OctaneCompat 以岛屿方式逐组件接入现有 React 19 应用实现渐进迁移。"
+        },
+        {
+          "stance": "锐评与质疑",
+          "summary": "其真正对手应是 Meta 官方的 React Compiler；跑分「出题、裁判、发榜」是同一项目，11500+ 测试与 53 个生态绑定均无第三方复现，且编译期配置错误会静默降级，生产采用宜观望。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "2026 前端框架格局深度对比：React 19 与 Vue 3.6 Vapor Mode 技术路线之争",
+      "summary": "技术文章对比 React 19 与 Vue 3.6 Vapor Mode 的技术路线，称 React 下载量达 Vue 的 8 倍、Angular 的 15 倍，被用于约 2980 万个项目、占大型企业项目约 58% 份额，呈现「一超多强」格局。",
+      "source": "CSDN",
+      "url": "https://mukebb.blog.csdn.net/article/details/163475350",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "React 凭借庞大生态与 Meta 背书保持市场主导，Vue 在中国开发者中占比最高并以 Vapor Mode 无虚拟 DOM 路线挑战，Svelte 以编译时优化崛起，框架选型应基于团队技术栈与项目特点。"
+        },
+        {
+          "stance": "技术预判",
+          "summary": "2024-2025 年 React 引入 Server Components、Vue3 完善组合式 API 的学习期过后，2026 下半年两者演进方向分化：React 走「运行时更薄、编译时更厚」，中后台 SPA 最受益于并发 API 与编译优化。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 React 相关讨论高度集中在「工具链底层变革」与「官方技术路线反思」两大主题：React Compiler 迁移 Rust 被普遍视为里程碑；Remix 3 弃 React 与 Octane 自称「编译版 React」引发社区两极分化，跑分与自证数据遭质疑；TanStack 停用 RSC 则推动了对官方叙事和架构成本的批判性审视。整体情绪以「谨慎观望、批判性验证」为主。",
+  "honesty_note": "部分热点首发时间略早于 7 天窗口但仍在近一周持续发酵（TanStack 停用 RSC 首发 7 月 24 日、Remix 3 beta 首发 7 月 27 日）；React Compiler 迁移 Rust 主要来自博客与二手转载，官方 GitHub PR 原文未能直接核验，建议以官方发布为准。关联话题：React 19.2.8（7 月 21 日发布，含 RSC 解码性能改进）、WordPress 7.1 因插件兼容性问题继续采用 React 18.3、MobX 7.0 发布。",
+  "start_time": "2026-08-06 14:37",
+  "end_time": "2026-08-06 14:40",
+  "elapsed_seconds": 149,
+  "retry_count": 1
+}

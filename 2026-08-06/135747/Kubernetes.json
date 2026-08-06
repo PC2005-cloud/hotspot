@@ -1,0 +1,79 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Gateway API v1.6 发布：TCPRoute 与 UDPRoute 进阶为标准版",
+      "summary": "Kubernetes SIG Network 宣布 Gateway API v1.6.0，TCP/UDP 四层路由正式达到 GA 标准，实验性 API 拆分至独立网关分组，成为云原生服务网络里程碑。",
+      "source": "Kubernetes 官方博客",
+      "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
+      "published_time": "2026-08-03 00:00（北京时间 08-03）",
+      "perspectives": [
+        {
+          "stance": "官方社区发布",
+          "summary": "SIG Network 强调 v1.6 将 TCPRoute/UDPRoute 从实验通道推进到标准，新增 XBackend 实验资源，补齐数据库、DNS、游戏等原始 L4 流量的可移植路由能力。"
+        },
+        {
+          "stance": "实现方跟进适配",
+          "summary": "kgateway 等控制器项目已提交 PR 将依赖升级到 Gateway API 1.6，社区用户同步更新 apiVersion 为 v1，显示生态正在快速迁移。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Red Hat 披露 Kubernetes 权限提升漏洞 CVE-2026-10059/10090",
+      "summary": "Red Hat 修复 Multicluster Engine 的 ClusterCurator 控制器及 ACM 应用订阅控制器中的高危权限提升漏洞，租户管理员可利用其获取集群级管理员权限。",
+      "source": "Red Hat 安全公告 / OpenCVE",
+      "url": "https://access.redhat.com/security/cve/cve-2026-10059",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "厂商官方通报",
+          "summary": "Red Hat 定性为 Important 级漏洞：命名空间级租户管理员可通过构造 ClusterCurator 或订阅资源提权至集群级权限，建议立即升级并应用补丁。"
+        },
+        {
+          "stance": "安全社区分析",
+          "summary": "OpenCVE、Mallory 等安全情报追踪认为该漏洞机制关键、影响所有受支持的 MCE/ACM 2 实例，多集群治理场景下的横向权限隔离风险被重点关注。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Kubernetes v1.37 进入文档冻结，定于 8 月 26 日正式发布",
+      "summary": "Kubernetes 1.37 发布周期于 8 月 5/6 日进入第 12 周文档冻结阶段，官方确认 v1.37.0 将于 8 月 26 日发布，预告 86 项增强聚焦安全、DRA 与网络。",
+      "source": "kubernetes.dev 发布信息页",
+      "url": "https://www.kubernetes.dev/resources/release/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布排期",
+          "summary": "发布团队确认 Week 12 文档冻结已于北京时间 8 月 6 日 12:00 生效，8 月 26 日 Week 15 发布 v1.37.0，社区进入冲刺收尾阶段。"
+        },
+        {
+          "stance": "技术社区前瞻",
+          "summary": "技术博客预告 v1.37 新增 Pod 冻结恢复等 alpha 特性，调度器 GangScheduling 插件正在移除冗余的 Permit 扩展点，新版本受开发者关注。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "IGLOO 公司获 4 项云原生与 AI 安全专利，聚焦 Kubernetes 集群监测",
+      "summary": "韩国 IGLOO 公司取得 4 项云安全与 AI 专利，其中 K8s 集群安全趋势监测专利可用 AI 还原攻击路径并动态更新安全规则，补齐集群内部网络盲区。",
+      "source": "DigitalToday",
+      "url": "https://www.digitaltoday.co.kr/cn/view/88907/igloo-corporation-secures-four-cloud-ai-security-patents",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "企业公告",
+          "summary": "IGLOO 称两项云安全专利聚焦 Kubernetes 环境内部网络监测盲区与容器数据完整性校验，将推动其智能安全响应能力落地。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Kubernetes 圈内热点集中于 Gateway API v1.6 四层路由标准化、K8gb 晋升 CNCF 孵化项目、v1.37 发布临近等正向进展，AI+GPU 算力共享与 Vault KMS 集成反映基础设施与 AI 深度融合趋势；同时 Red Hat 连续披露高危权限提升漏洞引发安全警觉，技术社区情绪整体理性积极、对多集群治理与密钥安全关注度上升。",
+  "honesty_note": "本时段内与 Kubernetes 直接相关的多为专业技术社区与行业媒体资讯，未见微博、知乎等高热度全网性大众话题；搜索来源以官方博客、CNCF、Red Hat、InfoQ 等为主，信息充分且时效良好。关联话题可关注：Ingress 与 Gateway API 迁移讨论、Kubernetes 上运行数据库的成本争议（StatefulSet）、CNCF Kubernetes AI 一致性认证计划，以及 8 月 26 日 v1.37 正式发布。",
+  "start_time": "2026-08-06 14:12",
+  "end_time": "2026-08-06 14:13",
+  "elapsed_seconds": 56,
+  "retry_count": 0
+}

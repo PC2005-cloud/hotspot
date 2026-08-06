@@ -30,10 +30,11 @@ jobs:
       - name: 创建输出目录
         run: mkdir -p results session
 
-      - name: 写入登录配置
+      - name: 写入配置
         env:
           ACCOUNT: ${{ secrets.DEEPSEEK_ACCOUNT }}
           PASSWORD: ${{ secrets.DEEPSEEK_PASSWORD }}
+          API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python -c "
           import json, os
@@ -43,6 +44,8 @@ jobs:
           cfg['login']['password'] = os.environ['PASSWORD']
           cfg['headless'] = True
           cfg['delete_chat'] = True
+          cfg['mode'] = 'api'
+          cfg['api']['key'] = os.environ['API_KEY']
           with open('hotspot/config.json', 'w') as f:
               json.dump(cfg, f, ensure_ascii=False, indent=2)
           "

@@ -560,7 +560,7 @@ def generate_html_report(report_data: dict, output_path: str):
         f.write(html)
     logger.info(f"HTML 报告已保存: {output_path}")
 
-def run_all(bot) -> list:
+def run_all(bot, mode="web") -> list:
     """遍历 keywords.json，逐个搜索。返回每个关键词的结果列表"""
     keywords = load_keywords()
     if not keywords:
@@ -571,10 +571,14 @@ def run_all(bot) -> list:
     stats = []
     for i, kw in enumerate(keywords):
         if i > 0:
-            # 关键词间随机延迟，模拟人类操作间隔，防频率检测
-            delay = random.uniform(15, 45)
-            logger.info(f"  等待 {delay:.0f} 秒后处理下一个关键词...")
-            time.sleep(delay)
+            # API 模式：无延迟，支持高并发；Web 模式：模拟人类操作间隔
+            if mode == "api":
+                delay = 0
+            else:
+                delay = random.uniform(15, 45)
+                logger.info(f"  等待 {delay:.0f} 秒后处理下一个关键词...")
+            if delay > 0:
+                time.sleep(delay)
             try:
                 bot.new_chat()  # 每个关键词开新对话，避免上下文污染
             except Exception as e:

@@ -1,11 +1,17 @@
 {
   "_note": "Hotspot 配置文件",
+  "mode": "web",
+  "api": {
+    "key": "",
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com"
+  },
   "max_retries": 3,
   "headless": true,
   "delete_chat": true,
   "login": {
-    "account": "13092297340",
-    "password": "13092297340"
+    "account": "",
+    "password": ""
   },
   "keywords": [
     "DeepSeek",

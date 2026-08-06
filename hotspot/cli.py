@@ -83,36 +83,61 @@ def main():
     logger.info(f"  关键词: {len(keywords)} 个 — {'、'.join(keywords)}")
 
     config = load_config()
-    bot = DeepSeekBot(headless=config.get("headless", True))
+    mode = config.get("mode", "web")
     stats = []
-    try:
-        bot.start()
-        cfg = load_config().get("login", {})
-        account_masked = cfg.get("account", "")[:4] + "****" if cfg.get("account") else "未设置"
-        logger.info(f"登录账号: {account_masked}")
-        login_ok = bot.login(cfg.get("account", ""), cfg.get("password", ""))
-        if login_ok:
+
+    if mode == "api":
+        from .deepseek_api import DeepSeekAPI
+        api_cfg = config.get("api", {})
+        logger.info(f"运行模式: API (model={api_cfg.get('model', 'deepseek-v4-flash')})")
+        bot = DeepSeekAPI(
+            api_key=api_cfg.get("key", ""),
+            model=api_cfg.get("model", "deepseek-v4-flash"),
+            base_url=api_cfg.get("base_url", "https://api.deepseek.com"),
+        )
+        try:
+            bot.start()
+            bot.login()
             bot.enable_all()
-            stats = run_all(bot)
-        else:
-            logger.error("登录失败，跳过本次搜索")
-            # 生成失败统计
+            stats = run_all(bot, mode)
+        except Exception as e:
+            logger.error(f"运行过程中出现异常: {e}", exc_info=True)
             for kw in keywords:
-                stats.append({
-                    "keyword": kw, "ok": False, "count": 0,
-                    "elapsed": 0, "path": None
-                })
-    except Exception as e:
-        logger.error(f"运行过程中出现异常: {e}", exc_info=True)
-        # 为未处理的关键词生成失败统计
-        for kw in keywords:
-            if not any(s.get("keyword") == kw for s in stats):
-                stats.append({
-                    "keyword": kw, "ok": False, "count": 0,
-                    "elapsed": 0, "path": None
-                })
-    finally:
-        bot.close()
+                if not any(s.get("keyword") == kw for s in stats):
+                    stats.append({
+                        "keyword": kw, "ok": False, "count": 0,
+                        "elapsed": 0, "path": None
+                    })
+        finally:
+            bot.close()
+    else:
+        bot = DeepSeekBot(headless=config.get("headless", True))
+        try:
+            bot.start()
+            cfg = load_config().get("login", {})
+            account_masked = cfg.get("account", "")[:4] + "****" if cfg.get("account") else "未设置"
+            logger.info(f"登录账号: {account_masked}")
+            login_ok = bot.login(cfg.get("account", ""), cfg.get("password", ""))
+            if login_ok:
+                bot.enable_all()
+                stats = run_all(bot, mode)
+            else:
+                logger.error("登录失败，跳过本次搜索")
+                for kw in keywords:
+                    stats.append({
+                        "keyword": kw, "ok": False, "count": 0,
+                        "elapsed": 0, "path": None
+                    })
+        except Exception as e:
+            logger.error(f"运行过程中出现异常: {e}", exc_info=True)
+            for kw in keywords:
+                if not any(s.get("keyword") == kw for s in stats):
+                    stats.append({
+                        "keyword": kw, "ok": False, "count": 0,
+                        "elapsed": 0, "path": None
+                    })
+        finally:
+            bot.close()
 
     total_elapsed = time.time() - start_time
     print_summary(stats, total_elapsed)

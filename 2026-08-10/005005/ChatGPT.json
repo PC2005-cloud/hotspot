@@ -1,0 +1,157 @@
+{
+  "keyword": "ChatGPT",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "OpenAI取消ChatGPT免费版纯文本对话次数限制，GPT-5.6 Luna成免费默认模型",
+      "summary": "OpenAI于8月6日官宣并于8月10日当周落地：免费及Go版用户纯文本对话不再限次，默认模型升级为GPT.6 Luna，并新增「Think」思考按钮；Plus/Pro用户获GPT.6 Sol专精升级与「思考强度」滑块。",
+      "source": "17173（转IT之家）、财联社、量子位、36氪、新浪科技",
+      "url": "https://news.17173.com/content/08102026/080906849.shtml",
+      "published_time": "2026-08-10 08:09",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "OpenAI称此举核心目标是提升AI使用普及度，Luna在金融、医疗、法律领域事实错误率较GPT-5.5 Instant降低约62%，Sol同步优化回答聚焦度；但图片生成、文件上传、语音模式仍保留独立额度限制。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "36氪、第一新声等分析认为这是「免费圈地」策略：纯文本推理成本暴跌后，以无限聊天换取10亿周活用户的数据飞轮和使用习惯，把对话变成入口级服务，防止用户转向Gemini、Claude。"
+        },
+        {
+          "stance": "竞争观察",
+          "summary": "同日DeepSeek宣布涨价回血，被形容为AI圈「冰火两重天」；此前有数据称DeepSeek调用量碾压ChatGPT数倍，本轮免费放量被视为OpenAI正面反攻。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI桌面端ChatGPT上线ChatGPT Voice语音交互，可语音操控电脑执行多步骤任务",
+      "summary": "8月9日消息，OpenAI更新ChatGPT桌面应用新增ChatGPT Voice支持，用户可直接语音对话、控制AI智能体并让其执行多步骤电脑任务，同时支持Work与Codex，并可在iOS远程调用。",
+      "source": "IT之家、凤凰网科技、网易科技",
+      "url": "https://www.ithome.com/0/987/452.htm",
+      "published_time": "2026-08-09 06:46",
+      "perspectives": [
+        {
+          "stance": "官方介绍",
+          "summary": "新功能基于全新语音模型系列ChatGPT-Live，演示中开发者一句语音指令即可创建代码线程、提交Pull Request并定位Bug根因；macOS上可通过Appshots读取屏幕内容（含替代文本）。"
+        },
+        {
+          "stance": "行业对比",
+          "summary": "IT之家注意到Anthropic同步更新Claude语音模式，可调用Opus、Sonnet、Haiku在Gmail、Calendar、Slack、Notion、Canva等应用中完成任务，AI语音代理赛道的竞争明显升温。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI下一代模型Astra：2000美元破解10道数学难题，因网络安全风险延后部署",
+      "summary": "Astra内部测试版以约2000美元token成本解决或推动解决10道悬而未决的数学与理论计算机科学难题，获顶尖学者盛赞；奥特曼8月7日表示因模型网络安全能力较强，将延后安全部署。",
+      "source": "量子位、IT之家、钛媒体、证券时报、红星新闻",
+      "url": "https://hub.baai.ac.cn/view/56869",
+      "published_time": "2026-08-04（数学成果发酵）至 08-08（部署表态）",
+      "perspectives": [
+        {
+          "stance": "学界与官方高度评价",
+          "summary": "十项成果横跨高维几何、群论、量子复杂度等领域且全部经Lean机器验证；非sofic群构造被称「菲尔兹奖级别」，曼彻斯特大学学者称整体学术价值远超OpenAI此前单次成果。"
+        },
+        {
+          "stance": "学术规范担忧",
+          "summary": "红星新闻等报道称，仅2000美元成本即攻克顶尖难题，引发对数学研究范式、评审流程及学术规范的担忧，数学界开始讨论AI时代菲尔兹奖归属与人类科研价值。"
+        },
+        {
+          "stance": "安全部署权衡",
+          "summary": "奥特曼称Astra网络安全能力较强，需要「多一点时间」确保安全部署，认为将强模型只限少数用户并非正确策略，希望未来广泛开放。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI披露ChatGPT全球10亿用户画像：从问答工具转向任务工具",
+      "summary": "OpenAI于8月6日发布报告称全球超10亿用户使用ChatGPT、周活跃用户达10亿，使用方式正从「问答工具」转向「任务工具」，35岁及以上用户消息占比明显上升。",
+      "source": "IT之家、财联社、Yahoo Tech",
+      "url": "https://www.ithome.com/0/986/957.htm",
+      "published_time": "2026-08-07 14:28",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "工作场景中用户完成任务或创建内容的可能性是非工作场景的2倍以上；多媒体为增长最快场景，消息占比升至7.8%；近75%欧洲国家35岁以上用户消息占比增幅高于平均水平。"
+        },
+        {
+          "stance": "市场分析",
+          "summary": "财联社等指出周活虽破10亿但增速开始低于市场预期；此前OpenAI另称其AI模型活跃用户超10亿、企业客户超200万家，商业化与增长质量成为关注焦点。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "奥特曼建议用ChatGPT生成「亲子晨间播客」遭全网群嘲",
+      "summary": "奥特曼在X上分享将家庭日程与孩子兴趣喂给ChatGPT、自动生成早晨送娃专属家庭播客的用法，被网友痛批「最反人类的AI用法」；《怪诞小镇》主创Alex Hirsch一句「你可以直接和孩子聊聊天」获约20万点赞回怼。",
+      "source": "量子位、凤凰网科技、Business Insider台湾、商业周刊",
+      "url": "https://hub-assets-cache.baai.ac.cn/view/57003",
+      "published_time": "2026-08-09 23:20",
+      "perspectives": [
+        {
+          "stance": "网友与创作者质疑",
+          "summary": "批评AI替父母决定上学路上聊什么、把亲子对话加工成节目，认为「陪伴本身不可外包」；Hirsch回怼点赞量约为奥特曼原帖（约1.1万赞）的18倍。"
+        },
+        {
+          "stance": "理性与支持声音",
+          "summary": "部分观点认为AI自动整理全家日程、提醒赛事确能减轻家长负担，但必须明确「哪些可交给AI、哪些须亲自完成」的边界，AI应帮家长腾出陪伴时间而非接管陪伴。"
+        },
+        {
+          "stance": "隐私伦理担忧",
+          "summary": "家庭AI需上传孩子兴趣、姓名年龄、学校事务等敏感信息，OpenAI正面临多起相关诉讼，数据留存期限、家庭成员知情同意与删除权利等问题存疑。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "研究：ChatGPT生成短篇小说在吸引力与质量评分上超越真人作品",
+      "summary": "发表于《判断与决策》期刊的研究显示，1682名读者对ChatGPT生成短篇小说的吸引力和整体质量评分更高，约六成读者无法区分AI与人类作品；但被告知出自人类之手的故事往往获得更高分。",
+      "source": "明报、红星新闻、IT之家、至顶网",
+      "url": "https://static.cdsb.com/micropub/Articles/202608/8fcf882121b14844707c30cea6482817.html",
+      "published_time": "2026-08-06 17:58",
+      "perspectives": [
+        {
+          "stance": "研究方观点",
+          "summary": "资深作者迪娜称AI已能生成不逊甚至优于人类的作品，公众应重新认识AI创作能力；但强调这并不意味着写作应交给AI，可为AI小说及人机共创留出空间。"
+        },
+        {
+          "stance": "专家与学界质疑",
+          "summary": "明报引伯明翰大学肯纳德教授观点称AI写作建立在「大规模被盗取的写作资料」之上，且依赖昂贵、破坏环境的数据中心，AI生成文本引发版权与伦理争议。"
+        },
+        {
+          "stance": "大众认知观察",
+          "summary": "约40%至52%参与者无法正确判断故事作者，准确率仅略高于随机；判断能力与阅读经验无关，仅与对AI系统的了解程度相关。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Apple与OpenAI商业秘密诉讼升级：苹果指控OpenAI员工偷拍保密产品计划",
+      "summary": "苹果更新对OpenAI的诉讼，指控其通过前员工窃取硬件产品商业秘密甚至偷拍保密产品计划；OpenAI则申请驳回「无依据」指控，反指苹果「草率、激进且奇怪地针对个人」。",
+      "source": "NZ Herald、Investing.com、法新社（多家国际媒体）",
+      "url": "https://www.nzherald.co.nz/business/apple-accuses-openai-employee-of-taking-pictures-of-secret-product-plans/WALPEXKRNZF7DNA2MAM2BUDV3Q/",
+      "published_time": "2026-08-03 至 08-08",
+      "perspectives": [
+        {
+          "stance": "Apple指控",
+          "summary": "称前员工Chang Liu跳槽OpenAI后仍访问苹果机密信息并拍摄保密产品计划，要求停止使用其商业机密并搜查OpenAI电脑，背后涉及约400人挖角风波。"
+        },
+        {
+          "stance": "OpenAI回应",
+          "summary": "指责苹果「隐瞒事实」、起诉草率，称涉密访问系误连旧工作账号所致，其外部律师甚至曾弄混不同姓氏的亚裔联系人；否认需要或已获得苹果商业秘密。"
+        },
+        {
+          "stance": "背景解读",
+          "summary": "外媒认为该案反映硅谷因AI快速崛起而日益紧张的竞争，OpenAI据传正筹备推出对标Siri的智能音箱设备，双方从合作伙伴走向司法对垒。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "过去一周ChatGPT舆情以「免费」为主线刷屏：取消免费版文字对话限额、默认升级GPT-5.6 Luna被网友欢呼「史诗级白嫖」，与DeepSeek同日涨价形成强烈对比，引发「免费圈地vs涨价回血」的成本战热议。Astra以2000美元连破数学难题引发敬畏与安全、学术争议；奥特曼育儿建议遭群嘲，折射公众对AI侵入家庭与情感边界的警惕。",
+  "honesty_note": null,
+  "start_time": "2026-08-10 00:50",
+  "end_time": "2026-08-10 00:54",
+  "elapsed_seconds": 188,
+  "retry_count": 1
+}

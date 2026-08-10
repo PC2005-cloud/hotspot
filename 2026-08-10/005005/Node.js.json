@@ -1,0 +1,105 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "npm 供应链遭 ChainDrop 蠕虫攻击：keyv 等 444 个软件包被污染",
+      "summary": "8月4日攻击者劫持 keyv 维护者 GitHub 账号，植入窃取凭证的蠕虫 ChainDrop，不到4小时扩散至 444 个 npm 包、2212 个恶意版本，波及约 20 亿月下载量，C2 走以太坊智能合约。",
+      "source": "IT之家、CSA 新加坡、Yahoo Tech、OPSWAT 等",
+      "url": "https://www.ithome.com/0/985/910.htm",
+      "published_time": "2026-08-04 至 2026-08-08（持续发酵）",
+      "perspectives": [
+        {
+          "stance": "安全厂商分析（StepSecurity/Aikido/Socket）",
+          "summary": "以 keyv@6.0.0 为起点，蠕虫利用 preinstall 钩子下载 Bun 运行环境后窃取 NPM、GitHub、云平台及 Claude/Codex/Cursor 等 AI 工具凭证，并通过盗取的发布凭据自动向其他包传播，常规下架难以彻底阻断。"
+        },
+        {
+          "stance": "官方与监管警告（CSA 新加坡等）",
+          "summary": "多国安全机构发布公告，定性为正在进行的供应链攻击，提醒开发者立即核查依赖树、轮换全部凭据、撤销 CI/CD 中被盗 token。"
+        },
+        {
+          "stance": "社区防护建议",
+          "summary": "建议维护者启用 Passkey 或实体安全密钥、收紧 GitHub Token 权限并启用分支保护；企业对新包版本设 3-7 天冷却期，默认禁用安装脚本（npm v12、pnpm、vlt 已默认拦截）。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Node.js 26.7.0 发布：新增 Perfetto 原生追踪与 STORE 私钥加载",
+      "summary": "8月5日 Node.js 发布 26.7.0（Current），新增 Perfetto 追踪、STORE 加载器私钥支持、--test-coverage-include-all 与 ModuleHooks 的 Symbol.dispose，并升级 npm 至 11.19.0。",
+      "source": "Node.js 官方博客、Node Weekly、GitHub",
+      "url": "https://nodejs.org/en/blog/release/v26.7.0",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "版本重点在可观测性与密钥加载能力：Perfetto 追踪需编译期启用 --with-perfetto 生成 protobuf trace 文件，且与 inspector 追踪互斥；同时修复 FFI、SQLite、HTTP2 等多处崩溃问题。"
+        },
+        {
+          "stance": "开发者社区观察（Node Weekly 等）",
+          "summary": "社区注意到该版本距 26.6 仅隔两天，肯定版本迭代速度，但也提醒 Perfetto 与 inspector 二选一的限制以及需要自定义构建的使用门槛。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Node.js 安全更新修复 11 个漏洞，多枚高危 CVE 于 8 月初密集披露",
+      "summary": "7月31日 Node.js 发布安全更新，修补影响 22/24/26 分支的 11 个漏洞（3 个高危，涉 HTTP/2 拒绝服务、堆释放后使用、路径越权）；随后 CVE56848、58041、58042 相继公开。",
+      "source": "Ubuntu、Mend、GitHub Advisory、企业IT培训",
+      "url": "https://ubuntu.com/security/CVE-2026-58042",
+      "published_time": "2026-07-31 至 2026-08-09",
+      "perspectives": [
+        {
+          "stance": "官方/厂商漏洞通报",
+          "summary": "关键漏洞包括 HTTP/2 重入导致堆释放后使用（CVE-2026-56848）、node:sqlite 语句迭代器越权（CVE-2026-58041）、dns.resolveAny 收到超 256 条 A 记录时进程崩溃致拒绝服务（CVE-2026-58042），均影响 22.x/24.x/26.x，建议尽快升级。"
+        },
+        {
+          "stance": "运维/企业视角",
+          "summary": "8月9日中文技术文章强调企业应快速评估影响面、制定分批升级与回滚预案，并关注发行版（Rocky/Oracle/AliOS）随后的安全通告。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Node.js 26.6.0（Current）与 24.19.0（LTS）同日发布",
+      "summary": "8月3日 Node.js 发布 26.6.0 与 24.19.0（LTS），LTS 版新增 --experimental-import-text、fs.readFile 缓冲区复用及 TCP keepalive 的 KEEPINTVL/KEEPCNT 参数，Heroku 等平台已同步支持。",
+      "source": "Node.js 官方博客、GitHub、Heroku",
+      "url": "https://nodejs.org/en/blog/release/v26.6.0",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "26.6.0 新增 getCurrentEventLoop、context.log() 等能力；24.19.0（Krypton）作为 LTS 侧重 fs 与 net 模块的可用性改进，为长期维护分支用户提供稳定升级路径。"
+        },
+        {
+          "stance": "平台与分发方跟进",
+          "summary": "Heroku 等 PaaS 平台于 8月3-6日陆续上线 24.19.0 与 26.6.0/26.7.0 供构建使用，方便开发者平滑切换。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Node 生态工具新动态：vlt 1.0 上线、ioredis 6.0 默认 RESP3",
+      "summary": "8月初 Darcy Clarke 的 npm 替代品 vlt 1.0 正式发布，支持 60+ CSS 式依赖选择器与托管私有源；ioredis 6.0 发布并要求 Node 20+、默认 RESP3；pnpm 12 进入 RC 阶段。",
+      "source": "Node Weekly #636、vlt 官方、GitHub",
+      "url": "https://nodeweekly.com/issues/636",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "工具作者视角",
+          "summary": "vlt 主打依赖图安全查询（半数选择器与安全相关）与跨工具兼容的托管私有注册表；ioredis 6.0 为四年来的首个大版本，引入 RESP3 与 Redis 8.10 新特性。"
+        },
+        {
+          "stance": "生态观察者视角",
+          "summary": "Node Weekly 等指出这些工具默认拦截安装脚本、强化安全机制，客观上呼应并缓解了同期 ChainDrop 蠕虫依赖安装脚本传播的风险。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "舆论焦点高度集中于 ChainDrop 对 npm 生态的供应链蠕虫攻击，开发者普遍担忧依赖链安全，主流情绪是「警惕风险、立即核查依赖并轮换凭据」，并呼吁默认禁用安装脚本；与此同时 Node.js 密集发版（26.6/26.7/24.19）与多枚高危 CVE 披露引发升级讨论，整体呈现「安全焦虑上升 + 对新功能期待积极」并存的态势。",
+  "honesty_note": "最近24-48小时（8月9-10日）内独立的重磅热点较少，多以既有事件后续发酵为主（如 ChainDrop 清理与安全补丁跟进、运维响应指南）；已尽量覆盖 8月3-8日的高热度资讯。关联话题可关注 Bun/Deno 与 Node.js 的运行时竞争讨论，以及 vlt 等 npm 替代工具的推广。",
+  "start_time": "2026-08-10 01:17",
+  "end_time": "2026-08-10 01:18",
+  "elapsed_seconds": 66,
+  "retry_count": 0
+}

@@ -1,0 +1,83 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "Docker Compose v5.4.0 发布，多发行版陆续跟进打包",
+      "summary": "Docker Compose v5.4.0 于8月初发布，更新 docker/cli、buildx、buildkit 等依赖并新增 stop lifecycle hook 等修复，Wolfi、Alpine、ALT Linux 等发行版在8月3日相继更新打包。",
+      "source": "GitHub（docker/compose）",
+      "url": "https://github.com/docker/compose/releases",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "更新 compose-go 至 v2.12.1、docker/cli v29.6.0 等依赖，新增外部 provider 的 stop 生命周期钩子并修复 OCI artifact 拉取路由等问题。"
+        },
+        {
+          "stance": "生态跟进",
+          "summary": "Solus、Alpine、RHEL 等发行版维护者于8月上旬陆续将 docker-compose 更新至 5.4.0，验证新版本稳定性与兼容性。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "2026年8月 Docker 国内镜像加速指南与镜像源清单集中发布",
+      "summary": "阿里云、华为云等平台8月初集中发布 Docker 国内镜像加速配置指南及 ECS/containerd 可用镜像源清单，应对 Docker Hub 匿名拉取限流（每6小时100次）与 429 报错问题。",
+      "source": "阿里云开发者社区 / 华为云社区",
+      "url": "https://developer.aliyun.com/article/1752736",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "技术实操",
+          "summary": "指南提醒不要只改 registry-mirrors，需关注多仓库加速、端口、数据卷与验证步骤，并强调须在真实 worker 节点实测。"
+        },
+        {
+          "stance": "背景解读",
+          "summary": "Docker Hub 自2025年起严格执行匿名拉取限额，2026年进一步将判定维度从单一 IP 扩展至 ASN 级，推动用户转向镜像源或自建 Harbor 缓存。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "网文《Docker的黄昏：集装箱式交付已死，还是重生？》引发讨论",
+      "summary": "8月初一篇分析 Docker 现状的网文走热，讨论 Docker 在供应链焦虑下价值凸显，同时面临云厂商与 WebAssembly 竞争，以及容器运行时商品化与商业化路径之争。",
+      "source": "lfdjt.com",
+      "url": "https://www.lfdjt.com/info_23_7661.html",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "观点文章",
+          "summary": "认为 Docker 不会死，但价值将融入软件供应链成为「水电煤」，核心转向标准化交付与 AI 容器治理等变现路径。"
+        },
+        {
+          "stance": "质疑视角",
+          "summary": "也有声音认为容器运行时已成 commodity 利润稀薄，Docker 公司主要依赖订阅涨价与 AI 治理等企业级功能求存。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Moby（Docker Engine）安全公告：OCI manifest 解析歧义与权限绕过风险",
+      "summary": "8月5日安全公告披露 Moby/Docker Engine 存在 OCI manifest 解析歧义漏洞，容器构建可能将宿主机路径泄露进容器，且 Docker 附加组权限设置存在绕过风险。",
+      "source": "GitLab Advisories",
+      "url": "https://advisories.gitlab.io/pkg/golang/github.com/docker/docker/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "安全公告",
+          "summary": "公告描述漏洞机理与影响范围，提示依赖 Docker Engine 的镜像构建与运行环境关注官方修复与升级建议。"
+        },
+        {
+          "stance": "专家分析",
+          "summary": "有分析指出该漏洞整体被利用可能性较低，但建议生产环境及时升级并收紧容器运行权限与附加组配置。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期 Docker 相关舆情以技术圈为主，整体情绪「务实中略带焦虑」。开发者一边关注 29.7.2 等版本稳定性与 Docker Desktop 4.85.0 升级踩坑，一边因 Docker Hub 拉取限流持续讨论国内镜像加速方案；官方借 AI Governance 审计日志强化企业级 AI 治理叙事，行业对 Docker 从容器平台转向 AI Runtime 的讨论持续升温。",
+  "honesty_note": "说明：最近24-48小时（8月8-10日）Docker 专属高热度大事件较少，热点多集中在8月3-6日；Docker AI Governance 一文发布于8月2日，略早于窗口起点，已如实标注时间。关联话题补充：Docker Hub 匿名拉取限流与国内镜像加速、Docker AI Governance 沙箱与 MCP 网关治理、Docker 订阅价格上调（Pro 涨至约 $11/月起）等长期讨论仍在发酵。",
+  "start_time": "2026-08-10 00:57",
+  "end_time": "2026-08-10 00:58",
+  "elapsed_seconds": 91,
+  "retry_count": 0
+}

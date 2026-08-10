@@ -1,0 +1,151 @@
+基于联网搜索结果，我已收集到近7天内（08月03日–08月10日）与 Vue.js 相关的多个热点。以下为整理后的 JSON 结果。
+
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Nuxt 高危漏洞 CVE-2026-71320：服务端远程代码执行（RCE）",
+      "summary": "GitHub 安全通告披露 Nuxt 框架存在服务端模板注入漏洞，攻击者可通过 /__nuxt_island/ 端点注入 template 键实现 Nitro 进程内远程代码执行，影响 Nuxt 3.4.0–3.21.9 与 4.0.0–4.5.0，官方已在 3.21.10 与 4.5.1 中修复。",
+      "source": "GitHub Advisory / VulDB / IONIX",
+      "url": "https://vuldb.com/cve/CVE-2026-71320",
+      "published_time": "2026-08-05 至 2026-08-06 发酵",
+      "perspectives": [
+        {
+          "stance": "官方安全通报",
+          "summary": "GitHub Security Advisory（GHSA-9473-5f9j-94wq）为该漏洞分配 CVE 编号，确认启用 vue.runtimeCompiler 时存在风险，修复版本为 Nuxt 3.21.10 与 4.5.1，新增对不安全 island props 的深度校验并返回 HTTP 400。"
+        },
+        {
+          "stance": "安全厂商分析",
+          "summary": "Mallory、IONIX 等安全机构评估该漏洞为高危（CVSS 约 8.1），并指出残余理论风险：修复依赖 Object.keys() 校验，在原型污染场景下仍可能被绕过，建议非必需场景直接关闭 vue.runtimeCompiler。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Vue 3.5.41 维护版本发布",
+      "summary": "Vue 团队于 8 月 5 日发布 3.5 分支最新补丁 3.5.41，主要修复 hydration 转发插槽回退解析、未解析异步 setup 的 SSR DOM 清理及 runtime-vapor 无效插槽内容修补等问题，属于常规 bugfix 更新。",
+      "source": "GitHub / endoflife.date",
+      "url": "https://github.com/vuejs/core/releases",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布口径",
+          "summary": "作为 3.5 稳定分支的小版本修复，官方强调补丁按需发布，无固定周期，此次更新不涉及破坏性变更，3.5 系列仍处于活跃支持期。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Vue 3.6 Vapor Mode 进入 RC 阶段，性能讨论持续升温",
+      "summary": "Vue 3.6 在完成 Vapor Mode 功能集后进入发布候选阶段（最新 rc.2 于 7 月 22 日发布），基于 alien-signals 重构响应式系统，编译期直接生成原生 DOM 指令跳过虚拟 DOM，第三方基准测试显示与 Solid、Svelte 5 持平，初始渲染提升约 50%。",
+      "source": "CSDN / 掘金 / VueConf 2026",
+      "url": "https://mukebb.blog.csdn.net/article/details/163475350",
+      "published_time": "2026-08-03（相关热议 08-02 至 08-03）",
+      "perspectives": [
+        {
+          "stance": "技术乐观派",
+          "summary": "认为 Vapor Mode 让虚拟 DOM 成为可选项、性能天花板被改写，Vue 3.6 将成前端框架性能跃升的里程碑，并引发 Vue 与 React 技术路线之争的广泛讨论。"
+        },
+        {
+          "stance": "谨慎观望派",
+          "summary": "指出 3.6 目前仍停留在 RC 阶段、正式版尚未落地，Vapor Mode 生态成熟度与生产环境稳定性仍需时间验证，不建议生产项目过早切换。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "自媒体热文：Vue 正在吃掉 React 的午餐，但胃口可能太大",
+      "summary": "8 月 9 日发布的行业评论文章称，在经济下行与降本增效背景下，Vue 凭借内置响应式、Composition API 和低维护成本正被更多中小团队用于重构核心后台，预测头部 React 组件库将推出官方 Vue 版本。",
+      "source": "lfdjt.com",
+      "url": "https://www.lfdjt.com/info_23_8096.html",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "文章核心观点",
+          "summary": "认为 Vue 的边际成本优势在宏观紧缩期凸显，React 生态熵增（Redux、MobX 等状态库过载）推高维护成本，Vue 更适合中小团队与后台类项目。"
+        },
+        {
+          "stance": "网友/读者质疑",
+          "summary": "部分开发者认为文章主观预测成分高、标题有夸张之嫌，React 拥有 Vercel/Next.js 全栈生态护城河，框架之争并非单一性能维度可以定论。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "争议文章：Vue 的降维打击——开源屠龙术为何难变现",
+      "summary": "同网站 8 月 9 日再发评论，指出 Vue star 数 19.6 万、npm 日均下载 400 万+，但官方商业化收入极低，Nuxt 核心维护者靠众筹续命，呼吁尤雨溪下场推动盈利实体，否则 Nuxt 可能被云厂商并购接管。",
+      "source": "lfdjt.com",
+      "url": "https://www.lfdjt.com/info_23_8101.html",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "批评开源变现困境",
+          "summary": "认为开源信仰拒绝健康商业循环正在伤害 Vue 长期生存，对比 Vercel 与 Next.js 的完整印钞闭环，指出 Vue 生态缺的是把流量变现金的意愿。"
+        },
+        {
+          "stance": "开源社区回应",
+          "summary": "反对声音强调 Vue 通过 Vite/Nuxt 事实标准、认证计划与生态控制权形成基础设施影响力，未必需要传统 SaaS 化变现，商业化激进可能破坏中立性与社区信任。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "2026 下半年 Vue3 与 React 技术方向与发展预判",
+      "summary": "CSDN 技术博主于 8 月 6 日发布长文，预判下半年前端方向：Server Components 成为默认范式，而 Vue3 关键演进是 Vapor Mode 编译时优化与 Vue Vine 函数式组件新范式，分析两大框架路线差异。",
+      "source": "CSDN",
+      "url": "https://mukebb.blog.csdn.net/article/details/163525658",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "综合技术分析",
+          "summary": "从编译时优化、响应式重构与全栈元框架三个维度对比 Vue 与 React 的 2026 年下半年演进路径，认为 Vapor Mode 是 Vue3 最重要的技术演进方向。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Nuxt Content v3 正式发布",
+      "summary": "Nuxt 官方 8 月 5 日宣布 Nuxt Content v3 上线，带来性能改进、Content Collections 内容集合、简化的 Vue Utils 与 TypeScript 集成，面向 Nuxt 应用的基于 Markdown 和 Vue 组件的文件型 CMS。",
+      "source": "Nuxt 官方（typefully）",
+      "url": "https://typefully.com/nuxt_js/A80SOdy",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布报道",
+          "summary": "官方强调 v3 大版本在性能、内容集合、类型安全与 Studio 集成体验上的提升，进一步完善 Nuxt 生态的内容管理能力。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "神州融信云申请基于 Vue3+Vite 的电子银行前端升级专利",
+      "summary": "8 月 8 日消息，神州融信云科技申请电子银行前端项目升级方法专利，基于 Vite 脚手架添加 Vue3 框架，通过环境文件与构建命令自动加载多环境变量，以提升多法人电子银行项目构建效率与稳定性。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.cn/2026-08-08/detail-inimqimv9836229.d.html?vt=4",
+      "published_time": "2026-08-08",
+      "perspectives": [
+        {
+          "stance": "行业新闻报道",
+          "summary": "展示 Vue3 + Vite 技术栈在银行金融这类保守行业的落地应用，侧面印证 Vue 在企业数字化项目中的渗透与标准化趋势。"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "uview-plus 3.0 发布：Vue3 鸿蒙跨端移动组件库",
+      "summary": "零云团队发布 uview-plus 3.0，定位全面的 Vue3 鸿蒙跨端移动组件库，组件丰富且维护更新稳定，并于 8 月 6 日更新至 3.8.102 版本，新增组合式 API 节点查询方法。",
+      "source": "DCloud 插件市场",
+      "url": "https://ext.dcloud.net.cn/plugin?id=8744",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "发布方介绍",
+          "summary": "强调组件库对 Vue3 与鸿蒙跨端场景的支持能力，面向移动端开发者提供稳定更新与组合式 API 新特性，属于生态工具类更新。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Vue.js 生态热点集中在三方面：一是 Vue 3.6 Vapor Mode 进入 RC 引发的性能与选型热议，开发者整体持技术乐观但期待正式版落地；二是 Nuxt 高危 RCE 漏洞（CVE-2026-71320）带来明显安全焦虑，官方修复与厂商风险提示并存；三是围绕 Vue 与 React 竞争格局及开源商业化困境的讨论升温，观点分化明显。整体情绪以技术演进兴奋与安全警觉交织为主。",
+  "honesty_note": "搜索范围内未直接获取到微博、知乎等中文社媒的热搜榜单数据，热点以技术社区、安全公告与自媒体分析为主；Vue 3.6 正式版截至 8 月 10 日仍未发布，故相关资讯多为演进预判而非版本定稿。关联话题可关注：Vue 3.6.0-rc.2 后续迭代、VueConf/ViteConf 2026 演讲材料、以及 FlowIntel 存储型 XSS（CVE-2026-69075，经由 Vue 模板渲染触发）等安全议题。"
+}

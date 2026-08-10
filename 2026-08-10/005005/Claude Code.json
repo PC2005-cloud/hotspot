@@ -1,0 +1,131 @@
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Claude Code v2.1.224 上线跨会话消息传递，AI 可跨终端互相通信",
+      "summary": "Anthropic 宣布 Claude Code v2.1.224 起不同会话可互相发送消息，用于移交调查结果、协调并行工作树与跨机器回复，适配 macOS 和 Linux。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/987/256.htm",
+      "published_time": "2026-08-08 10:04",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Anthropic 称跨会话消息传递可在某会话变更破坏另一会话工作时提前告警，一个会话解决难题后可把答案发给另一会话，最佳场景包括移交调查结果、协调并行工作树与获取长任务状态。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "NVIDIA 开发者社区等认为这是「Agent 对等通信」的产品化验证，可能让专有通信协议成为事实标准，也构成对开放标准（如 A2A）的潜在挑战。"
+        },
+        {
+          "stance": "综合报道",
+          "summary": "环球网、腾讯等评价该功能省去终端窗口手动复制代码上下文的繁琐步骤，提升多任务协同效率，但功能与升级仅覆盖 macOS 与 Linux 平台。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "8 月 14 日起 Claude Code 自动模式默认开启，Anthropic 称全自动更安全",
+      "summary": "Anthropic 宣布 8 月 14 日起 Pro、Max、Team 用户 Claude Code 默认启用自动模式，分类器拦截危险操作；1053 名测试者实验中其识别 89% 危险命令，远超人工审批的 13.6%。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/987/249.htm",
+      "published_time": "2026-08-08 09:17",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "Anthropic 称自动模式安全性已匹配或超越人工审批，并自今日起取消分类器每次调用的 token 费用；Team 与 Enterprise 用户使用自动模式后 PR 数量提升约 25%。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "Simon Willison、9to5Mac 等指出 Anthropic 内部几乎全员使用自动模式，认为这是 AI 编程 Agent 走向低监督自主化的标志性一步，将对竞品形成压力。"
+        },
+        {
+          "stance": "用户担忧",
+          "summary": "部分开发者担心自动模式减少人工确认环节会放大高风险操作风险，Anthropic 也仍建议对高影响生产基础设施变更保持人工复核。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "工信部 NVDB 通报 Claude Code 存后门风险，阿里已全面禁用",
+      "summary": "国家信息安全漏洞库（NVDB）通报 Claude Code 2.1.91 至 2.1.196 版本内置监控机制，可能未经同意向远程服务器回传位置与身份信息；阿里自 7 月 10 日起全面禁用并推荐 Qoder 替代。",
+      "source": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/china-issues-security-alert-on-anthropics-claude-code-flags-backdoor-risk-that-can-leak-your-/affcmtoi_articleshow/132260341.cms",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "工信部 NVDB 建议境内机构和企业用户立即全面排查，卸载受影响版本或升级至已移除相关监控代码的最新安全版本，提示危害严重。"
+        },
+        {
+          "stance": "企业响应",
+          "summary": "阿里将 Claude Code 列入高风险软件名单，自 7 月 10 日起办公环境全面禁用 Anthropic 旗下 Sonnet、Opus、Fable 及 Claude Code，并推荐自研 Agentic 平台 Qoder 作为替代。"
+        },
+        {
+          "stance": "国际媒体",
+          "summary": "Times of India 等报道称 Anthropic 当前版本已修复相关隐患，事件亦折射 AI 工具跨境数据合规与地缘政治背景下的信任博弈，本土工具替代或被加速。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Claude Code v2.1.222/223 连续发布安全修复，封堵权限绕过漏洞",
+      "summary": "Claude Code 于 8 月 4 至 5 日连续更新 v2.1.222 与 v2.1.223，修复 worktree 隔离会话可执行破坏性 git 命令、权限检查绕过与沙箱相关安全问题。",
+      "source": "DevelopersIO",
+      "url": "https://dev.classmethod.jp/en/articles/20260805-cc-updates-v2-1-222/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "技术解读",
+          "summary": "v2.1.222 含 21 项安全与稳定性修复，解决 worktree 会话可对主 checkout 执行破坏性 git 命令的问题，并改进自动模式下跨会话消息的分类器评估；v2.1.223 含 4 项绕过权限检查修复，共 19 项变更。"
+        },
+        {
+          "stance": "官方立场",
+          "summary": "Anthropic 以高频版本迭代快速响应安全研究，强化 sandbox 隔离与权限管控，同时移除 ultraplan 等旧特性以精简产品。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Claude Code 推出 Java LSP 插件切入 Java 生态，Stripe 4 天迁移万行代码",
+      "summary": "Anthropic 为 Claude Code 推出基于 Eclipse JDT.LS 的 Java LSP 插件，支持 Java 1.8 至 24；Stripe 1370 名工程师借助其 4 天完成万行 Scala 到 Java 迁移。",
+      "source": "阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1753967",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "媒体报道",
+          "summary": "该插件提供语法错误检测、带 Javadoc 的代码补全、语义高亮、类型搜索与重构能力，标志通用 AI 编码助手从「能写 Java」走向「理解 Java」。"
+        },
+        {
+          "stance": "专家分析",
+          "summary": "通用 Agent 聚焦编码环节，Java 工程全链路（需求分析、接口与表设计、质量保障、文档生成等）仍需专属工具协同，二者是工具栈分层而非替代关系。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "研究揭示 Claude Code、Cursor 等 AI 编程工具存在严重安全与隐私缺陷",
+      "summary": "约克大学与卡尔加里大学分析 Reddit 讨论发现，Claude Code、Cursor、GitHub Copilot 等 LIDE 设计未优先考虑安全与隐私，存在未授权文件操作、敏感数据泄露等风险，论文收录 2026 IEEE/ACM ASE 会议。",
+      "source": "安恒信息",
+      "url": "http://starmap.dbappsecurity.com.cn/info/15991",
+      "published_time": "2026-08-07",
+      "perspectives": [
+        {
+          "stance": "研究结论",
+          "summary": "大模型集成开发环境（LIDE）在设计上未优先考虑安全与隐私，开发者面临未授权文件操作、敏感数据泄露及意外代码执行等多类风险。"
+        },
+        {
+          "stance": "风险提示",
+          "summary": "结合近期后门通报与高危 CVE 密集曝光，安全界建议开发者审慎配置权限规则与沙箱，企业应建立 AI 编码工具的合规评估机制。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近 7 天 Claude Code 热度集中在两大官方动作：v2.1.224 跨会话消息传递与 8 月 14 日自动模式默认化，开发者普遍期待效率提升并热议 Agent 自主化趋势；同时围绕工信部后门通报、Black Hat 高危漏洞及阿里禁用令的安全讨论持续升温，舆情呈「效率乐观」与「安全警惕」两极并存态势。",
+  "honesty_note": "本窗口内信息充足且时效性强。需如实说明两点：工信部 NVDB 后门通报原始发布于 7 月 8 日，8 月 3-4 日为英文及中文媒体跟进报道；另 Anthropic 测试将 Claude Code 移出 Pro 订阅的动向发生于 7 月 31 日，略早于本窗口，可作为关联话题参考。",
+  "start_time": "2026-08-10 01:04",
+  "end_time": "2026-08-10 01:08",
+  "elapsed_seconds": 258,
+  "retry_count": 2
+}

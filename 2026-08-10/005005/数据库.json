@@ -1,0 +1,119 @@
+{
+  "keyword": "数据库",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "黑客利用 Oracle 数据库作攻击跳板，SQL 注入 + 内置 Java 实现 SYSTEM 权限",
+      "summary": "安全公司 Huntress 披露，黑客借 SQL 注入入侵企业 Oracle 数据库，通过其内置 Java 虚拟机（OJVM）将 khunt 后渗透工具包以数据库对象形式藏匿，进而控制底层 Windows 系统并窃取用户密码。",
+      "source": "IT之家（腾讯新闻转载）",
+      "url": "https://news.qq.com/rain/a/20260809A05UKG00",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "安全厂商预警",
+          "summary": "Huntress 指出 khunt 工具包含 KhuntCmd、KhuntHash 等模块，可执行系统命令、导出数据库账号与密码哈希，最终取得 SYSTEM 级权限并破解本地账户，属于新型攻击手法。"
+        },
+        {
+          "stance": "技术分析",
+          "summary": "专家分析称恶意代码以数据库对象形式存储，可绕过传统 EDR 与杀软对进程、文件的监控，呼吁加强输入过滤与查询参数化，并限制数据库高权限账号。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "MariaDB 认证远程代码执行漏洞（QVD-2026-48306）风险通告",
+      "summary": "奇安信 CERT 发布通告，MariaDB 10.6.27 至 13.0.1 存在认证 RCE 漏洞，攻击者仅凭最低权限账号用一条 GRANT PROXY 语句即可提权至 DBA 并执行任意命令，CVSS 8.8，关联全球风险资产超 52 万个。",
+      "source": "安全内参（奇安信CERT）",
+      "url": "https://www.secrss.com/articles/92786",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "官方通告",
+          "summary": "奇安信 CERT 评级高危，PoC 与技术细节已公开，攻击全程仅用 SQL 语句完成、门槛极低，建议升级至稳定版本并限制 3306 端口对外暴露。"
+        },
+        {
+          "stance": "风险研判",
+          "summary": "业内认为 MariaDB 在生产与云原生场景部署广泛，该漏洞利用链完全基于 SQL 语句实现，需重视资产测绘、最小授权与应急响应处置。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "OceanBase 首次公开 AI 数据库实践：3000 万个闪应用共享一套数据库",
+      "summary": "OceanBase 公开支撑蚂蚁灵光 AI 生成应用的架构实践，通过逻辑表与共享物理存储让约 3000 万个闪应用共享一套数据库，实现应用数据模型独立、底层资源复用的新范式。",
+      "source": "中国工业新闻网",
+      "url": "https://www.cinn.cn/2026/08-06/brY03wg1.html",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "官方技术实践",
+          "summary": "OceanBase 产品部总经理韩富晟表示，该方案大幅降低存储成本并天然保障多租户权限隔离，验证了从分布式数据库向 AI 数据平台转型的可行性。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "业内将 OceanBase 类比「中国的 Databricks」，认为 AI 生成应用爆发正倒逼数据基础设施重构，湖库一体的 AI 数据库成为竞争焦点。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Zilliz 发布 Milvus 3.0：开源向量数据库走向「湖原生」",
+      "summary": "开源向量数据库 Milvus 开发商 Zilliz 发布 3.0 重大架构升级，推出湖原生（lake-native）架构，可直接在对象存储数据上建索引与检索，无需先行导入数据库，面向生产级 AI 应用。",
+      "source": "DBTA",
+      "url": "https://www.dbta.com/Editorial/News-Flashes/Zilliz-Releases-Milvus-30-Making-its-Open-Source-Vector-Database-Lake-Native-176040.aspx",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Zilliz 称 Milvus 3.0 打破「数据须先导入才能检索」的传统范式，为 Vector Lakebase 向量数据湖基座提供底层能力，并继续遵循 Apache 2.0 开源协议。"
+        },
+        {
+          "stance": "行业评价",
+          "summary": "海外科技媒体评价认为，湖原生架构契合数据不迁移、就地分析的 AI 基础设施趋势，或将重塑向量数据库与数据湖的边界。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Neon 开源 4B 检索模型，文档搜索成本降至 GPT-5.6 Sol 的百分之一",
+      "summary": "无服务器 PostgreSQL 数据库 Neon 携手 Castform 开源一个经强化学习训练的 4B 参数检索模型，在文档搜索准确率上超过 GPT.6 Sol，单次推理成本仅约为后者的 1/100。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/986/936.htm",
+      "published_time": "2026-08-07",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Neon 与 Castform 认为智能体式搜索将成主流，小参数量开源模型配合数据库文档存储，可显著降低企业 Agent 搜索成本与延迟。"
+        },
+        {
+          "stance": "技术视角",
+          "summary": "该方案以强化学习训练模型判断「该搜索什么」，评估覆盖文档命中、引用段落与答案正确性，展示数据库厂商向 AI 模型层延伸的新趋势。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "达梦数据：AI 不挤压传统数据库，国产数据库从「可用」迈向「好用」",
+      "summary": "达梦数据在机构调研中表示，AI 发展为数据库带来新增量，将依托共享存储集群等技术向数据库一体机业务延伸，并在 AI4DB 与 DB4AI 双线推进多模态数据与向量计算能力建设。",
+      "source": "证券日报（新浪财经）",
+      "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-08-06/doc-inimkskz4566283.shtml",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "公司表态",
+          "summary": "达梦认为人工智能并未挤压传统数据库市场空间，反而带来新的增长动力，公司战略重心正逐步向新一代数据库一体机延伸，推动国产数据库从「可用」向「好用」迈进。"
+        },
+        {
+          "stance": "市场观察",
+          "summary": "券商与行业观察认为，具身智能、大模型 RAG 等场景要求数据库原生集成向量与多模态能力，国产数据库厂商加速 AI 原生转型以争夺企业数据底座市场。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近 7 天数据库领域舆情聚焦三大主线：一是安全事件密集爆发（Oracle 数据库被当攻击跳板、Metabase 零日漏洞遭在野利用、MariaDB RCE 通告），引发对数据资产安全与供应链防护的高度警惕与担忧；二是 AI 与数据库深度融合成主旋律，OceanBase、AWS、Zilliz、Neon 等在 AI 数据底座、向量检索、智能体搜索上密集发力；三是国产数据库在信创与 AI 双轮驱动下加速从「可用」走向「好用」。整体情绪以警惕安全风险与期待 AI 赋能并存。",
+  "honesty_note": null,
+  "start_time": "2026-08-10 01:32",
+  "end_time": "2026-08-10 01:34",
+  "elapsed_seconds": 80,
+  "retry_count": 0
+}

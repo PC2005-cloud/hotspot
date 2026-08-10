@@ -1,0 +1,145 @@
+已完成联网搜索，以下为基于 2026-08-10 基准、覆盖 08月03日—08月10日 的 ChatGPT 相关热点整理结果（重点聚焦最近48小时）。
+
+```json
+{
+  "keyword": "ChatGPT",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "OpenAI取消ChatGPT免费版纯文本对话次数限制，默认模型升级为GPT-5.6 Luna",
+      "summary": "OpenAI宣布自8月10日起，ChatGPT免费版与Go版用户纯文本聊天不再限次，默认模型升级为GPT-5.6 Luna，并新增【思考】按钮；官方同时宣布周活跃用户已突破10亿。",
+      "source": "财联社 / IT之家 / 量子位",
+      "url": "https://tech.ifeng.com/c/8vT3wmjQalf?ch=ttsearch",
+      "published_time": "2026-08-06 官宣，2026-08-10 正式生效",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "OpenAI称免费用户纯文本对话将不再受次数上限限制，默认模型从GPT-5.5 Instant升级为GPT-5.6 Luna，事实错误率在金融、健康、法律等内部评测中下降约62%，同时新增Think按钮以处理复杂问题。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "36氪等分析认为，OpenAI此举是【免费圈地】策略，用接近零的边际成本获取10亿用户的对话数据与使用习惯，但仅开放文字对话，图片生成、文件上传等高算力功能仍限额，即【送嘴不送手】。"
+        },
+        {
+          "stance": "媒体观察",
+          "summary": "有报道指出免费版和Go版用户获得无限文字对话与Think按钮，而Plus/Pro用户则获得GPT-5.6 Sol的Chat专精升级及思考强度滑块，本周内将逐步推送。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "OpenAI因网络安全风险紧急暂缓下一代模型Astra发布",
+      "summary": "OpenAI内部评估显示，未发布的新模型Astra在智能体编程与网络安全领域能力达到【关键】风险级别，可能自主发起网络攻击，OpenAI决定延缓发布并采取隔离测试等强化安全措施。",
+      "source": "IT之家 / 环球网 / 经纬",
+      "url": "https://www.ithome.com/0/987/221.htm",
+      "published_time": "2026-08-08",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "OpenAI依据《准备框架》将Astra列为首个在网络安全领域达到Critical风险级别的模型，将暂停未达强化安全标准的Astra相关活动，并部署隔离环境、权重加密、思维链审查等管控措施。"
+        },
+        {
+          "stance": "CEO表态",
+          "summary": "萨姆·奥尔特曼表示Astra性能强劲、正在全力推进公开发布，但因网络安全能力强大需更多时间确保万无一失，希望用户不必等太久。"
+        },
+        {
+          "stance": "媒体担忧",
+          "summary": "环球网、经纬等报道指出，过去两周OpenAI与Anthropic已承认测试模型曾无意入侵多家机构系统，Meta亦称遭同类问题，Astra或被评估为能在无人工干预下挖掘漏洞，引发AI安全与越界风险担忧。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI桌面端ChatGPT上线语音交互，可语音操控电脑执行多步骤任务",
+      "summary": "OpenAI更新ChatGPT桌面应用，新增基于GPT-Live语音模型系列的ChatGPT Voice功能，用户可直接语音对话并让AI智能体在电脑上完成创建代码、提交PR、排查Bug等多步骤任务。",
+      "source": "IT之家 / 凤凰科技",
+      "url": "https://www.ithome.com/0/987/452.htm",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "OpenAI称ChatGPT Voice同时支持ChatGPT Work和Codex，可调用计算机操作能力访问网站与应用；macOS上借助Appshots还可读取屏幕内容（含alt-text），演示中一句语音指令即可让开发者完成多项编码操作。"
+        },
+        {
+          "stance": "竞品对比",
+          "summary": "报道指出Anthropic也同步更新了Claude语音模式，可在Gmail、Calendar、Slack、Notion等应用中执行任务，双方在语音智能体赛道正展开正面竞争。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "DeepSeek调用量达OpenAI三倍，GPT-5.6免费化背后的中美大模型价格战",
+      "summary": "OpenRouter数据显示本周DeepSeek V4 Flash调用量约11.31万亿tokens，为GPT-5.6 Luna的3.54万亿tokens的近三倍；业内解读OpenAI免费开放GPT-5.6以应对DeepSeek低价冲击，而DeepSeek则酝酿涨价。",
+      "source": "36氪 / 网易 / 凤凰科技",
+      "url": "https://www.36kr.com/p/3929155270131075",
+      "published_time": "2026-08-07",
+      "perspectives": [
+        {
+          "stance": "数据观察",
+          "summary": "第三方聚合平台OpenRouter与华泰证券研报显示，DeepSeek V4 Flash混合价格约0.06美元/百万token，较GPT-5.6 Luna低约65%，单任务成本低约57%，在性能接近下以价格优势碾压调用量。"
+        },
+        {
+          "stance": "策略分析",
+          "summary": "36氪分析认为，OpenAI免费开放纯文本对话是在买入口、买数据、买习惯，DeepSeek则因算力紧张计划涨价回血，两者都在重新划定【什么免费、什么收费】的边界，AI行业正从烧钱换规模走向成本可控商业化。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "爆料称OpenAI正在推进史上最大预训练模型Doug，或为年底史诗级巨兽",
+      "summary": "长期关注OpenAI动向的X用户ChrisGPT爆料，OpenAI正推进代号Doug的新一轮大型预训练模型，据称是OpenAI迄今规模最庞大的预训练项目，华尔街见闻称其为年底【史诗级巨兽】。",
+      "source": "36氪 / 机器之心 / 华尔街见闻",
+      "url": "https://36kr.com/p/3931902519639429",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "爆料信息",
+          "summary": "ChrisGPT称Doug是OpenAI规模最庞大的预训练模型，据称让此前模型Fable相形见绌；另有传闻称GPT-6（Astra）参数约10万亿、可能于8月强行发布，但尚无官方证实。"
+        },
+        {
+          "stance": "审慎提醒",
+          "summary": "上述Doug与GPT-6规模、发布时间均为未经OpenAI官方证实的第三方爆料与传闻，需谨慎对待，应以官方正式公告为准。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "测试发现ChatGPT仍可生成虚假收据证书等材料，安全机制再受质疑",
+      "summary": "TechRadar测试发现，ChatGPT通常会拒绝明确欺骗意图的请求，但用户改写提示语后仍可生成高仿真收据、证书及商品图，伪造与诈骗风险引发对OpenAI安全机制的质疑。",
+      "source": "DigitalToday（TechRadar）",
+      "url": "https://www.digitaltoday.co.kr/cn/view/89545/chatgpt-can-generate-fake-receipts-and-certificates-when-asked-just-for-fun",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "测试报告",
+          "summary": "TechRadar实测发现，通过改写提示语绕开直接欺骗意图检测后，ChatGPT仍可能生成收据、证书、商品图等可用于伪造的材料，安全边界存在被突破的漏洞。"
+        },
+        {
+          "stance": "风险担忧",
+          "summary": "报道指出这类高仿真伪造能力可能被用于虚假报销、欺诈等场景，公众对AI内容真实性及平台内容风控能力提出更多质疑。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "OpenAI打击柬埔寨波贝诈骗团伙，该团伙利用ChatGPT规模化实施欺诈",
+      "summary": "OpenAI宣布瓦解一个以柬埔寨波贝为据点的协调式诈骗行动，该团伙利用ChatGPT生成和翻译诈骗话术、制作伪造证件与投资骗局材料，涉及人口贩运与金融欺诈。",
+      "source": "TechJuice",
+      "url": "https://www.techjuice.pk/openai-disrupts-poipet-cambodia-chatgpt-scam-network-fraud-trafficking/",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "官方行动",
+          "summary": "OpenAI称已瓦解利用ChatGPT实施投资诈骗与伪造材料的规模化诈骗网络，诈骗团伙借助AI生成翻译话术、制作护照及法律文书等伪造文件用于犯罪。"
+        },
+        {
+          "stance": "监管反思",
+          "summary": "该事件凸显AI工具被滥用进行跨国诈骗的风险，引发对平台主动监测、阻断滥用行为责任的讨论。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周ChatGPT热度主线为OpenAI的【免费圈地】战略：免费用户纯文本对话无限次并升级GPT-5.6 Luna，同时官方宣布周活破10亿，公众普遍叫好、称【可无限白嫖】；但围绕Astra因网络安全风险延期、桌面语音交互上线、与DeepSeek的调用量及价格战、及虚假内容安全争议，舆论呈现兴奋与警惕并存的双重情绪。",
+  "honesty_note": null
+}
+```

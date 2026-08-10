@@ -1,0 +1,129 @@
+根据联网搜索（以 2026-08-10 为基准，覆盖 08月03日 至 08月10日）完成整理，输出如下：
+
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "TypeScript 7.0 生态兼容危机持续：typescript-eslint、ts-morph 等工具链暂无法升级",
+      "summary": "TypeScript 7.0 正式版因未随包提供程序化 API，导致 typescript-eslint、ts-morph、ts-jest 等主流工具无法兼容升级，Hacker News 相关讨论热度极高，社区焦点已从性能转向生态缺口。",
+      "source": "byteiota.com / Hacker News / GitHub",
+      "url": "https://byteiota.com/typescript-7-go-compiler-2/",
+      "published_time": "2026-08-07",
+      "perspectives": [
+        {
+          "stance": "技术社区热议",
+          "summary": "Hacker News 发布帖获 719 分、301 条评论，最高赞评论并非庆祝提速，而是复现官方基准表追问下游构建工具受影响情况，开发者普遍认为生态断裂比 10 倍提速更值得关注。"
+        },
+        {
+          "stance": "官方回应",
+          "summary": "微软确认新版程序化 API 是「全新且不同」的接口，需工具方真实改造而非兼容补丁，稳定 API 预计随 TypeScript 7.1 于 2026 年 10 月发布。"
+        },
+        {
+          "stance": "工具链受阻",
+          "summary": "typescript-eslint 发布的对等依赖仅允许 TypeScript 低于 6.1.0，npm 直接抛 ERESOLVE 阻断安装；ts-morph 更出现静默输出错误结果等严重故障模式。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TypeScript 7.0 正式版全网上线：Go 重写编译器实现 8-12 倍提速，成 14 年来最大变革",
+      "summary": "微软 7 月 8 日发布 TypeScript 7.0，编译器用 Go 完全重写，官方基准显示 VS Code 编译从 125.7 秒降至 10.6 秒（11.9 倍），8 月初各媒体仍密集跟进报道与深度技术拆解。",
+      "source": "InfoQ / 掘金 / 知乎",
+      "url": "https://www.infoq.com/news/2026/08/typescript-7-released/",
+      "published_time": "2026-08-02",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "TypeScript 团队称 7.0 是首个原生代码版本，提速一半来自 Go 原生执行、一半来自共享内存多线程并行，语义与 6.0 严格一致并通过十年测试套件验证。"
+        },
+        {
+          "stance": "媒体解读",
+          "summary": "InfoQ、掘金等将其定位为 2012 年诞生以来最重大底层重构，并放到「前端工具链全面换芯」的 Go/Rust 重写趋势中解读。"
+        },
+        {
+          "stance": "谨慎观望",
+          "summary": "多篇分析建议存量项目先不急于升级，需先清理 es5、baseUrl、moduleResolution: node 等被硬删除的老配置，Vue/Svelte/Astro 模板检查等场景需等生态跟进。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TypeScript 7.0.2 发布：构建更快，但仍要求依赖 TypeScript 6 的程序化 API",
+      "summary": "8 月初 TypeScript 7.0.2 成为 npm 当前最新版本，官方强调 7.0 可与 6.0 并行运行并提供 @typescript/typescript6 兼容包，但新版 API 缺口仍让大量工具停留在 6.x。",
+      "source": "WindowsForum / npm",
+      "url": "https://windowsforum.com/windows-news.4/typescript-7-0-2-faster-builds-but-typescript-6-api-still-required.441590/",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "官方渠道",
+          "summary": "微软博客与 npm 登记信息确认 7.0 已 GA、7.0.2 为当前版本；官方把确保 TS7 与 TS6 并行运行列为优先事项，临时方案是安装 @typescript/typescript6 兼容包。"
+        },
+        {
+          "stance": "社区质疑",
+          "summary": "部分开发者质疑：既然程序化 API 要等到 7.1 才补齐，此时推出 7.0 正式版是否过早，认为工具链大规模升级实际被推迟到了 10 月。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "观点文章「TypeScript：全球代码供应链的隐形操纵者」引热议：类型即基础设施",
+      "summary": "8 月 8 日一篇观点文称 TypeScript 正成为全球代码供应链的质检标准与「最强硬约束」，并预测 esbuild 或被收购、Bun/Deno/SWC 正蚕食构建工具链，引发对 TS 生态主导权的讨论。",
+      "source": "lfdjt.com",
+      "url": "https://www.lfdjt.com/info_23_8079.html",
+      "published_time": "2026-08-08",
+      "perspectives": [
+        {
+          "stance": "作者观点",
+          "summary": "认为经济紧缩期类型即可维护性契约，strict 模式可显著降低交接与维护成本，类型系统正成为新的供应链质检标准，呼吁企业强制开启 strict 模式。"
+        },
+        {
+          "stance": "竞争格局分析",
+          "summary": "文章预测微软凭 VSCode+TypeScript 坐庄，但 Deno、Bun（内置 TS 转译）、SWC 等玩家构成威胁，Vercel/Cloudflare 或把 TS 编译直接集成到 CDN 节点以降低冷启动时间。"
+        },
+        {
+          "stance": "批评声音",
+          "summary": "文章亦自陈 TypeScript 编译速度遭诟病、类型体操有时可笑，隐含对过度鼓吹「类型即安全」的保留，且他文提醒类型安全不等于数据安全。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "COSCUP 2026 演讲「你以为是 bug，其实是 feature」：TypeScript 为何故意不是安全的类型系统",
+      "summary": "开源大会 COSCUP 2026 于 8 月 9 日开设专题演讲，通过多个 TypeScript 刻意「不安全」的真实案例剖析设计取舍，并延伸讨论 TypeScript 7 的 erasable syntax 与语言边界。",
+      "source": "COSCUP 2026 / pretalx",
+      "url": "https://pretalx.coscup.org/coscup-2026/talk/BQXC39/",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "技术演讲",
+          "summary": "演讲指出 TypeScript 保证的是「你按说好的形状写代码」，而非「世界会按说好的形状给你数据」，类型安全不等于数据安全，此为其刻意设计。"
+        },
+        {
+          "stance": "边界反思",
+          "summary": "议程将话题引向 TS 7 的 erasable syntax，认为语言正回头确认自身边界，理解这一点是从「会用 TS」到「真正理解 TS」的分水岭。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "TypeScript 7 迁移实操刷屏：新旧项目升级决策清单与双版本并行方案",
+      "summary": "8 月初多篇迁移指南密集发布，给出「先升 6.x 清干净、再用 @typescript/native-preview 做 CI 快速检查、等 7.1 再全量迁移」的分阶段路线，指导开发者避坑。",
+      "source": "掘金 / 编程狮(w3cschool) / dev.to",
+      "url": "https://www.w3cschool.cn/article/32835935.html",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "实战指南",
+          "summary": "建议纯业务项目可立即升级、配置干净者几乎零改动；用到 es5/baseUrl/moduleResolution: node 或依赖程序化 API、Vue/Svelte/Astro 模板的项目应等待。"
+        },
+        {
+          "stance": "工程实践",
+          "summary": "给出双版本并行方案：装 @typescript/typescript6 兼容包或 @typescript/native-preview（tsgo）在 CI 提前享受约 10 倍提速，同时保持 ESLint 等工具可用。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 TypeScript 全网热度仍高，但情绪已从「10 倍提速」的兴奋转向「生态兼容缺口与迁移焦虑」。主流观点是「性能确实真香，但先别急着升」，普遍呼吁等待 7.1 补齐程序化 API 后再全量迁移，整体呈谨慎乐观与技术理性基调。",
+  "honesty_note": "说明：最近 24-48 小时（8月9-10日）缺少 TypeScript 品牌级的新发布，热点多为 7 月 8 日 TypeScript 7.0 正式版发布后的持续发酵（迁移讨论、生态兼容、观点文章与社区演讲），信息较充分但属「持续话题」而非全新事件。关联话题：TypeScript 7.1 迭代计划（程序化 API 预计 2026 年 10 月，GitHub issue #63703）、typescript-eslint TS7 兼容进展（issue #12518）、以及前端工具链 Go/Rust 重写趋势（Bun 迁移 Rust、Vue 3.6 Vapor Mode 等）。"
+}

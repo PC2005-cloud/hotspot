@@ -1,0 +1,151 @@
+已完成联网搜索。以下是根据关键词「Python」在 2026-08-03 至 2026-08-10 期间整理的全网热点（含最近24-48小时动态），所有 URL 均直接取自搜索结果原始片段。
+
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "马斯克宣判代码死刑：AI直接生成二进制取代源代码，软件教父集体回怼",
+      "summary": "8月3日起，马斯克在X平台称源代码正变成下一个汇编，未来由AI直接生成二进制、砍掉Python等中间层语言，引发《代码整洁之道》作者与UML之父等软件界名人强烈反对。",
+      "source": "太平洋科技/新智元",
+      "url": "https://www.pconline.com.cn/focus/2179/21798026.html?ad=9448",
+      "published_time": "2026-08-06 16:50",
+      "perspectives": [
+        {
+          "stance": "支持方观点（马斯克、James Douma）",
+          "summary": "特斯拉前工程师Douma称已像信任编译器一样信任AI代码，马斯克跟进称「源代码正在变成下一个汇编」，应直接让AI生成高效二进制，人类写码读码环节将被消灭。"
+        },
+        {
+          "stance": "反对派观点（Uncle Bob Martin、Grady Booch）",
+          "summary": "《代码整洁之道》作者建议保留中间表示过渡；UML之父Booch反驳称「足够精确、可重复、可审查的语言按定义就是编程语言」，AI是概率性生成而编译器是确定性翻译，缺乏可信任性。"
+        },
+        {
+          "stance": "媒体客观分析",
+          "summary": "现实中谷歌近80%新代码已由AI生成，但「直接生成二进制」尚无任何产品落地；这场争论本质是人类能否信任自己看不懂的工程体系。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Python 3.15.0rc1 正式发布：首个候选版本，引入显式延迟导入与内置frozendict",
+      "summary": "8月4日Python官方发布3.15.0rc1，为3.15系列首个候选版本，包含PEP 810显式延迟导入、内置frozendict等新特性，3.15正式版定于10月1日发布。",
+      "source": "Python.org",
+      "url": "https://www.python.org/downloads/release/python-3150rc1/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方发布立场",
+          "summary": "发布团队强调进入候选发布阶段后不再新增功能，强烈鼓励第三方库维护者在本阶段测试3.15并尽早发布3.15 wheel，为10月1日正式版铺路。"
+        },
+        {
+          "stance": "社区反馈",
+          "summary": "有开发者反映3.15.0rc1的Windows embeddable发行版运行python.exe时出现标准库路径警告（issue #155254），属于RC阶段的待修复问题。"
+        },
+        {
+          "stance": "生态配套进展",
+          "summary": "cibuildwheel 4.2.0已默认构建CPython 3.15 wheel，并保证与正式版ABI兼容，方便第三方项目同步适配。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Python 3.14.7 与 3.13.15 维护版本发布，累计修复近900个bug",
+      "summary": "8月5日Python官方发布3.14.7与3.13.15两个维护版，分别包含约499个和400个bugfix、构建改进及文档更新，Heroku等云平台已同步上线新版本。",
+      "source": "Python.org/Heroku",
+      "url": "https://www.python.org/downloads/release/python-3147/",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布立场",
+          "summary": "3.14.7由86位贡献者带来约499项修复，3.13.15含约400项修复，建议生产环境用户尽快升级以获取安全与稳定性修复。"
+        },
+        {
+          "stance": "云平台跟进",
+          "summary": "Heroku于8月6日起在其Python应用中提供3.14.7和3.13.15，开发者可直接选用新版运行时。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "MCP Python SDK 迎来史上最大改版v2.0.0：FastMCP更名MCPServer、协议无状态化",
+      "summary": "MCP官方Python SDK发布2.0稳定版，核心类FastMCP更名MCPServer，协议改为无状态、取消session握手，支持2026-07-28版规范，成为生态近期最大规模迁移。",
+      "source": "Real Python/GitHub",
+      "url": "https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.0.0",
+      "published_time": "2026-08-02（7月28日发布，8月初持续发酵）",
+      "perspectives": [
+        {
+          "stance": "官方及技术媒体立场",
+          "summary": "Real Python称这是MCP诞生以来最具颠覆性的改版：FastMCP更名MCPServer无别名、OneClient整合三层结构、wire类型改snake_case，同步处理器改到工作线程运行。"
+        },
+        {
+          "stance": "迁移者视角",
+          "summary": "1.x进入仅安全修复的维护模式，官方建议未就绪者先锁定mcp>=1.28,<2；Tasks扩展已移出核心规范但尚未进入Python SDK，迁移存在一处空白。"
+        },
+        {
+          "stance": "安全提醒",
+          "summary": "专家提示第三方MCP服务器仍无代码签名要求与实质审查，安装的服务器可自行描述工具给Agent，应像对待任何依赖一样严格审查。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Nvidia开源NOOA框架：一个Python类就是一个AI Agent，引发审查与安全讨论",
+      "summary": "Nvidia开源Python Agent框架NOOA（面向对象智能体）将Agent能力、状态与提示词封装进单一Python类，8月持续引发开发者热议，专家肯定其可测试性但提出审查与安全新问题。",
+      "source": "The New Stack",
+      "url": "https://thenewstack.io/nvidia-nooa-agent-framework/",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "支持方观点",
+          "summary": "NOOA以Apache 2.0开源、pip install nooa即可安装，将Agent封装为一个类使测试与审查更直观，被视为Agent开发范式的重要转变，SWE-bench约82.2%。"
+        },
+        {
+          "stance": "质疑方观点",
+          "summary": "有专家认为这种封装会带来新的代码审查与安全隐患，且框架处于v0.0.8 alpha早期阶段，尚需更多社区验证。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Python供应链安全警报升级：CPython CVE激增、PyPI收紧上传策略防投毒",
+      "summary": "8月初Python生态安全议题集中爆发：CPython安全报告量激增，PyPI拟在发布版14天后拒绝新文件以封堵供应链漏洞，业内复盘LiteLLM投毒事件并呼吁加强三方防护。",
+      "source": "OSCHINA/CSO Online",
+      "url": "https://www.csoonline.com/article/4206245/python-package-security-in-2026.html",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "生态治理举措",
+          "summary": "Python周刊W31梳理PyPI 14天上传限制、Django 6.1 RC1与PEP 751工具无关锁文件标准，意在收紧发布流程、封堵供应链投毒路径。"
+        },
+        {
+          "stance": "安全专家分析",
+          "summary": "CSO Online回顾3月LiteLLM被TeamPCP在PyPI植入恶意版本的攻击，强调签名验证、锁文件与权限最小化三项控制措施在当前环境下尤为重要。"
+        },
+        {
+          "stance": "社区焦虑情绪",
+          "summary": "CPython CVE数量激增（含bz2.BZ2Decompressor缓冲区溢出等）叠加供应链攻击频发，开发者对依赖可信度的担忧明显上升。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Shepherd开源Python运行时发布：让AI Agent支持Git式Fork与回滚，比Docker快5倍",
+      "summary": "8月9日东北大学与斯坦福团队发布Python运行时Shepherd，将Agent执行记录为类似Git的类型化事件轨迹，支持任意历史状态fork与重放，声称fork速度比Docker快5倍。",
+      "source": "MarkTechPost/AI情报前线",
+      "url": "https://feinterview.poetries.top/ai-monitor/news/meet-shepherd-an-open-source-python-substrate-that-lets-meta-agents-fork-replay-and-re",
+      "published_time": "2026-08-09 04:54",
+      "perspectives": [
+        {
+          "stance": "研究团队观点",
+          "summary": "Shepherd将Agent进程与文件系统做写时复制快照，回滚可恢复完整运行状态；实测实时监督使CooperBench通过率从28.8%提升至54.7%，重放prompt缓存复用率超95%。"
+        },
+        {
+          "stance": "审慎态度",
+          "summary": "项目处于早期alpha阶段，尚不建议生产环境使用；MIT许可，需Python 3.11+，权限执行支持macOS Seatbelt与Linux Landlock。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天Python圈的核心情绪围绕「AI与Python的关系重构」展开：马斯克「AI直出二进制、砍掉Python」的言论引爆了开发者对自身价值与代码可审查性的深层焦虑，支持与反对两极分化激烈；与此同时Python 3.15 RC发布、MCP SDK大改版、Nvidia NOOA、Shepherd等AI+Python新进展密集落地，展现生态加速拥抱AI的一面。此外CPython CVE激增与PyPI供应链收紧使安全焦虑明显上升，开发者整体呈「拥抱创新与技术焦虑并存」的复杂心态。",
+  "honesty_note": "由于本次搜索基准日期为2026-08-10，近7天（8月3-10日）内Python相关资讯总体充足；但需说明两点：其一，MCP v2.0与Nvidia NOOA实际发布于7月底，8月初为持续发酵期，非窗口期首发；其二，搜索返回的部分中文页面（如OSCHINA周刊）未抓到完整正文，细节以摘要为准。关联话题可关注：OpenAI收购Astral（uv/Ruff）后续、PEP 836「JIT Go Brrr」路线图、PSF首届Packaging Council选举（提名至8月11日截止）、GitHub热榜8月9日热门语言Python。"
+}

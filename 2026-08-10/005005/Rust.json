@@ -1,0 +1,123 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rust 项目正式采纳 LLM 使用新规：能帮你看，不能替你写",
+      "summary": "8月5日 Rust 编译器、标准库等五个团队正式采纳针对 rust-lang/rust 主仓库的 LLM 使用政策，核心是【可用 LLM 回答问题、分析、检查、审查，但禁止用于直接创造】，以应对积压约 1281 个 PR 的 AI 代码审查压力，并设 ai-assisted 标签与六周熔断机制。",
+      "source": "Inside Rust Blog / 机器之心 / InfoQ / 今日头条",
+      "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+      "published_time": "2026-08-05（中文媒体集中报道于 08-06 至 08-09）",
+      "perspectives": [
+        {
+          "stance": "官方公告（政策作者 Jynn Nelson）",
+          "summary": "漂亮完整的 PR 已不再代表作者的投入与理解，LLM 加剧审查带宽危机，故以成文规则取代此前【蛮荒西部】式管理；政策欢迎 AI 辅助思考，但不接受机器代替人思考，并禁止因使用 LLM 而骚扰他人。"
+        },
+        {
+          "stance": "行业媒体分析（机器之心、InfoQ）",
+          "summary": "AI 扩大了代码产能却未同步扩大人类审核产能，代码越来越便宜、人的判断越来越贵；Rust 与全面禁用 AI 的 Zig 形成对比，选择有条件放行并设 50% 合并占比熔断机制，被视为 AI 编程治理的重要试验。"
+        },
+        {
+          "stance": "社区分歧声音",
+          "summary": "Rust 项目内部对 AI 态度分歧明显，有人视其为价值工具，有人因社会与气候影响认为任何使用都不可接受，还有多数人观望；政策自述【很可能永远不会形成共识】，并预留了未来项目级 LLM 委员会覆盖升级的空间。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Rust 在 nightly 启用 Polonius Alpha 借用检查器，年内有望稳定",
+      "summary": "8月4日 Rust 团队宣布在 nightly 版本启用开发多年的 Polonius Alpha 借用检查器供大规模测试，预计今年晚些时候完成稳定化，可让更多健全代码通过编译，被视为 Rust 内存安全机制的重要演进。",
+      "source": "InfoWorld / Neura News",
+      "url": "https://www.infoworld.com/article/4206875/rust-preps-improved-borrow-checker-for-stabilization.html",
+      "published_time": "2026-08-06 至 08-08",
+      "perspectives": [
+        {
+          "stance": "官方说明（Rust 团队成员 Jack Huey）",
+          "summary": "目前无已知剩余问题，性能总体可接受，nightly 测试旨在发现严重性能回退、公式化不健全与诊断问题，开发者可用 -Zpolonius=off 回退到现有 NLL 检查器。"
+        },
+        {
+          "stance": "技术媒体解读（InfoWorld、Neura）",
+          "summary": "Polonius 自 2018 年开始开发，2023 年新公式化方案需对 NLL 实现做最小重构并允许更多健全代码通过，是长跑多年的语言级基础设施项目，本次启用是走向稳定的关键里程碑。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "生存游戏《Rust》8 月大型更新「Power Trip」上线，独狼玩家担忧利好公会",
+      "summary": "8月6日《Rust》强制清档同步上线大型更新「Power Trip」，引入发电厂重启电网、玩家维护纪念碑、卫星坠落事件、Bar Games Pack 桌球飞镖 DLC 与大幅性能优化；部分玩家在 Reddit、X 上担忧更新偏向大型公会、挤压独狼。",
+      "source": "Polygon / Game*Spark / GamingHQ",
+      "url": "https://www.polygon.com/rust-august-force-wipe-update-shell/",
+      "published_time": "2026-08-03 至 08-06",
+      "perspectives": [
+        {
+          "stance": "官方及媒体综合报道（Polygon、Game*Spark）",
+          "summary": "本次更新以纪念碑互动与全岛电网为核心，发电厂重启动不同等级电力、室外回收机效率随供电变化、新增卫星坠落 PvP 事件与油料运输链，并优化启动速度与服务器性能，被称彻底改变游戏玩法。"
+        },
+        {
+          "stance": "玩家质疑（Reddit、X 社区讨论）",
+          "summary": "不少独狼玩家认为新系统（纪念碑维护、卫星坠落、高墙 20% 维护成本）实质利好公会与大型团队，使独狼处境雪上加霜，社区对更新公平性存在明显分歧。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "遭报假警瘫痪，《Rust》玩家起诉警方索赔 1.76 亿美元",
+      "summary": "亚利桑那州图森 23 岁玩家 Axeel Melendez 今年 4 月在家玩《Rust》时遭黑客报假警（swatting），被闯入警员开枪击中腿部与脊柱导致瘫痪，现正式起诉皮马县及警长办公室，索赔 1.76 亿美元。",
+      "source": "IGN / 网易 / Yahoo 奇摩",
+      "url": "https://www.ign.com/articles/rust-fan-sues-police-after-swatting-incident-leaves-him-paralyzed",
+      "published_time": "2026-08-03（国内中文报道亦于 08-03 发酵）",
+      "perspectives": [
+        {
+          "stance": "原告方（玩家本人及律师）",
+          "summary": "Melendez 在事件前已两次向 911 预警可能遭报假警并获【不会有事的】安抚，警方仍破窗开枪，被其形容为【鲁莽危险、先开枪后思考】的心态，索赔覆盖医疗费与未来收入损失。"
+        },
+        {
+          "stance": "警方立场（未公开回应）",
+          "summary": "当地警方与警长办公室拒绝就此事进一步置评，涉案警员执法记录视频已公开，事件细节与执法合理性仍存争议。"
+        },
+        {
+          "stance": "媒体评论（IGN 等）",
+          "summary": "swatting 已成为游戏圈常见网络暴力，受害者家属已提交索赔通知；事件再次引发对报假警危害与警方处置不当的公众讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "生存游戏《Rust》原声带首次推出黑胶唱片（3LP）",
+      "summary": "Laced Records 于 8月6日确认发行 Alex Rehberg 作曲的《Rust》原声带 3LP 黑胶套装，收录 29 首特别重制曲目及与 Facepunch 设计师合作的工业风封面，含标准黑胶与灰黑泼墨限定盘两种版本。",
+      "source": "NME / Laced Records",
+      "url": "https://www.nme.com/news/gaming-news/rust-game-soundtrack-is-coming-to-vinyl-for-the-first-time-3961179",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "媒体及发行方综合报道（NME、Laced Records）",
+          "summary": "原声带以环境音景、锯齿合成器与重鼓呈现游戏的黑暗、残酷与危险感；作曲家 Rehberg 表示创作中也保留脆弱和平与希望的时刻，如满载回基地或安全墙内照料作物。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "分析观点：Rust 崛起不是语言战争，而是供应链权力的重新洗牌",
+      "summary": "观点文章称白宫报告点名、微软重写 Windows 内核、AWS Lambda 底层换用 Rust、Android 大量引入 Rust 代码，指出 Rust 因内存安全正成为供应链安全与云原生关键，并预测未来 12 个月出现工具链并购潮。",
+      "source": "龙飞科技（lfdjt.com）",
+      "url": "https://www.lfdjt.com/info_23_8083.html",
+      "published_time": "2026-08-08",
+      "perspectives": [
+        {
+          "stance": "行业分析作者观点",
+          "summary": "Rust 的崛起本质是权力转移——谁掌控底层安全与效率谁就掐住数字世界咽喉；CISA 将内存不安全语言列为高危、欧洲数字主权推动开源基础设施 Rust 占比上升，作者建议企业立即启动 Rust 转型。"
+        },
+        {
+          "stance": "文中补充的产业事实",
+          "summary": "AWS 用 Rust 写 Firecracker 微虚拟机、微软组建 Rust 团队并给 Rust 基金会投入、谷歌 Android/Fuchsia 采用 Rust，巨头通过基础设施工艺锁定构建云原生价值链。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周「Rust」舆情高度聚焦 AI 编程治理：Rust 为 LLM 立新规【能帮你看不能替你写】成为全网热议，开发者普遍认同 AI 加剧审查负担、判断不能外包，情绪以理性支持为主；技术圈同时期待 Polonius 借检器稳定。游戏《Rust》侧，8 月大更新引发【利好公会 vs 独狼】的公平性争议，报假警致瘫索赔案则激起公众对 swatting 网络暴力的愤怒与对受害者的同情。",
+  "honesty_note": "近7天热点信息充足，但最近 24-48 小时（08-08 至 08-10）内未见全新重大事件，多为 8月5日 LLM 政策的多轮转载与深度解读，以及 8 月游戏更新余温；另提示关联话题「OpenAI 成为 Rust 基金会白金赞助商（每年32.5万美元）」发生于 6 月 17 日，超出本时间窗口，故未列入榜单。所有 url 均直接取自搜索结果或已核实页面，未做任何拼接。",
+  "start_time": "2026-08-10 00:58",
+  "end_time": "2026-08-10 01:00",
+  "elapsed_seconds": 84,
+  "retry_count": 0
+}

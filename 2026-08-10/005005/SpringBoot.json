@@ -1,0 +1,69 @@
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "CVE-2026-22731：Spring Boot Actuator 身份认证绕过漏洞分析与修复指引",
+      "summary": "奇安信攻防社区8月4日发布漏洞分析，指出 Actuator 健康组「附加路径」映射缺陷可致认证绕过，影响 4.0.3 以下、3.5.11 以下等版本，社区呼吁尽快升级修复。",
+      "source": "奇安信攻防社区",
+      "url": "https://mdr.skyeye.qianxin.com/forum/share/4957",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "技术分析（奇安信）",
+          "summary": "漏洞源于 Health Groups「附加路径」映射逻辑缺陷，安全拦截器无法正确应用认证逻辑，攻击者可绕过认证访问受保护敏感端点。"
+        },
+        {
+          "stance": "漏洞库与修复口径（OpenCVE/Snyk）",
+          "summary": "影响 Spring Boot 4.0~4.0.3、3.5~3.5.11、3.4~3.4.15，官方建议升级至 4.0.4+ 或 3.5.12+，与 CVE-2026-22733 类似但不完全相同。"
+        },
+        {
+          "stance": "厂商跟进（IBM/MongoDB）",
+          "summary": "多家云厂商已发布安全公告，要求迁移组件到已修复版本（如 migrator 1.16.0+），以消除 Actuator 认证绕过风险。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "This Week in Spring 官方周报：Phil Webb 访谈与生态动态盘点",
+      "summary": "Spring 官方8月4日发布周报，汇总生态动态，包括与 Spring Boot 联合创始人 Phil Webb 的对谈、幂等键开源项目、DynamoDB 集成及 AI 时代开源安全讨论。",
+      "source": "Spring 官方博客",
+      "url": "https://spring.io/blog/2026/08/04/this-week-in-spring-august-4-2026",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方视角",
+          "summary": "收录了 Spring Boot 请求幂等键工具、Spring Cloud 动态配置、RabbitMQ Streams 讲解等优质内容，并推荐与联合创始人的访谈。"
+        },
+        {
+          "stance": "生态风向",
+          "summary": "引述 The New Stack 关于「AI 正在改变开源安全格局」的报道，以及 agentic loops 概念科普，反映 AI 与安全成为社区关注主线。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Spring Boot 4.2 里程碑开发推进：8月20日截止，社区期待11月发布",
+      "summary": "GitHub 上 Spring Boot 4.2 里程碑大部分 issue 已关闭、进入收尾，目标截止日期为8月20日；据 InfoQ 报道，4.2 正式版预计2026年11月发布。",
+      "source": "GitHub",
+      "url": "https://github.com/spring-projects/spring-boot/milestones",
+      "published_time": "2026-08（进行中）",
+      "perspectives": [
+        {
+          "stance": "开发进度",
+          "summary": "4.2 相关里程碑（如 4.2.0-M1 候选）绝大多数 issue 已关闭，团队按8月20日截止节点推进迭代。"
+        },
+        {
+          "stance": "社区预期",
+          "summary": "开发者在评估 4.2 带来的 gRPC、可观测性等增量能力，并开始规划从 4.0/4.1 到 4.2 的升级节奏。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 SpringBoot 热点以「安全与演进」为主线：CVE-2026-22731 Actuator 认证绕过漏洞引发中文安全社区高度关注，升级修复诉求强烈；Spring AI 2.0 与 Agent 工程化讨论升温，开发者既兴奋于新能力又关注落地稳定性；同时存在「Spring Boot 5.0」误传与版本信息混乱，整体情绪偏向谨慎乐观、以实用升级为主。",
+  "honesty_note": "说明：在8月3日至8月10日窗口内 SpringBoot 并无全新大版本发布，最新稳定版仍为6月10日发布的 4.1.0，故热点多为安全公告、技术分析、官方周报与社区实践文章；个别来源（如 php.cn）对最新版本表述存在前后矛盾，建议以 spring.io 官方为准。关联话题可关注 Spring AI 2.0、Spring Boot 4.2 开发里程碑，以及同系列的 CVE-2026-22733 Actuator CloudFoundry 端点漏洞。",
+  "start_time": "2026-08-10 01:30",
+  "end_time": "2026-08-10 01:31",
+  "elapsed_seconds": 76,
+  "retry_count": 0
+}

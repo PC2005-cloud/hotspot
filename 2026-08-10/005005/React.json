@@ -1,0 +1,145 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "React Compiler 迁移 Rust 引发开发者两极热议",
+      "summary": "React 团队将 React Compiler（前身 React Forget）从 TypeScript 重写为 Rust 并合并进主仓库，编译提速最高 50%，Vercel 称在自家大规模应用中提升超 40%。",
+      "source": "InfoQ / 搜狐科技",
+      "url": "https://www.infoq.cn/article/xeM23uOSNw0s7Q8xUCTp",
+      "published_time": "2026-08-01 至 2026-08-06",
+      "perspectives": [
+        {
+          "stance": "技术媒体分析",
+          "summary": "Rust 版本作为 Babel 插件直接替换运行快约 3 倍、独立转换逻辑最高快 10 倍，全部 1725 个测试通过，中间状态与 TS 版几乎逐字节一致；实验性支持将在 Next.js 16.3 中推出。"
+        },
+        {
+          "stance": "社区担忧（网友质疑）",
+          "summary": "Hacker News 等平台开发者质疑该迁移大量依赖 LLM 生成代码，「没人真正理解实现细节」，担心认知债务与长期可维护性；有观点称「用 Rust 写的并不代表就是优秀的 Rust」。"
+        },
+        {
+          "stance": "生态分歧",
+          "summary": "Rust 化符合 SWC、Oxc、Rspack 的扩展趋势，但 Rolldown/Vite 因二进制体积增大约 5MB 已撤回集成，先进行「去垃圾化」处理，早期测试显示性能最高可提升 2 倍。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TanStack 官网停用 React Server Components（RSC）引架构反思",
+      "summary": "TanStack 创始人 Tanner Linsley 发布《We Removed RSC from TanStack.com》，宣布从自家官网移除 React Server Components，改用更简单的内容管道，引发对 RSC 复杂度的广泛讨论。",
+      "source": "TanStack Blog / 51CTO",
+      "url": "https://www.51cto.com/article/852119.html",
+      "published_time": "2026-08-03 至 2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方立场（TanStack）",
+          "summary": "停用 RSC 并非否认其价值，而是因为原本要解决的核心问题实为一套过大的 Markdown 与代码高亮依赖；简单管道减少了 JS 传输、提升网站速度且更易维护。"
+        },
+        {
+          "stance": "行业解读",
+          "summary": "文章指出 RSC 本可一次往返完成数据获取与渲染，但开发者习惯性把交互全部交给客户端，让流式渲染和 Suspense 的优势被闲置，决策边界才是关键。"
+        },
+        {
+          "stance": "争议观点",
+          "summary": "业界对 RSC 的讨论容易演变成站队题：支持者视其为默认范式，质疑者认为其将简单内容管道变成 Flight payload 加路由复杂度，牺牲了可解释性。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "React2Shell（CVE-2025-55182）遭持续利用传播 ZnDoor 恶意软件",
+      "summary": "安全机构警告攻击者持续利用 React Server Components 及 Next.js 的 React2Shell 高危 RCE 漏洞部署 ZnDoor 等恶意软件，多个 CVE（如 CVE23869）仍受关注。",
+      "source": "NCC-CSIRT / 尼日利亚国家CERT",
+      "url": "https://csirt.ncc.gov.ng/index.php/resources/security-advisories/391-zndoor-malware-exploiting-react2shell-vulnerability-to-compromise-network-devices",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "安全机构通报",
+          "summary": "React2Shell 漏洞在 React Server Components 与 Next.js 中持续被利用，攻击者可远程执行代码并投递 Linux 后门与 RAT，网络设备面临被攻陷风险。"
+        },
+        {
+          "stance": "漏洞情报分析",
+          "summary": "相关 RSC 系列漏洞还包括 CVE-2026-23869（CVSS 7.5 拒绝服务）等，均于 2026 年 5 月披露，NVD 更新显示仍需关注补丁覆盖情况。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "react-analyzer-mcp 曝路径穿越漏洞（CVE-2026-19323）",
+      "summary": "开源 MCP server 工具 react-analyzer-mcp 的 generateProjectDocs 函数存在路径穿越漏洞，本地低权限攻击者可越权读取任意文件，厂商尚未发布修复补丁。",
+      "source": "OpenCVE / 阿里云漏洞库 / VulDB",
+      "url": "https://app.opencve.io/cve/CVE-2026-19323",
+      "published_time": "2026-08-08 至 2026-08-09",
+      "perspectives": [
+        {
+          "stance": "漏洞披露（官方通报）",
+          "summary": "CVE-2026-19323（CVSS 4.8 中危）源于 projectName 参数处理不当，属 CWE-22 目录遍历，攻击需本地访问，主要造成本地敏感数据机密性泄露。"
+        },
+        {
+          "stance": "安全建议（专家分析）",
+          "summary": "项目采用滚动发布且未回应，建议以最小权限运行或放入沙箱容器，禁用 analyze-project 功能，并持续关注 GitHub 修复提交，目前未列入 CISA KEV 清单。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "React Native 0.87 定于 8 月 10 日正式发布",
+      "summary": "React Native 官方发布排期显示 0.87.x 稳定版于 202610 释出，支持周期覆盖三个 minor 系列，社区正在等待该版本带来的稳定性与性能改进。",
+      "source": "React Native 官网",
+      "url": "https://reactnative.dev/releases/overview",
+      "published_time": "2026-08-10（排期当日）",
+      "perspectives": [
+        {
+          "stance": "官方排期（综合报道）",
+          "summary": "0.87.x 于 7 月 6 日切分支，8 月 10 日发布，随后进入 Active 支持期；官方承诺维护最新 3 个 minor 系列并持续发布补丁。"
+        },
+        {
+          "stance": "社区预期",
+          "summary": "开发者关注 0.87 对 edge-to-edge 等旧问题修复与 Expo SDK 升级兼容性，此前 0.86 的改进被视作本轮升级的重要铺垫。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "HeroDevs 为已停止维护的 React 16/17 推出「永续安全支持」",
+      "summary": "HeroDevs 宣布推出 Never-Ending Support（NES）服务，面向仍被大量下载但已无上游补丁的 React 16.x/17.x，提供按 SLA 的 CVE 漏洞修复与合规支持。",
+      "source": "HeroDevs / TipRanks",
+      "url": "https://www.herodevs.com/blog-posts/herodevs-announces-never-ending-support-nes-for-react",
+      "published_time": "2026-08-03 至 2026-08-05",
+      "perspectives": [
+        {
+          "stance": "厂商公告",
+          "summary": "React 16/17 每周仍有数百万次 npm 下载但缺乏正式长期支持，NES for React 作为契约式支持层提供 drop-in 替代包与持续 CVE 修复，覆盖所有严重级别。"
+        },
+        {
+          "stance": "市场观察",
+          "summary": "分析指出该服务瞄准遗留 React 部署的安全合规缺口，是商业公司围绕框架 EOL 提供第三方长期支持的新商业模式。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "自媒体热文「Vue 正在吃掉 React 的午餐」引发框架之争",
+      "summary": "一篇发布于 8 月 9 日的观点文章称经济压力下企业转向维护成本更低的 Vue，认为 React 生态复杂度过高，预测头部 React 组件库将推出 Vue 版本，引发社区争论。",
+      "source": "lfdjt 科技自媒体",
+      "url": "https://www.lfdjt.com/info_23_8096.html",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "文章观点",
+          "summary": "认为 React「一切皆组件」的哲学维护成本高，状态管理生态熵增严重，而 Vue 内置响应式、模板对后端友好，在降本增效浪潮下边际成本优势凸显。"
+        },
+        {
+          "stance": "反对/质疑声音",
+          "summary": "社区普遍认为 React 在约 2980 万个项目、企业市场占比约 58% 的地位仍稳固，文章夸大了 Vue 的替代能力，属流量导向的「站队式」议题。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 React 圈最突出趋势是「Rust 化与去复杂化」：React Compiler 迁移 Rust 因提速明显而受捧，却因 LLM 参与改写和可维护性担忧引发两极争议；TanStack 停用 RSC 进一步放大了对架构复杂度的反思。安全方面 React2Shell 与 react-analyzer-mcp 漏洞持续拉响警报，开发者的主要情绪是「性能与可维护性之间如何取舍」，整体气氛理性但略带焦虑。",
+  "honesty_note": "React 相关热点多集中于技术社区与行业媒体，部分内容存在时效梯度：React Compiler 迁移 Rust 的原始合并发生在 7 月底，但讨论在 8 月 5-6 日仍持续发酵；「Vue 正在吃掉 React 的午餐」为自媒体观点文，热度来自争议性而非权威信息。窗口期内缺乏突破性的大版本发布，多为核心迭代与安全通告。关联话题：React 19.2.8 补丁版发布、MobX 7.0 发布、React Router 两项安全通告（CVE-2026-53669 开放重定向、CVE-2026-53666 信息泄露）、Expo 主推 React Native 跨端路线、Remix 3 去 React 化的框架之争。",
+  "start_time": "2026-08-10 01:18",
+  "end_time": "2026-08-10 01:21",
+  "elapsed_seconds": 170,
+  "retry_count": 1
+}

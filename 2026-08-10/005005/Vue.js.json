@@ -1,0 +1,91 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "Vue 稳定分支更新至 3.5.41，官方持续打磨修复为 3.6 预热",
+      "summary": "Vue 官方稳定分支于 8 月 5 日发布 3.5.41 补丁版本，修复 compiler-core 等多项问题，Forgejo 等大量项目同步升级依赖，社区进入 3.6 正式版发布前的密集维护期。",
+      "source": "endoflife.date",
+      "url": "https://endoflife.date/vue",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方动态（综合报道）",
+          "summary": "3.5 分支保持活跃维护，约每月两次补丁迭代，主要聚焦 bug 清理与稳定性打磨，为 3.6 正式版铺路。"
+        },
+        {
+          "stance": "社区反应",
+          "summary": "大量开源项目（如 Forgejo 等）陆续将依赖升级至 vue@3.5.41，官方维护节奏获开发者认可。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "观点文章称「Vue 正在吃掉 React 的午餐」，引发框架选型与格局之争",
+      "summary": "自媒体文章称企业收缩预算背景下 Vue 边际成本优势凸显，部分中型公司跳过 React 用 Vue 重写后台，并预测组件库大厂将推出官方 Vue 版本，引发前端圈激烈讨论。",
+      "source": "lfdjt.com（自媒体）",
+      "url": "https://www.lfdjt.com/info_23_8096.html",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "作者观点（看多 Vue）",
+          "summary": "React 生态熵增、状态管理库繁多、维护成本高，Vue 内置响应式系统与对后端友好的模板语法，在降本增效环境下更具竞争力。"
+        },
+        {
+          "stance": "网友质疑",
+          "summary": "观点偏主观且缺乏系统数据支撑，React 在企业级市场、就业机会与生态成熟度上仍占明显主导，不应被极端化叙事带偏。"
+        },
+        {
+          "stance": "理性对比",
+          "summary": "框架选型取决于团队存量、业务形态与人才供给，Vue 与 React 并存是常态，不宜非黑即白。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "「Vue 的降维打击：开源屠龙术为何难变现？」引发生态商业化大讨论",
+      "summary": "文章称 Vue 拥有 19.6 万 Star、日均 400 万 npm 下载却商业化收入微薄，Nuxt 靠众筹续命，呼吁尤雨溪推动盈利实体，避免 Nuxt 被云厂商并购，引爆开源变现话题。",
+      "source": "lfdjt.com（自媒体）",
+      "url": "https://www.lfdjt.com/info_23_8101.html",
+      "published_time": "2026-08-09",
+      "perspectives": [
+        {
+          "stance": "作者观点",
+          "summary": "开源信仰不能替代商业循环，官方认证、企业级支持订阅与组件市场抽佣是 Vue 可行的变现路径，否则可能沦为孤岛。"
+        },
+        {
+          "stance": "开源社区反对",
+          "summary": "强调开源独立性与社区信任的价值，担心过度商业化侵蚀开发者利益，认为靠赞助维持独立反而健康。"
+        },
+        {
+          "stance": "背景补充",
+          "summary": "此讨论延续 6 月 VoidZero 被 Cloudflare 收购、尤雨溪回应「Vue 与收购无关，且会活得更好」的热点脉络。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "uview-plus 3.0 连续更新：全面 Vue3 鸿蒙跨端移动组件库维护加速",
+      "summary": "uni-app 生态组件库 uview-plus 于 8 月 5 日连续发布 3.8.100 至 3.8.102，修复 H5 二维码绘制与文字行高问题，新增组合式 API 节点查询，兼容 Vue3 与鸿蒙多端。",
+      "source": "DCloud 插件市场",
+      "url": "https://ext.dcloud.net.cn/plugin?id=8744",
+      "published_time": "2026-08-06",
+      "perspectives": [
+        {
+          "stance": "发布动态",
+          "summary": "组件库维护更新稳定，主打 Vue3 与鸿蒙跨端移动开发，H5 二维码 HiDPI 缩放、文字渲染等 bug 集中修复。"
+        },
+        {
+          "stance": "开发者反馈",
+          "summary": "跨端兼容是移动开发刚需，社区高度关注鸿蒙 Next 与 uni-app-x 适配进展，可视化设计能力成加分项。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "8 月首周 Vue 圈热度集中于 Vue 3.6 Vapor Mode 的性能突破与 RC 冲刺，叠加稳定分支 3.5.41 发布，形成以「版本迭代」为主旋律的积极氛围；同时 Vue 与 React 格局之争、开源商业化变现话题引发激烈辩论，公众情绪整体看好 Vue 性能跃升，但对商业化和收购影响仍有分化担忧，理性观望与乐观并存。",
+  "honesty_note": "近 7 天（8 月 3-10 日）内 Vue 官方无重大里程碑事件，最大进展为 3.5.41 补丁版与 3.6 RC 阶段持续推进；部分高热话题（如 3.6 RC 发布、Vue&ViteConf 2026 上海演讲、VoidZero 被 Cloudflare 收购及尤雨溪回应）时间在 6-7 月，属滞后热度。另需说明 lfdjt.com 系自媒体内容农场，观点文质量参差，请谨慎采信。关联话题可关注 7 月 18 日 Vue&ViteConf 2026、Vue 3.6 Vapor Mode 兼容性适配及 uview-ultra 鸿蒙原生版本。",
+  "start_time": "2026-08-10 01:13",
+  "end_time": "2026-08-10 01:15",
+  "elapsed_seconds": 145,
+  "retry_count": 1
+}

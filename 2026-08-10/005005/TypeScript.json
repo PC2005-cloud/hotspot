@@ -1,0 +1,123 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "TypeScript 7.0 正式发布：Go 原生编译器让构建提速约 10 倍",
+      "summary": "微软发布 TypeScript 7.0，编译器从 JavaScript 逐行迁移到 Go（tsgo），借助原生代码与共享内存并行，构建与类型检查速度较 6.0 提升约 7.7 至 11.9 倍，成为本周前端圈最热话题并持续发酵至 8 月上旬。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/typescript-7-released/",
+      "published_time": "2026-08-02 起持续报道",
+      "perspectives": [
+        {
+          "stance": "官方及媒体报道",
+          "summary": "TypeScript 7.0 采用 Go 原生编译器，官方称大型开源项目构建提速最高近 12 倍，VS Code 构建时间从 77 秒降至 7.5 秒，宣告 JavaScript 自托管编译器时代的终结。"
+        },
+        {
+          "stance": "社区观望",
+          "summary": "不少开发者认为【编译快 10 倍】很香，但默认配置会直接丢弃一批老选项，建议等项目生态跟上后再升级更稳妥。"
+        },
+        {
+          "stance": "技术质疑",
+          "summary": "部分网友质疑为何选 Go 而非 Rust，官方回应称编译器充满循环数据结构且高度依赖自动 GC，用 Go 做逐函数迁移成本最低、行为对齐最可靠。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TypeScript 7.0.2 成为当前最新稳定版，npm 生态掀起批量升级浪潮",
+      "summary": "8 月初 TypeScript 7.0.2 成为 npm 最新版本，GitHub 上大量项目通过 Dependabot 在 8 月 4 日至 9 日把依赖从 5.x/6.x 批量升级到 7.0.2，成为近一周高频出现的技术动态。",
+      "source": "devcheck.dev / GitHub Dependabot",
+      "url": "https://devcheck.dev/package/typescript",
+      "published_time": "2026-08-04 至 08-09",
+      "perspectives": [
+        {
+          "stance": "版本追踪",
+          "summary": "npm 上 TypeScript 最新版为 7.0.2，7.0 为 GA 正式版，官方博客与 npm 仓库均已确认其稳定发布状态，7.0.2 为当前主推版本。"
+        },
+        {
+          "stance": "升级实践",
+          "summary": "大量开源仓库批量升级到 ^7.0.2，但部分项目因编译器编程 API 缺失及废弃配置报错，需配合修复才能通过 CI 校验。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TypeScript 7 迁移避坑指南刷屏：4 大迁移坑与双版本共存方案",
+      "summary": "掘金、w3cschool 等平台密集发文剖析 TS 7 迁移风险：strict 默认变 true、ES5 与 baseUrl 等废弃选项被移除、7.0 无稳定编译器 API，并给出 TypeScript 6/7 双版本并行方案。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7670162213918867456",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "实践派",
+          "summary": "普通 React/Node 项目可先在独立分支验证 TS7；Vue、Svelte、Astro、Angular 模板项目建议保留 TS6，不要只改版本号后直接合并。"
+        },
+        {
+          "stance": "保守派",
+          "summary": "官方推荐用 @typescript/typescript6 兼容包实现 npm alias 双版本，等 7.1 稳定 API 落地后再切换，避免工具链断裂。"
+        },
+        {
+          "stance": "性能关注",
+          "summary": "提醒并行参数并非越大越好，--checkers 与 --builders 存在乘法效应，在 CI 小核数环境下可能带来额外内存与调度压力。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Angular、Vue、ESLint 暂无法升级 TypeScript 7.0，官方预告 7.1 新 API",
+      "summary": "由于 TS 7.0 未提供稳定编译器编程 API，Volar、ts-jest、ts-morph、typescript-eslint 等工具暂时无法跑在新原生编译器上，新 API 预计随 7.1 在 2026 年 10 月推出。",
+      "source": "dev.to",
+      "url": "https://dev.to/the-modern-web/why-angular-vue-and-eslint-cant-upgrade-to-typescript-70-yet-and-why-ts-71-changes-441g",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "生态适配",
+          "summary": "依赖编译器内部 API 的框架插件（Angular 模板类型检查、Vue/MDX/Astro/Svelte 工作流）目前无法完整利用 TS7，只能等待 7.1。"
+        },
+        {
+          "stance": "工具链分析",
+          "summary": "有分析指出多数报道只庆祝提速数字、却对 7.0 缺失 Compiler API 的影响保持沉默，这将导致大量生产工具链出现兼容断层。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Yelp 用三年七个月将 140 万行 Flow 代码迁移到 TypeScript",
+      "summary": "Yelp 工程博客发布复盘：历经三年七个月把 140 万行 Flow 单仓迁移到 TypeScript，2026 年 2 月完成最后一个包迁移，82% 受访工程师反馈开发体验提升，成为大型代码库迁移的参考案例。",
+      "source": "Yelp Engineering Blog",
+      "url": "https://engineeringblog.yelp.com/2026/08/migrating-a-large-flow-monorepo-to-typescript.html",
+      "published_time": "2026-08-03",
+      "perspectives": [
+        {
+          "stance": "工程实践",
+          "summary": "文章复盘了大仓迁移的路径与踩坑，强调统一类型检查器带来的长期收益，并给出可复用的迁移方法论与节奏建议。"
+        },
+        {
+          "stance": "开发者反馈",
+          "summary": "内部调研显示 82% 的工程师表示体验有所提升、其中 45% 提升明显，佐证 TypeScript 对大型工程的价值。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Axilla：面向 TypeScript 的端到端 AI 框架登陆 YC Launch",
+      "summary": "Y Combinator 发布 Axilla，定位为面向产品型 TypeScript 开发者的企业级 LLM 应用开发框架，提供模块化库并支持渐进式采用，成为本周 TypeScript 加 AI 方向的新热点。",
+      "source": "Y Combinator",
+      "url": "https://www.ycombinator.com/launches/J8u-axilla-an-ai-framework-for-typescript",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "产品发布",
+          "summary": "Axilla 强调以 TypeScript 为中心、全类型安全与易用建模工具，瞄准 AI 工程师群体，与 TypeScript 成为 AI 时代主流语言的大背景相契合。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 TypeScript 圈最热话题集中在 TS 7.0/7.0.2 的 Go 原生编译器上。开发者整体情绪【既兴奋又谨慎】：一方面为约 10 倍编译提速、VS Code 原地起飞而欢呼，另一方面因 strict 默认开启、老配置被移除、稳定编译器 API 缺失、框架工具无法及时适配而选择观望。迁移避坑与双版本共存成为讨论主旋律，舆情以技术理性为主，夹杂少量对升级成本的吐槽。",
+  "honesty_note": "核心事件 TypeScript 7.0 正式版发布于 2026-07-08，严格说早于本时间窗起点，但 8 月 2 日至 10 日期间其媒体报道、7.0.2 迭代、生态批量升级与迁移避坑讨论仍高度密集，故作为本周热点主体收录。个别资讯（如 Axilla 发布、Yelp 迁移）热度相对有限。若需更强时效，建议关注 TypeScript 7.1 编译器 API 进展、Vue/Angular 官方适配公告及微软官方 devblogs 的后续更新。",
+  "start_time": "2026-08-10 01:01",
+  "end_time": "2026-08-10 01:04",
+  "elapsed_seconds": 146,
+  "retry_count": 1
+}

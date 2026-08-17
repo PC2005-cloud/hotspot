@@ -1,0 +1,145 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Kubernetes CPU limit 再引争议：一份 PoC 称「多挂 500m limit 尾延迟慢 2.4 倍」冲上 Hacker News 热榜",
+      "summary": "GitHub 报告《Kubernetes CPU limits make your apps slow and costly》称同一负载多挂 500m CPU limit 后尾延迟慢 2.4 倍、高峰 89% 的 100 毫秒窗口被内核冻结且监控全绿，主张去掉 limit 只留 request，8 月 13 日引爆 Hacker News 与中文云社区讨论。",
+      "source": "Hacker News / ic.work",
+      "url": "https://www.ic.work/article/k8s-cpu-limit-poc-challenges-kubernetes-best-practice",
+      "published_time": "2026-08-13（HN 热议）至 2026-08-14（中文解读）",
+      "perspectives": [
+        {
+          "stance": "支持方（PoC 作者与 HN 热帖）",
+          "summary": "CPU request 对应 cpu.weight 已可公平调度，limit 对应 cpu.max 会在配额耗尽时把容器整段冻结；建议全集群移除 CPU limit，仅保留非信任三方负载、基准 Pod、绑定 CPU 的 Guaranteed QoS 三类例外。"
+        },
+        {
+          "stance": "质疑方（社区运维/专家）",
+          "summary": "单一仓库单作者数据无第三方复现，噪声邻居、HPA/KEDA 联动、QoS 变化、多租户隔离等常见质疑未获充分论证，成本模型也被标注为示例性质而非真实账单。"
+        },
+        {
+          "stance": "中文技术媒体（ic.work 锐评）",
+          "summary": "「孤证不立，但敲得响的钟总该有人去查一查」；建议 FinOps 与平台工程团队先核对真实集群利用率，强隔离的共享多租户集群不宜照搬去 limit 方案。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Kubernetes v1.37 临近发布：8 月 26 日定档，发布博客进入 Ready for Review，kube-proxy ipvs 与 kubectl run -f 计划弃用",
+      "summary": "v1.37 计划 8 月 26 日发布，8 月 13 日发布博客进入「Ready for Review」里程碑；官方预告弃用 kube-proxy 的 ipvs 模式与 kubectl run --filename，中文社区已出现升级兼容排查攻略，提醒卷健康字段回退 Alpha。",
+      "source": "kubernetes.io / LWKD / 17golang",
+      "url": "https://kubernetes.io/zh-cn/blog/2026/07/31/kubernetes-v1-37-sneak-peek/",
+      "published_time": "2026-08-13（里程碑）；升级攻略 2026-08-16",
+      "perspectives": [
+        {
+          "stance": "官方/发布团队",
+          "summary": "按三版本弃用节奏推进，kube-proxy ipvs 模式 v1.40 默认禁用、v1.43 移除，呼吁集群尽快评估迁移到 nftables/iptables 方案。"
+        },
+        {
+          "stance": "社区与分析机构",
+          "summary": "关注 HPA 可配置容差、Pod 证书、CBOR 序列化、Rootless Kubelet 等新特性进入 Alpha/Beta，强调本次更新偏重迁移准备、运行时安全与资源管理。"
+        },
+        {
+          "stance": "中文平台工程视角（17golang）",
+          "summary": "kubectl run -f 弃用与卷健康字段回退 Alpha 会冲击现有自动化，升级前应扫描脚本与流水线、做差异校验与灰度回归，勿把实验性字段当永久监控契约。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "2026 Kubernetes 指导委员会选举 8 月 14 日开启投票：3 个席位、两年任期",
+      "summary": "Kubernetes 社区 2026 年指导委员会选举于 8 月 14 日开启投票，本次开放 3 个两年任期席位；Kaslin Fields、Priyanka Saggu、Jack Francis 等候选人陆续加入名单，选举官员提醒候选人遵守反对过度竞选的社区准则。",
+      "source": "LWKD（Last Week in Kubernetes Development）",
+      "url": "https://lwkd.info/2026/20260806",
+      "published_time": "2026-08-14（投票开启）",
+      "perspectives": [
+        {
+          "stance": "官方社区",
+          "summary": "投票于 8 月 14 日开始，候选人需遵守既定竞选指南与反对过度竞选的社区政策，公众可见的 Steering Q&A 已于 8 月 5 日举行。"
+        },
+        {
+          "stance": "社区观察",
+          "summary": "关注新一届席位构成对项目治理走向以及各云厂商在指导委员会中话语权平衡的影响。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "开源 K8s 开发者平台 OpenChoreo 连曝多个高危漏洞（CVE-2026-73841/842/843），CVSS 最高 9.6",
+      "summary": "OpenChoreo（开源 Kubernetes 开发者平台）cluster-gateway 内部代理未做调用方认证且非只读，可读取数据面 Secret、任意变更工作负载并执行命令，多个 CVE 评级 Critical（CVSS 最高 9.6），已在 1.0.3/1.1.3/1.2.0-rc.2 等版本修复。",
+      "source": "NVD / OpenCVE / CVE Todo",
+      "url": "https://app.opencve.io/cve/CVE-2026-73842",
+      "published_time": "2026-08-12 至 2026-08-13",
+      "perspectives": [
+        {
+          "stance": "安全机构（NVD/OpenCVE）",
+          "summary": "漏洞归类为 CWE-306 缺失认证、CWE-269 权限管理缺陷与 CWE-862 缺失授权，NVD 于 8 月 13 日更新评级，定为 Critical。"
+        },
+        {
+          "stance": "厂商与修复指引",
+          "summary": "修复版本 1.0.3、1.1.3、1.2.0-rc.2 已发布，建议受影响用户立即升级并收敛 cluster-gateway 相关 API 的网络暴露面。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Red Hat ACM 曝严重提权漏洞 CVE-2026-10090：命名空间编辑者可提权为集群管理员，CVSS 9.9",
+      "summary": "Red Hat Advanced Cluster Management（ACM）存在严重提权漏洞 CVE10090，仅需命名空间级编辑权限即可部署高危对象并获得集群管理员权限，CVSS 高达 9.9，官方 8 月 5 日通报、8 月 16 日被安全媒体详细披露。",
+      "source": "Zerowl 安全博客",
+      "url": "https://blog.zerowl.io/red-hat-acm-flaw-lets-namespace-editors-escalate-to-full-kubernetes-cluster-admin",
+      "published_time": "2026-08-16",
+      "perspectives": [
+        {
+          "stance": "安全媒体（Zerowl）",
+          "summary": "多集群 ACM 场景下 hub 一旦被攻破，攻击者可改工作负载、访问 Secret、植入持久化控制器并影响托管集群，危害远超单集群。"
+        },
+        {
+          "stance": "缓解建议",
+          "summary": "官方修复前应限制 ACM hub 命名空间的 edit 权限，审计 Channel/Subscription 资源变更及异常集群级对象，并核查权限绑定。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Elastic Cloud on Kubernetes（ECK）曝信息泄露漏洞 CVE-2026-72648，官方发布 3.5.0 安全更新",
+      "summary": "ECK 存在环境变量明文存储敏感信息（CWE）漏洞，可导致服务账号令牌等信息泄露（CVSS 6.5 中危）；Elastic 发布 ESA113 安全公告，3.5.0 版本修复，阿里云漏洞库同步披露。",
+      "source": "Elastic Discuss / 阿里云漏洞库",
+      "url": "https://discuss.elastic.co/t/elastic-cloud-on-kubernetes-3-5-0-security-update-esa-2026-113/389493",
+      "published_time": "2026-08-12 至 2026-08-14",
+      "perspectives": [
+        {
+          "stance": "官方（Elastic ESA-2026-113）",
+          "summary": "ECK 在编排 Fleet Server 资源、以服务账号令牌认证 Elasticsearch 时把敏感信息明文写入环境变量，建议升级至 3.5.0。"
+        },
+        {
+          "stance": "国内安全库（阿里云 AVD）",
+          "summary": "于 8 月 14 日同步披露该漏洞，标注暂无公开利用情报、暂无补丁详情，提醒 ECK 用户关注升级。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "甲骨文 OCI Kubernetes Engine（OKE）上线受管节点版本回滚功能：可回退到更早 Kubernetes 版本",
+      "summary": "甲骨文宣布 OCI Kubernetes Engine（OKE）支持将节点池中受管节点的 Kubernetes 版本回滚到更早的可用版本，便于集群升级失败时快速回退，功能 8 月 14 日更新上线。",
+      "source": "Oracle Docs / 甲骨文官网",
+      "url": "https://docs.oracle.com/en-us/iaas/releasenotes/conteng/conteng_K8s-version-rollback.htm",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "厂商公告",
+          "summary": "通过为现有节点池指定更早可用版本即可回滚受管节点版本，降低集群升级风险、简化故障恢复流程。"
+        },
+        {
+          "stance": "社区观察",
+          "summary": "反映主流云厂商正集中加强「版本升级可回退」能力，缓解 K8s 版本升级的运维焦虑。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 K8s 话题呈三线并进：一是 CPU limit 是否该拆的性能与成本大讨论，情绪最热、正反交锋激烈；二是 OpenChoreo、Red Hat ACM、ECK 等多起高危漏洞密集曝光，安全焦虑明显上升；三是 v1.37 临近发布，社区聚焦升级兼容与弃用项排查。整体情绪偏务实与审慎。",
+  "honesty_note": "搜索结果总体充足，但热点时间上集中在 8 月 12 至 16 日，24-48 小时窗口内（8/15-17）新热点相对偏少，最新动态为 Red Hat ACM 漏洞披露与 v1.37 升级攻略。关联话题：Kubernetes Gateway API 达 v1.6（TCPRoute/UDPRoute 转正）、K8gb 晋升 CNCF Incubating、CoreWeave 等 AI 原生基础设施与 K8s GPU 调度实践、阿里云《2026 年企业 IT 基础设施 5 大趋势》（K8s 成云原生操作系统）等，均可作为延伸追踪。",
+  "start_time": "2026-08-17 00:42",
+  "end_time": "2026-08-17 00:44",
+  "elapsed_seconds": 134,
+  "retry_count": 0
+}

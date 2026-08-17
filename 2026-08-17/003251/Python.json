@@ -1,0 +1,69 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rails之父DHH用Claude把Python库「TerminalTextEffects」全盘重写为Rust，全程零手写代码",
+      "summary": "DHH仅靠Claude Fable 5、耗时3小时11分、烧掉1100万Token，将Python终端特效库TTE整体重写为Rust（新项目ttfx），启动提速约44倍、渲染快9.6倍，并放言「五年后没人读写代码」。",
+      "source": "搜狐/新智元",
+      "url": "https://www.sohu.com/a/1063219929_122014422",
+      "published_time": "2026-08-15 13:06",
+      "perspectives": [
+        {
+          "stance": "AI支持者/技术先驱",
+          "summary": "DHH演示AI一次「one-shot」完成跨语言重构，Claude Code之父Boris Cherny现身称赞，认为程序员将转向定义需求与验收而非手写代码。"
+        },
+        {
+          "stance": "行业担忧",
+          "summary": "评论区质疑Ruby等语言前景，程序员对「未来是否被AI取代」感到焦虑，认为代码生成边际成本趋零会冲击传统岗位。"
+        },
+        {
+          "stance": "综合报道",
+          "summary": "新智元梳理DHH从去年反对到今年全面转向Agent优先的态度反转，并对比Bun百万行代码迁移案例。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Python Packaging Council首届选举开跑：17人角逐5席，套件生态首次集中治理",
+      "summary": "PSF于8月13日公布首届Python封装委员会（PPC）候选人名单，17人竞选5席，覆盖NumPy、pip、PyPI等核心维护者，投票9月1日至15日举行。",
+      "source": "Charlie27's Blog/PSF",
+      "url": "https://www.charlie27.com/2026/08/2026-08-16-python-%e5%b0%81%e8%a3%9d%e5%a7%94%e5%93%a1%e6%9c%83%e9%a6%96%e5%b1%86%e9%81%b8%e8%88%89%e9%96%8b%e8%b7%91%e3%80%81arm-%e6%a0%b8%e5%bf%83%e8%a3%9c%e4%b8%81%e6%8e%a2%e7%b4%a2-128/",
+      "published_time": "2026-08-16",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "PSF公布选制：得票前两名任期两年、其余三人一年，支持、贡献及Fellow会员需先完成资格确认后方可投票。"
+        },
+        {
+          "stance": "生态观察",
+          "summary": "媒体关注候选人横跨Quansight、Bloomberg、Microsoft、OpenAI、NVIDIA等，认为结果将影响pip/PyPI/WheelNext等标准的资源分配与话语权。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Perplexity发布Search SDK：面向Agent的Python工具包，主打「Search as Code」",
+      "summary": "Perplexity于8月15日推出Search SDK，定位Agent优先的Python工具包，支持在代码中扇出多个搜索请求，包以pplx-srch-sdk发布到PyPI，可集成任意Agent框架。",
+      "source": "Perplexity官方文档/ME News",
+      "url": "https://perplexity.mintlify.app/docs/search-sdk/overview",
+      "published_time": "2026-08-15",
+      "perspectives": [
+        {
+          "stance": "官方宣传",
+          "summary": "官方称该SDK将Perplexity Computer的搜索能力引入应用，使Agent获得广度和深度的研究检索能力。"
+        },
+        {
+          "stance": "开发者反响",
+          "summary": "社区关注其对Python生态的扩充，认为搜索即代码模式契合当前Agent编程浪潮，可与各类框架组合使用。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Python热点高度集中在「AI重构编程」主线：DHH用Claude重写Python库与DeepSeek Harness开源引爆讨论，主流情绪兴奋于效率跃升，同时弥漫程序员角色与就业的焦虑；TIOBE榜强化Python第一地位；社区治理（PPC选举）与版本迭代（3.15 RC1）则收获理性关注。整体情绪偏正面但夹杂对AI替代的担忧。",
+  "honesty_note": "整体检索信息充足且时效性良好，多数热点集中在08-13至08-16。需说明：Python 3.15.0rc1与3.14.7/3.13.15正式发布于08-04/05，略早于08-10窗口，但本周（含08-13 Real Python播客）仍在持续讨论故收录。关联话题可补充：GitHub Trending周榜（08-16）Python系智能体项目semantica、prime-agent登榜；PyCon JP 2026将于08-21至23在广岛举办。",
+  "start_time": "2026-08-17 00:53",
+  "end_time": "2026-08-17 00:55",
+  "elapsed_seconds": 70,
+  "retry_count": 0
+}

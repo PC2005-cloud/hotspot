@@ -1,0 +1,101 @@
+{
+  "keyword": "Cloudflare",
+  "hotspots": [
+    {
+      "rank": 2,
+      "title": "Cloudflare发行21.75亿美元零息可转债（2031年到期），加超额配售总规模达25亿美元",
+      "summary": "8月11日Cloudflare宣布定价21.75亿美元零息可转债，8月13日正式发行，含325美元超额配售总规模约25亿美元，初始转换价约496.94美元/股，溢价约60%。",
+      "source": "Cloudflare官方新闻稿/Davis Polk/daytraders.com",
+      "url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-inc-announces-pricing-of-offering-of-2-175-billion-of-0-convertible-senior-notes-due-2031/",
+      "published_time": "2026-08-11（定价）至08-13（发行）",
+      "perspectives": [
+        {
+          "stance": "官方资本运作说明",
+          "summary": "公司称募集资金将用于一般公司用途及营运资金，为AI基础设施建设与扩张备足弹药，票面零利率凸显其高信用评级和投资者热情。"
+        },
+        {
+          "stance": "市场谨慎分析",
+          "summary": "有分析指出大额可转债发行带来潜在稀释压力，公告后股价有所回落，heygotrade等平台评论称市场正在消化融资与稀释影响。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Cloudflare发布2026上半年DDoS威胁报告：超1Tbps超大规模攻击暴增519%",
+      "summary": "报告显示上半年Cloudflare拦截2320万次网络层DDoS攻击、阻挡29.64万亿次HTTP恶意请求，1Tbps以上超大规模攻击达935次，环比暴增519%，中国成最受攻击地区。",
+      "source": "Cloudflare官方博客/GBHackers/日本Business Network",
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-h1/",
+      "published_time": "2026-08-11（报告发布）至08-16（媒体持续报道）",
+      "perspectives": [
+        {
+          "stance": "官方威胁研判",
+          "summary": "报告指出DNS洪水与CLDAP反射为主要攻击向量，地缘政治冲突（伊朗、乌克兰局势及世界杯相关报道）正重塑全球网络威胁态势。"
+        },
+        {
+          "stance": "媒体安全解读",
+          "summary": "多家安全媒体称「Tbps攻击已成为常态」，Q2中国吸收全球22.4%的HTTP DDoS请求位居攻击目标榜首，美国以18.8%居次。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Cloudflare推出Agent Tracing代理追踪功能，统一观测AI代理会话",
+      "summary": "作为Cloudflare Agents首个组件，Agent Tracing可在仪表盘集中查看代理会话、模型调用、工具执行与审批记录，目前beta免费，10月1日起并入Workers观测计费。",
+      "source": "InfoQ/Cloudflare开发者文档/theartofcto.com",
+      "url": "https://www.infoq.com/news/2026/08/cloudflare-agent-tracing/",
+      "published_time": "2026-08-14（发布）至08-16（持续传播）",
+      "perspectives": [
+        {
+          "stance": "官方产品定位",
+          "summary": "官方称该功能为AI/ML代理行为提供关键可见性，弥补传统基础设施级观测的局限，是AI代理从「黑盒」走向可观测的重要一步。"
+        },
+        {
+          "stance": "开发者社区讨论",
+          "summary": "社区关注到官方提醒追踪为有损（lossy）且10月起每个span计费，部分开发者对追踪截断限制与成本门槛提出讨论与疑问。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Cloudflare将cdnjs完全迁移至自家开发者平台，验证日90亿请求的边缘计算能力",
+      "summary": "Cloudflare把每天服务约90亿次JS/CSS请求的开源CDN cdnjs全量迁移到自有Workers、R2、KV等开发者平台，缓存命中率98.6%，展示其平台规模承载能力。",
+      "source": "InfoQ/techgig/theartofcto.com",
+      "url": "https://www.infoq.com/news/2026/08/cloudflare-cdnjs-migration/",
+      "published_time": "2026-08-13（InfoQ报道）至08-15",
+      "perspectives": [
+        {
+          "stance": "官方技术解读",
+          "summary": "官方称迁移并非因性能瓶颈，而是「dogfooding」自证其开发者平台成熟度，用自家构建块运行互联网最繁忙的开源CDN之一。"
+        },
+        {
+          "stance": "技术媒体评价",
+          "summary": "InfoQ等认为此举验证了Workers架构处理大规模CDN工作负载的能力，也体现Cloudflare在边缘计算与无服务器领域的平台自信。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Cloudflare Gateway新增MCP协议流量检测与AI安全仪表盘，护航AI代理安全",
+      "summary": "Cloudflare在Gateway中自动识别Model Context Protocol（MCP）流量，新增is_mcp选择器与MCP流量仪表盘，可显式允许或阻断AI代理间通信，针对绕过白名单端口的调用实施封锁。",
+      "source": "Cloudflare官方博客/4sysops/ppc.land",
+      "url": "https://blog.cloudflare.com/mcp-security-updates/",
+      "published_time": "2026-08-14（官方博客）",
+      "perspectives": [
+        {
+          "stance": "官方安全视角",
+          "summary": "官方称在AI代理激增的「vibe coding」时代，企业需要识别并管控MCP这一AI关键协议流量，防数据经代理外泄。"
+        },
+        {
+          "stance": "行业应用解读",
+          "summary": "安全媒体评价该功能补齐了AI代理流量可视与策略管控空白，与Wallets、Agent Tracing共同构成Cloudflare完整的AI代理治理闭环。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Cloudflare舆情主线是「AI代理经济」的全面落地与看多情绪：机器流量占比首超人类、AI代理钱包与观测工具接连推出、25亿美元融资加码，市场普遍将其视为AI时代的核心网络基建赢家，股价创历史新高、分析师集体上调目标价。争议点集中在AI流量主导引发的「死互联网」担忧、可转债稀释压力及Agent Tracing等新功能计费成本，整体情绪偏乐观但夹杂审慎讨论。",
+  "honesty_note": "说明：二季报及「机器流量反超人类」的引爆点为8月6-7日，略早于7天窗口，但其后续余波（股价新高、券商集体上调目标价、8月11-13日可转债融资等）均在8月10-17日窗口内持续发酵，故合并呈现；其余热点（DDoS半年报、Agent Tracing、cdnjs迁移、MCP检测）均落在窗口内且信息充分，无滞后。另可关联话题：8月4日发布的Cloudflare Wallets与cloudflare.pay（AI代理身份与钱包）、8月7日Workers AI与AI Gateway统一平台等。",
+  "start_time": "2026-08-17 00:55",
+  "end_time": "2026-08-17 00:56",
+  "elapsed_seconds": 57,
+  "retry_count": 0
+}

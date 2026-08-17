@@ -1,0 +1,119 @@
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "技术文章实测：Spring Boot 4 原生镜像启动 3.1 秒降至 52 毫秒，但坑也不少",
+      "summary": "技术栈作者 Flynt 于 8 月 17 日发布实测文章，记录支付回调服务切换到 Spring Boot 4 原生镜像的经历：启动提速约 60 倍、内存从 420MB 降至 78MB，但踩中反射配置、@Async 代理丢失、虚拟线程钉住、CI 构建 OOM 等大量坑。",
+      "source": "技术栈（jishuzhan.net）",
+      "url": "https://jishuzhan.net/article/2089132766154604546",
+      "published_time": "2026-08-17 07:30",
+      "perspectives": [
+        {
+          "stance": "作者实测分享",
+          "summary": "突发流量型服务（K8s HPA、Serverless、CLI）受益显著，502 基本消失；但长期稳定运行型服务收益有限，AOT 引擎覆盖度不足，复杂反射场景需手动维护 NativeHint 元数据，改造成本高。"
+        },
+        {
+          "stance": "技术同行观点",
+          "summary": "与 8 月初 CSDN 同类踩坑文章观点一致：原生镜像适合特定场景，构建 10-20 分钟、6-12GB 内存需求对 CI 是现实负担，建议本地用传统 JAR、仅 CI/CD 最终环节做原生编译，并走 3.5→4.0 渐进升级路线。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "SpringBoot 3 到 4 升级重点与迁移路线引发热议",
+      "summary": "脚本之家 8 月 14 日发文详解 Spring Boot 3→4 迁移：澄清「最低仍是 Java 17，Java 21 非强制」，核心变化是底层升级到 Spring Framework 7、Jakarta EE 11、Servlet 6.1，提醒重点规避 Jackson 3 与容器升级的坑。",
+      "source": "脚本之家（jb51.net）",
+      "url": "https://www.jb51.net/program/369200yry.htm",
+      "published_time": "2026-08-14 08:51",
+      "perspectives": [
+        {
+          "stance": "技术教程观点",
+          "summary": "强调升级四要点：最低 JDK 仍为 17、底座升级至 Framework 7 与 Jakarta EE 11、Jackson 3 与模块拆分是主要工作量、虚拟线程等能力并非 4.x 独占；推荐先站稳 3.5.x 再逐层验证迁移。"
+        },
+        {
+          "stance": "社区迁移共识",
+          "summary": "呼应官方及阿里云开发者文章，普遍认可「先 3.5 再 4.0」的渐进式路线，并提醒直接跳级风险大，第三方 Starter 与中间件兼容矩阵常是迁移的真正阻塞点。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Spring Framework 6.2 社区支持终止，TuxCare 推出 ELS 持续安全补丁",
+      "summary": "韩国电子新闻等媒体 8 月 14 日报道，Spring Framework 6.2 社区支持已于 6 月终止，开源安全厂商 TuxCare 宣布通过 Endless Lifecycle Support（ELS）为已 EOL 的 Spring Framework/Spring Boot 各版本持续提供安全补丁。",
+      "source": "电子新闻（etnews）",
+      "url": "https://www.etnews.com/20260814000081",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "厂商公告",
+          "summary": "TuxCare 表示通过 ELS 覆盖 OS、库、运行时到应用层的 EOL 组件，为 Spring Framework 与 Spring Boot 各版本持续打补丁，帮助企业缩小安全空白并按自身节奏迁移。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "媒体指出 6.2 支持终止后官方免费安全补丁停止，大量企业核心系统仍在运行旧版，开源 EOL 引发的安全运维负担加重，第三方 ELS 与升级迁移成为两条主要出路。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Spring Framework 多漏洞 CVE-2026-41838~41855 影响 API Gateway 等产品",
+      "summary": "Broadcom 8 月 12 日发布知识库文章，提示 API Gateway 11.2 中 Spring Framework 5.3.x、6.1.x、6.2.x 存在多个高危漏洞（CVE41838 至 CVE41855），其中 CVE41845 因 javaScriptEscape() 转义不当可致 XSS。",
+      "source": "Broadcom",
+      "url": "https://knowledge.broadcom.com/external/article/452100/handling-highseverity-va-scan-findings-f.html",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "官方安全通报",
+          "summary": "Broadcom 指南引导用户处理 API Gateway 环境中 Spring Framework 的高严重性 VA 扫描结果，并给出受影响版本（5.3.x/6.1.x/6.2.x）与升级修复建议。"
+        },
+        {
+          "stance": "漏洞库分析",
+          "summary": "Mend 等漏洞库补充：CVE-2026-41845 影响 Spring Framework 7.0.0~7.0.7 与 6.2.0~6.2.18，由不正确的转义导致 JS 代码注入（XSS），建议尽快升级对应补丁版本。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Spring Actuator 空默认内部密码认证绕过漏洞（GHSA-xfc5-796c-7hr9）",
+      "summary": "Appsmith 于 8 月 11 日发布安全公告：其 Spring Actuator 端点（/actuator/**）以 HTTP Basic 认证对比 APPSMITH_INTERNAL_PASSWORD 环境变量，空默认内部密码可导致认证绕过，漏洞由 bugbunny.ai 报告。",
+      "source": "GitHub Security Advisory",
+      "url": "https://github.com/appsmithorg/appsmith/security/advisories/GHSA-xfc5-796c-7hr9",
+      "published_time": "2026-08-11",
+      "perspectives": [
+        {
+          "stance": "安全公告",
+          "summary": "指出空默认内部密码可被利用绕过 Actuator 端点认证，评级低于典型未认证访问，建议立即设置强随机内部密码并轮换。"
+        },
+        {
+          "stance": "处置建议",
+          "summary": "强调避免将 Actuator 端点暴露在公网，并关注 Spring Boot 安全过滤器链默认授权规则相关公告，多个 Spring Boot Actuator 相关公告在 8 月上旬集中更新。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Undertow 响应头完整性漏洞 CVE-2026-19879 波及 Apache Camel for Spring Boot 4",
+      "summary": "8 月 13 日披露，Undertow HTTP 服务器响应头写入路径存在字符截断问题（CVE19879，CVSS 5.3），影响 Red Hat 构建的 Apache Camel for Spring Boot 4，官方暂未见量化利用证据。",
+      "source": "OpenCVE",
+      "url": "https://app.opencve.io/cve/CVE-2026-19879",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "漏洞披露",
+          "summary": "指出 writeString() 路径字符截断可能导致 HTTP 响应头完整性受损，属于中等严重度漏洞，影响 Spring Boot 4 相关供应链组件。"
+        },
+        {
+          "stance": "风险评估",
+          "summary": "EPSS 暂无量化利用证据，官方建议关注对应补丁与组件升级，避免响应头被截断引发安全策略绕过风险。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "过去一周 Spring 生态热点集中于 Spring Boot 4.x 原生镜像实测与 3→4 升级迁移、Spring Framework 6.2 EOL 后的安全运维，以及多起 CVE（Actuator 认证绕过、Undertow 等）引发的安全担忧。社区情绪呈「尝鲜热情与踩坑吐槽并存」：既惊叹启动提速约 60 倍，又对反射配置、构建耗时等改造成本普遍抱怨；企业侧担忧 EOL 后补丁真空，转向 TuxCare 等第三方 ELS。",
+  "honesty_note": "该关键词偏技术垂直领域，7 天窗口内（8 月 10-17 日）多为技术社区文章、安全公告与 EOL 报道，缺乏大众媒体级头条；其中 Spring Boot 4.1 发布本身在 6 月，8 月初仍有中文站点转载并持续热议，故列为关联热点并如实标注时间。关联话题：Spring Boot 3.5 已于 6 月 30 日 EOL、Spring Boot Admin SSRF（CVE-2026-62242，建议升级至 4.1.2）、Spring Boot 4 与 Quarkus/Micronaut 框架选型之争、基于 Spring Boot 的 kkFileView 路径遍历（CVE-2026-73244）。所有 url 均直接取自搜索结果原始链接。",
+  "start_time": "2026-08-17 01:13",
+  "end_time": "2026-08-17 01:15",
+  "elapsed_seconds": 132,
+  "retry_count": 1
+}

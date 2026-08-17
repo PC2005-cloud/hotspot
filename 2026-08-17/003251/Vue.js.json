@@ -1,0 +1,105 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "从 Virtual DOM 到 Vapor：Vue 3.6 的另一条路——Vapor Mode 深度解读刷屏",
+      "summary": "掘金与技术栈同步热推的深度技术长文，系统讲解 Vue 3.6 的 Vapor Mode：编译期把模板直接编译为精确 DOM 操作、彻底取消 diff 步骤，内存基线从约 50KB 降至约 6KB，被视为虚拟 DOM 时代的分水岭讨论。",
+      "source": "掘金 / 技术栈",
+      "url": "https://juejin.cn/post/7674145872715808768",
+      "published_time": "2026-08-15（技术栈版 08-16 17:18）",
+      "perspectives": [
+        {
+          "stance": "技术分析派",
+          "summary": "Vapor 借鉴 SolidJS 思路，把工作从运行时挪到编译期，v-if 用 DynamicFragment、v-for 用 key 到 DOM block 的精确复用，性能接近 Solid 与 Svelte 5，是 Vue 3.6 最重要的技术演进。"
+        },
+        {
+          "stance": "官方审慎口径",
+          "summary": "目前仍是 beta 阶段，仅支持 Composition API 与 script setup，Suspense、transition、SSR hydration、keepAlive、Teleport 等支持不完整，官方表示可评估但不宜立刻设为默认。"
+        },
+        {
+          "stance": "生态兼容担忧",
+          "summary": "Vapor 组件与 vdom 组件混用需 vaporInteropPlugin 桥接，Vuetify 等深度依赖 vdom 特性的组件库短期仍须留在 vdom 路径，调试工具与覆盖率统计等也需适配。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Vue 官方 GitHub 新提案：将组件公开 ref 与渲染元素 ref 分离",
+      "summary": "vuejs 官方组织发起 Discussion #15295 提案，建议把「组件公开实例（defineExpose 结果）」与「渲染 DOM 元素」拆分为两个独立一等概念，避免组件为暴露 DOM 而污染公开 API，引发社区对 useTemplateRef 语义的热议。",
+      "source": "GitHub（vuejs 官方组织）",
+      "url": "https://github.com/orgs/vuejs/discussions/15295",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "提案发起方",
+          "summary": "组件 ref 应代表行为与公开接口，element ref 应代表渲染与 DOM 集成，二者能力独立；建议仿照 fallthrough 属性的根节点解析规则，多根时显式处理。"
+        },
+        {
+          "stance": "待定观望派",
+          "summary": "讨论帖发布时尚无评论，具体 API 形态（element-ref、ref:element、useTemplateElement 等）均未定型，有待核心团队与社区充分论证后确定。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Nuxt 框架高危漏洞 CVE-2026-71314：未认证攻击可致 SSR 内存耗尽崩溃",
+      "summary": "漏洞库 8 月 14 日更新 CVE71314：攻击者无需认证即可通过 server island 的 v-for prop 触发无上限 SSR 内存分配直至进程崩溃（CVSS v3 7.5 / v4 8.7），影响 Nuxt 3.1.0.21.10 与 4.0.0.5.1。",
+      "source": "Mend 漏洞数据库 / 漏洞情报站",
+      "url": "https://www.whitesourcesoftware.com/vulnerability-database/CVE-2026-71314/",
+      "published_time": "2026-08-05 发布，2026-08-14 更新",
+      "perspectives": [
+        {
+          "stance": "漏洞公告口径",
+          "summary": "未认证远程攻击者可滥用 server island 的 vforToArray 等 v-for prop，在 MAX_VFOR_LENGTH=100000 上限内持续分配内存造成 DoS，威胁服务可用性。"
+        },
+        {
+          "stance": "修复运维建议",
+          "summary": "升级到 Nuxt 3.21.10 或 4.5.1 即修复，@nuxt/kit 的 3.21.11 与 4.5.2 稳定版已于 8 月 6 日发布，生产环境应尽快打补丁。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "主流前端技术分层选型：Vue3+TS 与 React 之争再引讨论",
+      "summary": "技术栈平台 8 月 16 日热文梳理 2026 年前端技术分层选型思路，围绕 Vue3 + TypeScript 组合式 API 的成熟度、Element Plus 生态与 Vue/React 选择展开系统对比，呼应社区对框架终局与求职方向的持续热议。",
+      "source": "技术栈 jishuzhan.net",
+      "url": "https://jishuzhan.net/article/2088908768351240194",
+      "published_time": "2026-08-16 16:40",
+      "perspectives": [
+        {
+          "stance": "Vue 阵营观点",
+          "summary": "Vue3 组合式 API 完全成熟、中文文档与 Element Plus 生态完善，向后兼容+向前演进的策略在存量项目迁移与快速交付上优势明显，适合中小团队。"
+        },
+        {
+          "stance": "React 对比观点",
+          "summary": "大型组织对 Vue 资深工程师储备仍有顾虑，React 在企业级主导地位更强；同时纯 JS 不用 TS 的痛点、Vue2 逐步淘汰等也被纳入选型考量。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "前端面试「造火箭」引吐槽：手撕 Vue3 响应式源码成内卷常态",
+      "summary": "8 月 14 日有文章直指前端面试内卷——招聘后台管理系统岗位却要求手撕 Vue3 响应式源码、Vite 打包链路甚至红黑树，被形容为「面试造火箭、工作拧螺丝」，折射 Vue 生态下的前端求职焦虑。",
+      "source": "skillup.host（前端面试热议）",
+      "url": "https://www.skillup.host/frontend/5343.html",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "求职者吐槽",
+          "summary": "大量岗位要求与日常业务严重脱节，深挖框架源码与算法属纯内卷骗局，期望面试考察更贴合实际工作能力。"
+        },
+        {
+          "stance": "招聘筛选逻辑",
+          "summary": "高薪大厂岗位看重扎实的框架原理与底层功底，深度考察被视作筛选候选人学习能力与潜力的必要手段，争议双方各执一词。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Vue 生态最热话题集中于 Vue 3.6 的 Vapor Mode——开发者既期待「取消 diff、直达 DOM」的性能红利，又对 beta 阶段限制与生态兼容保持审慎；同时官方 ref 提案、Nuxt 高危漏洞修复、Vue/React 选型之争及前端面试内卷讨论同步发酵，整体情绪为「技术热情 + 务实观望」并存。",
+  "honesty_note": "需说明：本窗口期（8月10-17日）Vue 核心仓库无大型版本发布，官方动态相对平缓——Vue 3.6 仍处 RC 阶段（rc.2，7月22日），3.5.41 补丁版发布于 8月5日（略早于本窗口），因此本周热点以社区深度技术文、官方 RFC 提案与生态安全通告为主，最近 24-48 小时的独立爆点偏少。关联话题：Vue 3.6 RC/Vapor Mode 与 alien-signals 响应式重构（7月下旬持续发酵）、Vite 8 及 VoidZero 被 Cloudflare 收购、State of Vue 2026 生态报告、前端周刊 463 期对 Vapor Mode 的跟进报道。",
+  "start_time": "2026-08-17 00:56",
+  "end_time": "2026-08-17 00:57",
+  "elapsed_seconds": 89,
+  "retry_count": 0
+}

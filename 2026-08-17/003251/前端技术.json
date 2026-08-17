@@ -1,0 +1,165 @@
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Vue 3.6 Vapor Mode 热议：去虚拟 DOM 的「另一条路」",
+      "summary": "Vue 3.6 的 Vapor 模式已进入 RC 且功能完备，可跳过虚拟 DOM、直接编译为细粒度 DOM 更新，运行时内存从约 50KB 降至约 6KB，中文社区于 8 月 15 日掀起深度讨论。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7674145872715808768",
+      "published_time": "2026-08-15",
+      "perspectives": [
+        {
+          "stance": "支持派（技术乐观）",
+          "summary": "编译器把更新精确到单个 DOM 节点，性能向 SolidJS、Svelte 看齐，被认为是 Vue 性能天花板的关键演进，而非换一种 diff 算法。"
+        },
+        {
+          "stance": "谨慎派（社区保守观点）",
+          "summary": "目前仅支持 Composition API 与 script setup，Options API、Suspense、Teleport 等支持不完整，Vuetify 等组件库仍依赖 vdom，建议渐进迁移而非全量切换。"
+        },
+        {
+          "stance": "官方口径",
+          "summary": "Vapor 功能已在 rc.1 趋于完整、API 预计不再大幅变动，官方表示可在生产环境评估但不宜默认启用，需留意 beta 阶段边界情况。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Firefox 成为最后一个完整支持 uBlock Origin 的主流浏览器",
+      "summary": "在微软 Edge 转向受限的 Manifest V3 扩展 API 后，Firefox 于 8 月 11 日公开承诺继续支持 uBlock Origin，成为主流浏览器中唯一保留完整广告拦截能力的选项，引发扩展生态热议。",
+      "source": "E-Ink 新闻日报",
+      "url": "https://news.e-ink.me/zh/archive/2026-08-15/article/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin",
+      "published_time": "2026-08-15 13:08",
+      "perspectives": [
+        {
+          "stance": "Firefox 官方表态",
+          "summary": "Firefox 通过 X 平台声明对 uBlock Origin 的支持不会终止，Gecko 引擎不采用 MV3，可继续提供完整广告拦截能力。"
+        },
+        {
+          "stance": "用户与隐私社区",
+          "summary": "Safari 与 DuckDuckGo 同样不支持 uBlock Origin，Firefox 成为依赖强大广告拦截功能的用户唯一无需妥协的选择，获较高评分与声援。"
+        },
+        {
+          "stance": "质疑与冷静声音",
+          "summary": "Chrome、Edge 转 MV3 是出于安全与性能考量，拦截类扩展能力受限是结构性变化，扩展生态可能因此碎片化，需理性看待。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "JavaScript using 关键字登陆 Safari，三大浏览器补齐显式资源管理",
+      "summary": "8 月 13 日 WebKit 发布的 Safari Technology Preview 250 完整支持 TC39 显式资源管理（using/await using），V8、SpiderMonkey、WebKit 三大 JS 引擎全部落地，开发者无需再转译该特性。",
+      "source": "TechTimes",
+      "url": "https://www.techtimes.com/articles/324489/20260814/javascript-using-keyword-lands-safari-closing-last-cross-browser-gap.htm",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "综合技术报道",
+          "summary": "using 会在作用域退出时自动调用 Symbol.dispose 清理资源，配合 DisposableStack 与 SuppressedError，补齐 JS 长久以来的资源管理短板。"
+        },
+        {
+          "stance": "开发者视角",
+          "summary": "TypeScript 开发者自 2023 年起一直靠转译使用 using，如今三大引擎原生支持，跨浏览器去 polyfill 升级路径变得现实。"
+        },
+        {
+          "stance": "谨慎提示",
+          "summary": "STP 250 仍是开发者预览，稳定版 Safari 上线时间未公布，生产环境上线前仍需核对兼容性表，暂不建议移除转译。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Astro 作者发布 Flue 2.0：以 React 风格 Agent Hooks 重构智能体开发",
+      "summary": "Astro 作者、Cloudflare 工程师 Fred Schott 发布首个稳定版 Flue 2.0，内置 16 个 Agent Hooks（如 useTool、useSubagent），用 React 组合式思路重构 AI 智能体开发框架。",
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/flue-2",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "作者观点",
+          "summary": "Flue 2 从路由式思路转向「React 式」组合，智能体必须依赖 harness（宿主环境）才能驱动自身工作，且框架保持开源、跨宿主可移植。"
+        },
+        {
+          "stance": "观察者分析",
+          "summary": "agent 框架仍处「jQuery 时代」，Flue 与 Vercel 的 eve 都以内置 harness 为核心，正在竞逐智能体开发范式。"
+        },
+        {
+          "stance": "社区讨论",
+          "summary": "用 TypeScript 编写 hooks 让智能体可动态挂载技能与子代理、按对话进程自适应，被视为前端开发经验向 AI 工程迁移的典型代表。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Astro 7 发布：Rust 编译器 + Vite 8 让构建提速最高 61%",
+      "summary": "内容型框架 Astro 发布 7.0，.astro 编译器与 Markdown 管线以 Rust 重写并升级 Vite 8，构建最高提速 61%；7.2 于 8 月 6 日带来增量静态构建。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/astro-7-release-speed/?topicPageSponsorship=f2d6ad81-4147-4708-a235-8d0e6a34eee8",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "官方介绍",
+          "summary": "本版主题几乎全部围绕构建性能，Rust 编译器搭配 Rolldown 打包显著缩短构建时间，7.2 增量构建进一步优化大型内容站迭代体验。"
+        },
+        {
+          "stance": "开发者反馈",
+          "summary": "构建与 Markdown 管线明显提速、增量构建顺滑，但迁移到新工具链对既有插件与配置存在一定成本。"
+        },
+        {
+          "stance": "趋势观察",
+          "summary": "Astro 7 与 TypeScript 7（Go 化）、React Compiler（Rust 化）共同印证前端工具链「原生化」浪潮正在加速。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Next.js 16.3 正式发布：开发内存最高降 90%，即时导航与 Rust React 编译器上线",
+      "summary": "Vercel 官宣 Next.js 16.3，为 Next 16 以来最大次版本更新：Turbopack 开发内存占用最高降 90%，新增即时导航与实验性 Rust 版 React 编译器，构建提速约 5.5 倍。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7671084241020305458",
+      "published_time": "2026-08-06（08-12 前端周刊持续收录发酵）",
+      "perspectives": [
+        {
+          "stance": "Vercel 官方",
+          "summary": "精简预请求机制并让 use cache 首次支持客户端缓存，实现 SPA 级别的即时导航响应，大幅改善大型项目导航体验。"
+        },
+        {
+          "stance": "社区评价",
+          "summary": "Rust 版 React 编译器与 Go 版 TypeScript 7 集成，冷启动耗时降 34%，被视为前端性能「原生化」的标志性事件。"
+        },
+        {
+          "stance": "兼容提示",
+          "summary": "import.meta.glob 仅支持 Turbopack、不可与 webpack 共用，升级前需评估现有依赖与 Babel 配置的迁移成本。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "2026 前端工具链「大逃杀」：TypeScript 7 用 Go 重写、React Compiler 拥抱 Rust",
+      "summary": "8 月中旬综述文章梳理前端工具链「原生化」革命：TypeScript 7 以 Go 重写提速约 10 倍、React Compiler 下沉 Rust、Vite 8 换用 Rolldown、Node 26 引入 vfs，底层自下而上重构。",
+      "source": "陈旭潭博客",
+      "url": "http://www.chenxutan.com/d/5982.html",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "趋势分析",
+          "summary": "从类型检查到打包器再到编译器全面转向原生实现，性能是核心驱动力，前端工具链进入「自下而上的原生化革命」阶段。"
+        },
+        {
+          "stance": "开发者声音",
+          "summary": "构建与类型检查提速明显，但 Vue、Svelte 生态暂不适配 TypeScript 7，老项目迁移与生态适配仍是现实顾虑。"
+        },
+        {
+          "stance": "业内讨论",
+          "summary": "ReactBench 显示编码代理实际任务通过率仅约 43%，提示工具性能提升与 AI 实际开发效率之间仍存在明显鸿沟。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周前端圈主旋律是「性能与原生重构」：Vapor 去虚拟 DOM、Rust 编译器、TypeScript 7 Go 化让提速成为热议核心；Firefox 坚守 uBlock Origin 引爆浏览器扩展生态之争；AI Agent 框架（Flue 2）与前端经验融合也在升温。整体情绪以技术兴奋为主，对迁移成本与生态适配保持谨慎观望。",
+  "honesty_note": "需说明：部分热点（Next.js 16.3、Astro 7 主线）正式发布时间早于 08-10，本窗口内以周刊综述与后续报道形式持续发酵，已按发酵时间标注；InfoQ 等站点存在反爬（访问返回 405），相关正文未能逐字核验，链接以搜索返回的原始片段为准。关联话题补充：08-12 至 08-13 在上海举行的 2026 Google 开发者大会（含 Chrome、AI 相关前端内容）、ECMAScript 2026 获批新增 API、Angular v22 稳定 Signal Forms（InfoQ 报道 08-09）可作延伸关注。",
+  "start_time": "2026-08-17 00:57",
+  "end_time": "2026-08-17 01:02",
+  "elapsed_seconds": 287,
+  "retry_count": 2
+}

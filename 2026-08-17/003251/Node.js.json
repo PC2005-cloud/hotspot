@@ -1,0 +1,139 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "ChainDrop 蠕虫大举入侵 npm 供应链，444 个软件包被投毒",
+      "summary": "Shai-Hulud 蠕虫新变种 ChainDrop 于 8 月 4 日入侵 keyv 维护者账号，4 小时内污染 444 个 npm 包、发布 2200 余个恶意版本，波及月下载量约 20 亿次的软件包，The Register 于 8 月 15 日披露详情。",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/08/15/chaindrop-worm-crawls-into-npm-supply-chain-evades-standard-defenses/5287958",
+      "published_time": "2026-08-15",
+      "perspectives": [
+        {
+          "stance": "安全厂商技术分析",
+          "summary": "Microsoft、Elastic、Datadog 等指出该蠕虫在 tarball 层注入载荷、Git 仓库无任何痕迹，并通过 .vscode/tasks.json、.claude/settings.json 等开发工具钩子在 IDE 内窃取凭据并自我传播，传统仓库扫描完全失效。"
+        },
+        {
+          "stance": "行业警示",
+          "summary": "The Register 与 ActiveState CEO 认为事件证明「干净 Git 历史即安全」的假设不再成立，依赖信任体系暴露深层裂痕，供应链接已从特征扫描转向身份与制品验证。"
+        },
+        {
+          "stance": "应急应对建议",
+          "summary": "新加坡网安局等机构建议 Node.js 用户立即轮换所有可发布权限的 npm token、审计每个分支的配置文件、核查依赖锁定文件，并将仓库配置视为可执行内容处理。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek Harness 引发 Node.js 安装潮，GitHub 星标突破 11.7 万",
+      "summary": "DeepSeek 开源的 Agent 工具 Harness 需先装 Node.js 再通过 npx 运行，吸引大量非前端背景开发者（产品经理、设计师等）安装 Node.js，GitHub 星标已达 11.7 万，Node.js 正成为 AI 工具的分发基础设施。",
+      "source": "AI 情报前线（dev.to 转载）",
+      "url": "https://feinterview.poetries.top/ai-monitor/news/deepseek-harness-has-everyone-installing-node-js",
+      "published_time": "2026-08-16 12:02",
+      "perspectives": [
+        {
+          "stance": "开发者正面评价",
+          "summary": "npx @deepseek-ai/dsh web 一条命令即可启动 Web UI，npm 分发链路简洁高效，认为 Node.js 正在成为 AI 编程工具、CLI 与 MCP 服务器的天然分发层。"
+        },
+        {
+          "stance": "用户摩擦与门槛",
+          "summary": "对不熟悉 JS 生态的用户而言，装哪个版本、在哪运行命令、如何升级回滚都成问题，官方 README 只要求安装 Node.js 未指定最低版本，体验门槛依然存在。"
+        },
+        {
+          "stance": "社区解决方案",
+          "summary": "社区开发者推出 DSH Desktop（Electron 桌面壳）打包内置 Node.js 24 LTS 并管理 DSH 版本，方便普通用户像打开桌面应用一样使用，但未经官方代码签名存在信任提示。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Node.js Interactive 2026 大会回归：一年一个大版本新政策官宣",
+      "summary": "阔别十余年的 Node.js Interactive 于 8 月 12 日在亚特兰大举行，官方确认自 v27 起改为每年一个大版本并全部转 LTS，Alpha 阶段 2026 年 10 月启动，同时公布 node:quic 与统一服务器 API 路线图。",
+      "source": "Node.js 官网",
+      "url": "https://nodejs.org/en/blog/events/nodejs-interactive-2026",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "官方核心信息",
+          "summary": "核心维护者 Matteo Collina 表示一年一大版本可降低升级压力，为 TypeScript 类型剥离、node:test、node:sqlite 与 Permission Model 等内建能力留出更长的稳定期。"
+        },
+        {
+          "stance": "开发者影响分析",
+          "summary": "中文技术媒体指出新节奏更可预期，但新功能会集中在单一大版本一次性推出；node:quic 与统一 HTTP/1.1/2/3 服务器 API 若成形，单一接口可处理三类流量，值得关注稳定化时程。"
+        },
+        {
+          "stance": "供应链安全议题",
+          "summary": "大会梳理了 Shai-Hulud、Axios 入侵等事件，强调防御重心从特征扫描转向身份验证式防线，如 npm trusted publishing 与短时凭据。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "npm 12 正式落地：默认禁用依赖安装脚本，供应链安全收紧",
+      "summary": "随 Node.js 分发的 npm v12 于 8 月初生效新默认策略，依赖的 preinstall/install/postinstall 脚本不再自动执行，需显式批准，同时收紧对非官方 registry 来源的控制，InfoQ 于 8 月 13 日解读。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/npm-12-released/",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "GitHub 官方立场",
+          "summary": "GitHub 表示 v12 默认跳过未获批准的安装脚本并给出警告但不中断安装，避免鸡生蛋问题，同时停用可绕过 2FA 的 granular access token，显著降低供应链攻击面。"
+        },
+        {
+          "stance": "开发运维适配",
+          "summary": "CI/CD 若需执行依赖脚本需提前配置 approve-scripts，构建管道应显式声明信任策略，否则 esbuild、bcrypt 等带 postinstall 的原生模块可能静默跳过安装。"
+        },
+        {
+          "stance": "社区权衡讨论",
+          "summary": "有观点认为关闭脚本并非万能药，仍须配合 Node --permission 运行时权限与制品签名，防范绕过脚本执行的其他攻击路径（如 ChainDrop 的 IDE 钩子）。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Node.js 高危漏洞持续发酵：zlib 崩溃与 HTTP/2 释放后使用，各发行版密集打补丁",
+      "summary": "Node.js 8 月上旬披露多枚高危漏洞，包括 CVE58045（伪造 TypedArray 触发 node:zlib 同步接口断言崩溃致拒绝服务）与 CVE56848（HTTP/2 重入调用致堆释放后使用），Oracle、SUSE 等 8 月中旬发布重要级安全更新。",
+      "source": "LinuxSecurity / Oracle 安全公告",
+      "url": "https://linuxsecurity.com/advisories/oracle/oracle8-elsa-2026-54371-nodejs",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "漏洞公告",
+          "summary": "CVE-2026-58045 影响 22.x、24.x、26.x 多分支的同步 zlib API，可被重复利用造成拒绝服务；CVE-2026-56848 为 HTTP/2 模块堆释放后使用，威胁机密性、完整性与可用性。"
+        },
+        {
+          "stance": "发行版跟进",
+          "summary": "Oracle Linux 8（ELSA-2026-54371）、SUSE SLES16（SUSE-SU-2026:23130-1）等先后发布重要级 nodejs 补丁，一次修复十余项漏洞，要求生产环境尽快升级。"
+        },
+        {
+          "stance": "运维响应视角",
+          "summary": "安全团队建议结合官方 7 月底安全版本与发行版补丁同步更新，并评估 zlib、HTTP/2 相关业务影响面，优先处理可达性强的服务端面。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Node.js 26.7.0（Current）发布：STORE 私钥直读、Perfetto 追踪加持",
+      "summary": "8 月 5 日发布的 v26.7.0 收录 140 余个 commit，新增 OpenSSL STORE loader 私钥直读（支持 HSM/云 KMS）、原生 Perfetto 追踪支持，以及 ModuleHooks 的 Symbol.dispose 与覆盖率新旗标，8 月中旬社区仍持续讨论。",
+      "source": "Node.js 官网",
+      "url": "https://nodejs.org/en/blog/release/v26.7.0",
+      "published_time": "2026-08-05",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "crypto 模块可通过 STORE loader 直接从 HSM 或云 KMS 拉取私钥而无需落盘，Perfetto 便于接入 Chrome/Android 生态的效能观测，多数变更为 SEMVER-MINOR 可安全升级。"
+        },
+        {
+          "stance": "运维与工程视角",
+          "summary": "Perfetto 支持让 Node.js 服务更容易纳入系统级性能观测管线，ModuleHooks 支持 Symbol.dispose 让模块加载钩子的资源清理更正确；需注意 inspector tracing 与 Perfetto 互斥。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Node.js 圈舆情由「安全」与「新增长」双线主导：ChainDrop 蠕虫投毒 npm 引发强烈警惕与恐慌情绪，供应链信任问题成最大关注点；同时 DeepSeek Harness 带动 Node.js 安装潮与 npm 12 默认禁脚本带来积极讨论，开发者普遍欢迎一年一大版本等降低升级压力的政策，整体情绪在戒备中偏正面。",
+  "honesty_note": "当前正值 8 月中旬，部分深度报道来自英文源（The Register、InfoQ、Node.js 官网），中文一手报道相对有限；Node.js 26.7.0 发布于 8 月 5 日略早于 7 天窗口但仍在社区持续发酵故一并收录。关联话题补充：Node.js 26.0 默认启用 Temporal API、node:quic/HTTP3 统一服务器 API 提案、npm 12 默认禁用安装脚本的 CI 适配讨论、TypeScript 7.0（Go 原生移植）等。",
+  "start_time": "2026-08-17 01:02",
+  "end_time": "2026-08-17 01:03",
+  "elapsed_seconds": 62,
+  "retry_count": 0
+}

@@ -1,0 +1,117 @@
+根据联网搜索结果，我已完成对近7天（2026-08-10 至 08-17）TypeScript 相关热点事件的检索与整理。以下是最终结果：
+
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "GitHub 周榜霸榜：TypeScript 成最热语言，AI 智能体项目 prime-agent 一周暴涨 8488 星",
+      "summary": "GitHub 2026 年第 33 周及周榜（08-16）显示，TypeScript 与 Python、Rust 并列最热语言，开源自主智能体项目 PrimeIntellect-ai/prime-agent（RLM 架构）一周新增约 8488 星，总星数破 1.6 万，另有多个 TS 项目登榜。",
+      "source": "开源中国 OSCHINA、GitHub 趋势榜",
+      "url": "https://my.oschina.net/u/9763067/blog/19740322",
+      "published_time": "2026-08-16",
+      "perspectives": [
+        {
+          "stance": "社区观察",
+          "summary": "本周 GitHub 趋势中 TypeScript 项目密集上榜，AI 智能体、RAG 工具等 TS 开源项目受追捧，反映 TS 正成为 AI 应用开发主力语言。"
+        },
+        {
+          "stance": "谨慎观点",
+          "summary": "部分开发者对 prime-agent 这类「自我改进」RLM 智能体持调侃态度，认为自我改进可能引发失控风险，热度炒作成分需理性看待。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "2026 前端工具链「大逃杀」：TypeScript 7 用 Go 重写，原生元年深度分析刷屏",
+      "summary": "8 月 14 日一篇深度长文走红，系统梳理 TypeScript 7 编译器移植 Go、React Compiler 拥抱 Rust、Vite 8 用 Rolldown、Node 26 引入 vfs 等动态，提出 2026 是前端工具链「原生化元年」，在开发者圈引发广泛转发讨论。",
+      "source": "chenxutan.com 博客",
+      "url": "http://www.chenxutan.com/d/5982.html",
+      "published_time": "2026-08-14 12:43",
+      "perspectives": [
+        {
+          "stance": "行业分析",
+          "summary": "观点认为 TypeScript 7 未改变类型语义，仅将 JS 版编译器逐行移植到 Go，完整构建提速 8 至 12 倍，原生 LSP 语言服务让补全、跳转「几乎无感」。"
+        },
+        {
+          "stance": "理性建议",
+          "summary": "作者提醒「原生下沉」有生态割裂、调试变难、跨语言工具链复杂三笔账，建议 npm v12 安全策略与 tsgo 可先上，Babel 8 等暂缓，别盲目追新。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TypeScript 7 迁移进行时：Vue/Svelte/Astro/ESLint 暂不能升，7.1 程序化 API 成生态关键",
+      "summary": "TypeScript 7.0 发布一个多月后，迁移讨论仍在发酵：因 7.0 尚无稳定程序化 API，Vue、Svelte、Astro、MDX 及 ESLint 等工具暂无法完整适配；官方已公布 7.1 迭代计划，预计 2026 年秋季发布以补齐缺口。",
+      "source": "GitHub（microsoft/TypeScript Issue #63703）",
+      "url": "https://git.codeproxy.net/microsoft/TypeScript/issues/63703",
+      "published_time": "2026-07-30（7.1 迭代计划，8 月中旬持续热议）",
+      "perspectives": [
+        {
+          "stance": "官方口径",
+          "summary": "微软团队在 7.1 迭代计划中明确，稳定程序化 API 与语言服务接口将随 7.1 落地，以解决框架模板类型检查器无法使用原生编译器的生态缺口。"
+        },
+        {
+          "stance": "开发者观望",
+          "summary": "多数社区观点认为「别急着升」：先用 TypeScript 6 清理弃用警告，等 7.1 稳定 API 与生态兼容后再迁移，避免直接踩 Vue/Svelte/ESLint 的兼容坑。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "外媒热议：TypeScript 企业级采用的「残酷真相」",
+      "summary": "Techgenyz 8 月 16 日刊文盘点 TypeScript 企业落地利弊：静态类型可提前拦截运行时错误、重构工具防断裂引用，但初期迁移有编译延迟与配置成本，过度使用类型会让团队付出维护代价，引发企业开发者共鸣。",
+      "source": "Techgenyz",
+      "url": "https://techgenyz.com/typescript-adoption-tradeoffs/",
+      "published_time": "2026-08-16",
+      "perspectives": [
+        {
+          "stance": "支持采用",
+          "summary": "静态类型检查能在部署前捕获运行时错误，自动化重构可防止遗留代码库改参数时引用断裂，长期看利大于弊。"
+        },
+        {
+          "stance": "理性反思",
+          "summary": "文章同时指出初始编译延迟、配置负担与过度类型化的维护税，提醒企业按需取舍，不要为类型而类型。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "掘金社区高赞热议：终于把 TS 的 type 和 interface 掰明白了",
+      "summary": "8 月 14 日掘金一篇 TypeScript 实战踩坑帖走红，作者通过声明合并、扩展写法、能力边界、函数类型四个案例讲清 type 与 interface 的区别，切中大量前端开发者的日常困惑，评论区讨论热烈。",
+      "source": "掘金 juejin.cn",
+      "url": "https://juejin.cn/post/7673880140423725094",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "作者经验",
+          "summary": "核心结论：interface 开放可声明合并、擅长描述对象结构；type 是类型别名、覆盖联合类型/元组等高级玩法，二者互补而非二选一。"
+        },
+        {
+          "stance": "网友补充",
+          "summary": "评论区多名开发者分享各自团队约定（如组件 Props 用 interface、函数式代码用 type），并围绕声明合并的适用场景展开讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "LioranDB V2 发布预 alpha：Rust 引擎文档数据库主打 TypeScript 一等公民体验",
+      "summary": "8 月 16 日 LioranDB 团队宣布 V2 预 alpha 版发布，数据库内核用 Rust 编写，官方 TypeScript/JavaScript 驱动提供 MongoDB 风格 API，支持类型化 CRUD、聚合与二级索引，并启动 12 期 TypeScript 上手系列。",
+      "source": "DEV Community",
+      "url": "https://dev.to/ultrontheai/liorandb-typescript-series-1-meet-liorandb-v2-a-rust-powered-document-database-for-typescript-4ed5",
+      "published_time": "2026-08-16",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "官方称 V2 聚焦 Rust 引擎、文档存储、聚合与一等 TypeScript 支持，内部混负载测试约达每秒 1 万写、3.5 万读，并邀请开发者试用预 alpha 并反馈问题。"
+        },
+        {
+          "stance": "审慎观察",
+          "summary": "作者在文中自陈这是预 alpha 基准而非性能承诺，实际表现取决于硬件、数据集与索引设计，开发者需自行验证。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近 7 天 TypeScript 舆论高度聚焦 TypeScript 7「原生化」落地后的迁移讨论与生态适配（Vue/Svelte/ESLint 尚未跟上、7.1 API 待发布）。开发者态度分化：一方对 Go 重写带来的 10 倍提速叫好并积极尝鲜 tsgo，另一方持观望谨慎，担心程序化 API 与工具链兼容问题。GitHub 上 TypeScript AI 智能体类开源项目热度攀升，社区内容以深度分析、踩坑教程与选型讨论为主，整体情绪积极而务实。",
+  "honesty_note": "需说明：TypeScript 7.0 正式版于 2026-07-08 发布，早于本次 7 天窗口，故近 7 天以跟进讨论、榜单数据与生态分析为主，未见重大新版本发布。关联话题可关注 microsoft/TypeScript Issue #63703 的 TypeScript 7.1 迭代计划（预计 2026 年秋季 7.1 稳定版）及 8 月 10 日发布的 typescript-eslint 8.67.0 生态更新。"
+}

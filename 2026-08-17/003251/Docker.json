@@ -1,0 +1,83 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Docker 高危容器逃逸漏洞 CopyEscape（CVE-2026-17106）曝光，docker cp 可写入宿主机任意文件",
+      "summary": "2026年8月10日披露的高危漏洞，恶意容器可利用 docker cp 的归档竞态（TOCTOU）与符号链接缺陷向宿主机任意写文件，特定配置下可获 root 权限，直接威胁 CI/CD 与取证工作流。",
+      "source": "华为云、Zerowl、GBHackers、cn-sec、Debian",
+      "url": "https://support.huaweicloud.com/bulletin-cce/cce_bulletin_0138.html",
+      "published_time": "2026-08-10 披露，8月11-15日集中发酵",
+      "perspectives": [
+        {
+          "stance": "官方安全公告",
+          "summary": "华为云CCE、Debian（DSA 6443-1）等发布通告，确认 CVE-2026-17106 为容器逃逸高危漏洞，要求升级 Docker Engine 29.7.2、Desktop 4.86.0、Sandboxes 0.38.0，并对非可信容器禁用 docker cp、改用 containerd 运行时规避风险。"
+        },
+        {
+          "stance": "安全研究机构分析",
+          "summary": "Imperva 红队与 Zerowl、GBHackers 详解利用链：docker cp 解包时动态文件结构校验缺失，结合符号链接竞态可覆盖宿主文件，Linux 上以 root 权限执行，尤其冲击 CI/CD 流水线、开发者工作站与应急取证流程。"
+        },
+        {
+          "stance": "中文安全社区解读",
+          "summary": "cn-sec 发文「用 docker cp 接管 Docker 宿主机」，以中文详细拆解漏洞原理、复现思路与修复建议，并指出 Docker Sandboxes 0.38.0 已同步修复 sbx cp 导出目标逃逸问题，提醒运维人员尽快升级。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Docker Desktop 被曝安全限制绕过漏洞，HKCERT 发布风险公告",
+      "summary": "香港电脑保安事故协调中心（HKCERT）8月12日发布公告，称 Docker Desktop（Windows/Mac/Linux 低于 4.86.0）存在可被远程攻击者利用的安全限制绕过漏洞，影响级别中危。",
+      "source": "HKCERT",
+      "url": "https://www.hkcert.org/security-bulletin/docker-desktop-security-restriction-bypass-vulnerability_20260812",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "安全机构公告",
+          "summary": "HKCERT 确认漏洞允许远程攻击者在受影响系统上触发安全限制绕过，Windows、macOS、Linux 三平台的 Docker Desktop 均受影响，建议用户尽快应用厂商发布的 4.86.0 修复版本。"
+        },
+        {
+          "stance": "行业关联解读",
+          "summary": "安全社区将该漏洞与同期 CopyEscape 修复版本（4.86.0）相关联，认为8月 Docker 密集的安全更新表明其桌面端攻击面正成为重点研究目标，企业应纳入补丁管理流程。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "加固容器镜像（Hardened Images）复兴：供应链安全与合规压力下的新趋势",
+      "summary": "TechTarget 8月14日报道，在供应链攻击频发、FedRAMP 与欧盟网络弹性法案等合规要求下，Chainguard、Docker、Red Hat 等厂商的加固镜像正成为生产环境刚需，被视为降低漏洞与运维负担的有效手段。",
+      "source": "TechTarget",
+      "url": "https://www.techtarget.com/it-infrastructure/tip/5-reasons-hardened-images-are-seeing-a-resurgence",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "行业分析",
+          "summary": "文章结合 Omdia 调查（77% 企业认为第三方与开源代码是供应链最大风险）指出，加固镜像通过精简攻击面、内置 SBOM 与防篡改溯源，成为超半数组织认可最有效的第三方代码安全工具。"
+        },
+        {
+          "stance": "厂商与分析师观点",
+          "summary": "Minimus、BellSoft 等厂商强调加固镜像是从检测转向预防的关键，能显著减少开发者在补丁管理上的运维负担并带来性能提升；分析师则指出 AI 编码工具普及让开发者安全用例优先级大幅上升。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Debian 发布 docker.io 安全更新 DSA 6443-1，同步修复多个容器引擎漏洞",
+      "summary": "Debian 安全公告于8月15日发布 DSA 6443，针对 Docker 容器引擎及内置 BuildKit 的多个安全漏洞发布更新，稳定版（trixie）修复版本为 26.1.5+dfsg1+deb13u1，与 CopyEscape 修复潮联动。",
+      "source": "Debian 安全公告邮件列表",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00354.html",
+      "published_time": "2026-08-15",
+      "perspectives": [
+        {
+          "stance": "发行版安全通告",
+          "summary": "Debian 官方确认 Docker 容器引擎及打包的 BuildKit 存在多项漏洞，建议 trixie 稳定版用户升级至指定修复版本，属于 Linux 发行版对近期 Docker 安全问题的及时响应。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天 Docker 圈最突出的情绪是「安全焦虑」：CopyEscape 容器逃逸漏洞从8月10日起集中发酵，docker cp 这一日常命令被曝可致宿主 root 沦陷，引发 CI/CD 与运维人员的高度警惕，官方以 29.7.2/4.86.0 快速修复并获 Debian、华为云跟进。与此同时 Docker VMM 公测带来架构革新讨论，性能提升获认可，但 Rosetta 不支持成为主要争议点。整体舆情偏向理性、以技术社区和安全媒体为主导。",
+  "honesty_note": "基于 2026-08-17 基准检索，中文社交平台（微博/知乎）上针对 Docker 的直接热搜较少，热点主要集中于安全与开发者技术媒体；Docker 29.7.2 发布于 8月6日，略早于 7 天窗口，已并入 CopyEscape 修复背景。关联话题：SCTPhantom 内核容器逃逸公开利用（CVE-2026-64564）、Docker Offload 托管云服务、AI 模型格式与加固镜像趋势。所有 URL 均直接取自搜索结果原始片段，未做任何拼接。",
+  "start_time": "2026-08-17 00:38",
+  "end_time": "2026-08-17 00:41",
+  "elapsed_seconds": 173,
+  "retry_count": 1
+}

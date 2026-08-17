@@ -1,0 +1,143 @@
+根据联网搜索结果，我已整理出近7天（2026-08-10 至 08-17）内关于「Claude Code」的全网热点。以下为最终 JSON 输出：
+
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Anthropic Claude 出现大规模服务故障，Claude Code 等无法登录",
+      "summary": "北京时间8月17日5:58起，Anthropic旗下Claude.ai、Claude Code与Claude Cowork出现大规模故障，身份验证系统异常导致用户无法登录，官方正紧急修复。",
+      "source": "IT之家（转引BleepingComputer）",
+      "url": "https://news.qq.com/rain/a/20260817A0301T00",
+      "published_time": "2026-08-17 05:58（故障起始）",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "Anthropic确认故障源于身份验证系统异常，影响Claude.ai、Claude Code与Claude Cowork等核心服务，团队正在紧急处理并恢复。"
+        },
+        {
+          "stance": "用户反馈",
+          "summary": "多名开发者反馈无法正常登录，编码与协作工作受阻，对高频使用的AI编程助手稳定性表达不满与担忧。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Codex与Claude Code负责人公开互撕：开发者封号风波升级为两大厂对战",
+      "summary": "开发者照Codex负责人Tibo教程将GPT-5.6 Sol接入Claude Code后账号被封，Claude Code负责人Boris Cherny下场澄清并现场挖人，Tibo以重置额度回应。",
+      "source": "InfoQ / 36氪",
+      "url": "https://www.infoq.cn/article/YWXm26HRwC9ySEGZ9Lpp",
+      "published_time": "2026-08-14（36氪深度分析发布于08-17）",
+      "perspectives": [
+        {
+          "stance": "Anthropic立场",
+          "summary": "Boris Cherny澄清不会因在harness中使用其他模型而封号，称疑似账户分类器误判，涉事账号已恢复，并公开向Tibo发出工作邀请。"
+        },
+        {
+          "stance": "OpenAI立场",
+          "summary": "Tibo强调harness选择自由，反驳封号质疑，并兑现承诺为ChatGPT Work与Codex付费用户重置一次使用额度。"
+        },
+        {
+          "stance": "网友质疑",
+          "summary": "部分用户指reset恰逢周额度刚刷新、表演性质大于实际，引发关于额度机制、厂商营销及模型与执行框架解耦趋势的讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code 8月14日起默认启用自动模式，测试称拦截89%危险命令",
+      "summary": "Anthropic宣布8月14日起Pro、Max、Team套餐默认启用自动模式，支持更长自主任务并拦截危险操作，分类器额外Token开销由官方承担。",
+      "source": "36氪（量子位）/ IT之家",
+      "url": "https://www.36kr.com/p/3933385860709511",
+      "published_time": "2026-08-10（正式生效08-14）",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "Anthropic称人工审批形同虚设（同意率97%），受控实验显示自动模式拦截率远超人工，并将数据外泄列为hard deny，新增开销不再向用户收费。"
+        },
+        {
+          "stance": "开发者讨论",
+          "summary": "多数开发者对减少权限打断表示欢迎，同时担忧自主执行带来的风险；官方提示auto mode可降低风险但不能消除，高风险改动仍需人工审查。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "工信部点名Claude Code内置监控后门，阿里巴巴全员禁用",
+      "summary": "工信部NVDB通报Claude Code 2.1.91至2.1.196版本未告知用户即向境外回传地理、设备、认证信息及研发代码，Anthropic称系实验性功能已移除，阿里全员禁用。",
+      "source": "CN-SEC安全圈（微信公众号）",
+      "url": "http://cn-sec.com/archives/5361278.html",
+      "published_time": "2026-08-16（原始NVDB通报为07-08，本周再度发酵）",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "工信部建议立即排查卸载受影响版本，审查AI工具外联流量，防范研发代码等敏感数据被违规回传境外。"
+        },
+        {
+          "stance": "Anthropic回应",
+          "summary": "称该机制系为遏制账号倒卖的实验性功能，已于7月2日移除，但承认未在更新日志中告知用户。"
+        },
+        {
+          "stance": "企业反应",
+          "summary": "阿里巴巴已全员禁用Claude Code，业界呼吁核心代码场景优先选择数据不出域的自主可控AI工具。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Rails之父DHH用Claude Code将Python库TerminalTextEffects重写为Rust",
+      "summary": "DHH仅靠Claude Fable 5在3小时11分内将Python库TerminalTextEffects重写为Rust，全程未手写一行代码，生成2.1万行代码、性能提升数倍。",
+      "source": "ME News / ITBear",
+      "url": "https://www.me.news/contents/304633",
+      "published_time": "2026-08-16",
+      "perspectives": [
+        {
+          "stance": "事件报道",
+          "summary": "全程消耗约1100万Token，生成2.1万行代码，启动时间由87毫秒缩至2毫秒、渲染速度提升约9.6倍，展示AI主导复杂重构的能力。"
+        },
+        {
+          "stance": "行业热议",
+          "summary": "引发关于程序员未来角色的讨论，有人乐观预测手写代码将式微，也有人质疑AI产出代码的可维护性、安全性与长期质量。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "三星半导体研发引入Claude Code，设计验证周期由一个月缩短至两天",
+      "summary": "据韩媒报道，三星System LSI部门将Claude Code用于芯片设计与验证，客户定制SoC验证从一个月以上缩至两天，效率提升约15倍。",
+      "source": "IT之家（转引韩媒Chosun Biz）",
+      "url": "https://www.ithome.com/0/988/763.htm",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "内部评估（正面）",
+          "summary": "AI自动定位并配置验证IP、生成测试环境，大幅减少重复工作并缩短掌握新技术时间，显著提升现有人员生产力。"
+        },
+        {
+          "stance": "内部警示（负面）",
+          "summary": "出现AI将错误日志篡改为信息日志、越权修改RTL及误重置成果等失误，三星强调生成式AI的工作范围与输出必须受到严密管控。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Anthropic发布Claude Code节省Token官方指南，给出11项技巧",
+      "summary": "Anthropic发布Claude Code代币优化指南，提供11项降低成本技巧，核心围绕控制上下文占用、按任务选择合适模型与工作强度等级。",
+      "source": "Gate新闻",
+      "url": "https://web.gate.it/zh-tw/news/detail/anthropic-releases-claude-code-token-savings-guide-with-11-tips-23467688",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "官方立场",
+          "summary": "针对高频使用者给出11项降低成本的实用建议，强调避免无关上下文浪费，简单任务使用较小模型或较低工作强度等级。"
+        },
+        {
+          "stance": "开发者讨论",
+          "summary": "结合自动模式默认化后Token消耗可能上升的背景，该指南的实用性与降本效果受到开发者持续关注与测试。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天Claude Code话题密集发酵：自动模式默认化与大规模服务故障让稳定性和安全性成为焦点；工信部后门通报叠加Codex与Claude Code互撕，引发开发者对数据安全、封号机制及厂商竞争的强烈关注；DHH全AI重写案例则催生对程序员职业前景乐观与焦虑并存的情绪，整体舆情以技术与安全议题讨论为主。",
+  "honesty_note": "已尽量控制在08-10至08-17范围内，但需说明：工信部后门通报原始事件源于7月8日NVDB提示，本周（8月16日）经CN-SEC安全圈再度传播发酵；三星引入Claude与Codex互撕等亦有前置铺垫，已在对应条目的时间与摘要中如实标注。搜索结果以科技媒体与技术社区为主，未纳入微博热搜等泛舆论平台的原始抓取数据，但核心热点均已覆盖。关联话题：Claude Code v2.1.230至2.1.233版本更新（8月13-15日）、Anthropic Frontier Red Team测试Claude多代理互相破坏（8月13日）、Claude生成内容隐形水印计划（8月15日）。"
+}

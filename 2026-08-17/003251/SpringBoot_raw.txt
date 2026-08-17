@@ -1,0 +1,125 @@
+已完成联网检索（覆盖 2026-08-10 至 08-17，重点为最近 24–48 小时）。以下为整理后的 JSON 结果：
+
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Spring Framework 6.2 社区支持终止，TuxCare 推出 ELS 持续安全补丁",
+      "summary": "Spring Framework 6.2 的社区支持已于 2026 年 6 月结束，官方免费补丁停止。安全厂商 TuxCare 于 8 月 14 日宣布通过 Endless Lifecycle Support 为已 EOL 的 Spring Framework 和 Spring Boot 多版本继续提供安全补丁，引发企业开源安全运维关注。",
+      "source": "电子新闻 etnews",
+      "url": "https://www.etnews.com/20260814000081",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "官方/社区立场",
+          "summary": "Spring Framework 6.2 为第六代最后特性分支，社区开源支持于 2026 年 6 月 30 日结束，官方建议企业尽快升级至受支持的 7.0.x 分支以获得持续维护。"
+        },
+        {
+          "stance": "安全厂商观点",
+          "summary": "TuxCare 称将通过 ELS 为 EOL 版本的 Spring Framework 与 Spring Boot 持续提供关键漏洞补丁，覆盖 OS、库、运行时与应用层，缓解企业安全空窗。"
+        },
+        {
+          "stance": "企业担忧",
+          "summary": "韩国媒体指出 EOL 后新漏洞不再有免费官方补丁，核心业务仍运行在旧版本的企业面临安全与管理负担，需在升级排期与商业支持之间权衡。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Spring Boot 4 原生镜像实测：启动 52 毫秒，反射与构建成本成最大坑",
+      "summary": "开发者实测将支付回调服务迁移至 Spring Boot 4 原生镜像，启动从 3.1 秒降至 52 毫秒、内存从 420MB 降至 78MB，但反射元数据、CGLIB 代理缺失、虚拟线程钉住以及 10-20 分钟构建时间等问题让其两度返工。",
+      "source": "技术栈 jishuzhan",
+      "url": "https://jishuzhan.net/article/2089132766154604546",
+      "published_time": "2026-08-17 07:30",
+      "perspectives": [
+        {
+          "stance": "实践者正面评价",
+          "summary": "突发流量型 K8s/HPA 或 Serverless 场景下原生镜像收益明显，新 Pod 几十毫秒即可接流量，高峰期 502 基本消失。"
+        },
+        {
+          "stance": "实践者踩坑警示",
+          "summary": "封闭世界假设与反射/动态代理天然冲突，Jackson 多态反序列化、@Async 代理需手动补 NativeHint；编译一次 10-20 分钟、吃 6-12GB 堆内存，CI 8G 直接 OOM。"
+        },
+        {
+          "stance": "理性结论",
+          "summary": "长期稳定运行、流量均匀的服务收益有限，AOT 维护成本高；虚拟线程（spring.threads.virtual.enabled）才是 4.x 最值得立即采用的改进，原生镜像可等 AOT 引擎更成熟。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "SpringBoot 3 到 4 升级重点与迁移路线指南持续刷屏",
+      "summary": "社区在 Spring Boot 3.5 已 EOL、4.x 成为主流受支持分支的背景下，密集讨论 3→4 迁移路线。指南强调别被 Java 21 传言误导、最低要求仍是 Java 17，并提醒避开 Jackson 3 与容器升级的坑。",
+      "source": "脚本之家 jb51.net",
+      "url": "https://www.jb51.net/program/369200yry.htm",
+      "published_time": "2026-08-14 08:51",
+      "perspectives": [
+        {
+          "stance": "迁移指南立场",
+          "summary": "详解 Spring Boot 4 核心变化，指出最低要求仍是 Java 17，重点在于 Jackson 3 迁移、内嵌容器升级与依赖 BOM 变更，建议按路线图稳妥升级。"
+        },
+        {
+          "stance": "资深开发者提醒",
+          "summary": "不建议从 3.3/3.4 直接跳到 4.x，应先升至 3.5 清理 deprecated API，再进入 4.0，以降低迁移风险。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Spring AI 2.0.0 新特性与入门教程密集发布：工具调用成一等公民",
+      "summary": "围绕 Spring AI 2.0.0 GA，中文社区 8 月中旬密集发布新特性解读与上手教程，重点涵盖 Tool-Calling 工具调用、自纠错结构化输出、ChatMemory 会话改进、RAG 与可观测性，并明确最低依赖 Spring Boot 4.x。",
+      "source": "技术栈 jishuzhan",
+      "url": "https://jishuzhan.net/article/2088981331643351041",
+      "published_time": "2026-08-16 21:28",
+      "perspectives": [
+        {
+          "stance": "新特性解读",
+          "summary": "ToolCalling 成为一等公民，新增按需检索工具（ToolSearchAdvisor）降低 token 消耗；entity() 结构化输出支持自纠错；内置 Micrometer 可观测与 RAG 评估框架。"
+        },
+        {
+          "stance": "迁移注意",
+          "summary": "Spring AI 2.0 不再兼容 Spring Boot 3，须用 Boot 4.x/Spring Framework 7/Java 21；Options 改 Builder、模型厂商拆为独立仓库、SAP HANA 与 Infinispan 向量存储被移除，迁移需评估。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "技术文章热议：Spring Boot 让交付变快，也让同款生产故障重复出现",
+      "summary": "Stackademic 技术博客发文指出，Spring Boot 的默认配置在帮助开发者快速交付的同时，也容易让团队重复犯下 12 类常见生产环境错误，引发关于框架默认值、工程纪律与面试考察差异的讨论。",
+      "source": "Stackademic",
+      "url": "https://blog.stackademic.com/spring-boot-makes-it-easy-to-ship-fast-c4d669e5de64",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "技术警示",
+          "summary": "Spring Boot 的便捷默认值掩盖了导致最痛苦生产事故的故障模式，资深 Java 工程师应重视默认配置之外的工程实践与面试差异。"
+        },
+        {
+          "stance": "社区回应",
+          "summary": "讨论多聚焦于默认配置、资源泄漏、异常吞掉等常见坑，呼吁团队在快交付的同时建立生产级审查机制。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Spring Boot 3.5 结束开源支持：官方建议迁移至 4.x 引发升级潮讨论",
+      "summary": "Spring Boot 3.5.16 作为 3.5 系列最终版本后，官方建议用户尽早迁移至 4.0.x/4.1.x 以获得持续 OSS 支持，需要延长维护期的组织须评估购买商业支持，相关讨论在 8 月持续发酵。",
+      "source": "php.cn",
+      "url": "https://www.php.cn/faq/2941728.html",
+      "published_time": "2026-08-04",
+      "perspectives": [
+        {
+          "stance": "官方立场",
+          "summary": "3.5.16 是 3.5.x 系列最终 OSS 版本，仅含 3 项依赖升级，官方建议迁移到 4.0.x 或 4.1.x 获取持续开源支持。"
+        },
+        {
+          "stance": "商业视角",
+          "summary": "组织可将 3.5→4.x 迁移视作重大升级而非普通补丁；无法及时迁移的企业需评估购买 Spring 商业/长期支持以覆盖安全维护。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近期 SpringBoot 相关讨论围绕 4.x 时代展开：Spring Boot 3.5 与 Spring Framework 6.2 相继 EOL 推动企业升级潮，开发者情绪整体务实——对原生镜像 60 倍启动提速与虚拟线程充满兴趣，但普遍警惕反射/AOT 元数据、构建时长与迁移成本等坑，属「期待与谨慎并存」的技术圈氛围。",
+  "honesty_note": "SpringBoot 属技术垂类，近 7 天内无大众向爆点新闻，热点集中在开发者社区（技术栈、CSDN、Stackademic、InfoQ 等）与韩国媒体 EOL 报道，量级有限。其中 rank 6（Spring Boot 3.5 EOL）发布于 08-04，略早于窗口，因与本周期升级讨论强相关而列入。关联话题可补充：Spring Boot 4.1（6 月发布、新增 gRPC 自动配置与 SSRF 防护）、Spring AI 2.0 GA 与 Spring Boot 4.0 系列安全补丁（CVE-2026-40972 等）。"
+}

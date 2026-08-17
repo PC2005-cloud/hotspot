@@ -1,0 +1,119 @@
+{
+  "keyword": "数据库",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Databricks完成50亿美元融资，估值飙升至1900亿美元",
+      "summary": "数据与AI平台Databricks宣布完成50亿美元融资，投后估值达1900亿美元，由Coatue、黑石、MGX等领投；年化营收突破70亿美元，其中托管Postgres服务Lakebase推出一年即贡献超1亿美元收入。",
+      "source": "至顶网",
+      "url": "https://www.zhiding.cn/ai-infrastructure/2026/0814/3196335.shtml",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "厂商官方披露",
+          "summary": "Databricks宣布完成50亿美元融资，年化经常性收入同比增长超80%突破70亿美元，Lakehouse数据仓库收入翻倍超15亿美元，本轮资金将用于强化Lakebase、Genie与Unity AI Gateway等产品。"
+        },
+        {
+          "stance": "技术解读",
+          "summary": "媒体指出本轮融资与此前收购Electric相关，Databricks计划将轻量级Postgres数据库PGlite整合进Lakehouse，为AI智能体提供本地数据库并协调多智能体协同，反映Postgres正被推向AI Agent应用边缘的新趋势。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "甲骨文与AWS深化合作，AI数据库扩展至22个区域",
+      "summary": "甲骨文与AWS签署扩大长期战略合作协议，Oracle AI Database@AWS扩展至22个AWS区域，并新增Exadata按需付费等能力，CJ Olive Young、Kobalt Music等客户已启用，甲骨文股价一度上涨约4%。",
+      "source": "亿恩网",
+      "url": "https://www.yilantop.com/news/102411",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "双方承诺继续投资Oracle AI Database@AWS并加速客户迁移，企业无需重新架构即可在AWS环境运行Oracle数据库，并可调用AWS的AI和数据分析服务构建智能应用。"
+        },
+        {
+          "stance": "市场分析",
+          "summary": "分析认为甲骨文借助AWS渠道扩大AI数据库生态覆盖，Exadata Database Service on Exascale正式GA降低了不同规模工作负载的接入门槛，是甲骨文深化AI云战略、押注AI工作负载的关键举措。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "PostgreSQL发布安全更新，修复28个漏洞含任意代码执行",
+      "summary": "PostgreSQL于8月13日发布安全更新，修复110多个缺陷及28个安全漏洞（CVSS最高8.8），多个漏洞最坏可致远程任意代码执行，涉及18.6、17.11、16.15、15.19、14.24等版本。",
+      "source": "Impress Watch",
+      "url": "https://forest.watch.impress.co.jp/docs/news/2132677.html",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "PostgreSQL全球开发组发布本次更新，修复含任意代码执行在内的28个漏洞，其中18系因回归问题直接由18.4升至18.6，官方提醒PG14将于2026年11月12日终止支持，建议尽早规划迁移。"
+        },
+        {
+          "stance": "安全生态跟进",
+          "summary": "FreeBSD、ALT Linux及各国CERT陆续发布安全通告跟进，提示psql、pg_dump、plperl、pg_trgm等组件均受影响，管理员应尽快升级以避免远程代码执行、拒绝服务与内存越界等风险。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "MongoDB Build Fest：把大模型与向量搜索同时装进数据库本体",
+      "summary": "MongoDB于8月13日在MongoDB.local Build Fest发布四项AI能力：Atlas自动嵌入与Embedding/Reranking API正式GA、voyage-code代码检索模型发布、$vectorSearch进入Atlas Stream Processing，将嵌入生成与向量检索闭环内置进数据库。",
+      "source": "墨天轮",
+      "url": "https://www.modb.pro/db/2088105591487668224",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "厂商发布",
+          "summary": "MongoDB宣称这是数据库厂商首次把模型推理作为与存储引擎平级的一等公民，开发者无需再维护独立嵌入管线与向量库，AI智能体可直接检索实时运营数据，并推出Atlas Managed MCP Server连接Claude、Codex等工具。"
+        },
+        {
+          "stance": "技术权衡分析",
+          "summary": "技术社区指出其差异化在于捆绑自营Voyage模型，但存在模型锁定与可观测性回退等隐性代价；行业趋势是DynamoDB、IBM Netezza、Oracle 26ai等均在跟进原生向量能力，国内厂商应关注「数据库+自营模型+向量+流处理」组合。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "ClickHouse客户数突破4000，AI智能体需求成主要驱动力",
+      "summary": "ClickHouse在悉尼Open House透露2026年新增约1000家客户、总数突破4000，AI智能体与实时应用成为增长主要驱动力，Anthropic、Nine、Canva等均为其客户，公司正加大亚太区投入。",
+      "source": "ChannelLife",
+      "url": "https://channellife.com.au/story/clickhouse-customer-base-soars-on-back-of-ai-demand",
+      "published_time": "2026-08-17",
+      "perspectives": [
+        {
+          "stance": "厂商高管陈述",
+          "summary": "ClickHouse高管称企业AI的爆炸式采用叠加智能体应用推动增长，平台新增事务能力并发展agentic observability，帮助企业监控治理AI智能体的行为、合规性与运行成本。"
+        },
+        {
+          "stance": "客户案例",
+          "summary": "案例显示Anthropic通过询问自家Claude模型选定ClickHouse用于可观测性负载，Canva等从传统可观测性扩展至LLM可观测性与实时分析，AI公司选择成为其策略的重要证明点。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "赛迪报告：OceanBase位列中国分布式数据库市场第一",
+      "summary": "赛迪顾问发布《2025年中国平台软件市场研究年度报告》，显示2025年OceanBase收入大幅增长位列中国分布式数据库市场第一，并在中国数据库管理系统厂商竞争力评估中处于领导者象限、产品能力排名第一。",
+      "source": "光明网",
+      "url": "https://it.gmw.cn/2026-08/13/content_38941743.htm",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "行业报告观点",
+          "summary": "赛迪报告显示2025年中国平台软件市场规模达991.3亿元、同比增长12.3%，预计2028年达1420.3亿元，数据库是重要增长赛道，OceanBase在分布式数据库领域居中国市场第一。"
+        },
+        {
+          "stance": "产业观察",
+          "summary": "观察认为AI并未挤压传统数据库空间反而带来新增长动力，OceanBase已发布新一代湖库一体AI数据库、首个海外银行核心系统在老挝上线，国产数据库正加速向AI时代与核心业务市场突破。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天数据库行业热度高度集中于「AI智能体重塑数据库」主线：DynamoDB、MongoDB把向量搜索与嵌入模型内置进数据库本体，ClickHouse因AI需求客户激增，Databricks以50亿美元融资并收购PGlite厂商强化Agent生态，甲骨文借AWS扩大AI数据库版图，国内则聚焦OceanBase登顶赛迪榜单的国产化叙事。与此同时，Metabase满分漏洞遭利用与PostgreSQL批量高危漏洞引发安全焦虑，公众情绪呈现「对AI数据库能力兴奋」与「对数据安全担忧」并存的态势。",
+  "honesty_note": null,
+  "start_time": "2026-08-17 01:19",
+  "end_time": "2026-08-17 01:22",
+  "elapsed_seconds": 142,
+  "retry_count": 1
+}

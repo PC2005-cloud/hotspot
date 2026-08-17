@@ -1,0 +1,140 @@
+我已收集到足够的信息，现在整理输出最终的 JSON 结果。
+
+{{
+  "keyword": "数据库",
+
+  "hotspots": [
+    {{
+      "rank": 1,
+      "title": "Metabase高危SQL注入零日漏洞遭利用，CVSS满分10分可获完整数据库访问权限",
+      "summary": "BI平台Metabase披露零日SQL注入漏洞CVE-2026-72898（CVSS满分10分），攻击者经/api/session/reset_password接口获取原始SQL访问权限，窃取凭据、API密钥与Slack令牌，多家初创公司已受影响。",
+      "source": "至顶网（InfoWorld）",
+      "url": "https://www.zhiding.cn/network_security/2026/0815/3196448.shtml",
+      "published_time": "2026-08-15（漏洞于8月6日公开披露）",
+      "perspectives": [
+        {{
+          "stance": "安全厂商警示",
+          "summary": "DataBee首席技术官指出该漏洞允许对Metabase数据库进行不受限制的原始SQL访问，建议立即封锁接口、轮换所有凭据并审查管理员账户与审计日志。"
+        }},
+        {{
+          "stance": "安全专家分析",
+          "summary": "Beauceron Security CEO表示CVSS满分漏洞罕见且已有PoC利用代码；Wiz数据显示约25%自托管Metabase实例完全暴露在互联网上，风险面巨大。"
+        }},
+        {{
+          "stance": "受影响企业回应",
+          "summary": "Checkly等受害公司称轮换凭据只解决眼前问题，根本教训是分析环境存储了超出需要的敏感数据且访问权限过大，将重构内部流程降低数据暴露面。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 2,
+      "title": "Databricks完成50亿美元战略融资，估值达1900亿美元",
+      "summary": "数据与AI平台公司Databricks于8月13日宣布完成50亿美元战略融资，由Coatue领投，投后估值达1900亿美元，年化营收突破70亿美元，资金将用于加大企业AI应用产品投入。",
+      "source": "界面新闻",
+      "url": "https://www.jiemian.com/article/14920753.html",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {{
+          "stance": "产业观察",
+          "summary": "本轮融资由Blackstone、MGX、T. Rowe Price及Sixth Street Growth等参投，凸显AI数据平台赛道资本热度，Databricks计划以湖仓架构赋能企业搭建与管理AI应用。"
+        }},
+        {{
+          "stance": "技术视角",
+          "summary": "其无服务器PostgreSQL数据库Lakebase年经常性收入已达1亿美元，跨模型路由的Unity AI Gateway等能力成为公司新增长点。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 3,
+      "title": "赛迪报告：OceanBase位列中国分布式数据库市场第一",
+      "summary": "赛迪顾问发布《2025-2026年中国平台软件市场研究年度报告》，显示2025年中国平台软件市场规模达991.3亿元，OceanBase收入大幅增长，位列中国分布式数据库市场第一，产品能力排名居首。",
+      "source": "光明网",
+      "url": "https://it.gmw.cn/2026-08/13/content_38941743.htm",
+      "published_time": "2026-08-13 14:36",
+      "perspectives": [
+        {{
+          "stance": "行业报告口径",
+          "summary": "报告显示中国平台软件市场2025年同比增长12.3%，预计2028年达1420.3亿元，数据库国产化替代与AI融合成为增长主要驱动力。"
+        }},
+        {{
+          "stance": "厂商战略",
+          "summary": "OceanBase在2025年11月已被赛迪评为央国企数据库发展能力本土厂商第一，2026年6月发布新一代湖库一体AI数据库，加速从分布式数据库向AI数据平台转型。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 4,
+      "title": "甲骨文与AWS深化战略合作，Oracle AI Database@AWS扩展至22个区域",
+      "summary": "甲骨文与亚马逊云科技签署扩大长期战略合作协议，Oracle AI Database@AWS已扩展至22个AWS区域，覆盖亚太、欧洲和美洲，并新增Exadata性能按需付费能力，企业无需重构即可迁移运行。",
+      "source": "亿恩网",
+      "url": "https://www.yilantop.com/news/102411",
+      "published_time": "2026-08-14 10:02",
+      "perspectives": [
+        {{
+          "stance": "资本市场反应",
+          "summary": "受合作消息提振，甲骨文股价盘前一度上涨约4%，市场对其AI数据库云业务扩张持乐观态度。"
+        }},
+        {{
+          "stance": "客户实践",
+          "summary": "CJ Olive Young、Kobalt Music等客户已开始使用Oracle AI Database@AWS，可利用AWS的AI和数据分析服务构建智能应用。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 5,
+      "title": "OceanBase公开AI生成应用数据架构：3000万个闪应用共享一个数据库",
+      "summary": "OceanBase首次公开支撑蚂蚁灵光AI生成应用的数据架构实践，约3000万闪应用通过逻辑表与共享物理存储共用一个数据库，实现「应用数据模型独立、底层资源共享」。",
+      "source": "人民邮电报",
+      "url": "https://www.cnii.com.cn/rmydb/202608/t20260814_754770.html",
+      "published_time": "2026-08-14 08:43",
+      "perspectives": [
+        {{
+          "stance": "技术方案分析",
+          "summary": "此前大表打包与独立物理表两种方案均因效率低、成本高而失败；逻辑表方案通过JSON Table SDK将查询映射为对共享物理存储的操作，兼顾体验与成本。"
+        }},
+        {{
+          "stance": "战略意义解读",
+          "summary": "该真实AI业务场景验证为OceanBase从分布式数据库迈向AI数据平台提供实践支撑，湖库一体AI数据库已在蚂蚁阿福、灵光等场景验证并推进商业化。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 6,
+      "title": "GeoServer未修复零日SQL注入漏洞遭公网主动探测，政府与公用事业暴露面最大",
+      "summary": "安全研究员8月12日披露GeoServer jsonArrayContains过滤器存在未认证SQL注入零日漏洞，已遭全球数百次公网探测，OSGeo官方补丁未发布，政府GIS、国防测绘及公用事业部署风险最高。",
+      "source": "WafAI",
+      "url": "https://www.wafai.cn/geoserver-jsonarraycontains-sql-injection-zero-day-active-probing-august-2026/",
+      "published_time": "2026-08-15",
+      "perspectives": [
+        {{
+          "stance": "威胁情报研判",
+          "summary": "漏洞处于zero-CVE-zero-patch状态，Field Effect、BlackTree等多家机构预测在补丁发布前大概率会被勒索软件团伙整合进初始访问工具包。"
+        }},
+        {{
+          "stance": "国内部署警示",
+          "summary": "国内自然资源、测绘、生态环境部门与政务平台广泛使用GeoServer，建议补丁发布前将政务外网实例回收到内网或反向代理之后，并对jsonArrayContains调用统一阻断。"
+        }}
+      ]
+    }},
+    {{
+      "rank": 7,
+      "title": "DTCC 2026第17届中国数据库技术大会将于8月20-22日召开",
+      "summary": "由IT168联合ITPUB、ChinaUnix主办的DTCC 2026将于8月20-22日在北京朗丽兹西山花园酒店举行，主题为「融数聚智 创领未来」，聚焦AI时代数据库技术与Agent化演进。",
+      "source": "CSDN",
+      "url": "https://blog.csdn.net/NineData/article/details/163759767",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {{
+          "stance": "会议预告",
+          "summary": "大会公布完整嘉宾阵容，NineData创始人叶正盛等将带来面向AI Agent的数据库DevOps与数据复制实践主题演讲。"
+        }},
+        {{
+          "stance": "行业趋势观察",
+          "summary": "AI Agent与数据库的深度融合成为本届大会核心议题，反映国产数据库社区正加速拥抱AI工作负载。"
+        }}
+      ]
+    }}
+  ],
+  "public_sentiment_summary": "近一周数据库领域热点集中于两大主线：一是AI+数据库融合加速，Databricks巨额融资、OceanBase AI数据架构、Oracle AI Database@AWS扩容等消息密集，资本与产业热度高涨；二是安全漏洞集中爆发，Metabase与GeoServer零日SQL注入引发对自托管实例与暴露面治理的普遍担忧，市场情绪呈现「AI亢奋」与「安全焦虑」并存的态势。",
+  "honesty_note": "数据库属垂直技术领域，泛社交热榜（微博、抖音）上相关话题极少，热点主要来自科技媒体与行业报告，热度缺乏通用榜单量化支撑，可能低估其大众关注度。关联话题可关注国产数据库信创替代（达梦、电科金仓、南大通用等）及PostgreSQL近期供应链安全漏洞公告，作为补充追踪方向。"
+}}

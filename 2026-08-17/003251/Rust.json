@@ -1,0 +1,95 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Rails之父DHH用Claude将Python库全盘重构为Rust，零手写代码引爆AI编程热议",
+      "summary": "Rails框架创始人DHH仅凭Claude Fable 5在3小时11分钟内将Python终端特效库TerminalTextEffects重写为Rust版ttfx，消耗1100万Token，启动时间从87毫秒降至2毫秒，渲染提速9.6倍，引发全网对AI编码的激烈讨论。",
+      "source": "ITBear、快科技(PCD)、ME.News",
+      "url": "https://www.pcd.com.cn/cellphone/202608/149780.html",
+      "published_time": "2026-08-15 20:53",
+      "perspectives": [
+        {
+          "stance": "AI编程支持派",
+          "summary": "3小时11分钟完成2.1万行Rust代码且零手写，被视为AI编程效率的里程碑，DHH还预言五年后人类将告别手写代码。"
+        },
+        {
+          "stance": "质量与安全质疑",
+          "summary": "参考Bun的Claude Rust重构遗留2.7万行unsafe代码的教训，担心纯AI生成的代码缺乏人类架构把关，安全性与可维护性存疑。"
+        },
+        {
+          "stance": "成本对比分析",
+          "summary": "DHH横测多款模型跑同一Python转Rust任务，DeepSeek Pro V4 Max仅约23美元完成，而Claude Fable约550美元，引发AI编码性价比争议。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TIOBE 2026年8月榜：Rust首次跻身编程语言前十",
+      "summary": "TIOBE发布2026年8月编程语言排行榜，Rust以1.45%评分首次进入前十，C++与Java差距缩小至0.37个百分点，MATLAB跌出前20，成为本期最大亮点。",
+      "source": "博客园、TIOBE",
+      "url": "https://www.cnblogs.com/whincwu/p/22494185",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "Rust首次进入TIOBE前十被广泛视为系统编程语言地位上升的重要信号，与内存安全政策和工业界采用密切相关。"
+        },
+        {
+          "stance": "分析解读",
+          "summary": "有评论认为Rust上榜与AI编码热潮及白宫内存安全指引相关，但也提醒TIOBE基于搜索统计，存在局限性，不应过度解读。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Rust官方团队发布LLM使用政策：AI代码可合并但须披露，超50%即触发熔断",
+      "summary": "Rust五个团队为rust-lang/rust仓库制定LLM政策：允许AI生成代码但须披露、非关键且附带测试，若六周内LLM创建的PR超过一半，将暂停合并并冷却至少10天。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/4t8SKMGI28buD345I2Ta",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "官方规则解读",
+          "summary": "政策不禁止AI写代码，但LLM PR门槛更高、必须附测试，涉及安全性的关键变更不得由LLM生成，否则会被「熔断」。"
+        },
+        {
+          "stance": "专家分析",
+          "summary": "有评论指出真正瓶颈已从代码生成转移到评审带宽，熔断器本质是为评审能力兜底，治理靶点也随之转移。"
+        },
+        {
+          "stance": "网友讨论",
+          "summary": "多数网友认可该规则是对AI代码质量的必要约束，但也有声音担心规则增加维护复杂度、影响社区贡献效率。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Zig创始人批评Bun的Claude生成Rust重构版为「没人把关的烂代码」",
+      "summary": "Zig语言创始人Andrew Kelley公开批评Bun团队用Claude智能体11天生成的百万行Rust重构版缺乏人工把关，称其为「unreviewed slop」，再度引爆AI编码质量之争。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/5JAOs4xARzjGb5sj2LxG",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "批评方（Zig创始人）",
+          "summary": "Andrew Kelley将问题归咎于Bun创始人Jarred Sumner不规范的编程实践，担心项目沦为无人审查的AI代码。"
+        },
+        {
+          "stance": "支持方",
+          "summary": "AI重构速度惊人，11天完成百万行Zig到Rust迁移，被视为AI工程能力的强证明，预计API成本约16.5万美元。"
+        },
+        {
+          "stance": "中立分析",
+          "summary": "争议焦点在于AI生成的Rust代码残留大量unsafe块且缺乏人类架构重构，安全性存疑，凸显AI编码需人工把关。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周「Rust」热点主线是AI编码与语言生态：DHH用Claude重构Rust引爆效率惊叹与质量担忧的双重情绪，TIOBE首进前十与官方LLM政策熔断器进一步放大热议。社区普遍对Rust前景乐观，但对AI生成代码的安全性、评审瓶颈及恶意软件滥用保持警惕；生存游戏《Rust》8月更新则持续维持玩家群体高讨论度。",
+  "honesty_note": "本词条同时涵盖编程语言Rust与游戏《Rust》，已按高热度分别收录；窗口内（8月10日至17日）最高热度集中在8月14日至16日的AI编码相关话题，纯语言层冷门动态较多。另说明：美国《Rust》玩家被报假警致瘫痪并索赔1.76亿美元事件主要发酵于7月31日至8月4日，已超出本7天窗口故未列入。可作关联补充的话题：Polonius Alpha借用检查器上nightly（8月4日官方博客）、Rust标准库采用cargo-semver-checks防意外破坏（8月16日）、Bonsai行为树库累计10万次下载（8月16日Rust日报）。",
+  "start_time": "2026-08-17 00:41",
+  "end_time": "2026-08-17 00:42",
+  "elapsed_seconds": 86,
+  "retry_count": 0
+}

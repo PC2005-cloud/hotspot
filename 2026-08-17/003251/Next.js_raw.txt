@@ -1,0 +1,124 @@
+根据联网搜索结果，我已整理出 2026-08-10 至 08-17 期间与 Next.js 相关的最新热点。以下为最终输出：
+
+{
+  "keyword": "Next.js",
+
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Vercel 发布安全补丁，修复 Next.js 九项关键漏洞（含 SSRF 与 DoS）",
+      "summary": "2026年8月14日，安全客（cn-sec）报道 Vercel 为 Next.js 发布安全补丁，修复由研究员 KarimPwnz 披露的九项漏洞，涵盖 SSRF、中间件认证绕过、DoS 攻击与敏感数据泄露，官方建议升级至 16.2.11 或 15.5.21。",
+      "source": "cn-sec（安全客）",
+      "url": "http://cn-sec.com/archives/5364572.html",
+      "published_time": "2026-08-14 11:18",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "最高危 CVE-2026-64645（GHSA-p9j2-gv94-2wf4）为高危 SSRF 漏洞，影响 rewrites 重写功能，攻击者控制目标主机名时可强制服务器向任意内部端点发起请求，官方建议立即升级并审计相关配置。"
+        },
+        {
+          "stance": "平台与安全厂商跟进",
+          "summary": "Netlify、Cloudflare WAF 等平台同步响应，指出九项漏洞涉及 middleware/proxy 认证绕过、Server Actions SSRF、DoS 等，均在 15.5.21 与 16.2.11 中统一修复，社区提醒按月度安全补丁节奏保持版本接近当前。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Next.js 团队（含 Dan Abramov 与 Pete Hunt）将举行 Reddit AMA",
+      "summary": "2026-08-14 消息，React Status 披露 Next.js 核心团队将于 8 月 18 日在 Reddit 举办 Ask Me Anything 问答，团队新加入 Dan Abramov 与 Pete Hunt，社区已可提前在置顶帖提问。",
+      "source": "React Status",
+      "url": "https://react.statuscode.com/issues/487",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "官方动态",
+          "summary": "团队希望通过 AMA 直接回应开发者对 16.3 特性、Instant Navigations 及未来版本方向的疑问，并预告即时导航相关能力将在未来大版本成为默认。"
+        },
+        {
+          "stance": "社区关注",
+          "summary": "开发者重点关切 Edge Runtime 弃用、缓存模型变化、Agent 原生 DX 等争议话题，希望在问答中获取官方对升级路线与兼容性的明确说明。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Next.js 16.3 发布两周后持续发酵：生产团队升级评估与性能热议",
+      "summary": "8月3日发布的 Next.js 16.3（Turbopack 开发内存最高降90%、Instant Navigations、Agent 原生 DX）本周持续成为焦点，dev.to、Web前端周刊W32、This Week in React 等先后发布评测与升级决策指南，讨论 Edge Runtime 弃用等变化。",
+      "source": "dev.to / 51CTO",
+      "url": "https://dev.to/aurangzaibramzan/nextjs-163-is-here-what-actually-matters-for-production-teams-4p7l",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "生产团队评估",
+          "summary": "Digital Applied 等指出 16.3 网络层默认优化（prefetch 请求平均减少45%、不可变静态资源）为真实收益，但 Edge Runtime 与 experimental.useCache 弃用、Turbopack 文件追踪陷阱可能引发线上 500，建议先预览部署并做动态路由冒烟测试再升级。"
+        },
+        {
+          "stance": "官方口径",
+          "summary": "Vercel 称这是自 16.0 以来最大更新，官方建议所有应用升级；v0 团队已用 Playwright instant() 测试辅助器验证即时导航，强调动态默认、无隐藏缓存的理念。"
+        },
+        {
+          "stance": "中文社区科普",
+          "summary": "掘金等技术社区通过「SEO 死穴」「组件切成两半」等话题科普 16.3 的 Server Components 与 RSC 原理，帮助开发者理解即时导航与缓存模型的底层逻辑。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "NextAuth.js（Auth.js）曝高危认证绕过漏洞 CVE-2026-73421",
+      "summary": "2026-08-12 披露，NextAuth.js 5.0.0-beta.0 至 beta.31 存在「故障开放（fail open）」式认证绕过：服务器配置错误时 auth() 返回的错误对象被当作已认证，依赖 !!auth 存在性判断的受保护路由将失守，5.0.0-beta.32 已修复。",
+      "source": "Mallory / NVD",
+      "url": "https://mallory.ai/vulnerabilities/CVE-2026-73421",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "漏洞分析",
+          "summary": "根因在于 getSession 对非 OK 会话响应解析不当，使 auth 对象被填充为 truthy 错误对象；提供商缺少 issuer 与 authorization 端点、AUTH_SECRET 未设置等配置错误即可触发，且无明显故障特征、静默失守。"
+        },
+        {
+          "stance": "修复建议",
+          "summary": "应升级至 5.0.0-beta.32，避免仅用存在性检查作为唯一鉴权门槛，需校验具体会话属性并做角色权限校验，同时将 Auth.js 配置错误视为硬性部署失败，通过启动校验与健康检查防止带病上线。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Next.js 16.3.1 补丁发布，修复 16.3 多项回归问题",
+      "summary": "8月中旬 Vercel 发布 Next.js 16.3.1，清理 16.3 中的重复 prefetch 循环、标签重新验证后缓存条目被过早丢弃、headers() 返回陈旧请求视图等行为回归，React Status 于 8 月 14 日汇总报道。",
+      "source": "React Status",
+      "url": "https://react.statuscode.com/issues/487",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "官方补丁说明",
+          "summary": "主要针对 16.3 发布后的行为回归与缓存细节修正，官方建议已升级 16.3 的用户跟进安装 16.3.1 以获得稳定体验。"
+        },
+        {
+          "stance": "社区反馈",
+          "summary": "开发者反映 16.3 早期在部分场景存在 prefetch 循环与缓存条目异常，补丁的快速跟进也说明框架仍处于密集迭代期，生产升级需保持节奏审慎。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Vercel AI 生态更新：Exa 神经搜索加入 Agent Marketplace，Gemini 3.7 Flash 半价上线",
+      "summary": "2026-08-14 Vercel 宣布 Exa 神经搜索引擎以原生集成加入 Agent Marketplace，并提供开箱即用的 Next.js 搜索模板；同时 AI Gateway 五折上线 Gemini 3.7 Flash，GLM 5.2 对 eve agents 免费至 8 月 27 日。",
+      "source": "my2cents.ai",
+      "url": "https://www.my2cents.ai/news/2026-08-14-vercel/",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "生态动态",
+          "summary": "Exa 集成让开发者用单一 API Key 为 Next.js 应用加入带引用的实时联网搜索，配合 Agent 工作流，强化 Next.js 作为 AI 全栈框架的生态位。"
+        },
+        {
+          "stance": "商业观察",
+          "summary": "半价与限免促销显示 Vercel 正加速抢占 AI 应用开发入口，通过 AI Gateway 与 Agent Marketplace 形成「模型 + 工具 + 框架」闭环，利好 Next.js 生态开发者。"
+        }
+      ]
+    }
+  ],
+
+  "public_sentiment_summary": "近一周 Next.js 舆情以「16.3 升级热议 + 安全补丁」双主线为主。开发者既为 Turbopack 内存最高降90%、Instant Navigations 等性能提升叫好，又对 Edge Runtime 弃用、缓存模型变化和升级风险保持谨慎；SSRF、认证绕过等漏洞促使社区加速升级与安全审计。整体情绪积极但务实，主流声音强调先预览冒烟测试再升级。",
+
+  "honesty_note": "需说明：Next.js 16.3 的原始发布事件发生于 8 月 3 日，略早于本次时间窗，近 7 天内容以 16.3 后续评测、安全补丁与生态更新为主；九项安全漏洞实际于 7 月下旬披露，中文集中报道出现在 8 月 14 日。8 月 15-17 日（最近 24-48 小时）无重大突发新闻，信息略有滞后。关联话题：TypeScript 7（Go 重写）、React Compiler Rust 化、Astro 7.2、React Router v8 及前端工具链「原生化」讨论。"
+}

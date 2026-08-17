@@ -1,0 +1,139 @@
+我已完成多轮联网搜索，以下为基于「前端技术」关键词整理出的 08月10日至08月17日 时段热点（重点关注最近24-48小时）。
+
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "前端岗位需求同比骤降52%，AI冲击引发从业者就业焦虑",
+      "summary": "最新招聘数据显示普通前端与后端开发岗位需求同比暴跌52%，AI与智能体接管基础编码工作，大量初级前端面临裁员与转型压力。",
+      "source": "搜狐",
+      "url": "https://www.sohu.com/a/1063000486_122657111",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "AI工具普及后企业重算人力成本，Vibe Coding与软件3.0范式让初级编码岗位被批量压缩，前端工程师光环褪去。"
+        },
+        {
+          "stance": "业内反思",
+          "summary": "真正稀缺的是能洞察业务、把控架构与审美的工程师，人机协作中人类负责顶层设计与逻辑校验，基础编码交给AI补齐。"
+        },
+        {
+          "stance": "结构性分化观点",
+          "summary": "同周报道指出全球科技业年内裁员超16万，但字节跳动2026校招前端与客户端方向岗位同比增长23%，行业呈分化而非整体衰退。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "npm 12 正式发布：默认禁用依赖安装脚本，供应链安全全面收紧",
+      "summary": "npm 12 核心改动为 allowScripts 默认关闭，依赖的 preinstall、install、postinstall 脚本不再自动执行，需项目显式信任，以降低供应链攻击风险。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/npm-12-released/",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "GitHub 宣布 npm 12 将默认关闭安装脚本并转向显式信任机制，这是应对 npm 生态供应链攻击的关键安全举措。"
+        },
+        {
+          "stance": "安全专家分析",
+          "summary": "Socket 创始人等专家指出攻击者已开始将载荷移入包源码而非安装脚本，开发者仍需审查第三方代码的实际行为，安全不能仅靠默认关闭脚本。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Cloudflare 将日均90亿请求的 cdnjs 完整迁移至自家开发者平台",
+      "summary": "Cloudflare 宣布已将开源JS/CSS库CDN服务 cdnjs 全部迁移到自家开发者平台，日均处理90亿次请求，缓存命中率达98.6%，被视为吃自家狗粮的标杆案例。",
+      "source": "InfoQ / Cloudflare 官方博客",
+      "url": "https://www.infoq.com/news/2026/08/cloudflare-cdnjs-migration/",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "Cloudflare 表示迁移目的并非因 cdnjs 变慢，而是希望持续改进，将这一最繁忙的开源CDN运行在自己的 Workers 与容器等基础设施上，验证平台成熟度。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "分析师认为此举证明其开发者平台可承载超大规模关键基础设施，是边缘计算与无服务器架构服务生产级流量的重要里程碑。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Astro 7 系列发布：Rust 重写编译器并升级 Vite 8，构建提速最高61%",
+      "summary": "内容型Web框架 Astro 7 以 Rust 重写 .astro 编译器与 Markdown 处理流水线并迁移至 Vite 8，构建速度最高提升61%，7.2 版本落地实验性增量静态构建。",
+      "source": "InfoQ / Astro 官方博客",
+      "url": "https://www.infoq.com/news/2026/08/astro-7-release-speed/",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Astro 7 全版本聚焦构建性能，Rust 编译器与 Rust Markdown 流水线配合 Vite 8 实现最高61%加速，7.2 新增增量静态构建跳过已生成页面。"
+        },
+        {
+          "stance": "社区反馈",
+          "summary": "开发者普遍关注升级带来的破坏性变更与生态适配成本，主流观点认为性能收益显著，值得投入迁移，但需评估与现有插件体系的兼容性。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Web前端周刊2026W32：Next.js 16.3、React Router v8、Node.js v26.6.0 集中发布",
+      "summary": "本周 React 生态迎来 Next.js 16.3（开发内存最高降90%）、React Router v8 正式版、Astro 7.2、Node.js v26.6.0 与 ioredis 6.0 等多款重磅工具集中更新。",
+      "source": "51CTO 博客",
+      "url": "https://blog.51cto.com/u_17708815/14846021",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "综合周刊",
+          "summary": "Next.js 16.3 将 Turbopack 开发服务器内存占用最高降低90%；React Router v8 被团队称为「最平淡」的大版本，刻意剔除破坏性变更以缓解升级噩梦。"
+        },
+        {
+          "stance": "开发者视角",
+          "summary": "社区对 React Router v8 的低破坏性升级策略普遍肯定，同时关注其与 React Router v9 的衔接计划，以及对既有项目迁移的影响。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "2026前端工具链大逃杀：TypeScript 7 Go重写、React Compiler 拥抱 Rust",
+      "summary": "前端底层工具掀起「原生化」革命，TypeScript 7 编译器由 Go 重写提速约10倍，React Compiler 从 TS 全面迁移至 Rust 并入主仓库，Vite 8 默认采用 Rust 版 Rolldown。",
+      "source": "陈旭谭博客 / 掘金",
+      "url": "http://www.chenxutan.com/d/5982.html",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "技术分析",
+          "summary": "分析认为这是自下而上的工具链底层革命，Rust与Go原生语言取代JS实现以突破性能天花板，将显著改变前端日常开发体验。"
+        },
+        {
+          "stance": "审慎观点",
+          "summary": "部分开发者提醒，大规模重写伴随配置项与插件生态的兼容问题，TypeScript 7 默认丢弃一批老选项，建议等项目生态跟上再升级。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "「HTML is the new Markdown」风潮引热议：AI生成HTML当PPT值不值得跟",
+      "summary": "由 Anthropic Claude Code 团队带火的「HTML 即新 Markdown」话题持续发酵，AI 直接生成可交互 HTML 文档用于演示与汇报成为热点，也引发是否炒作之争。",
+      "source": "什么值得买 / 知乎",
+      "url": "https://post.smzdm.com/p/a5rg9r87/",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "支持派",
+          "summary": "支持者认为 HTML 相比 Markdown 信息密度与可读性更高，可被浏览、操作与视觉理解，更适合演示、原型与技术报告等复杂场景。"
+        },
+        {
+          "stance": "质疑派",
+          "summary": "知乎文章《HTML的风能吹多久》为热潮泼冷水，认为该说法存在炒作成分，实际价值需分场景评估，并非所有汇报场景都适合用HTML替代。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "公众情绪主线是「焦虑与变革并存」：一方面，AI冲击下前端初级岗位收缩、就业寒冬讨论刷屏，从业者普遍焦虑；另一方面，工具链Rust化、npm 12安全收紧、Astro与Next.js性能跃升等技术积极信号明显。整体舆论倾向为「前端未死但门槛上移」，人机协作与全栈化转型成为共识方向。",
+  "honesty_note": "中文社区针对本时段最热的是前端就业与AI替代话题，其余为英文技术媒体与周刊报道；个别事件（如 Astro 7.0、Angular v22）的正式版早于本窗口发布，本周为媒体集中解读与跟进报道。关联话题：AI编码工具普及、TypeScript 7迁移适配、大厂秋招「AI+X」岗位趋势、React Router v9预告。"
+}

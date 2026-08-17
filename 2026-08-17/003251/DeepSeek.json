@@ -1,0 +1,149 @@
+{
+  "keyword": "DeepSeek",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "DeepSeek API峰谷定价今日正式生效，部分涨幅最高达1100%",
+      "summary": "8月17日零时起，DeepSeek V4系列API启用峰谷定价，高峰时段（9点、14点）价格为空闲时段两倍，V4 Pro高峰百万tokens输出最高27元，部分资费涨幅最高约1100%，开发者圈热议「还能用得起吗」。",
+      "source": "东方财富网股吧",
+      "url": "https://guba.eastmoney.com/news,cjpl,1759622566.html",
+      "published_time": "2026-08-16 20:00",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "官方称调价旨在更合理调配算力资源，采用峰谷定价，空闲时段价格仅为高峰一半，新价格于北京时间8月17日00:00生效。"
+        },
+        {
+          "stance": "网友与开发者质疑",
+          "summary": "不少开发者吐槽「还能用得起吗」「梁子，你让我很难受」，部分用户提前囤套餐或转向OpenCode等替代方案。"
+        },
+        {
+          "stance": "专家与券商分析",
+          "summary": "涨价不改其全球低价定位，可改善毛利率并提升国产开源模型定价权；亦有观点认为算力紧张与商业化压力才是主因。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek V4 Pro正式版波折上线：静默发布→撤公告疑似回滚→重新恢复",
+      "summary": "8月12日深夜V4-Pro正式版静默上线，8月13日官网横幅与开放平台公告一度被撤、疑似回滚，当晚又重新挂出并正式发布，被称为「AI疯狂星期四」，因工程部署错位引发实测争议。",
+      "source": "中华网",
+      "url": "https://news.china.com/socialgd/10000169/20260814/49674614.html",
+      "published_time": "2026-08-14 09:00",
+      "perspectives": [
+        {
+          "stance": "官方与业内回应",
+          "summary": "问题出在工程部署（后端推理栈与权重配置出现错位）而非模型本身，官方连夜抢修后重新发布，恢复上线。"
+        },
+        {
+          "stance": "网友与第三方实测质疑",
+          "summary": "第三方评测机构Artificial Analysis给出智能指数仅53分，与官方宣称「直追Fable 5」存在落差，网友怀疑夸大宣传或部署错模型。"
+        },
+        {
+          "stance": "媒体综合报道",
+          "summary": "撤公告被视为「半撤回」的尴尬状态，为旗舰发布蒙上阴影，也被形容为行业罕见的发布即撤回乌龙。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "DeepSeek开源Agent运行框架Harness v0.1，「黑鲸」亮相引爆开发者圈",
+      "summary": "8月13日晚，DeepSeek发布并开源Harness（DSH）v0.1开发者预览版，采用MIT协议，可将模型接入文件系统、终端、网页与代码工具，主打「一切皆插件」，24小时内GitHub收获超7万星并冲上Hacker News榜首。",
+      "source": "36氪",
+      "url": "https://www.36kr.com/p/3938566998834308",
+      "published_time": "2026-08-14 09:00",
+      "perspectives": [
+        {
+          "stance": "开发者好评",
+          "summary": "全开源可降低对Claude Code等海外工具的依赖，「一切皆插件」让Agent可自我改装并节省Token，被视作补齐Vibe Coding入口。"
+        },
+        {
+          "stance": "风险提示与专家分析",
+          "summary": "插件权限、供应链安全与治理成本是进入生产环境的前提；MIT开源只能降低门槛，不自动形成生态。"
+        },
+        {
+          "stance": "行业解读",
+          "summary": "掌握Harness即掌握真实任务入口，可能影响模型分发与开发者工作流，与Anthropic Claude Code正面竞争。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "国家超算互联网上线DeepSeek V4 Pro正式版与Harness智能体框架",
+      "summary": "8月14日，国家超算互联网宣布上线DeepSeek-V4-Pro正式版及智能体框架Harness，依托全国首个十万卡级超智融合算力资源池，为科研院所与企业提供从训练到部署的一站式国产算力支撑。",
+      "source": "财联社·科创板日报",
+      "url": "https://www.cls.cn/detail/2455084",
+      "published_time": "2026-08-15 09:00",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "依托十万卡级超智融合算力资源池提供大模型全生命周期算力支撑，超算互联网AI社区已汇聚1700余款开源大模型。"
+        },
+        {
+          "stance": "产业视角",
+          "summary": "强化Agent能力的V4 Pro落地国家级算力平台，标志国产大模型「模型+框架+算力」全栈国产化提速。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "阿里「千问办公」首发上线DeepSeek V4 Pro与GLM-5.3两款旗舰模型",
+      "summary": "8月15至16日，阿里巴巴旗下Agent产品「千问办公」首发上线DeepSeek V4 Pro和智谱GLM.3两款最新旗舰模型，加上此前上线的Qwen3.8-Max，目前共支持三款国产旗舰模型，加速国产大模型落地办公Agent场景。",
+      "source": "新浪科技",
+      "url": "https://finance.sina.com.cn/tob/2026-08-16/doc-ininnqpu9887567.shtml",
+      "published_time": "2026-08-16 10:00",
+      "perspectives": [
+        {
+          "stance": "企业动态",
+          "summary": "阿里旗下平台开放接入竞品旗舰模型，凸显国产模型生态「兼容并蓄」策略。"
+        },
+        {
+          "stance": "行业解读",
+          "summary": "旗舰模型密集上架第三方Agent平台，反映模型竞争正从单点能力转向工作流与生态之争。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "「梁文锋，开始算账了」：DeepSeek大幅涨价背后的商业化转向",
+      "summary": "澎湃深度分析指出，DeepSeek大幅调价背后既有调用量爆发、算力紧张的现实，也与幻方量化7月全线回撤超20%、启动两轮千亿级融资相关，外界热议「技术理想主义是否让位于商业化」。",
+      "source": "澎湃新闻",
+      "url": "https://www.thepaper.cn/newsDetail_forward_33787374",
+      "published_time": "2026-08-16 09:58",
+      "perspectives": [
+        {
+          "stance": "媒体深度分析",
+          "summary": "涨价是「给友商活路」还是账本压力尚难定论，但算力短缺、幻方回撤、融资后股东变现诉求等客观因素叠加是明确诱因。"
+        },
+        {
+          "stance": "行业观点",
+          "summary": "大模型行业正集体告别「烧钱换份额」时代，Kimi、智谱、DeepSeek殊途同归，都须在算力紧缺与资本趋利中寻找可持续商业模式。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "DeepSeek V4 Flash单周调用量8.83万亿Token登顶全球第一",
+      "summary": "OpenRouter数据显示，上周（8月3日至9日）全球AI大模型总调用量69万亿Token，DeepSeek-V4-Flash正式版以8.83万亿Token登顶、环比大增570%，中国大模型周调用量已连续15周超过美国。",
+      "source": "东方财富·财富号",
+      "url": "https://caifuhao.eastmoney.com/news/20260814132613710199840",
+      "published_time": "2026-08-14 10:00",
+      "perspectives": [
+        {
+          "stance": "数据报道",
+          "summary": "调用量爆发源于极致性价比，V4 Flash每任务成本约为美国前沿模型的1/40至1/100，单日一度消耗8万亿Token。"
+        },
+        {
+          "stance": "产业解读",
+          "summary": "高调用量反过来加剧算力紧张，成为本轮API涨价与峰谷定价的直接诱因。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "舆论焦点集中在8月17日零时生效的API峰谷定价与涨价，开发者普遍担忧成本上升，情绪以调侃、观望和对「性价比是否还在」的追问为主；同时V4 Pro发布波折与Harness开源引发「实力与争议并存」的复杂评价，整体对DeepSeek仍以高度关注和期待为主，讨论热度持续走高。",
+  "honesty_note": null,
+  "start_time": "2026-08-17 00:32",
+  "end_time": "2026-08-17 00:34",
+  "elapsed_seconds": 94,
+  "retry_count": 0
+}

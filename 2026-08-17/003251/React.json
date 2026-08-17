@@ -1,0 +1,187 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Next.js 16.3 正式发布：Instant Navigations 上线、开发内存最高降 90%",
+      "summary": "Vercel 发布 Next.js 16.3 正式版，引入 Instant Navigations 使服务端渲染应用接近 SPA 响应速度，开发服务器内存占用最高降 90%，SSR 吞吐提升 22%，并默认支持 TypeScript 7。",
+      "source": "Next.js 官方博客 / 掘金",
+      "url": "https://nextjs.org/blog/next-16-3?from_theconsensus=1",
+      "published_time": "2026-08-02（持续报道至 08-12）",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Vercel 强调「无需修改应用代码即可实现性能飞跃」，Instant Navigations 基于 Cache Components，回归动态优先与显式可预测缓存模型，并新增面向 AI 智能体的版本化文档、skills 与可执行报错。"
+        },
+        {
+          "stance": "技术媒体分析",
+          "summary": "多篇评测指出发布说明不等于采用计划，Instant Navigations 需按路由逐步启用；同时社区反馈 loading.tsx 与 Instant Insights 组合出现异常、canary 版存在返回空白页等回归问题。"
+        },
+        {
+          "stance": "社区讨论",
+          "summary": "对内存占用降低与 SSR 性能提升普遍持正面态度，但部分开发者担忧动态默认模型与缓存语义变化带来的迁移成本。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Vercel 发布安全补丁：Next.js 九项关键漏洞涵盖 SSRF、中间件绕过与 DoS",
+      "summary": "Vercel 于 8 月中旬披露并修复 Next.js 九项漏洞，含高危 SSRF（rewrites 与 Server Actions）、中间件认证绕过、DoS 及缓存混淆，已在 15.5.21 与 16.2.11 修复，旧版 13/14 不再获得修复。",
+      "source": "CN-SEC 中文网（网安百色）",
+      "url": "http://cn-sec.com/archives/5364572.html",
+      "published_time": "2026-08-14 11:18",
+      "perspectives": [
+        {
+          "stance": "安全通报",
+          "summary": "漏洞由研究员 KarimPwnz 披露，最高危为 CVE-2026-64645 重写功能 SSRF 与 CVE-2026-64642 中间件/代理绕过，建议立即升级并审计重写规则与自定义服务器配置。"
+        },
+        {
+          "stance": "官方建议",
+          "summary": "Vercel 强调将启动月度安全更新计划，运行 13.x/14.x 的组织需升级至已修复的 15.x 或 16.x 版本，以覆盖 SSRF、DoS 与缓存混淆等风险。"
+        },
+        {
+          "stance": "用户反应",
+          "summary": "部分企业担心升级窗口与兼容成本，社区对 Next.js 的质量管控与安全响应节奏提出质疑。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "React Router 曝高危 DoS 漏洞：__manifest 端点无界路径扩展可致服务瘫痪",
+      "summary": "React Router 被披露存在 CVE55685，Framework Mode 的 __manifest 端点在处理恶意请求时无界路径扩展导致资源耗尽（CVSS 8.7），未认证远程攻击者可造成拒绝服务，官方要求升级至 7.18.0 以上。",
+      "source": "Cybersecurity-help.cz（MongoDB 安全公告）",
+      "url": "https://www.cybersecurity-help.cz/vdb/SB2026081413",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "漏洞通报",
+          "summary": "问题源于 CWE-400 资源耗尽，仅影响 React Router Framework Mode 应用，Declarative 与 Data 模式不受影响，远程未认证攻击者即可触发。"
+        },
+        {
+          "stance": "官方修复建议",
+          "summary": "安全公告要求安装供应商补丁，升级到 react-router 7.18.0 或更高版本以获得完整修复覆盖。"
+        },
+        {
+          "stance": "技术解读",
+          "summary": "openSUSE 等跟进 CVE-2026-55685，指出 7.0.0 至 7.17.0 版本均受影响，未认证的恶意请求即可拖慢服务响应。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "React Native 0.87 发布：公共 JS API 全面转为严格 TypeScript 类型",
+      "summary": "React Native 0.87 于 8 月 10 日发布，公共 JavaScript API 正式变为 Strict TypeScript API，类型由源码自动生成；Metro 升级至更精简的 v0.87，并实验性支持 iOS Swift Package Manager。",
+      "source": "React Native 官网 / React Status",
+      "url": "https://reactnative.dev/versions?from_column=20423&from=20423",
+      "published_time": "2026-08-10",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "强调类型安全大幅提升，类型直接从 RN 源码生成，配合 Metro v0.87 与 SwiftPM 实验支持，推动新架构持续落地。"
+        },
+        {
+          "stance": "生态跟进",
+          "summary": "Expo SDK 57（expo@57.0.9，8 月 13 日发布）同步引入 React Native 0.86.2，社区关注 0.87 升级的兼容性衔接。"
+        },
+        {
+          "stance": "开发者视角",
+          "summary": "对严格类型 API 普遍认可，但部分开发者担心第三方库与既有代码的迁移适配成本。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "前端周刊 2026W32：React Router v8 生态、Astro 7.2、Node v26.6 齐发",
+      "summary": "8 月中旬前端生态密集发布，周报回顾了 React Router v8 这一开放治理后的首个大版本，团队称其为「最平淡」大版本以刻意规避破坏性变更；同期 Astro 7.2、Node.js v26.6、ioredis 6.0 相继发布。",
+      "source": "51CTO",
+      "url": "https://blog.51cto.com/u_17708815/14846021",
+      "published_time": "2026-08-12",
+      "perspectives": [
+        {
+          "stance": "周报汇总",
+          "summary": "汇总 Next.js 16.3 内存优化、React Router v8 发布与 v9 预告、Astro 7.2、Node.js v26.6 等多项本周更新。"
+        },
+        {
+          "stance": "官方态度（React Router 团队）",
+          "summary": "强调 v8 在开放治理模式下确立年度大版本节奏，刻意减少破坏性变更，以缓解每次大版本升级带来的迁移噩梦。"
+        },
+        {
+          "stance": "社区观点",
+          "summary": "对「v9 已在路上」保持关注，并讨论频繁大版本迭代对长期项目的维护与升级压力。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "This Week In React #293：React 核心 browser() API、TanStack Charts 与 Flue「React for Agents」",
+      "summary": "React 周报 #293（8/13）盘点 React 核心新 API browser()（SSR 下安全挂起浏览器专属组件）、TanStack Charts 预发布、React Aria 1.20、MobX 7.0，以及被称「React for Agents」的 Flue 2.0 hooks 化 AI 智能体框架。",
+      "source": "DEV Community（This Week In React）",
+      "url": "https://dev.to/sebastienlorber/this-week-in-react-293-nextjs-tanstack-browser-react-aria-plaintext-vision-camera-4mn8",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "生态盘点",
+          "summary": "强调 Next.js 16.3 正式上线、TanStack Router v8 以 TanStack Store 驱动状态、React Native PlainText 提供更快文本渲染等多项进展。"
+        },
+        {
+          "stance": "AI Agent 方向",
+          "summary": "Flue 2.0 以 useModel、useTool 等 hooks 让 AI 智能体可运行时动态更换模型与能力，被视为「React for Agents」的新范式。"
+        },
+        {
+          "stance": "开发者关注",
+          "summary": "对 browser() API 减少 SSR hack、React Aria 1.20 新组件（TokenField 等）与 TanStack Charts 等功能持积极态度。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Next.js 团队（含 Dan Abramov、Pete Hunt）预告 Reddit AMA，16.3.1 补丁同步发布",
+      "summary": "Next.js 团队将于 8 月 18 日在 Reddit 举行 AMA，前 React 核心成员 Dan Abramov、Pete Hunt 已加入团队；同时发布 16.3.1 补丁，修复预取循环、缓存条目过早丢弃及 headers() 返回过期视图等问题。",
+      "source": "React Status",
+      "url": "https://react.statuscode.com/issues/487",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "社区互动",
+          "summary": "团队预告 Reddit AMA 并开放提前提问，强化与开发者社区的沟通，Dan Abramov 与 Pete Hunt 的加入引发关注。"
+        },
+        {
+          "stance": "补丁修复",
+          "summary": "16.3.1 清理 16.3 发布中的重复预取循环、缓存条目过早丢弃、headers() 返回过期视图等回归问题，回应早期反馈。"
+        },
+        {
+          "stance": "用户反馈",
+          "summary": "显示团队正快速响应 16.3 上线初期的稳定性问题，修复节奏获得部分开发者认可。"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "TanStack 停用 RSC 引发架构讨论：依赖变小后，架构撑不住了？",
+      "summary": "TanStack 团队在自家官网停用 React Server Components（RSC），将 Markdown 与语法高亮迁移到服务端以减少浏览器端 JS 传输；技术圈围绕「是 RSC 不行还是依赖过大」展开讨论。",
+      "source": "51CTO",
+      "url": "https://www.51cto.com/article/852119.html",
+      "published_time": "2026-08-05（相关讨论持续至本周）",
+      "perspectives": [
+        {
+          "stance": "TanStack 团队",
+          "summary": "停用 RSC 带来实际收益（减少浏览器端 JS 传输、加快网站速度），但也承认增加了管道复杂度与架构负担。"
+        },
+        {
+          "stance": "技术分析",
+          "summary": "指出根本问题是过大的 Markdown 与代码高亮依赖，而非 RSC 本身，「RSC 不好」的结论过于简单化。"
+        },
+        {
+          "stance": "社区争论",
+          "summary": "延续 RSC 架构争议，部分开发者借机反思服务端组件在复杂依赖场景下的取舍与演进方向。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 React 生态呈现「性能狂欢」与「安全警报」并行的状态：Next.js 16.3 的性能提升（内存降 90%、Instant Navigations）与 React Native 0.87 严格类型化收获大量正面期待；但 8 月 14 日集中披露的 Next.js 九项漏洞与 React Router 高危 DoS 引发升级焦虑，社区对质量管控与版本迭代节奏出现质疑；RSC 架构争议与「React for Agents」的 AI 化则构成另一条讨论主线。整体情绪以审慎乐观为主。",
+  "honesty_note": "需说明三点：① TanStack 停用 RSC 首发于 08-01 至 08-05，略早于指定窗口，但其讨论本周仍在延续，故收录并标注时间；② Next.js 16.3 正式版发布于 08-02 前后，本周仍有大量评测、社区反馈与 16.3.1 补丁跟进；③ 微博、知乎等中文社交平台未检索到专门针对 React 的高热度事件，热点主要来自技术媒体与开发者社区。关联话题：TypeScript 7.0 发布、Vite 8 稳定版、Expo SDK 57、React Compiler Rust 移植版（7 月底合并、持续讨论）。",
+  "start_time": "2026-08-17 01:03",
+  "end_time": "2026-08-17 01:06",
+  "elapsed_seconds": 123,
+  "retry_count": 0
+}

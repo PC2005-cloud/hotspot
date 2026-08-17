@@ -1,0 +1,117 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Bun 全面切换到 TypeScript 7：所有模板默认使用 Go 原生编译器",
+      "summary": "Bun 合并 PR #39341，将 bun init 的 blank、react、react-tailwind、react-shadcn 等全部模板从 typescript ^6 升级为 ^7（7.0.2），标志主流前端工具链正式跟进 TS7 原生编译器，8 月 16 日落地。",
+      "source": "GitHub",
+      "url": "https://github.com/oven-sh/bun/pull/39341",
+      "published_time": "2026-08-16",
+      "perspectives": [
+        {
+          "stance": "项目官方/维护者",
+          "summary": "TypeScript 7.0.2 已是 npm latest，Bun 模板统一改为 ^7，四套模板在 tsc --noEmit 与 bun build 下全部通过，15 项 init 测试全绿；TS7 的 bin/tsc 变成极简 ESM shim，直接 exec 原生 Go 编译器。"
+        },
+        {
+          "stance": "技术解读/社区观察",
+          "summary": "这被视作 TypeScript 7 原生编译器在主流工具链落地的关键信号，说明生态已开始大面积默认使用 TS7。"
+        },
+        {
+          "stance": "谨慎提醒",
+          "summary": "npm 的 typescript 包已退化为薄封装，require('typescript') 只暴露版本号、不再包含 JS 编译 API，依赖程序化 API 的工具链仍需借助 @typescript/typescript6 兼容层。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "TypeScript 7.0 Go 原生编译器深度解析：10 倍提速背后的「原生化」革命",
+      "summary": "8 月 13 日多篇深度文章拆解 TypeScript 7 用 Go 重写编译器、构建提速 8 倍，并将其置于 React Compiler 拥抱 Rust、Node 26 引入 vfs 的 2026 前端工具链「原生化」浪潮中。",
+      "source": "陈序谈(chenxutan.com)",
+      "url": "http://www.chenxutan.com/d/5982.html",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "官方/InfoQ 报道",
+          "summary": "微软 7 月 8 日正式发布 TypeScript 7.0，采用 Go 原生编译器与共享内存并行，构建速度约为 6.0 的 10 倍。"
+        },
+        {
+          "stance": "技术专家分析",
+          "summary": "tsgo 作为类型检查器和编辑器引擎已很出色，但作为完整构建工具仍不成熟，最佳实践是 tsgo 与 tsc 并行运行、逐步切换。"
+        },
+        {
+          "stance": "谨慎派",
+          "summary": "新默认配置会丢弃 baseUrl 等一批老选项（如 TS5102 报错），Vue/Svelte 等框架尚未完全适配，多数项目宜等生态跟上再升级。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "TypeScript 7.1 API 路线图与迁移障碍成社区焦点",
+      "summary": "TS7 因暂缺稳定程序化 API 卡住编辑器、语言服务器、eslint 与测试工具链，TypeScript.fm 第 77 期专门讨论 7.1 编译 API；官方迭代计划显示 7.1 预计 9 月 Beta、10 月 RC、11 月稳定。",
+      "source": "TypeScript.fm / microsoft/TypeScript",
+      "url": "https://git.codeproxy.net/microsoft/TypeScript/issues/63703",
+      "published_time": "2026-08 上旬（迭代计划 07-30 发布）",
+      "perspectives": [
+        {
+          "stance": "官方路线图",
+          "summary": "TypeScript 7.1 迭代计划明确将补全稳定程序化 API、替换 VS Code 集成，并调研 LSP 新 Hover 与多文档高亮 API。"
+        },
+        {
+          "stance": "生态开发者",
+          "summary": "在 7.1 稳定 API 落地前，typescript-eslint、ts-jest、编辑器插件等难以跟进 TS7，社区呼吁先跑双版本验证，别急于默认切换。"
+        },
+        {
+          "stance": "工具链厂商",
+          "summary": "ts7-compat-guard 等工具应运而生，用于扫描项目对编译 API 的依赖并给出 TS7 就绪清单，降低升级风险。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "TypeScript 企业级采用讨论升温：Hard truths for enterprise code",
+      "summary": "8 月 15 日 Techgenyz 等发文探讨企业在 TS 采用中的取舍，指出静态检查减少生产报错、自动重构等收益，也直面迁移期编译延迟、配置税与滥用 any 等问题。",
+      "source": "Techgenyz / Lidea",
+      "url": "https://techgenyz.com/typescript-adoption-tradeoffs/",
+      "published_time": "2026-08-15",
+      "perspectives": [
+        {
+          "stance": "支持采用",
+          "summary": "静态类型检查能在部署前拦截 JS 运行时错误，自动化重构工具防止重命名破坏引用，对企业存量代码库价值显著。"
+        },
+        {
+          "stance": "反思/质疑",
+          "summary": "迁移初期存在编译延迟与配置成本，过度使用 any 会绕过编译保护、削弱代码库安全保证；部分观点认为裸 JS 是「穿着伪装的风险」。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "社区热议：TypeScript 表达力过强，或许是问题所在",
+      "summary": "8 月 15 日 DEV Community 文章登上讨论热榜，指出 TS 的 null/undefined、boolean 状态组合、Promise 等让类型层能表达几乎一切，反而可能让状态模型与业务逻辑变得难以阅读。",
+      "source": "DEV Community",
+      "url": "https://dev.to/kentaromorishita/typescript-can-express-almost-anything-thats-part-of-the-problem-28je",
+      "published_time": "2026-08-15",
+      "perspectives": [
+        {
+          "stance": "作者观点",
+          "summary": "TypeScript 表达力过强导致类型层容易承载只有少数人读得懂的业务逻辑，主张用更严格的 ADT/Maybe 等「形状」约束状态空间。"
+        },
+        {
+          "stance": "支持评论",
+          "summary": "最好的类型让领域更清晰而非更「炫技」，表达力太强确实容易陷入类型体操陷阱。"
+        },
+        {
+          "stance": "综合/反方",
+          "summary": "也有开发者认为 TS 的灵活性与渐进式适配能力仍是大型项目首选，问题不在语言本身而在使用方式。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近 7 天 TypeScript 热度仍集中在 7.0 Go 原生编译器的「10 倍提速」及其生态迁移阵痛上，公众情绪总体谨慎乐观——普遍认可性能飞跃，同时焦虑于程序化 API 缺失、Vue/Svelte 兼容、老配置被丢弃等迁移成本；最近 24-48 小时 Bun 全面切换 TS7 被视为生态跟进信号，企业级采用利弊讨论随之升温。",
+  "honesty_note": "近 7 天（8/10-8/17）内 TypeScript 本身并无全新大版本发布，热点主要是 7.0（7 月 8 日发布）后的生态跟进与迁移讨论延续；最近 24-48 小时的代表性事件为 8 月 16 日 Bun 模板切换 TS7 及 8 月 15-16 日的企业采用讨论。关联话题补充：TypeScript 7.1 迭代计划（预计 11 月稳定）、tsgo 与 tsc 并行迁移方案、typescript-eslint 双版本兼容方案（loke.dev）、TS7 JSDoc 语法破坏性变更对 Chromium 等项目的冲击。",
+  "start_time": "2026-08-17 00:44",
+  "end_time": "2026-08-17 00:48",
+  "elapsed_seconds": 207,
+  "retry_count": 1
+}

@@ -1,0 +1,119 @@
+{
+  "keyword": "GitHub",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "DeepSeek Harness 开源72小时破11万星，插件生态一夜爆发",
+      "summary": "DeepSeek 8月13日开源首款 Agent 产品 Harness v0.1（MIT协议），上线半小时破万星，约42小时破10万、72小时破11万星，标有 dsh-plugin 的衍生仓库超700个，被戏称「万物皆插件」「Agent界的Android」。",
+      "source": "智源社区/量子位、DoNews、极客公园、wangruofeng007、TheBlockBeats",
+      "url": "https://wangruofeng007.com/blog/2026-08/github-trending-daily-0815-deepseek-harness-storm/",
+      "published_time": "2026-08-15",
+      "perspectives": [
+        {
+          "stance": "开发者追捧",
+          "summary": "社区认为其插件接口设计顺手，72小时内长出自带桌面端、插件目录、预设规范、桌宠小游戏等完整生态，衍生项目单日吸星超2.3万，生态成型速度成为衡量框架质量的新指标。」
+        },
+        {
+          "stance": "安全质疑",
+          "summary": "官方明确插件不做沙箱隔离、直接以用户自身权限运行，「能力给足、安全自负」的设计引发对供应链与越权风险的担忧，另有网友认为星数「图一乐」、存在水分。」
+        },
+        {
+          "stance": "行业分析",
+          "summary": "观察者指出 Harness 之争已进入生态位争夺，桌面分发、插件市场、规范预设各有人占坑，开源透明成为大厂获取开发者信任的精确武器。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "xAI 将 Grok 4.6 接入 GitHub Copilot，模型选择加速多元化",
+      "summary": "8月13-14日，xAI 的 Grok 4.6 编码模型正式上线 GitHub Copilot，面向 Pro、Pro+、Max、Business、Enterprise 全部订阅档开放，开发者在 VS Code、Copilot 应用、云端 Agent 及 CLI 中均可选用，支持管理员控制灰度发布。",
+      "source": "blockchain.news、4sysops、TechandBusiness、Zoomit",
+      "url": "https://4sysops.com/archives/grok-4-6-reaches-github-copilot-with-an-admin-controlled-rollout/",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "xAI 称 Grok 4.6 是面向开发者的最新编码模型，接入 Copilot 后触达数百万 VS Code 用户，管理端可控制企业内模型灰度开放。」
+        },
+        {
+          "stance": "行业分析",
+          "summary": "分析认为 GitHub 正快速扩充模型阵容以构建「平台护城河」，在 Copilot 中形成 Grok、Gemini、Kimi、Claude 等多家模型并存的竞争格局，模型选择本身成为差异化卖点。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "GitHub 发布 Agent Plugins 1.0 标准，Copilot 一周连上 Kimi K3、MAI-Code、Gemini 3.7 Flash",
+      "summary": "8月11-13日，GitHub 在 VS Code、Copilot CLI 与 Copilot 应用中推出标准化的 Agent Plugins 1.0 接口，同期向 Copilot 全线铺开 Kimi K3、微软 MAI-Code-1.1-Flash（原生图像理解）与 Gemini 3.7 Flash 等模型，并上线 JetBrains 端 Copilot 记忆与 Ollama 支持。",
+      "source": "GitHub Changelog、OriginBrief、VibecodedThis",
+      "url": "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "GitHub 称 Agent Plugins 1.0 统一了 Agent 插件接口，配合多模型接入与使用量报告，让开发者按需选择模型、掌控 Agent 工作流。」
+        },
+        {
+          "stance": "行业分析",
+          "summary": "有分析将其视为平台圈地动作：若 Agent Plugins 1.0 达到 VS Code 扩展的渗透率，GitHub 将像拥有代码托管层一样拥有 Agent 集成层，成为 AI 工具厂商的默认接入目标。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "VS Code 1.133 修复高危 RCE 漏洞，GitHub Copilot 代理模式同步曝命令注入（CVE-2026-70336/70335）",
+      "summary": "微软8月12日发布 VS Code 1.133，修复 CVE-2026-70336 远程代码执行漏洞（CVSS 7.8，无需认证即可在 VS Code 进程执行任意代码）及 CVE-2026-70335 Copilot 提示注入命令执行漏洞，1.132 及更早版本全线受影响，Qualys 与 ZDI 列为开发者工具头号风险。",
+      "source": "Wafai、Byteiota、Qualys/ZDI",
+      "url": "https://www.wafai.cn/cve-2026-70336-vs-code-1-133-rce-copilot-os-command-injection/",
+      "published_time": "2026-08-14",
+      "perspectives": [
+        {
+          "stance": "安全机构警示",
+          "summary": "Qualys 与 ZDI 警告开发机是密集凭证库，被攻陷将变成软件供应链风险点，攻击者可窃取 GitHub Token、云 CLI 会话与 CI/CD 凭据，须优先修补。"
+        },
+        {
+          "stance": "官方修复指引",
+          "summary": "微软建议升级 VS Code 1.133 并单独更新 Copilot 与 Copilot Chat 扩展，勿对不可信仓库启用代理模式、将 MCP 输出视为不可信输入，并保留终端确认弹窗作为最后防线。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "GitHub Trending 周榜：OpenClaw 越过37万星，「本地优先」项目霸榜",
+      "summary": "8月15-17日 GitHub Trending 显示，本地优先 AI 助手 OpenClaw 本周突破37万星、为史上最快破10万星仓库，LocalAI、Ollama、Langflow、Dify 等本地推理与可视化编排项目集体霸榜，社区工程重心明显转向端侧。",
+      "source": "创趣数智 wsq.be、开源中国、leiqitop、每日 Git",
+      "url": "https://wsq.be/github-trending-2026-08-17/",
+      "published_time": "2026-08-17",
+      "perspectives": [
+        {
+          "stance": "社区观察",
+          "summary": "分析认为「本地优先」不是小众偏好而是主流预期，资本在云端推理与端侧同时下注，社区工程重心正落在端侧，本地推理与自托管成默认架构。"
+        },
+        {
+          "stance": "工程视角",
+          "summary": "从业者建议把 Langflow/Dify/CrewAI 等编排与多 Agent 框架当「现成件」接入而非自建，将工程投入转向端云成本路由、合规交付等仍空缺的格子。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "GitHub Universe 2026 日程公布：AI 成绝对主线，早鸟票 8月19日截止",
+      "summary": "8月12日起 GitHub Universe 2026 完整日程上线，官方旗舰开发者大会定于10月28-29日在旧金山 Fort Mason 举办，议程以 AI Agent、编码智能体与开发者平台为主题，8月19日前注册可享300美元早鸟优惠。",
+      "source": "GitHub Universe 官网、blockchain.news、TechBytes",
+      "url": "https://blockchain.news/news/github-universe-2026-schedule-ai-focus",
+      "published_time": "2026-08-13",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "GitHub 称 Universe 2026 将「联合人类、Agent 与世界代码」共同构建未来，线下线上同步举办，早鸟注册截止8月19日、可省300美元。"
+        },
+        {
+          "stance": "媒体观察",
+          "summary": "外媒指出今年日程密集聚焦 AI 在软件开发中的角色，会议议题本身即反映行业向 AI 驱动开发转型的大趋势，适合团队把握折扣提前报名。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 GitHub 相关舆论高度聚焦 AI Agent 生态：DeepSeek Harness 72小时破11万星引爆开源社区与插件狂欢，成为最大情绪爆点；Copilot 多模型扩容与 Agent Plugins 1.0 被视为平台圈地信号；同时 VS Code/Copilot 高危漏洞引发开发者恐慌性升级补丁。整体情绪以兴奋、追捧为主，夹杂对插件安全与星数注水的理性质疑。",
+  "honesty_note": null
+}

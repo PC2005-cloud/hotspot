@@ -1,0 +1,99 @@
+基于联网搜索（基准日 2026-08-24），已完成近 7 天（08-17 至 08-24）Docker 相关热点的检索与整理，以下为最终结果。
+
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "docker-socket-proxy 曝高危访问控制漏洞 CVE-2026-78122，可越权读取容器文件系统",
+      "summary": "Tecnativa 开源镜像 docker-socket-proxy 被发现访问控制粒度不足漏洞，设置 CONTAINERS 变量后可绕过读接口限制，远程读取任意文件并下载整个容器文件系统。",
+      "source": "NVD、阿里云漏洞库、VulDB",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78122",
+      "published_time": "2026-08-22 至 08-23（NVD 发布 08-22，阿里云漏洞库披露 08-23）",
+      "perspectives": [
+        {
+          "stance": "官方漏洞通报",
+          "summary": "该漏洞影响 docker-socket-proxy 直至 0.5.0 版本，/containers 命名空间的 archive、export、logs、top 等读端点未正确门禁，攻击者可越权读取容器文件系统。"
+        },
+        {
+          "stance": "安全厂商与风险分析",
+          "summary": "docker-socket-proxy 常用于保护 Traefik、Portainer 等对宿主机 Docker socket 的访问，漏洞可致敏感数据泄露，属于 Docker API 代理层的严重授权绕过，建议尽快升级或收紧配置。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "2026 PHP 容器化部署统计出炉：57% 团队用容器，Docker 采用率高达 88%",
+      "summary": "Perforce Zend 报告显示，57% 的 PHP 团队已使用容器化技术，Docker 以 88% 采用率主导，Alpine Linux 使用率从 18% 升至 31%，容器已成 PHP 部署标准基础设施。",
+      "source": "三个皮匠报告（Perforce Zend 报告转载）",
+      "url": "https://www.sgpjbg.com/labelsyh/phprongqihuabushutongji.html",
+      "published_time": "2026-08-24",
+      "perspectives": [
+        {
+          "stance": "行业报告与综合报道",
+          "summary": "欧洲和英国容器采用率最高、美洲最低；27% 团队计划 12 个月内采用，Docker 以 88% 遥遥领先，Kubernetes 仅 31%，反映 PHP 团队仍处容器化早期阶段。"
+        },
+        {
+          "stance": "安全趋势分析",
+          "summary": "容器化增长带来新的安全考量，大型企业将扫描开源包漏洞列为重要安全措施，Alpine 轻量基础镜像的快速增长也印证了容器友好部署趋势。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Docker Sandboxes 集成 GitHub Actions，AI 智能体在一次性隔离环境中运行",
+      "summary": "Docker 官方博客介绍，GitHub Agentic Workflows 已将 Docker Sandboxes 作为受支持的智能体运行时，AI 编码代理在独立微虚拟机内拥有私有 Docker 守护进程，降低 CI 中的爆炸半径。",
+      "source": "Docker 官方博客",
+      "url": "https://www.docker.com/blog/running-ai-agents-in-github-actions-with-docker-sandboxes/",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "官方技术方案",
+          "summary": "沙箱以微虚拟机为隔离边界，智能体在 VM 内拥有完整 root 权限但无法控制宿主机 Docker 守护进程，仅通过显式共享工作区桥接，兼顾自由度与安全。"
+        },
+        {
+          "stance": "开发者社区视角",
+          "summary": "AI 编码智能体可执行任意 shell 命令、启动数据库等，直接访问 CI runner 风险大，Docker Sandboxes 与网络白名单、安全输出任务结合的方案被视为治理 AI 智能体信任的关键实践。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Docker 公测自研虚拟化引擎 Docker VMM，告别第三方虚拟机方案",
+      "summary": "Docker 在 Docker Desktop v4.86 中推出全新第一方虚拟化层 Docker VMM 公测版，宣称显著提升容器启动速度与内存效率，GA 目标定于 2026 年 10 月底，届时成为默认引擎。",
+      "source": "InfoQ、Cloud Native Now",
+      "url": "https://www.infoq.com/news/2026/08/docker-vmm-layer/",
+      "published_time": "2026-08-18（原公告 08-11/08-12）",
+      "perspectives": [
+        {
+          "stance": "官方与支持报道",
+          "summary": "Docker VMM 是 Docker 自建并完全拥有的虚拟化层，取代此前 Mac 和 Windows 上依赖的第三方虚拟化引擎，针对容器场景进行协同优化并给出四项可验证的性能提升。"
+        },
+        {
+          "stance": "专家分析与注意事项",
+          "summary": "公测版存在已知限制，Mac 用户需至少 4GB VM 内存，Linux 版要等 GA（约 2026 年 10 月）才可用；默认引擎切换仅影响新安装，现有用户不会被自动切换。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "SUSE 发布 Docker 重要安全更新：基于最新 Go 安全版本重新构建",
+      "summary": "SUSE 发布 SUSE-SU-2026:3668-1 公告，针对多个 SUSE Linux 产品将 Docker 及配套组件基于最新 Go 安全版本重新构建，以修复相关安全问题，评级为重要。",
+      "source": "LinuxSecurity、Tenable",
+      "url": "https://linuxsecurity.com/advisories/suse/suse-docker-2026-3668-1",
+      "published_time": "2026-08-20 至 08-21",
+      "perspectives": [
+        {
+          "stance": "厂商安全通告",
+          "summary": "更新覆盖 SLES、SLED 等 SUSE 产品线中的 docker、docker-bash-completion、docker-buildx 等组件，通过重建以修复安全缺陷，建议受影响用户及时应用补丁。"
+        },
+        {
+          "stance": "安全监测解读",
+          "summary": "Tenable 等检测平台已同步发布对应 Nessus 插件（08-22），提醒管理员在 SUSE 环境下核查 Docker 组件版本并完成升级，避免潜在利用风险。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近 7 天 Docker 话题以「安全」为最突出主线：docker-socket-proxy 高危越权漏洞（CVE-2026-78122）在最近 24-48 小时集中发酵，叠加此前 CopyEscape 等 cp 系列漏洞，社区对容器供应链与 API 代理层安全保持高度警惕；同时 Docker VMM 自研虚拟化引擎公测、Sandboxes 护航 AI 智能体等消息引发开发者对性能与 AI 安全的积极讨论，整体情绪偏关注与谨慎。",
+  "honesty_note": "近 7 天内与 Docker 强相关的高热度新闻相对集中在安全通告与官方技术更新，纯大众热议（如微博热搜级）事件较少。部分关联话题发生于窗口期之前、可作补充：Docker Content Trust 与 Notary v1 服务退役（8 月 10 日、12 日已执行 brownout，12 月 8 日全面关闭）；CopyEscape 漏洞（CVE-2026-17106，8 月 10-11 日披露，可覆盖宿主机文件并获 root 权限）；Docker Engine 29.7.2 发布（8 月 7 日）。"
+}

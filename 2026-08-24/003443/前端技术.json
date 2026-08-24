@@ -1,0 +1,143 @@
+{
+  "keyword": "前端技术",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Astro 7 发布：Rust 重写编译器与 Markdown 流水线，构建速度提升 15%-61%",
+      "summary": "面向内容的 Web 框架 Astro 7 发布，核心转向原生工具链：.astro 编译器用 Rust 重写、Markdown/MDX 迁移到 Rust 流水线、渲染改为队列引擎、基于 Vite 8/Rolldown。官方基准显示 astro.build 构建从 62.7 秒降至 24.2 秒。",
+      "source": "InfoQ / 网易号",
+      "url": "https://www.163.com/dy/article/L4UH43BL0511D3QS.html",
+      "published_time": "2026-08-22 12:47",
+      "perspectives": [
+        {
+          "stance": "官方技术报道",
+          "summary": "Astro 7 聚焦构建性能，Rust 重写编译器与 Markdown 流水线，支持增量构建与 Hono 兼容路由，正式稳定路由缓存，被视为内容站点性能的重要升级。"
+        },
+        {
+          "stance": "开发者争议",
+          "summary": "Hacker News 反应褒贬不一，有人欢迎依赖数从 247 降至 190，也有人对严格 HTML 编译「实在不怎么样」、放弃 unified 表示不满；核心成员 Erika 回应流水线刻意做成可插拔，unified 不会消失。"
+        },
+        {
+          "stance": "用户实测反馈",
+          "summary": "有开发者称自家小站构建速度反而略降，维护者 Matthew Phillips 回应性能优化主要面向数千页、大量使用 MDX 的大型网站，并预告增量构建会进一步改善。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "「HTML 反杀 JavaScript」：Chrome 148 实验性 API 实现无框架乱序 HTML 流式渲染",
+      "summary": "Chrome 148 推出实验性的 Declarative Partial Updates（声明式部分更新），通过占位符与 template 机制让服务器先发占位再填充，并新增 streamHTML 等 API，无需框架即可实现乱序流式渲染与客户端路由级流式更新。",
+      "source": "DEV Community",
+      "url": "https://dev.to/grimicorn/declarative-partial-updates-out-of-order-html-streaming-without-a-framework-1086",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "技术报道",
+          "summary": "这套 API 包含占位符填充与 HTML 流式写入两组能力，模板可按父元素作用域补丁，能实现无 appendChild、无框架的列表增长，被评价为十年里 HTML 平台最重要的能力升级之一。"
+        },
+        {
+          "stance": "前景展望",
+          "summary": "支持者认为它可能改写 SPA 架构——客户端路由切换也能像首次加载一样流式渲染，相当于用原生标记表达了组件框架的相当一部分能力。"
+        },
+        {
+          "stance": "谨慎声音",
+          "summary": "目前仅 Chrome 一个引擎且需 flag 开启，Safari 尚缺 setHTML 依赖的 sanitizer；官方也提示 polyfill 只保 API 形态不保性能，不建议本季度上生产环境。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Node.js 周刊 2026W33：TermDOM 用 HTML/CSS 构建终端 UI，pnpm 12 Rust 重写进入候选发布",
+      "summary": "本周头条为 TermDOM 用 HTML/CSS/DOM 构建终端 UI；pnpm 12 彻底 Rust 重写后进入 RC 且零迁移负担；Node.js 26.7.0 发布（Perfetto tracing、FFI 与 SQLite 崩溃修复）；TanStack Table v9 稳定、SolidStart v2 发布。",
+      "source": "博客园 / 右耳朵猫AI",
+      "url": "https://www.cnblogs.com/whincwu/p/22631544",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "周刊综述",
+          "summary": "汇总 TermDOM、pnpm 12 RC、Node.js 26.7.0、TanStack Table v9、SolidStart v2、Preact 11 RC 等密集发布，Web 开发者可用熟悉的原语构建终端 UI。"
+        },
+        {
+          "stance": "工具链 Rust 化趋势",
+          "summary": "社区注意到 pnpm、Astro、Solid 等纷纷用 Rust 重写工具链，原生编译器成为 2026 年前端基础设施的主流方向，性能与迁移成本成为取舍焦点。"
+        },
+        {
+          "stance": "兼容性考量",
+          "summary": "pnpm 12 强调保留 pnpm 11 的全部命令、标志与 lockfile 格式，仅 4 个行为改变，被宣传为零迁移负担的 Rust 重写，但仍有开发者关注边缘兼容细节。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "「在这个独属于 AI 的时代，我终究是被裁员了」——前端从业者转型焦虑引爆社区讨论",
+      "summary": "一篇前端开发者自述被裁、被要求转 AI 全栈的帖子在多平台引发热议，称招聘市场更多招全栈、纯前端/后端岗位减少、薪酬缩水。此前得物解散前端部门等话题也持续发酵，AI 冲击前端岗位成为焦点。",
+      "source": "CocoLoop / 大佬说",
+      "url": "https://www.cocoloop.cn/t/topic/15637/8",
+      "published_time": "2026-08-23 15:28",
+      "perspectives": [
+        {
+          "stance": "个人经历分享",
+          "summary": "发帖者称 2026 年 3 月起公司让前端学后端、后端学前端借助 AI 转全栈，一人干一个项目，干不了的就被裁员，纯前端/后端生存空间越来越小，薪酬大幅缩水。"
+        },
+        {
+          "stance": "网友质疑",
+          "summary": "有网友直斥「炒概念」「十倍速机会我看是十倍速裁员」，认为三个月后泡沫总会破，新赛道未必能兑现。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "讨论普遍认为 AI 编码工具渗透下岗位边界正在消融，新招聘多改名「全栈」，测试岗或大幅蒸发，前端岗位转型与职业路径成为行业性焦虑。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "This Week in React #294：React Native 0.87 发布，Strict TypeScript API 成默认，迈向 RN 1.0",
+      "summary": "React Native 0.87 正式发布，被视为通往 RN 1.0 的最大一步：Strict TypeScript API 成为默认、Metro 源映射生成快 2 倍且省一半内存、实验性 Swift Package Manager 支持、首个支持 AGP 9 的版本。",
+      "source": "DEV Community",
+      "url": "https://dev.to/sebastienlorber/this-week-in-react-294-react-compiler-tanstack-nextjs-gtkx-effect-rn-087-screens-rngh-4p6c",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "技术综述",
+          "summary": "周刊汇总 React 生态两周动态：Rust 版 React Compiler 推广继续并获得 Oxlint、Biome、Bun 支持；React 19.3 临近；RN 0.87 移除 InteractionManager 等旧 API。"
+        },
+        {
+          "stance": "生态讨论",
+          "summary": "TanStack Router 被 Node.js 贡献者 Yagiz Nizipli 用新实现重写、声称可即插即用且快最多 19 倍，引发框架作者与社区关于性能与兼容性的讨论。"
+        },
+        {
+          "stance": "迁移提醒",
+          "summary": "RN 0.87 属含破坏性变更的大版本：最低工具链要求升为 Node.js 22、AGP 9、Kotlin 2.0+，SwiftPM 为可选实验项，CocoaPods 仍是默认路径。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Next.js 16.3 正式发布：即时导航、开发内存最高降 90%、构建更快",
+      "summary": "Vercel 官宣 Next.js 16.3，为 16.0 以来最大更新：Turbopack 开发模式内存最高降 90%（磁盘缓存+内存回收默认开启），推出 Instant Navigations 即时导航（运行时预渲染动态内容）、App Router 客户端缓存，并发布构建适配器 API。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/vercel-next-js-16-3/",
+      "published_time": "2026-08-19",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "Vercel 强调 16.3 是自 16.0 以来最大更新，聚焦即时导航、内存与构建性能，官方称 Turbopack 开发模式内存相比 16.2 最高省 90%。"
+        },
+        {
+          "stance": "社区预告",
+          "summary": "Next.js 团队在 Reddit AMA 中回应：React 19.3 将稳定 Fragment refs 与 ViewTransition，并预告细粒度预渲染与新数据获取原语等后续特性。"
+        },
+        {
+          "stance": "框架竞争视角",
+          "summary": "在 Astro 7、TanStack Start、SolidStart v2 等密集发布背景下，Next.js 通过性能与缓存能力继续巩固 GitHub 第一全栈框架地位，框架间性能竞赛成为 2026 下半年主旋律。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周前端圈呈「职业焦虑」与「技术兴奋」双主线并行的情绪格局。一方面 AI 冲击下纯前端岗位萎缩、被迫转全栈甚至被裁的讨论持续发酵，从业者焦虑明显；另一方面 Rust 重写工具链（Astro、pnpm）与浏览器新 API（声明式部分更新）带来性能跃迁，开发者既兴奋于技术提速，也担忧旧技能与岗位被加速替代。",
+  "honesty_note": "说明：以「前端技术」为关键词的近 7 天结果以技术发布、周报类内容为主，缺少社会级爆款事件；且高热度中文讨论（如裁员话题）多集中在社区论坛，全网声量有限。另有个别「爆款」（如 Pretext 文本测量库）实为 3 月旧闻的 8 月转载，未纳入。关联话题补充：React 19.3 与 Rust 版 React Compiler 推广、Vue 3.6 RC 阶段、ECMAScript 2026 新特性、TypeScript 7.0、pnpm 12 Rust 重写。",
+  "start_time": "2026-08-24 00:58",
+  "end_time": "2026-08-24 01:00",
+  "elapsed_seconds": 76,
+  "retry_count": 0
+}

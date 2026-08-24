@@ -1,0 +1,151 @@
+我已通过联网搜索完成近 7 天（08月17日—08月24日）Node.js 相关热点事件的整理与核验，以下是最终结果。
+
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Node.js 沙箱库 isolated-vm 曝重大沙箱逃逸漏洞 GHSA-864f-rcv7-6rh4，可致宿主 RCE",
+      "summary": "Endor Labs 披露 isolated-vm 的 ExternalCopy 类型混淆漏洞，沙箱内代码可借 transferList 的 TOCTOU 缺陷劫持宿主进程控制流、最高实现 RCE，影响至 7.0.0，已于 6.2.0 与 7.0.1 修复。",
+      "source": "The Hacker News（HackMyIP 中文转载）",
+      "url": "https://hackmyip.com/zh-cn/news/isolated-vm-flaw-lets-sandboxed-javascript-escape-to-host-for-potential-rce",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "安全研究（Endor Labs）",
+          "summary": "研究者 Cristian-Alexandru Staicu 指出 ExternalCopy 处理 transferList 时存在类型混淆，从单一 ivm.Reference 即可升级为宿主完整控制流劫持，实现 guest 到 host 的沙箱逃逸。"
+        },
+        {
+          "stance": "官方维护者（Marcel Laverdet）",
+          "summary": "确认最大影响为宿主控制流劫持即潜在 RCE，但任何被授予 ivm.Reference 的访客代码都能可靠触发崩溃级拒绝服务，漏洞细节暂缓公开以防野外利用。"
+        },
+        {
+          "stance": "社区与防护建议",
+          "summary": "建议用户立即升级至 7.0.1 或 6.2.0，同时强调被攻破的是底层 C++ 胶水代码而非 V8 沙箱隔离原语本身，底层隔离模型依然可靠。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Node.js 26.7.0（Current）发布，W33 周刊盘点 pnpm 12 Rust 重写等生态更新",
+      "summary": "Node.js 26.7.0 新增 --test-coverage-include-all、原生 Perfetto tracing 支持并修复 FFI 与 SQLite 崩溃；同期 pnpm 12 Rust 重写进入候选、TanStack Table v9 稳定发布，工具链密集迭代。",
+      "source": "cnblogs（Node.js 周刊 2026W33）",
+      "url": "https://www.cnblogs.com/whincwu/p/22631544",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "版本动态",
+          "summary": "26.7.0 带来全量测试覆盖、Perfetto tracing，并修复 FFI 与 SQLite 崩溃问题，测试与可观测能力明显增强。"
+        },
+        {
+          "stance": "生态观察",
+          "summary": "pnpm 12 Rust 重写宣称保留全部命令与 lockfile 格式、零迁移负担；TanStack Table v9 采用可摇树插件架构重写，正式稳定发布。"
+        },
+        {
+          "stance": "社区争议",
+          "summary": "Bun 1.4 预告内置 SIMD 加速的 XML 解析引发意见分裂，有人质疑被小功能拖住、有人怀疑基准测试意义；Deno 2.9.5 落地实验性 QuickJS 后端。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Red Hat 发布 Node.js 安全更新，修复 ip-address SSRF 与 brace-expansion DoS 漏洞",
+      "summary": "Red Hat 在 RHEL 8/9/10 发布 nodejs:22 与 nodejs:24 的 Important 级安全更新（含 RHSA-2026:55541 等），修复 ip-address 前导零解析导致的内网信任边界绕过 SSRF（CVE-2026-69192）及 brace-expansion 内存耗尽 DoS（CVE-2026-69152）。",
+      "source": "Mallory",
+      "url": "https://mallory.ai/stories/01a02403-2884-77d8-8fa4-fa7f81b624aa",
+      "published_time": "2026-08-17（首次公开 08-21）",
+      "perspectives": [
+        {
+          "stance": "厂商通报",
+          "summary": "多项 RHEL errata 覆盖 nodejs22 与 nodejs24，一并修复 SQLite FTS5 任意代码执行等捆绑组件问题，更新后的 Node.js、npm 包已可获取。"
+        },
+        {
+          "stance": "技术分析",
+          "summary": "ip-address 对带前导零的 IPv4 八位组解析不一致，可致内部地址被当作外部地址，实现 SSRF 与信任边界绕过；brace-expansion 无界中间数组可耗尽内存并阻塞事件循环。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "CVE-2026-56848：Node.js HTTP/2 RST_STREAM 堆释放后使用（UAF）可致服务器崩溃",
+      "summary": "HeroDevs 披露 HTTP/2 流重置在 nghttp2 活动接收回调内重入发送路径、释放会话状态导致 UAF，可崩溃服务器进程，属 7 月安全版本系列所修复，影响生产 Node.js 服务稳定性。",
+      "source": "HeroDevs Blog",
+      "url": "https://www.herodevs.com/blog-posts/cve-2026-56848-node-js-http-2-rst-stream-heap-use-after-free",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "安全厂商分析",
+          "summary": "流重置在活动接收回调内提交后会重入发送路径并释放仍在被接收循环读取的会话状态，最终使服务器进程崩溃。"
+        },
+        {
+          "stance": "修复建议",
+          "summary": "建议运行 HTTP/2 服务的团队升级至包含 7 月安全修复的 Node.js 版本，避免未修补的释放后使用风险。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "「Deno 对 Node 的权力交接」评论文章引发运行时之争热议",
+      "summary": "一篇广泛转载的评论认为，在 node_modules 依赖地狱与供应链攻击频发的背景下，Deno 以默认沙箱、URL 导入和 Rust 血统冲击 Node 十年统治并倒逼其反思，同时建议开发者不必盲目重写、可先做边缘实验。",
+      "source": "lfdjt.com",
+      "url": "https://www.lfdjt.com/info_23_12777.html",
+      "published_time": "2026-08-22",
+      "perspectives": [
+        {
+          "stance": "支持派（看好 Deno）",
+          "summary": "认为 Deno 权限模型更严格、分发成本更低，是对 Node 时代的一次精准处决而非新瓶旧酒。"
+        },
+        {
+          "stance": "谨慎派",
+          "summary": "指出 npm 生态庞大只是惯性而非忠诚，不建议全量迁移，可先把新模块跑在 Deno 上做边缘实验。"
+        },
+        {
+          "stance": "中立预测",
+          "summary": "预计 Deno 或被 AWS、Cloudflare 等大厂收购成为弹药库，或靠本地免费、企业订阅的商业闭环立足。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "npm 供应链安全再敲警钟：Shai-Hulud 蠕虫复盘与针对阿里巴巴开发环境的投毒",
+      "summary": "8月4日 keyv 维护者账号被攻破引爆 Shai-Hulud/ChainDrop 蠕虫式 npm 投毒，数百包数十亿月下载受影响；8月11日 LiteLLM 事件复盘波及 43.4 万条 CI/CD 流水线；8月20日 Socket 再披露针对阿里巴巴开发环境的 npm 攻击。",
+      "source": "smzdm（知乎热点聚合）",
+      "url": "https://post.smzdm.com/p/al3x5e8o/",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "安全厂商（Socket、CloudSEK）",
+          "summary": "npm 账号安全已成供应链最薄弱环节，攻击面覆盖全球 CI/CD 流水线与企业生产构建环境，需警惕依赖混淆与恶意生命周期脚本。"
+        },
+        {
+          "stance": "业界建议",
+          "summary": "开发者应审慎评估 npm 包来源，DevOps 最该做的不是换密钥，而是建立可信发布与依赖治理机制。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Node.js Interactive 2026 落幕：供应链安全、QUIC 与年度发布节奏调整成主线",
+      "summary": "8月12-13日在亚特兰大 RenderATL 内举办的 Node.js Interactive 2026 上，官方宣布从 27.x 起大版本改为一年一次并新增 Alpha 阶段；QUIC/HTTP-3 实验推进，账号安全与 AI 工程责任成为焦点议题。",
+      "source": "Technology Conference / nodejs.org",
+      "url": "https://technologyconference.com/node-js-interactive-2026-august-12-13-2026-atlanta-georgia/",
+      "published_time": "2026-08-20（官方总结 08-14）",
+      "perspectives": [
+        {
+          "stance": "官方（OpenJS 基金会）",
+          "summary": "发布节奏调整旨在降低企业升级协调成本，让每个版本都能进入 LTS；QUIC 实现仍为实验性，并预告统一服务器 API 提交 WinterTC 讨论。"
+        },
+        {
+          "stance": "议题观点",
+          "summary": "npm 安全问题已从代码漏洞转移到凭据与账号安全，防御重点应是可信发布、短期凭据与抗钓鱼认证等身份治理手段。"
+        },
+        {
+          "stance": "维护者声音",
+          "summary": "OpenJS 执行总监指出支撑 AI 时代的 Node.js、Express 等项目由极小团队维护，存在被大厂当作免费基础设施的缺失中间层风险。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 Node.js 舆情高度集中于安全议题：isolated-vm 沙箱逃逸、HTTP/2 释放后使用、Red Hat 补丁与 npm 供应链攻击连环曝出，开发者普遍担忧沙箱隔离与账号安全并呼吁尽快升级；同时 26.7.0 与 pnpm 12 Rust 重写等工具链迭代受好评，Deno 与 Node 之争讨论热烈。整体情绪呈现安全焦虑与版本迭代期待并存。",
+  "honesty_note": "近 24-48 小时（08/22-08/24）内以 Node.js 为独立主体的全新头条相对较少，多数高热度信源集中于 08/17-08/21（isolated-vm、Red Hat 补丁、HTTP/2 UAF、W33 周刊），npm 攻击的根因事件（keyv 被攻破）与 Interactive 大会实际发生于更早，本期为复盘延续报道；关联话题可继续关注 npm 供应链投毒后续、Node 27.x 新发布节奏及 26.8.0 版本进展。所有 URL 均直接取自搜索结果原始片段。"
+}

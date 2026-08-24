@@ -1,0 +1,83 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Python 3.15 候选版 RC1 上手评测：延迟导入、Tachyon 分析器、frozendict 与内置 JIT 落地",
+      "summary": "InfoWorld 8月21日发布 Python 3.15 上手实测，首个候选版 RC1 已可用，重点展示延迟导入、Tachyon 采样分析器、不可变字典 frozendict 及内置 JIT 等新特性，正式版预计今秋发布。",
+      "source": "InfoWorld",
+      "url": "https://www.infoworld.com/article/4211583/go-hands-on-with-python-3-15.html",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "技术评测",
+          "summary": "评测称 3.15 新特性显著，延迟导入可无改动提速，Tachyon 无需插桩即可剖析，frozendict 补上多年呼声，内置 JIT 朝自动提速迈进。"
+        },
+        {
+          "stance": "社区跟进",
+          "summary": "中文社区同步关注 3.15 发布节奏，RC1 于 8 月 4 日发布，RC2 计划 9 月 1 日推出，开发者建议尽早在其上测试兼容性。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "PyPI 恶意包 requests-crypt 被发现内置后门，CVSS 评分高达 10.0",
+      "summary": "8月21日安全厂商通报，PyPI 上伪装成 HTTP 请求库的 requests-crypt（0.1.0）每处理一次 JSON 响应即对字段 base64 解码后传入 exec 执行，属恶意后门，CVSS 3.1 满分 10.0。",
+      "source": "Mondoo",
+      "url": "https://mondoo.com/vulnerability-intelligence/vulnerability/MAL-2026-14351",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "安全厂商通报",
+          "summary": "Mondoo 定性为恶意软件，归入 2026-08-reqcrypt 行动，指出任何上游被攻陷或可注入 cos 字段的服务端都能在调用方主机执行任意代码。"
+        },
+        {
+          "stance": "供应链风险警示",
+          "summary": "业内再度聚焦 PyPI 供应链安全，配合此前 PyPI 拟实施 14 天上传限制及 CPython CVE 数量激增，安装依赖需加强哈希校验与来源审查。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Python Web 框架迁移潮再起讨论：开发者为何从 Flask 转向 FastAPI",
+      "summary": "8月21日一篇流传较广的技术文章复盘 2026 年 Python Web 框架选择，称越来越多团队从 Flask、Django REST Framework 迁移到 FastAPI，类型提示、异步支持与自动文档成为主因。",
+      "source": "搜狐号",
+      "url": "https://www.sohu.com/a/1065797337_122760538",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "技术观点",
+          "summary": "文章认为 FastAPI 的原生 async、Pydantic 校验与 OpenAPI 文档更适合 AI 与高并发场景，已成为 2026 年新项目默认选项之一。"
+        },
+        {
+          "stance": "传统框架立场",
+          "summary": "亦有开发者反驳称 Flask 生态成熟、轻量稳定，存量项目迁移成本高，选型应取决于团队规模与既有技术债。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "TIOBE 2026年8月榜单：Python 稳居第一但占比下滑 7.61%，MATLAB 十多年来首度跌出前 20",
+      "summary": "8月11日 TIOBE 发布 8 月编程语言榜，Python 以 18.53% 连续领跑但同比下滑 7.61%，C 与 Rust 上升，MATLAB 十多年来首次跌出前 20，业内归因于付费授权模式与开源替代冲击。",
+      "source": "IT之家",
+      "url": "https://www.ithome.com/0/988/271.htm",
+      "published_time": "2026-08-11",
+      "perspectives": [
+        {
+          "stance": "榜单官方",
+          "summary": "TIOBE CEO Paul Jansen 称 MATLAB 时代似走向终点，前 20 名中仅剩 Delphi 仍需付费授权，Python 等免费方案在科学计算与 AI 领域持续挤占其份额。"
+        },
+        {
+          "stance": "中文媒体解读",
+          "summary": "IT之家等解读认为 Python 份额同比下滑主要受新计算口径与竞品分流影响，但其绝对领先地位仍稳固。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Python 相关讨论呈「AI 主线 + 安全焦虑」双轨：一方面 3.15 新特性、省 token 开源项目与 AI 基础设施叙事持续升温，社区情绪积极；另一方面 GitPython、requests-crypt 等接连曝出高危漏洞，供应链安全担忧明显抬头，开发者普遍呼吁加强依赖审查与尽快升级。整体舆情以技术理性与谨慎并存为主。",
+  "honesty_note": "近 24-48 小时与 Python 直接强相关、引爆全网的现象级突发热点较少，以上多为技术生态持续发酵事件；其中 TIOBE 8 月榜单发布于 8 月 11 日，略早于 7 天窗口，因热度延续保留。关联话题可关注：Python 3.15 正式版发布计划（RC2 定于 2026-09-01）、CPython CVE 数量激增、PyPI 拟实行发布 14 天后禁止上传新文件、MCP Python SDK 重大重构（FastMCP 更名与移除 sessions）、Anaconda 收购 Enkrypt AI。",
+  "start_time": "2026-08-24 00:53",
+  "end_time": "2026-08-24 00:54",
+  "elapsed_seconds": 59,
+  "retry_count": 0
+}

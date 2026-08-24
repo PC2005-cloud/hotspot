@@ -1,0 +1,139 @@
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Claude一夜变笨实锤「Anthropic滑跪认错」：暗中压缩推理强度引爆全网",
+      "summary": "开发者发现Claude Code在Fable 5上把「high」档推理映射成10/100，Anthropic被曝对2.1.236+版本做effort刻度压缩A/B实验，工程师Thariq回应道歉，Opus 5降智争议同步发酵。",
+      "source": "新智元（搜狐）",
+      "url": "https://www.sohu.com/a/1066675117_122014422",
+      "published_time": "2026-08-24 07:35",
+      "perspectives": [
+        {
+          "stance": "开发者质疑",
+          "summary": "用户argofowl排查一下午发现「high」档实际拿到低推理，认为被静默拉入实验组却不告知，调bug可能是在配合官方A/B测试，质问模型更新透明度。"
+        },
+        {
+          "stance": "官方回应",
+          "summary": "Claude Code工程师Thariq Shihipar回应称仅是在测试API服务配置，effort数值映射并非0-100、数字无独立意义，用户所选档位即所得，不影响实际性能。"
+        },
+        {
+          "stance": "媒体行业反思",
+          "summary": "新智元指出大模型版本更新成行业「黑箱」，跑分与用户体感系统性脱钩，Opus 5被官方承认「表现不稳定」；当模型成为基础设施，稳定性就是信任契约。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Codex周活破2000万「反杀」Claude Code？增速四倍差距引热议",
+      "summary": "OpenAI确认Codex周活达2000万；TickerTrends数据显示截至8月10日Claude Code四周增速降至5.2%，同期Codex达20.8%，两者ARR差距由83.8亿美元缩至63亿美元。",
+      "source": "21世纪经济报道（钛媒体）",
+      "url": "https://m.21jingji.com/article/20260822/herald/d9611268772545c92aae871d324f14e5.html",
+      "published_time": "2026-08-22 21:04",
+      "perspectives": [
+        {
+          "stance": "市场数据观察",
+          "summary": "Claude Code增长神话踩刹车，2-6月一路狂飙后7月曲线首次走平，程序员渗透率逼近天花板；Codex借ChatGPT入口7月21日破1000万、一个月内翻倍至2000万周活。"
+        },
+        {
+          "stance": "冷静对比分析",
+          "summary": "2000万用户含工作类Agent且口径模糊，难与Claude Code严格对比；公司层面Anthropic年化收入超650亿美元仍领先OpenAI约六成，coding收入只是其业务一部分。"
+        },
+        {
+          "stance": "开发者吐槽",
+          "summary": "部分开发者因水印、额度限制等取消Claude订阅转投Codex，认为后者免费范围更大、速率上限更高，产品体验差距正在缩小。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "「Anthropic不再是AI圈的信仰」：开发者从Claude Code向Codex显性迁移",
+      "summary": "InfoQ发文称Claude Code近期「AI腔」加重、表达混乱、企业版额度被吐槽「补贴输血」，开发者正从Claude Code向Codex迁移，两者工程场景能力差距被指持续拉大。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/hfJrKqqoww06UYcygUrJ",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "开发者体感",
+          "summary": "高频双持用户称Claude Code「AI腔」近乎语无伦次、经常答非所问，而Codex响应直接、逻辑连贯，能自主规划并执行复杂任务，两者差距已相当明显。"
+        },
+        {
+          "stance": "网友质疑定价",
+          "summary": "有人吐槽企业版250美元额度4天耗尽、个人版却能用出20倍量，认为企业版在给整个业务「补贴输血」，同产品不同计费逻辑离谱。"
+        },
+        {
+          "stance": "业内解释",
+          "summary": "有观点称企业版是按量计费的「采购逻辑」、个人版是固定资费套餐，加上上下文未压缩时每次调用重复全额计费等隐形消耗，导致开销差距悬殊。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Claude Code增长神话破灭：月增速从600%+跌至5.2%，隐形水印激怒开发者",
+      "summary": "TickerTrends显示Claude Code的ARR停在151.2亿美元、月环比增速断崖跌至5.2%；为应对欧盟AI法案上线的「不可见文本水印」引发代码污染恐慌，用户用脚投票转向Codex。",
+      "source": "葡萄城（CSDN开发者社区）",
+      "url": "https://grapecity.csdn.net/6a889d1c662f9a54cb9f4f87.html",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "数据分析",
+          "summary": "程序员渗透率逼近天花板、Cowork产品破圈失败，Claude Code进入存量内卷，从600%以上增速骤降至个位数，已是急刹车而非放缓。"
+        },
+        {
+          "stance": "开发者恐慌",
+          "summary": "核心代码被永久打上「AI生成」烙印，独立开发者交差怕违约、大厂怕合规审计污染代码库，已有开源工具尝试改写破坏水印，但涉及政策法律风险。"
+        },
+        {
+          "stance": "市场动态",
+          "summary": "X平台大量开发者因水印和额度限制退订Claude转投Codex，刚被SpaceX收购的Cursor打出补贴战——凭退订Claude截图直接送200美元顶配订阅。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Claude Code发布v2.1.238/239：Remote Control稳定性集中修复与多项安全补丁",
+      "summary": "Anthropic于8月20日发布Claude Code v2.1.238/239共98项变更，集中修复Remote Control断连、移动端操作不生效问题，新增keybindingFlavor，修复Bedrock流式二重计费及掩码输入安全漏洞。",
+      "source": "DevelopersIO（クラスメソッド）",
+      "url": "https://dev.classmethod.jp/articles/20260822-cc-updates-v2-1-239/",
+      "published_time": "2026-08-22",
+      "perspectives": [
+        {
+          "stance": "专业评测",
+          "summary": "官方称上月用户最想修的就是Remote Control，本次对瞬断断连、模型选择不同步、任务Stop失效等集中解决，还修复登录掩码可被Ctrl+Y贴回等安全隐患，体感改善明显。"
+        },
+        {
+          "stance": "用户反馈",
+          "summary": "仍有开发者在GitHub反映Remote Control回复不实时、需手动刷新才出现，以及iPhone推送通知不送达等遗留问题，2.1.239上仍待观察。"
+        },
+        {
+          "stance": "破坏性变更提醒",
+          "summary": "全屏模式下Ctrl+L/Cmd+K连按清空会话的/clear快捷键被移除，仅保留重绘功能，习惯该操作的开发者需改用/clear，属本次唯一破坏性变更。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "JetBrains全球调查：Claude Code成使用最广AI编程工具，美国采用率47%",
+      "summary": "JetBrains对全球1.5万名专业开发者调查显示，2026年5月39%在工作使用Claude Code（1月为18%）、美国达47%；Codex由3%增至16%快速追赶，GitHub Copilot跌出榜首。",
+      "source": "JetBrains Blog",
+      "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+      "published_time": "2026-08-18",
+      "perspectives": [
+        {
+          "stance": "数据解读",
+          "summary": "Claude Code使用率约为昔日霸主GitHub Copilot的两倍，且31%开发者将其作为唯一主力AI编程工具，从「周度使用」到「唯一主力」的转化率近80%。"
+        },
+        {
+          "stance": "竞争对比",
+          "summary": "Codex采用率约5倍增长、认知度从27%升至65%；开源Agent OpenCode获7%采用与42%认知度，Cursor在中国采用率从28%跌至16%。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周舆论围绕「降智与透明度」「增长放缓与Codex反超」「隐形水印」三大争议展开，开发者不满与信任危机情绪浓重，集中吐槽Anthropic静默A/B测试、黑箱更新与定价问题，并「用脚投票」转投Codex；业内亦有「增速见顶属正常、公司收入优势仍在」的冷静解读，透明度与稳定性成为核心诉求。",
+  "honesty_note": null,
+  "start_time": "2026-08-24 00:50",
+  "end_time": "2026-08-24 00:53",
+  "elapsed_seconds": 162,
+  "retry_count": 1
+}

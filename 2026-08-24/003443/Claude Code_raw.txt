@@ -1,0 +1,129 @@
+根据联网搜索结果，我已核实了 2026-08-17 至 08-24 期间与「Claude Code」相关的多条高热度资讯，以下是整理后的 JSON 结果：
+
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Anthropic滑跪认错！Claude暗中降智实锤",
+      "summary": "开发者argofowl发现Claude Code 2.1.236起Fable 5会话被纳入「压缩effort数值刻度」实验，所选high档推理被映射为10且更新日志未提；工程师Thariq承认Opus 5表现不稳定并称正在优先修复。",
+      "source": "搜狐（转新智元）",
+      "url": "https://www.sohu.com/a/1066675117_122014422",
+      "published_time": "2026-08-24 07:35",
+      "perspectives": [
+        {
+          "stance": "开发者质疑",
+          "summary": "开发者argofowl与博主Chubby指出，Claude Code把用户拉进A/B实验组却不告知，用户在帮官方「debug实验」而非自己的代码，质疑暗改降智、透明度缺失；X上「Claude变笨了吗」自测帖刷屏。"
+        },
+        {
+          "stance": "官方回应",
+          "summary": "Anthropic工程师Thariq Shihipar回应称实验只是改变effort数值映射方式、不影响模型性能，但公开承认Opus 5是「表现很不稳定」的模型，团队正以最高优先级修复。"
+        },
+        {
+          "stance": "行业评论",
+          "summary": "媒体指出该事件撕开「跑分与体感脱钩」的行业暗伤：Opus 5跑分亮眼（SWE-bench Pro 79.2%），但用户体感却是「啰嗦、偷懒」；大模型版本更新已成不透明黑箱，稳定性是信任契约。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Codex开始「反杀」Claude Code了吗？",
+      "summary": "TickerTrends数据显示截至8月10日Claude Code四周增长率降至5.2%，OpenAI Codex同期增长20.8%约为其4倍；OpenAI Codex负责人宣布突破2000万活跃用户，AI编程竞争格局生变。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/8112879.html",
+      "published_time": "2026-08-22 18:14",
+      "perspectives": [
+        {
+          "stance": "数据对比",
+          "summary": "Claude Code年化收入约151.2亿美元、四周增速仅5.2%；Codex四周增速20.8%，7月初两者规模比2.4倍已缩小至约1.7倍，Codex并入ChatGPT入口后周活达约2000万。"
+        },
+        {
+          "stance": "理性分析",
+          "summary": "钛媒体指出Claude Code放缓是核心程序员渗透率见顶的自然回落，公司层面Anthropic年化收入仍领先OpenAI约六成，Claude Code并非其收入大头，Codex用户增长能否转化为企业收入才见真章。"
+        },
+        {
+          "stance": "用户迁移",
+          "summary": "部分开发者因额度限制、水印及体验问题退订Claude转投Codex，Cursor等对手借机以补贴战争夺用户。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code增长神话破灭，挡不住用户用脚投票",
+      "summary": "Claude Code的ARR 8月10日停在151.2亿美元、月环比增速暴跌至5.2%；8月初上线的「不可见文本水印」引发开发者恐慌，认为核心代码会被永久打上「AI生成」烙印，用户纷纷转向Codex。",
+      "source": "葡萄城开发者社区（CSDN）",
+      "url": "https://grapecity.csdn.net/6a889d1c662f9a54cb9f4f87.html",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "媒体观察",
+          "summary": "Claude Code增速从600%以上掉到个位数是急刹车，Cowork产品破圈失败、水印争议叠加，只能在存量市场内卷。"
+        },
+        {
+          "stance": "开发者担忧",
+          "summary": "独立开发者担心交稿被认定AI生成而吃官司，大厂程序员忧虑核心代码库被水印污染影响合规审计；已有人研究用改写法破坏水印，但面临政策法律风险。"
+        },
+        {
+          "stance": "竞争动态",
+          "summary": "X平台大量开发者表示因水印和额度限制退订Claude转向Codex；刚被SpaceX收购的Cursor打出补贴战，凭退订Claude截图直接送200美元顶配订阅。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "DeepSeek把Claude Code和Codex收编为Harness子代理",
+      "summary": "DeepSeek Harness RC.8于8月19日发布，支持按需把Claude Code和Codex作为子代理安装调用，并新增图像输入；同期OpenAI紧急开源Codex Harness应对，Agent基础设施层「开放占位」战打响。",
+      "source": "DeepSeek Harness 官方新闻",
+      "url": "https://deepseekv4pro.com/news/deepseek-harness-rc8-multimodal-codex-subagents",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "行业解读",
+          "summary": "AI热点日报指出，DeepSeek把Claude Code和Codex都收编为Harness子代理、OpenAI紧急开源Codex Harness应对，Agent基础设施层的「开放占位」竞争已经开始。"
+        },
+        {
+          "stance": "官方发布",
+          "summary": "DeepSeek Harness RC.8支持图像输入、Claude Code与Codex按需子代理包、并发搜索等改进，并提示SQLite存储格式不兼容需迁移，仍属开发预览版本。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Claude Code周额度争议：50%促销8月底到期，用户称token更少却更快打满",
+      "summary": "开发者指出自5月13日起Claude Code周额度临时提高50%，8月31日后将回落至标准水平；GitHub Issue #88736用户晒数据称8月消耗token比6月少30-45%，周额度却在周中即达100%。",
+      "source": "dev.to / GitHub",
+      "url": "https://github.com/anthropics/claude-code/issues/88736",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "用户实证",
+          "summary": "Max 20x用户贴出本地transcript数据：6月token消耗更高但周额度仅用75-80%，8月消耗更低却提前打满100%，质疑官方计量口径或额度政策有变。"
+        },
+        {
+          "stance": "行业解读",
+          "summary": "dev.to文章称Claude Code自5月13日起周额度提高50%，Anthropic帮助中心确认8月31日后恢复标准水平，「额度即产品」成为近期社区讨论焦点。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Claude Code v2.1.238~v2.1.239更新：Remote Control集中改进与安全修复",
+      "summary": "Claude Code近一周发布多版本更新，集中改进Remote Control远程控制体验、新增keybindingFlavor设置，并修复掩码输入可被Ctrl+Y回贴等安全漏洞。",
+      "source": "DevelopersIO",
+      "url": "https://dev.classmethod.jp/articles/20260822-cc-updates-v2-1-239/",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "版本更新",
+          "summary": "v2.1.238新增keybindingFlavor设置与headersHelper支持；v2.1.239修复掩码输入、Esc二次清除等安全问题，并新增/claude-api upgrade迁移工具。"
+        },
+        {
+          "stance": "综合报道",
+          "summary": "开发者社区梳理近两周更新，确认8月14日起auto mode已为Pro、Max、Team新会话默认权限模式，Claude Code保持高频迭代。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Claude Code舆情集中于「暗中降智」与增长放缓两大话题：开发者普遍不满官方暗中调整推理档位和周额度、质疑透明度；同期OpenAI Codex借机抢用户，DeepSeek等开源生态「收编」Claude Code引发热议。公众情绪从狂热转向审视与信任危机，稳定性与透明度成为关注核心。",
+  "honesty_note": null
+}

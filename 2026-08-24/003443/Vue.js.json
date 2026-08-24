@@ -1,0 +1,83 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Vite+ Beta 统一前端工具链：尤雨溪团队一条 vp 命令整合 Vite/Vitest/Rolldown",
+      "summary": "InfoQ 报道，尤雨溪创立的 VoidZero 发布 Vite+ Beta，将 Vite、Vitest、Rolldown、tsdown、Oxlint 等整合为单一 vp 命令，覆盖开发、构建、测试、格式化与类型检查，已有超 1300 个仓库依赖，Hacker News 讨论达 223 分。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/vite-plus-beta/",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "社区支持",
+          "summary": "支持者称其为「无聊但能用」的栈，减少配置、性能更优并统一团队工作流，是「用 Rust 重写并打通既有工具链」的整合者，官方称正收集反馈迈向 1.0。"
+        },
+        {
+          "stance": "质疑声音",
+          "summary": "开发者 Jared Wilcurt 撰文质疑其「只是 npm scripts 之上的抽象」，认为 vp env 节点管理最弱，并担心项目被锁定进 VoidZero 生态；Reddit 上也有「不过如此（underwhelming）」的标签。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "告别构建时代：为什么 AI 编程浪潮正让 Vue 与 React 走向落后？",
+      "summary": "掘金热文提出：AI 编程智能体时代下，Vue/React 依赖的编译流水线、虚拟 DOM 与抽象层拖慢 AI 迭代反馈、增加认知负荷，主张回归「无编译 / AI Native」范式，一文引爆前端圈关于框架未来的争论。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7676416712606466084",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "作者观点",
+          "summary": "文章认为编译流水线与中间抽象构成 AI 闭环反馈的致命壁垒，未来属于 No-Build 与 AI Native，浏览器原生 API 才是 AI 最稳定、无歧义的输出标的。"
+        },
+        {
+          "stance": "社区反驳",
+          "summary": "反方观点认为 Vue 3.6 的 Vapor Mode 与 alien-signals 正抬高性能上限，AI 对主流框架训练数据更充分，「对人友好」与「对 AI 友好」并非对立，放弃编译层缺乏可操作性。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Vue的野望：前端暗战里的供应链卡位",
+      "summary": "观察类文章称 Vue 在 IT 预算紧缩期凭零迁移成本与 Nuxt 全栈能力成为东南亚初创首选，Vapor Mode 直编译 DOM 有望打平 Solid，并预测围绕 Vue 的中间件公司将迎并购潮，引发业界对 Vue 生态位热议。",
+      "source": "lfdjt.com",
+      "url": "https://www.lfdjt.com/info_23_12873.html",
+      "published_time": "2026-08-22",
+      "perspectives": [
+        {
+          "stance": "看好 Vue 定位",
+          "summary": "作者认为 Vue 卡位「胶水合金」生态位、无大厂政治包袱，响应式可穿透后端，配合 Nuxt server routes 端到端跑接口，是中小团队低成本首选，Vapor 模式将打开性能型客户市场。"
+        },
+        {
+          "stance": "审慎看法",
+          "summary": "另有声音指出 Vue 全球声量被 React 与 AI 话题盖过、社区讨论热度下滑，所谓「中间件并购潮」更像主观推演，且 Vapor 模式仍在 RC 阶段、性能打平尚待验证。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "W3C ServiceWorker 议题：Vue 动态导入与懒加载兼容性引讨论",
+      "summary": "W3C ServiceWorker 仓库议题 #1481 就 VueJS 动态导入（dynamic imports）/ 懒加载是否受 ServiceWorker 支持展开讨论，维护方回应称 SW 当前不处理懒加载场景，问题若在 Vue 侧建议到 vuejs/core 提交 issue。",
+      "source": "W3C 邮件列表",
+      "url": "https://lists.w3.org/Archives/Public/public-webapps-github/2026Aug/0284.html",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "规范维护方回应",
+          "summary": "维护方表示 ServiceWorker 规范本身不支持懒加载语义，若属 Vue 实现问题应转向 Vue 仓库反馈，避免规范仓库重复积压与误判归属。"
+        },
+        {
+          "stance": "开发者反馈",
+          "summary": "前端开发者关注 Vue 路由懒加载与 ServiceWorker 缓存策略的组合问题，希望官方明确动态导入 chunk 的更新、失效与离线回退机制。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本周 Vue 生态热点集中在三条线：一是 AI 编程浪潮冲击构建型框架，「无编译 / AI Native」之争引爆前端圈范式焦虑；二是尤雨溪团队 Vite+ Beta 统一工具链，叫好与「不过是 npm scripts 抽象」的质疑并存；三是 npm 仿冒 Vue 包的以太坊 C2 恶意事件，再次拉响供应链安全警报。整体情绪偏向技术焦虑叠加安全警惕，讨论热度集中于 8/20-8/22，未见大规模官方级热点。",
+  "honesty_note": "说明：8/17-8/24 窗口内 Vue 官方核心未发布新正式版本（最新稳定版 3.5.41 为 8/5，Vue 3.6 仍在 RC 阶段、rc.4 于 8/14 发布略早于窗口），故热点以社区讨论、安全事件与工具链动态为主，且多来自技术博客与安全数据库，传播热度相对有限。关联话题：知乎 8/16 专栏「无虚拟 DOM 版 React 来了：对上 Vue Vapor，谁更接近前端框架的未来」、Vue 3.6 RC / Vapor Mode 进展、Vuetify0 RC 发布、Nuxt 4.5.2 更新等。",
+  "start_time": "2026-08-24 00:57",
+  "end_time": "2026-08-24 00:58",
+  "elapsed_seconds": 101,
+  "retry_count": 0
+}

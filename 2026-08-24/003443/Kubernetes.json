@@ -1,0 +1,99 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Kubernetes v1.37 进入发布倒计时：RC.1 已发布，正式版定于8月26日",
+      "summary": "Kubernetes v1.37.0-rc.1 已发布（Go 1.26.5 构建），功能冻结，正式版与发布博客定于8月26日；弃用 kube-proxy ipvs 模式、nftables 成默认后端等变更引发关注。",
+      "source": "LWKD / devops-daily / tldr.tech",
+      "url": "https://lwkd.info/2026/20260820",
+      "published_time": "2026-08-19 16:00",
+      "perspectives": [
+        {
+          "stance": "官方发布动态",
+          "summary": "v1.37 发布周期进入最后一周，v1.37.0-rc.1 已发布，正式版与官方发布博客均锁定在8月26日，v1.38 开发周期预计8月31日启动，Release Team Shadow 申请开放至8月28日。"
+        },
+        {
+          "stance": "技术媒体/专家分析",
+          "summary": "关注破坏性变更：kube-proxy 的 ipvs 模式弃用并记录弃用告警、nftables 成为默认后端、静态 Pod 不再允许通过 API 字段引用 Secret/ConfigMap、kubectl run 的 --filename 参数弃用、kubelet User Namespace（Rootless）转 Beta，升级前需充分评估。"
+        },
+        {
+          "stance": "生态用户视角",
+          "summary": "有文章专门分析 1.36 到 1.37 升级对 .NET 服务的风险，建议利用正式发布前的 RC 窗口做兼容性测试与风险清单梳理。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Amazon EKS 开放控制平面高级配置，HPA 参数付费与「锁定制」引争议",
+      "summary": "AWS 8月12日宣布 EKS 支持配置调度器、controller-manager 与 API server 四类参数，但 HPA 同步周期需 Provisioned Control Plane（每小时$1.65起），并存在静默降级与无法降回 Standard 模式的争议。",
+      "source": "AWS / Kernel Talks / eCorpIT",
+      "url": "https://kerneltalks.com/cloud-services/eks-finally-lets-you-touch-the-control-plane-knobs-youve-been-faking-with-workarounds/",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "AWS 官方公告",
+          "summary": "EKS 现支持配置 nodeResourcesFit 评分策略、horizontalPodAutoscalerSyncPeriod、eventTtl、serviceNodePortRange 四参数，适用于 K8s 1.31+，多数参数免费，帮助提升资源利用率与 etcd 压力管理。"
+        },
+        {
+          "stance": "独立技术分析",
+          "summary": "Kernel Talks 分析 MostAllocated 装箱策略的成本收益与集中爆炸半径风险，提醒缩短 HPA 同步周期前务必核对 HPA 对象数量，否则会出现无告警的「静默降级」，越改越慢。"
+        },
+        {
+          "stance": "FinOps/成本视角",
+          "summary": "eCorpIT 指出 HPA 同步参数被 $1.65/小时 Provisioned tier 隐性「付费墙」锁定，设置后无法直接降回 Standard 模式，AWS 文档自相矛盾，呼吁先评估再改动。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "GitHub 近8小时宕机波及 Kubernetes 生态：8月补丁发布被迫推迟",
+      "summary": "8月17日 GitHub 发生7小时47分钟全球故障，官方归因于自动扩缩容失效（Istio sidecar 并发上限）与 VS Code 重试风暴，并导致 Kubernetes 8月补丁发布推迟至8月19日。",
+      "source": "The Register / 博客园 / GitHub Status",
+      "url": "https://www.theregister.com/saas/2026/08/19/github-blames-8-hour-outage-on-autoscaling-fail-and-vs-code-retry-storm/5289547",
+      "published_time": "2026-08-18",
+      "perspectives": [
+        {
+          "stance": "GitHub 官方通报",
+          "summary": "官方事故报告确认 8月17日13:28-21:15 UTC 期间 Issues、PR、API、Actions、Copilot 大面积报错，根因为扩缩容策略误测主机服务而非 Istio sidecar，叠加 VS Code 重试风暴。"
+        },
+        {
+          "stance": "中文技术社区复盘",
+          "summary": "博客园文章以「一次 sidecar 配置失误，如何放倒全球最大代码平台」为题复盘，错误率峰值达20%，引发对 Istio sidecar 资源配比与自动扩缩容监控指标选取的热议。"
+        },
+        {
+          "stance": "对 Kubernetes 生态的影响",
+          "summary": "Kubernetes 8月补丁发布因 GitHub 故障与自动化失败推迟至8月19日；部分 Actions Runner Controller（ARC）Pod 卡在 idle 状态，需用 kubectl 手动清理。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "ingress-nginx 项目 EOL 后高危漏洞 CVE-2026-4342 仍在生产环境暴露",
+      "summary": "ingress-nginx 已于3月24日归档退役，但其 CVSS 8.8 配置注入漏洞 CVE4342 截至8月23日仍在约半数 K8s 集群中未修复，且再无上游补丁，业界呼吁迁移 Gateway API。",
+      "source": "Tech Insider / O3 Security",
+      "url": "https://tech-insider.org/au/ingress-nginx-eol-cve-2026-4342-2026/",
+      "published_time": "2026-08-23",
+      "perspectives": [
+        {
+          "stance": "安全研究机构",
+          "summary": "O3 Security 8月7日研究显示 CVE-2026-4342（Ingress 注解注入，可致 RCE 与 Secret 泄露）在大量生产集群中仍存在，因项目已归档，该漏洞成为无法再获上游修复的「永久负债」。"
+        },
+        {
+          "stance": "官方/行业报告",
+          "summary": "Kubernetes SIG Network 确认项目退役，推荐迁移 Gateway API（v1.6.0）并配合 ingress2gateway 工具；ByteIota 报告估算 ingress-nginx 承载约半数 K8s 集群的入口流量，影响面巨大。"
+        },
+        {
+          "stance": "云厂商回应",
+          "summary": "GKE 声明默认未使用 ingress-nginx、不受影响；而 AWS、Azure 截至8月23日未见针对性公告，EKS/AKS 自托管用户需自行盘点镜像版本，补丁到 1.13.9/1.14.5/1.15.1 以上仅能「买时间」。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天 Kubernetes 社区焦点集中在 v1.37 发布倒计时（8月26日）与 EKS 新功能成本争议，运维与 FinOps 讨论热度高。GitHub 宕机连带推迟 K8s 补丁引发对供应链稳定性的担忧；ingress-nginx 等遗留高危漏洞密集披露使安全圈情绪趋谨慎，AI 负载治理仍是持续热门话题。",
+  "honesty_note": "24-48小时内高热度中文报道相对零散，多为英文技术媒体与官方公告，检索索引存在一定滞后；v1.37 正式版定于8月26日发布（略晚于当前日期），目前处于 RC 阶段。关联话题：KubeCon + CloudNativeCon North America 2026（11月9-12日盐湖城）完整日程公布、CNCF 报告称全球云原生开发者近2000万、containerd 因多个 CVE 弃用隐式检查点恢复路径（2.3.4/2.2.7 改为显式 RestorePod 实验开关）。",
+  "start_time": "2026-08-24 00:47",
+  "end_time": "2026-08-24 00:49",
+  "elapsed_seconds": 89,
+  "retry_count": 0
+}

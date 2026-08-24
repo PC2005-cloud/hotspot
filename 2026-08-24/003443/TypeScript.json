@@ -1,0 +1,131 @@
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "TypeScript 7 编译快 10 倍但工具链断裂，生态过渡阵痛引热议",
+      "summary": "TypeScript 7.0 采用 Go 原生重写编译器，构建速度提升 8 倍，但因稳定的 programmatic API 推迟到 7.1，typescript-eslint、ts-jest、ts-morph 等工具集体出现兼容问题，成为本周社区讨论最集中的话题。",
+      "source": "乱码的博客（blog.hubianluanma.com）",
+      "url": "https://blog.hubianluanma.com/posts/typescript-7-go-compiler-ecosystem-tradeoff/",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "开发者观点（工具链受挫）",
+          "summary": "typescript-eslint 相关 Issue 被标记为 not planned，ts-jest 调用不存在的 Strada 函数导致崩溃，开发者只能通过双轨 TypeScript（7.x 给编辑器、6.x 给工具链）临时过渡。"
+        },
+        {
+          "stance": "技术分析（结构性取舍）",
+          "summary": "Go 是编译型语言、缺乏字节码级自省能力，微软为换取速度主动放弃旧编译器 API，代价由整个工具生态承担，7.1 若延期则空窗期会更长。"
+        },
+        {
+          "stance": "官方进展",
+          "summary": "微软确认 7.1 将提供全新的稳定 programmatic API，预计 2026 年 10 月前后发布，7.1 稳定版计划在 11 月推出，社区普遍在等待官方补齐 API。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "anti-slop 爆火：把 TypeScript「低证据写法」变成 CI 构建失败",
+      "summary": "独立开发者 Dillon Mulroy 的 anti-slop 项目用 15 条 Oxlint 规则拦截类型断言、object 参数、Vitest mock 等低证据 TS 写法，创建 10 天获约 2,536 星，登顶 skilld.dev 周榜，成为 AI 编码时代 TypeScript 工程纪律讨论的焦点。",
+      "source": "AI产品导航（aiproducthub.cn）",
+      "url": "https://aiproducthub.cn/s/27221.html",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "开发者推崇",
+          "summary": "把类型安全从风格讨论变成可自动强制执行的工程门控，规则支持 vendoring 自主维护，配套 Claude Code Skill 可一键完成复制、安装、配置与验证全流程。"
+        },
+        {
+          "stance": "社区热度数据",
+          "summary": "8 月中旬密集更新，单周新增 355 星、911 次点赞，安全评级 Grade A，OWASP Agentic Skills Top 10 全部通过，GitHub 星数截至 2026-08-22 约 2,536。"
+        },
+        {
+          "stance": "审慎声音",
+          "summary": "有观点认为这类规则集过于 opinionated，应强调按团队自身标准裁剪规则，而不是被上游规则牵着走，避免误伤合法代码。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Yelp 将 140 万行 Flow monorepo 迁往 TypeScript，坚持绝不关类型检查",
+      "summary": "Yelp 历时三年七个月将超 140 万行代码从 Flow 迁移到 TypeScript，遵守「绝不关闭类型检查、绝不批量插入忽略注释」的铁律，采用渐进式同仓共存迁移，被本周多份开发周刊转载并视为大型迁移经典案例。",
+      "source": "Node.js 周刊（cnblogs）",
+      "url": "https://www.cnblogs.com/whincwu/p/22631544",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "官方经验总结（Yelp 工程师）",
+          "summary": "通过让 Flow 与 TypeScript 在同一仓库共存并在生产中运行来维持类型安全，排除一次性重写与代码冻结两条路，2026 年 2 月完成最后一个 Flow 包的迁移。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "业内评价该文更适合作为任何长期大型迁移的参考指南而非单纯的 Flow 故事，其迁移纪律与节奏把控对工程团队有普适借鉴价值。"
+        },
+        {
+          "stance": "背景解读",
+          "summary": "迁移动因与 2021 年 Flow 团队转向 Facebook 内部需求后维护范围收缩有关，这也侧面推动了社区对 Flow 前景的重新评估。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Next.js 16.3 发布：即时导航、内存占用降 90%，原生支持 TypeScript 7 类型检查",
+      "summary": "Vercel 发布 Next.js 16.3，带来即时导航、开发内存占用最高降低 90% 与更快构建，且 next build 可直接运行微软移植到 Go 的 TypeScript 7 原生版本，类型检查速度大幅提升。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/vercel-next-js-16-3/",
+      "published_time": "2026-08-19",
+      "perspectives": [
+        {
+          "stance": "官方发布视角",
+          "summary": "Vercel 表示 next build 已能运行微软移植到 Go 的 TypeScript 7 原生编译器，配合即时导航与内存优化，整体构建与开发体验明显改善。"
+        },
+        {
+          "stance": "生态联动观察",
+          "summary": "主流框架快速跟进 TS7 落地，验证了 Go 原生编译器在真实项目中的价值，也被视为 7.0 工具链兼容问题正被逐步消化的积极信号。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "TypeScript 之父 Anders Hejlsberg 访谈：Go 重写如何快 10 倍，AI 不会取代软件工程师",
+      "summary": "8 月 17 日发布的一期播客访谈中，TypeScript 与 C# 之父 Anders Hejlsberg 详解了编译器经 Go 重写后性能提升约 10 倍的原理，并断言 AI 不会取代软件工程师，引发开发者社区广泛转发讨论。",
+      "source": "Apple Podcasts",
+      "url": "https://podcasts.apple.com/sk/podcast/creator-of-typescript-10x-faster-typescript-why-ai/id1777363835?i=1000783824223",
+      "published_time": "2026-08-17",
+      "perspectives": [
+        {
+          "stance": "作者观点（Hejlsberg）",
+          "summary": "编译器原生重写是 TypeScript 性能革命的关键，AI 会深刻改变工程师的工作方式与工具链，但不会取代软件工程师。"
+        },
+        {
+          "stance": "社区讨论",
+          "summary": "开发者围绕 AI 辅助编程对 TS 生态的长期影响，以及新编译器迁移带来的工具链风险展开延伸讨论，观点分化明显。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "约 150 行 TypeScript 实现浏览器自动化服务，Bun.WebView 实验引发关注",
+      "summary": "Simon Willison 8 月 20 日发布实验：基于 Bun 1.4 新增的 Bun.WebView，用约 150 行 TypeScript 实现浏览器自动化 JSON API，无需 Puppeteer/Playwright，实测运行完整 Chrome 需 192MB 容器。",
+      "source": "Simon Willison's Weblog",
+      "url": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "作者实验视角",
+          "summary": "零依赖的 TypeScript 服务演示了 Bun.WebView 对浏览器自动化的一等支持（WebKit 或 CDP 控制 Chromium），展示未来轻量抓取与截图服务的新形态。"
+        },
+        {
+          "stance": "技术关注点",
+          "summary": "资源占用（192-256MB 容器）仍是关键约束，但相比 Puppeteer/Playwright 大幅简化了依赖与部署，社区认为值得持续跟进其稳定化进程。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "过去一周 TypeScript 圈最突出的情绪是「性能狂欢与生态阵痛并存」：Go 原生编译器带来的 10 倍提速获得广泛点赞，但 7.0 缺失 programmatic API 导致 ESLint、ts-jest 等工具链断裂引发普遍焦虑；同时 anti-slop 爆火、Yelp 百万行迁移、AI 编码助推 TS 登顶 GitHub 等话题让社区整体气氛偏积极，开发者普遍期待 7.1 尽快补齐 API 以结束过渡期。",
+  "honesty_note": "说明：窗口内（08-17 至 08-24）TypeScript 官方重大发布（7.0）发生于 7 月上旬，本周热点以生态跟进、工具链讨论与社区话题为主，部分英文来源发布于窗口边缘。关联话题可关注：TypeScript 7.1 迭代计划（预计 9 月 Beta、11 月稳定版）、Cloudflare 将 CI 流水线写成 TypeScript Workflows（08-16 发布，紧邻窗口外）、MCP TypeScript SDK 稳定版正式发布（08-20 前后）。",
+  "start_time": "2026-08-24 00:49",
+  "end_time": "2026-08-24 00:50",
+  "elapsed_seconds": 68,
+  "retry_count": 0
+}

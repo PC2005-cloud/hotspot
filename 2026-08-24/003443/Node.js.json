@@ -1,0 +1,123 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Node.js沙箱库 isolated-vm 曝重大沙箱逃逸漏洞，可致宿主远程代码执行（GHSA-864f-rcv7-6rh4）",
+      "summary": "Endor Labs 研究员披露 isolated-vm 关键类型混淆漏洞，攻击者可使沙箱内代码突破 V8 隔离、劫持宿主进程控制流，最高可致 RCE，官方已发布 6.2.0 与 7.0.1 修复版。",
+      "source": "SecurityWeek、iThome、The Hacker News、suriq.io",
+      "url": "https://www.securityweek.com/critical-isolated-vm-vulnerability-leads-to-rce-on-host/",
+      "published_time": "2026-08-20 至 08-21 集中报道",
+      "perspectives": [
+        {
+          "stance": "漏洞披露方（Endor Labs 研究员 Cristian-Alexandru Staicu）",
+          "summary": "指出漏洞源于 ExternalCopy 处理 transferList 时的 TOCTOU 类型混淆，校验与转移两次遍历值不一致，可被利用实现宿主内存破坏与控制流劫持，影响 7.0.0 及以下、6.2.0 以下全部版本。"
+        },
+        {
+          "stance": "官方/媒体通报（SecurityWeek、iThome）",
+          "summary": "定性为严重级别漏洞，暂无公开利用与在野攻击报告，但 n8n、Activepieces、Mastra AI 等 AI 自动化平台因使用该库而受影响，官方在 7.0.1 与 6.2.0 中通过阻止拷贝期间执行用户 JS 完成修复。"
+        },
+        {
+          "stance": "安全防御建议（suriq 等分析师）",
+          "summary": "强调语言级沙箱只能视为便利而非安全边界，应升级至修复版、将宿主进程低权限化并容器化，同时以主机层异常行为检测来覆盖沙箱逃逸后的风险。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "npm 包 @cgauge/yaml 曝任意代码执行漏洞 CVE-2026-76833，解析不受信 YAML 即获全 Node 权限",
+      "summary": "@cgauge/yaml 在解析文档时对自定义 !js 标签无条件调用 eval()，攻击者可借此执行任意 JavaScript，获得环境变量、文件读写、网络与子进程等完整运行时权限，CVSS 8.4。",
+      "source": "NVD、VulDB、cvedetails、DevGuard",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76833",
+      "published_time": "2026-08-20 发布",
+      "perspectives": [
+        {
+          "stance": "漏洞披露（NVD/VulDB）",
+          "summary": "确认漏洞自 08-19 起被记录，攻击者通过构造 !js 自定义 YAML 标签即可在解析阶段触发 eval()，实现任意代码执行，且库无安全模式替代方案或退出机制。"
+        },
+        {
+          "stance": "安全社区风险提示（DevGuard）",
+          "summary": "提示该漏洞影响 53 个受影响组件，任何用此库解析不受信 YAML 的应用都将暴露完整 Node.js 运行时权限，建议排查依赖并及时升级或改用安全实现。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Bun 1.4 正式发布，创下对 Node.js 兼容性的历史最大提升",
+      "summary": "Bun 1.4 通过 Node.js 官方测试套件新增 1517 项、修复超 2900 个问题，空闲 CPU 占用降约 5 倍、内存最高降 35%，并兼容 Node.js 26，被视为替代 Node.js 的重要一步。",
+      "source": "Simon Willison、gihyo.jp、Appwrite、今日头条",
+      "url": "https://simonwillison.net/2026/Aug/20/",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "官方发布口径（Bun/Appwrite）",
+          "summary": "宣称这是自 Bun 1.0 以来对 Node.js 测试套件最大的兼容性提升，新增 1517 项通过，并向 Node.js 26 看齐，使「替代 Node.js」目标更进一步。"
+        },
+        {
+          "stance": "行业技术观察（gihyo/中文媒体）",
+          "summary": "指出因适配 Node.js 26，运行时与原生插件 ABI 号升至 147，现有原生插件需重新编译；同时确认空闲 CPU 与内存占用显著优化，社区对 SIMD 加速的 XML 解析等新特性存在分歧讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Node.js周刊2026W33发布：TermDOM 终端 UI、pnpm 12 Rust 重写进入候选、Node.js 26.7.0 特性盘点",
+      "summary": "中文社区周刊汇总本周热点：TermDOM 用 HTML/CSS/DOM 构建终端 UI、pnpm 12 Rust 重写候选版零迁移、TanStack Table v9 稳定发布，并盘点 Node.js 26.7.0 全量测试覆盖与崩溃修复。",
+      "source": "cnblogs 博客园、开源中国 my.oschina.net",
+      "url": "https://www.cnblogs.com/whincwu/p/22631544",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "综合报道（博客园/开源中国）",
+          "summary": "汇总 Node.js 26.7.0 新增 --test-coverage-include-all、Perfetto tracing 支持并修复 FFI 与 SQLite 崩溃问题；同时介绍 Fastify 6.0 进入 Alpha、njsscan 1.0 语义感知 SAST 等工具进展。"
+        },
+        {
+          "stance": "社区生态观察",
+          "summary": "围绕 pnpm 12 Rust 重写保留全部命令与 lockfile 兼容的零迁移策略展开讨论，并对 Bun 1.4 内置 SIMD XML 解析的实用性与基准表现存在意见分化。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Red Hat 为 Node.js 组件发布安全更新，修复 ip-address SSRF 与 brace-expansion DoS 漏洞",
+      "summary": "Red Hat 针对 RHEL 8/9/10 的 nodejs:22、nodejs:24 发布多项 Important 级安全公告（RHSA:55541 等），修复 ip-address 解析不一致导致的 SSRF 及 brace-expansion 内存耗尽型拒绝服务。",
+      "source": "Mallory 安全情报、Red Hat 官方 errata",
+      "url": "https://mallory.ai/stories/01a02403-2884-77d8-8fa4-fa7f81b624aa",
+      "published_time": "2026-08-17 发布，08-20 发酵",
+      "perspectives": [
+        {
+          "stance": "官方补丁通报（Red Hat）",
+          "summary": "确认 CVE-2026-69192（ip-address 前导零 IPv4 解析不一致致 SSRF/信任边界绕过）与 CVE-2026-69152（brace-expansion 无界中间数组致内存耗尽/事件循环阻塞）已修复，并提供更新版 Node.js、npm 包。"
+        },
+        {
+          "stance": "安全情报分析（Mallory）",
+          "summary": "梳理多项公告时间线并指出部分公告同时包含 SQLite FTS5 任意代码执行等附带修复，建议受影响 RHEL 平台的部署方尽快应用对应 errata。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "HeroDevs 发布 CVE-2026-56848 技术分析：Node.js HTTP/2 RST_STREAM 堆释放后使用致进程崩溃",
+      "summary": "安全公司 HeroDevs 详解 Node.js HTTP/2 处理缺陷：在活跃的 nghttp2 接收回调内提交流重置会重入发送路径并释放接收循环仍在读取的会话状态，导致堆释放后使用与服务进程崩溃。",
+      "source": "HeroDevs 博客",
+      "url": "https://www.herodevs.com/blog-posts/cve-2026-56848-node-js-http-2-rst-stream-heap-use-after-free",
+      "published_time": "2026-08-21",
+      "perspectives": [
+        {
+          "stance": "技术分析（HeroDevs）",
+          "summary": "以复现与调用链解析方式说明 nghttp2_session_mem_send() 在 mem_recv() 执行期间被重入调用从而触发 use-after-free 的机理，提醒使用 HTTP/2 的 Node 服务尽快升级到已修复版本。"
+        },
+        {
+          "stance": "漏洞数据库口径（Mend/VulDB）",
+          "summary": "该 CVE 于 08-04 正式登记，属 HTTP/2 处理缺陷，可致进程崩溃，相关修复已包含在此前 8 月初发布的安全更新中，各发行版同步跟进。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Node.js 生态舆情高度集中于安全议题：isolated-vm 沙箱逃逸与 @cgauge/yaml RCE 在 8 月 20-21 日霸屏国内外安全媒体，开发者普遍紧张并加快升级打补丁；Bun 1.4 创纪录的 Node.js 兼容性提升则引发兴奋与「替代 Node.js」讨论；中文社区更关注周刊所载 pnpm 12 Rust 重写与 Node.js 26.7.0 新特性，整体情绪为「安全焦虑 + 升级紧迫 + 生态竞争兴趣」。",
+  "honesty_note": "严格限定在 08-17 至 08-24 窗口内的高热度 Node.js 资讯以上述安全与版本事件为主，且本轮窗口内未观察到新的官方 Node.js 稳定版发布（8 月 19 日排期的 26.x 发布未落地）。部分持续热议事件恰在窗口之外，可作为关联话题参考：8 月 4-6 日的 Keyv/cacheable npm 供应链攻击（ChainDrop/Shai-Hulud 蠕虫，影响超 1300 个包、月下载约 20 亿次）、8 月 13 日的 Node.js Interactive 2026 会议总结（QUIC/HTTP3 进展、Node 27 时间表）、以及 8 月 5 日发布的 Node.js 26.7.0 版本。",
+  "start_time": "2026-08-24 01:00",
+  "end_time": "2026-08-24 01:03",
+  "elapsed_seconds": 192,
+  "retry_count": 1
+}

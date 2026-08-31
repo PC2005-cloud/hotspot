@@ -1,0 +1,105 @@
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "《Rust》2026路线图重大调整：战斗通行证取消、多项内容延至2027年",
+      "summary": "Facepunch 对生存游戏《Rust》2026剩余年度路线图大幅改动，取消原定第三季度上线的战斗通行证并改为「Rust Premium」，程序化洞穴、抓钩、地形变形等推迟至2027年，宠物狗则意外提前至2026年发布。",
+      "source": "搜狐（十轮网）/ Polygon",
+      "url": "https://www.sohu.com/a/1069822185_506163",
+      "published_time": "2026-08-31 09:17",
+      "perspectives": [
+        {
+          "stance": "官方/游戏媒体通报",
+          "summary": "Facepunch 表示改向专注纪念碑改进与部落系统重构，战斗通行证条目被彻底移除，由基于库存价值认定的「Rust Premium」取代，并承诺每月首个周四照常更新。"
+        },
+        {
+          "stance": "玩家讨论",
+          "summary": "不少玩家对取消战斗通行证表示欢迎，认为《Rust》不应通过付费订阅提供外观奖励；另一些玩家则质疑「Rust Premium」的付费门槛与未来扩展方向。"
+        },
+        {
+          "stance": "社区争议",
+          "summary": "部分玩家担心近期的 Power Trip 更新利好大公会、冷落单人玩家，对路线图变动后的平衡性持观望态度。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Rust 下一代 trait solver 历经近四年开发后在 nightly 默认启用",
+      "summary": "Rust 官方宣布新一代 trait solver 已在 nightly 默认启用并计划未来数月内稳定，被视为 rustc 自首次发布以来最大的单次内部变更，修复超200个已知问题并显著优化编译性能（如 datafusion 提速8倍以上）。",
+      "source": "Rust Blog / Rust日报（CC）",
+      "url": "https://blog.rust-lang.org/2026/08/21/enabling-next-solver-on-nightly/",
+      "published_time": "2026-08-21（国内报道8月24-29日）",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "官方博客宣布自8月22日起最新 nightly 默认启用该求解器，遇回归可用 -Znext-solver=coherence 临时关闭，并计划借此推进 TAIT、RTN 等特性稳定。"
+        },
+        {
+          "stance": "技术社区分析",
+          "summary": "开发者普遍认为这是编译期能力的重要里程碑，编译性能收益显著；同时有声音提醒 nightly 阶段可能存在未知回归，建议生产项目谨慎跟进。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Rust 1.98.0 稳定版发布，随后被曝 P-critical 级误编译回归",
+      "summary": "Rust 1.98.0 于8月20日发布，新增类 -ffast-math 的代数浮点运算方法与 format_into 等标准库能力；随后社区报告 vtable 空槽导致 SIGSEGV 的误编译问题，被标记为 P-critical 的 stable-to-stable 回归。",
+      "source": "Rust Blog / Rust日报（CC）",
+      "url": "https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/",
+      "published_time": "2026-08-20（回归报道8月24日）",
+      "perspectives": [
+        {
+          "stance": "发布团队通报",
+          "summary": "官方称新版本带来大量数值性能优化并增强标准库 API 稳定性，建议开发者通过 rustup 更新至 1.98.0。"
+        },
+        {
+          "stance": "开发者反馈",
+          "summary": "rust-lang/rust issue #161441 报告 1.98.0 上出现 P-critical 误编译（vtable 空槽导致 SIGSEGV），社区高度关注该回归的影响范围与修复进度。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Rust Project 公布首批 Maintainers in Residence，五名维护者获长期资助",
+      "summary": "Rust Project 与 Rust Foundation 于8月26日宣布首批 MiR 计划入选者，为5名贡献者提供至少12个月维护资助，资金来自 Google、AWS、OpenAI 等捐助的 Maintainers Fund，覆盖 rustup、Clippy、编译器/标准库及 Windows 支持等关键领域。",
+      "source": "PRLog / E-Ink News / Rust日报",
+      "url": "https://www.prlog.org/13166759-rust-project-and-rust-foundation-announce-first-maintainers-in-residence.html",
+      "published_time": "2026-08-26",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "项目方称本轮向关键基础设施维护投入约35万美元，旨在缓解长期依赖志愿者维护者的压力，保障生态可持续性。"
+        },
+        {
+          "stance": "社区评价",
+          "summary": "社区普遍肯定该机制对维护者激励与生态健康的正面意义，同时关注资助规模的覆盖范围与后续资金来源稳定性。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Rust × 开源鸿蒙：ohos-rs 框架获社区推荐，可用 Rust 构建鸿蒙原生应用",
+      "summary": "旋武社区推荐 Rust 开源项目 ohos-rs，该框架允许开发者使用 Rust 构建开源鸿蒙原生 SDK，面向已有 Rust 技术积累或对性能与底层控制有额外需求的团队，为鸿蒙生态引入 Rust 提供可行路径。",
+      "source": "旋武社区",
+      "url": "https://website.xuanwu.openatom.cn/articles/news/260828-project.html",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "社区推荐",
+          "summary": "从性能、内存安全与底层控制角度肯定 Rust 在鸿蒙开发中的价值，将其作为官方推荐语言 ArkTS 之外的有益补充路线。"
+        },
+        {
+          "stance": "客观评价",
+          "summary": "亦提醒团队需结合自身 Rust 技术积累、官方工具链支持现状及生态成熟度综合评估，不宜盲目迁移。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "关键词 Rust 同时指向编程语言与同名生存游戏两条高热度线。游戏端，取消战斗通行证并推出 Rust Premium 的路线图大改在近48小时引发玩家热议，态度分化明显；技术端，下一代 trait solver 默认启用、1.98 误编译回归与 arrayref 供应链攻击成为开发者焦点，安全类话题公众情绪整体偏警惕，生态维护议题获正面反响。",
+  "honesty_note": null,
+  "start_time": "2026-08-31 02:12",
+  "end_time": "2026-08-31 02:14",
+  "elapsed_seconds": 157,
+  "retry_count": 1
+}

@@ -1,0 +1,119 @@
+{
+  "keyword": "Vue.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Vue 3.6-rc Vapor Mode 实测：细粒度更新快 4.5×～21.5×，极端压力工况下 VDOM 出现可用性退化",
+      "summary": "阿里云开发者社区发布基于 Vue 3.6.0-rc.5 + Quasar 的真实项目 A/B 实测：Vapor Mode 让挂载快 20%~42%、单字段高频更新快 4.5×~21.5×，但 5000 条×1000 轮极端压力下 VDOM 主线程阻塞甚至页面失效，Vapor 仍流畅可用。",
+      "source": "阿里云开发者社区",
+      "url": "https://developer.aliyun.com/article/1758981",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "实测方观点",
+          "summary": "作者认为 Vapor 不是噱头，在深列表加高频小变更场景下收益显著，数据撑得起【细粒度更新快一个量级】的结论，但收益高度挑场景，浅组件只有 1.3~1.5×，适合对纯展示叶子组件局部 vapor 化试点。"
+        },
+        {
+          "stance": "审慎提示",
+          "summary": "rc 版 API 不稳定、编译链依赖手工补丁（vite-plugin AST patch、performance 插桩缺陷），Vuetify、Element Plus、Naive UI 等主流组件库尚无 Vapor 产物，正式版前不建议大范围迁移，等 3.6 稳定版与生态跟上再扩大。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "npm 恶意包 vue-compiler-sfc-plugin 被识别并移除，Vue 生态供应链安全再受关注",
+      "summary": "Snyk 安全通告显示：npm 包 vue-compiler-sfc-plugin 于 202624 被披露为恶意包，内含恶意代码，其内容已从官方包管理器移除，提醒 Vue 开发者核查依赖供应链。",
+      "source": "Snyk",
+      "url": "https://security.snyk.io/vuln/SNYK-JS-VUECOMPILERSFCPLUGIN-19268177",
+      "published_time": "2026-08-26",
+      "perspectives": [
+        {
+          "stance": "安全机构通告",
+          "summary": "Snyk 判定该包为恶意包（CWE-506 恶意代码植入），官方包管理器已移除其内容，属于典型仿冒官方 vue/compiler-sfc 的供应链攻击案例。"
+        },
+        {
+          "stance": "开发者应对",
+          "summary": "社区提醒立即检查 package-lock/yarn.lock 与依赖树，警惕 typosquatting 仿冒包名，确认安装来源为官方 @vue/* 或 vue/* 正式包，避免从非官方渠道引入依赖。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Nuxt 4.5 发布：实验性 SSR Streaming、Vite 8 与 Rsbuild 驱动的 Rspack 构建器",
+      "summary": "InfoQ 报道 Vue 全栈框架 Nuxt 4.5：默认迁移至 Vite 8，Rspack 构建器重构为 Rsbuild 内核，新增实验性 SSR 流式渲染、稳定错误码体系与 useLayout 组合式函数；Nuxt 3 已于 202631 停止支持。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/nuxt-4-5-streaming/",
+      "published_time": "2026-08-24",
+      "perspectives": [
+        {
+          "stance": "官方发布视角",
+          "summary": "Nuxt 4.5 一次性带来三大构建层升级（Vite 8、Rspack 2、Rsbuild 管线）与实验性 SSR Streaming，官方升级指南覆盖从旧版本迁移路径，强调生态向 Vite 8 生态靠拢。"
+        },
+        {
+          "stance": "迁移提醒视角",
+          "summary": "升级需重新核对自定义 Vite 插件与 Rspack 配置是否兼容；Nuxt 3 已停止维护，官方建议存量项目尽快迁至 Nuxt 4.5，而非等待仍在稳定化中的 Nuxt 5。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Vibe Coding 时代，Vue 消失了还是 React 太强？技术社区掀起讨论",
+      "summary": "技术栈等社区热议 AI/Vibe Coding 浪潮下 Vue 的处境：全球 JS 框架份额 React 占 33%、Vue 仅占 6%，Vue 在 AI 生成代码与英文开源社区曝光度低，但作者认为 Vue 在中文圈、亚洲市场与小程序生态依然强势。",
+      "source": "技术栈 jishuzhan.net",
+      "url": "https://jishuzhan.net/article/2092465647947796482",
+      "published_time": "2026-08-24",
+      "perspectives": [
+        {
+          "stance": "忧虑观点",
+          "summary": "在 AI 驱动的开发浪潮中 Vue 逐渐【隐身】，全球 AI 生成代码、英文开源社区曝光度极低，与 React 的生态差距从开发者心智到工具链协作都在扩大。"
+        },
+        {
+          "stance": "乐观反驳",
+          "summary": "消失的不是 Vue，而是手写样板代码的时代；Vue 在中亚市场、小程序生态依旧健康强势，Vapor Mode 与 alien-signals 等更新让 Vue 保持竞争力，中文圈开发者不必过度悲观。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "前端已死？今年反迎5大升级：Vue 3.6 Vapor Mode 让虚拟 DOM 变成可选项",
+      "summary": "搜狐科技文章盘点 2026 上半年前端生态五大升级：Vue 3.6 推出 Vapor Mode 让虚拟 DOM 变成可选项，TypeScript 7.0 Go 重写提速约 10 倍、Vercel json-render、Bun 迁移 Rust、Figma Code Layers 等，称前端圈正酝酿新技术迁移。",
+      "source": "搜狐新闻",
+      "url": "https://news.sohu.com/a/1067897637_121743674",
+      "published_time": "2026-08-26 18:02",
+      "perspectives": [
+        {
+          "stance": "行业盘点视角",
+          "summary": "AI 写代码普及下前端本应收缩，但上半年各类升级、开源路线接连冒头，旧框架正在被【拆掉】，前端生态酝酿新一轮技术迁移。"
+        },
+        {
+          "stance": "甄别与补充",
+          "summary": "有读者指出新项目吸睛容易、解决存量问题难，且文中后半段涉及云表等厂商内容，需甄别软文成分；关于 Vue 的核心观点仍聚焦 Vapor Mode 作为虚拟 DOM 的替代路径。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Vue 3.6 Vapor Mode 即将到来：RC 阶段特性集完成，稳定版预计今秋发布",
+      "summary": "DEV 社区文章称 Vue 3.6 已于 7 月进入 RC 阶段，Vapor Mode 特性集终于完整；作者以无框架编写浏览器游戏的体验切入，说明为何 Vapor 重要，并预计稳定版将在今年秋季发布。",
+      "source": "DEV Community",
+      "url": "https://dev.to/gabbrowick/vues-vapor-mode-is-almost-here-writing-browser-games-with-no-framework-taught-me-why-it-matters-5gak",
+      "published_time": "2026-08-24",
+      "perspectives": [
+        {
+          "stance": "作者观点",
+          "summary": "作者强调特性集完成不等于稳定，不会在稳定版落地前把 Vapor 用于客户项目，预期稳定版秋季到来，届时才适合正式接入。"
+        },
+        {
+          "stance": "社区期待",
+          "summary": "两年前便预告的 Vapor Mode 如今接近落地，官方宣称第三方基准下与 Solid、Svelte 5 持平，社区普遍期待正式版并关注其与组件库生态的适配进展。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Vue.js 生态舆情高度聚焦 Vue 3.6 Vapor Mode 的性能实测与落地预期，开发者情绪总体积极但审慎：普遍认可其在深列表、高频小变更场景下快一个量级的优势，同时对 rc 版稳定性、编译链手工补丁及组件库生态滞后存在顾虑；【Vue 是否在 AI 时代消失】的讨论持续升温，AI/Vibe Coding 冲击下社区既焦虑又坚定，普遍认为 Vue 在中亚市场依旧强势；仿冒恶意 npm 包事件则进一步拉高了供应链安全意识。",
+  "honesty_note": "需说明：① 近 7 天窗口内 Vue 核心官方【大事件】较少，主流热点以 Vue 3.6 RC 生态实测、安全事件与社区讨论为主；② 微博等大众热搜平台同期无 Vue.js 相关内容，热点集中在技术社区（阿里云社区、InfoQ、掘金、Snyk 等）；③ 关联话题：Vue 3.6.0-rc.5（08-21 发布）迭代、Vue&ViteConf 2026 总结（08-23，略早于窗口）、Vite 8 与 Cloudflare 收购 VoidZero 后的生态走向、Nuxt 3 停止支持及 Nuxt 5 规划，可作为补充检索方向。",
+  "start_time": "2026-08-31 02:31",
+  "end_time": "2026-08-31 02:32",
+  "elapsed_seconds": 71,
+  "retry_count": 0
+}

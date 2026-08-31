@@ -1,0 +1,105 @@
+{
+  "keyword": "DeepSeek",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "DeepSeek据报寻求74亿美元新一轮融资 估值达740亿美元 目标2027年IPO",
+      "summary": "华尔街日报援引知情人士称，DeepSeek正推进新一轮融资，计划筹集74亿美元，投前估值达740亿美元，高于6月逾500亿美元的上一轮估值，资金将用于研发与算力基础设施扩张，并目标在2027年进行首次公开募股（IPO）。",
+      "source": "格隆汇",
+      "url": "https://dxpress.gelonghui.com/live/2638405",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "综合报道",
+          "summary": "现有股东宁德时代、砺思资本（Monolith）、拾象等将继续注资，多家由地方政府融资平台支持的基金也计划参投，本轮融资对公司的估值预计达740亿美元。"
+        },
+        {
+          "stance": "市场对比分析",
+          "summary": "同期Anthropic二级市场估值已站上1.5万亿美元，DeepSeek 740亿美元估值绝对值低但估值倍数更高，引发关于AI公司估值泡沫、商业化变现路径的讨论。"
+        },
+        {
+          "stance": "公司动向",
+          "summary": "DeepSeek目标明年进行首次公开募股IPO，该融资与科创板IPO筹备并行推进，外界视其为资本化进程加速的信号。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "据报DeepSeek今年首七个月收入4.75亿元 为去年全年十倍 毛利率44.6%",
+      "summary": "《The Information》引述消息人士称，DeepSeek今年首七个月收入达4.75亿元人民币，是去年总收入的十倍以上；同期亏损7.15亿元，毛利率44.6%，商业化仍处爬坡期。",
+      "source": "搜狐科技",
+      "url": "https://www.sohu.com/a/1067988622_122014422",
+      "published_time": "2026-08-25",
+      "perspectives": [
+        {
+          "stance": "媒体披露",
+          "summary": "收入十倍增长但仍处净亏损状态，反映头部大模型公司在规模扩张与盈利之间的现实平衡，财务数据被视为衡量其商业化的关键指标。"
+        },
+        {
+          "stance": "融资联动解读",
+          "summary": "财务数据在第二轮融资前夕流出，被市场视为判断其740亿美元估值合理性与资本化进度的参考依据。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "奇安信曝DeepSeek Harness极危漏洞 QVD-2026-57410 CVSS评分高达9.8",
+      "summary": "8月24日，奇安信威胁情报中心披露DeepSeek开源Agent框架Harness存在未授权远程代码执行漏洞，编号QVD57410，CVSS 3.0评分高达9.8，评级极危，且POC已公开。",
+      "source": "凤凰网科技",
+      "url": "https://tech.ifeng.com/c/8vryUp2AbLI",
+      "published_time": "2026-08-24",
+      "perspectives": [
+        {
+          "stance": "安全机构预警",
+          "summary": "攻击者无需任何API Key即可绕过信任机制在服务器上执行任意系统命令，影响开发者预览版，建议用户立即升级修复并排查暴露面。"
+        },
+        {
+          "stance": "开发者社区视角",
+          "summary": "官方已发布修复版本（v0.1.0-rc.8），社区同步讨论AI Agent框架缺少插件治理机制的安全隐患，呼吁加强开源生态安全规范。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "信通院MCP专项测试 StartLux-27B综合第二 超越284B DeepSeek V4-Flash",
+      "summary": "中国信通院8月31日公布可信AI大模型基准测试MCP专项结果，27B参数的StartLux-V1.0B-Preview综合得分39.25%位居第二，超过284B的DeepSeek-V4-Flash，并以约1个百分点紧追1.6T参数的DeepSeek-V4-Pro。",
+      "source": "钛媒体",
+      "url": "https://www.tmtpost.com/nictation/8122409.html",
+      "published_time": "2026-08-31",
+      "perspectives": [
+        {
+          "stance": "报道方",
+          "summary": "小参数模型在多项Agent任务中排名第一，凸显「少参数、高效率」路线的竞争力，测试于8月3日启动、8月31日公布。"
+        },
+        {
+          "stance": "行业讨论",
+          "summary": "小模型战胜大参数模型引发关于参数规模与工程优化关系的讨论，同时DeepSeek-V4系列在权威基准中仍被当作重要衡量标尺。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "DeepSeek启动科创板IPO筹备 最快年内递交申请 目标2027年挂牌",
+      "summary": "据媒体报道，DeepSeek已正式启动IPO相关筹备工作，瞄准A股科创板，计划最快今年年底递交上市申请，争取2027年完成挂牌交易，与新一轮融资并行推进资本化进程。",
+      "source": "ZAKER",
+      "url": "https://app.myzaker.com/news/article.php?pk=6a8e4e268e9f0967676c1b4a",
+      "published_time": "2026-08-25",
+      "perspectives": [
+        {
+          "stance": "媒体报道",
+          "summary": "国产头部大模型企业冲刺A股上市，科创板成为首选目标，外界关注其受理、问询与注册节奏。"
+        },
+        {
+          "stance": "市场分析",
+          "summary": "上市与融资并行推进，市场聚焦其盈利路径、营收结构以及监管对AI企业的审核尺度，科创板上市被视为其估值兑现的重要观察窗口。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周DeepSeek舆情集中于资本化主线：74亿美元融资与740亿美元估值引发全网热议，资本圈普遍看好其商业化加速，但对比Anthropic等海外巨头也出现估值泡沫质疑；与此同时，Harness极危漏洞与「思考模式立场向右转」话题将舆论引向AI安全治理与对齐议题，整体情绪偏正面乐观，兼有对安全与估值的理性担忧。",
+  "honesty_note": "说明两点：一是搜索结果中标注「几分钟前」的个别条目经核实实为旧闻（如黄仁勋评价DeepSeek论文系2025年7月旧闻、外交部回应美方暂缓实体清单系2026年6月旧闻），已主动剔除；二是DeepSeek V4 Pro正式版及Harness开源首发于8月13日，处于近7天窗口之前，但8月底仍有持续报道与海外平台接入，可作关联话题补充参考。",
+  "start_time": "2026-08-31 02:02",
+  "end_time": "2026-08-31 02:05",
+  "elapsed_seconds": 176,
+  "retry_count": 1
+}

@@ -1,0 +1,109 @@
+{
+  "keyword": "Kubernetes",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Kubernetes v1.37「Garhwal」正式发布，67项增强聚焦AI与GPU调度",
+      "summary": "Kubernetes v1.37（代号Garhwal）于8月26日发布，共67项增强，其中16项转正、23项转Beta、27项进入Alpha，DRA动态资源分配、Pod证书及集群信任束等能力大幅升级。",
+      "source": "Kubernetes官方博客",
+      "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
+      "published_time": "2026-08-26（发布），2026-08-28（官方博客详解）",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "v1.37正式版上线，Pod Certificates与Cluster Trust Bundles转GA，将X.509证书签发内置于核心Kubernetes，为工作负载提供更强的生产身份认证机制。"
+        },
+        {
+          "stance": "技术分析",
+          "summary": "DRA持续增强，Node Declared Features转GA、DRA Group Claim Sharing与Gang Scheduling进入Beta，CompositePodGroup进入Alpha，为大规模AI训练和GPU异构负载提供批量调度与资源共享能力。"
+        },
+        {
+          "stance": "迁移与安全提示",
+          "summary": "kube-proxy的ipvs模式进入弃用周期，预计v1.40默认禁用、v1.43完全移除；SELinuxMount转GA，Rootless kubelet升Beta，运营团队需提前规划迁移与安全基线调整。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Kubernetes v1.38 发布周期即将启动，社区开启新一轮贡献者招募",
+      "summary": "v1.38 Release Team Shadow 申请已于8月28日截止，新版本周期预计8月31日启动，并调整增强冻结与代码冻结间隔以减轻贡献者压力、减少Code Freeze例外。",
+      "source": "LWKD（Last Week in Kubernetes Development）",
+      "url": "https://lwkd.info/2026/20260828",
+      "published_time": "2026-08-19（报道），v1.38周期8月31日启动",
+      "perspectives": [
+        {
+          "stance": "社区动态",
+          "summary": "v1.38周期将为增强冻结到代码冻结之间预留更多时间，帮助贡献者更从容地完成评审与合并，降低对Code Freeze例外的依赖。"
+        },
+        {
+          "stance": "贡献者视角",
+          "summary": "Release Team Shadow 招募窗口开放，鼓励Kubernetes组织成员参与版本发布团队，为下一轮正式版贡献技术与管理力量。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Red Hat ACM 多集群Kubernetes产品曝多个高危漏洞，CVSS最高9.9",
+      "summary": "Red Hat Advanced Cluster Management 与 OpenShift Multicluster Engine 曝出多个严重漏洞，其中CVE66792评分达9.9，可让托管集群特权用户提升至集群管理员级别并完全接管。",
+      "source": "安恒信息·安全星图",
+      "url": "http://starmap.dbappsecurity.com.cn/info/16208",
+      "published_time": "2026-08-19",
+      "perspectives": [
+        {
+          "stance": "安全厂商预警",
+          "summary": "漏洞影响订阅、导入、搜索三个核心组件，单点漏洞可能引发跨集群连锁反应，建议严格限制RBAC权限并审计可创建Subscription、CSR和Search资源的用户。"
+        },
+        {
+          "stance": "官方回应",
+          "summary": "Red Hat已发布安全公告并推送紧急更新，但订阅组件暂无符合其标准的缓解措施，补丁更新至关重要，尚未确认有野外利用行为。"
+        },
+        {
+          "stance": "管理员关切",
+          "summary": "此类漏洞直击Kubernetes舰队管理核心，对多租户环境构成重大威胁，管理员被强烈建议立即应用补丁并持续监控Red Hat安全公告。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "KubeCon + CloudNativeCon China 2026 下周上海启幕，三大开源社区同台",
+      "summary": "KubeCon + CloudNativeCon、OpenInfra Summit与PyTorch Conference三会首次联办，定于9月7日在上海国际会议中心举行，聚焦Kubernetes与AI基础设施融合。",
+      "source": "Linux Foundation",
+      "url": "https://www.linuxfoundation.org/press/kubecon-cloudnativecon-openinfra-summit-and-pytorch-conference-unite-in-china-to-scale-ai",
+      "published_time": "2026-06-18（官方预告），会期2026-09-07至09-09",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "中国是CNCF第二大贡献者群体，三大会合办旨在打通从OpenStack、Kata Containers、Kubernetes到PyTorch、vLLM的全栈开源AI基础设施。"
+        },
+        {
+          "stance": "参会者关注",
+          "summary": "AI基础设施、平台工程、GPU虚拟化、Agentic AI等议题成为议程重点，上海场将展示中国厂商大规模生产级AI与Kubernetes编排实践。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "2026 Kubernetes指导委员会选举投票进行中，六名候选人角逐",
+      "summary": "Kubernetes Steering Committee 2026年选举投票持续开放，共六名候选人参选，Kubernetes组织成员需在10月1日前完成投票以决定社区治理走向。",
+      "source": "LWKD（Last Week in Kubernetes Development）",
+      "url": "https://lwkd.info/2026/20260813",
+      "published_time": "2026-08-12（报道），投票持续至2026-10-01",
+      "perspectives": [
+        {
+          "stance": "社区公告",
+          "summary": "由于2026年前四个月GitHub贡献记录未被准确追踪，今年所有现有Kubernetes组织成员均具备投票资格，覆盖面较往年更广。"
+        },
+        {
+          "stance": "成员关注",
+          "summary": "选举结果将影响Kubernetes治理与路线图方向，社区呼吁组织成员积极投票，并关注候选人治理与技术主张。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Kubernetes最热焦点为v1.37「Garhwal」正式发布，社区与开发者普遍兴奋，热议集中在DRA、Gang Scheduling等面向AI/GPU负载的能力及Pod证书安全特性；同时安全圈对Red Hat ACM系列高危漏洞（CVSS 9.9）表达担忧，呼吁多集群用户尽快修复；kube-proxy ipvs弃用等迁移话题讨论度同步上升。",
+  "honesty_note": "说明：以2026-08-31为基准，信息最集中的增量集中在8月26日v1.37发布及8月28日前后报道，24-48小时内的全新内容有限；部分条目（如KubeCon China活动预告、指导委员会选举）为进行中或预告话题，时间略早于7天窗口，作为关联话题补充。另附关联话题：CoreDNS v1.14.7修复CVE-2026-56865等漏洞；Apache CloudStack CKS插件跨租户漏洞CVE-2026-62440（2026-08-20披露）。",
+  "start_time": "2026-08-31 02:14",
+  "end_time": "2026-08-31 02:15",
+  "elapsed_seconds": 71,
+  "retry_count": 0
+}

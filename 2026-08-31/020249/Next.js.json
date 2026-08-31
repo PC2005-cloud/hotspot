@@ -1,0 +1,117 @@
+{
+  "keyword": "Next.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Next.js 紧急安全更新：修复两项可未认证远程代码执行（RCE）的严重漏洞",
+      "summary": "Vercel于8月25日提前一天发布8月例行安全更新，修复两处CVSS 9分以上的Critical漏洞，均可在无需认证情况下远程执行代码，分别涉及AVIF图片优化与Windows服务器部署，官方发布15.5.24与16.3.3。",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html",
+      "published_time": "2026-08-26（补丁于8月25日发布）",
+      "perspectives": [
+        {
+          "stance": "官方通报（Vercel/Next.js团队）",
+          "summary": "官方在准备例行更新时发现上游依赖新增一项Critical漏洞，遂将发布提前一天；披露两处未认证RCE并强烈建议受影响用户立即升级，Vercel托管应用已自动防护、无需客户操作。"
+        },
+        {
+          "stance": "安全研究分析",
+          "summary": "CVE-2026-75604（CVSS 9.0）源于Windows路径遍历，可读取Server Action加密密钥并伪造绑定参数执行任意命令；AVIF漏洞（GHSA-2xp9-vwfh-vxw4，CVSS v4 9.5）源自上游libheif库堆缓冲区溢出，研究者公开PoC并称可在多款部署上实现RCE。"
+        },
+        {
+          "stance": "客观核实视角",
+          "summary": "截至8月27日未发现这两项漏洞被野外利用，研究者的RCE声明也未被独立证实；Windows漏洞仅影响Windows文件系统部署，Linux与macOS不受影响。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Next.js 16.3 发布：即时导航与开发内存最高降低90%，InfoQ于8月24日报道",
+      "summary": "8月3日发布的Next.js 16.3被InfoQ在8月24日评价为16.0以来最大更新：默认启用磁盘缓存与内存回收使Turbopack开发模式内存最高降90%，新增可选的Instant Navigations即时导航工具集并适配AI编码Agent。",
+      "source": "InfoQ 中文站",
+      "url": "https://www.infoq.cn/article/NedlVNN6E9uWbIE3WV07",
+      "published_time": "2026-08-24（版本发布于2026-08-03）",
+      "perspectives": [
+        {
+          "stance": "官方宣传（Vercel）",
+          "summary": "官方称其自身仪表盘内存占用从21.5GB降至2GB，CI环境重复构建最高提速5.5倍，SSR基于Node.js原生流重构后可多处理22%请求，并新增Instant Insights开发工具。"
+        },
+        {
+          "stance": "开发者实测与反馈",
+          "summary": "Reddit开发者对内存降90%进行实测，但GitHub反馈帖列出静态导出与部分预取不兼容、全局styled-jsx样式路由间泄漏、SST自托管启用cacheComponents导致SSR失败等问题，Appwrite建议按路由逐步接入。"
+        },
+        {
+          "stance": "媒体评价",
+          "summary": "The Register援引早期使用者称「内存占用终于回归正常水平」；InfoQ指出边缘运行时随Node迁移正式废弃，并称Next.js正回应Server Components体验迟缓的长期诟病。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "奇安信CERT复现Next.js RCE漏洞并预警：国内风险资产约49.7万个",
+      "summary": "国内安全机构奇安信CERT已完成两项Next.js RCE漏洞的复现并公布PoC运行截图，统计国内风险资产约49.7万个、全球约345万个，建议立即升级并轮换Server Action加密密钥。",
+      "source": "wafai.cn（安全技术博客）",
+      "url": "https://www.wafai.cn/nextjs-cve-2026-75604-windows-path-traversal-avif-heap-overflow-rce/",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "官方通报（奇安信CERT）",
+          "summary": "奇安信CERT在国内完成两项漏洞复现并公开PoC运行截图，公布国内约49.7万个风险资产、关联IP约9.8万个的统计，强调受影响部署量很大需立即升级。"
+        },
+        {
+          "stance": "技术细节分析",
+          "summary": "披露Windows路径穿越源于ISR与App Router增量缓存的路径反斜杠处理缺陷，可离线伪造Server Action绑定参数；AVIF漏洞为libheif双Alpha plane越界写入约16KB数据触发RCE。"
+        },
+        {
+          "stance": "修复建议视角",
+          "summary": "建议升级至15.5.24或16.3.3后强制重建缓存并轮换Server Action加密密钥，在官方libheif补丁发布前移除image/avif格式，并在WAF中加入反斜杠穿越与异常idat结构检测规则。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "iThome报道：Next.js修补两项重大RCE漏洞，Windows部署及AVIF影像最佳化受影响",
+      "summary": "8月30日iThome刊文称Next.js修复两项CVSS 9分以上的RCE漏洞，影响特定Windows部署与AVIF影像优化功能，官方紧急发布15.5.24与16.3.3，强烈建议网站与App开发者立即升级。",
+      "source": "iThome（经ICSDA资安日报8月31日收录）",
+      "url": "https://icsda.org.tw/security-news-vulnerability-data-breach-20260831/",
+      "published_time": "2026-08-30（iThome报道）",
+      "perspectives": [
+        {
+          "stance": "媒体警示",
+          "summary": "iThome强调两漏洞一旦利用成功，攻击者可完全控制受害网站或服务器，窃取数据、部署恶意软件或将网站作为攻击跳板；虽然目前尚无公开证据显示已大规模实际利用。"
+        },
+        {
+          "stance": "防护建议视角",
+          "summary": "建议立即升级至15.5.24或16.3.3，暂时无法升级则暂停AVIF优化、强化Windows环境配置，部署WAF并加强服务器日志监控以发现异常行为。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Fastly、Cloudflare等云厂商为Next.js漏洞快速上线WAF虚拟补丁，行业聚焦Vercel月度安全机制",
+      "summary": "继Vercel于7月启动月度安全发布机制后，8月更新引发云厂商与安全社区快速响应，Fastly与Cloudflare上线WAF虚拟补丁规则；CSA研究确认两漏洞可致未认证RCE，但截至8月27日无野外利用证据。",
+      "source": "Cloud Security Alliance（云安全联盟CSA）",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-nextjs-avif-windows-rce-cve-2026-75604-202/",
+      "published_time": "2026-08-27",
+      "perspectives": [
+        {
+          "stance": "行业应对（云厂商）",
+          "summary": "基础设施提供商Fastly与Cloudflare在客户完成升级前迅速上线WAF虚拟补丁规则；Vercel亦对其托管图像优化服务应用了防护。"
+        },
+        {
+          "stance": "专家分析（CSA）",
+          "summary": "CSA指出Next.js近两年接连披露严重漏洞（含2025年12月CVSS 10.0的React2Shell反序列化漏洞），LLM辅助漏洞挖掘正推高全行业安全披露节奏，8月更新为Vercel月度机制下的第二次发布。"
+        },
+        {
+          "stance": "社区观点",
+          "summary": "部分开发者与安全博主担忧Next.js的安全记录与补丁节奏，认为自托管用户应更重视安全运维，并关注「8月20日预告公开后、补丁可逆向对比前」的空窗期风险。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Next.js圈层最大热点为8月25日双Critical RCE安全更新，舆情以「安全恐慌+敦促立即升级」为主，安全媒体、云厂商与中文社区密集跟进，开发者对Windows部署与AVIF功能风险担忧明显；同期16.3的内存优化与即时导航话题亦受关注，整体呈现「性能利好与安全警报并存、安全感下降」的情绪。",
+  "honesty_note": "近7天内与Next.js直接相关的资讯高度集中于8月25-28日安全更新事件，信息较为充分；8月29-31日最后三天以持续跟进报道（如iThome、ICSDA日报）为主，无重大新版本发布，且Next.js 16.3发布本身（8月3日）略早于本窗口，仅有8月24日中文复盘报道在期内。关联话题可补充关注：Vercel于2026年7月启动的月度安全发布机制、Next.js 16.3性能优化与Instant Navigations、Cloudflare与Vercel围绕Next.js重实现的争论（2026年2-4月）以及开发者对Next.js 2025-2026年连续漏洞披露的长期讨论。",
+  "start_time": "2026-08-31 02:55",
+  "end_time": "2026-08-31 02:57",
+  "elapsed_seconds": 75,
+  "retry_count": 0
+}

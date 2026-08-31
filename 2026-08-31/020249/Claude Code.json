@@ -1,0 +1,121 @@
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Claude 安全机制大翻车：AI 误删开发者 700GB 主目录",
+      "summary": "开发者 Sebastien Guillemot 测试文件删除防护时，Claude 因安全机制自动降级并复用变量名，误将 700GB 家目录数据 rm -rf 删除，一周工作成果尽失，引发全网热议。",
+      "source": "机器之心（经 36氪 转载）",
+      "url": "https://eu.36kr.com/en/p/3961512188378248",
+      "published_time": "2026-08-31 08:32",
+      "perspectives": [
+        {
+          "stance": "事件报道",
+          "summary": "Anthropic 在 Claude Code 内置安全降级机制：任务涉高风险（文件删除）时自动从 Fable 5 降级至 Opus 5、再至 Opus 4.8，测试阶段变量名复用致清理逻辑误删用户家目录，本要清理的 /tmp 反而完好，讽刺意味十足。"
+        },
+        {
+          "stance": "开发者质疑",
+          "summary": "社区长期吐槽降级机制过于敏感、易误触发且具「粘性」，一次触发整场会话持续；弱模型处理变量作用域、路径等精细场景反而更易出错，降级逻辑适得其反。"
+        },
+        {
+          "stance": "网友自救与反思",
+          "summary": "有开发者自写 hook 脚本检测降级即自动暂停会话防误操作，还有人推荐 Termaxa 等容灾软件，并发出「谁来守护守护者」的灵魂拷问。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code 每周额度「永久 +25%」被识破：相对当前实为 -17%",
+      "summary": "Anthropic 宣布 9月14日起 Claude Code 标准周限额永久上调 25%，但相对当前 50% 促销额度，每周容量实际缩减约 17%，被用户戏称「明升暗降」，官方随后删帖澄清。",
+      "source": "Notebookcheck",
+      "url": "https://www.notebookcheck-cn.com/Anthropic-Claude-Code-25-17.1382922.0.html",
+      "published_time": "2026-08-30",
+      "perspectives": [
+        {
+          "stance": "官方表述",
+          "summary": "Anthropic 强调基准限额将永久提高 25%，称调整是为长期维持平台稳定性，并预告将改版界面，让用户更清晰查看和控制每周剩余配额。"
+        },
+        {
+          "stance": "社区计算与质疑",
+          "summary": "用户几小时内算出以 5月前基线为 100、当前 150、9月 125，相对当前实为减少约 17%，在公告中追加「社区说明」警示；Anthropic 删除原帖重新发布并承认相对今天是 17% 缩减。"
+        },
+        {
+          "stance": "行业背景分析",
+          "summary": "此举仅数日前 OpenAI 也恢复 Codex 严格五小时限额，分析认为前沿模型「促销补贴期」正走向终结，开发者按 2026 促销价做的预算需重新核算。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Claude Sonnet 5 API 提价：每百万 token 涨至 $3/$15 并调整 tokenizer",
+      "summary": "8月31日起 Claude Sonnet 5 API 定价由 $2/$10 涨至 $3/$15 每百万 token，同步变更 tokenizer 使代码类负载 token 增加 10%，编程场景实际成本涨幅可能远超表面。",
+      "source": "AIToolsRecap",
+      "url": "https://aitoolsrecap.com/Blog/ai-news-august-31-2026",
+      "published_time": "2026-08-31",
+      "perspectives": [
+        {
+          "stance": "官方定价公告",
+          "summary": "本轮为 API 定价调整，消费级订阅（Claude Pro 等）不受影响，属于前端模型定价常态化回归。"
+        },
+        {
+          "stance": "开发者成本核算",
+          "summary": "配合 tokenizer 变更，代码工作负载实际 token 消耗增加 10-35%，总成本或大幅高于表面 50% 涨幅，依赖 API 的工作流预算压力上升。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "同日 GPT-5.4 退出 Codex 登录用户、Kimi 两模型下线，观察者指出以低价获取用户的「促销时代」正在结束，固定订阅正按算力成本重新校准。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Claude Code 8月29日更新：异步启动、Linux 体积缩小 4.5 倍、子代理模型可见",
+      "summary": "Claude Code 8月29日更新：异步沙箱启动让输入提示不再等待初始化，Linux x64 体积从约 338MB 缩至约 75MB，并新增 /tasks 子代理模型与 effort 级别显示。",
+      "source": "Pondero AI",
+      "url": "https://pondero.ai/news/2026-08-30-claude-code-august-2026-update/",
+      "published_time": "2026-08-30",
+      "perspectives": [
+        {
+          "stance": "官方技术解读",
+          "summary": "本次五项改动聚焦启动性能、token 可见性与会话持久性：/cost 新增 prompt-cache 行、/usage 增加 per-loop 明细，Auto mode 规则新增 UI 编辑标签，Remote Control 支持服务端断线重连。"
+        },
+        {
+          "stance": "开发者受益视角",
+          "summary": "异步启动对 MCP 多服务器项目提升最明显；体积缩小 263MB 让 CI 每次冷启动安装与容器镜像明显变薄，内存占用每会话再降 40-70MB，并行跑 agentic loop 的团队收益大。"
+        },
+        {
+          "stance": "遗留诉求",
+          "summary": "Windows 原生构建尚无瘦身时间表；Remote Control 与桌面 App 集成、偶发乱码输出、客服响应慢等社区反馈未在本轮覆盖，用户仍在等待。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Claude Code 周更 v2.1.245-251：--restricted 安全模式与多项安全漏洞修复",
+      "summary": "8月24日 Claude Code 密集发布多个小版本，新增 --restricted 严格安全模式、PreModelSwitch/PostModelSwitch 模型切换钩子、企业 /usage-credits 配额请求，并修复多项路径遍历等安全漏洞。",
+      "source": "AI Tools DB（日本）",
+      "url": "https://ai-tools-db.com/claude-code/claude-code-weekly-update-20260831/",
+      "published_time": "2026-08-31",
+      "perspectives": [
+        {
+          "stance": "更新梳理",
+          "summary": "本周以「更安全、更透明、更可控」为主线：修复 Linux glibc 2.44 启动崩溃、OAuth 令牌刷新导致的约每小时一次缓存失效，新增跨会话消息与模型切换监控钩子。"
+        },
+        {
+          "stance": "企业与安全用户视角",
+          "summary": "--restricted 模式（移除内置命令、限文件工具、禁权限绕过）满足高安全环境需求，/usage-credits 让企业管理员可控配额，成本与缓存可见性显著提升运维透明度。"
+        },
+        {
+          "stance": "社区情绪",
+          "summary": "仍有开发者认为更新频繁但「关键 bug 未根治」（如降级粘性、误删风险），对安全机制信任度下降，与 700GB 误删事件形成呼应。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Claude Code 舆论聚焦安全与成本两大议题：700GB 误删事件重创对「安全降级机制」的信任，额度「明升暗降」与 Sonnet 5 API 提价引发对 Anthropic 商业化收紧的不满；同时 /resume 跨端打通、异步启动等体验改进获好评，整体情绪呈现「爱恨交织」的复杂状态。",
+  "honesty_note": "两点说明：其一，硅谷反 Anthropic、Claude 全线产品被要求 8月31日前封杀（c114 转载 36kr）虽截止日恰为今天，但原始报道发布于 7月30日、早于本周期，故未单列；其二，中文二次报道存在 1-2 天滞后（误删事件 8月27-29 发酵、8月31日机器之心长文刷屏），均已归并。关联话题：Anthropic 未签署开放权重公开信、五角大楼黑名单被裁定为非法报复等。",
+  "start_time": "2026-08-31 02:20",
+  "end_time": "2026-08-31 02:25",
+  "elapsed_seconds": 300,
+  "retry_count": 2
+}

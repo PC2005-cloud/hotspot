@@ -1,0 +1,69 @@
+{
+  "keyword": "GitHub",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "GitHub Copilot 8月更新周报：Slack/Teams 共享 Agent 会话、原生 Rust CLI 上线",
+      "summary": "GitHub 8月28日公布8月24日周更：Copilot 支持在 Slack/Teams 中把对话转为团队共享 Agent 会话，CLI 改用原生 Rust 运行时提速，并随 VS Code 1.135 与 Visual Studio 更新推出思维强度、组织级自定义 Agent 等新能力。",
+      "source": "GitHub Changelog（官方）",
+      "url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "周报显示在 Slack/Teams 中提及 @GitHub 即可开启共享 Agent 会话；Copilot CLI 迁移至原生 Rust 运行时显著提速，同时新增 /plugin、/mcp、/skills 管理体验；VS Code 1.135 新增单窗格 Agents 布局与按模型用量明细。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "DevOps.com 等认为此次更新押注「模型选择」而非「模型忠诚」，Kimi K3、MAI-Code-1.1-Flash 等第三方模型接入扩大选择面；Visual Studio 8月更新则增加 Low/Medium/High 三级思考强度控制、模型固定与 Git Agent 代码审查，平台化与按量计费趋势明显。"
+        },
+        {
+          "stance": "社区质疑",
+          "summary": "有开发者指出 8月21日 Slack 变更日志称公共预览仅限 Copilot Business/Enterprise 组织，与文档所称「任意付费版可用」口径矛盾，多份官方页面说法不一致引发讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "GitHub Classroom 正式退役：网站与 API 于8月28日停用，转用合作方案",
+      "summary": "GitHub 官方公告，GitHub Classroom 已于8月28日正式退役，其网站、API 及相关服务全部停用，转而推荐 Codio 等合作方案；部分课堂与作业数据将按保留策略永久删除，引发全球教育者迁移潮。",
+      "source": "GitHub Changelog（官方）",
+      "url": "https://github.blog/changelog/2026-08-27-github-classroom-deprecated/",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "自5月26日预告的过渡于8月28日完成：Classroom 服务正式下线，用户账号、仓库与组织不受影响，但课堂名称、作业、LTI 集成花名册等部分数据将按保留政策删除。"
+        },
+        {
+          "stance": "教育者回应",
+          "summary": "社区讨论中不少教师对多年依赖的功能退役表示遗憾与不便，建议尽早导出数据并迁移至 Codio 等两个官方推荐合作方；Codio 同步发布迁移指南与替代方案说明。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "GitHub Spark 弃用进入最后窗口：8月31日前需完成代码导出",
+      "summary": "GitHub Spark 弃用迎来最终截止日：官方明确8月4日起停止新用户与新应用，既有应用须在8月31日前通过 workbench 的「Create repository」导出代码；含 llm() 调用的应用还需更换推理服务，开发者连日赶工迁移。",
+      "source": "17golang（GitHub 官方说明转载）",
+      "url": "http://www.17golang.com/article/623697.html",
+      "published_time": "2026-08-30",
+      "perspectives": [
+        {
+          "stance": "官方说明",
+          "summary": "GitHub 公告称 Spark 已部署应用退役后仍可运行，但不再接受新用户/新应用，llm() 调用随 GitHub Models 退休而失效，用户需在8月31日前将应用代码导入仓库。"
+        },
+        {
+          "stance": "迁移建议",
+          "summary": "技术社区指南建议按「是否含 llm() 调用」拆分迁移状态：先创建仓库并核对提交记录，再替换模型推理提供方、治理 API 密钥，最后做冷启动、数据依赖、失败态等四项验收，防止资产丢失。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 GitHub 相关舆论高度聚焦其 AI 编码战略：Copilot 进入 Slack/Teams、Agent Skills 生态霸榜让开发者普遍兴奋，但也有官方文档口径矛盾等杂音；Classroom、Spark 相继退役引发部分用户不满与迁移焦虑；Trending 榜单连续出现假 MetaMask 与刷量项目，令社区对榜单可信度与下载安全性明显警惕。",
+  "honesty_note": "本次窗口内 GitHub 官方重磅动态相对集中于 8月28日 前后的 Copilot 周更与产品退役公告；8月17日宕机复盘与 Spark 弃用公告源头略早于窗口，但后续跟进报道（8月26日）与导出截止日（8月31日）均落在窗口内，已如实标注。若需补充可关注：8月第一周多人 Agent 协作框架 qm 领跑热榜、8月中旬 Sysdig 披露的 GitHub Actions 工作流安全漏洞等关联话题。",
+  "start_time": "2026-08-31 02:49",
+  "end_time": "2026-08-31 02:51",
+  "elapsed_seconds": 111,
+  "retry_count": 0
+}

@@ -1,0 +1,141 @@
+{
+  "keyword": "Node.js",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Node.js v26.8.0（Current）与 v24.20.0（LTS）同步发布",
+      "summary": "Node.js 于8月26日同步发布 26.8.0（Current）与 24.20.0（LTS）。新增 crypto SIV/GCM-SIV 模式、zlib Zip 支持、TracingChannel 稳定化、REPL 语法高亮等，26 线计划10月进入 LTS。",
+      "source": "GitHub（nodejs/node）/ DevTalk",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.8.0",
+      "published_time": "2026-08-26",
+      "perspectives": [
+        {
+          "stance": "官方发布说明",
+          "summary": "26.8.0 更新根证书至 NSS 3.126、新增 ZipEntry/ZipFile/ZipBuffer 与 SQLite 语句关闭接口，perf_hooks 加入统计假设检验，标记 TracingChannel 稳定；24.20.0（Krypton）新增 permission.drop 与 package maps 等能力。"
+        },
+        {
+          "stance": "开发者社区关注",
+          "summary": "社区提醒 Current 版升级前需核对兼容性，当前仅 22（维护）、24（活跃 LTS）、26（Current）受支持，26 将在10月转为 LTS，企业多建议以 Node 24 为生产默认。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Node.js Interactive 2026 官方回顾发布：一年一版号新政与 QUIC/HTTP-3 成焦点",
+      "summary": "官方发布8月12日亚特兰大 Node.js Interactive 大会回顾，宣布自 Node 27 起改为一年一版号并新增 Alpha 通道（2026年10月启动），供应链安全与 QUIC/HTTP 成为讨论主线。",
+      "source": "nodejs.org",
+      "url": "https://nodejs.org/uk/blog/events/nodejs-interactive-2026",
+      "published_time": "2026-08-12（会议）→ 08-25（回顾经社区周报广泛传播）",
+      "perspectives": [
+        {
+          "stance": "官方回顾",
+          "summary": "强调 Node 27 Alpha 于2026年10月开始、2027年4月转 Current、10月进 LTS，每个版本都将成为 LTS；node:quic 仍在实验性开发并推动统一 HTTP 服务端 API 上探 WinterTC。"
+        },
+        {
+          "stance": "媒体报道",
+          "summary": "技术媒体总结称供应链安全是本届大会的主导议题，回顾了 Shai-Hulud、ChainDrop 等多轮 npm 账户劫持攻击，认为包安全已等同账户安全。"
+        },
+        {
+          "stance": "开源维护者声音",
+          "summary": "OpenJS 基金会强调 Node.js 等关键设施依赖少数维护者的持续投入，呼吁关注开源可持续性与维护者支持的缺失。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "MariaDB Connector/Node.js 集中披露多项安全漏洞",
+      "summary": "8月27日 MariaDB Connector/Node.js 连续披露 CVE55854（明文密码泄露）、CVE55855（SQL注入）与 CVE55215（证书校验）等漏洞，3.2.4/3.3.3/3.4.6/3.5.3 修复。",
+      "source": "SecurityVulnerability / VulDB",
+      "url": "https://securityvulnerability.io/vulnerability/CVE-2026-55854",
+      "published_time": "2026-08-27",
+      "perspectives": [
+        {
+          "stance": "漏洞披露方",
+          "summary": "指出 PAM 认证在非安全传输下可泄露账户密码（CWE-319），特定客户端字符集下 Buffer 参数转义不当可致 SQL 注入，证书校验缺陷影响握手认证，需升级修复。"
+        },
+        {
+          "stance": "风险影响评估",
+          "summary": "安全媒体提示受影响版本范围广，默认 sslMode=DISABLE 场景风险更高，仅指纹校验不足以防御，建议升级至修复版本并启用受验 TLS 或本地 Unix Socket。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "NodeSource 周报（8月25日）：AI Agents 深入 Node.js 开发工作流",
+      "summary": "NodeSource 8月25日周报聚焦 AI 编程代理进入开发全流程，推出 N|Solid Plugin+Codex 依赖审计与 N|Solid DevTools 编辑器插件，并更新 NodeConf EU、JS Days 2026 等社区动态。",
+      "source": "NodeSource",
+      "url": "https://nodesource.com/blog",
+      "published_time": "2026-08-24",
+      "perspectives": [
+        {
+          "stance": "生态厂商观点",
+          "summary": "认为 AI 依赖审计可将漏洞转化为升级建议，N|Solid 插件与扩展把运行时遥测、堆快照、CPU 画像直接带入 VS Code、Cursor、Claude Code、Codex 等工具。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "引述 Cursor、Slack Code、GitLab Codex 动态，指出 coding agents 正从单次助手转向可常驻、监控 PR、执行定时任务的自主软件代理，代理化开发成为趋势。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Express 生态 morgan 中间件曝日志伪造漏洞 CVE-2026-15603",
+      "summary": "morgan 中间件因未转义 Unicode 行分隔符存在日志伪造漏洞（CWE），系 CVE5078 的不完整修复，已于 morgan 1.12.0 修复，8月27日披露。",
+      "source": "SecurityVulnerability / VulDB",
+      "url": "https://securityvulnerability.io/vulnerability/CVE-2026-15603",
+      "published_time": "2026-08-27",
+      "perspectives": [
+        {
+          "stance": "漏洞披露方",
+          "summary": "指出内部日志 token 转义未处理 U+0085、U+2028 等 Unicode 行分隔符，攻击者可伪造日志条目，属 CVE-2026-5078 的补丁遗漏，升级 1.12.0 即可修复。"
+        },
+        {
+          "stance": "生态安全关注",
+          "summary": "安全数据库将 CVSS 定为 5.3 中危，社区借此再次呼吁对 Node.js 常用中间件保持依赖更新与日志审计，避免日志注入被用于掩盖攻击痕迹。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Node.js 18/20 已 EOL 仍月下载超1.36亿次，Node 24 成下载主力",
+      "summary": "HeroDevs 分析显示 7 月 EOL 版 Node 18/20 仍被下载超1.36亿次（约每日440万）；NodeSource 本周数据指出 2026 年下载量已超去年全年，Node 24 首次领跑，EOL 风险讨论升温。",
+      "source": "NodeSource / HeroDevs",
+      "url": "https://www.nodesource.com:443/blog/nodejs-18-20-eol-136-million-downloads-july-2026",
+      "published_time": "2026-08-05 发布，本周持续发酵",
+      "perspectives": [
+        {
+          "stance": "安全分析",
+          "summary": "认为大量 CI 流水线、模板与镜像仍固化 EOL 版本，安全补丁缺失、云运行时逐步移除，构成真实供应链与合规风险，建议借助官方升级计划迁移。"
+        },
+        {
+          "stance": "工程实践观点",
+          "summary": "开发者回应升级需协调测试、原生模块与 CI，成本高、周期长，呼吁工具链默认值（模板、镜像、脚手架）同步更新以降低迁移摩擦。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "pnpm 12.0 稳定版发布：Rust 重写带来性能提升",
+      "summary": "8月28日包管理周报披露 pnpm 12.0 稳定版（Rust 重写）发布，命令、设置与锁文件与 11 兼容并带来性能与行为调整，还可代为供给 npm、Yarn、Bun 运行时，受 Node.js 开发者关注。",
+      "source": "This Week in Package Management（nesbitt.io）",
+      "url": "https://nesbitt.io/2026/08/29/this-week-in-package-management.html",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "发布方观点",
+          "summary": "强调 Rust 重写后保持 pnpm 11 的命令、标志与锁文件格式兼容，性能提升的同时可统一供应 Node.js 生态多款包管理器运行时。"
+        },
+        {
+          "stance": "开发者关注",
+          "summary": "社区关注重写版的行为调整与迁移细节，担心锁文件兼容与插件生态适配，建议先在 CI 与测试环境验证后逐步推进升级。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 Node.js 社区热度集中在例行发版与供应链安全两条主线：26.8.0/24.20.0 同步发版带动对 10 月 LTS 升级窗口及 Node 27 一年一版号新政的讨论；MariaDB 连接器与 morgan 等第三方库漏洞接连披露，叠加 8 月初 ChainDrop npm 蠕虫余波，开发者对依赖审计、升级迁移与安全加固的情绪明显偏谨慎。",
+  "honesty_note": "检索显示 8月24-31日窗口内 Node.js 以例行发版、安全公告与社区周报为主，缺少突发性大事件；截至检索时 8月29-31日未见新增高热度热点，可能存在 24-48 小时信息滞后。中文来源稀少，主要依赖英文技术媒体与官方源。关联话题：8月4日爆发的 ChainDrop npm 供应链蠕虫（感染 1300+ 包、月下载 20 亿次，本周讨论仍在延续）、npm v12 默认阻止安装脚本，以及 HeroDevs 关于 EOL 版 18/20 月下载超 1.36 亿次的分析。",
+  "start_time": "2026-08-31 02:37",
+  "end_time": "2026-08-31 02:39",
+  "elapsed_seconds": 109,
+  "retry_count": 0
+}

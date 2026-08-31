@@ -1,0 +1,135 @@
+{
+  "keyword": "React",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Next.js 发布8月安全公告：AVIF 图片解析与 Windows 路径遍历两大高危 RCE 漏洞",
+      "summary": "Next.js 于8月24日披露两个可导致未认证远程代码执行（RCE）的严重漏洞（CVE75604 及 libheif/AVIF 解析漏洞），官方已在 15.5.24 与 16.3.3 版本中完成修复。",
+      "source": "The Hacker News / Next.js 官方",
+      "url": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html",
+      "published_time": "2026-08-25",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "Next.js 官方博客发布2026年8月安全公告，确认两个严重漏洞并敦促尽快升级到 next@15.5.24 或 next@16.3.3；Vercel 声明托管应用默认受保护并给出对应变更日志。"
+        },
+        {
+          "stance": "安全机构分析",
+          "summary": "Cloud Security Alliance 指出 libheif 处理恶意 AVIF 图片导致的 RCE 漏洞 CVSS 4.0 评分高达 9.5，Windows 路径遍历漏洞为 9.0，截至8月27日尚未见公开利用。"
+        },
+        {
+          "stance": "平台响应",
+          "summary": "Netlify 发布安全说明，列出受影响范围（Pages/App Router、Windows 文件系统等）与 CVE 编号，提醒自建部署用户尽快打补丁。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "「无虚拟 DOM 版 React」框架 Octane 登上 Hacker News，正面挑战 React 编程模型",
+      "summary": "Inferno 作者 Dominic Gannaway 推出的新框架 Octane 将 React 式组件编译为直接 DOM 更新，取消虚拟 DOM、hooks 规则与手工依赖数组，8月27日在 Hacker News 引发大规模技术辩论。",
+      "source": "Hacker News / remio.ai",
+      "url": "https://www.remio.ai/post/octane-hit-hacker-news-and-its-compiler-challenges-reacts-rules",
+      "published_time": "2026-08-27",
+      "perspectives": [
+        {
+          "stance": "技术分析",
+          "summary": "remio.ai 分析认为 Octane 的编译器超越了自动 memoization，证明 hooks 未必依赖调用顺序、依赖列表可由工具推断，在概念层面对 React 构成压力。"
+        },
+        {
+          "stance": "网友质疑",
+          "summary": "Hacker News 用户认可其架构深度，但不少人拒绝将 polished alpha 视为可信证明，存在「信任问题」；也有评论担心 AI 编码代理难以识别其 .tsrx 语法。"
+        },
+        {
+          "stance": "中文社区观点",
+          "summary": "知乎等平台将 Octane 与 Vue Vapor 对比，探讨谁更接近前端框架无虚拟 DOM 化的未来，并指出其真正对手或许是 Meta 自家的 React Compiler。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "React Router v8.3.1 发布与升级踩坑潮：包名变更、中间件默认启用成吐槽焦点",
+      "summary": "React Router v8 发布 v8.3.1 修复预渲染 bug，但移除 react-router-dom、默认启用中间件、ESM-only 等破坏性变更令大量开发者升级踩坑，Reddit 与掘金社区热议不断。",
+      "source": "掘金",
+      "url": "https://juejin.cn/post/7679053043288686598",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "开发者吐槽",
+          "summary": "掘金作者发帖称升级 v8 花了两天才跑通，吐槽包名替换、中间件鉴权迁移、Node 22 要求及 CI/Docker 连锁问题，webpack 4 老项目更是卡上一整天。"
+        },
+        {
+          "stance": "官方回应",
+          "summary": "React Router 团队称 v8 是「刻意平淡」的发布，Brooks Lybrand 玩笑式回应「我们破坏了你们所有的应用，只为惹你们生气」，正面回应 Reddit 质疑。"
+        },
+        {
+          "stance": "生态分化",
+          "summary": "部分开发者借机迁移到 TanStack Router，认为其端到端类型安全与 stale-while-revalidate 缓存更具吸引力；但深度依赖 loader/action 模式者认为换库成本更高。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Lovable 将主站从 Next.js 迁移至 TanStack Start，React 元框架格局生变",
+      "summary": "AI 建站平台 Lovable 公开迁移复盘，将月访问约4200万、400条路由、85万行代码的主站从 Vercel 上的 Next.js 迁移到自研 TanStack Start 平台，本周持续被前端媒体聚合发酵。",
+      "source": "react.statuscode.com / Lovable Blog",
+      "url": "https://react.statuscode.com/issues/488",
+      "published_time": "2026-08-28（迁移长文原发布于 08-17）",
+      "perspectives": [
+        {
+          "stance": "官方工程复盘",
+          "summary": "Lovable 团队详述双框架并行6个月、用 feature flag 渐进切换路由组的过程，21 个 React context provider 需迁移至共享代码，最终完全跑在自家平台之上。"
+        },
+        {
+          "stance": "媒体分析",
+          "summary": "Futurum 等评论称这是「吃自家狗粮」的示范，标志 TanStack Start 生态走向成熟，也引发对 Next.js 与 Vercel 深度绑定模式的重新审视。"
+        },
+        {
+          "stance": "社区观点",
+          "summary": "前端周刊与开发者将此事视为 React 元框架竞争加剧的信号，但亦有声音提醒体量与场景差异，不宜简单类比到普通项目。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "TanStack AI 进入 RC 阶段，React 生态在 AI 与数据层持续扩张",
+      "summary": "TanStack 团队宣布 TanStack AI 已从早期原型成长为功能完善的项目并进入 RC，v1 稳定版临近，被视为 React 生态布局 AI 层的重要信号。",
+      "source": "TanStack Blog",
+      "url": "https://tanstack.com/blog/tanstack-ai-rc",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "TanStack 团队邀请社区参与测试，强调「无锁定传输」设计，并预告稳定 v1 版本即将到来。"
+        },
+        {
+          "stance": "生态观察",
+          "summary": "结合 TanStack Table V9、Form v2 Alpha 等密集发布，业界认为 TanStack 正加速构建跨框架的多框架数据与工具生态，React 适配仍是其核心。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "React Native 0.87 发布：Strict TypeScript API 转正，Metro 内存占用减半",
+      "summary": "React Native 0.87 于8月中旬发布，Strict TypeScript API 成为默认 JavaScript API，Metro 更新至 0.87（内存占用减半、源映射更快），并实验性支持 Swift Package Manager 与 AGP 9，本周仍被跨端社区持续解读。",
+      "source": "React Native 官方博客 / 博客园",
+      "url": "https://reactnative.dev/blog/2026/08/11/react-native-0.87",
+      "published_time": "2026-08-11",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "团队称这是继0.82「新架构时代」后的又一个分水岭版本，类型 API 转正并显著优化构建速度与内存。"
+        },
+        {
+          "stance": "中文社区解读",
+          "summary": "开发者将其视为「分水岭版本」，但指出 Strict TypeScript API 转正及与 Expo 57 等配套升级仍需时间消化，部分老项目迁移压力较大。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周 React 相关讨论集中在「安全」与「生态变局」两条主线：Next.js 高危 RCE 漏洞引发升级焦虑；Octane 无虚拟 DOM 方案、Lovable 弃 Next.js 转 TanStack、React Router v8 升级成本等话题掀起路线之争与吐槽。整体情绪偏向谨慎关注与激烈辩论，安全警示最受重视。",
+  "honesty_note": "严格7天窗口（08/24-08/31）内专指 React 的强新闻量相对有限，窗口内热度最高者为 Next.js 8月安全公告、Octane 热议与 React Router v8.3.1 发布；Lovable 迁移、TanStack AI RC、React Native 0.87 发生于窗口前但在本周仍被前端周刊与邮件列表聚合发酵，故一并收录。另注意 This Week In React 等周刊8月下旬暂停更新，搜索面较平时窄。关联话题可关注：React Compiler 迁移 Rust、React Foundation（Linux Foundation 治理）、TypeScript 7.0、TanStack Form v2 Alpha。",
+  "start_time": "2026-08-31 02:39",
+  "end_time": "2026-08-31 02:41",
+  "elapsed_seconds": 123,
+  "retry_count": 0
+}

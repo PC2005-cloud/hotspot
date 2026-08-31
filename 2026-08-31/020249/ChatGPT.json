@@ -1,0 +1,117 @@
+{
+  "keyword": "ChatGPT",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "ChatGPT定时任务向免费用户全面开放",
+      "summary": "8月26日OpenAI将「已安排」定时任务功能向全体免费用户开放，9亿周活用户中首次有超九成非付费群体获得后台自动执行任务能力，被视为扩大粘性、推动付费转化的关键举措。",
+      "source": "C114通信网",
+      "url": "http://www.c114.net.cn/industry/117214.html",
+      "published_time": "2026-08-29",
+      "perspectives": [
+        {
+          "stance": "功能解读",
+          "summary": "免费用户可同时运行3个任务，支持一次性提醒、周期简报、价格监测等场景；付费用户可使用事件触发、Webhook及Gmail、Slack、GitHub接入等高级能力。"
+        },
+        {
+          "stance": "商业策略分析",
+          "summary": "免费版被设计为「试用装」，通过限制任务数量与时间精度引导用户升级Plus或Pro，体现平衡免费体验与商业化变现的策略突围。"
+        },
+        {
+          "stance": "网友评价",
+          "summary": "多数用户欢迎「AI私人助理」落地，称其更接近真正的代理式体验；也有用户担忧后台自动执行带来的隐私与数据安全问题。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI高管谈ChatGPT与Codex合体，终局是个人AGI",
+      "summary": "8月29日OpenAI核心产品负责人Thibault Sottiaux在播客透露，ChatGPT与Codex将合并为统一的「个人AGI」，采用同一入口、同一底层框架并语音优先，引发业内对超级应用终局的讨论。",
+      "source": "新浪财经",
+      "url": "https://finance.sina.com.cn/wm/2026-08-29/doc-inipxyyv3874065.shtml",
+      "published_time": "2026-08-29",
+      "perspectives": [
+        {
+          "stance": "官方愿景",
+          "summary": "界面不应由人选择而应由模型匹配，最终只剩一个「个人AGI」入口，ChatGPT负责理解、Codex负责执行，理解力与执行力合二为一。"
+        },
+        {
+          "stance": "行业解读",
+          "summary": "合并反映AI主战场正从聊天框转向智能体；在Anthropic企业采用率反超的背景下，OpenAI通过整合产品线巩固护城河。"
+        },
+        {
+          "stance": "开发者讨论",
+          "summary": "部分用户质疑强行合体的必要性，也有开发者认可「Codex提供执行能力、ChatGPT提供大众入口」的分工逻辑。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "青少年版ChatGPT上线引发安全与防作弊争议",
+      "summary": "OpenAI上周推出面向13至17岁的ChatGPT for Teens，安全保护默认自动启用；但媒体实测显示其防作弊功能易被规避、可代写完整作文，安全承诺亦被质疑缺乏第三方实证。",
+      "source": "澎湃新闻",
+      "url": "https://m.thepaper.cn/newsDetail_forward_33969476",
+      "published_time": "2026-08-29",
+      "perspectives": [
+        {
+          "stance": "官方定位",
+          "summary": "OpenAI称青少年版聚焦学习与批判性思考，在自残、色情、性角色扮演等对话中设定更严格边界，并承诺不助长情感依赖。"
+        },
+        {
+          "stance": "媒体测试质疑",
+          "summary": "Business Insider记者伪装学生测试，稍加引导AI仍产出608字完整作文与数学解答；Futurism更直言该版本「发布即失败」。"
+        },
+        {
+          "stance": "专家分析",
+          "summary": "澎湃等媒体指出年龄识别准确率未公开、安全评估方法不透明，呼吁OpenAI向独立第三方开放验证，避免「承诺公开、证据不公开」。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "科学家编造假眼病测试AI，ChatGPT与Gemini信以为真",
+      "summary": "瑞典哥德堡大学团队虚构名为bixonimania的眼病并散布假论文，结果显示ChatGPT、Gemini、Copilot等均将其当作真实疾病推荐，部分研究人员也误引假论文，暴露AI在医疗信息上的脆弱性。",
+      "source": "家医大健康（转自 Times of India）",
+      "url": "https://m.familydoctor.cn/news/jiayan-bing-ceshi-ai-chatgpt-he-gemini-dangzhen-bing-473192.html",
+      "published_time": "2026-08-30",
+      "perspectives": [
+        {
+          "stance": "研究警示",
+          "summary": "研究者称目的并非骗人，而是展示大模型只识别模式、不验证真伪；在健康等敏感领域，用户若把AI当作自我诊断第一来源存在风险。"
+        },
+        {
+          "stance": "学术反思",
+          "summary": "一些科学家引用编造的假论文却未察觉，凸显错误信息在科学体系与AI系统间同时扩散的严峻问题。"
+        },
+        {
+          "stance": "专家建议",
+          "summary": "剑桥学者认为AI工具有价值但需批判性使用，新的变化在于错误信息传播更快、工具更逼真，用户须避免被其操纵。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "ChatGPT与Codex现可同时关联多个Google账户",
+      "summary": "8月28日OpenAI确认ChatGPT和Codex支持在同一对话中绑定多个Gmail、Google日历及联系人账号（含写入权限），打破此前单账户限制，方便统一管理个人与工作日程。",
+      "source": "17173 / IT之家",
+      "url": "https://news.17173.com/content/08292026/200447464.shtml",
+      "published_time": "2026-08-29",
+      "perspectives": [
+        {
+          "stance": "功能报道",
+          "summary": "多账号绑定支持Gmail、日历与联系人，用户可跨账户统一调度，被视为ChatGPT向智能体工作流整合的重要一步。"
+        },
+        {
+          "stance": "便利与隐私",
+          "summary": "用户普遍认可多账户管理的便捷性，但对多个账户开放写入权限扩大带来的数据安全与隐私边界提出担忧。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周ChatGPT舆论聚焦商业化与安全的平衡。定时任务免费开放与DALL-E退役推动「AI私人助理」话题升温，免费用户对功能下放普遍欢呼；而印度上线广告、多账户权限扩大引发隐私与体验之争；青少年版安全争议与假眼病事件则加剧公众对AI可靠性和未成年保护的焦虑。整体情绪呈「兴奋与警惕并存」态势。",
+  "honesty_note": null,
+  "start_time": "2026-08-31 02:05",
+  "end_time": "2026-08-31 02:07",
+  "elapsed_seconds": 59,
+  "retry_count": 0
+}

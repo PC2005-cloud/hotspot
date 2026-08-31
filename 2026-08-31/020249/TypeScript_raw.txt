@@ -1,0 +1,131 @@
+基于联网搜索结果，我已确认 2026-08-24 至 08-31 窗口内 TypeScript 相关热点以「TS7 原生化生态迁移」为主线（7.1 开发版每日发布、Node 移除 transform-types、Safari 原生支持 using、TS7 迁移踩坑、官方设计会议等）。以下为整理结果。
+
+{
+  "keyword": "TypeScript",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "TypeScript 7.1 开发版连续发布，官方迭代计划推进：编译器 API 将于 7.1 回归",
+      "summary": "TypeScript 7.1.0-dev 开发版自 8 月 24 日起逐日发布，最新 7.1.0-dev.20260829.1 于 8 月 29 日上线 npm。官方迭代计划显示 7.1 Beta 预计 9 月 9 日、稳定版 11 月 10 日发布，重点补上 7.0 缺失的可编程编译器 API。",
+      "source": "Xeol（npm 包数据）、microsoft/TypeScript GitHub",
+      "url": "https://www.xeol.io/explorer/package/npm/typescript",
+      "published_time": "2026-08-29",
+      "perspectives": [
+        {
+          "stance": "官方规划",
+          "summary": "7.1 迭代计划给出明确时间线（9/9 Beta、10/20 RC、11/10 稳定版），将提供 7.0 尚未公开的编译器 API，为 typescript-eslint、Volar 等工具链提供兼容接口。"
+        },
+        {
+          "stance": "开发者/工具链等待",
+          "summary": "大量依赖编译 API 的生态工具（typescript-eslint、Volar 等）仍在等待 7.1，社区普遍认为 7.1 才是多数项目全面切换到 TS7 的安全节点，当前建议与 6.0 并行。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Node.js 26 悄然移除 --experimental-transform-types：TypeScript 枚举/命名空间等语法在 Node 上直接报错",
+      "summary": "有开发者发文指出 Node.js 26 发布说明中一行不起眼的变更移除了 --experimental-transform-types，导致使用 enum、namespace、参数属性等非可擦除 TS 语法的项目在运行时抛 ERR_UNSUPPORTED_TYPESCRIPT_SYNTAX，且该移除还波及 24.12.0、25.2.0 等补丁版本。",
+      "source": "DEV Community",
+      "url": "https://dev.to/dev_encyclopedia/nodejs-quietly-removed-experimental-transform-types-heres-what-breaks-3hpc",
+      "published_time": "2026-08-23",
+      "perspectives": [
+        {
+          "stance": "开发社区警示",
+          "summary": "该变更埋没在 changelog 中且通过 LTS 补丁版本落地，范围锁定的 Dockerfile/CI 配置也可能被无声波及，属于最容易被忽视的破坏性变更，编辑器与 tsc 均不会提前警告。"
+        },
+        {
+          "stance": "解决方案建议",
+          "summary": "建议将 enum 重构为 as const 对象、改用 tsx 加载器或引入构建步骤；社区也出现 erasablefy、TypeStripCheck 等工具帮助检测和重写受影响语法。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Safari 原生支持 using/await using，三大浏览器引擎全部就位：TypeScript transpile 目标可直降 ES2026",
+      "summary": "Safari Technology Preview 250 已实现 TC39 Explicit Resource Management 提案（Stage 4），using、await using、DisposableStack 等进入 WebKit。至此 V8、SpiderMonkey、WebKit 三引擎齐备，TypeScript 5.2 起即支持的该语法可省去额外 transpile 层。",
+      "source": "WebKit 官方博客、AI产品汇等中文技术媒体",
+      "url": "https://aiproducthub.cn/s/31520.html",
+      "published_time": "2026-08-30",
+      "perspectives": [
+        {
+          "stance": "技术解读",
+          "summary": "中文技术社区认为这是资源管理的里程碑，TypeScript 团队可直接把 transpile 目标降到 ES2026，Node 文件句柄、数据库连接、并发锁等场景可告别手写 try/finally。"
+        },
+        {
+          "stance": "官方说明",
+          "summary": "WebKit 官方发布说明确认 STP 250 新增 Explicit Resource Management 支持，包括 using/await using、Symbol.dispose 及 DisposableStack/AsyncDisposableStack。"
+        }
+      ]
+    },
+      {
+      "rank": 4,
+      "title": "TypeScript 7.0.2 迁移踩坑发酵：tsc --noEmit 全绿但 CI 全红，tsconfig 废弃项与默认值变化成主要爆点",
+      "summary": "中文技术社区热议 TS7 真实迁移成本：ES5 target、AMD/SystemJS 模块格式等废弃选项在 7.0 直接报错，types 数组默认变为空导致全局类型包失效，rootDir 默认值变化重写 monorepo 输出路径，升级当日 CI 全红的团队不在少数。",
+      "source": "AI产品汇（aiproducthub.cn）",
+      "url": "https://aiproducthub.cn/s/29743.html",
+      "published_time": "2026-08-27",
+      "perspectives": [
+        {
+          "stance": "迁移踩坑警示",
+          "summary": "tsc --noEmit 只查类型、不查 tsconfig 结构，无法暴露废弃选项报错、types 数组清空等问题，建议先跑 grep 清理 tsconfig 中全部废弃字段再升级。"
+        },
+        {
+          "stance": "分阶段升级策略",
+          "summary": "建议分三阶段：先升 6.0 清干净警告，再用 @typescript/native-preview 在 CI 体验 10 倍提速，待 7.1（约 10 月）API 稳定后再全面切换，Angular/NestJS 等依赖装饰器的项目暂缓。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "TypeScript 官方设计会议（2026-08-25）讨论 Import Attributes on Ambient Modules",
+      "summary": "TypeScript 团队 8 月 25 日召开设计会议，议题包括 ECMAScript 已进入 Stage 3 的 import 语句类型属性（如 import text from 「./file.txt」 with { type: 「text」 }），探讨如何在 ambient modules 中支持 import attributes。",
+      "source": "microsoft/TypeScript GitHub（Design Meeting Notes）",
+      "url": "https://git.codeproxy.net/microsoft/TypeScript/issues/64011",
+      "published_time": "2026-08-25",
+      "perspectives": [
+        {
+          "stance": "官方设计讨论",
+          "summary": "会议记录显示团队在推进 Import Attributes on Ambient Modules（对应 issue #63931），让类型属性在 ambient 模块声明中也可被识别与校验。"
+        },
+        {
+          "stance": "生态演进观察",
+          "summary": "社区视其为 TS 紧跟 ECMAScript 新提案的信号，反映 7.0 原生化之后官方仍在稳步推进语言特性本身的迭代。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "@typescript/old 兼容包与 typescript@7 的 tsc bin 冲突：Node 环境下解析到旧版编译器",
+      "summary": "官方 issue #64071 反映：同时安装 6.0 兼容包 @typescript/old 与 typescript@7 时，node_modules/.bin/tsc 会解析到 TS6 而非 TS7，导致按文档配置的并行布局在脚本中跑出旧编译器，Workaround 是在 scripts 里按路径显式指定。",
+      "source": "microsoft/TypeScript GitHub（Issue #64071）",
+      "url": "https://git.codeproxy.net/microsoft/TypeScript/issues/64071",
+      "published_time": "2026-08-27",
+      "perspectives": [
+        {
+          "stance": "开发者反馈",
+          "summary": "官方文档推荐的 typescript（7）与 @typescript/typescript6（6 兼容）并行布局实际会遇到 bin 名冲突，link 顺序不确定，npm/yarn/pnpm 行为不一，成为升级 7 时的隐蔽坑。"
+        },
+        {
+          "stance": "官方/社区建议",
+          "summary": "Workaround 为在 npm scripts 中按完整路径调用编译器，避免依赖 .bin/tsc 的解析顺序；此问题被列入 7.1 迭代期间需要理顺的工具链细节之一。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "播客热播：Software Engineering Daily 推出「TypeScript 7 and What Comes Next」",
+      "summary": "Software Engineering Daily 于 8 月 27 日发布专题节目，由 Daniel Rosenwasser 与 Josh Goldberg 对谈 TypeScript 7 这一史上最大变革：Go 原生重写、10 倍提速，以及接下来 7.1 的编译器 API 路线，在开发者播客圈热度较高。",
+      "source": "Apple Podcasts（Software Engineering Daily）",
+      "url": "https://podcasts.apple.com/tw/podcast/typescript-7-and-what-comes-next/id1019576853?i=1000786225169",
+      "published_time": "2026-08-27 09:00",
+      "perspectives": [
+        {
+          "stance": "官方视角",
+          "summary": "节目围绕 TypeScript 7 的特性与未来展开，官方开发者亲述原生化决策背景，强调性能与可扩展性驱动，并预告 7.1 及后续 API 规划。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "窗口期 TypeScript 舆论主线是「7.0 Go 原生化后的生态迁移与阵痛」：10 倍提速令开发者兴奋，但 Node 移除 transform-types、tsconfig 废弃项报错、@typescript/old 的 bin 冲突等让不少团队遭遇 CI 全红并回滚，情绪谨慎大于激进。社区普遍倾向「等 7.1（约 11 月）编译器 API 稳定再全面切换」，同时 7.1 开发版逐日发布与 Safari 原生支持 using 则带来积极预期，整体呈「期待 + 观望 + 踩坑互助」的混合氛围。",
+  "honesty_note": "近 7 天窗口内 TypeScript 无官方新的大版本发布（7.0 为 7 月 8 日发布，早于本窗口），本窗口热点以生态与工具链动态为主；微博/知乎等大众平台未见 TypeScript 直接热搜，信息主要集中在开发者社区（GitHub、DEV、中文前端媒体与播客）。关联话题可补充：Anders Hejlsberg 访谈「10x 更快 TypeScript、AI 为何不会取代程序员」（8 月中下旬被中文媒体广泛转载）、PYPL 8 月榜单 TypeScript 排名第 11、npm 供应链攻击 Mini Shai-Hulud 波及 TS 生态（5-6 月事件，8 月末仍有后续包被曝光）。部分来源（如 git.codeproxy.net 镜像）无法直接打开验证，信息以搜索引擎原始摘要为准。"
+}

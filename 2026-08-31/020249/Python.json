@@ -1,0 +1,105 @@
+{
+  "keyword": "Python",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "CPython 正式将 RISC-V 纳入官方支持（Tier 3 平台）",
+      "summary": "8月24日，Python核心团队在官方博客宣布，RISC-V架构正式成为CPython官方支持的Tier 3平台，RISE Project捐赠真实RISC-V物理机器用于构建与测试，被视为开放指令集在软件底层的关键合流，本周持续霸榜全球开发者社区热议。",
+      "source": "Python Insider 官方博客（Hacker News、团子技术日报、17golang等多家转载）",
+      "url": "https://blog.python.org/2026/08/riscv-now-officially-supported/",
+      "published_time": "2026-08-24（8月30日仍在发酵）",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "核心开发者宣布RISC-V进入PEP 11定义的Tier 3支持列表，承诺尽力维护兼容性，并计划将RISC-V测试拉入Pull Request的CI流程、探索架构专属优化。"
+        },
+        {
+          "stance": "开发者解读",
+          "summary": "分析认为这是从「实验性质」到「官方认证」的身份跨越，物理硬件接入测试链路让RISC-V摆脱极客玩具标签，加速走向工程严肃性与生产平台地位。"
+        },
+        {
+          "stance": "审慎声音",
+          "summary": "Tier 3仍属best-effort支持，缺少Tier 1/2将架构测试直接挂钩CI的强制阻塞机制，架构独有缺陷仍可能逃逸，需理性看待支持力度边界。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Python 3.15 进入发布冲刺：rc2 定于 9月1日、正式版 10月1日",
+      "summary": "Python 3.15发布流程进入RC阶段，rc1已于8月4日发布、rc2定于9月1日、正式版10月1日，功能集已冻结。新版本以free-threading（无GIL）与abi3t稳定ABI为核心亮点，成为本周Python社区讨论焦点。",
+      "source": "Python官方（PEP 790）、PyQ、Real Python等",
+      "url": "https://peps.python.org/pep-0790/",
+      "published_time": "2026-08-04 起持续发酵",
+      "perspectives": [
+        {
+          "stance": "官方公告",
+          "summary": "PEP 790时间表确认rc2于2026-09-01发布、10-01正式发布，Python 3.15将带来free-threading默认目标与统一ABI，一个扩展二进制可同时用于GIL与free-threaded构建。"
+        },
+        {
+          "stance": "社区讨论",
+          "summary": "开发者认为3.15是「无GIL时代」的关键节点，但也有担忧声音指出free-threaded构建下部分扩展性能表现不一，如NumPy线程扩展在free-threading下反变慢的讨论仍在持续。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Mojo 编程语言正式全面开源（Python 潮流周刊#165 重点报道）",
+      "summary": "8月18日，Modular公司（Chris Lattner与Tim Davis创立）宣布Mojo语言正式全面开源，该语言语法基于Python、面向CPU/GPU高性能计算，曾号称「比Python快9万倍」，本周在中文Python社区被Python潮流周刊#165等再度热转。",
+      "source": "Simon Willison、36氪、CSDN等",
+      "url": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
+      "published_time": "2026-08-18（8月29日中文社区热转）",
+      "perspectives": [
+        {
+          "stance": "开源支持者",
+          "summary": "开源让Mojo成为Python生态在GPU编程与AI计算上的强力补充，Qualcomm加持志在挑战CUDA，降低高性能计算门槛。"
+        },
+        {
+          "stance": "审慎声音",
+          "summary": "部分开发者指出Mojo虽语法像Python，但与现有Python代码并非100%兼容，生态迁移成本与标准库成熟度仍是疑虑。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "PyPI 恶意投毒包集中曝光（flask-header-guard、pygame-renderkit 等）",
+      "summary": "8月下旬，安全社区接连曝光多个PyPI恶意包：flask-header-guard与pygame-renderkit在安装时会窃取敏感环境变量与文件、建立持久化并开启反向shell，Python供应链安全议题再度升温。",
+      "source": "Vulnerability-Lookup / 安全媒体",
+      "url": "https://vulnerability.circl.lu/vuln/mal-2026-15566",
+      "published_time": "2026-08-28 / 08-29",
+      "perspectives": [
+        {
+          "stance": "安全研究人员",
+          "summary": "详细披露恶意行为（覆盖setup.py安装命令、反向shell、持久化），建议开发者核查依赖来源、锁定版本哈希并审查第三方包源码。"
+        },
+        {
+          "stance": "社区反应",
+          "summary": "开发者呼吁提高pip安装警惕性，认为PyPI投毒已成常态威胁，企业需加强开源供应链治理与SBOM管理。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Python 安全补丁修复 tarfile 解压绕过漏洞（CVE-2026-11940）",
+      "summary": "8月25日，AlmaLinux等发行版发布python3.14安全更新，修复tarfile提取过滤绕过漏洞CVE11940——该漏洞可让恶意归档逃逸目标目录造成越界写入，官方建议受影响用户尽快升级。",
+      "source": "AlmaLinux 官方 errata",
+      "url": "https://errata.almalinux.org/9/ALSA-2026-58901.html",
+      "published_time": "2026-08-25",
+      "perspectives": [
+        {
+          "stance": "官方通报",
+          "summary": "安全更新修复tarfile解压时的目录逃逸风险，受影响版本需升级至含补丁的python3.14构建以消除隐患。"
+        },
+        {
+          "stance": "安全专家",
+          "summary": "强调处理不可信归档时应显式开启tarfile过滤，同时建议企业评估漏洞暴露面并及时打补丁。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Python社区情绪整体偏积极，围绕「基建加速」展开——RISC-V获得CPython官方支持、Python 3.15进入RC冲刺、Mojo全面开源等消息被高频转发，开发者普遍关注性能、AI与开放指令集的融合；与此同时，PyPI恶意包投毒与tarfile漏洞修复接连曝光，也显著放大了安全焦虑，呼吁加强供应链防护成为共识性声音。",
+  "honesty_note": "部分高热度事件（如Mojo开源于8月18日、Python 3.14.7/3.13.15维护版与Django 6.1发布于8月5日）略早于近7天窗口，但在本周报道中仍被反复引用；近24-48小时（8月30-31日）未检索到独立的全新Python重磅新闻，多为既有事件的持续发酵。关联话题：Django 6.1正式版发布、NumPy free-threading扩展性能讨论、TIOBE 2026年8月榜单Python以18.53%稳居第一。",
+  "start_time": "2026-08-31 02:25",
+  "end_time": "2026-08-31 02:27",
+  "elapsed_seconds": 68,
+  "retry_count": 0
+}

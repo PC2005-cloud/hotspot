@@ -1,0 +1,582 @@
+[02:02:49] ==================================================
+[02:02:49]   🔥 Hotspot — 热点搜索器
+[02:02:49]   日志: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/run.log
+[02:02:49] ==================================================
+[02:02:49] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:02:49]   关键词: 20 个 — DeepSeek、ChatGPT、OpenAI、Docker、Rust、Kubernetes、TypeScript、Claude Code、Python、Cloudflare、Vue.js、前端技术、Node.js、React、Go、人工智能、GitHub、SpringBoot、Next.js、数据库
+[02:02:49] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:02:49] 运行模式: API (model=deepseek-v4-flash)
+[02:02:49] DeepSeek API 客户端已初始化 (model=deepseek-v4-flash)
+[02:02:49] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:02:49] 
+共 20 个关键词，开始搜索...
+[02:02:49] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:02:49] 
+==================================================
+[02:02:49]   关键词: DeepSeek
+[02:02:49] ==================================================
+[02:02:49]   prompt 长度: 1446 字
+[02:02:49] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:02:49] API 请求: POST /responses (web_search)
+[02:02:50] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:04:00] API 响应: 4510 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 120817 tokens (推理 5579)
+[02:04:00] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:04:00] JSON 解析失败
+[02:04:00]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:04:00]   等待 16 秒后重试 (2/3)...
+[02:04:16] API 请求: POST /responses (web_search)
+[02:04:17] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:05:45] API 响应: 4532 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 139282 tokens (推理 7139)
+[02:05:45]   摘要清理: #3 移除标记
+[02:05:45]   摘要清理: #4 移除标记
+[02:05:45]   摘要清理: #5 移除标记
+[02:05:45] 验证 URL 可用性...
+[02:05:46] HTTP Request: HEAD https://dxpress.gelonghui.com/live/2638405 "HTTP/1.1 200 OK"
+[02:05:48] HTTP Request: HEAD https://www.sohu.com/a/1067988622_122014422 "HTTP/1.1 200 OK"
+[02:05:48] HTTP Request: HEAD https://tech.ifeng.com/c/8vryUp2AbLI "HTTP/1.1 200 OK"
+[02:05:50] HTTP Request: HEAD https://m.weibo.cn/status/5337539625880160 "HTTP/1.1 404 Not Found"
+[02:05:50]   [404] 微博热搜「大模型开思考模式立场向右转」 涉及DeepSeek V4等主流模型 -> https://m.weibo.cn/status/5337539625880160
+[02:05:51] HTTP Request: HEAD https://www.tmtpost.com/nictation/8122409.html "HTTP/1.1 200 OK"
+[02:05:53] HTTP Request: HEAD https://app.myzaker.com/news/article.php?pk=6a8e4e268e9f0967676c1b4a "HTTP/1.1 200 OK"
+[02:05:53] URL 验证: 6 个, 5 可用, 1 个404, 0 个不可达
+[02:05:53]   过滤: 1 条热点因链接不可达已移除
+[02:05:53] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/DeepSeek.json
+[02:05:53]   [完成] DeepSeek (5 条热点, 176秒)
+[02:05:53] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:05:53] 
+==================================================
+[02:05:53]   关键词: ChatGPT
+[02:05:53] ==================================================
+[02:05:53]   prompt 长度: 1445 字
+[02:05:53] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:05:53] API 请求: POST /responses (web_search)
+[02:05:53] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:06:52] API 响应: 5473 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 72018 tokens (推理 4474)
+[02:06:52] 验证 URL 可用性...
+[02:06:53] HTTP Request: HEAD http://www.c114.net.cn/industry/117214.html "HTTP/1.1 200 OK"
+[02:06:53] HTTP Request: HEAD https://help.openai.com/en/articles/6825453-chatgpt-release-notes "HTTP/1.1 403 Forbidden"
+[02:07:02]   [不可达] OpenAI在印度ChatGPT上线广告，为IPO铺路 -> https://www.thepaper.cn/newsDetail_forward_33962471 (超时)
+[02:07:03] HTTP Request: HEAD https://finance.sina.com.cn/wm/2026-08-29/doc-inipxyyv3874065.shtml "HTTP/1.1 200 OK"
+[02:07:04] HTTP Request: HEAD https://m.thepaper.cn/newsDetail_forward_33969476 "HTTP/1.1 200 OK"
+[02:07:06] HTTP Request: HEAD https://m.familydoctor.cn/news/jiayan-bing-ceshi-ai-chatgpt-he-gemini-dangzhen-bing-473192.html "HTTP/1.1 200 OK"
+[02:07:08] HTTP Request: HEAD https://news.17173.com/content/08292026/200447464.shtml "HTTP/1.1 200 OK"
+[02:07:08] URL 验证: 7 个, 6 可用, 0 个404, 1 个不可达
+[02:07:08]   过滤: 2 条热点因链接不可达已移除
+[02:07:08] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/ChatGPT.json
+[02:07:08]   [完成] ChatGPT (5 条热点, 59秒)
+[02:07:08] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:07:08] 
+==================================================
+[02:07:08]   关键词: OpenAI
+[02:07:08] ==================================================
+[02:07:08]   prompt 长度: 1444 字
+[02:07:08] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:07:08] API 请求: POST /responses (web_search)
+[02:07:09] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:07:53] API 响应: 5101 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 47485 tokens (推理 3371)
+[02:07:53] demjson3 解析也失败: ('Unknown identifier', 'I')
+[02:07:53] JSON 解析失败
+[02:07:53]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:07:53]   等待 20 秒后重试 (2/3)...
+[02:08:13] API 请求: POST /responses (web_search)
+[02:08:14] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:09:14] API 响应: 4832 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 67283 tokens (推理 4824)
+[02:09:14] 验证 URL 可用性...
+[02:09:16] HTTP Request: HEAD https://news.qq.com/rain/a/20260830A07F1000 "HTTP/1.1 200 OK"
+[02:09:17] HTTP Request: HEAD https://www.163.com/dy/article/L5J892BT0511B8LM.html "HTTP/1.1 200 OK"
+[02:09:18] HTTP Request: HEAD https://news.qq.com/rain/a/20260825A07KJU00 "HTTP/1.1 200 OK"
+[02:09:18] HTTP Request: HEAD https://wallstreetcn.com/articles/3780531 "HTTP/1.1 404 Not Found"
+[02:09:18]   [404] 奥尔特曼称OpenAI年底前将实现内部AGI，Astra被押注为关键一步 -> https://wallstreetcn.com/articles/3780531
+[02:09:19] HTTP Request: HEAD https://finance.eastmoney.com/a/202608283858143166.html "HTTP/1.1 200 OK"
+[02:09:20] HTTP Request: HEAD https://www.jiemian.com/article/15019767.html "HTTP/1.1 200 OK"
+[02:09:20] URL 验证: 6 个, 5 可用, 1 个404, 0 个不可达
+[02:09:20]   过滤: 1 条热点因链接不可达已移除
+[02:09:20] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/OpenAI.json
+[02:09:20]   [完成] OpenAI (5 条热点, 125秒)
+[02:09:20] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:09:20] 
+==================================================
+[02:09:20]   关键词: Docker
+[02:09:20] ==================================================
+[02:09:20]   prompt 长度: 1444 字
+[02:09:20] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:09:20] API 请求: POST /responses (web_search)
+[02:09:20] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:10:21] API 响应: 0 字文本, 0 次搜索, 0 个打开页面, 0 个链接, 227869 tokens (推理 4411)
+[02:10:21]   第1次尝试 — 未获取到回复
+[02:10:21]   等待 20 秒后重试 (2/3)...
+[02:10:42] API 请求: POST /responses (web_search)
+[02:10:42] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:11:58] API 响应: 5340 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 123826 tokens (推理 5108)
+[02:11:58]   摘要清理: #3 移除标记
+[02:11:58] 验证 URL 可用性...
+[02:11:59] HTTP Request: HEAD https://www.webpronews.com/omarchys-docker-default-exposed-every-user-process-to-root/ "HTTP/1.1 403 Forbidden"
+[02:11:59] HTTP Request: HEAD https://www.docker.com/blog/moving-from-minimus-to-docker-hardened-images/ "HTTP/1.1 403 Forbidden"
+[02:12:00] HTTP Request: HEAD https://avd.aliyun.com/detail?id=AVD-2026-78122 "HTTP/1.1 200 OK"
+[02:12:00] HTTP Request: HEAD https://www.bytenote.net/article/docker-cagent-dynamic-mcp "HTTP/1.1 200 OK"
+[02:12:01] HTTP Request: HEAD https://cloudnativenow.com/tag/docker-element/ "HTTP/1.1 200 OK"
+[02:12:03] HTTP Request: HEAD https://www.oschina.net/news/489698/docker-29-7-2-released "HTTP/1.1 405 Method Not Allowed"
+[02:12:03] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[02:12:03]   过滤: 3 条热点因链接不可达已移除
+[02:12:03] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Docker.json
+[02:12:03]   [完成] Docker (3 条热点, 158秒)
+[02:12:03] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:12:03] 
+==================================================
+[02:12:03]   关键词: Rust
+[02:12:03] ==================================================
+[02:12:03]   prompt 长度: 1442 字
+[02:12:03] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:12:03] API 请求: POST /responses (web_search)
+[02:12:03] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:13:20] API 响应: 6742 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 68766 tokens (推理 5723)
+[02:13:20] demjson3 解析也失败: ('Unknown identifier', 'Based')
+[02:13:20] JSON 解析失败
+[02:13:20]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:13:20]   等待 24 秒后重试 (2/3)...
+[02:13:43] API 请求: POST /responses (web_search)
+[02:13:44] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:14:40] API 响应: 4880 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 57679 tokens (推理 4068)
+[02:14:40]   摘要清理: #5 移除标记
+[02:14:40] 验证 URL 可用性...
+[02:14:41] HTTP Request: HEAD https://www.sohu.com/a/1069822185_506163 "HTTP/1.1 200 OK"
+[02:14:42] HTTP Request: HEAD https://blog.rust-lang.org/2026/08/21/enabling-next-solver-on-nightly/ "HTTP/1.1 200 OK"
+[02:14:42] HTTP Request: HEAD https://blog.rust-lang.org/2026/08/20/Rust-1.98.0/ "HTTP/1.1 200 OK"
+[02:14:42] HTTP Request: HEAD https://foresightnews.pro/news/detail/111356 "HTTP/1.1 567 Unknown Status"
+[02:14:43] HTTP Request: HEAD https://www.prlog.org/13166759-rust-project-and-rust-foundation-announce-first-maintainers-in-residence.html "HTTP/1.1 200 OK"
+[02:14:44] HTTP Request: HEAD https://website.xuanwu.openatom.cn/articles/news/260828-project.html "HTTP/1.1 200 OK"
+[02:14:44] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[02:14:44]   过滤: 1 条热点因链接不可达已移除
+[02:14:44] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Rust.json
+[02:14:44]   [完成] Rust (5 条热点, 157秒)
+[02:14:44] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:14:44] 
+==================================================
+[02:14:44]   关键词: Kubernetes
+[02:14:44] ==================================================
+[02:14:44]   prompt 长度: 1448 字
+[02:14:44] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:14:44] API 请求: POST /responses (web_search)
+[02:14:44] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:15:55] API 响应: 5211 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 97632 tokens (推理 4884)
+[02:15:55]   摘要清理: #3 移除标记
+[02:15:55]   摘要清理: #5 移除标记
+[02:15:55] 验证 URL 可用性...
+[02:15:55] HTTP Request: HEAD https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/ "HTTP/1.1 200 OK"
+[02:15:55] HTTP Request: HEAD https://lwkd.info/2026/20260828 "HTTP/1.1 200 OK"
+[02:15:57] HTTP Request: HEAD http://starmap.dbappsecurity.com.cn/info/16208 "HTTP/1.1 200 OK"
+[02:15:57] HTTP Request: HEAD https://www.cncf.io/blog/2026/08/28/scale-before-the-spike-predictive-autoscaling-for-gpu-workloads-on-kubernetes/ "HTTP/1.1 403 Forbidden"
+[02:15:57] HTTP Request: HEAD https://www.linuxfoundation.org/press/kubecon-cloudnativecon-openinfra-summit-and-pytorch-conference-unite-in-china-to-scale-ai "HTTP/1.1 200 OK"
+[02:15:57] HTTP Request: HEAD https://lwkd.info/2026/20260813 "HTTP/1.1 200 OK"
+[02:15:57] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[02:15:57]   过滤: 1 条热点因链接不可达已移除
+[02:15:57] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Kubernetes.json
+[02:15:57]   [完成] Kubernetes (5 条热点, 71秒)
+[02:15:57] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:15:57] 
+==================================================
+[02:15:57]   关键词: TypeScript
+[02:15:57] ==================================================
+[02:15:57]   prompt 长度: 1448 字
+[02:15:57] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:15:57] API 请求: POST /responses (web_search)
+[02:15:58] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:17:13] API 响应: 5154 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 160350 tokens (推理 4865)
+[02:17:13] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:17:13] JSON 解析失败
+[02:17:13]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:17:13]   等待 17 秒后重试 (2/3)...
+[02:17:29] API 请求: POST /responses (web_search)
+[02:17:30] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:19:01] API 响应: 6404 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 203864 tokens (推理 5497)
+[02:19:01] demjson3 解析也失败: ('Unknown identifier', 'Based')
+[02:19:01] JSON 解析失败
+[02:19:01]   第2次尝试 — JSON 解析失败，原始回复已保存
+[02:19:01]   等待 26 秒后重试 (3/3)...
+[02:19:26] API 请求: POST /responses (web_search)
+[02:19:27] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:20:47] API 响应: 6617 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 135898 tokens (推理 4487)
+[02:20:47] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:20:47] JSON 解析失败
+[02:20:47]   第3次尝试 — JSON 解析失败，原始回复已保存
+[02:20:47]   [失败] TypeScript — 重试3次，JSON 解析均失败
+[02:20:47] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:20:47] 
+==================================================
+[02:20:47]   关键词: Claude Code
+[02:20:47] ==================================================
+[02:20:47]   prompt 长度: 1449 字
+[02:20:47] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:20:47] API 请求: POST /responses (web_search)
+[02:20:47] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:21:57] API 响应: 4627 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 57736 tokens (推理 6082)
+[02:21:57] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:21:57] JSON 解析失败
+[02:21:57]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:21:57]   等待 25 秒后重试 (2/3)...
+[02:22:22] API 请求: POST /responses (web_search)
+[02:22:22] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:24:02] API 响应: 4965 字文本, 0 次搜索, 0 个打开页面, 5 个链接, 177121 tokens (推理 7137)
+[02:24:02] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:24:02] JSON 解析失败
+[02:24:02]   第2次尝试 — JSON 解析失败，原始回复已保存
+[02:24:02]   等待 29 秒后重试 (3/3)...
+[02:24:31] API 请求: POST /responses (web_search)
+[02:24:31] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:25:46] API 响应: 5703 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 107515 tokens (推理 5230)
+[02:25:46]   摘要清理: #4 移除标记
+[02:25:46]   摘要清理: #6 移除标记
+[02:25:46] 验证 URL 可用性...
+[02:25:47] HTTP Request: HEAD https://eu.36kr.com/en/p/3961512188378248 "HTTP/1.1 200 OK"
+[02:25:48] HTTP Request: HEAD https://m.ithome.com/html/995917.htm "HTTP/1.1 404 Not Found"
+[02:25:48]   [404] Anthropic 官宣 Claude Code 桌面端打通终端会话（/resu -> https://m.ithome.com/html/995917.htm
+[02:25:48] HTTP Request: HEAD https://www.notebookcheck-cn.com/Anthropic-Claude-Code-25-17.1382922.0.html "HTTP/1.1 200 OK"
+[02:25:49] HTTP Request: HEAD https://aitoolsrecap.com/Blog/ai-news-august-31-2026 "HTTP/1.1 200 OK"
+[02:25:49] HTTP Request: HEAD https://pondero.ai/news/2026-08-30-claude-code-august-2026-update/ "HTTP/1.1 200 OK"
+[02:25:50] HTTP Request: HEAD https://ai-tools-db.com/claude-code/claude-code-weekly-update-20260831/ "HTTP/1.1 200 OK"
+[02:25:50] URL 验证: 6 个, 5 可用, 1 个404, 0 个不可达
+[02:25:50]   过滤: 1 条热点因链接不可达已移除
+[02:25:50] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Claude Code.json
+[02:25:50]   [完成] Claude Code (5 条热点, 300秒)
+[02:25:50] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:25:50] 
+==================================================
+[02:25:50]   关键词: Python
+[02:25:50] ==================================================
+[02:25:50]   prompt 长度: 1444 字
+[02:25:50] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:25:50] API 请求: POST /responses (web_search)
+[02:25:50] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:26:58] API 响应: 4871 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 96495 tokens (推理 4643)
+[02:26:58]   摘要清理: #5 移除标记
+[02:26:58] 验证 URL 可用性...
+[02:26:58] HTTP Request: HEAD https://blog.python.org/2026/08/riscv-now-officially-supported/ "HTTP/1.1 200 OK"
+[02:26:59] HTTP Request: HEAD https://peps.python.org/pep-0790/ "HTTP/1.1 200 OK"
+[02:26:59] HTTP Request: HEAD https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/ "HTTP/1.1 200 OK"
+[02:26:59] HTTP Request: HEAD https://vulnerability.circl.lu/vuln/mal-2026-15566 "HTTP/1.1 200 OK"
+[02:27:00] HTTP Request: HEAD https://errata.almalinux.org/9/ALSA-2026-58901.html "HTTP/1.1 200 OK"
+[02:27:02] HTTP Request: HEAD https://my.oschina.net/u/9763067/blog/19750862 "HTTP/1.1 405 Method Not Allowed"
+[02:27:02] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[02:27:02]   过滤: 1 条热点因链接不可达已移除
+[02:27:02] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Python.json
+[02:27:02]   [完成] Python (5 条热点, 68秒)
+[02:27:02] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:27:02] 
+==================================================
+[02:27:02]   关键词: Cloudflare
+[02:27:02] ==================================================
+[02:27:02]   prompt 长度: 1448 字
+[02:27:02] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:27:02] API 请求: POST /responses (web_search)
+[02:27:02] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:28:12] API 响应: 6735 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 89083 tokens (推理 4443)
+[02:28:12] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:28:12] JSON 解析失败
+[02:28:12]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:28:12]   等待 18 秒后重试 (2/3)...
+[02:28:30] API 请求: POST /responses (web_search)
+[02:28:31] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:29:46] API 响应: 5776 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 74315 tokens (推理 4367)
+[02:29:46] demjson3 解析也失败: ('Unknown identifier', 'Based')
+[02:29:46] JSON 解析失败
+[02:29:46]   第2次尝试 — JSON 解析失败，原始回复已保存
+[02:29:46]   等待 31 秒后重试 (3/3)...
+[02:30:17] API 请求: POST /responses (web_search)
+[02:30:17] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:31:34] API 响应: 7530 字文本, 0 次搜索, 0 个打开页面, 8 个链接, 95708 tokens (推理 4772)
+[02:31:34] demjson3 解析也失败: ('Unknown identifier', 'I')
+[02:31:34] JSON 解析失败
+[02:31:34]   第3次尝试 — JSON 解析失败，原始回复已保存
+[02:31:34]   [失败] Cloudflare — 重试3次，JSON 解析均失败
+[02:31:34] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:31:34] 
+==================================================
+[02:31:34]   关键词: Vue.js
+[02:31:34] ==================================================
+[02:31:34]   prompt 长度: 1444 字
+[02:31:34] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:31:34] API 请求: POST /responses (web_search)
+[02:31:34] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:32:46] API 响应: 5113 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 181589 tokens (推理 5385)
+[02:32:46]   摘要清理: #2 移除标记
+[02:32:46]   摘要清理: #3 移除标记
+[02:32:46] 验证 URL 可用性...
+[02:32:47] HTTP Request: HEAD https://developer.aliyun.com/article/1758981 "HTTP/1.1 200 "
+[02:32:47] HTTP Request: HEAD https://security.snyk.io/vuln/SNYK-JS-VUECOMPILERSFCPLUGIN-19268177 "HTTP/1.1 200 OK"
+[02:32:48] HTTP Request: HEAD https://www.infoq.com/news/2026/08/nuxt-4-5-streaming/ "HTTP/1.1 200 200"
+[02:32:50] HTTP Request: HEAD https://jishuzhan.net/article/2092465647947796482 "HTTP/1.1 200 OK"
+[02:32:51] HTTP Request: HEAD https://news.sohu.com/a/1067897637_121743674 "HTTP/1.1 200 OK"
+[02:32:51] HTTP Request: HEAD https://dev.to/gabbrowick/vues-vapor-mode-is-almost-here-writing-browser-games-with-no-framework-taught-me-why-it-matters-5gak "HTTP/1.1 200 OK"
+[02:32:51] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[02:32:51] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Vue.js.json
+[02:32:51]   [完成] Vue.js (6 条热点, 71秒)
+[02:32:51] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:32:51] 
+==================================================
+[02:32:51]   关键词: 前端技术
+[02:32:51] ==================================================
+[02:32:51]   prompt 长度: 1442 字
+[02:32:51] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:32:51] API 请求: POST /responses (web_search)
+[02:32:52] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:34:00] API 响应: 5500 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 105526 tokens (推理 3063)
+[02:34:00] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:34:00] JSON 解析失败
+[02:34:00]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:34:00]   等待 25 秒后重试 (2/3)...
+[02:34:24] API 请求: POST /responses (web_search)
+[02:34:25] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:35:35] API 响应: 6759 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 84473 tokens (推理 4166)
+[02:35:35] demjson3 解析也失败: Object properties (keys) must be string literals, numbers, or identifiers
+[02:35:35] JSON 解析失败
+[02:35:35]   第2次尝试 — JSON 解析失败，原始回复已保存
+[02:35:35]   等待 31 秒后重试 (3/3)...
+[02:36:06] API 请求: POST /responses (web_search)
+[02:36:06] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:37:20] API 响应: 4954 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 129239 tokens (推理 4873)
+[02:37:20] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:37:20] JSON 解析失败
+[02:37:20]   第3次尝试 — JSON 解析失败，原始回复已保存
+[02:37:20]   [失败] 前端技术 — 重试3次，JSON 解析均失败
+[02:37:20] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:37:20] 
+==================================================
+[02:37:20]   关键词: Node.js
+[02:37:20] ==================================================
+[02:37:20]   prompt 长度: 1445 字
+[02:37:20] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:37:20] API 请求: POST /responses (web_search)
+[02:37:20] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:39:09] API 响应: 5901 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 186223 tokens (推理 7850)
+[02:39:09]   摘要清理: #2 移除标记
+[02:39:09]   摘要清理: #3 移除标记
+[02:39:09]   摘要清理: #5 移除标记
+[02:39:09]   摘要清理: #7 移除标记
+[02:39:09] 验证 URL 可用性...
+[02:39:09] HTTP Request: HEAD https://github.com/nodejs/node/releases/tag/v26.8.0 "HTTP/1.1 200 OK"
+[02:39:09] HTTP Request: HEAD https://nodejs.org/uk/blog/events/nodejs-interactive-2026 "HTTP/1.1 200 OK"
+[02:39:10] HTTP Request: HEAD https://securityvulnerability.io/vulnerability/CVE-2026-55854 "HTTP/1.1 200 OK"
+[02:39:11] HTTP Request: HEAD https://nodesource.com/blog "HTTP/1.1 200 OK"
+[02:39:12] HTTP Request: HEAD https://securityvulnerability.io/vulnerability/CVE-2026-15603 "HTTP/1.1 200 OK"
+[02:39:13] HTTP Request: HEAD https://www.nodesource.com/blog/nodejs-18-20-eol-136-million-downloads-july-2026 "HTTP/1.1 200 OK"
+[02:39:14] HTTP Request: HEAD https://nesbitt.io/2026/08/29/this-week-in-package-management.html "HTTP/1.1 200 OK"
+[02:39:14] URL 验证: 7 个, 7 可用, 0 个404, 0 个不可达
+[02:39:14] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Node.js.json
+[02:39:14]   [完成] Node.js (7 条热点, 109秒)
+[02:39:14] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:39:14] 
+==================================================
+[02:39:14]   关键词: React
+[02:39:14] ==================================================
+[02:39:14]   prompt 长度: 1443 字
+[02:39:14] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:39:14] API 请求: POST /responses (web_search)
+[02:39:14] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:41:17] API 响应: 5612 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 293016 tokens (推理 9541)
+[02:41:17]   摘要清理: #1 移除标记
+[02:41:17] 验证 URL 可用性...
+[02:41:17] HTTP Request: HEAD https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html "HTTP/1.1 200 OK"
+[02:41:20] HTTP Request: HEAD https://www.remio.ai/post/octane-hit-hacker-news-and-its-compiler-challenges-reacts-rules "HTTP/1.1 200 OK"
+[02:41:22] HTTP Request: HEAD https://juejin.cn/post/7679053043288686598 "HTTP/1.1 200 OK"
+[02:41:22] HTTP Request: HEAD https://react.statuscode.com/issues/488 "HTTP/1.1 200 OK"
+[02:41:22] HTTP Request: HEAD https://tanstack.com/blog/tanstack-ai-rc "HTTP/1.1 200 OK"
+[02:41:22] HTTP Request: HEAD https://reactnative.dev/blog/2026/08/11/react-native-0.87 "HTTP/1.1 200 OK"
+[02:41:22] URL 验证: 6 个, 6 可用, 0 个404, 0 个不可达
+[02:41:22] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/React.json
+[02:41:22]   [完成] React (6 条热点, 123秒)
+[02:41:22] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:41:22] 
+==================================================
+[02:41:22]   关键词: Go
+[02:41:22] ==================================================
+[02:41:22]   prompt 长度: 1440 字
+[02:41:22] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:41:22] API 请求: POST /responses (web_search)
+[02:41:23] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:42:49] API 响应: 4891 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 83512 tokens (推理 6971)
+[02:42:49] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:42:49] JSON 解析失败
+[02:42:49]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:42:49]   等待 24 秒后重试 (2/3)...
+[02:43:13] API 请求: POST /responses (web_search)
+[02:43:14] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:44:38] API 响应: 4485 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 87491 tokens (推理 7246)
+[02:44:38]   摘要清理: #5 移除标记
+[02:44:38] 验证 URL 可用性...
+[02:44:38] HTTP Request: HEAD https://news.qq.com/rain/a/20260831A04L7T00 "HTTP/1.1 200 OK"
+[02:44:40] HTTP Request: HEAD https://cloud.kepuchina.cn/h5/detail?id=7491528040714399744 "HTTP/1.1 200 OK"
+[02:44:40] HTTP Request: HEAD https://www.nihonkiin.or.jp/match_news/match_result/nh.html "HTTP/1.1 200 OK"
+[02:44:41] HTTP Request: HEAD https://golang.google.cn/blog/go1.27 "HTTP/1.1 200 OK"
+[02:44:42] HTTP Request: HEAD https://blog.51cto.com/u_17708815/14887222 "HTTP/1.1 200 OK"
+[02:44:50]   [不可达] Go之父Rob Pike获2026 USENIX终身成就奖 -> https://www.tuhs.org/pipermail/tuhs/2026-August/034128.html (超时)
+[02:44:50] URL 验证: 6 个, 5 可用, 0 个404, 1 个不可达
+[02:44:50]   过滤: 1 条热点因链接不可达已移除
+[02:44:50] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Go.json
+[02:44:50]   [完成] Go (5 条热点, 195秒)
+[02:44:50] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:44:50] 
+==================================================
+[02:44:50]   关键词: 人工智能
+[02:44:50] ==================================================
+[02:44:50]   prompt 长度: 1442 字
+[02:44:50] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:44:50] API 请求: POST /responses (web_search)
+[02:44:50] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:46:09] API 响应: 9044 字文本, 0 次搜索, 0 个打开页面, 11 个链接, 97426 tokens (推理 5518)
+[02:46:09] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:46:09] JSON 解析失败
+[02:46:09]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:46:09]   等待 18 秒后重试 (2/3)...
+[02:46:27] API 请求: POST /responses (web_search)
+[02:46:27] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:47:51] API 响应: 6735 字文本, 0 次搜索, 0 个打开页面, 10 个链接, 102259 tokens (推理 6752)
+[02:47:51] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:47:51] JSON 解析失败
+[02:47:51]   第2次尝试 — JSON 解析失败，原始回复已保存
+[02:47:51]   等待 32 秒后重试 (3/3)...
+[02:48:22] API 请求: POST /responses (web_search)
+[02:48:23] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:49:29] API 响应: 7592 字文本, 0 次搜索, 0 个打开页面, 9 个链接, 65289 tokens (推理 4058)
+[02:49:29]   摘要清理: #6 移除标记
+[02:49:29] 验证 URL 可用性...
+[02:49:30] HTTP Request: HEAD https://www.chinastarmarket.cn/detail/2465563 "HTTP/1.1 200 OK"
+[02:49:31] HTTP Request: HEAD https://finance.jrj.com.cn/2026/08/28093858260637.shtml "HTTP/1.1 200 OK"
+[02:49:32] HTTP Request: HEAD https://www.tencent.com/zh-cn/tencent-releases-and-open-sources-tencent-hy4-preview/ "HTTP/1.1 200 OK"
+[02:49:32] HTTP Request: HEAD https://www.news18.com/amp/agency-feeds/openai-to-terminate-cursor-model-access-following-spacex-acquisition-10299147.html "HTTP/1.1 403 Forbidden"
+[02:49:40]   [不可达] Salesforce业绩超预期引爆AI应用行情：Agentforce与Data  -> https://wt.cfi.cn/p20260831000175.html (超时)
+[02:49:41] HTTP Request: HEAD https://www.163.com/dy/article/L59N7IQ3053469RG.html "HTTP/1.1 200 OK"
+[02:49:42] HTTP Request: HEAD https://www.stdaily.com/web/gdxw/2026-08/26/content_570053.html "HTTP/1.1 200 OK"
+[02:49:43] HTTP Request: HEAD https://m.thepaper.cn/detail/33965789 "HTTP/1.1 403 Forbidden"
+[02:49:45] HTTP Request: HEAD https://www.tmtpost.com/baidu/8121886.html "HTTP/1.1 200 OK"
+[02:49:45] URL 验证: 9 个, 8 可用, 0 个404, 1 个不可达
+[02:49:45]   过滤: 3 条热点因链接不可达已移除
+[02:49:45] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/人工智能.json
+[02:49:45]   [完成] 人工智能 (6 条热点, 279秒)
+[02:49:45] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:49:45] 
+==================================================
+[02:49:45]   关键词: GitHub
+[02:49:45] ==================================================
+[02:49:45]   prompt 长度: 1444 字
+[02:49:45] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:49:45] API 请求: POST /responses (web_search)
+[02:49:45] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:51:36] API 响应: 5474 字文本, 0 次搜索, 0 个打开页面, 5 个链接, 173199 tokens (推理 8625)
+[02:51:36]   摘要清理: #4 移除标记
+[02:51:36]   去重: 1 条热点因 URL 重复已移除
+[02:51:36] 验证 URL 可用性...
+[02:51:36] HTTP Request: HEAD https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/ "HTTP/1.1 200 OK"
+[02:51:36] HTTP Request: HEAD https://github.blog/changelog/2026-08-27-github-classroom-deprecated/ "HTTP/1.1 200 OK"
+[02:51:37] HTTP Request: HEAD http://www.17golang.com/article/623697.html "HTTP/1.1 200 OK"
+[02:51:37] HTTP Request: HEAD https://wangruofeng007.com/blog/2026-08/github-trending-daily-0830-long-tail/ "HTTP/1.1 403 Forbidden"
+[02:51:38] HTTP Request: HEAD https://indianexpress.com/article/technology/tech-news-technology/github-7-hour-outage-what-we-know-10842789/ "HTTP/1.1 403 Forbidden"
+[02:51:38] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[02:51:38]   过滤: 2 条热点因链接不可达已移除
+[02:51:38] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/GitHub.json
+[02:51:38]   [完成] GitHub (3 条热点, 111秒)
+[02:51:38] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:51:38] 
+==================================================
+[02:51:38]   关键词: SpringBoot
+[02:51:38] ==================================================
+[02:51:38]   prompt 长度: 1448 字
+[02:51:38] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:51:38] API 请求: POST /responses (web_search)
+[02:51:38] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:52:44] API 响应: 6009 字文本, 0 次搜索, 0 个打开页面, 6 个链接, 70676 tokens (推理 4979)
+[02:52:44] demjson3 解析也失败: ('Unknown identifier', 'Based')
+[02:52:44] JSON 解析失败
+[02:52:44]   第1次尝试 — JSON 解析失败，原始回复已保存
+[02:52:44]   等待 16 秒后重试 (2/3)...
+[02:52:59] API 请求: POST /responses (web_search)
+[02:53:00] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:54:16] API 响应: 5745 字文本, 0 次搜索, 0 个打开页面, 7 个链接, 57530 tokens (推理 7266)
+[02:54:16] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:54:16] JSON 解析失败
+[02:54:16]   第2次尝试 — JSON 解析失败，原始回复已保存
+[02:54:16]   等待 28 秒后重试 (3/3)...
+[02:54:43] API 请求: POST /responses (web_search)
+[02:54:44] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:55:44] API 响应: 4959 字文本, 0 次搜索, 0 个打开页面, 5 个链接, 54682 tokens (推理 4758)
+[02:55:44] demjson3 解析也失败: The input is gibberish, is the Unicode encoding correct?
+[02:55:44] JSON 解析失败
+[02:55:44]   第3次尝试 — JSON 解析失败，原始回复已保存
+[02:55:44]   [失败] SpringBoot — 重试3次，JSON 解析均失败
+[02:55:44] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:55:44] 
+==================================================
+[02:55:44]   关键词: Next.js
+[02:55:44] ==================================================
+[02:55:44]   prompt 长度: 1445 字
+[02:55:44] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:55:44] API 请求: POST /responses (web_search)
+[02:55:45] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:56:59] API 响应: 5141 字文本, 0 次搜索, 0 个打开页面, 5 个链接, 90075 tokens (推理 5604)
+[02:56:59] 验证 URL 可用性...
+[02:56:59] HTTP Request: HEAD https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html "HTTP/1.1 200 OK"
+[02:57:01] HTTP Request: HEAD https://www.infoq.cn/article/NedlVNN6E9uWbIE3WV07 "HTTP/1.1 200 OK"
+[02:57:04] HTTP Request: HEAD https://www.wafai.cn/nextjs-cve-2026-75604-windows-path-traversal-avif-heap-overflow-rce/ "HTTP/1.1 200 OK"
+[02:57:05] HTTP Request: HEAD https://icsda.org.tw/security-news-vulnerability-data-breach-20260831/ "HTTP/1.1 200 OK"
+[02:57:06] HTTP Request: HEAD https://labs.cloudsecurityalliance.org/research/csa-research-note-nextjs-avif-windows-rce-cve-2026-75604-202/ "HTTP/1.1 200 OK"
+[02:57:06] URL 验证: 5 个, 5 可用, 0 个404, 0 个不可达
+[02:57:06] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/Next.js.json
+[02:57:06]   [完成] Next.js (5 条热点, 75秒)
+[02:57:06] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:57:06] 
+==================================================
+[02:57:06]   关键词: 数据库
+[02:57:06] ==================================================
+[02:57:06]   prompt 长度: 1441 字
+[02:57:06] 配置已加载: /home/runner/work/hotspot/hotspot/hotspot/config.json (20 个关键词, headless=True, 最大重试=3)
+[02:57:06] API 请求: POST /responses (web_search)
+[02:57:06] HTTP Request: POST https://api.deepseek.com/responses "HTTP/1.1 200 OK"
+[02:58:09] API 响应: 5756 字文本, 0 次搜索, 0 个打开页面, 8 个链接, 101652 tokens (推理 4343)
+[02:58:09] 验证 URL 可用性...
+[02:58:11] HTTP Request: HEAD https://finance.sina.com.cn/jjxw/2026-08-26/doc-inipsezp5953366.shtml "HTTP/1.1 200 OK"
+[02:58:12] HTTP Request: HEAD https://www.cs.com.cn/ssgs/01/2026/08/26/detail_2026082610034359.html "HTTP/1.1 200 OK"
+[02:58:14] HTTP Request: HEAD https://ysg.ckcest.cn/ysgAchievement/technology/1764086.html "HTTP/1.1 200 OK"
+[02:58:15] HTTP Request: HEAD https://open.oceanbase.com/blog/29890596880 "HTTP/1.1 200 OK"
+[02:58:15] HTTP Request: HEAD https://www.fjsen.com/r/2026-08/31/content_32244218.htm "HTTP/1.1 200 OK"
+[02:58:17] HTTP Request: HEAD https://wap.stockstar.com/detail/RB2026082900010055 "HTTP/1.1 404 Not Found"
+[02:58:17]   [404] 海量数据2026中报解读：收入降17.37%、亏损扩大，处战略投入期 -> https://wap.stockstar.com/detail/RB2026082900010055
+[02:58:17] HTTP Request: HEAD https://www.sgpjbg.com/labelsyh/aiyuanshengshujukuqushi/1/7101965.html "HTTP/1.1 403 Forbidden"
+[02:58:18] HTTP Request: HEAD https://www.knowsafe.com/ti/info/0/1012130 "HTTP/1.1 404 Not Found"
+[02:58:18]   [404] 数据库安全公告密集：MongoDB C# Driver日志泄露、MySQL发布8 -> https://www.knowsafe.com/ti/info/0/1012130
+[02:58:18] URL 验证: 8 个, 6 可用, 2 个404, 0 个不可达
+[02:58:18]   过滤: 3 条热点因链接不可达已移除
+[02:58:18] 已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/数据库.json
+[02:58:18]   [完成] 数据库 (5 条热点, 64秒)
+[02:58:18] 搜索完成: 16/20 成功, 共 81 条热点
+[02:58:18] 
+[02:58:18] ============================================================
+[02:58:18]   运行总结
+[02:58:18] ============================================================
+[02:58:18]   关键词                  状态       热点数    耗时    
+[02:58:18]   ──────────────────── ──────── ────── ──────
+[02:58:18]   DeepSeek             完成       5      176s  
+[02:58:18]   ChatGPT              完成       5      59s   
+[02:58:18]   OpenAI               完成       5      125s  
+[02:58:18]   Docker               完成       3      158s  
+[02:58:18]   Rust                 完成       5      157s  
+[02:58:18]   Kubernetes           完成       5      71s   
+[02:58:18]   TypeScript           失败       -      289s  
+[02:58:18]   Claude Code          完成       5      300s  
+[02:58:18]   Python               完成       5      68s   
+[02:58:18]   Cloudflare           失败       -      272s  
+[02:58:18]   Vue.js               完成       6      71s   
+[02:58:18]   前端技术                 失败       -      268s  
+[02:58:18]   Node.js              完成       7      109s  
+[02:58:18]   React                完成       6      123s  
+[02:58:18]   Go                   完成       5      195s  
+[02:58:18]   人工智能                 完成       6      279s  
+[02:58:18]   GitHub               完成       3      111s  
+[02:58:18]   SpringBoot           失败       -      247s  
+[02:58:18]   Next.js              完成       5      75s   
+[02:58:18]   数据库                  完成       5      64s   
+[02:58:18] 
+[02:58:18]   总计: 16/20 成功 | 81 条热点 | 共耗时 3329秒
+[02:58:18] ============================================================
+[02:58:18] 聚合报告已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/report.json
+[02:58:18] 已加载 HTML 模板: /home/runner/work/hotspot/hotspot/hotspot/template.html
+[02:58:18] HTML 报告已保存: /home/runner/work/hotspot/hotspot/results/2026-08-31/020249/report.html
+[02:58:18] ✅ 本次搜索完成: 81 条热点已同步到 results/

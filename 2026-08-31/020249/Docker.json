@@ -1,0 +1,61 @@
+{
+  "keyword": "Docker",
+  "hotspots": [
+    {
+      "rank": 3,
+      "title": "docker-socket-proxy 高危漏洞 CVE-2026-78122：可越权读取容器文件系统",
+      "summary": "8月下旬披露的 CVE78122（CVSS 8.3）显示：docker-socket-proxy 在设置 CONTAINERS 环境变量时未正确限制 /containers 读取端点，攻击者可借 GET 请求读取任意文件并下载整个容器文件系统，构成严重授权绕过。",
+      "source": "阿里云漏洞库 / INCIBE / Vulnerability-Lookup",
+      "url": "https://avd.aliyun.com/detail?id=AVD-2026-78122",
+      "published_time": "2026-08-23",
+      "perspectives": [
+        {
+          "stance": "官方漏洞通报",
+          "summary": "阿里云漏洞库与 INCIBE、GHSA 等同步通报：攻击者可利用 /containers/{id}/archive、/export、/logs、/top 等端点读取任意文件并以 tar 包形式下载整个容器文件系统，CVSS v4.0 评分为 8.3（高危）。"
+        },
+        {
+          "stance": "安全专家分析",
+          "summary": "安全分析指出该代理常用于限制 Traefik、Portainer 等容器编排组件对宿主机 Docker socket 的访问，漏洞意味着代理层的权限隔离被绕过，部署了该组件的用户应尽快升级修复版本。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Docker cagent 动态 MCP：AI 代理可按需搜索并挂载 MCP 服务器",
+      "summary": "8月28日技术博客解读 Docker 推出的 cagent 动态 MCP 能力：AI 代理不再依赖写死的 MCP 配置，可在会话内自行搜索服务器、按需挂载，甚至在沙箱中用代码拼接新工具，推动 MCP 生态往动态编排演进。",
+      "source": "字节笔记本",
+      "url": "https://www.bytenote.net/article/docker-cagent-dynamic-mcp",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "技术社区解读",
+          "summary": "分析认为 Docker 把 MCP Gateway 向前推进了一步，结合开源的 cagent 与 ACP，让代理在运行时动态获取工具能力，标志 Docker 在 agentic AI 开发平台方向持续加码。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Docker Inc. 宣布捐赠 Docker Engine 核心组件，交出 containerd 控制权",
+      "summary": "Cloud Native Now 报道，Docker Inc. 为安抚批评者并推动更广泛的 Docker 生态发展，宣布捐赠 Docker Engine 的核心组件，将 containerd 相关控制权移交社区，引发关于开源治理的讨论。",
+      "source": "Cloud Native Now",
+      "url": "https://cloudnativenow.com/tag/docker-element/",
+      "published_time": "2026-08-20",
+      "perspectives": [
+        {
+          "stance": "官方与产业媒体",
+          "summary": "报道称此举意在缓和生态批评、培育更开放的 Docker 生态，是公司在容器运行时控制权上的一次重大让步。"
+        },
+        {
+          "stance": "社区与批评者视角",
+          "summary": "部分开发者认为这有助于制衡 Docker 公司对开源组件的掌控，但也有人质疑捐赠范围与后续治理模式的实际影响。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近几日 Docker 相关讨论高度集中于 Omarchy 默认 docker 组提权漏洞，公众与开发者普遍担忧 AI 编程时代开发者机器的权限隔离与供应链安全，情绪以警惕、批评默认安全配置为主；同时 Docker 在加固镜像、沙箱与 MCP 动态工具链上的布局也获得较高关注，整体呈现【安全焦虑与 AI 平台化期待并存】的态势。",
+  "honesty_note": "说明：在 08月24日至08月31日 的严格窗口内，Docker 直接相关的热点相对集中，热度最高的 Omarchy 事件本质是 Linux 发行版默认 Docker 配置问题而非 Docker 产品本身；另有个别条目（CVE-2026-78122、containerd 捐赠）发布于 08月20日至23日，略早于窗口但仍高度相关并持续发酵。关联话题可关注：Docker Sandboxes 沙箱只读挂载绕过（CVE-2026-18171，8月12日修复）、Docker AI Governance 审计日志上线、以及 Docker 官方人事任命（8月18日 CPO/CFO 就任）。",
+  "start_time": "2026-08-31 02:09",
+  "end_time": "2026-08-31 02:12",
+  "elapsed_seconds": 158,
+  "retry_count": 1
+}

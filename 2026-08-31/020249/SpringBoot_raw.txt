@@ -1,0 +1,119 @@
+基于联网搜索结果，我已整理出 2026-08-24 至 08-31 期间与 SpringBoot 相关的最新热点。以下是完整 JSON 输出：
+
+{
+  "keyword": "SpringBoot",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Spring Boot 4.2.0-M1 里程碑版发布：新增 AMQP 1.0 支持并正式弃用 RestTemplate",
+      "summary": "Spring Boot 4.2.0-M1 于 8 月 20 日上线 Maven Central，含 113 项修复与增强，核心新特性为 AMQP 1.0 协议支持与 Buildpacks 镜像构建缓存，并随 Spring Framework 7.1 弃用 RestTemplate/TestRestTemplate，推荐迁移 RestClient。",
+      "source": "Spring 官方博客 / InfoQ / pig4cloud",
+      "url": "https://spring.io/blog/2026/08/20/spring-boot-4-2-0-M1-available-now",
+      "published_time": "2026-08-20（中文社区 08-24 集中热议）",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "官方公告 4.2.0-M1 含 113 项改进，亮点为 AMQP 1.0（含 RabbitMQ 专属功能）与基于镜像的构建缓存支持，可从 Maven Central 获取。"
+        },
+        {
+          "stance": "社区技术解读",
+          "summary": "中文技术社区（pig4cloud）详解弃用 RestTemplate/TestRestTemplate 的影响，指出老项目可平滑改用同步阻塞式的 RestClient/RestTestClient，无需强行响应式改造。"
+        },
+        {
+          "stance": "审慎观望",
+          "summary": "部分开发者提醒 4.2.0-M1 仅是里程碑预发布版，生产环境应等待 GA；同时建议优先关注同批 90+ CVE 的修复节奏，评估是否需要补丁回迁。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Spring 生态协同里程碑发布潮：全系 M1 同周齐发并修复 90+ 个 CVE",
+      "summary": "8 月 17 日当周，Spring Boot、Framework、Data、Security、Modulith、Batch、AMQP 等近全系项目同步发布首个里程碑版本，累计解决 90+ 个 CVE，Spring Data 新增 RedisJsonTemplate 原生支持。",
+      "source": "InfoQ / JavaRubberDuck",
+      "url": "https://www.infoq.com/news/2026/08/spring-news-roundup-aug17-2026/",
+      "published_time": "2026-08-26",
+      "perspectives": [
+        {
+          "stance": "官方/媒体综述",
+          "summary": "跨项目协调里程碑节奏可降低快照兼容的衔接成本，下游项目能统一对齐同一里程碑版本。"
+        },
+        {
+          "stance": "安全视角",
+          "summary": "90+ CVE 修复对生产用户是更高优先级信号，尽管修复随里程碑而非 GA 发布，仍应按各项目安全公告评估是否需要补丁版本回迁。"
+        },
+        {
+          "stance": "开发者关注",
+          "summary": "开发者重点讨论 Spring Data 的 RedisJsonTemplate 等新特性，认为可减少手写序列化、提升日常开发效率。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "CVE-2026-82594：LogNet grpc-spring-boot-starter 被披露越权漏洞（48 小时内新曝光）",
+      "summary": "LogNet grpc-spring-boot-starter 直至 5.2.0 版本的注解处理组件存在越权（improper authorization）漏洞，可被远程触发，攻击复杂性较高、利用难度偏大，项目方尚未作出回应。",
+      "source": "VulDB / Vulnerability-Lookup / Rapid7",
+      "url": "https://vuldb.com/zh/cve/CVE-2026-82594",
+      "published_time": "2026-08-29 至 08-30",
+      "perspectives": [
+        {
+          "stance": "漏洞披露",
+          "summary": "该漏洞已被公开披露并可能被利用，受影响的未知功能组件为注解处理，属于越权访问，攻击需远程发起。"
+        },
+        {
+          "stance": "安全厂商提醒",
+          "summary": "Rapid7 等安全平台提示使用该 starter 的团队尽快核查版本、评估暴露面并采取加固措施。"
+        },
+        {
+          "stance": "社区担忧",
+          "summary": "社区对项目方收到报告后迟迟未回应表示担忧，认为修复进度与后续补丁发布时间存在不确定性。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Spring Boot 3.5 停止开源支持，迁移 4.x 成为 2026 下半年开发者主线话题",
+      "summary": "Spring Boot 3.5.x 已于 2026 年 6 月底结束 OSS 支持，官方建议迁移至 4.0.x/4.1.x；中文社区 8 月持续产出迁移避坑指南，聚焦虚拟线程默认化、Jackson 3 升级、Starter 模块化重构等五大坑。",
+      "source": "阿里云开发者社区 / 华为云博客",
+      "url": "https://developer.aliyun.com/article/1756402",
+      "published_time": "2026-08-17（讨论持续至 8 月底）",
+      "perspectives": [
+        {
+          "stance": "官方建议",
+          "summary": "官方在 6 月 25 日发布 3.5.16 时明确其为 3.5.x 最终开源版本，建议尽早升级 4.0.x 或 4.1.x，需延长维护的另行评估商业支持。"
+        },
+        {
+          "stance": "迁移实操派",
+          "summary": "阿里云/华为云文章列出五大迁移坑：虚拟线程默认化、Starter 模块化重构、Jackson 3 升级、JSpecify 空安全强化、Spring Framework 7 版本控制。"
+        },
+        {
+          "stance": "保守观望",
+          "summary": "部分团队因迁移成本与兼容性风险持观望态度，仅在小流量业务先行验证后再全量升级。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Spring Boot 以 53.7% 好评度领跑 2026 Java 框架格局分析引发讨论",
+      "summary": "基于 2025 Stack Overflow 开发者调查，Spring Boot 在全部 Web 框架中约占 14.7% 使用率、好评度达 53.7%；分析文章结合 Spring AI、虚拟线程等趋势，对比 Quarkus、Micronaut 的云原生差异化竞争。",
+      "source": "dev.to / GladLabs",
+      "url": "https://dev.to/glad_labs/spring-boots-537-admiration-score-explains-javas-2026-framework-landscape-e5b",
+      "published_time": "2026-08-27",
+      "perspectives": [
+        {
+          "stance": "数据分析",
+          "summary": "数据支撑 Spring Boot 生态的统治地位，同时指出 Quarkus、Micronaut 在内存占用与 Serverless 场景的差异化定位。"
+        },
+        {
+          "stance": "风险提示",
+          "summary": "评论提醒开发者不要盲目拥抱 GraalVM，除非业务确实需要毫秒级冷启动，并建议对供应链保持多元化，避免单点绑定。"
+        },
+        {
+          "stance": "生态展望",
+          "summary": "文章认为 Spring AI 把 LLM 调用、向量库接入依赖注入体系，是驱动 Spring Boot 持续获得高好感度的重要变量。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "本期 SpringBoot 社区情绪以「关注与谨慎并存」为主：4.2.0-M1 的 AMQP 1.0 支持与 RestTemplate 弃用引发迁移热议，90+ CVE 协同修复及 grpc-starter 新漏洞让安全话题迅速升温；同时 3.5 停维迫使团队评估升级成本，多数开发者倾向等 GA 再上生产。",
+  "honesty_note": "近 48 小时内 SpringBoot 相关内容以安全漏洞披露与里程碑技术解读为主，暂缺微博、知乎等大众平台的破圈级话题；微博热榜当期亦无直接相关的 SpringBoot 条目。另补充关联话题：8 月 20 日披露的 Spring Security 严重漏洞 CVE-2026-59270（内嵌 UnboundID LDAP 默认凭据泄露、可获管理员权限，影响通过 Spring Boot 内嵌 LDAP 自动配置的应用，freebuf 已报道），该事件略早于本次检索窗口但仍值得关注。"
+}

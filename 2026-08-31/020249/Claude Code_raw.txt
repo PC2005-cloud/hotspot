@@ -1,0 +1,119 @@
+已完成近7天（08/24–08/31）联网检索并交叉核对了多篇报道原文。以下为整理结果。
+
+{
+  "keyword": "Claude Code",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "Claude Code 额度「明升实降」：永久加量25%却较当前实际减少17%，官方改口承认",
+      "summary": "8月29日Anthropic宣布自9月14日起将Claude Code标准周额度永久提升25%，但因当前50%临时加成将于8月31日结束，实际较现况下调约17%，引发开发者强烈不满。",
+      "source": "机器之心（网易号）、AIBase、aitoolsrecap",
+      "url": "https://www.163.com/dy/article/L5JQLE540511AQHO.html",
+      "published_time": "2026-08-30 19:20",
+      "perspectives": [
+        {
+          "stance": "官方回应",
+          "summary": "Anthropic称正探索「可持续」提供服务的方案，删除原公告后重新发布并明确承认：相较今日额度实际减少17%，9月14日起生效，另预告将推出更透明的额度消耗与使用机制。"
+        },
+        {
+          "stance": "用户质疑与社区吐槽",
+          "summary": "开发者调侃「呼，还好我们只损失了17%」，并对比同日OpenAI Codex重置额度、修复多个「偷吃额度」Bug，认为Anthropic不重视开发者社区，部分人扬言改投OpenAI或谷歌模型。"
+        },
+        {
+          "stance": "行业分析",
+          "summary": "分析认为这标志Coding Agent进入生产力工具阶段的额度博弈——当Agent可连续运行数小时、拉起多个子Agent时，额度去向透明度与成本已超越模型聪明程度，成为下一竞争焦点。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Claude 安全机制大翻车：测试防护脚本时 AI 怒删开发者 700GB 主目录",
+      "summary": "开发者Sebastien Guillemot让Claude的Fable编写防误删清理脚本，安全机制判定风险过高自动将模型降级至Opus 4.8，测试与清理阶段变量名复用导致整个家目录约700GB数据被「rm -rf」删除，一周成果化为乌有。",
+      "source": "CNMO科技、IT之家（C114）、cnBeta",
+      "url": "https://ai.cnmo.com/news/817202.html",
+      "published_time": "2026-08-28 18:07",
+      "perspectives": [
+        {
+          "stance": "事件亲历者",
+          "summary": "Guillemot称紧急中止进程为时已晚，更具讽刺的是AI执行删除后/tmp临时文件反而完整保留，警告AI Agent自主执行高风险操作缺乏可靠防护。"
+        },
+        {
+          "stance": "安全与技术分析",
+          "summary": "分析指出安全降级机制是事故关键诱因，能力更强的Fable 5本可能发现变量名复用导致的逻辑冲突；社区同时重新审视「dangerously-skip-permissions」等权限绕过参数的安全边界。"
+        },
+        {
+          "stance": "社区讨论",
+          "summary": "开发者就Agent自主执行的审计与容灾机制展开热议，推荐Termaxa等容灾工具，普遍认为此类事故说明AI编程Agent的自动化安全机制仍不成熟。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "玉渊潭天评论「Anthropic 得了美国病」，Claude Code 安全后门隐患再被聚焦",
+      "summary": "8月29-30日玉渊潭天发布评论，重提工信部此前点名Claude Code存在安全后门隐患（未经同意回传地域、身份标识等敏感信息），并批评其机制让AI替用户做决定，再度引发自主可控讨论。",
+      "source": "香港文汇报（转载玉渊潭天）、中华网",
+      "url": "https://www.wenweipo.com/a/202608/30/AP6a93c503e4b0c1e50026cd12.html",
+      "published_time": "2026-08-30 13:52",
+      "perspectives": [
+        {
+          "stance": "官方媒体评论（玉渊潭天）",
+          "summary": "认为Anthropic将商业利益凌驾于用户权益之上是「美国病」的体现，结合数据外泄与AI代做决定等问题，强调AI安全审查与自主可控的重要性。"
+        },
+        {
+          "stance": "监管背景（工信部NVDB通报）",
+          "summary": "工信部7月8日已发布风险提示，指出受影响Claude Code为2.1.91至2.1.196版本，建议立即排查、卸载或升级；此前多家国内企业已停用相关工具。"
+        },
+        {
+          "stance": "中立技术视角",
+          "summary": "部分开发者认为遥测回传在AI编程工具中较为普遍，应理性看待数据收集与条款合规边界，核心在于透明度与用户授权机制是否完善，而非一概否定。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Claude Code 一周密集更新 v2.1.240~248：新增 modelPicker、promptCacheTtl 与 restricted 安全模式",
+      "summary": "8月22-29日Claude Code密集发布多版本更新，新增可自定义模型列表的modelPicker、按会话区分的promptCacheTtl，并推出面向不可信仓库的restricted安全模式，Linux版下载体积由约340MB压缩至75MB。",
+      "source": "DevelopersIO（クラスメソッド）、JavaRubberDuck",
+      "url": "https://dev.classmethod.jp/articles/20260825-cc-updates-v2-1-245/",
+      "published_time": "2026-08-25",
+      "perspectives": [
+        {
+          "stance": "技术媒体解读",
+          "summary": "DevelopersIO逐项解析4天63项变更，认为启动速度、下载体积与内存占用的大幅优化让CI和新机器部署更轻量，模型选择与缓存TTL可控性提升明显。"
+        },
+        {
+          "stance": "安全特性视角",
+          "summary": "v2.1.248新增--restricted参数，可剥离命令执行、联网抓取与项目级设置文件，适合在不可信代码库或CI环境中运行，被视为对近期安全争议的回应。"
+        },
+        {
+          "stance": "使用建议",
+          "summary": "modelPicker可让团队统一并按标签分享模型列表；promptCacheTtl支持主会话缓存提升至1小时、子Agent保持5分钟，长会话场景下成本与响应体验更佳。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "JetBrains 调查：Claude Code 工作场景使用率39%反超 GitHub Copilot，AI 编程进入 Agent 时代",
+      "summary": "JetBrains Research覆盖1.5万名开发者的报告显示，2026年5-7月Claude Code工作场景使用率升至39%，超过降至21%的GitHub Copilot，美国市场达47%，Codex亦从3%涨至16%。",
+      "source": "IT168",
+      "url": "https://ai.it168.com/a2026/0828/6948/000006948039.shtml",
+      "published_time": "2026-08-28 16:19",
+      "perspectives": [
+        {
+          "stance": "行业媒体分析",
+          "summary": "认为这是从「Copilot辅助」到「Claude Code替代」的榜首更迭，Agent从副驾驶变为主驾驶，命令行与任务队列正取代IDE成为AI编程的终极入口。"
+        },
+        {
+          "stance": "数据观察",
+          "summary": "31%开发者将Claude Code列为首选工具，超过80%尝鲜者转化为重度用户；Cursor使用率下滑但认知度上升，显示「知道的人更多、用的人更少」的AI原生IDE退潮。"
+        },
+        {
+          "stance": "理性审视",
+          "summary": "在90%周使用率之下，「控制权让渡」成为核心议题，开发者核心竞争力正转向对Agent执行结果的验收与系统架构把控，安全与准确性成为新入场券。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周Claude Code最突出情绪是「额度焦虑」与「信任危机」：Anthropic「明升实降」的额度调整被批变相缩水，叠加AI误删700GB数据事故及此前退订潮、ARR增速骤降，开发者不满升温、部分转投Codex；「美国病」等安全后门议题在中国舆论场再发酵，自主可控呼声走高。",
+  "honesty_note": "部分关联事件峰值在窗口期前仍被持续引用：如8月19-21日「Claude Code增速从600%骤降至5.2%的退订潮」、7月8日工信部NVDB点名。另需提示：Sonnet 5 API定价存在多源矛盾——8月10日多篇报道称已取消涨价并永久保留$2/$10，而8月31日aitoolsrecap称已调至$3/$15，建议以Anthropic官方价格页为准；因Sonnet 5为Claude Code默认模型，建议关注其对额度和成本的实际影响。"
+}

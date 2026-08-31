@@ -1,0 +1,156 @@
+Based on my searches, I've gathered the latest Rust-related hotspots within Aug 24–31, 2026 (especially the last 24–48 hours). Here is the organized result:
+
+{
+  "keyword": "Rust",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "热门生存游戏《Rust》大改2026路线图：取消战斗通行证、引入「Rust Premium」",
+      "summary": "Facepunch 悄然更新《Rust》2026年度路线图，彻底移除争议最大的战斗通行证，改推面向高库存玩家的「Rust Premium」会员；程序化洞穴、地形变形等多项大更新推迟至2027年，宠物狗福利则意外提前到今年上线。",
+      "source": "搜狐 / Polygon / Kotaku en Español",
+      "url": "https://www.sohu.com/a/1069822185_506163",
+      "published_time": "2026-08-31 09:17",
+      "perspectives": [
+        {
+          "stance": "官方路线图说明",
+          "summary": "Facepunch 表示进入第四季度后重新审视年度目标，决定专注纪念碑改进与部落系统重构，并完全移除战斗通行证条目，以「Rust Premium」取代，称该改动引发玩家感受各异。"
+        },
+        {
+          "stance": "玩家群体反应",
+          "summary": "不少玩家对取消战斗通行证并不失望，认为《Rust》本就不应通过付费订阅提供外观奖励；但也有玩家担心路线图大规模延期会削弱新鲜感与每月重置的吸引力。"
+        },
+        {
+          "stance": "外媒分析与评价",
+          "summary": "Polygon、Kotaku 等媒体认为这是官方对争议付费功能的彻底让步，同时将宠物狗等伸展目标提前至2026年发布属惊喜之举，整体持正面解读。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Rust 下一代 trait solver 在 nightly 默认启用，系编译器史上最大内部变更",
+      "summary": "Rust 官方博客宣布，经近4年开发的下一代 trait solver 在 nightly 默认启用，修复200余个已知问题并显著提升部分编译性能（datafusion 提速8倍以上），为 TAIT、RTN 等特性铺路，同时带来可能的破坏性影响。",
+      "source": "Rust Blog / Rust 日报 / 旋武开源社区",
+      "url": "https://xhh.club/e/goVHDxxTgV8HCfs6iowi/",
+      "published_time": "2026-08-29",
+      "perspectives": [
+        {
+          "stance": "官方进展说明",
+          "summary": "官方称这是 rustc 自发布以来最大的单次内部变更，长期收益显著，下一步将推动 Type Alias Impl Trait、Return Type Notation 等特性稳定，并已修复至少200+ GitHub issue。"
+        },
+        {
+          "stance": "开发者谨慎态度",
+          "summary": "社区提醒变更规模大、可能带来非平凡破坏，官方提供 RUSTFLAGS=-Znext-solver=coherence 等标志可在 nightly 下临时关闭，建议开发者先验证项目兼容性。"
+        },
+        {
+          "stance": "性能与收益评估",
+          "summary": "编译侧实测显示部分项目（如 datafusion）编译提速超8倍，被视为解锁新特性与修复类型系统 unsoundness 的关键一步。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Rust 流行库 arrayref 等遭供应链攻击，crates.io 恶意版本已移除",
+      "summary": "Rust 官方披露供应链攻击：攻击者疑似入侵维护者账号，在 crates.io 发布 arrayref、internment、append-only-vec 三个常用包的恶意版本，并植入仿冒依赖 proc-macro1，恶意代码可在编译期自动下载执行远程载荷，官方已删除受影响版本。",
+      "source": "Foresight News / 安天",
+      "url": "https://foresightnews.pro/news/detail/111356",
+      "published_time": "2026-08-21（8月24-25日仍有持续报道）",
+      "perspectives": [
+        {
+          "stance": "官方安全响应",
+          "summary": "Rust 安全响应团队确认恶意版本已从 crates.io 移除，事件中 Agave 及 Anza 软件未受影响，并建议开发者排查本地依赖是否被污染。"
+        },
+        {
+          "stance": "安全行业提醒",
+          "summary": "安天等安全厂商在每日安全简讯中提醒，投毒包会在项目编译过程中自动下载并执行远程载荷，呼吁开发者在依赖审查与 CI 供应链安全上加码。"
+        },
+        {
+          "stance": "社区生态关切",
+          "summary": "该恶意库三个月下载量巨大，事件引发对 crates.io 生态审核机制、维护者账号防护与包发布安全流程的广泛讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Rust 启动函数重载实验：nightly 的 #[splat] 属性优化 C++ FFI 调用",
+      "summary": "Rust 与 Rust 基金会 Rust-C++ 互操作计划合作，在 nightly 开启函数重载实验，通过 #[rustc_splat] 属性让 hypot(2.0,3.0,6.0) 式原生多载调用成为可能；目前无正式 RFC、属实验特性，主要面向 FFI 绑定开发者。",
+      "source": "Inside Rust Blog / Pixelstech / 旋武开源社区",
+      "url": "https://www.pixelstech.net/feed/detail/79386.html?lang=chinese",
+      "published_time": "2026-08-29",
+      "perspectives": [
+        {
+          "stance": "官方设计思路",
+          "summary": "官方提出四项准则：维持 Rust 惯用风格、让多载 FFI 调用与原生一样简单、不牺牲 C/C++ 接口可维护性、在候选中选出开发者预期的重载版本。"
+        },
+        {
+          "stance": "实验性质警示",
+          "summary": "该特性无 RFC、可能随时变更或移除，不适合在生产代码中依赖，且类型检查仍遵循稳定语义，主要面向 bindgen、cxx 等 FFI 工具作者试用反馈。"
+        },
+        {
+          "stance": "技术挑战讨论",
+          "summary": "社区指出仍存在 trait coherence 限制、闭包是否支持 splat、不同 ABI 承载能力及多载符号在链接层如何消歧义等未解问题。"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "Rust never 类型（!）在 nightly 首次稳定，十年努力终成",
+      "summary": "Rust 的 never 类型（!）历经10年、5次失败尝试后，终于首次在 nightly 版稳定下来。作者花费超过2年参与此项工作，被视为编译器最长寿的不稳定特性之一，标志着类型系统的重大里程碑。",
+      "source": "E-Ink 新闻日报 / Lobsters",
+      "url": "https://news.e-ink.me/zh/archive/2026-08-25/article/i-stabilized-never-type",
+      "published_time": "2026-08-25 23:11",
+      "perspectives": [
+        {
+          "stance": "作者自述",
+          "summary": "作者以「既释然又空虚」的情绪描述成果，强调该特性用于表示永不返回的函数返回类型，过去十年多次尝试稳定均未成功。"
+        },
+        {
+          "stance": "社区评价",
+          "summary": "该文在 Lobsters 获7.0/10评分，被视为语言类型系统长期难点的突破，引发对 never 类型后续应用的讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Rust × 开源鸿蒙：开源框架 ohos-rs 获社区重点推荐",
+      "summary": "旋武开源社区推荐开源项目 ohos-rs：Fork 自知名框架 napi-rs，可让开发者用 Rust 构建开源鸿蒙（OpenHarmony/HarmonyNext）原生 SDK，通过 #[napi] 宏向 ArkTS 暴露高性能模块，默认使用 tokio 异步，采用 MIT 许可。",
+      "source": "旋武开源社区 / 开源鸿蒙社区",
+      "url": "https://website.xuanwu.openatom.cn/articles/news/260828-project.html",
+      "published_time": "2026-08-28",
+      "perspectives": [
+        {
+          "stance": "项目介绍视角",
+          "summary": "ohos-rs 将成熟的 napi-rs 开发模式引入 OpenHarmony 生态，UI 层用 ArkTS 保效率、底层计算用 Rust 保性能，有效降低 Rust 原生模块开发成本。"
+        },
+        {
+          "stance": "开发者选型关注",
+          "summary": "对有 Rust 技术积累或对性能、底层控制有额外需求的团队而言，ohos-rs 提供了替代纯 ArkTS 方案的选择，社区活跃度持续提升。"
+        },
+        {
+          "stance": "生态意义解读",
+          "summary": "该推荐反映国产操作系统对高性能、内存安全底层语言需求的增长，也验证了 Rust 在鸿蒙原生生态的落地潜力。"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Linux 7.3-rc1 收官：合并窗提交量历史第二高，内核 Rust 同步推进",
+      "summary": "Linus Torvalds 于8月30日发布 Linux 7.3-rc1 并关闭本轮合并窗，共15,267个提交、为史上第二高（仅次于6.7）；同周内核中的 Rust 基础设施与 Rust for Linux 持续发展，语言前沿与内核动态并行。",
+      "source": "Charlie27's Blog / LWN.net",
+      "url": "https://www.charlie27.com/2026/08/2026-08-31-linux-7-3-rc1-%e6%94%b6%e5%ae%98%e5%89%b5%e6%ac%a1%e9%ab%98%e5%90%88%e4%bd%b5%e7%aa%97%e6%8f%90%e4%ba%a4%e9%87%8f%ef%bc%8crust-%e5%be%b5%e6%b1%82-splat-%e5%b1%ac%e6%80%a7/",
+      "published_time": "2026-08-31",
+      "perspectives": [
+        {
+          "stance": "内核版本动态",
+          "summary": "7.3-rc1 拉入 AMD Zen 6 初步支持、2026 版 Steam Controller 驱动、Apple M3 Ultra/Pro/Max 支持及 FailFS 等多项变动，预计再经约七到八轮 rc 后发布正式版。"
+        },
+        {
+          "stance": "Rust 在内核进展",
+          "summary": "Linux 内核中的 Rust 组件与 Rust for Linux 协作持续深化，rnull 块驱动等功能对等冲刺，反映 Rust 在操作系统内核层面的落地不断加速。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近一周围绕 Rust 的讨论热度集中在三条线：技术社区对下一代 trait solver 默认启用、never 类型稳定持积极期待，但对破坏性变更与函数重载实验保持谨慎；arrayref 供应链攻击引发对 crates.io 生态安全的高度关注与担忧；游戏侧《Rust》取消战斗通行证获多数玩家认可，路线图延期则存在争议。整体情绪偏正面务实。",
+  "honesty_note": "说明：关键词 Rust 存在双义（编程语言与同名生存游戏），已按热度覆盖两者。Rust 1.98.0 稳定版于8月20日发布、略早于本窗口，但8月24日的官方要闻汇总仍在传播，故未单列为热点；另8月26日 Rust 基金会宣布 Jess Izen 出任 Engineer in Residence，属人事动态、热度中等，已作关联话题提及。arrayref 供应链攻击事件虽源于8月20-21日，但其影响与排查提醒在窗口期内持续发酵，故予收录。",
+  "url_note": "所有 url 均直接取自联网搜索返回的原始片段，未做任何拼接或杜撰。"
+}

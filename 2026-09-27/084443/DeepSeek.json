@@ -1,0 +1,99 @@
+{
+  "keyword": "DeepSeek",
+  "hotspots": [
+    {
+      "rank": 1,
+      "title": "DeepSeek完成75亿美元融资，年化营收突破10亿美元",
+      "summary": "据The Information报道，DeepSeek完成75亿美元第二轮融资，估值达5000亿元人民币，年化营收运行率突破10亿美元，较数月前翻倍。",
+      "source": "36氪、The Information、微博",
+      "url": "https://36kr.com/newsflashes/3997027125366913?f=rss",
+      "published_time": "2026-09-24 14:26",
+      "perspectives": [
+        {
+          "stance": "公司官方口径",
+          "summary": "梁文锋在投资者会议上披露年化营收突破10亿美元，调价未造成客户流失，用户需求强劲。"
+        },
+        {
+          "stance": "财经媒体分析",
+          "summary": "营收增长部分来自模型调用价格上调至原来的2.3倍至4.5倍，估值目标5000亿元人民币，并筹备上交所上市。"
+        },
+        {
+          "stance": "行业观察",
+          "summary": "DeepSeek估值收入比达163倍，远高于OpenAI的34倍和Anthropic的21倍，引发市场对其高估值合理性的讨论。"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "DeepSeek将向联合国安理会介绍AI风险，梁文锋或不出席",
+      "summary": "路透社报道，DeepSeek及月之暗面等中国AI企业受邀在联合国安理会AI安全会议上发言，创始人梁文锋计划不出席。",
+      "source": "路透社、红星新闻、微博",
+      "url": "https://static.cdsb.com/micropub/Articles/202609/e045b1f40f024322ece90eac63d94fd1.html",
+      "published_time": "2026-09-23 16:38",
+      "perspectives": [
+        {
+          "stance": "国际官方通报",
+          "summary": "安理会第10228次会议主题为「人工智能与国际安全」，OpenAI CEO奥尔特曼和Anthropic高级代表也受邀出席。"
+        },
+        {
+          "stance": "媒体分析",
+          "summary": "会议正值多位AI行业领袖呼吁放缓开发进程，警告系统可能脱离人类控制，中国AI企业首次在这一层级参与全球AI治理讨论。"
+        },
+        {
+          "stance": "网友热议",
+          "summary": "微博话题「DeepSeek将向联合国介绍AI风险」登上科技榜第一，网友关注梁文锋缺席原因及中国AI企业的国际话语权。"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "DeepSeek发布V3.1-Terminus终结版与V4.1 Flash模型",
+      "summary": "DeepSeek于9月26日发布V3.1-Terminus收官版本，大幅提升稳定性并优化Agent模块，同时V4.1 Flash已正式发布并开源。",
+      "source": "IT之家、OSCHINA、Stage1st论坛",
+      "url": "http://foxvbot.kuryun.com/home/Blog/detail.html?id=5043",
+      "published_time": "2026-09-26 10:17",
+      "perspectives": [
+        {
+          "stance": "官方发布",
+          "summary": "V3.1-Terminus修复中英文混杂与异常字符问题，Code Agent与Search Agent模块显著优化，Humanity's Last Exam得分提升36.5%。"
+        },
+        {
+          "stance": "开发者社区",
+          "summary": "Stage1st论坛用户注意到手机客户端从253版直接更新至260版，认为「大的要来了」，期待V4全新架构。"
+        },
+        {
+          "stance": "技术媒体",
+          "summary": "V3.1-Terminus被视为V3系列收官之作，为即将推出的V4全新架构或R2重大更新铺路。"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "DeepSeek与月之暗面遭网信办数据安全调查",
+      "summary": "Anthropic指控DeepSeek和月之暗面将敏感用户数据传输至其Claude模型，中国网信办已对两家公司展开数据安全调查。",
+      "source": "The Information、联合早报、俄罗斯卫星通讯社",
+      "url": "https://sputniknews.cn/20260923/1073355153.html",
+      "published_time": "2026-09-23 00:00",
+      "perspectives": [
+        {
+          "stance": "外媒报道",
+          "summary": "网信办已派员约谈两家公司高管和员工，评估数据泄露严重程度，担心军事、警务敏感数据可能暴露给美方。"
+        },
+        {
+          "stance": "Anthropic指控",
+          "summary": "Anthropic发布154页报告，称月之暗面在用户不知情下向其发送近30万条请求，使用5380个虚假账户规避地域限制。"
+        },
+        {
+          "stance": "中方回应",
+          "summary": "中国商务部表示有关大规模蒸馏美国模型的指控「于事无凭，于法无据」，外交部强调中国AI发展是科技自立自强成果。"
+        }
+      ]
+    }
+  ],
+  "public_sentiment_summary": "近7天DeepSeek舆情呈「高热度、多线程」态势。融资消息与营收突破激发资本市场高度关注，联合国安理会通报事件提升国际能见度。V3.1-Terminus发布与V4.1 Flash开源获得开发者社区正面反馈，但数据安全调查与服务中断事件也引发对AI基础设施依赖和合规风险的理性反思。整体公众情绪以「自豪与期待」为主，夹杂对数据安全和过度依赖的审慎担忧。",
+  "honesty_note": null,
+  "start_time": "2026-09-27 08:45",
+  "end_time": "2026-09-27 08:45",
+  "elapsed_seconds": 15,
+  "retry_count": 0
+}

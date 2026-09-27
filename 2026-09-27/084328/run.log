@@ -1,0 +1,19 @@
+[08:43:28] ==================================================
+[08:43:28]   🔥 Hotspot — 热点搜索器
+[08:43:28]   日志: D:\Projects\project\Blog\Hotspot\results\2026-09-27\084328\run.log
+[08:43:28] ==================================================
+[08:43:28] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[08:43:28]   关键词: 1 个 — DeepSeek
+[08:43:28] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[08:43:28] DeepSeek HTTP 客户端初始化
+[08:43:28] 加载已保存的 session（账号: 1375****, 保存时间: 1242.8 小时前）
+[08:43:28] Token 可能已过期，本次将重新登录
+[08:43:28] 已加载保存的 token
+[08:43:28] 配置已加载: D:\Projects\project\Blog\Hotspot\hotspot\config.json (1 个关键词, headless=True, 最大重试=3)
+[08:43:28] 登录账号: 1375****
+[08:43:29] 登录账号: 1375**** (方式: phone)
+[08:43:29] ❌ 登录失败: RISK_DEVICE_DETECTED
+[08:43:29]   登录重试 (1/3)，等待 7秒...
+[08:43:37] 登录账号: 1375**** (方式: phone)
+[08:43:37] ❌ 登录失败: RISK_DEVICE_DETECTED
+[08:43:37]   登录重试 (2/3)，等待 8秒...
